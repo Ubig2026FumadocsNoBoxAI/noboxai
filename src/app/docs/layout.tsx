@@ -16,11 +16,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const tree = source.getPageTree(lang);
 
   return (
-    <DocsLayout 
-      tree={tree} // Sidebar akan otomatis ganti sesuai folder 'id' atau 'en'
-      {...baseOptions()}
-    >
-      {children}
-    </DocsLayout>
+<DocsLayout
+  {...baseOptions()} // Pastikan tree sudah ada di dalam fungsi ini
+>
+  {children}
+</DocsLayout>
   );
 }
