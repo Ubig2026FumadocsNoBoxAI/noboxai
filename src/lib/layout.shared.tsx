@@ -1,9 +1,12 @@
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import { source } from '@/lib/source';
+import { LanguageSwitch } from '../../components/language-switch';
 
-export function baseOptions(): BaseLayoutProps {
+export function baseOptions() {
   return {
     nav: {
-      title: 'My App',
+      title: 'NoBox Docs',
+      children: <LanguageSwitch />,
     },
+    tree: source.pageTree,
   };
 }

@@ -1,0 +1,9 @@
+{
+  "title": "CRM",
+  "icon": "Users",
+  "pages": [
+    "transaksi",
+    "laporan-target",
+    "laporan-lainnya"
+  ]
+}
