@@ -1,44 +1,63 @@
-'use client';
+"use client";
 
-import { usePathname, useRouter } from 'next/navigation';
-import Image from 'next/image';
+import { usePathname, useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export function LanguageSwitch() {
   const pathname = usePathname();
   const router = useRouter();
 
-  const segments = pathname.split('/').filter(Boolean);
-  const docsIndex = segments.indexOf('docs');
+  const currentLocale = pathname.split("/")[1] === "en" ? "en" : "id";
 
-  const langFromUrl = segments[docsIndex + 1];
-  const currentLang = langFromUrl === 'id' ? 'id' : 'en';
-  const nextLang = currentLang === 'id' ? 'en' : 'id';
+  function switchLocale(locale: string) {
+    if (locale === currentLocale) return;
 
-  function toggleLanguage() {
-    const nextSegments = [...segments];
-    if (langFromUrl !== 'id' && langFromUrl !== 'en') {
-      nextSegments.splice(docsIndex + 1, 0, nextLang);
-    } else {
-      nextSegments[docsIndex + 1] = nextLang;
-    }
-    router.push('/' + nextSegments.join('/'));
+    const segments = pathname.split("/");
+    segments[1] = locale;
+    const newPath = segments.join("/");
+    router.push(newPath);
   }
 
   return (
-    <button
-      onClick={toggleLanguage}
-      aria-label="Switch language"
-      className="group flex h-9 w-9 items-center justify-center rounded-full border bg-background hover:bg-muted transition-all active:scale-95 shadow-sm"
-    >
-      <div className="relative h-6 w-6 overflow-hidden rounded-full border border-muted">
+    <div className="flex items-center gap-1.5 bg-muted/30 backdrop-blur-md p-1 rounded-full border border-border/50 shadow-sm relative overflow-hidden h-9">
+      {/* Background Active Indicator */}
+      <div
+        className={cn(
+          "absolute h-7 w-7 bg-primary/20 backdrop-blur-md rounded-full border border-primary/30 transition-all duration-500 ease-in-out",
+          currentLocale === "id" ? "left-1" : "left-[38px]"
+        )}
+      />
+
+      <button
+        onClick={() => switchLocale("id")}
+        className={cn(
+          "relative h-7 w-7 overflow-hidden rounded-full transition-all duration-300 z-10 flex items-center justify-center",
+          currentLocale === "id" ? "scale-110" : "opacity-40 grayscale hover:opacity-100 hover:grayscale-0 shadow-none"
+        )}
+      >
         <Image
-          src={currentLang === 'id' ? '/flags/id.jpg' : '/flags/en.jpg'}
-          alt={currentLang === 'id' ? 'Indonesia' : 'English'}
-          fill // Pakai fill supaya mengikuti ukuran div parent-nya
-          className="object-cover" // INI KUNCINYA: Biar gak gepeng
-          sizes="24px"
+          src="/flags/id.jpg"
+          alt="ID"
+          fill
+          className="object-cover"
         />
-      </div>
-    </button>
+      </button>
+
+      <button
+        onClick={() => switchLocale("en")}
+        className={cn(
+          "relative h-7 w-7 overflow-hidden rounded-full transition-all duration-300 z-10 flex items-center justify-center",
+          currentLocale === "en" ? "scale-110" : "opacity-40 grayscale hover:opacity-100 hover:grayscale-0 shadow-none"
+        )}
+      >
+        <Image
+          src="/flags/en.webp"
+          alt="EN"
+          fill
+          className="object-cover"
+        />
+      </button>
+    </div>
   );
 }
