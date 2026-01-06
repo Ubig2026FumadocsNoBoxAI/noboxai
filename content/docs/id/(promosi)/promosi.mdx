@@ -1,0 +1,318 @@
+---
+title: Promosi
+description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
+icon: HandCoins
+---
+
+import { ImageZoom } from "fumadocs-ui/components/image-zoom";
+
+# Promosi
+
+Promosi adalah salah satu menu pada Nobox.Ai untuk melakukan promosi dengan mudah dan efisien kepada target promosi dengan diintegrasikan ke berbagai channel seperti WhatsApp, Telegram dll.
+
+<ImageZoom
+  src="/images/id/1.%20Promosi.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+Pada tampilan tersebut, terdapat beberapa status promosi. Penjelasan dari status tersebut adalah sebagai berikut:
+
+<table>
+  <thead>
+    <tr>
+      <th width="188.20001220703125">Fitur/Tombol</th>
+      <th>Fungsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/images/id/draft.png" alt="" /></td>
+      <td>Status draf data promosi masih belum diproses</td>
+    </tr>
+    <tr>
+      <td><img src="/images/id/process.png" alt="" /></td>
+      <td>Status proses data promosi masih dalam proses pengiriman</td>
+    </tr>
+    <tr>
+      <td><img src="/images/id/done.png" alt="" /></td>
+      <td>Status selesai data promosi sudah ditandai selesai</td>
+    </tr>
+    <tr>
+      <td><img src="/images/id/cancel.png" alt="" /></td>
+      <td>Status batal data promosi dibatalkan</td>
+    </tr>
+  </tbody>
+</table>
+
+## Tambah Promosi
+
+Untuk tambah data promosi, silahkan klik menu **[Promosi]** ➔ **[Tambah Promosi]** maka akan tampil dialog **[Tambah Promosi]**.
+
+<ImageZoom
+  src="/images/id/2.%20Tambah%20Promosi.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+Lengkapi isian yang diperlukan, contoh:
+
+| Isian                                  | Uraian                                                                                            | Contoh                                                     |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Nama                                   | Nama promosi                                                                                      | Promo Akhir Tahun 2024                                     |
+| Kanal                                  | Pilih channel yang akan dipakai                                                                   | WhatsApp                                                   |
+| Akun                                   | Pilih akun                                                                                        | s_whatsapp tester                                          |
+| List                                   | Pilih list                                                                                        | Akhir Tahun                                                |
+| Group                                  | Pilih grup                                                                                        | -                                                          |
+| Tag                                    | Pilih tag                                                                                         | Promo Desember                                             |
+| Tim                                    | Pilih tim                                                                                         | -                                                          |
+| Format Pesan                           | Pilih format pesan                                                                                | Text                                                       |
+| Tautan Singkat                         | Informasi mempersingkat pelacak tautan                                                            | Tidak aktif                                                |
+| Pesan                                  | Pesan promosi                                                                                     | Promo paket sahur lebih terjangkau jangan sampai kehabisan |
+| Lampiran                               | Lampiran file                                                                                     | -                                                          |
+| Kirim lampiran berdasarkan sumber data | Aktifkan atau tidaknya kirim lampiran berdasarkan sumber untuk mengirim lampiran dari sumber data | Tidak aktif                                                |
+| Mulai, Berakhir                        | Tanggal mulai dan berakhir pengiriman promosi                                                     | 28-11-2024, 29-11-2024                                     |
+| Atur Jadwal                            | Informasi atur jadwal promosi                                                                     | Tidak aktif                                                |
+| Jadwal                                 | Atur tanggal dan jam jadwal promosi                                                               | -                                                          |
+| Catatan                                | Catatan promosi                                                                                   | Promosi untuk pelanggan                                    |
+
+Jika sudah melengkapi, klik **[Simpan]**. Status promosi akan menjadi **[Draft]**.
+
+## Template
+
+<ImageZoom
+  src="/images/id/template.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+- **Template**: pilih pesan template.  
+- **User**: menampilkan nama pengguna.  
+- **Company**: menampilkan data perusahaan (nama, email, alamat).  
+- **Contact**: menampilkan data kontak (nama, telepon, email).  
+- **Data**: mengambil data dari sumber file.  
+- **Random**: menampilkan karakter acak.  
+- **Spinner**: mengirim teks acak.  
+- **Synonym**: membuat variasi teks bermakna sama.  
+- **Tracking**: mengirim tautan untuk melacak apakah sudah dibaca.  
+- **Split**: memisahkan balon pesan yang dikirim.  
+
+## Tes Kirim Pesan
+
+Klik **[Tes Kirim Pesan]** untuk mengirim data promosi ke nomor/email Anda.
+
+<ImageZoom
+  src="/images/id/3.%20Tes%20Kirim%20Pesan.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Buat Pesan
+
+Klik tab **[Kirim Pesan]** ➔ **[Buat Pesan]** untuk melihat hasil siaran.
+
+<ImageZoom
+  src="/images/id/4.%20Buat%20Pesan.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Hapus Semua Pesan
+
+Menghapus semua pesan yang sudah dibuat.
+
+<ImageZoom
+  src="/images/id/5.%20Hapus%20Pesan.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Proses Promosi
+
+Klik **[Buat Pesan]** lalu **[Proses]** untuk mengirim promosi. Status berubah menjadi **[Process]**.
+
+<ImageZoom
+  src="/images/id/6.%20Proses%20Promosi.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+Monitoring promosi: buka tab **[Kirim Pesan]** atau menu **[Kotak Masuk]**.
+
+<ImageZoom
+  src="/images/id/8.%20Monitoring%20Kotak%20Masuk.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Gagal ke Antrean
+
+Kirim ulang pesan yang gagal ke antrean.
+
+<ImageZoom
+  src="/images/id/9.%20Gagal%20ke%20Antrean.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Total Kirim Pesan
+
+Menampilkan total promosi sesuai status.
+
+<ImageZoom
+  src="/images/id/10.%20Total%20Kirim%20PEsan.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Tandai Promosi Selesai
+
+Klik **[Selesai]** untuk menandai promosi selesai.
+
+<ImageZoom
+  src="/images/id/11.%20Promosi%20Selesai.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Batalkan Promosi
+
+Klik **[Batal]** untuk membatalkan promosi.
+
+<ImageZoom
+  src="/images/id/12.%20Batalkan%20Promosi.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Cara Menggunakan Tautan Singkat
+
+1. Aktifkan tautan singkat.  
+2. Tambah integrasi Bitly di tab **[Integrasi]** menu **[Profil Usaha]**.  
+3. Isi pesan dengan data tracking.
+
+<ImageZoom
+  src="/images/id/13.%20Tautan%20Singkat.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+4. Generate message, hasil tampil seperti berikut:
+
+<ImageZoom
+  src="/images/id/hasil%20short%20link.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Cara Menggunakan Sumber Data
+
+1. Upload file Excel di tab **[Sumber Data]** dengan kolom yang sesuai **external id**.  
+
+<ImageZoom
+  src="/images/id/Contoh%20excel.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+2. Pilih **[Dicocokkan Dari] ➔ [Kolom Excel]**.  
+
+<ImageZoom
+  src="/images/id/14.%20Sumber%20Data.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+3. Klik **[Data]** untuk memasukkan nama kolom Excel.  
+
+<ImageZoom
+  src="/images/id/15.%20Sumber%20Data%202.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+4. Lanjut **[Buat Pesan]** untuk melihat hasil.  
+
+<ImageZoom
+  src="/images/id/16.%20Sumber%20Data%203.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Cara Menggunakan Kirim Lampiran Berdasarkan Sumber Data
+
+1. Upload file di **[Lampiran]**.  
+2. Aktifkan kirim lampiran berdasarkan sumber data.
+
+<ImageZoom
+  src="/images/id/17.%20Kirim%20berdasarkan.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+3. Upload file Excel di tab **[Sumber Data]** dengan kolom **[File]** berisi nama file dari **[Lampiran]**.  
+
+<ImageZoom
+  src="/images/id/18.%20excel%20sumber%20data.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+4. Klik **[Buat Pesan]**, file akan terkirim sesuai nama di sumber data.  
+
+<ImageZoom
+  src="/images/id/19.%20hasil.png"
+  alt="Tampilan Dasbor NoBox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+## Edit Dan Hapus Data Promosi
+
+- Pilih data promosi yang ingin diedit, ubah, lalu klik **[Simpan]**.  
+- Pilih data promosi yang ingin dihapus, klik **[Hapus]**, lalu konfirmasi **[Ya]** atau **[Tidak]**.
+
+---
+
+Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
