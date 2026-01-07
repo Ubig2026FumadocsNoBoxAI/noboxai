@@ -2,8 +2,8 @@
 import { icons } from "lucide-react";
 import { source } from "@/lib/source";
 import { DocsPage, DocsBody, DocsTitle } from "fumadocs-ui/page";
-import defaultMdxComponents from "fumadocs-ui/mdx";
 import { notFound } from "next/navigation";
+import { getMDXComponents } from "@/mdx-components";
 
 export default async function Page({
   params,
@@ -35,25 +35,21 @@ export default async function Page({
       }}
     >
       <DocsBody>
-        <div className="mb-8 flex flex-row items-center gap-3">
+        <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-3">
           {/* Ikon */}
           {LucideIcon && (
             <div className="flex shrink-0 items-center justify-center text-fd-primary">
-              {/* 
-         Ukuran size 32px biasanya cocok dengan teks 3xl. 
-         StrokeWidth ditebalkan sedikit agar seimbang dengan font bold.
-      */}
               <LucideIcon size={32} strokeWidth={2.5} />
             </div>
           )}
 
           {/* Judul */}
-          <DocsTitle className="!m-0 !p-0 text-3xl font-bold leading-tight">
+          <DocsTitle className="!m-0 !p-0 text-2xl md:text-3xl font-bold leading-tight">
             {page.data.title}
           </DocsTitle>
         </div>
 
-        <MDX components={{ ...defaultMdxComponents }} />
+        <MDX components={getMDXComponents()} />
       </DocsBody>
     </DocsPage>
   );

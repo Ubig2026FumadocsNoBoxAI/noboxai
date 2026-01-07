@@ -18,12 +18,12 @@ export function baseOptions(): BaseLayoutProps {
           <span className="font-bold text-lg tracking-tight">Nobox.AI</span>
         </div>
       ),
+      children: (
+        <div className="flex flex-1 justify-end items-center md:mr-0 mr-12">
+          <LanguageSwitch />
+        </div>
+      ),
     },
-    links: [
-      {
-        type: "custom",
-        children: <LanguageSwitch />,
-      },
-    ],
+    links: [],
   };
 }

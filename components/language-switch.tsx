@@ -20,7 +20,7 @@ export function LanguageSwitch() {
   }
 
   return (
-    <div className="flex items-center gap-1.5 bg-muted/30 backdrop-blur-md p-1 rounded-full border border-border/50 shadow-sm relative overflow-hidden h-9">
+    <div className="flex items-center gap-1.5 bg-muted/30 backdrop-blur-md p-1 rounded-full border border-border/50 shadow-sm relative overflow-hidden h-9 w-[70px] shrink-0">
       {/* Background Active Indicator */}
       <div
         className={cn(

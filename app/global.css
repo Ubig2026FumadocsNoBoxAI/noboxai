@@ -136,3 +136,54 @@ header.fd-nav,
   border-bottom: none !important;
   box-shadow: none !important;
 }
+
+/* Responsive Table */
+.prose table,
+.fd-body table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure images and videos are responsive */
+/* Ultra-specific Responsive Iframe Overrides */
+.prose iframe,
+.fd-body iframe,
+article iframe,
+.fd-content iframe {
+  width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  max-width: 100% !important;
+  border-radius: var(--radius-xl) !important;
+  border: none !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Ensure container doesn't restrict width on mobile */
+.fd-body,
+.prose {
+  overflow-wrap: break-word;
+}
+
+/* Custom scrollbar for better look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
