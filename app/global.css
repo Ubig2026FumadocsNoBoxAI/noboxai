@@ -188,16 +188,39 @@ article iframe,
   background: var(--muted-foreground);
 }
 
-/* Hide custom language switcher ONLY in the sidebar */
-#nd-sidebar .flex.items-center.gap-1\.5.bg-muted\/30 {
+/* Language Switcher Strict Visibility */
+
+/* Always hide mirrored nav switcher in any aside/sidebar to prevent duplicates at the top */
+aside [data-navbar-switcher],
+#nd-sidebar [data-navbar-switcher] {
   display: none !important;
 }
 
-/* Hide fumadocs built-in language switcher COMPLETELY if any remains */
+/* Desktop Rules */
+@media (min-width: 768px) {
+
+  /* Hide the sidebar switcher footer on desktop */
+  [data-sidebar-switcher] {
+    display: none !important;
+  }
+}
+
+/* Mobile Rules */
+@media (max-width: 767px) {
+
+  /* Hide the navbar switcher on mobile to avoid double icons */
+  [data-navbar-switcher] {
+    display: none !important;
+  }
+
+  /* Ensure the sidebar footer switcher is visible */
+  [data-sidebar-switcher] {
+    display: flex !important;
+  }
+}
+
+/* Hide fumadocs default switcher if it somehow appears */
 .fd-i18n-switcher,
-[data-language-switcher],
-select[aria-label*="language"],
-select[aria-label*="ahasa"] {
+[data-language-switcher] {
   display: none !important;
-  visibility: hidden !important;
 }

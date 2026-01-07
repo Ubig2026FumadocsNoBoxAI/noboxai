@@ -2,7 +2,7 @@ import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 import Image from "next/image";
 import { LanguageSwitch } from "@/components/language-switch";
 
-export function baseOptions(): BaseLayoutProps {
+export function baseOptions(): any {
   return {
     nav: {
       transparentMode: "always",
@@ -19,7 +19,17 @@ export function baseOptions(): BaseLayoutProps {
         </div>
       ),
       children: (
-        <div className="flex flex-1 justify-end items-center md:mr-0 mr-12">
+        <div
+          className="hidden md:flex flex-1 justify-end items-center"
+          data-navbar-switcher
+        >
+          <LanguageSwitch />
+        </div>
+      ),
+    },
+    sidebar: {
+      footer: (
+        <div className="md:hidden p-2" data-sidebar-switcher>
           <LanguageSwitch />
         </div>
       ),
