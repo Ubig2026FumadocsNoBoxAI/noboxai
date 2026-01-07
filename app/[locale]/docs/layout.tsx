@@ -21,6 +21,7 @@ export default async function Layout({
       tree={source.getPageTree(locale)}
       {...base}
       nav={{ ...nav }}
+      i18n={false}
     >
       {children}
     </DocsLayout>

@@ -25,5 +25,6 @@ export function baseOptions(): BaseLayoutProps {
       ),
     },
     links: [],
+    i18n: false, // Disable fumadocs built-in i18n switcher
   };
 }

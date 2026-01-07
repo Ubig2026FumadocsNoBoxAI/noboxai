@@ -187,3 +187,17 @@ article iframe,
 ::-webkit-scrollbar-thumb:hover {
   background: var(--muted-foreground);
 }
+
+/* Hide custom language switcher ONLY in the sidebar */
+#nd-sidebar .flex.items-center.gap-1\.5.bg-muted\/30 {
+  display: none !important;
+}
+
+/* Hide fumadocs built-in language switcher COMPLETELY if any remains */
+.fd-i18n-switcher,
+[data-language-switcher],
+select[aria-label*="language"],
+select[aria-label*="ahasa"] {
+  display: none !important;
+  visibility: hidden !important;
+}
