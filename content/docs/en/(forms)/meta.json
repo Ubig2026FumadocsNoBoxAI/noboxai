@@ -4,7 +4,7 @@
   "pages": [
     "form-dashboard",
     "form-results",
-    "form-models",
+    "form-templates",
     "form-payments",
     "form-tags",
     "form-statics",

@@ -3,9 +3,9 @@
   "icon": "Contact",
   "pages": [
     "contact-dashboard",
-    "contact",
+    "contacts",
     "contact-tags",
-    "links",
+    "link",
     "lists",
     "groups"
   ]
