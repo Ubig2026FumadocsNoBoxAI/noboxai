@@ -1,6 +1,7 @@
 import defaultMdxComponents from "fumadocs-ui/mdx";
 import type { MDXComponents } from "mdx/types";
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
+import { cn } from "@/lib/utils";
 
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
   return {
@@ -28,12 +29,28 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
         </div>
       );
     },
-    img: (props) => (
-      <ImageZoom
-        {...(props as any)}
-        className="rounded-xl border shadow-md my-6"
-      />
-    ),
+    img: (props) => {
+      const isInline =
+        props.className?.includes("inline") ||
+        (props as any).style?.display === "inline" ||
+        (props.width && Number(props.width) <= 64);
+
+      if (isInline) {
+        return (
+          <img
+            {...(props as any)}
+            className={cn("inline-block align-middle m-0 rounded-none shadow-none border-none", props.className)}
+          />
+        );
+      }
+
+      return (
+        <ImageZoom
+          {...(props as any)}
+          className={cn("rounded-2xl border bg-muted/20 shadow-lg my-8 mx-auto block hover:shadow-xl transition-shadow duration-300", props.className)}
+        />
+      );
+    },
     ...components,
   };
 }

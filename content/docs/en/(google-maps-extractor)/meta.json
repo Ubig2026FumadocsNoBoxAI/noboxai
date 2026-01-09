@@ -1,0 +1,9 @@
+{
+    "title": "Google Maps Extractor",
+    "icon": "Map",
+    "pages": [
+      "google-maps-extractor",
+      "scrape-google-maps"
+    ]
+  }
+  

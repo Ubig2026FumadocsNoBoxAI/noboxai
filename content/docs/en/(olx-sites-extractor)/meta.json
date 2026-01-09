@@ -1,0 +1,9 @@
+{
+    "title": "OLX Sites Extractor",
+    "icon": "Store",
+    "pages": [
+      "olx-sites-extractor",
+      "scrape-website-olx"
+    ]
+  }
+  
