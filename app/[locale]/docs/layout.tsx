@@ -16,8 +16,6 @@ export default async function Layout({
 
   return (
     <DocsLayout
-      // Jika parser: 'dir' sudah diset di source.ts,
-      // getPageTree(locale) hanya akan mengambil isi DI DALAM folder id atau en.
       tree={source.getPageTree(locale)}
       {...base}
       nav={{ ...nav }}
