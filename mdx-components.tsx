@@ -39,7 +39,10 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
         return (
           <img
             {...(props as any)}
-            className={cn("inline-block align-middle m-0 rounded-none shadow-none border-none", props.className)}
+            className={cn(
+              "inline-block align-middle m-0 rounded-none shadow-none border-none",
+              props.className
+            )}
           />
         );
       }
@@ -47,7 +50,10 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
       return (
         <ImageZoom
           {...(props as any)}
-          className={cn("rounded-2xl border bg-muted/20 shadow-lg my-8 mx-auto block hover:shadow-xl transition-shadow duration-300", props.className)}
+          className={cn(
+            "rounded-lg border shadow-sm mb-4 my-8 ",
+            props.className
+          )}
         />
       );
     },
