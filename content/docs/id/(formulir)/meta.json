@@ -2,13 +2,13 @@
   "title": "Formulir",
   "icon": "ClipboardList",
   "pages": [
-    "dasbor-formulir",
-    "hasil-formulir",
-    "model-formulir",
-    "cara-bayar",
-    "tag-formulir",
-    "statistik-formulir",
-    "pengaturan-formulir",
+    "form-dashboard",
+    "form-results",
+    "form-templates",
+    "form-payments",
+    "form-tags",
+    "form-statics",
+    "form-settings",
     "form-warehouse",
     "form-coupons"
   ]
