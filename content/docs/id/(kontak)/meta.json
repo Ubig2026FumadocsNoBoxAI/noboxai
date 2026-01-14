@@ -1,5 +1,12 @@
 {
   "title": "Kontak",
   "icon": "Contact",
-  "pages": ["dasbor-kontak", "kontak", "tag-kontak", "link", "list", "grup"]
+  "pages": [
+    "contact-dashboard", 
+    "contacts", 
+    "contact-tags", 
+    "link", 
+    "lists", 
+    "groups"
+  ]
 }
