@@ -8,6 +8,8 @@
     "form-payments",
     "form-tags",
     "form-statics",
-    "form-settings"
+    "form-settings",
+    "form-warehouse",
+    "form-coupons"
   ]
 }
