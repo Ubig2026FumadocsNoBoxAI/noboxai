@@ -6,7 +6,8 @@ icon: Percent
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Form Coupons merupakan salah satu menu pada NoBox yang digunakan untuk membuat, mengelola, dan mengatur kupon atau kode promo yang dapat digunakan dalam sistem.
+Form Coupons merupakan salah satu menu pada NoBox yang digunakan untuk membuat, mengelola, dan mengatur kupon atau kode promo yang dapat digunakan dalam sistem. 
+Fitur ini sangat berguna untuk mendukung strategi pemasaran, meningkatkan konversi penjualan, serta memberikan insentif kepada pelanggan dalam bentuk potongan harga atau gratis ongkir.
 
 <ImageZoom
   src="/images/id/Form%20Coupons.png"
@@ -32,26 +33,87 @@ Lengkapi isian yang diperlukan, sebagai contoh seperti berikut :
 
 | **Isian**         | Uraian               | **Contoh**                |
 | ----------------- | -------------------- | ------------------------- |
-| Nama              | Nama diskon formulir | Diskon Tahun Baru         |
-| Code              | Kode diskon          | TahunBaru2026             |
-| Status            | Status               | Aktif                     |
-| Disc For          | Diskon untuk         | Shipping                  |
-| Disc Type         | Tipe diskon          | Percentage                |
-| Disc Value        | Jumlah diskon        | 100%                      |
-| Has Zone          | Khusus daerah        |                           |
-| Origin Type       | Daerah asal          | State                     |
-| Origin State      | Provinsi asal        | Jawa Timur                |
-| Destination Type  | Daerah tujuan        | State                     |
-| Destination State | Provinsi tujuan      | Jawa Timur                |
-| Max Use           | Batas penggunaan     | 100                       |
-| Products          | Nama produk          | Pashmina Voal             |
-| Payments          | Metode pembayaran    | Bank Central Asia, Paypal |
-| New Customer      | Pelanggan baru       |                           |
+| Nama              | Nama kupon atau promo yang akan ditampilkan di sistem | Diskon Tahun Baru         |
+| Code              | Kode kupon yang akan dimasukkan oleh pengguna saat checkout          | TahunBaru2026             |
+| Status            | Status kupon: aktif atau nonaktif. Apabila kupon nonaktif, maka tidak dapat digunakan               | Aktif                     |
+| Disc For          | Menentukan diskon untuk produk atau biaya pengiriman (shipping)         | Shipping                  |
+| Disc Type         | Jenis diskon: fixed price (nominal tetap) atau percentage (persentase)          | Percentage                |
+| Disc Value        | Nilai diskon sesuai tipe diskon yang dipilih        | 100%                      |
+| Has Zone          | Centang jika kupon hanya berlaku untuk zona tertentu        |                           |
+| Origin Type       | Tipe daerah asal jika Has Zone dicentang (Country, State, City)          | State                     |
+| Origin State      | Provinsi asal jika Has Zone dicentang       | Jawa Timur                |
+| Destination Type  | Tipe daerah tujuan jika Has Zone dicentang        | State                     |
+| Destination State | Provinsi tujuan jika Has Zone dicentang      | Jawa Timur                |
+| Max Use           | Batas maksimal jumlah penggunaan kupon     | 100                       |
+| Products          | Produk tertentu yang dapat menggunakan kupon ini          | Pashmina Voal             |
+| Payments          | Metode pembayaran yang diizinkan untuk kupon ini, yaitu Bank Central Asia, COD, Paypal    | Bank Central Asia, Paypal |
+| New Customer      | Centang jika kupon hanya untuk pelanggan baru       |                           |
+| Has Date Range | Centang jika kupon memiliki batas waktu penggunaan | |
+| Has Min Order | Centang jika kupon memiliki minimal jumlah item dalam pesanan | |
+| Has Max Discount | Centang jika kupon memiliki batas maksimal nominal diskon | |
+| Has Min Purchase | Centang jika kupon memiliki minimal nominal pembelian | |
 
 Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data model formulir yang baru saja Anda buat.
 
-## **Edit Dan Hapus Warehouse Formulir**
+## **Penjelasan Tambahan Field Khusus**
 
-Untuk mengedit suatu data model formulir, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
+- **Has Zone :**
+Jika diaktifkan, maka kupon hanya dapat digunakan pada transaksi dengan asal dan tujuan pengiriman tertentu.
 
-Untuk menghapus suatu data model formulir adalah dengan pilih data mana yang akan dihapus, kemudian klik **[Hapus],** maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+- **Has Date Range :**
+Jika diaktifkan, Anda dapat menentukan tanggal mulai dan tanggal berakhir masa berlaku kupon.
+
+- **Has Min Order :**
+Digunakan untuk menentukan minimal jumlah item dalam satu pesanan agar kupon bisa digunakan.
+
+- **Has Max Discount :**
+Digunakan untuk membatasi maksimal nominal diskon yang dapat diterapkan, meskipun persentase diskon besar.
+
+- **Has Min Purchase :**
+Digunakan untuk menentukan minimal total nilai pembelian agar kupon bisa digunakan.
+
+## **Menyimpan Data Kupon**
+
+Setelah semua isian dilengkapi sesuai kebutuhan promo, klik tombol [Simpan] untuk menyimpan data kupon yang baru saja Anda buat. Jika terdapat field wajib yang belum diisi atau format data tidak sesuai, sistem akan menampilkan pesan error untuk membantu Anda memperbaikinya.
+
+## **Edit Coupons Formulir**
+
+Untuk mengedit data kupon yang sudah ada:
+
+1\. Pilih data kupon yang ingin diedit dari daftar.
+
+2\. Klik tombol **[Edit]**.
+
+3\. Lakukan perubahan pada field yang diperlukan.
+
+4\. Klik **[Simpan]** untuk menyimpan perubahan.
+
+Perubahan yang Anda lakukan akan langsung diterapkan pada kupon tersebut dan memengaruhi transaksi berikutnya.
+
+## **Hapus Coupons Formulir**
+
+Untuk menghapus data kupon:
+
+1\. Pilih data kupon yang ingin dihapus.
+
+2\. Klik tombol **[Hapus]**.
+
+3\. Akan tampil dialog konfirmasi penghapusan.
+
+4\. Klik **[Ya]** untuk melanjutkan atau **[Tidak]** untuk membatalkan.
+
+Data kupon yang telah dihapus tidak dapat dikembalikan.
+
+## **Tips Penggunaan Form Coupons**
+
+- Gunakan kode kupon yang mudah diingat dan relevan dengan kampanye promo.
+
+- Selalu atur masa berlaku kupon untuk menghindari penggunaan tanpa batas waktu.
+
+- Manfaatkan pembatasan zona dan produk untuk promo yang lebih tersegmentasi.
+
+- Gunakan fitur Max Use untuk mengontrol jumlah pemakaian kupon.
+
+- Aktifkan Has Max Discount jika menggunakan diskon persentase besar agar tidak merugikan bisnis.
+
+Dengan memanfaatkan Form Coupons secara optimal, Anda dapat mengelola promo dengan lebih terstruktur, aman, dan efektif sesuai dengan kebutuhan bisnis Anda.
