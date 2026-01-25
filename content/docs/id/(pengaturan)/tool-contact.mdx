@@ -1,17 +1,91 @@
 ---
 title: Tool Contact
-description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
-icon: SquareUser  
+icon: UserStar
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Tool Contact merupakan salah satu menu pada NoBox.
+Tool Contact digunakan untuk mengelola data kontak pelanggan di Nobox.Ai.
+Melalui menu ini, Anda dapat menambahkan, mengimpor, memfilter, dan mengelola kontak secara terpusat untuk kebutuhan CRM, pesan, dan promosi.
 
-<ImageZoom
-  src="/images/id/tool-contact.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
+<img
+  src="/images/id/Tampilan%20Tool%20Contact.png"
+  alt="Tool Contact Overview"
+  className="rounded-lg border mb-4"
 />
+
+## Tambah Kontak
+
+Gunakan fitur ini untuk menambahkan kontak baru secara manual.
+
+Langkah-langkah:
+
+1\. Klik [Tambah Kontak]
+
+2\. Lengkapi informasi kontak
+
+3\. Klik [Simpan]
+
+<img
+  src="/images/id/Tambah%20Tool%20Contact.png"
+  alt="Form Tambah Kontak"
+  className="rounded-lg border mb-4"
+/>
+
+## Field Kontak
+
+| Bagian | Field           | Deskripsi                                                            |
+| ------ | --------------- | -------------------------------------------------------------------- |
+| Umum   | Nama            | Nama lengkap kontak dan digunakan sebagai identitas utama _(wajib)_  |
+|        | Kategori        | Klasifikasi kontak untuk membantu pengelompokan data                 |
+|        | List            | Daftar kontak yang digunakan untuk segmentasi dan kebutuhan kampanye |
+|        | Tag             | Label khusus untuk memudahkan identifikasi dan penyaringan kontak    |
+|        | Kontak Person   | Penanggung jawab atau perwakilan utama dari kontak                   |
+|        | Catatan         | Informasi tambahan atau catatan penting terkait kontak               |
+| Link   | Kanal           | Platform komunikasi eksternal yang terhubung dengan kontak           |
+|        | Nama Eksternal  | Nama akun atau username pada platform yang dipilih                   |
+|        | ID Eksternal    | Identitas unik kontak dari platform eksternal                        |
+| Alamat | Alamat          | Alamat fisik lengkap dari kontak                                     |
+|        | Negara          | Negara tempat kontak berada                                          |
+|        | Provinsi        | Provinsi atau wilayah administratif kontak                           |
+|        | Kota            | Kota atau kabupaten tempat kontak berada                             |
+|        | Kode Pos        | Kode pos sebagai referensi lokasi                                    |
+|        | Lintang / Bujur | Koordinat geografis untuk penentuan lokasi peta                      |
+|        | Lokasi          | Nama area atau penanda lokasi                                        |
+|        | Diblokir        | Status untuk menandai apakah kontak diblokir atau aktif              |
+
+## Import Kontak
+
+Tambahkan kontak secara massal melalui integrasi berikut:
+
+| Metode             | Deskripsi                    |
+| ------------------ | ---------------------------- |
+| Excel & CSV        | Unggah file kontak           |
+| Google Contacts    | Sinkronisasi kontak Google   |
+| Facebook Audiences | Import data audiens Facebook |
+| Import WhatsApp    | Import kontak dari WhatsApp  |
+
+## Filter & Pencarian
+
+Memudahkan pencarian kontak berdasarkan:
+
+- Kategori, Negara, Provinsi, Kota
+- Sumber, List, Tag
+- Tanggal dibuat
+
+Klik [Filter] untuk menerapkan kriteria pencarian.
+
+## Hapus Kontak
+
+- Pilih satu atau beberapa kontak
+- Klik [Hapus yang Terpilih]
+- Konfirmasi tindakan
+
+## Catatan
+
+- Pastikan field wajib telah diisi sebelum menyimpan
+- Data kontak dapat digunakan untuk CRM, Pesan, dan Promosi
+
+---
+
+Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
