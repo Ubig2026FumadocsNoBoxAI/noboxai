@@ -8,7 +8,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start -p 3006 -H 127.0.0.1",
+    "start": "next start -p 3006 -H 0.0.0.0",
     "types:check": "fumadocs-mdx && tsc --noEmit",
     "postinstall": "fumadocs-mdx"
   },
