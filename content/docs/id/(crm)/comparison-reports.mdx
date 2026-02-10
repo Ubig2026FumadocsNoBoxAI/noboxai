@@ -1,17 +1,19 @@
 ---
 title: Laporan Perbandingan
-description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
+description: Mengenal struktur laporan perbandingan pada NoBox.AI
 icon: FileExclamationPoint
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Laporan Perbandingan merupakan salah satu menu pada Nobox.Ai yang digunakan untuk menampilkan laporan perbandingan dari data CRM.
+Laporan Perbandingan merupakan salah satu menu pada NoBox.AI yang digunakan untuk menampilkan perbandingan data CRM berdasarkan aktivitas, kinerja, serta pencapaian pengguna.  
+
+Fitur ini membantu pengguna dalam menganalisis performa penjualan secara lebih sistematis.
 
 <iframe
   width="800"
   height="450"
-  className="rounded-lg"
+  className="rounded-lg my-6 mx-auto"
   src="https://www.youtube.com/embed/h_bAurpA3hc"
   title="Pengenalan Tampilan NoBox"
   frameborder="0"
@@ -20,68 +22,115 @@ Laporan Perbandingan merupakan salah satu menu pada Nobox.Ai yang digunakan untu
   allowFullScreen
 ></iframe>
 
+---
+
+## **Tampilan Menu Laporan Perbandingan**
+
+### Tampilan Halaman Utama
+
 <ImageZoom
   src="/images/id/3.%20Laporan%20Perbandingan.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tampilan Laporan Perbandingan NoBox"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
-/>
+ />
 
-Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-masing. Penjelasan dari fungsi tersebut adalah sebagai berikut:
+Tampilan ini memperlihatkan ringkasan perbandingan kinerja pengguna berdasarkan data penawaran, tugas, dan aktivitas penjualan dalam periode tertentu.
+
+Informasi disajikan dalam bentuk grafik dan data statistik yang memudahkan pengguna dalam melakukan evaluasi performa.
+
+### Informasi yang Ditampilkan
+
+Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-masing.
+
+Data yang disajikan mencakup jumlah penawaran yang diselesaikan, tingkat kemenangan, status tugas, aktivitas penjualan, serta perbandingan kinerja antar pengguna.
+
+---
+
+## **Komponen Utama**
+
+Pada halaman Laporan Perbandingan, terdapat beberapa bagian utama yang memiliki fungsi masing-masing sebagai berikut:
 
 <table>
   <thead>
     <tr>
-      <th width="231.4000244140625">Bagian</th>
+      <th width="250">Bagian</th>
       <th>Fungsi</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Penawaran yang diselesaikan oleh pengguna </td>
-      <td>Informasi data penawaran yang sudah ditutup oleh pengguna</td>
+      <td>Penawaran yang Diselesaikan oleh Pengguna</td>
+      <td>Menampilkan data penawaran yang telah ditutup oleh masing-masing pengguna.</td>
     </tr>
     <tr>
-      <td>Tawaran yang dimenangkan Pengguna</td>
-      <td>
-        Informasi total data penawaran yang berstatus Won berdasarkan pengguna
-      </td>
+      <td>Tawaran yang Dimenangkan Pengguna</td>
+      <td>Menampilkan total penawaran yang berstatus <b>Won</b> berdasarkan pengguna.</td>
     </tr>
     <tr>
       <td>Tahapan Penawaran oleh Pengguna</td>
-      <td>
-        Informasi total data penawaran yang dikelompokkan berdasarkan pengguna
-      </td>
+      <td>Menampilkan distribusi penawaran berdasarkan tahapan proses.</td>
     </tr>
     <tr>
       <td>Status Tugas oleh Pengguna</td>
-      <td>
-        Informasi total data tugas per status yang dikelompokkan berdasarkan
-        pengguna
-      </td>
+      <td>Menampilkan jumlah tugas berdasarkan status penyelesaiannya.</td>
     </tr>
     <tr>
-      <td>Kontak, Perusahaan, Penawaran Berdasarkan Sumber</td>
-      <td>
-        Informasi total data kontak, grup, dan penawaran berdasarkan sumbernya
-      </td>
+      <td>Kontak, Perusahaan, dan Penawaran Berdasarkan Sumber</td>
+      <td>Menampilkan data berdasarkan sumber perolehan kontak dan penawaran.</td>
     </tr>
     <tr>
       <td>Tingkat Kemenangan oleh Pengguna</td>
-      <td>Informasi tingkat kemenangan penawaran berdasarkan pengguna</td>
+      <td>Menampilkan persentase keberhasilan penawaran tiap pengguna.</td>
     </tr>
     <tr>
-      <td>Aktifitas Penjualan Oleh Pengguna</td>
-      <td>Informasi aktivitas penjualan pengguna dari catatan atau tugas</td>
+      <td>Aktivitas Penjualan oleh Pengguna</td>
+      <td>Menampilkan aktivitas penjualan berdasarkan catatan dan tugas.</td>
     </tr>
     <tr>
       <td>Pemenuhan Tugas oleh Pengguna</td>
-      <td>Informasi total tugas yang terselesaikan berdasarkan pengguna</td>
+      <td>Menampilkan jumlah tugas yang telah diselesaikan.</td>
     </tr>
   </tbody>
 </table>
 
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Manfaat Laporan Perbandingan**
+
+Dengan menggunakan fitur Laporan Perbandingan, pengguna dapat:
+
+- Memantau performa tim penjualan secara real-time
+- Mengevaluasi pencapaian target penjualan
+- Mengidentifikasi kendala dalam proses penawaran
+- Meningkatkan efektivitas strategi pemasaran
+- Membantu pengambilan keputusan berbasis data
+
+---
+
+## **Tips Penggunaan Laporan Perbandingan**
+
+Agar hasil analisis lebih optimal, perhatikan beberapa tips berikut:
+
+- Perbarui data secara rutin
+- Pastikan seluruh aktivitas tercatat dengan benar
+- Gunakan filter sesuai kebutuhan
+- Lakukan evaluasi secara berkala
+- Bandingkan data antar periode waktu
+
+---
+
+## **Penanganan Kendala**
+
+Jika terjadi kendala dalam penggunaan fitur Laporan Perbandingan, lakukan langkah berikut:
+
+- Gunakan akun yang telah terverifikasi
+- Pastikan koneksi internet stabil
+- Periksa kembali data yang diinput
+- Lakukan refresh halaman
+- Hubungi tim support jika kendala berlanjut
+
+---
+
+Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui  [Support Ticket](https://crm.nobox.ai/clients/tickets)
