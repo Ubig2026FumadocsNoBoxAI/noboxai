@@ -1,4 +1,5 @@
 ---
+
 title: Hasil Formulir
 description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
 icon: ClipboardPenLine
@@ -6,7 +7,9 @@ icon: ClipboardPenLine
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Hasil Formulir merupakan salah satu menu pada NoBox digunakan untuk manajemen data hasil formulir.
+Hasil Formulir adalah salah satu menu utama di NoBox yang berfungsi untuk mengelola semua data hasil formulir secara efisien dan terstruktur, memudahkan pengguna dalam memantau dan memproses pesanan pelanggan.
+
+Menu ini memungkinkan pengguna untuk memantau pesanan, mengatur produk, menyesuaikan biaya, melakukan tindak lanjut, serta memperbarui status pembayaran dan penjualan.
 
 <iframe
   width="800"
@@ -20,90 +23,158 @@ Hasil Formulir merupakan salah satu menu pada NoBox digunakan untuk manajemen da
   allowfullscreen
 ></iframe>
 
+---
+
+## **Tampilan Menu Hasil Formulir**
+
 <ImageZoom
-  src="/images/id/Hasil%20Formulir.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
+src="/images/id/Hasil%20Formulir.png"
+alt="Tampilan Dasbor NoBox"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4"
 />
+
+Tampilan di atas merupakan halaman utama menu Hasil Formulir yang menampilkan daftar seluruh data hasil formulir yang telah masuk ke dalam sistem. 
+
+Pada halaman ini, pengguna dapat melihat nama pelanggan, jenis formulir, tanggal pembuatan, status pembayaran, status penjualan, serta total transaksi, serta melakukan pengelolaan produk, penyesuaian biaya, tindak lanjut, dan pembaruan status pembayaran dan penjualan.
+
+---
 
 ## **Penanganan Produk**
 
-Untuk penanganan produk, silahkan klik menu **[Hasil Formulir]** pilih salah satu data hasil fromulir tipe order form. Maka akan tampil detail hasil formulir.
+### Akses Data Hasil Formulir
+
+1. Masuk ke menu **[Hasil Formulir]** di dasbor NoBox.
+2. Pilih salah satu entri data hasil form dengan tipe order form yang ingin Anda kelola.
+3. Sistem akan menampilkan detail lengkap dari formulir yang dipilih, termasuk daftar produk yang dipesan.
 
 <ImageZoom
-  src="/images/id/Penanganan%20Produk.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
+src="/images/id/Penanganan%20Produk.png"
+alt="Tampilan Dasbor NoBox"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4"
 />
 
-Pada bagian produk dapat anda tambahkan produk yang ingin di beli, hapus produk yang tidak jadi di beli, ganti kuantitas sesuai permintaan pelanggan. Jika sudah klik **[Simpan]** untuk menyimpan perubahan tersebut.
+### Pengelolaan Produk
+
+Setelah halaman detail terbuka, pengguna dapat:
+
+1. **Menambahkan Produk:** Klik tombol tambah produk untuk memasukkan produk tambahan yang ingin dibeli pelanggan.
+2. **Menghapus Produk:** Pilih produk yang tidak jadi dibeli atau salah input, kemudian klik hapus.
+3. **Mengubah Kuantitas:** Sesuaikan jumlah produk sesuai permintaan pelanggan.
+4. Setelah semua perubahan selesai, klik **[Simpan]** untuk memastikan semua data tersimpan dalam sistem dan siap digunakan untuk proses berikutnya.
+
+---
 
 ## **Penanganan Penambahan & Pengurangan Biaya**
 
-Anda dapat mendata penambahan dan pengurangan biaya, pada data hasil formulir tersebut dengan cara:&#x20;
+Untuk menambahkan atau mengurangi biaya pada pesanan, ikuti langkah-langkah berikut:
 
-- Pilih salah satu data hasil formulir
-- Pada bagian Ringkasan, Isi penambahan biaya, contoh untuk penambahan biaya diisi ongkir dengan nominal 75.000
-- Isi pengurangan biaya, contoh untuk pengurangan biaya diisi diskon dengan nominal 25.000
-- Maka untuk total keseluruhan sudah otomatis
-
-<ImageZoom
-  src="/images/id/Penanganan%20Ringkasan.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Jika sudah klik **[Simpan]** untuk menyimpan perubahan tersebut.
-
-## **Penanganan Tindak Lanjut**
-
-Anda dapat kirim pesan ke pelanggan untuk konfirmasi pemesanan dengan cara:
-
-- Pilih salah satu data hasil formulir
-- Klik ikon [ <img src="/images/id/follow%20up.png" alt="Follow up" className="inline h-5 w-auto mx-1" /> ]
-- Pilih kategori follow up, maka akan tampil pesan pratinjau, untuk data follow up otomatis sesuai data pesanan pelanggan Anda juga dapat mengubah datanya
-- Klik **[Kirim]** untuk mengirim pesan Tindak Lanjut
+1. Pilih data hasil formulir yang ingin diubah.
+2. Arahkan ke bagian **Ringkasan Biaya**.
+3. Isi kolom **Penambahan Biaya** dengan nominal tambahan, misalnya biaya ongkir sebesar Rp75.000.
+4. Isi kolom **Pengurangan Biaya** jika ada, misalnya diskon sebesar Rp25.000.
+5. Sistem akan secara otomatis menghitung total keseluruhan biaya berdasarkan penambahan dan pengurangan yang Anda input.
+6. Klik **[Simpan]** untuk menyimpan semua perubahan biaya.
 
 <ImageZoom
-  src="/images/id/Penanganan%20Tindak%20Lanjut.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Maka hasil pesan akan dikirim melalui WhatsApp atau Email sesuai setting pengiriman di Model Formulir, hasil pesan akan jadi seperti berikut.
-
-## **Perbarui Status Pembayaran Hasil Formulir**
-
-Untuk memudahkan monitoring data hasil formulir ketika cs terima pembayaran, pada hasil formulir dapat anda ganti untuk status pembayaran yang memudahkan Anda monitoring data hasil formulir. Dengan cara pilih salah satu data hasil formulir ganti status pembayaran, Jika sudah klik **[Simpan]** untuk menyimpan perubahan tersebut.
-
-<ImageZoom
-  src="/images/id/Penanganan%20Status%20Pembayaran.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Perbarui Status Penjualan Hasil Formulir**
-
-Untuk memudahkan monitoring data hasil formulir ketika proses penjualan sudah sampai mana cs dapat perbarui status dengan cara pilih salah satu data hasil formulir ganti status formurlir, Jika sudah klik **[Simpan]** untuk menyimpan perubahan tersebut.
-
-<ImageZoom
-  src="/images/id/Penanganan%20Status%20Penjualan.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
+src="/images/id/Penanganan%20Ringkasan.png"
+alt="Tampilan Dasbor NoBox"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4"
 />
 
 ---
 
-Jika ada masalah atau kesulitan terkait NoBox, silahkan hubungi kami melalui [Support Ticket](https://crm.mynobox.com/clients/tickets)
+## **Penanganan Tindak Lanjut**
+
+Menu ini digunakan untuk mengirim pesan konfirmasi atau informasi tambahan kepada pelanggan.
+
+1. Pilih salah satu data hasil formulir yang ingin ditindaklanjuti.
+2. Klik ikon **[Follow Up]**.
+3. Pilih kategori tindak lanjut yang sesuai, kemudian sistem akan menampilkan pesan pratinjau yang otomatis terisi dengan data pesanan pelanggan.
+4. Ubah konten pesan jika diperlukan untuk menyesuaikan komunikasi.
+5. Klik **[Kirim]** untuk mengirim pesan, yang akan dikirim melalui WhatsApp atau Email sesuai pengaturan di Model Formulir.
+
+<ImageZoom
+src="/images/id/Penanganan%20Tindak%20Lanjut.png"
+alt="Tampilan Dasbor NoBox"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4"
+/>
+
+---
+
+## **Perbarui Status Pembayaran Hasil Formulir**
+
+Untuk memperbarui status pembayaran pelanggan:
+
+1. Pilih data hasil formulir yang ingin diperbarui.
+2. Ganti status pembayaran sesuai kondisi aktual, misalnya "Sudah Dibayar" atau "Belum Dibayar".
+3. Klik **[Simpan]** agar perubahan tersimpan dan dapat dilihat oleh tim terkait.
+
+<ImageZoom
+src="/images/id/Penanganan%20Status%20Pembayaran.png"
+alt="Tampilan Dasbor NoBox"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4"
+/>
+
+---
+
+## **Perbarui Status Penjualan Hasil Formulir**
+
+Untuk memantau tahapan proses penjualan:
+
+1. Pilih data hasil formulir.
+2. Ganti status penjualan sesuai kondisi terbaru, misalnya "Proses Packing" atau "Dikirim".
+3. Klik **[Simpan]** untuk memastikan semua pembaruan tersimpan dan dapat diakses oleh seluruh tim.
+
+<ImageZoom
+src="/images/id/Penanganan%20Status%20Penjualan.png"
+alt="Tampilan Dasbor NoBox"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4"
+/>
+
+---
+
+## **Tips Penggunaan Hasil Formulir**
+
+Untuk penggunaan Hasil Formulir yang lebih efektif dan optimal, perhatikan beberapa tips berikut:
+
+- Pastikan selalu memeriksa kembali semua data produk dan informasi pelanggan sebelum menyimpan perubahan agar tidak terjadi kesalahan input.
+
+- Perbarui status pembayaran setiap kali konfirmasi diterima dari pelanggan untuk memudahkan pemantauan transaksi.
+
+- Gunakan fitur tindak lanjut secara rutin untuk menjaga komunikasi yang baik dengan pelanggan.
+
+- Simpan setiap perubahan data untuk memastikan informasi tetap konsisten dan dapat diakses oleh tim lain.
+
+- Lakukan pengecekan berkala terhadap status penjualan untuk memastikan setiap tahapan proses transaksi terpantau dengan baik.
+
+---
+
+## **Penanganan Kendala Hasil Formulir**
+
+Jika mengalami kendala saat mengelola data hasil formulir, lakukan langkah-langkah berikut:
+
+- Refresh halaman sistem untuk memuat ulang data terbaru.
+
+- Periksa koneksi internet untuk memastikan sistem berjalan dengan lancar.
+
+- Pastikan hak akses pengguna sudah sesuai agar semua fitur dapat digunakan.
+
+- Logout dan login kembali untuk memperbarui sesi pengguna jika terjadi error.
+
+- Hubungi tim support jika kendala tetap muncul agar segera mendapatkan bantuan teknis.
+
+---
+
+Jika ada masalah atau kesulitan terkait penggunaan NoBox, silahkan hubungi tim dukungan melalui [Support Ticket](https://crm.nobox.ai/clients/tickets) untuk mendapatkan bantuan lebih lanjut.

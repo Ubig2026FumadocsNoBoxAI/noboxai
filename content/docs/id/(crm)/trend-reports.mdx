@@ -1,4 +1,5 @@
 ---
+
 title: Laporan Tren
 description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
 icon: ChartLine
@@ -6,7 +7,7 @@ icon: ChartLine
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Laporan Tren merupakan salah satu menu pada Nobox.Ai yang digunakan untuk menampilkan laporan yang menganalisis dan menggambarkan tren yang terjadi dalam pengelolaan hubungan dengan pelanggan.
+Laporan Tren merupakan salah satu menu pada NoBox.AI yang digunakan untuk menampilkan laporan yang menganalisis dan menggambarkan tren dalam pengelolaan hubungan dengan pelanggan.
 
 Menu ini membantu pengguna dalam memahami perkembangan penjualan, performa produk, serta aktivitas pelanggan dari waktu ke waktu.
 
@@ -14,8 +15,8 @@ Menu ini membantu pengguna dalam memahami perkembangan penjualan, performa produ
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/MpRmL4CCpuI/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/MpRmL4CCpuI"
+  title="Pengenalan Laporan Tren"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
@@ -29,12 +30,12 @@ Menu ini membantu pengguna dalam memahami perkembangan penjualan, performa produ
 ### Tampilan Halaman Utama
 
 <ImageZoom
-  src="/images/id/4.%20Laporan%20Tren.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
- />
+src="/images/id/4.%20Laporan%20Tren.png"
+alt="Tampilan Laporan Tren NoBox"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4"
+/>
 
 Tampilan ini memperlihatkan ringkasan tren penjualan, performa produk, serta perkembangan aktivitas pelanggan dalam periode tertentu.
 
@@ -42,82 +43,115 @@ Pada halaman ini, pengguna dapat memantau pola perubahan data secara visual mela
 
 ### Informasi yang Ditampilkan
 
-Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-masing. Penjelasan dari fungsi tersebut adalah sebagai berikut:
+Pada tampilan tersebut, terdapat beberapa bagian utama yang menyajikan informasi penting.
+
+Data yang ditampilkan mencakup tren penjualan pelanggan, tren produk, perusahaan dan produk teratas, serta pergerakan penawaran berdasarkan waktu.
+
+---
+
+## **Komponen pada Menu Laporan Tren**
+
+Pada halaman Laporan Tren, terdapat beberapa bagian yang memiliki fungsi masing-masing sebagai berikut:
 
 <table>
   <thead>
     <tr>
-      <th width="243.4000244140625">Bagian</th>
+      <th width="250">Bagian</th>
       <th>Fungsi</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Tren Penjualan Pelanggan</td>
-      <td>Informasi total dari hasil tren penjualan pelanggan</td>
+      <td>Menampilkan perkembangan penjualan berdasarkan aktivitas pelanggan.</td>
     </tr>
     <tr>
       <td>Tren Penjualan Produk</td>
-      <td>
-        Informasi total dari hasil tren produk berdasarkan hasil penjualan dan
-        jumlah produk
-      </td>
+      <td>Menampilkan tren penjualan produk berdasarkan jumlah dan nilai transaksi.</td>
     </tr>
     <tr>
-      <td>Perusahan Teratas</td>
-      <td>Informasi data grup teratas</td>
+      <td>Perusahaan Teratas</td>
+      <td>Menampilkan perusahaan dengan performa penjualan tertinggi.</td>
     </tr>
     <tr>
-      <td>produk Teratas</td>
-      <td>Informasi data produk teratas</td>
+      <td>Produk Teratas</td>
+      <td>Menampilkan produk dengan tingkat penjualan tertinggi.</td>
     </tr>
     <tr>
-      <td>Penawaran Berdasarkan Tahapan Berdasarkan Waktu</td>
-      <td>Informasi total penawaran berdasarkan tahapan dan waktunya</td>
+      <td>Penawaran Berdasarkan Tahapan dan Waktu</td>
+      <td>Menampilkan distribusi penawaran berdasarkan tahapan dalam periode tertentu.</td>
     </tr>
   </tbody>
 </table>
 
 ---
 
-## **Manfaat Penggunaan Laporan Tren**
+## **Penjelasan Detail Setiap Komponen**
 
-Dengan menggunakan menu Laporan Tren, pengguna dapat memperoleh beberapa manfaat berikut:
+* **Tren Penjualan Pelanggan**
 
-- Memahami pola penjualan dari waktu ke waktu.
-- Mengidentifikasi produk dan pelanggan dengan performa terbaik.
-- Membantu perencanaan strategi penjualan.
-- Mendukung pengambilan keputusan berbasis data.
+  Menampilkan pola peningkatan atau penurunan penjualan berdasarkan aktivitas pelanggan dari waktu ke waktu.
+
+* **Tren Penjualan Produk**
+
+  Menunjukkan perkembangan penjualan setiap produk berdasarkan jumlah dan nilai transaksi.
+
+* **Perusahaan Teratas**
+
+  Menampilkan perusahaan dengan kontribusi penjualan tertinggi dalam periode tertentu.
+
+* **Produk Teratas**
+
+  Menampilkan produk dengan performa penjualan terbaik.
+
+* **Penawaran Berdasarkan Tahapan dan Waktu**
+
+  Menampilkan pergerakan penawaran pada setiap tahapan berdasarkan periode waktu.
+
+---
+
+## **Cara Membaca Laporan Tren**
+
+### Panduan Membaca Data
+
+Untuk memahami Laporan Tren dengan baik, perhatikan beberapa hal berikut:
+
+1. Pastikan periode waktu yang dipilih sesuai dengan kebutuhan analisis.
+2. Perhatikan pola grafik untuk melihat tren kenaikan atau penurunan.
+3. Bandingkan tren antar periode untuk mengetahui perkembangan bisnis.
+4. Cermati produk dan pelanggan dengan performa tertinggi.
+5. Perhatikan pergerakan penawaran pada setiap tahapan.
+
+### Interpretasi Hasil Laporan
+
+Hasil Laporan Tren dapat digunakan untuk mengetahui arah perkembangan bisnis, preferensi pelanggan, serta efektivitas strategi penjualan.
+
+Manajer dan supervisor dapat memanfaatkan data ini sebagai bahan evaluasi dan perencanaan strategi.
 
 ---
 
 ## **Tips Penggunaan Laporan Tren**
 
-Agar fitur Laporan Tren dapat digunakan secara maksimal, disarankan untuk:
+Agar laporan dapat dimanfaatkan secara maksimal, perhatikan beberapa tips berikut:
 
-- Melakukan analisis data secara rutin.
-- Membandingkan tren antar periode.
-- Menggunakan laporan sebagai bahan evaluasi.
-- Mengombinasikan data tren dengan menu CRM lainnya.
+* Lakukan analisis data secara rutin.
+* Bandingkan tren antar periode.
+* Gunakan laporan sebagai bahan evaluasi.
+* Kombinasikan dengan menu CRM lainnya.
 
 ---
 
 ## **Penanganan Kendala**
 
-Jika mengalami kendala saat mengakses atau membaca Laporan Tren, lakukan langkah berikut:
+Jika mengalami kendala saat menggunakan Laporan Tren, lakukan langkah berikut:
 
-- Pastikan koneksi internet dalam kondisi stabil.
-
-- Refresh halaman sistem untuk memuat ulang data.
-
-- Periksa kembali periode waktu yang dipilih.
-
-- Pastikan akun memiliki hak akses untuk melihat laporan.
-
-- Logout dan login kembali jika data tidak muncul dengan benar.
-
-- Hubungi tim support apabila kendala masih berlanjut.
+* Pastikan koneksi internet stabil.
+* Refresh halaman sistem.
+* Periksa periode waktu yang dipilih.
+* Pastikan akun memiliki hak akses.
+* Logout dan login kembali jika diperlukan.
+* Hubungi tim support jika kendala berlanjut.
 
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait NoBox.AI, silakan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

@@ -7,7 +7,8 @@ icon: Warehouse
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
 Form Warehouse merupakan salah satu menu pada NoBox yang digunakan untuk mengelola data gudang atau lokasi penyimpanan barang dalam sistem.
-Fitur ini berperan penting dalam proses manajemen inventori, pengiriman, serta pengaturan distribusi barang ke pelanggan.
+
+Menu ini berperan penting dalam proses manajemen inventori, pengiriman, serta pengaturan distribusi barang ke pelanggan.
 
 <iframe
   width="800"
@@ -21,6 +22,10 @@ Fitur ini berperan penting dalam proses manajemen inventori, pengiriman, serta p
   allowfullscreen
 ></iframe>
 
+---
+
+## **Tampilan Menu Form Warehouse**
+
 <ImageZoom
   src="/images/id/Form%20Warehouse.png"
   alt="Tampilan Dasbor NoBox"
@@ -29,10 +34,18 @@ Fitur ini berperan penting dalam proses manajemen inventori, pengiriman, serta p
   className="rounded-lg border shadow-sm mb-4"
 />
 
+Tampilan di atas merupakan halaman utama menu **Form Warehouse** yang menampilkan daftar seluruh warehouse atau gudang yang telah dibuat.
+
+Pada halaman ini, pengguna dapat melihat nama warehouse, nomor telepon, alamat, kode pos, dan informasi terkait lainnya, serta melakukan proses tambah, edit, dan hapus warehouse.
+
+---
+
 ## **Tambah Warehouse Formulir**
 
 Untuk membuat data model formulir gudang baru, silakan klik menu **[Form Warehouse] ➔ [Tambah Form Warehouse]**.
 Setelah itu, akan tampil dialog **[Tambah Form Warehouse]**.
+
+### Tampilan Dialog Tambah Warehouse Formulir
 
 <ImageZoom
   src="/images/id/Tambah%20Form%20Warehouse.png"
@@ -41,6 +54,8 @@ Setelah itu, akan tampil dialog **[Tambah Form Warehouse]**.
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
+
+### Isian Warehouse Formulir
 
 Lengkapi isian yang diperlukan sesuai dengan informasi gudang yang akan didaftarkan, sebagai contoh seperti berikut:
 
@@ -54,42 +69,27 @@ Lengkapi isian yang diperlukan sesuai dengan informasi gudang yang akan didaftar
 | Zip Code | Kode pos sesuai alamat gudang. Digunakan untuk validasi alamat, mempercepat proses sortir oleh kurir, serta mengurangi risiko kesalahan pengantaran barang.                                                                                                                                     | 65124         |
 | Address  | Alamat lengkap gudang yang mencakup nama jalan, nomor bangunan, dan keterangan tambahan bila diperlukan. Alamat ini menjadi acuan utama dalam proses pengiriman dan operasional lapangan.                                                                                                       | Jl. Akordion  |
 
-Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data model formulir gudang yang baru saja Anda buat.
+Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data model formulir warehouse yang baru saja Anda buat.
 
-## **Menyimpan Data Warehouse**
+## **Edit dan Hapus Data Warehouse**
 
-Setelah semua field diisi dengan benar, klik tombol **[Simpan]** untuk menyimpan data gudang.
-Jika terdapat field wajib yang belum diisi atau format data tidak sesuai, sistem akan menampilkan pesan error agar Anda dapat segera melakukan perbaikan.
+### Edit Data Warehouse
 
-## **Edit Warehouse Formulir**
+Untuk mengedit suatu data warehouse, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
 
-Untuk mengedit data gudang yang sudah ada:
+Perubahan data akan langsung tersimpan dan dapat digunakan kembali dalam sistem.
 
-1\. Pilih data gudang yang ingin diedit dari daftar.
+### Hapus Data Warehouse
 
-2\. Klik tombol **[Edit]**.
+Untuk menghapus suatu data warehouse adalah dengan pilih data warehouse yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut.
 
-3\. Lakukan perubahan pada field yang diperlukan.
+Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
 
-4\. Klik **[Simpan]** untuk menyimpan perubahan.
-
-Perubahan yang Anda lakukan akan langsung diterapkan pada data gudang tersebut.
-
-## **Hapus Warehouse Formulir**
-
-Untuk menghapus data gudang:
-
-1\. Pilih data gudang yang ingin dihapus.
-
-2\. Klik tombol **[Hapus]**.
-
-3\. Akan tampil dialog konfirmasi penghapusan.
-
-4\. Klik **[Ya]** untuk melanjutkan atau **[Tidak]** untuk membatalkan.
-
-Data gudang yang telah dihapus tidak dapat dikembalikan.
+---
 
 ## **Tips Penggunaan Form Warehouse**
+
+Jika mengalami kendala dalam penggunaan menu Form Warehouse, lakukan langkah berikut:
 
 - Gunakan nama gudang yang mudah dikenali dan sesuai dengan lokasi aslinya.
 - Pastikan data alamat dan kode pos diisi dengan benar untuk mendukung proses pengiriman.
@@ -97,4 +97,18 @@ Data gudang yang telah dihapus tidak dapat dikembalikan.
 - Perbarui data gudang jika terjadi perubahan alamat atau kontak.
 - Hapus data gudang yang sudah tidak digunakan agar data tetap rapi dan relevan.
 
-Dengan memanfaatkan Form Warehouse secara optimal, Anda dapat mengelola data gudang dengan lebih terstruktur, akurat, dan mendukung kelancaran proses logistik dalam sistem NoBox.
+---
+
+## **Penanganan Kendala**
+
+Jika mengalami kendala terkait penggunaan Form Warehouse, langkah yang dapat dilakukan:
+
+- Refresh halaman sistem jika tampilan daftar warehouse tidak muncul.  
+- Periksa koneksi internet Anda.  
+- Pastikan hak akses akun Anda sesuai untuk mengelola data warehouse.  
+- Logout dan login kembali jika terjadi error pada sistem.  
+- Pastikan semua field wajib diisi dengan format yang benar.  
+
+---
+
+Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

@@ -6,7 +6,9 @@ icon: Clipboard
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Ringkasan informasi aktivitas yang berhubungan dengan data form dan dapat mempermudah Anda untuk mengambil keputusan.&#x20;
+Dasbor Formulir merupakan salah satu menu pada NoBox.AI yang digunakan untuk menampilkan ringkasan aktivitas data formulir.
+
+Menu ini memungkinkan pengguna untuk memantau jumlah formulir, hasil pengisian, status pembayaran, serta aktivitas terbaru secara terpusat untuk mendukung proses analisis dan pengambilan keputusan.
 
 <iframe
   width="800"
@@ -20,55 +22,162 @@ Ringkasan informasi aktivitas yang berhubungan dengan data form dan dapat memper
   allowfullscreen
 ></iframe>
 
-Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-masing. Penjelasan dari fungsi tersebut adalah sebagai berikut:
+---
+
+## **Tampilan Menu Dasbor Formulir**
+
+### Tampilan Halaman Utama
 
 <ImageZoom
   src="/images/id/Dasbor%20Formulir.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tampilan Dasbor Formulir"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
+Tampilan ini memperlihatkan ringkasan data formulir yang telah dibuat dan dikirim oleh pengguna.
+
+Pada halaman ini, pengguna dapat langsung melihat statistik formulir, status pembayaran, serta data terbaru tanpa harus membuka menu satu per satu.
+
+### Informasi yang Ditampilkan
+
+Pada tampilan Dasbor Formulir, terdapat beberapa informasi utama yang mendukung pemantauan data.
+
+Data yang disajikan mencakup jumlah model formulir, hasil pengisian, status pembayaran, hasil per status, serta aktivitas terbaru.
+
+---
+
+## **Komponen pada Menu Dasbor Formulir**
+
 <table>
   <thead>
     <tr>
-      <th width="175.4000244140625">Fitur/Tombol</th>
+      <th width="200">Bagian</th>
       <th>Fungsi</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Model</td>
-      <td>Total data model formulir</td>
+      <td>Menampilkan jumlah keseluruhan model formulir yang tersedia dalam sistem</td>
     </tr>
     <tr>
       <td>Hasil</td>
-      <td>Total data hasil formulir</td>
+      <td>Menampilkan total data hasil formulir yang telah disubmit</td>
     </tr>
     <tr>
       <td>Sudah Bayar</td>
-      <td>Total hasil formulir yang sudah dibayar</td>
+      <td>Menampilkan jumlah hasil formulir yang telah menyelesaikan pembayaran</td>
     </tr>
     <tr>
       <td>Belum Bayar</td>
-      <td>Total hasil formulir yang belum bayar</td>
+      <td>Menampilkan jumlah hasil formulir yang belum melakukan pembayaran</td>
     </tr>
     <tr>
       <td>Hasil Per Status</td>
-      <td>Informasi total hasil formulir berdasarkan status</td>
+      <td>Menampilkan jumlah hasil formulir berdasarkan status tertentu</td>
     </tr>
     <tr>
       <td>Hasil Formulir</td>
-      <td>Informasi total keseluruhan dari model formulir yang di submit</td>
+      <td>Menampilkan total keseluruhan hasil formulir yang telah disubmit</td>
     </tr>
     <tr>
       <td>Hasil Terakhir</td>
-      <td>Informasi hasil formulir terbaru</td>
+      <td>Menampilkan data formulir terbaru yang masuk ke sistem</td>
     </tr>
   </tbody>
 </table>
 
 ---
 
-Jika ada masalah atau kesulitan terkait NoBox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.mynobox.com/clients/tickets)
+## **Penjelasan Detail Setiap Komponen Dasbor Formulir**
+
+- **Model**
+
+Bagian ini menampilkan jumlah seluruh model formulir yang telah dibuat di dalam sistem.
+
+Informasi ini digunakan untuk mengetahui jumlah formulir aktif yang sedang digunakan.
+
+- **Hasil**
+
+Menampilkan total data hasil formulir yang telah dikirim oleh pengguna.
+
+Data ini menunjukkan jumlah respon yang masuk dan dapat digunakan sebagai bahan evaluasi.
+
+- **Sudah Bayar**
+
+Menampilkan jumlah hasil formulir yang status pembayarannya telah lunas.
+
+Informasi ini membantu pengguna memantau transaksi yang siap diproses lebih lanjut.
+
+- **Belum Bayar**
+
+Menampilkan jumlah hasil formulir yang belum menyelesaikan pembayaran.
+
+Data ini digunakan sebagai dasar untuk melakukan tindak lanjut kepada pelanggan.
+
+- **Hasil Per Status**
+
+Menampilkan hasil formulir berdasarkan status tertentu, seperti diproses, selesai, atau tertunda.
+
+Fitur ini memudahkan pemantauan perkembangan setiap data.
+
+- **Hasil Formulir**
+
+Menampilkan total keseluruhan hasil formulir yang telah disubmit.
+
+Informasi ini memberikan gambaran umum tingkat penggunaan formulir.
+
+- **Hasil Terakhir**
+
+Menampilkan data formulir terbaru yang masuk ke dalam sistem.
+
+Fitur ini membantu pengguna merespons aktivitas terbaru dengan lebih cepat.
+
+---
+
+## **Cara Membaca Dasbor Formulir**
+
+### Panduan Membaca Data
+
+Untuk memahami data pada Dasbor Formulir dengan baik, pengguna dapat memperhatikan hal berikut:
+
+1. Pastikan data yang ditampilkan sesuai dengan periode yang diinginkan.
+2. Perhatikan jumlah hasil dan status pembayaran.
+3. Pantau perkembangan data melalui hasil per status.
+4. Gunakan data terbaru untuk mempercepat tindak lanjut.
+
+### Interpretasi Data
+
+Data pada dasbor dapat digunakan untuk menilai efektivitas penggunaan formulir dan kelancaran proses administrasi.
+
+Supervisor atau administrator dapat memanfaatkan data ini sebagai bahan evaluasi rutin.
+
+---
+
+## **Tips Penggunaan Dasbor Formulir**
+
+Agar penggunaan Dasbor Formulir lebih maksimal, disarankan untuk:
+
+- Memeriksa dasbor secara berkala
+- Memastikan data selalu diperbarui
+- Memanfaatkan status pembayaran untuk pengelolaan keuangan
+- Menggunakan data terbaru untuk meningkatkan respon
+
+---
+
+## **Penanganan Kendala**
+
+Jika mengalami kendala, lakukan langkah berikut:
+
+- Refresh halaman sistem
+- Pastikan koneksi internet stabil
+- Periksa hak akses akun pengguna
+- Logout dan login kembali
+- Bersihkan cache browser
+- Hubungi tim support jika kendala masih terjadi
+
+---
+
+Jika ada masalah atau kesulitan terkait NoBox.AI, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

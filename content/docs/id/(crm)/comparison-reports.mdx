@@ -34,7 +34,7 @@ Fitur ini membantu pengguna dalam menganalisis performa penjualan secara lebih s
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
- />
+/>
 
 Tampilan ini memperlihatkan ringkasan perbandingan kinerja pengguna berdasarkan data penawaran, tugas, dan aktivitas penjualan dalam periode tertentu.
 
@@ -52,60 +52,80 @@ Data yang disajikan mencakup jumlah penawaran yang diselesaikan, tingkat kemenan
 
 Pada halaman Laporan Perbandingan, terdapat beberapa bagian utama yang memiliki fungsi masing-masing sebagai berikut:
 
-<table>
-  <thead>
-    <tr>
-      <th width="250">Bagian</th>
-      <th>Fungsi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Penawaran yang Diselesaikan oleh Pengguna</td>
-      <td>Menampilkan data penawaran yang telah ditutup oleh masing-masing pengguna.</td>
-    </tr>
-    <tr>
-      <td>Tawaran yang Dimenangkan Pengguna</td>
-      <td>Menampilkan total penawaran yang berstatus <b>Won</b> berdasarkan pengguna.</td>
-    </tr>
-    <tr>
-      <td>Tahapan Penawaran oleh Pengguna</td>
-      <td>Menampilkan distribusi penawaran berdasarkan tahapan proses.</td>
-    </tr>
-    <tr>
-      <td>Status Tugas oleh Pengguna</td>
-      <td>Menampilkan jumlah tugas berdasarkan status penyelesaiannya.</td>
-    </tr>
-    <tr>
-      <td>Kontak, Perusahaan, dan Penawaran Berdasarkan Sumber</td>
-      <td>Menampilkan data berdasarkan sumber perolehan kontak dan penawaran.</td>
-    </tr>
-    <tr>
-      <td>Tingkat Kemenangan oleh Pengguna</td>
-      <td>Menampilkan persentase keberhasilan penawaran tiap pengguna.</td>
-    </tr>
-    <tr>
-      <td>Aktivitas Penjualan oleh Pengguna</td>
-      <td>Menampilkan aktivitas penjualan berdasarkan catatan dan tugas.</td>
-    </tr>
-    <tr>
-      <td>Pemenuhan Tugas oleh Pengguna</td>
-      <td>Menampilkan jumlah tugas yang telah diselesaikan.</td>
-    </tr>
-  </tbody>
-</table>
+| Bagian                                              | Fungsi                                                              |
+| --------------------------------------------------- | ------------------------------------------------------------------- |
+| Penawaran yang Diselesaikan oleh Pengguna           | Menampilkan data penawaran yang telah ditutup oleh masing-masing pengguna |
+| Tawaran yang Dimenangkan Pengguna                   | Menampilkan total penawaran yang berstatus **Won** berdasarkan pengguna |
+| Tahapan Penawaran oleh Pengguna                     | Menampilkan distribusi penawaran berdasarkan tahapan proses         |
+| Status Tugas oleh Pengguna                          | Menampilkan jumlah tugas berdasarkan status penyelesaiannya         |
+| Kontak, Perusahaan, dan Penawaran Berdasarkan Sumber | Menampilkan data berdasarkan sumber perolehan kontak dan penawaran  |
+| Tingkat Kemenangan oleh Pengguna                    | Menampilkan persentase keberhasilan penawaran tiap pengguna         |
+| Aktivitas Penjualan oleh Pengguna                   | Menampilkan aktivitas penjualan berdasarkan catatan dan tugas       |
+| Pemenuhan Tugas oleh Pengguna                       | Menampilkan jumlah tugas yang telah diselesaikan                    |
 
 ---
 
-## **Manfaat Laporan Perbandingan**
+## **Penjelasan Detail Setiap Komponen Laporan Perbandingan**
 
-Dengan menggunakan fitur Laporan Perbandingan, pengguna dapat:
+- **Penawaran yang Diselesaikan oleh Pengguna**
 
-- Memantau performa tim penjualan secara real-time
-- Mengevaluasi pencapaian target penjualan
-- Mengidentifikasi kendala dalam proses penawaran
-- Meningkatkan efektivitas strategi pemasaran
-- Membantu pengambilan keputusan berbasis data
+Menampilkan jumlah penawaran yang telah berhasil diselesaikan oleh masing-masing pengguna untuk mengetahui tingkat produktivitas dalam proses penjualan.
+
+- **Tawaran yang Dimenangkan Pengguna**
+
+Menampilkan total penawaran berstatus **Won** sebagai indikator keberhasilan pengguna dalam mengonversi penawaran menjadi transaksi.
+
+- **Tahapan Penawaran oleh Pengguna**
+
+Menampilkan distribusi penawaran berdasarkan tahapan proses penjualan untuk memantau posisi penawaran dalam pipeline.
+
+- **Status Tugas oleh Pengguna**
+
+Menampilkan jumlah tugas berdasarkan status penyelesaian untuk memantau kedisiplinan dan tanggung jawab pengguna.
+
+- **Kontak, Perusahaan, dan Penawaran Berdasarkan Sumber**
+
+Menampilkan data berdasarkan sumber perolehan untuk mengetahui efektivitas setiap media pemasaran.
+
+- **Tingkat Kemenangan oleh Pengguna**
+
+Menampilkan persentase keberhasilan penawaran sebagai indikator utama performa penjualan.
+
+- **Aktivitas Penjualan oleh Pengguna**
+
+Menampilkan aktivitas komunikasi, catatan, dan tugas untuk memantau keaktifan pengguna dalam follow-up pelanggan.
+
+- **Pemenuhan Tugas oleh Pengguna**
+
+Menampilkan jumlah tugas yang telah diselesaikan sebagai bahan evaluasi komitmen kerja pengguna.
+
+---
+
+## **Cara Membaca Laporan Perbandingan**
+
+### Panduan Membaca Data
+
+Untuk memahami Laporan Perbandingan dengan baik, pengguna dapat memperhatikan beberapa hal berikut:
+
+1. Pastikan periode waktu yang dipilih sesuai dengan kebutuhan analisis.
+
+2. Perhatikan jumlah penawaran yang diselesaikan dan dimenangkan oleh masing-masing pengguna.
+
+3. Bandingkan tingkat kemenangan antar pengguna untuk mengetahui performa terbaik.
+
+4. Cek distribusi penawaran pada setiap tahapan proses penjualan.
+
+5. Perhatikan status dan penyelesaian tugas sebagai indikator kedisiplinan kerja.
+
+6. Amati aktivitas penjualan untuk melihat tingkat keaktifan pengguna dalam melakukan follow-up.
+
+7. Gunakan data perbandingan sebagai bahan evaluasi tim penjualan.
+
+### Interpretasi Hasil Laporan
+
+Hasil Laporan Perbandingan dapat digunakan untuk menilai perbedaan performa antar pengguna, efektivitas proses penjualan, serta kualitas pengelolaan aktivitas CRM.
+
+Manajer dan supervisor dapat memanfaatkan laporan ini sebagai bahan evaluasi kinerja, perencanaan target, dan penyusunan strategi peningkatan performa tim.
 
 ---
 
@@ -133,4 +153,5 @@ Jika terjadi kendala dalam penggunaan fitur Laporan Perbandingan, lakukan langka
 
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui  [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui  
+[Support Ticket](https://crm.nobox.ai/clients/tickets)

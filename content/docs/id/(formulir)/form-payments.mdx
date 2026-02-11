@@ -6,7 +6,9 @@ icon: CreditCard
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Metode Pembayaran merupakan salah satu menu pada NoBox yang digunakan untuk master data metode pembayaran.
+Metode Pembayaran merupakan salah satu menu pada NoBox yang digunakan untuk master data metode pembayaran. 
+
+Menu ini memudahkan pengelolaan berbagai metode pembayaran, baik berupa transfer bank, e-wallet, maupun pembayaran manual.
 
 <iframe
   width="800"
@@ -20,6 +22,10 @@ Metode Pembayaran merupakan salah satu menu pada NoBox yang digunakan untuk mast
   allowfullscreen
 ></iframe>
 
+---
+
+## **Tampilan Menu Metode Pembayaran**
+
 <ImageZoom
   src="/images/id/Metode%20Pembayaran.png"
   alt="Tampilan Dasbor NoBox"
@@ -28,94 +34,82 @@ Metode Pembayaran merupakan salah satu menu pada NoBox yang digunakan untuk mast
   className="rounded-lg border shadow-sm mb-4"
 />
 
+Tampilan di atas merupakan halaman utama menu **Metode Pembayaran** yang menampilkan daftar seluruh metode pembayaran yang telah dibuat.
+
+Pada halaman ini, pengguna dapat melihat nama metode pembayaran, status aktif/nonaktif, instruksi pembayaran, QR Code (jika ada), serta melakukan proses tambah, edit, dan hapus metode pembayaran.
+
+---
+
 ## **Tambah Metode Pembayaran**
 
-Untuk membuat data metode pembayaran, silahkan klik menu **[Metode Pembayaran] ➔ \[Tambah Metode Pembayaran]**. Maka akan tampil dialog **[Tambah Metode Pembayaran]**, kemudian lengkapi isian-isian yang terdapat pada dialog tersebut.
+Untuk membuat data metode pembayaran baru, silahkan klik menu:
+
+**[Metode Pembayaran] ➔ [Tambah Metode Pembayaran]**  
+
+Maka akan tampil dialog **[Tambah Metode Pembayaran]**, kemudian lengkapi isian-isian yang terdapat pada dialog tersebut.
+
+### Tampilan Dialog Tambah Metode Pembayaran
 
 <ImageZoom
   src="/images/id/Tambah%20Metode%20Pembayaran.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tampilan Tambah Metode Pembayaran"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-<table data-header-hidden>
-  <thead>
-    <tr>
-      <th width="156.5999755859375"></th>
-      <th width="194.20001220703125"></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Isian</td>
-      <td>Uraian</td>
-      <td>Contoh</td>
-    </tr>
-    <tr>
-      <td>Tipe</td>
-      <td>Metode pembayaran</td>
-      <td>Bank Transfer</td>
-    </tr>
-    <tr>
-      <td>Nama</td>
-      <td>Nama pembayaran</td>
-      <td>Bank Mandiri</td>
-    </tr>
-    <tr>
-      <td>Aktif</td>
-      <td>Pilih status metode pembayaran</td>
-      <td>Aktif</td>
-    </tr>
-    <tr>
-      <td>Catatan</td>
-      <td>Tambahan keterangan</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Instruksi</td>
-      <td>Instruksi cara bayar</td>
-      <td>
-        Pembayaran ditransfer ke rekening Bank Mandiri xxxx.xxxx.xxxx atas nama
-        Jasmine Aulya. Setelah transfer silahkan kirimkan buktinya ke WhatsApp
-        di 62xxxxxxxxxx.
-      </td>
-    </tr>
-    <tr>
-      <td>Qr Code</td>
-      <td>Upload Qr Code</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
+### **Isian dan Penjelasannya**
 
-Jika Anda sudah melengkapi isian-isian yang ada, klik **[Simpan]** untuk menyimpan data payment yang baru saja Anda buat.
+| **Isian** | **Uraian** | **Contoh** |
+| ---------- | --------- | ---------- |
+| Tipe       | Metode pembayaran | Bank Transfer |
+| Nama       | Nama pembayaran | Bank Mandiri |
+| Aktif      | Pilih status metode pembayaran | Aktif |
+| Catatan    | Tambahan keterangan | - |
+| Instruksi  | Instruksi cara bayar | Pembayaran ditransfer ke rekening Bank Mandiri xxxx.xxxx.xxxx atas nama Jasmine Aulya. Setelah transfer silahkan kirimkan buktinya ke WhatsApp di 62xxxxxxxxxx. |
+| QR Code    | Upload QR Code pembayaran | - |
 
-## **Edit dan Hapus Data Metode Pembayaran**
+Setelah semua isian lengkap, klik **[Simpan]** untuk menyimpan data metode pembayaran baru.
 
-Untuk mengedit suatu data metode pembayaran, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
+---
 
-Untuk menghapus suatu data metode pembayaran adalah dengan pilih data produk yang akan dihapus, kemudian klik **[Hapus]** maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut. Jika ya, klik **[Ya]** jika tidak klik **[Tidak]**.
+## **Edit dan Hapus Data Pembayaran Formulir**
 
-**Cara Menggunakan Metode Pembayaran**
+### Edit Data Pembayaran
 
-Untuk penggunaan metode pembayaran dapat Anda lakukan dengan cara, pilih salah satu data model formulir. Pilih metode pembayaran yang dibutuhkan. Dan klik **[Simpan].**
+Untuk mengedit suatu data pembayaran, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
+
+Perubahan data akan langsung tersimpan dan dapat digunakan kembali dalam sistem.
+
+### Hapus Data Pembayaran
+
+Untuk menghapus suatu data pembayaran adalah dengan pilih data pembayaran yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut.
+
+Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+
+---
+
+## **Cara Menggunakan Metode Pembayaran**
+
+Setelah data metode pembayaran tersimpan, metode ini bisa digunakan di form atau transaksi yang relevan.
+
+1. Pilih salah satu model formulir.  
+2. Pilih metode pembayaran yang tersedia dari daftar.  
+3. Klik **[Simpan]**.  
 
 <ImageZoom
   src="/images/id/Penggunaan%20Metode%20Pembayaran.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Penggunaan Metode Pembayaran"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-Maka data form akan menampilkan pilihan metode pembayaran yang Anda pilih.
+Maka formulir akan menampilkan pilihan metode pembayaran yang sudah dipilih.
 
 <ImageZoom
   src="/images/id/Penggunaan%20Metode%20Pembayaran%20Formulir.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Formulir dengan Metode Pembayaran"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
@@ -123,4 +117,24 @@ Maka data form akan menampilkan pilihan metode pembayaran yang Anda pilih.
 
 ---
 
-Jika ada masalah atau kesulitan terkait NoBox, silahkan hubungi kami melalui [Support Ticket](https://crm.mynobox.com/clients/tickets)
+## **Tips Optimalisasi Penggunaan**
+
+- Pastikan metode pembayaran yang diaktifkan sesuai dengan metode yang benar-benar tersedia.  
+- Gunakan instruksi pembayaran yang jelas agar pelanggan tidak bingung.  
+- Lengkapi QR Code jika ingin mempermudah pelanggan melakukan scan pembayaran.  
+- Periksa kembali data pembayaran sebelum disimpan agar tidak terjadi kesalahan.
+
+---
+
+## **Penanganan Kendala**
+
+Jika terdapat kendala atau masalah terkait metode pembayaran, langkah yang dapat dilakukan:
+
+- Pastikan data metode pembayaran sudah disimpan dengan status **Aktif**.  
+- Periksa kembali kolom **Instruksi** agar instruksi pembayaran terlihat pada formulir.  
+- Jika QR Code tidak muncul, pastikan file sudah diunggah dengan benar.  
+- Refresh halaman atau logout-login kembali jika perubahan tidak langsung terlihat.  
+
+---
+
+Jika ada masalah atau kesulitan terkait NoBox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

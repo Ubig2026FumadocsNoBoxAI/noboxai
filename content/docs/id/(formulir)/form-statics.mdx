@@ -6,16 +6,119 @@ icon: ChartBar
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Statistik Formulir adalah salah satu fitur yang digunakan untuk menampilkan grafik informasi dari hasil model formulir. Dari informasi hasil informasi berdasarkan status proses formulir dan status pembayaran.
+Statistik Formulir merupakan fitur pada NoBox.Ai yang digunakan untuk menampilkan grafik dan informasi visual dari hasil model formulir.  
+
+Menu ini memudahkan pengguna untuk menganalisis data formulir secara cepat, memantau tren respons, membandingkan hasil antar periode, serta mengambil keputusan berdasarkan informasi yang ditampilkan dalam bentuk grafik dan statistik.
+
+---
+
+## **Tampilan Menu Statistik Formulir**
+
+### Tampilan Halaman Utama
 
 <ImageZoom
   src="/images/id/Statistik%20Hasil%20Formulir.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tampilan Statistik Formulir NoBox"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-***
+Halaman ini menampilkan ringkasan grafik hasil formulir berdasarkan status proses dan status pembayaran. Pengguna dapat memantau performa pengisian formulir serta progres pembayaran dengan mudah.
 
-Jika ada masalah atau kesulitan terkait NoBox, silahkan hubungi kami melalui [Support Ticket](https://crm.mynobox.com/clients/tickets)
+### Informasi yang Ditampilkan
+
+Pada halaman Statistik Formulir, data yang disajikan meliputi:
+
+- Grafik distribusi status formulir (misal: pending, diproses, selesai)  
+- Grafik status pembayaran (lunas, belum lunas)  
+- Ringkasan jumlah formulir per kategori  
+- Informasi visual untuk memudahkan analisis performa formulir  
+
+---
+
+## **Komponen pada Menu Statistik Formulir**
+
+Berikut komponen utama dan fungsinya:
+
+<table>
+  <thead>
+    <tr>
+      <th width="200">Komponen</th>
+      <th>Fungsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Grafik Status Formulir</td>
+      <td>Menampilkan distribusi formulir berdasarkan status proses (pending, diproses, selesai).</td>
+    </tr>
+    <tr>
+      <td>Grafik Status Pembayaran</td>
+      <td>Menampilkan persentase formulir berdasarkan status pembayaran (lunas atau belum lunas).</td>
+    </tr>
+    <tr>
+      <td>Ringkasan Formulir</td>
+      <td>Menampilkan jumlah total formulir per kategori dan periode tertentu.</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## **Penjelasan Detail Setiap Komponen Statistik Formulir**
+
+- **Grafik Status Formulir**
+
+Menunjukkan sebaran formulir berdasarkan status proses. Informasi ini membantu manajer atau tim untuk mengetahui jumlah formulir yang masih pending, sedang diproses, atau sudah selesai.
+
+- **Grafik Status Pembayaran**
+
+Menunjukkan proporsi formulir yang sudah dibayar lunas atau belum lunas. Data ini memudahkan tim keuangan dan CS dalam memonitor pembayaran pelanggan.
+
+- **Ringkasan Formulir**
+
+Menampilkan total formulir berdasarkan kategori tertentu, misalnya tipe formulir atau periode waktu. Komponen ini berguna untuk analisis tren pengisian formulir.
+
+---
+
+## **Cara Membaca Statistik Formulir**
+
+### Panduan Membaca Data
+
+1. Periksa periode waktu yang dipilih agar sesuai dengan analisis yang diinginkan.  
+2. Perhatikan grafik status formulir untuk memahami progres pengisian formulir.  
+3. Periksa status pembayaran untuk memantau jumlah transaksi yang sudah dibayar.  
+4. Gunakan ringkasan formulir untuk melihat tren pengisian dan performa formulir.  
+
+### Interpretasi Hasil Statistik
+
+Data statistik formulir dapat digunakan untuk:
+
+- Menilai efektivitas pengisian formulir oleh pengguna atau pelanggan  
+- Memantau progres pembayaran terkait formulir yang sudah dikirim  
+- Membantu perencanaan tindak lanjut untuk formulir yang belum selesai atau belum dibayar  
+
+---
+
+## **Tips Penggunaan Statistik Formulir**
+
+- Periksa statistik secara rutin agar dapat segera menindaklanjuti formulir pending atau belum dibayar.  
+- Gunakan filter periode untuk analisis tren yang lebih akurat.  
+- Bandingkan grafik antar periode untuk melihat perkembangan performa.  
+- Gunakan data sebagai dasar evaluasi internal dan strategi pengelolaan formulir.  
+
+---
+
+## **Penanganan Kendala**
+
+Jika mengalami kendala saat menggunakan Statistik Formulir:
+
+- Refresh halaman sistem.  
+- Pastikan koneksi internet stabil.  
+- Periksa hak akses akun.  
+- Logout dan login kembali jika data tidak muncul.  
+
+---
+
+Jika ada masalah atau kesulitan terkait NoBox, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
