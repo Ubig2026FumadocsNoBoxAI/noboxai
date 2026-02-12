@@ -15,8 +15,8 @@ export const source = loader({
     }
   },
   i18n: {
-    languages: ["en", "id"],
-    defaultLanguage: "en",
+    languages: ["id", "en"],
+    defaultLanguage: "id",
     parser: "dir",
   },
 });
