@@ -3,9 +3,22 @@ import type { MDXComponents } from "mdx/types";
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 import { cn } from "@/lib/utils";
 
+// Import custom callouts
+import { Tips, Kendala } from "@/components/custom-callouts"; // Ensure correct path
+import { Step, Steps } from "fumadocs-ui/components/steps";
+import { Callout } from "fumadocs-ui/components/callout";
+import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
+
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
   return {
     ...defaultMdxComponents,
+    Tips, // Add Tips component
+    Kendala, // Add Kendala component
+    Step,
+    Steps,
+    Callout,
+    Accordion,
+    Accordions,
     iframe: (props: any) => {
       const { width, height, style, className, ...cleanProps } = props;
       return (
@@ -40,7 +53,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
           <img
             {...(props as any)}
             className={cn(
-              "inline-block align-middle m-0 rounded-none shadow-none border-none",
+              "inline-block align-middle m-0 p-0 !mt-0 !mb-0 border-none shadow-none",
               props.className
             )}
           />
@@ -51,7 +64,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
         <ImageZoom
           {...(props as any)}
           className={cn(
-            "rounded-lg border shadow-sm mb-4 my-8 ",
+            "rounded-2xl border bg-muted/50 shadow-sm mb-4 my-8 mx-auto",
             props.className
           )}
         />

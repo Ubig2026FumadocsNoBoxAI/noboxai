@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@source "../components";
+@source "../content";
+@source "../mdx-components.tsx";
 @import "fumadocs-ui/css/neutral.css";
 @import "fumadocs-ui/css/preset.css";
 @import "tw-animate-css";
