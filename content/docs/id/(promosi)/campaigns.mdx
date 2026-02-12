@@ -8,6 +8,12 @@ import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
 Promosi adalah salah satu menu pada Nobox.Ai untuk melakukan promosi dengan mudah dan efisien kepada target promosi dengan diintegrasikan ke berbagai channel seperti WhatsApp, Telegram dll.
 
+Menu ini membantu pengguna dalam menyebarkan informasi, penawaran, dan kampanye kepada pelanggan secara terpusat.
+
+---
+
+## **Tampilan Menu Promosi***
+
 <ImageZoom
   src="/images/id/1.%20Promosi.png"
   alt="Tampilan Menu Promosi"
@@ -15,6 +21,14 @@ Promosi adalah salah satu menu pada Nobox.Ai untuk melakukan promosi dengan muda
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+Tampilan di atas merupakan halaman utama menu Promosi.
+
+Pada halaman ini, pengguna dapat melihat daftar promosi, status pengiriman, serta melakukan pengelolaan data promosi.
+
+---
+
+## **Fitur pada Menu Promosi**
 
 Pada tampilan tersebut, terdapat beberapa status promosi. Penjelasan dari status tersebut adalah sebagai berikut:
 
@@ -69,9 +83,13 @@ Pada tampilan tersebut, terdapat beberapa status promosi. Penjelasan dari status
   </tbody>
 </table>
 
-## Tambah Promosi
+---
+
+## **Tambah Promosi**
 
 Untuk tambah data promosi, silahkan klik menu **[Promosi]** ➔ **[Tambah Promosi]** maka akan tampil dialog **[Tambah Promosi]**.
+
+### Tampilan Dialog Tambah Promosi
 
 <ImageZoom
   src="/images/id/2.%20Tambah%20Promosi.png"
@@ -81,109 +99,256 @@ Untuk tambah data promosi, silahkan klik menu **[Promosi]** ➔ **[Tambah Promos
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Lengkapi isian yang diperlukan, contoh:
+---
 
-| Isian                                  | Uraian                                                                                            | Contoh                                                     |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| Nama                                   | Nama promosi                                                                                      | Promo Akhir Tahun 2024                                     |
-| Kanal                                  | Pilih channel yang akan dipakai                                                                   | WhatsApp                                                   |
-| Akun                                   | Pilih akun                                                                                        | s_whatsapp tester                                          |
-| List                                   | Pilih list                                                                                        | Akhir Tahun                                                |
-| Group                                  | Pilih grup                                                                                        | -                                                          |
-| Tag                                    | Pilih tag                                                                                         | Promo Desember                                             |
-| Tim                                    | Pilih tim                                                                                         | -                                                          |
-| Format Pesan                           | Pilih format pesan                                                                                | Text                                                       |
-| Tautan Singkat                         | Informasi mempersingkat pelacak tautan                                                            | Tidak aktif                                                |
-| Pesan                                  | Pesan promosi                                                                                     | Promo paket sahur lebih terjangkau jangan sampai kehabisan |
-| Lampiran                               | Lampiran file                                                                                     | -                                                          |
-| Kirim lampiran berdasarkan sumber data | Aktifkan atau tidaknya kirim lampiran berdasarkan sumber untuk mengirim lampiran dari sumber data | Tidak aktif                                                |
-| Mulai, Berakhir                        | Tanggal mulai dan berakhir pengiriman promosi                                                     | 28-11-2024, 29-11-2024                                     |
-| Atur Jadwal                            | Informasi atur jadwal promosi                                                                     | Tidak aktif                                                |
-| Jadwal                                 | Atur tanggal dan jam jadwal promosi                                                               | -                                                          |
-| Catatan                                | Catatan promosi                                                                                   | Promosi untuk pelanggan                                    |
+### **Isian Dialog Tambah Promosi**
 
-Jika sudah melengkapi, klik **[Simpan]**. Status promosi akan menjadi **[Draft]**.
+Pada dialog **Tambah Promosi**, pengguna diwajibkan mengisi seluruh kolom yang tersedia sesuai dengan kebutuhan kampanye promosi yang akan dijalankan.
 
-## Template
+Setiap isian memiliki fungsi penting dalam menentukan target pengiriman, isi pesan, waktu pelaksanaan, serta proses monitoring promosi. Oleh karena itu, pastikan seluruh data yang dimasukkan sudah benar sebelum disimpan.
 
-<ImageZoom
-  src="/images/id/template.png"
-  alt="Template Promosi"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
+Berikut penjelasan detail dari setiap isian yang tersedia pada formulir Tambah Promosi:
 
-- **Template**: pilih pesan template.
-- **User**: menampilkan nama pengguna.
-- **Company**: menampilkan data perusahaan (nama, email, alamat).
-- **Contact**: menampilkan data kontak (nama, telepon, email).
-- **Data**: mengambil data dari sumber file.
-- **Random**: menampilkan karakter acak.
-- **Spinner**: mengirim teks acak.
-- **Synonym**: membuat variasi teks bermakna sama.
-- **Tracking**: mengirim tautan untuk melacak apakah sudah dibaca.
-- **Split**: memisahkan balon pesan yang dikirim.
+| Isian                                  | Uraian                                                                                                                                                                           | Contoh                                                     |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Nama                                   | Nama promosi yang digunakan sebagai identitas kampanye. Nama ini berfungsi untuk membedakan satu promosi dengan promosi lainnya serta memudahkan pencarian dan pengelolaan data. | Promo Akhir Tahun 2024                                     |
+| Kanal                                  | Channel atau media komunikasi yang akan digunakan untuk mengirim pesan promosi kepada pelanggan, seperti WhatsApp, Telegram, atau platform lain yang telah terintegrasi.         | WhatsApp                                                   |
+| Akun                                   | Akun resmi yang terhubung dengan channel terpilih dan digunakan sebagai pengirim pesan. Pastikan akun sudah aktif, terhubung, dan memiliki izin pengiriman.                      | s_whatsapp tester                                          |
+| List                                   | Daftar kontak pelanggan yang menjadi target pengiriman pesan. Data diambil dari database kontak yang telah disimpan sebelumnya di dalam sistem.                                  | Akhir Tahun                                                |
+| Group                                  | Kelompok pelanggan tertentu berdasarkan kategori, wilayah, atau karakteristik lainnya. Digunakan untuk segmentasi promosi agar lebih tepat sasaran.                              | -                                                          |
+| Tag                                    | Label atau penanda untuk mengelompokkan data promosi berdasarkan tema, periode, atau jenis kampanye tertentu, sehingga memudahkan proses pencarian.                              | Promo Desember                                             |
+| Tim                                    | Tim internal atau divisi yang bertanggung jawab terhadap pelaksanaan promosi, mulai dari perencanaan hingga evaluasi hasil pengiriman.                                           | -                                                          |
+| Format Pesan                           | Jenis format pesan yang akan dikirim, seperti teks, gambar, video, atau kombinasi media, sesuai dengan kebutuhan dan strategi promosi.                                           | Text                                                       |
+| Tautan Singkat                         | Pengaturan untuk mengaktifkan fitur pemendek tautan sekaligus pelacakan aktivitas klik pelanggan pada pesan yang dikirim. Digunakan untuk analisis performa promosi.             | Tidak aktif                                                |
+| Pesan                                  | Isi utama pesan promosi yang akan diterima pelanggan. Pesan dapat dikombinasikan dengan template, variabel data, dan fitur personalisasi agar lebih menarik.                     | Promo paket sahur lebih terjangkau jangan sampai kehabisan |
+| Lampiran                               | File tambahan berupa gambar, dokumen, video, atau media lainnya yang dikirim bersamaan dengan pesan untuk memperkuat informasi promosi.                                          | -                                                          |
+| Kirim lampiran berdasarkan sumber data | Fitur untuk mengirim lampiran yang berbeda kepada setiap penerima berdasarkan data pada file sumber, sehingga pesan menjadi lebih personal dan relevan.                          | Tidak aktif                                                |
+| Mulai, Berakhir                        | Rentang waktu aktif pengiriman promosi. Sistem hanya akan memproses pengiriman pesan selama periode yang telah ditentukan pada kolom ini.                                        | 28-11-2024, 29-11-2024                                     |
+| Atur Jadwal                            | Pengaturan untuk mengaktifkan pengiriman pesan secara otomatis pada waktu tertentu tanpa perlu dilakukan secara manual.                                                          | Tidak aktif                                                |
+| Jadwal                                 | Penentuan tanggal dan jam pengiriman pesan apabila fitur penjadwalan diaktifkan, sehingga pesan terkirim tepat waktu sesuai perencanaan.                                         | -                                                          |
+| Catatan                                | Keterangan tambahan yang bersifat internal sebagai dokumentasi, referensi, atau bahan evaluasi kampanye promosi di masa mendatang.                                               | Promosi untuk pelanggan                                    |
 
-## Tes Kirim Pesan
+Setelah seluruh isian dilengkapi dengan benar dan sesuai kebutuhan, klik tombol **[Simpan]** untuk menyimpan data promosi ke dalam sistem.
 
-Klik **[Tes Kirim Pesan]** untuk mengirim data promosi ke nomor/email Anda.
+Data promosi yang berhasil disimpan akan otomatis memiliki status **[Draft]**, yang menandakan bahwa promosi belum diproses dan masih dapat dilakukan perubahan, pengecekan ulang, maupun penyesuaian sebelum dilanjutkan ke tahap pengiriman.
+
+Status **[Draft]** memberikan kesempatan kepada pengguna untuk memastikan seluruh konfigurasi sudah sesuai dengan strategi promosi yang direncanakan.
+
+---
+
+Siap 👍
+Berikut versi **yang lebih panjang, detail, dan tetap jelas** untuk bagian **Template Pesan**:
+
+---
+
+## **Template Pesan**
 
 <ImageZoom
-  src="/images/id/Tes-Kirim-Pesan.png"
-  alt="Tes Kirim Pesan"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+src="/images/id/template.png"
+alt="Template Promosi"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Buat Pesan
+Menu **Template Pesan** digunakan untuk membantu pengguna dalam menyusun dan mengelola pesan promosi secara lebih cepat, terstruktur, dan konsisten.
 
-Klik tab **[Kirim Pesan]** ➔ **[Buat Pesan]** untuk melihat hasil siaran.
+Melalui fitur ini, pengguna dapat membuat format pesan yang dapat digunakan kembali pada berbagai kampanye promosi, sehingga tidak perlu menulis pesan dari awal setiap kali membuat promosi baru.
+
+Template juga mendukung penggunaan variabel data, personalisasi, serta kombinasi teks dinamis agar pesan yang dikirim terasa lebih relevan bagi setiap penerima.
+
+### Fitur Template Pesan
+
+Fitur template digunakan untuk mempermudah penyusunan pesan promosi dengan memanfaatkan berbagai komponen otomatis yang tersedia di dalam sistem.
+
+Berikut penjelasan dari masing-masing fitur pada menu Template Pesan:
+
+* **Template**
+  Digunakan untuk memilih atau memanggil template pesan yang telah dibuat sebelumnya. Dengan fitur ini, pengguna dapat menggunakan format pesan yang sama untuk berbagai kampanye tanpa perlu menulis ulang.
+
+* **User**
+  Berfungsi untuk menampilkan data pengguna yang sedang mengelola promosi, seperti nama atau informasi akun, sehingga pesan dapat disesuaikan dengan identitas pengirim.
+
+* **Company**
+  Menampilkan informasi perusahaan, seperti nama perusahaan, alamat, dan email resmi. Data ini berguna untuk meningkatkan kredibilitas pesan yang dikirim kepada pelanggan.
+
+* **Contact**
+  Digunakan untuk menampilkan data kontak pelanggan, seperti nama, nomor telepon, atau email. Fitur ini mendukung personalisasi pesan agar setiap penerima merasa lebih diperhatikan.
+
+* **Data**
+  Berfungsi untuk mengambil data dari file sumber (misalnya Excel) yang telah diunggah sebelumnya. Dengan fitur ini, pesan dapat disesuaikan berdasarkan data masing-masing pelanggan.
+
+* **Random**
+  Menghasilkan karakter atau teks acak yang berbeda pada setiap pesan. Fitur ini membantu mengurangi risiko pesan terdeteksi sebagai spam karena memiliki variasi konten.
+
+* **Spinner**
+  Digunakan untuk mengirim variasi teks secara acak dari beberapa pilihan kalimat yang tersedia. Dengan demikian, setiap pesan memiliki susunan kalimat yang berbeda meskipun berasal dari satu template.
+
+* **Synonym**
+  Berfungsi untuk mengganti kata tertentu dengan sinonim yang memiliki makna sama. Fitur ini bertujuan untuk membuat pesan lebih bervariasi tanpa mengubah maksud utama.
+
+* **Tracking**
+  Digunakan untuk menyisipkan tautan pelacakan pada pesan. Fitur ini memungkinkan pengguna mengetahui apakah pesan telah dibuka atau diklik oleh penerima.
+
+* **Split**
+  Berfungsi untuk memisahkan pesan menjadi beberapa balon chat atau bagian, sehingga tampilan pesan terlihat lebih natural seperti percakapan biasa.
+
+Dengan memanfaatkan fitur **Template Pesan** secara optimal, pengguna dapat meningkatkan efisiensi pembuatan pesan, menjaga konsistensi komunikasi, serta memaksimalkan efektivitas kampanye promosi yang dijalankan.
+
+---
+
+## **Uji Coba Pengiriman Pesan**
+
+Fitur **Uji Coba Pengiriman Pesan** digunakan untuk melakukan pengujian terlebih dahulu sebelum promosi dikirimkan ke seluruh target penerima.
+
+Melalui fitur ini, pengguna dapat memastikan bahwa isi pesan, format tampilan, variabel data, tautan, serta lampiran sudah sesuai dengan yang diinginkan. Dengan melakukan uji coba, risiko kesalahan pengiriman dapat diminimalkan.
+
+Uji coba juga membantu pengguna dalam mengevaluasi efektivitas pesan sebelum kampanye promosi dijalankan secara penuh.
+
+---
+
+### Tes Kirim Pesan
+
+Untuk melakukan pengujian pengiriman pesan, klik tombol **[Tes Kirim Pesan]**. Sistem akan mengirimkan contoh pesan promosi ke nomor telepon atau alamat email milik pengguna.
+
+Fitur ini memungkinkan pengguna untuk melihat secara langsung bagaimana pesan akan diterima oleh pelanggan.
 
 <ImageZoom
-  src="/images/id/Buat-Pesan.png"
-  alt="Buat Pesan"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+src="/images/id/Tes-Kirim-Pesan.png"
+alt="Tes Kirim Pesan"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Hapus Semua Pesan
+Setelah pesan uji coba dikirim, periksa beberapa hal berikut:
 
-Menghapus semua pesan yang sudah dibuat.
+* Pastikan isi pesan tampil dengan benar tanpa kesalahan penulisan.
+* Periksa apakah variabel data, seperti nama pelanggan atau informasi lainnya, sudah muncul sesuai dengan data sumber.
+* Pastikan tautan yang digunakan dapat dibuka dengan baik.
+* Periksa apakah lampiran berhasil terkirim dan dapat diakses.
+* Pastikan format pesan sesuai dengan channel yang digunakan (WhatsApp, Telegram, Email, dan lainnya).
+
+Jika hasil uji coba sudah sesuai dengan kebutuhan, pengguna dapat melanjutkan ke tahap pengiriman promosi secara massal.
+
+Namun, jika masih ditemukan kesalahan, pengguna disarankan untuk melakukan perbaikan terlebih dahulu pada isi pesan, template, atau pengaturan promosi sebelum menjalankan proses pengiriman.
+
+---
+
+## **Pembuatan dan Pengelolaan Pesan**
+
+Menu **Pembuatan dan Pengelolaan Pesan** digunakan untuk mengatur seluruh proses pembuatan, pengelolaan, dan pengiriman pesan promosi sebelum dikirimkan kepada target penerima.
+
+Pada tahap ini, pengguna dapat menyiapkan isi pesan, memeriksa hasil siaran, serta melakukan penghapusan pesan apabila diperlukan.
+
+---
+
+### **Buat Pesan**
+
+Untuk membuat pesan promosi, klik tab **[Kirim Pesan]** ➔ **[Buat Pesan]**.
+Fitur ini digunakan untuk menghasilkan pesan berdasarkan data promosi, template, serta sumber data yang telah dipilih sebelumnya.
+
+Setelah proses pembuatan selesai, sistem akan menampilkan hasil siaran pesan yang siap dikirimkan.
 
 <ImageZoom
-  src="/images/id/Hapus-Pesan.png"
-  alt="Hapus Semua Pesan"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+src="/images/id/Buat-Pesan.png"
+alt="Buat Pesan"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Proses Promosi
+Melalui fitur ini, pengguna dapat:
 
-Klik **[Buat Pesan]** lalu **[Proses]** untuk mengirim promosi. Status berubah menjadi **[Process]**.
+* Melihat daftar pesan yang telah dibuat.
+* Memastikan isi pesan sudah sesuai dengan format yang ditentukan.
+* Memeriksa hasil penggabungan data dari template dan sumber data.
+* Mengevaluasi tampilan pesan sebelum dikirimkan.
+
+Jika ditemukan kesalahan, pengguna dapat kembali melakukan perbaikan pada pengaturan promosi atau template pesan.
+
+---
+
+### **Hapus Semua Pesan**
+
+Fitur **Hapus Semua Pesan** digunakan untuk menghapus seluruh pesan yang telah dibuat dalam satu promosi.
+
+Penghapusan ini biasanya dilakukan apabila terjadi kesalahan pengaturan, perubahan strategi promosi, atau saat ingin membuat ulang pesan dari awal.
 
 <ImageZoom
-  src="/images/id/Proses-Promosi.png"
-  alt="Proses Promosi"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+src="/images/id/Hapus-Pesan.png"
+alt="Hapus Semua Pesan"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Monitoring promosi: buka tab **[Kirim Pesan]** atau menu **[Kotak Masuk]**.
+Sebelum menggunakan fitur ini, pastikan bahwa pesan yang akan dihapus benar-benar tidak diperlukan, karena proses penghapusan bersifat permanen dan tidak dapat dibatalkan.
+
+---
+
+## **Proses dan Monitoring Promosi**
+
+Menu **Proses dan Monitoring Promosi** digunakan untuk menjalankan pengiriman pesan serta memantau hasil pengiriman secara real-time.
+
+Melalui menu ini, pengguna dapat mengetahui status promosi, performa pengiriman, serta respon dari penerima pesan.
+
+---
+
+### **Proses Promosi**
+
+Setelah pesan berhasil dibuat, klik tombol **[Buat Pesan]** lalu **[Proses]** untuk memulai pengiriman promosi.
+
+Saat proses dimulai, status promosi akan berubah menjadi **[Process]**, yang menandakan bahwa sistem sedang mengirimkan pesan ke seluruh target penerima.
 
 <ImageZoom
-  src="/images/id/Monitoring-Kotak-Masuk.png"
-  alt="Monitoring Kotak Masuk"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+src="/images/id/Proses-Promosi.png"
+alt="Proses Promosi"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Gagal ke Antrean
+Pada tahap ini, sistem akan:
+
+* Mengirim pesan secara bertahap sesuai dengan kapasitas channel.
+* Memproses data penerima secara otomatis.
+* Menyesuaikan format pesan dengan media yang digunakan.
+* Mencatat status pengiriman setiap pesan.
+
+Selama proses berlangsung, pengguna disarankan untuk tidak mengubah pengaturan promosi agar proses berjalan dengan stabil.
+
+---
+
+### **Monitoring Promosi**
+
+Untuk memantau jalannya pengiriman pesan, pengguna dapat membuka tab **[Kirim Pesan]** atau menu **[Kotak Masuk]**.
+
+Melalui menu ini, pengguna dapat melihat status pesan yang telah dikirim, diterima, gagal, atau masih dalam antrean.
+
+<ImageZoom
+src="/images/id/Monitoring-Kotak-Masuk.png"
+alt="Monitoring Kotak Masuk"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+Pada halaman monitoring, pengguna dapat:
+
+* Melihat detail status pengiriman pesan.
+* Memantau respon pelanggan terhadap promosi.
+* Mengidentifikasi pesan yang gagal terkirim.
+* Melakukan tindak lanjut terhadap pesan yang belum mendapatkan respon.
+* Mengevaluasi efektivitas kampanye promosi.
+
+Dengan fitur monitoring ini, pengguna dapat melakukan analisis dan perbaikan strategi promosi agar hasil yang diperoleh lebih optimal.
+
+---
+
+## Penanganan Pesan Gagal
+
+### Gagal ke Antrean
 
 Kirim ulang pesan yang gagal ke antrean.
 
@@ -195,7 +360,11 @@ Kirim ulang pesan yang gagal ke antrean.
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Total Kirim Pesan
+---
+
+## Statistik Pengiriman Pesan
+
+### Total Kirim Pesan
 
 Menampilkan total promosi sesuai status.
 
@@ -207,7 +376,11 @@ Menampilkan total promosi sesuai status.
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Tandai Promosi Selesai
+---
+
+## Penyelesaian dan Pembatalan Promosi
+
+### Tandai Promosi Selesai
 
 Klik **[Selesai]** untuk menandai promosi selesai.
 
@@ -219,7 +392,7 @@ Klik **[Selesai]** untuk menandai promosi selesai.
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Batalkan Promosi
+### Batalkan Promosi
 
 Klik **[Batal]** untuk membatalkan promosi.
 
@@ -231,7 +404,11 @@ Klik **[Batal]** untuk membatalkan promosi.
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Cara Menggunakan Tautan Singkat
+---
+
+## Penggunaan Tautan Singkat
+
+### Cara Menggunakan Tautan Singkat
 
 1. Aktifkan tautan singkat.
 2. Tambah integrasi Bitly di tab **[Integrasi]** menu **[Profil Usaha]**.
@@ -255,7 +432,11 @@ Klik **[Batal]** untuk membatalkan promosi.
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Cara Menggunakan Sumber Data
+---
+
+## Penggunaan Sumber Data
+
+### Cara Menggunakan Sumber Data
 
 1. Upload file Excel di tab **[Sumber Data]** dengan kolom yang sesuai **external id**.
 
@@ -297,7 +478,11 @@ Klik **[Batal]** untuk membatalkan promosi.
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Cara Menggunakan Kirim Lampiran Berdasarkan Sumber Data
+---
+
+## Pengiriman Lampiran Berdasarkan Sumber Data
+
+### Cara Menggunakan Kirim Lampiran Berdasarkan Sumber Data
 
 1. Upload file di **[Lampiran]**.
 2. Aktifkan kirim lampiran berdasarkan sumber data.
@@ -330,11 +515,15 @@ Klik **[Batal]** untuk membatalkan promosi.
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Edit Dan Hapus Data Promosi
+---
+
+## Edit dan Hapus Data Promosi
 
 - Pilih data promosi yang ingin diedit, ubah, lalu klik **[Simpan]**.
 - Pilih data promosi yang ingin dihapus, klik **[Hapus]**, lalu konfirmasi **[Ya]** atau **[Tidak]**.
 
 ---
+
+## Penanganan Kendala
 
 Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

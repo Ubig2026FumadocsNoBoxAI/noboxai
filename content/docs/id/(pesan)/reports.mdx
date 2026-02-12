@@ -8,6 +8,8 @@ import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
 Laporan adalah salah satu menu pada Nobox.Ai yang digunakan untuk menampilkan laporan dari percakapan yang dilakukan.
 
+Menu ini membantu pengguna memantau performa komunikasi dengan pelanggan, menganalisis jumlah percakapan, respon agen, tingkat penyelesaian layanan, serta efektivitas penanganan pesan.
+
 <iframe
   width="800"
   height="450"
@@ -26,7 +28,7 @@ Laporan adalah salah satu menu pada Nobox.Ai yang digunakan untuk menampilkan la
 
 Menu Laporan menampilkan berbagai jenis data statistik dan aktivitas percakapan yang terjadi dalam sistem Nobox.Ai.
 
-Melalui halaman ini, pengguna dapat memantau performa agen, distribusi pesan, serta efektivitas layanan pelanggan.
+Pada halaman ini, pengguna dapat memantau performa agen, distribusi pesan, serta efektivitas layanan pelanggan.
 
 ---
 
@@ -34,7 +36,9 @@ Melalui halaman ini, pengguna dapat memantau performa agen, distribusi pesan, se
 
 ### Informasi Status Agen
 
-Pada salah satu submenu Nobox.Ai ini berisi informasi siapa saja agen yang mengubah statusnya menjadi online maupun offline. Serta informasi kapan terakhir kali agen login.
+Pada salah satu submenu NoBox.Ai ini berisi informasi mengenai seluruh agen yang mengubah statusnya menjadi **online** maupun **offline**, serta data waktu terakhir agen melakukan login ke dalam sistem.
+
+Informasi ini sangat penting untuk mengetahui tingkat kehadiran agen, kesiapan dalam melayani pelanggan, serta membantu supervisor dalam mengatur jadwal kerja dan pembagian tugas secara lebih efektif.
 
 ### Tampilan Status Agen
 
@@ -46,7 +50,7 @@ Pada salah satu submenu Nobox.Ai ini berisi informasi siapa saja agen yang mengu
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Submenu ini membantu supervisor dalam memantau kehadiran dan kesiapan agen secara real-time.
+Submenu ini membantu supervisor dalam memantau kehadiran, aktivitas, dan kesiapan agen secara real-time sehingga proses pelayanan dapat berjalan lebih optimal.
 
 ---
 
@@ -54,7 +58,9 @@ Submenu ini membantu supervisor dalam memantau kehadiran dan kesiapan agen secar
 
 ### Informasi Pindahkan Percakapan
 
-Informasi terkait penyerahan pesan pada setiap agen.
+Menu ini berisi informasi terkait proses penyerahan atau pemindahan pesan dari satu agen ke agen lainnya.
+
+Fitur ini biasanya digunakan ketika agen yang sedang menangani percakapan tidak dapat melanjutkan layanan, mengalami kendala, atau ketika diperlukan penanganan oleh agen yang lebih sesuai.
 
 ### Tampilan Pindahkan Percakapan
 
@@ -66,7 +72,7 @@ Informasi terkait penyerahan pesan pada setiap agen.
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Fitur ini memudahkan pengelolaan distribusi percakapan antar agen.
+Fitur ini memudahkan pengelolaan distribusi percakapan antar agen agar pelayanan kepada pelanggan tetap berjalan lancar tanpa terputus.
 
 ---
 
@@ -74,7 +80,9 @@ Fitur ini memudahkan pengelolaan distribusi percakapan antar agen.
 
 ### Informasi Percakapan Agen
 
-Informasi daftar agen dan jumlah percakapan dari setiap agen.
+Submenu ini menampilkan informasi berupa daftar agen beserta jumlah percakapan yang sedang maupun telah ditangani oleh masing-masing agen.
+
+Data ini mencakup jumlah chat masuk, chat yang masih diproses, serta chat yang telah diselesaikan oleh setiap agen.
 
 ### Tampilan Percakapan Agen
 
@@ -86,7 +94,7 @@ Informasi daftar agen dan jumlah percakapan dari setiap agen.
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Data ini dapat digunakan untuk evaluasi beban kerja masing-masing agen.
+Informasi ini dapat digunakan oleh supervisor untuk mengevaluasi beban kerja, memastikan pemerataan tugas, serta meningkatkan efisiensi kerja tim.
 
 ---
 
@@ -94,7 +102,9 @@ Data ini dapat digunakan untuk evaluasi beban kerja masing-masing agen.
 
 ### Informasi Kinerja Agen
 
-Berisikan total percakapan terselesaikan, pesan terkirim, dan menetapkan pesan dari setiap agen.
+Menu ini berisikan data terkait performa masing-masing agen, seperti total percakapan yang berhasil diselesaikan, jumlah pesan yang telah terkirim, serta jumlah pesan yang ditetapkan atau dialokasikan kepada agen.
+
+Data kinerja ini disajikan dalam bentuk ringkasan maupun detail sesuai dengan periode waktu tertentu.
 
 ### Tampilan Kinerja Agen
 
@@ -106,7 +116,7 @@ Berisikan total percakapan terselesaikan, pesan terkirim, dan menetapkan pesan d
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Laporan ini membantu manajemen dalam menilai produktivitas agen.
+Laporan ini membantu manajemen dalam menilai tingkat produktivitas, kualitas layanan, serta menentukan strategi peningkatan performa agen.
 
 ---
 
@@ -114,7 +124,11 @@ Laporan ini membantu manajemen dalam menilai produktivitas agen.
 
 ### Informasi Tag Conversations
 
-Berisikan data banyak tag yang digunakan dalam bentuk pertanggal yang difilter perbulan dan pada tahun tertentu.
+Submenu ini menampilkan data penggunaan tag percakapan dalam bentuk laporan berdasarkan tanggal, bulan, dan tahun tertentu.
+
+Data disajikan dalam bentuk grafik atau tabel yang menunjukkan jumlah tag yang digunakan dalam setiap periode waktu.
+
+Informasi ini dapat difilter sesuai kebutuhan pengguna untuk memudahkan analisis tren percakapan.
 
 ### Tampilan Tag Conversations
 
@@ -126,19 +140,7 @@ Berisikan data banyak tag yang digunakan dalam bentuk pertanggal yang difilter p
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Laporan ini berguna untuk menganalisis tren percakapan berdasarkan kategori tag.
-
----
-
-## **Manfaat Menu Laporan**
-
-Menu Laporan memberikan beberapa manfaat, antara lain:
-
-- Memantau aktivitas agen secara menyeluruh.
-- Mengevaluasi performa layanan pelanggan.
-- Membantu pengambilan keputusan berbasis data.
-- Mengoptimalkan distribusi kerja.
-- Meningkatkan kualitas pelayanan.
+Laporan ini berguna untuk menganalisis tren percakapan berdasarkan kategori tag, memahami kebutuhan pelanggan, serta membantu penyusunan strategi komunikasi dan pemasaran yang lebih tepat sasaran.
 
 ---
 

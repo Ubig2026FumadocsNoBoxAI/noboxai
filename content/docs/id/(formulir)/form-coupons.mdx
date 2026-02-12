@@ -6,7 +6,7 @@ icon: Percent
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Form Coupons merupakan salah satu menu pada NoBox yang digunakan untuk membuat, mengelola, dan mengatur kupon atau kode promo yang dapat digunakan dalam sistem.  
+Form Coupons merupakan salah satu menu pada NoBox yang digunakan untuk membuat, mengelola, dan mengatur kupon atau kode promo yang dapat digunakan dalam sistem.
 
 Menu ini sangat berguna untuk mendukung strategi pemasaran, meningkatkan konversi penjualan, serta memberikan insentif kepada pelanggan dalam bentuk potongan harga atau gratis ongkir.
 
@@ -40,12 +40,12 @@ Pada halaman ini, pengguna dapat melihat nama kupon, kode kupon, status, dan pen
 
 ---
 
-## **Tambah Coupons Formulir**
+## **Tambah Form Coupons**
 
 Untuk membuat data model kupon silahkan klik menu **[Form Coupons] ➔ [Tambah Form Coupons]**.  
 Maka akan tampil dialog **[Tambah Form Coupons]**.
 
-### Tampilan Dialog Tambah Coupons Formulir
+### Tampilan Dialog Tambah Form Coupons
 
 <ImageZoom
   src="/images/id/Tambah%20Form%20Coupons.png"
@@ -55,51 +55,51 @@ Maka akan tampil dialog **[Tambah Form Coupons]**.
   className="rounded-lg border shadow-sm mb-4"
 />
 
-### Isian Coupons Formulir
+### Isian Dialog Tambah Form Coupons
 
 Lengkapi isian yang diperlukan sesuai kebutuhan promo, sebagai contoh berikut:
 
-| **Isian**         | **Uraian**               | **Contoh**                |
-| ----------------- | -------------------- | ------------------------- |
-| Nama              | Nama kupon atau promo yang akan ditampilkan di sistem | Diskon Tahun Baru         |
-| Code              | Kode kupon yang akan dimasukkan oleh pengguna saat checkout | TahunBaru2026             |
-| Status            | Status kupon: aktif atau nonaktif. Jika nonaktif, kupon tidak dapat digunakan | Aktif                     |
-| Disc For          | Menentukan diskon untuk produk atau biaya pengiriman (shipping) | Shipping                  |
-| Disc Type         | Jenis diskon: fixed price (nominal tetap) atau percentage (persentase) | Percentage                |
-| Disc Value        | Nilai diskon sesuai tipe diskon yang dipilih | 100%                      |
-| Has Zone          | Centang jika kupon hanya berlaku untuk zona tertentu |                           |
-| Origin Type       | Tipe daerah asal jika Has Zone dicentang (Country, State, City) | State                     |
-| Origin State      | Provinsi asal jika Has Zone dicentang | Jawa Timur                |
-| Destination Type  | Tipe daerah tujuan jika Has Zone dicentang | State                     |
-| Destination State | Provinsi tujuan jika Has Zone dicentang | Jawa Timur                |
-| Max Use           | Batas maksimal jumlah penggunaan kupon | 100                       |
-| Products          | Produk tertentu yang dapat menggunakan kupon ini | Pashmina Voal             |
-| Payments          | Metode pembayaran yang diizinkan untuk kupon ini | Bank Central Asia, Paypal |
-| New Customer      | Centang jika kupon hanya untuk pelanggan baru |                           |
-| Has Date Range    | Centang jika kupon memiliki batas waktu penggunaan | Start date: 31-12-2025 End date: 02-01-2026 |
-| Has Min Order     | Centang jika kupon memiliki minimal jumlah item dalam pesanan | 2                         |
-| Has Max Discount  | Centang jika kupon memiliki batas maksimal nominal diskon | Rp35.000                  |
-| Has Min Purchase  | Centang jika kupon memiliki minimal nominal pembelian | Rp70.000                  |
+| **Isian**         | **Uraian**                                                                    | **Contoh**                                  |
+| ----------------- | ----------------------------------------------------------------------------- | ------------------------------------------- |
+| Nama              | Nama kupon atau promo yang akan ditampilkan di sistem                         | Diskon Tahun Baru                           |
+| Code              | Kode kupon yang akan dimasukkan oleh pengguna saat checkout                   | TahunBaru2026                               |
+| Status            | Status kupon: aktif atau nonaktif. Jika nonaktif, kupon tidak dapat digunakan | Aktif                                       |
+| Disc For          | Menentukan diskon untuk produk atau biaya pengiriman (shipping)               | Shipping                                    |
+| Disc Type         | Jenis diskon: fixed price (nominal tetap) atau percentage (persentase)        | Percentage                                  |
+| Disc Value        | Nilai diskon sesuai tipe diskon yang dipilih                                  | 100%                                        |
+| Has Zone          | Centang jika kupon hanya berlaku untuk zona tertentu                          |                                             |
+| Origin Type       | Tipe daerah asal jika Has Zone dicentang (Country, State, City)               | State                                       |
+| Origin State      | Provinsi asal jika Has Zone dicentang                                         | Jawa Timur                                  |
+| Destination Type  | Tipe daerah tujuan jika Has Zone dicentang                                    | State                                       |
+| Destination State | Provinsi tujuan jika Has Zone dicentang                                       | Jawa Timur                                  |
+| Max Use           | Batas maksimal jumlah penggunaan kupon                                        | 100                                         |
+| Products          | Produk tertentu yang dapat menggunakan kupon ini                              | Pashmina Voal                               |
+| Payments          | Metode pembayaran yang diizinkan untuk kupon ini                              | Bank Central Asia, Paypal                   |
+| New Customer      | Centang jika kupon hanya untuk pelanggan baru                                 |                                             |
+| Has Date Range    | Centang jika kupon memiliki batas waktu penggunaan                            | Start date: 31-12-2025 End date: 02-01-2026 |
+| Has Min Order     | Centang jika kupon memiliki minimal jumlah item dalam pesanan                 | 2                                           |
+| Has Max Discount  | Centang jika kupon memiliki batas maksimal nominal diskon                     | Rp35.000                                    |
+| Has Min Purchase  | Centang jika kupon memiliki minimal nominal pembelian                         | Rp70.000                                    |
 
-## **Penjelasan Tambahan Field Khusus**
+## **Penjelasan Tambahan Field Khusus Form Coupons**
 
-- **Has Zone:** Kupon hanya berlaku pada transaksi dengan asal dan tujuan tertentu.  
-- **Has Date Range:** Tentukan tanggal mulai dan berakhir masa berlaku kupon.  
-- **Has Min Order:** Minimal jumlah item dalam satu pesanan agar kupon bisa digunakan.  
-- **Has Max Discount:** Membatasi maksimal nominal diskon, meskipun persentase besar.  
+- **Has Zone:** Kupon hanya berlaku pada transaksi dengan asal dan tujuan tertentu.
+- **Has Date Range:** Tentukan tanggal mulai dan berakhir masa berlaku kupon.
+- **Has Min Order:** Minimal jumlah item dalam satu pesanan agar kupon bisa digunakan.
+- **Has Max Discount:** Membatasi maksimal nominal diskon, meskipun persentase besar.
 - **Has Min Purchase:** Minimal total nilai pembelian agar kupon bisa digunakan.
 
 Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data model formulir kupon yang baru saja Anda buat.
 
-## **Edit dan Hapus Data Coupons**
+## **Edit dan Hapus Data Form Coupons**
 
-### Edit Data Coupons
+### Edit Data Form Coupons
 
 Untuk mengedit suatu data kupon, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
 
 Perubahan data akan langsung tersimpan dan dapat digunakan kembali dalam sistem.
 
-### Hapus Data Coupons
+### Hapus Data Form Coupons
 
 Untuk menghapus suatu data kupon adalah dengan pilih data kupon yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut.
 
@@ -107,27 +107,27 @@ Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
 
 ---
 
-## **Tips Penggunaan Form Coupons**
+## **Tips Penggunaan Menu Form Coupons**
 
 Agar penggunaan fitur Form Coupons lebih optimal, perhatikan beberapa tips berikut:
 
-- Gunakan kode kupon yang mudah diingat dan relevan dengan kampanye promo.  
-- Atur masa berlaku kupon untuk menghindari penggunaan tanpa batas waktu.  
-- Manfaatkan pembatasan zona dan produk untuk promo yang lebih tersegmentasi.  
-- Gunakan fitur **Max Use** untuk mengontrol jumlah pemakaian kupon.  
+- Gunakan kode kupon yang mudah diingat dan relevan dengan kampanye promo.
+- Atur masa berlaku kupon untuk menghindari penggunaan tanpa batas waktu.
+- Manfaatkan pembatasan zona dan produk untuk promo yang lebih tersegmentasi.
+- Gunakan fitur **Max Use** untuk mengontrol jumlah pemakaian kupon.
 - Aktifkan **Has Max Discount** jika menggunakan diskon persentase besar agar tidak merugikan bisnis.
 
 ---
 
-## **Penanganan Kendala Form Coupons**
+## **Penanganan Kendala**
 
 Jika mengalami kendala dalam penggunaan menu Form Coupons, langkah yang dapat dilakukan:
 
-- Refresh halaman sistem jika kupon tidak muncul atau tampilan tidak sesuai.  
-- Periksa filter atau kolom pencarian agar tidak membatasi tampilan kupon.  
-- Pastikan semua field wajib sudah diisi dengan format yang benar (misal kode kupon, nilai diskon, tanggal berlaku).  
-- Pastikan Anda memiliki hak akses untuk mengelola kupon; jika tidak, hubungi administrator.  
-- Periksa status kupon (aktif/nonaktif), tanggal berlaku, minimal pembelian, jumlah maksimal penggunaan, serta batasan zona atau produk.  
+- Refresh halaman sistem jika kupon tidak muncul atau tampilan tidak sesuai.
+- Periksa filter atau kolom pencarian agar tidak membatasi tampilan kupon.
+- Pastikan semua field wajib sudah diisi dengan format yang benar (misal kode kupon, nilai diskon, tanggal berlaku).
+- Pastikan Anda memiliki hak akses untuk mengelola kupon; jika tidak, hubungi administrator.
+- Periksa status kupon (aktif/nonaktif), tanggal berlaku, minimal pembelian, jumlah maksimal penggunaan, serta batasan zona atau produk.
 
 ---
 

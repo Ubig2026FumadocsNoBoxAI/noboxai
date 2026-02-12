@@ -5,9 +5,9 @@ icon: MessageCircle
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Menampilkan semua informasi terkait dengan menu Pesan yang dirangkum secara lebih singkat dan beberapa grafik informasi tentang agen.
+Dasbor Pesan merupakan salah satu menu pada NoBox.AI yang digunakan untuk menampilkan ringkasan aktivitas percakapan antara pelanggan dan agen.
 
-Bagian ini membantu pengguna memantau aktivitas percakapan, performa agen, serta status layanan pelanggan secara real-time.
+Menu ini memungkinkan pengguna untuk memantau jumlah pesan masuk, status penanganan, performa agen, serta aktivitas layanan pelanggan secara terpusat untuk mendukung proses evaluasi.
 
 <iframe
   width="800"
@@ -23,113 +23,183 @@ Bagian ini membantu pengguna memantau aktivitas percakapan, performa agen, serta
 
 ---
 
-## **Tampilan Dasbor Pesan**
+## **Tampilan Menu Dasbor Pesan**
+
+### Tampilan Halaman Utama
 
 <ImageZoom
   src="/images/id/Dasbor%20Pesan.png"
   alt="Tampilan Dasbor Pesan"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  className="rounded-lg border shadow-sm mb-4"
 />
 
-Gambar di atas menunjukkan tampilan utama Dasbor Pesan yang digunakan untuk memantau seluruh aktivitas percakapan.
+Tampilan ini memperlihatkan ringkasan seluruh aktivitas percakapan yang terjadi dalam sistem.
+
+Pada halaman ini, pengguna dapat langsung melihat jumlah pesan, status penanganan, grafik performa agen, serta aktivitas terbaru tanpa harus membuka menu satu per satu.
+
+### Informasi yang Ditampilkan
+
+Pada tampilan Dasbor Pesan, terdapat beberapa informasi utama yang mendukung pemantauan layanan pelanggan.
+
+Data yang disajikan mencakup jumlah percakapan baru, proses, selesai, arsip, grafik pesan, status agen, serta distribusi tag percakapan.
 
 ---
 
-## **Struktur Informasi Dasbor**
-
-Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-masing. Penjelasan dari fungsi tersebut adalah sebagai berikut:
+## **Komponen pada Menu Dasbor Pesan**
 
 <table>
   <thead>
     <tr>
-      <th width="185.79998779296875">Fitur/Tombol</th>
+      <th width="200">Bagian</th>
       <th>Fungsi</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Baru</td>
-      <td>Total dari semua percakapan yang belum ditugaskan ke agen</td>
+      <td>Menampilkan jumlah percakapan yang belum ditugaskan kepada agen</td>
     </tr>
     <tr>
       <td>Proses</td>
-      <td>Total dari semua percakapan yang sudah ditugaskan ke agen</td>
+      <td>Menampilkan jumlah percakapan yang sedang ditangani agen</td>
     </tr>
     <tr>
       <td>Selesai</td>
-      <td>
-        Total dari semua percakapan yang sudah dijawab dan agen ingin menutup
-        percakapan
-      </td>
+      <td>Menampilkan jumlah percakapan yang telah diselesaikan</td>
     </tr>
     <tr>
       <td>Arsip</td>
-      <td>Total dari semua percakapan yang diarsipkan</td>
+      <td>Menampilkan jumlah percakapan yang telah diarsipkan</td>
     </tr>
     <tr>
-      <td>Percakapan dibuat</td>
+      <td>Percakapan Dibuat</td>
       <td>
-        Informasi grafik dari semua percakapan yang diterima dan terkirim (per
-        jam atau per hari)
+        Menampilkan grafik jumlah pesan masuk dan keluar berdasarkan waktu
       </td>
     </tr>
     <tr>
-      <td>Agen &#x26; Supervisor</td>
-      <td>Informasi grafik dari total anggota perusahaan</td>
+      <td>Agen & Supervisor</td>
+      <td>Menampilkan jumlah agen dan supervisor yang aktif</td>
     </tr>
     <tr>
       <td>Tag Percakapan</td>
-      <td>Informasi grafik percakapan berdasarkan tag</td>
+      <td>Menampilkan distribusi percakapan berdasarkan tag</td>
     </tr>
     <tr>
       <td>Status Online Agen</td>
-      <td>Informasi grafik agen berdasarkan status online</td>
+      <td>Menampilkan status online dan offline agen</td>
     </tr>
     <tr>
       <td>Funnel Percakapan</td>
-      <td>Informasi grafik percakapan berdasarkan funnel</td>
+      <td>Menampilkan alur proses percakapan dari awal hingga selesai</td>
     </tr>
   </tbody>
 </table>
 
 ---
 
-## **Manfaat Penggunaan Dasbor Pesan**
+## **Penjelasan Detail Setiap Komponen Dasbor Pesan**
 
-Dengan memanfaatkan Dasbor Pesan, pengguna dapat:
+- **Baru**
 
-- Memantau jumlah percakapan secara real-time
-- Mengelola distribusi tugas kepada agen
-- Menganalisis performa tim layanan pelanggan
-- Mengidentifikasi kendala komunikasi dengan cepat
-- Meningkatkan kualitas respon kepada pelanggan
+Bagian ini menampilkan jumlah percakapan yang belum ditangani oleh agen.
+
+Informasi ini digunakan untuk mengetahui jumlah pesan yang masih menunggu respon.
+
+- **Proses**
+
+Menampilkan jumlah percakapan yang sedang ditangani oleh agen.
+
+Data ini menunjukkan beban kerja agen yang sedang berjalan.
+
+- **Selesai**
+
+Menampilkan jumlah percakapan yang telah diselesaikan.
+
+Informasi ini membantu mengevaluasi tingkat penyelesaian layanan.
+
+- **Arsip**
+
+Menampilkan percakapan yang telah disimpan sebagai arsip.
+
+Data ini digunakan sebagai dokumentasi layanan.
+
+- **Percakapan Dibuat**
+
+Menampilkan grafik aktivitas pesan berdasarkan waktu.
+
+Fitur ini membantu melihat tren komunikasi pelanggan.
+
+- **Agen & Supervisor**
+
+Menampilkan jumlah anggota tim yang aktif.
+
+Informasi ini digunakan untuk memantau ketersediaan SDM.
+
+- **Tag Percakapan**
+
+Menampilkan distribusi pesan berdasarkan kategori tag.
+
+Fitur ini memudahkan klasifikasi dan analisis percakapan.
+
+- **Status Online Agen**
+
+Menampilkan status online dan offline agen.
+
+Data ini membantu memastikan kesiapan tim layanan.
+
+- **Funnel Percakapan**
+
+Menampilkan alur perjalanan pesan dari masuk hingga selesai.
+
+Fitur ini membantu mengevaluasi efektivitas proses layanan.
 
 ---
 
-## **Tips Penggunaan Dasbor Pesan**
+## **Cara Membaca Dasbor Pesan**
 
-Agar penggunaan Dasbor Pesan lebih optimal, perhatikan beberapa tips berikut:
+### Panduan Membaca Data Dasbor Pesan
 
-- Lakukan pengecekan status percakapan secara rutin
-- Pastikan agen selalu dalam status online saat jam operasional
-- Gunakan tag percakapan untuk memudahkan klasifikasi
-- Pantau funnel percakapan untuk evaluasi layanan
-- Arsipkan percakapan yang sudah selesai
+Untuk memahami data pada Dasbor Pesan dengan baik, pengguna dapat memperhatikan hal berikut:
+
+1. Perhatikan jumlah pesan baru setiap hari.
+2. Bandingkan jumlah pesan dengan agen aktif.
+3. Pantau status proses dan selesai.
+4. Gunakan grafik untuk melihat tren komunikasi.
+
+### Interpretasi Data Dasbor Pesan
+
+Data pada dasbor dapat digunakan untuk menilai kualitas layanan pelanggan.
+
+Supervisor atau administrator dapat memanfaatkan data ini sebagai bahan evaluasi rutin dan peningkatan performa tim.
+
+---
+
+## **Tips Penggunaan Menu Dasbor Pesan**
+
+Agar penggunaan Dasbor Pesan lebih maksimal, disarankan untuk:
+
+- Memeriksa dasbor secara berkala
+- Memastikan agen aktif saat jam operasional
+- Menggunakan tag percakapan secara konsisten
+- Memantau funnel untuk evaluasi layanan
+- Mengarsipkan percakapan yang telah selesai
 
 ---
 
 ## **Penanganan Kendala**
 
-Jika terjadi kendala dalam penggunaan Dasbor Pesan, lakukan langkah berikut:
+Jika mengalami kendala, lakukan langkah berikut:
 
-- Refresh halaman secara berkala
-- Periksa koneksi internet
-- Pastikan akun memiliki hak akses yang sesuai
-- Logout dan login kembali jika sistem tidak merespons
-- Hubungi tim support jika masalah berlanjut
+- Refresh halaman sistem
+- Pastikan koneksi internet stabil
+- Periksa hak akses akun pengguna
+- Logout dan login kembali
+- Bersihkan cache browser
+- Hubungi tim support jika kendala masih terjadi
 
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait NoBox.AI, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
