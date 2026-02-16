@@ -1,154 +1,107 @@
 ---
 title: E-mail
-description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
+description: Panduan konfigurasi dan manajemen pengiriman pesan otomatis melalui kanal E-mail di NoBox.AI.
 icon: Mail
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Email Automation adalah fitur yang memungkinkan bisnis untuk mengirim email secara otomatis kepada pelanggan atau prospek berdasarkan aturan atau pemicu tertentu. Sistem ini memungkinkan pengiriman pesan yang relevan dan tepat waktu tanpa perlu intervensi manual, sehingga meningkatkan efisiensi dan efektivitas komunikasi bisnis Anda.
+Email Automation di NoBox.AI memungkinkan Anda untuk melakukan pengiriman pesan pemasaran, informasi produk, atau update layanan secara otomatis dan massal. Melalui integrasi protokol SMTP (*Simple Mail Transfer Protocol*), Anda dapat menghubungkan berbagai layanan provider email populer (Gmail, Outlook, atau custom domain) untuk menjangkau inbox pelanggan secara tepat waktu.
 
-## **Tambah Akun**
+Fitur ini ideal untuk membangun hubungan jangka panjang melalui Newsletter, pemberitahuan invoice otomatis, hingga kampanye pengenalan produk baru dengan tingkat presisi penyampaian yang tinggi.
 
-Pastikan Anda telah berlangganan Email Automation. Untuk menambahkan akun baru, silakan masuk ke **[Account] ➔ klik tombol [New Account] ➔** maka akan muncul dialog **[New Account]**.
+---
+
+## **Menghubungkan Akun Email**
+
+Untuk mulai mengirim, Anda harus mendaftarkan akun pengirim email ke dalam infrastruktur NoBox.AI.
+
+### Langkah Penambahan Akun:
+
+1. Masuk ke modul **[Akun]** ➔ klik tombol **[Tambah Akun]**.
+2. Pilih kanal **Email** pada opsi yang tersedia.
+3. Lengkapi data identitas akun (Nama Akun dan Kategori).
+4. Klik **[Simpan]**.
 
 <ImageZoom
   src="/images/id/add%20account%20email.png"
-  alt="Tambah Akun Email"
+  alt="Registrasi Akun Email Baru"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="98.39996337890625">Field</th>
-      <th width="335.199951171875">Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Name</td>
-      <td>Nama akun Anda</td>
-      <td>Email #CS</td>
-    </tr>
-    <tr>
-      <td>Category</td>
-      <td>Kategori akun</td>
-      <td>Automation</td>
-    </tr>
-    <tr>
-      <td>Channel</td>
-      <td>Channel yang dipilih</td>
-      <td>Email</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>Informasi apakah akun aktif atau tidak</td>
-      <td>Active</td>
-    </tr>
-  </tbody>
-</table>
+---
 
-Selanjutnya, pilih opsi SMTP yang ingin digunakan, lalu lengkapi isian pada bagian konfigurasi Email dengan memasukkan alamat email serta password dari provider email yang dipilih.
+## **Konfigurasi SMTP**
+
+Setelah data dasar tersimpan, Anda perlu memasukkan rincian teknis pengiriman agar NoBox dapat mengirimkan email atas nama Anda.
+
+### Tahap Pengisian Konfigurasi:
+- Pilih provider email (Jika list tidak tersedia, gunakan opsi Custom/SMTP).
+- Masukkan **SMTP Host** dan **Port** yang sesuai (misal: `smtp.gmail.com` port `587` untuk Gmail).
+- Masukkan **Email Address** dan **Password / App Password**.
+- Klik **[OK]** atau **[Simpan]**. Sistem akan melakukan pengetesan koneksi secara otomatis.
 
 <ImageZoom
   src="/images/id/konfigurasi%20email.png"
-  alt="Konfigurasi Email SMTP"
+  alt="Pengaturan SMTP Email"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Setelah semua field yang diperlukan terisi, klik **[OK]** untuk menyimpan akun baru yang telah dibuat.
+---
 
-## **Konfigurasi**
+## **Manajemen Kampanye Email**
 
-Setelah menambahkan akun baru, Anda hanya perlu membuka akun WhatsApp yang telah dibuat melalui PC/laptop.
+### Mengirim Promosi
+Sama seperti kanal lainnya, Anda dapat membuat kampanye email melalui modul **[Promosi]**. Pilih kanal Email dan tentukan akun pengirim yang telah Anda konfigurasi. Anda data menyertakan lampiran file maupun gambar langsung ke dalam badan email.
 
-<ImageZoom
-  src="/images/id/akunWa.png"
-  alt="Akun WhatsApp PC"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
+### Monitoring Pengiriman
+Pantau status setiap email yang dikirim (Antrean, Terproses, Terkirim, atau Gagal) melalui dashboard monitoring. Anda juga dapat melihat balasan email (jika didukung) melalui menu **Kotak Masuk** untuk sinkronisasi percakapan terpusat.
 
-- Buka aplikasi NoBox Desktop.
-- Scan QR Code untuk mengaktifkan akun.
-- Pastikan pada tab **[Logs]** muncul informasi **"WhatsApp Automation is ready"**.
-- Pada tab **[Outbox]**, pastikan status berada pada **[Worker On]**, maka akun siap digunakan.
+---
 
-## **Cara Menggunakan Akun WhatsApp**
+## **Edit dan Hapus Data Akun**
 
-Anda dapat menggunakan akun WhatsApp untuk mengirim campaign dengan mengikuti langkah-langkah berikut:
+### Perubahan Data Selama Akun Aktif
+Jika Anda perlu mengganti password email atau mengubah rincian SMTP, navigasi ke menu **[Akun]** pada website NoBox.AI, pilih akun terkait, lakukan perubahan, dan tekan **[Simpan]**.
 
-1. Kunjungi website [id.nobox.ai](https://id.nobox.ai/), klik modul **[Campaigns]**, lalu pilih menu **[Campaigns]**.
-2. Pilih campaign yang sudah ada atau buat campaign baru. Pilih channel **[WhatsApp]** dan tentukan akun **[WhatsApp Jasmine]** yang telah dibuat. Pastikan akun WhatsApp dalam kondisi aktif.
-3. Pastikan data campaign telah diisi dengan benar, kemudian klik untuk memproses campaign.
-4. Anda dapat memantau proses pengiriman campaign melalui NoBox Desktop pada tab **[Outbox]**.
-
-<ImageZoom
-  src="/images/id/Outbox.png"
-  alt="Monitoring Outbox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-5. Selain itu, Anda juga dapat melihat hasil campaign pada menu **[Inbox]**, sehingga Anda dapat langsung memantau hasil campaign dan membalas chat dari target audience.
-
-<ImageZoom
-  src="/images/id/Inbox.png"
-  alt="Monitoring Inbox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Pause Proses Campaign**
-
-Fitur ini digunakan untuk menghentikan sementara proses pengiriman campaign. Berikut langkah-langkahnya:
-
-1. Pada tab **[Outbox]**, klik tombol **[Worker]** dan pastikan status worker menjadi **[OFF]**.
-2. Proses pengiriman campaign akan berhenti sementara.
-3. Untuk melanjutkan kembali proses pengiriman, klik tombol **[Worker]** dan pastikan status worker menjadi **[ON]**.
-4. Proses pengiriman campaign akan dilanjutkan.
-
-## **Menonaktifkan Akun WhatsApp**
-
-Fitur ini digunakan untuk mengurangi penggunaan RAM pada aplikasi NoBox Desktop di perangkat Anda.
-
-Untuk menonaktifkan akun, pilih salah satu akun WhatsApp, lalu hilangkan centang pada bagian status akun. Setelah itu, klik **[Save]** untuk menyimpan perubahan.
-
-<ImageZoom
-  src="/images/id/Menonaktifkan%20Akun%20WhatsApp%20(1).png"
-  alt="Menonaktifkan Akun WhatsApp"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-Silakan cek aplikasi NoBox Desktop, akun WhatsApp yang telah dinonaktifkan tidak akan ditampilkan.
-
-## **Edit dan Hapus Akun**
-
-### Edit Akun
-
-Untuk mengedit akun, silakan login ke website [id.nobox.ai](https://id.nobox.ai/), kemudian klik menu **[Accounts]**. Pilih akun yang ingin diedit, lakukan perubahan data, lalu klik **[Save]** untuk menyimpan perubahan tersebut.
-
-Perubahan data akan langsung tersimpan dan dapat digunakan kembali dalam sistem.
-
-### Hapus Akun
-
-Untuk menghapus akun, pilih akun yang ingin dihapus kemudian klik **[Delete]**. Akan muncul pesan konfirmasi, klik **[Yes]** untuk menghapus akun atau **[No]** untuk membatalkan.
+### Penghapusan Akun
+Pilih akun yang tidak lagi digunakan dan klik tombol **[Hapus]**.
 
 <Callout type="info" title="Informasi Penting">
-Penghapusan akun bersifat permanen dan tidak dapat dibatalkan. Pastikan akun yang akan dihapus benar-benar tidak diperlukan lagi.
+Sistem akan menghapus seluruh kredensial SMTP yang tersimpan secara permanen. Pastikan tidak ada kampanye email terjadwal yang sedang bergantung pada akun tersebut sebelum melakukan penghapusan.
 </Callout>
 
 ---
 
-Jika Anda mengalami kendala atau kesulitan terkait Nobox.Ai, silakan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+<Tips>
+## **Tips Penggunaan Email Automation**
+
+- **Gunakan App Password**: Untuk layanan seperti Gmail, jangan gunakan password utama akun Anda. Buatlah *App Password* di pengaturan keamanan akun Google Anda untuk koneksi pihak ketiga yang lebih aman.
+- **Batasi Kecepatan**: Jangan mengirim terlalu banyak email dalam waktu singkat guna menghindari deteksi sebagai spam oleh provider tujuan dan menjaga reputasi IP/Domain Anda.
+- **Subject yang Menarik**: Gunakan judul email yang informatif untuk meningkatkan *Open Rate* dari pelanggan Anda.
+- **Verifikasi Konten**: Selalu kirim email uji coba ke alamat pribadi sebelum melakukan siaran massal ke ribuan database.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Penanganan Kendala**
+
+Jika pengiriman email terhambat, silakan ikuti langkah-langkah berikut:
+
+- **Error Authentication**: Periksa kembali apakah Email dan Password/App Password sudah benar. Seringkali masalah muncul akibat password yang diedit namun belum diupdate di sistem.
+- **Email Masuk Folder Spam**: Pastikan isi email Anda tidak mengandung kata-kata yang memicu filter spam berlebihan dan tambahkan record SPF/DKIM pada domain email bisnis Anda.
+- **Koneksi SMTP Timeout**: Pastikan Port yang Anda gunakan dibuka oleh penyedia koneksi internet Anda (misal: Port 587 atau 465).
+- **Proses Berhenti (Paused)**: Pastikan status akun di dashboard tetap "Aktif". Jika terjadi kegagalan beruntun, sistem mungkin menangguhkan pengiriman untuk melindungi reputasi akun Anda.
+- **Lampiran Terlalu Besar**: Pastikan total ukuran file lampiran tidak melebihi batas (biasanya max 10MB-20MB) agar tidak ditolak oleh server penerima.
+
+</Kendala>
+
+---
+
+Jika Anda mengalami kendala atau kesulitan terkait Email Automation, silakan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

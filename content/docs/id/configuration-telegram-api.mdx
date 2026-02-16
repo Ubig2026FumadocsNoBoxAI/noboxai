@@ -1,67 +1,104 @@
 ---
 title: Konfigurasi API Telegram
-description: Panduan lengkap pendaftaran akun baru di NoBox.AI
+description: Panduan langkah demi langkah pembuatan API ID dan API Hash untuk integrasi Telegram Automation di NoBox.AI
 icon: Bot
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-## **Pengertian**
+API (*Application Programming Interface*) adalah protokol yang memungkinkan aplikasi NoBox untuk berkomunikasi secara aman dengan pelayan (server) Telegram. Untuk menggunakan fitur Telegram Automation, Anda wajib memiliki **API ID** dan **API Hash** milik sendiri agar aktivitas pengiriman pesan Anda memiliki identitas aplikasi yang unik dan tepercaya.
 
-API merupakan kepanjangan dari Application Programming Interface (Antarmuka Pemrograman Aplikasi). Kata Aplikasi pada API merujuk pada perangkat lunak dengan fungsi yang berbeda.
+Proses pembuatan API ini gratis dan hanya perlu dilakukan satu kali melalui portal resmi pengembang Telegram.
 
-**Cara Membuat API Telegram**
+---
+
+## **Tahap 1: Autentikasi Akun Telegram**
+
+Langkah pertama adalah masuk ke portal manajemen API Telegram menggunakan nomor telepon Anda.
+
+1. Kunjungi situs resmi: [https://my.telegram.org/auth](https://my.telegram.org/auth).
+2. Masukkan nomor telepon yang terdaftar di Telegram (Gunakan format internasional, misal: +6281xxxxxx).
+3. Kode konfirmasi akan dikirimkan melalui **chat Telegram** Anda (bukan SMS). Masukkan kode tersebut dan klik **[Sign In]**.
 
 <ImageZoom
   src="/images/id/Auth%20.png"
-  alt="Tampilan Berlangganan NoBox"
+  alt="Portal Login Telegram API"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-- Silahkan Kunjungi Link [https://my.telegram.org/auth](https://my.telegram.org/auth)
-- Masukan Nomor Telegram Anda
-- Masukkan confirmation code via telegram (not sms), klik **[Sign In]**
+---
 
-<ImageZoom
-  src="/images/id/API%20Development%20Tools.png"
-  alt="Tampilan Berlangganan NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+## **Tahap 2: Membuat Aplikasi Baru**
 
-- Anda akan dibawa menuju [https://my.telegram.org](https://my.telegram.org/). Ada beberapa pilihan yang harus anda pilih pada menu **[Your Telegram Core]** pilih **[API development tools]** .
+Setelah berhasil masuk, Anda harus mendaftarkan identitas aplikasi untuk akun Anda.
+
+1. Pada menu utama **[Your Telegram Core]**, pilih opsi **[API development tools]**.
+2. Anda akan diarahkan ke halaman pembuatan aplikasi (**Create New Application**).
+3. Isi kolom yang tersedia sesuai dengan petunjuk berikut:
+
+| Isian | Uraian Fungsi | Contoh Data |
+| :--- | :--- | :--- |
+| **App title** | Nama aplikasi buatan Anda (Isi bebas). | NoBox Automation |
+| **Short name**| Nama pendek aplikasi. | NBAuto |
+| **URL** | Alamat website Anda (Dapat dilewati). | - |
+| **Platform** | Platform penggunaan aplikasi. | Desktop |
+| **Description**| Deskripsi singkat aplikasi. | Automation for leads |
+
+4. Klik tombol **[Create Application]** untuk mengonfirmasi pembuatan.
 
 <ImageZoom
   src="/images/id/Create%20Application.png"
-  alt="Tampilan Berlangganan NoBox"
+  alt="Proses Pembuatan Developer Application"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-- Setelah memilih API development tools Anda akan diarahkan ke [https://my.telegram.org/apps](https://my.telegram.org/apps). **Create New Application ➔ isi kolom yang disediakan.**
+---
 
-| Isian       | Uraian                                                                 | Contoh Data |
-| ----------- | ---------------------------------------------------------------------- | ----------- |
-| App title   | Title aplikasi anda (Isi bebas sesuai nama aplikasi yang ingin dibuat) | Wili Sandi  |
-| Short name  | Nama singkat Telegram anda                                             | Wili        |
-| URL         | Lewati saja jika tidak Punya website                                   | -           |
-| Platform    | Pilih platform aplikasi difungsikan untuk Aplikasi apa.                | Desktop     |
-| Description | Isi bebas sesuai keinginan Anda                                        | -           |
+## **Tahap 3: Mendapatkan dan Menyimpan API**
 
-Jika Anda sudah melengkapi isian yang ada, klik **[Create Application]** untuk menyimpan API yang baru saja Anda buat.
+Setelah aplikasi berhasil dibuat, sistem akan menampilkan rincian API Anda.
+
+1. Anda akan melihat informasi **App api_id** (berupa angka) dan **App api_hash** (berupa kombinasi huruf-angka).
+2. Salin (*copy*) kedua data tersebut dan simpan di tempat yang aman.
+3. Gunakan data tersebut saat Anda menambahkan akun Telegram baru pada aplikasi NoBox Desktop.
 
 <ImageZoom
   src="/images/id/App%20Configuration%20.png"
-  alt="Tampilan Berlangganan NoBox"
+  alt="Hasil Konfigurasi API Telegram"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-- Copy dan simpan hasil API yang sudah anda buat untuk diterapkan pada pembuatan Account Telegram NoBox.
+---
 
-Jika ada masalah atau kesulitan terkait NoBox, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+<Tips>
+## **Tips Keamanan API**
+
+- Jaga kerahasiaan **api_hash** Anda; jangan berikan kode ini kepada pihak mana pun di luar sistem NoBox.AI.
+- Gunakan nama aplikasi yang terlihat umum atau personal agar tidak memicu kecurigaan sistem keamanan Telegram.
+- Pastikan nomor telepon yang digunakan untuk membuat API adalah nomor yang sama yang ingin Anda jadikan pengirim otomatis.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Penanganan Kendala Pendaftaran API**
+
+Jika menemui hambatan saat membuat API, silakan cek poin berikut:
+
+- **Gagal "Create Application"**: Telegram terkadang membatasi pembuatan API pada nomor telepon baru. Coba gunakan nomor yang sudah aktif minimal 1-2 minggu.
+- **Error "Invalid Name"**: Pastikan *Short Name* dan *App Title* hanya menggunakan alfabet dan angka tanpa karakter khusus atau spasi berlebihan.
+- **Situs Tidak Merespon**: Gunakan browser Google Chrome terbaru dalam mode *Incognito* (Pribadi) untuk menghindari konflik cache.
+- **Kode OTP Tidak Masuk**: Pastikan aplikasi Telegram di ponsel Anda tetap terbuka, karena kode hanya dikirim melalui sistem chat internal Telegram.
+
+</Kendala>
+
+---
+
+Jika ada masalah atau kesulitan terkait Konfigurasi API, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

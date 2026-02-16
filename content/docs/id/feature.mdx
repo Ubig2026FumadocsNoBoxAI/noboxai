@@ -1,324 +1,159 @@
 ---
-title: Feature
-description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
+title: Fitur NoBox Desktop
+description: Panduan mendalam mengenai fitur-fitur operasional pada aplikasi NoBox Desktop untuk manajemen chat dan kontak.
 icon: LayoutDashboard
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Terdapat beberapa fitur pada menu Automation NoBox Desktop. Diantaranya sebagai berikut:
+Aplikasi NoBox Desktop dilengkapi dengan berbagai modul fungsional yang dirancang untuk memberikan kendali penuh atas aktivitas pemasaran digital Anda. Melalui antarmuka yang intuitif, Anda dapat mengelola percakapan dari berbagai kanal, mengekstraksi data anggota grup secara massal, hingga mengatur interval pengiriman pesan untuk menjaga keamanan akun.
+
+Halaman ini merangkum seluruh fitur operasional utama yang membantu Anda mengoptimalkan efisiensi kerja tim marketing sehari-hari.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/xhIlIABO3SQ/"
-  title="01. Instalasi NoBox Desktop"
+  title="Panduan Fitur NoBox Desktop"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-## **Manage Chat**
+---
 
-Manage chat adalah fitur yang berfungsi untuk menampilkan semua data pesan akun Anda.
+## **Manajemen Chat (Manage Chat)**
+
+Fitur **Manage Chat** adalah pusat pemantauan seluruh data percakapan dari akun yang Anda hubungkan. Di sini Anda dapat melihat status pesan, tipe interaksi, dan detail partisipan.
 
 <ImageZoom
   src="/images/id/Chats.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Dashboard Manajemen Chat"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="166.5999755859375">Kolom</th>
-      <th>Uraian</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Act</td>
-      <td>
-        Tombol untuk melakukan beberapa aksi tertentu seperti ( send message,
-        open chat window, dan extra)
-      </td>
-    </tr>
-    <tr>
-      <td>Name</td>
-      <td>Nama kontak akun Anda</td>
-    </tr>
-    <tr>
-      <td>Type</td>
-      <td>Tipe grup yang Anda ikuti ( Chat, channel, dsb ).</td>
-    </tr>
-    <tr>
-      <td>Participants Count </td>
-      <td>Jumlah anggota grup</td>
-    </tr>
-    <tr>
-      <td>Username</td>
-      <td>Username grup</td>
-    </tr>
-  </tbody>
-</table>
+| Kolom Informasi | Deskripsi Fungsi |
+| :--- | :--- |
+| **Act** | Tombol aksi untuk mengirim pesan, membuka jendela chat, atau fitur tambahan (*extra*). |
+| **Name** | Identitas atau nama profil dari kontak atau grup. |
+| **Type** | Klasifikasi obrolan (Chat personal, Group, atau Channel). |
+| **Participants** | Jumlah total anggota jika obrolan bertipe Grup atau Channel. |
+| **Username** | ID unik/username akun pada platform tujuan. |
 
-## **Get Group Members**
+---
 
-Fitur ini digunakan untuk ekstrak data kontak anggota grup atau channel pada akun Anda ke NoBox.Ai dengan cara berikut:
+## **Ekstraksi Anggota Grup (Get Group Members)**
 
-1\. Klik menu **[Chats]**, maka akan tampil list chat pada akun Anda dan pilih grup atau channel.
+NoBox Desktop memungkinkan Anda mengekstrak database kontak dari grup atau channel yang Anda ikuti secara otomatis ke dalam sistem NoBox.AI Cloud.
 
-2\. Klik [ <img src="/images/id/Act.png" alt="Act" className="inline h-5 w-auto mx-1" /> ] pilih [Get Group Members] dan pilih anggota yang akan ditambahkan ke NoBox.Ai
+### Langkah Ekstraksi:
+1. Pilih grup/channel pada menu **[Chats]**.
+2. Klik tombol **[Act]** ➔ pilih **[Get Group Members]**.
+3. Centang anggota yang ingin diambil, lalu klik **[Actions]** ➔ **[Add to NoBox.Ai]**.
+4. Pilih folder (list) target penyimpanan, lalu klik **[OK]**.
 
 <ImageZoom
   src="/images/id/Get%20members.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Proses Pengambilan Anggota Grup"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-3\. Klik tombol **[Actions] ➔ \[Add to NoBox.Ai]**, pilih target list dan klik **[OK]**
+---
 
-4\. Tunggu sampai proses selesai, maka akan tampil dialog informasi jika proses sudah selesai.
+## **Manajemen Kontak (Manage Contact)**
 
-5\. Data tersebut juga bisa Anda cek melalui menu **[Contacts]** pada NoBox.Ai dengan memfilter data sesuai list yang ada pilih sebelumnya.
-
-6\. Maka akan tampil list kontak yang telah ditambahkan.
-
-## **Manage Contact**
-
-Manage contact adalah fitur ini digunakan untuk memeriksa nomor kontak Telegram yang terhubung dengan Anda.
+Gunakan fitur ini untuk memvalidasi nomor telepon dan identitas kontak yang terhubung dengan akun Anda, guna memastikan pengiriman pesan tertarget tepat sasaran.
 
 <ImageZoom
   src="/images/id/Contacts.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Menu Manajemen Kontak Desktop"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="133">Kolom</th>
-      <th>Uraian</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Action</td>
-      <td>Tombol yang difungsikan untuk melakukan beberapa aksi tertentu</td>
-    </tr>
-    <tr>
-      <td>Name</td>
-      <td>Nama kontak akun Anda</td>
-    </tr>
-    <tr>
-      <td>MyContact</td>
-      <td>
-        Tanda centang untuk menandai bahwa nomor tersebut berada di kontak Anda
-        atau tidak
-      </td>
-    </tr>
-    <tr>
-      <td>Username</td>
-      <td>Username masing-masing kontak telegram</td>
-    </tr>
-    <tr>
-      <td>Phone </td>
-      <td>No telepon telegram</td>
-    </tr>
-  </tbody>
-</table>
+| Field | Uraian |
+| :--- | :--- |
+| **Action** | Berbagai tindakan cepat seperti sinkronisasi ulang atau penghapusan data lokal. |
+| **MyContact** | Indikator apakah nomor tersebut sudah tersimpan di buku telepon akun Anda. |
+| **Phone** | Nomor identitas pengiriman pesan. |
 
-## **Add Contact Chat to Nobox.Ai**
+---
 
-Fitur ini digunakan untuk menyimpan data kontak pada akun Anda ke NoBox.Ai dengan cara berikut:
+## **Alat Pendukung (Core Tools)**
 
-1\. Klik menu **[Chat]** atau **[Contacts]**, maka akan tampil list chat atau kontak pada akun Anda dan pilih kontak atau chat yang akan Anda tambahkan ke NoBox.Ai
+NoBox Desktop menyediakan berbagai alat utilitas untuk memastikan kinerja aplikasi tetap prima dan menghindari pemblokiran:
 
-2\. Klik tombol **[Actions] ➔ \[Add to NoBox.Ai]**, pilih target list dan klik **[OK]**
-
-<ImageZoom
-  src="/images/id/Add%20to%20NoBox.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-3\. Tunggu sampai proses selesai, maka akan tampil dialog informasi jika proses sudah selesai.
-
-4\. Data tersebut juga bisa Anda cek melalui menu **[Contacts]** pada NoBox.Ai dengan memfilter data sesuai list yang ada pilih sebelumnya.
-
-5\. Maka akan tampil list kontak yang telah ditambahkan.
-
-## **Contact Export to Excel**
-
-Fitur ini digunakan untuk menyimpan data kontak dengan fomat Excel (.xls, .csv) dengan cara berikut:
-
-\- Klik menu **[Chats]** atau **[Contact] ➔ \[Actions] ➔ \[Export to Excel]** maka kontak yang dipilih akan tersimpan.
-
-<ImageZoom
-  src="/images/id/Export%20to%20Excel.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Extra**
-
-Fitur tambahan yang digunakan untuk pin chat, unpin chat, filter chat dan sebagainya.
-
-<ImageZoom
-  src="/images/id/Extra.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Tools Reload Page**
-
-Tools Reload Page adalah fitur yang digunakan untuk memuat ulang tampilan Telegram.
-
-<ImageZoom
-  src="/images/id/Reload%20page.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Tools Debug Process**
-
-Tools Debug Process adalah fitur yang digunakan untuk memunculkan logs detail aktivitas.
-
-<ImageZoom
-  src="/images/id/Debug%20process.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Tools Setting**
-
-Tools Setting, didalam fitur ini ada beberapa pilihan untuk memilih tipe pesan yang akan dikirim dan **I**nterval Send Messages yang berfungsi untuk pengaturan waktu pengiriman pesan 1 ke pesan lainnya untuk menghindari pemblokiran.
+### 1. Pengaturan Keamanan (Tools Setting)
+Berfungsi untuk mengatur **Interval Send Messages**. Fitur ini sangat krusial untuk memberikan jeda antar pesan sehingga sistem platform (seperti Telegram/WhatsApp) mendeteksi pengرسalan sebagai perilaku manusia asli.
 
 <ImageZoom
   src="/images/id/Settings.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Konfigurasi Interval Pengiriman"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="164.20001220703125">Fitur</th>
-      <th>Uraian</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Send Message</td>
-      <td>Pilih untuk tipe pesan yang akan dikirim</td>
-    </tr>
-    <tr>
-      <td>Interval Send Messages</td>
-      <td>
-        Atur waktu pengiriman pesan 1 kepesan lainnya untuk menghindari
-        pemblokiran.
-      </td>
-    </tr>
-  </tbody>
-</table>
+### 2. Monitoring Detail (Debug Process)
+Mengaktifkan jendela logs canggih yang menampilkan aktivitas di balik layar secara real-time. Berguna bagi tim teknis untuk memantau proses pengiriman pesan.
 
-## **Clear Cache**
+### 3. Pembersihan (Clear Cache)
+Menghapus file sampah pada browser internal aplikasi untuk mengatasi masalah tampilan atau sinkronisasi yang melambat.
 
-Tools Clear Cache adalah fitur yang digunakan untuk menghapus cache browser.
+---
 
-<ImageZoom
-  src="/images/id/Clear%20Cache.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+## **Modul Pengujian (Test Suite)**
 
-## **Test**
+Sebelum melakukan siaran pesan massal, gunakan modul **Test** untuk memastikan format konten Anda tampil dengan sempurna di berbagai jenis perangkat.
 
-Test adalah fitur yang digunakan untuk mengetest pengiriman file yang Anda butuhkan.
+| Jenis Tes | Deskripsi |
+| :--- | :--- |
+| **Send Text** | Menguji pengiriman format tulisan biasa. |
+| **Send Media** | Menguji pengiriman gambar (.jpg/.png), video, audio, dan dokumen (pdf). |
+| **Send Location** | Menguji pengiriman titik koordinat peta. |
+| **Send Contact** | Menguji kartu kontak vCard. |
+| **Send Stickers** | Menguji format file .webp untuk stiker interaktif. |
 
 <ImageZoom
   src="/images/id/Tests.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Panel Uji Coba Pengiriman"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="145.79998779296875">Fitur</th>
-      <th>Uraian</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Send Text</td>
-      <td>Fitur test untuk mengirim pesan berupa teks</td>
-    </tr>
-    <tr>
-      <td>Send Images </td>
-      <td>
-        Fitur test untuk mengirim pesan berupa gambar dengan format Jpg atau Png
-      </td>
-    </tr>
-    <tr>
-      <td>Send Documents</td>
-      <td>
-        Fitur test untuk mengirim pesan berupa dokumen berupa pdf dan lain -
-        lain
-      </td>
-    </tr>
-    <tr>
-      <td>Send Audio</td>
-      <td>Fitur test untuk mengirim pesan berupa audio</td>
-    </tr>
-    <tr>
-      <td>Send Video</td>
-      <td>Fitur test untuk mengirim pesan berupa video</td>
-    </tr>
-    <tr>
-      <td>Send Stickers</td>
-      <td>
-        Fitur test untuk mengirim pesan berupa stiker dengan format Webp dan Png
-      </td>
-    </tr>
-    <tr>
-      <td>Send Location</td>
-      <td>Fitur test untuk mengirim pesan berupa lokasi Anda</td>
-    </tr>
-    <tr>
-      <td>Send Contact</td>
-      <td>Fitur test untuk mengirim pesan berupa kontak</td>
-    </tr>
-    <tr>
-      <td>Send Lists</td>
-      <td>Fitur test untuk mengirim pesan berupa file lainnya</td>
-    </tr>
-  </tbody>
-</table>
+---
+
+<Tips>
+## **Tips Optimalisasi Fitur**
+
+- Gunakan fitur **Interval Send Messages** minimal 10-15 detik untuk menghindari deteksi spam yang ketat.
+- Lakukan **Clear Cache** minimal satu kali dalam seminggu untuk menjaga performa navigasi aplikasi.
+- Selalu gunakan fitur **Test** untuk mengirim pesan ke nomor pribadi Anda sendiri sebelum memulai kampanye besar.
+- Manfaatkan **Export to Excel** untuk memiliki backup cadangan data kontak grup yang pernah Anda ekstraksi.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Penanganan Kendala**
+
+Jika menemui masalah pada fitur-fitur di atas, silakan cek langkah berikut:
+
+- **Daftar Grup Tidak Muncul**: Tunggu beberapa saat agar proses sinkronisasi awal selesai, atau klik tombol **Reload Page**.
+- **Gagal Get Group Members**: Pastikan Anda memiliki hak akses untuk melihat daftar anggota pada grup/channel terkait (misal: bukan grup yang dibatasi privasinya).
+- **Proses Kirim Pesan Terhenti**: Periksa tab **Debug Process** untuk melihat pesan error spesifik, biasanya akibat sesi login yang kedaluwarsa.
+- **Aplikasi Menjadi Lambat**: Tutup tab atau window chat yang tidak diperlukan dan lakukan **Clear Cache**.
+
+</Kendala>
 
 ---
 
