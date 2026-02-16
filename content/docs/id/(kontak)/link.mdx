@@ -6,7 +6,9 @@ icon: Link
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Link adalah salah satu menu Nobox.Ai yang digunakan untuk menampung akun-akun kontak seperti nomer WhatsApp, Email, Telegram dsb.
+Link adalah salah satu menu pada NoBox.AI yang digunakan untuk menampung dan mengelola akun-akun komunikasi (channel) yang terhubung dengan data kontak pelanggan.
+
+Menu ini membantu pengguna dalam melihat seluruh link atau akun eksternal seperti nomor WhatsApp, alamat Email, akun Telegram, dan platform lainnya secara terpusat. Setiap link yang terdaftar memungkinkan sistem untuk mengirim pesan, melacak percakapan, serta memantau status pengiriman pesan siaran (broadcast) yang ditujukan ke akun tersebut.
 
 <iframe
   width="800"
@@ -20,57 +22,150 @@ Link adalah salah satu menu Nobox.Ai yang digunakan untuk menampung akun-akun ko
   allowfullscreen
 ></iframe>
 
+---
+
+## **Tampilan Menu Link**
+
 <ImageZoom
   src="/images/id/Link.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tampilan Menu Link"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+Tampilan di atas merupakan halaman utama menu Link yang menampilkan seluruh daftar akun komunikasi yang terhubung dengan data kontak di dalam sistem.
+
+Pada halaman ini, pengguna dapat melihat nama link, kanal yang digunakan, ID eksternal, serta informasi kontak yang terhubung. Pengguna juga dapat menambah, mengedit, dan menghapus data link sesuai kebutuhan.
+
+---
 
 ## **Tambah Link**
 
-Untuk tambah data link, silahkan klik modul \[Kontak], lalu klik menu **[Link]**➔**[Tambah Link].** Maka akan tampil dialog **[Tambah Link].** Kemudian lengkapi isian pada dialog tersebut.
+Untuk menambah data link baru, ikuti langkah-langkah berikut:
+
+1. Klik modul **[Kontak]**, lalu klik menu **[Link]** ➔ **[Tambah Link]**.
+2. Maka akan tampil dialog **[Tambah Link]**, kemudian lengkapi seluruh isian pada dialog tersebut.
+
+### Tampilan Dialog Tambah Link
 
 <ImageZoom
   src="/images/id/Tambah%20Link.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Dialog Tambah Link"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data link yang baru saja Anda buat.
+### Isian Dialog Tambah Link
 
-## **Edit Dan Hapus Data Link**&#x20;
+<table>
+  <thead>
+    <tr>
+      <th width="150">Isian</th>
+      <th width="300">Uraian</th>
+      <th>Contoh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kanal</td>
+      <td>Platform komunikasi yang digunakan untuk menghubungi kontak tersebut, seperti WhatsApp, Email, Telegram, Shopee, dan lainnya.</td>
+      <td>Email</td>
+    </tr>
+    <tr>
+      <td>Nama Eksternal</td>
+      <td>Nama akun atau username kontak pada platform komunikasi yang dipilih.</td>
+      <td>Sasi Email</td>
+    </tr>
+    <tr>
+      <td>Id Eksternal</td>
+      <td>Identitas unik kontak dari platform eksternal. Isi dengan nomor telepon (dengan kode negara), alamat email, atau ID platform sesuai dengan kanal yang dipilih. Field ini wajib diisi dengan benar agar pesan dapat terkirim.</td>
+      <td>sasi@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Id Percakapan</td>
+      <td>ID percakapan yang terkait dengan link tersebut (jika ada). Biasanya terisi otomatis setelah terjadi percakapan.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Foto</td>
+      <td>URL foto profil kontak pada platform tersebut (opsional).</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Tambahan</td>
+      <td>Keterangan atau informasi tambahan terkait link tersebut untuk referensi internal.</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+Setelah semua isian dilengkapi, klik **[Simpan]** untuk menyimpan data link yang baru saja Anda buat.
+
+---
+
+## **Edit dan Hapus Data Link**
+
+### Edit Data Link
 
 Untuk mengedit suatu data link, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
 
-Untuk menghapus suatu data link adalah dengan pilih data mana yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+Perubahan data akan langsung tersimpan dan berlaku pada seluruh fitur yang menggunakan link tersebut.
+
+### Hapus Data Link
+
+Untuk menghapus suatu data link, pilih data link yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut.
+
+Jika ya, klik **[Ya]**. Jika tidak, klik **[Tidak]**.
+
+<Callout type="info" title="Informasi Penting">
+Penghapusan link akan memutus koneksi antara kontak dengan platform komunikasi tersebut. Pastikan data yang akan dihapus benar-benar tidak diperlukan lagi.
+</Callout>
+
+---
 
 ## **Percakapan**
 
-Percakapan adalah tab yang digunakan untuk menampung semua percakapan dengan link yang terkait dari percakapan yang statusnya baru, ditugaskan, dan seelsai. Jadi semua percakapan yang belum terarsip akan termonitoring dengan link yang terhubung.
+Tab Percakapan pada data link digunakan untuk menampung seluruh histori percakapan yang terjadi melalui link tersebut.
+
+Tab ini mencakup percakapan dari semua status (Baru, Ditugaskan, dan Selesai). Semua percakapan yang belum diarsipkan akan tetap termonitoring dan terhubung dengan data link, sehingga pengguna dapat melacak seluruh riwayat komunikasi melalui kanal tersebut.
 
 <ImageZoom
   src="/images/id/Link-Percakapan.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tab Percakapan pada Data Link"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+Pada tab ini, pengguna dapat:
+
+- Melihat seluruh percakapan yang pernah terjadi melalui link tersebut.
+- Memantau status percakapan (Baru, Ditugaskan, Selesai).
+- Mengidentifikasi percakapan yang belum ditangani untuk tindak lanjut segera.
+
+---
 
 ## **Kirim Pesan**
 
-Kirim pesan adalah tab yang digunakan untuk menampung informasi pesan siaran yang dikirim ke link tersebut. Jadi Anda dapat memonitoring hasil pesan siaran yang sudah terkirim, belum terkirim atau gagal terkirim.
+Tab Kirim Pesan pada data link digunakan untuk menampung informasi pengiriman pesan siaran (broadcast) yang dikirim ke link tersebut.
+
+Melalui tab ini, pengguna dapat memonitor hasil pengiriman pesan siaran, termasuk pesan yang sudah terkirim, belum terkirim, atau gagal terkirim ke akun komunikasi yang bersangkutan.
 
 <ImageZoom
   src="/images/id/Link-kirimpesan.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tab Kirim Pesan pada Data Link"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+Pada tab ini, pengguna dapat:
+
+- Melihat daftar pesan siaran yang pernah dikirim ke link tersebut.
+- Memantau status pengiriman setiap pesan (Terkirim, Dalam Antrean, Gagal).
+- Mengevaluasi efektivitas kampanye promosi yang ditujukan ke kontak melalui link tersebut.
 
 ---
  
@@ -79,10 +174,12 @@ Kirim pesan adalah tab yang digunakan untuk menampung informasi pesan siaran yan
  
 Agar pengelolaan Link lebih optimal, perhatikan beberapa tips berikut:
  
-- Tambahkan berbagai kanal komunikasi (WhatsApp, Email, Telegram) untuk menjangkau kontak dari berbagai platform.
-- Gunakan ID Eksternal yang benar (nomor HP dengan kode negara atau alamat email valid) agar pesan dapat terkirim.
-- Pantau tab Percakapan untuk melihat histori interaksi yang belum terarsip.
-- Manfaatkan tab Kirim Pesan untuk mengevaluasi status pengiriman pesan siaran Anda.
+- Tambahkan berbagai kanal komunikasi (WhatsApp, Email, Telegram) pada setiap kontak untuk menjangkau pelanggan dari berbagai platform.
+- Gunakan ID Eksternal yang benar dan lengkap (nomor HP dengan kode negara untuk WhatsApp, alamat email valid untuk Email) agar pesan dapat terkirim dengan baik.
+- Pantau tab Percakapan secara berkala untuk melihat histori interaksi yang belum ditangani.
+- Manfaatkan tab Kirim Pesan untuk mengevaluasi status pengiriman pesan siaran dan mengidentifikasi pesan yang gagal.
+- Pastikan setiap kontak memiliki minimal satu link aktif agar dapat dihubungi melalui kampanye promosi.
+- Perbarui data link jika terjadi perubahan nomor telepon atau alamat email kontak.
  
 </Tips>
  
@@ -93,13 +190,16 @@ Agar pengelolaan Link lebih optimal, perhatikan beberapa tips berikut:
  
 Jika mengalami kendala terkait menu Link, lakukan langkah berikut:
  
-- Periksa kembali format ID Eksternal jika pesan siaran terus-menerus gagal.
-- Refresh halaman jika tab Percakapan tidak menampilkan data terbaru.
+- Periksa kembali format ID Eksternal jika pesan siaran terus-menerus gagal terkirim (pastikan kode negara sudah benar untuk nomor telepon).
+- Refresh halaman jika tab Percakapan atau Kirim Pesan tidak menampilkan data terbaru.
 - Pastikan koneksi internet stabil saat menambahkan atau mengedit data link.
+- Periksa hak akses akun Anda jika tidak dapat menambah atau menghapus data link.
 - Logout dan login kembali jika sesi Anda berakhir saat melakukan pembaruan data.
+- Bersihkan cache browser jika tampilan tidak sesuai.
+- Hubungi tim support jika link yang sudah terhubung tetap tidak dapat menerima pesan promosi.
  
 </Kendala>
  
 ---
- 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+
+Jika ada masalah atau kesulitan terkait NoBox.AI, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

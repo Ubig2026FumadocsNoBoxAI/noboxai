@@ -6,7 +6,9 @@ icon: BookUser
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Kontak adalah salah satu menu pada Nobox.Ai yang digunakan untuk menampung data kontak hasil ekstraksi dan menangani data target promosi.
+Kontak adalah salah satu menu pada NoBox.AI yang digunakan untuk menampung, mengelola, dan mengorganisir seluruh data kontak pelanggan yang diperoleh dari berbagai sumber.
+
+Menu ini membantu pengguna dalam menangani data target promosi, menyimpan informasi pelanggan secara terstruktur, serta mendukung kebutuhan CRM seperti pengelolaan tugas, penawaran, dan catatan interaksi. Dengan fitur-fitur yang tersedia, pengguna dapat melakukan impor data secara massal, menambah kontak manual, serta mengekspor data ke platform eksternal seperti Google Kontak dan Facebook Audiences.
 
 <iframe
   width="800"
@@ -20,6 +22,10 @@ Kontak adalah salah satu menu pada Nobox.Ai yang digunakan untuk menampung data 
   allowfullscreen
 ></iframe>
 
+---
+
+## **Tampilan Menu Kontak**
+
 <ImageZoom
   src="/images/id/Kontak.png"
   alt="Tampilan Menu Kontak NoBox"
@@ -28,13 +34,48 @@ Kontak adalah salah satu menu pada Nobox.Ai yang digunakan untuk menampung data 
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-masing. Penjelasan dari fungsi tersebut adalah sebagai berikut:
+Tampilan di atas merupakan halaman utama menu Kontak yang menampilkan seluruh daftar kontak pelanggan yang tersimpan di dalam sistem.
 
-**• Impor Excel & CSV**: Digunakan untuk impor data kontak dengan format excel atau CSV dari file yang Anda miliki ke data kontak Nobox.Ai Anda.
+Pada halaman ini, pengguna dapat melihat data kontak, melakukan pencarian, menambah kontak baru, mengimpor kontak secara massal, serta mengekspor data ke platform eksternal. Terdapat juga fitur filter untuk mempermudah pencarian kontak berdasarkan berbagai kriteria.
+
+---
+
+## **Fitur Impor dan Ekspor Data Kontak**
+
+Pada tampilan menu Kontak, terdapat beberapa fitur impor dan ekspor yang dapat membantu pengguna mengelola data kontak secara efisien:
+
+<table>
+  <thead>
+    <tr>
+      <th width="200">Fitur</th>
+      <th>Fungsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Impor Excel & CSV</td>
+      <td>Mengimpor data kontak secara massal dari file Excel atau CSV yang dimiliki pengguna ke dalam database NoBox.AI</td>
+    </tr>
+    <tr>
+      <td>Google Kontak</td>
+      <td>Mengunduh data kontak dalam format CSV untuk kemudian diimpor ke Google Kontak</td>
+    </tr>
+    <tr>
+      <td>Fb Audiences</td>
+      <td>Mengunduh data kontak dalam format Excel atau CSV untuk diimpor ke Facebook Audiences sebagai target iklan</td>
+    </tr>
+  </tbody>
+</table>
+
+---
 
 ## **Cara Impor Excel & CSV**
 
-1\. Buka menu **[Kontak]** **➔** klik fitur **[Impor Excel & CSV]**.
+Fitur ini digunakan untuk mengimpor data kontak secara massal dari file Excel atau CSV yang sudah Anda miliki ke dalam database NoBox.AI.
+
+Untuk mengimpor data kontak, ikuti langkah-langkah berikut:
+
+1. Buka menu **[Kontak]** ➔ klik fitur **[Impor Excel & CSV]**.
 
 <ImageZoom
   src="/images/id/impor%20excel%20&#x26;%20csv.png"
@@ -44,95 +85,112 @@ Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-ma
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-2\. Kemudian \[Unduh Model] terlebih dahulu atau upload excel atau CSV yang sudah Anda punya. Klik **[Pilih File]** **➔** pilih file excel atau CSV Anda, kemudian klik **[Impor]**.
+2. Kemudian **[Unduh Model]** terlebih dahulu untuk mendapatkan template format yang benar, atau upload file Excel/CSV yang sudah Anda miliki. Klik **[Pilih File]** ➔ pilih file Excel atau CSV Anda, kemudian klik **[Impor]**.
 
 <ImageZoom
   src="/images/id/Impor%20data%20excel&#x26;csv.png"
-  alt="Proses Impor Data"
+  alt="Proses Upload File Impor"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-3\. Maka akan tampil dialog **[Impor Excel & CSV].** Lengkapi isian kanal, list, negara, kategori, tag.
+3. Maka akan tampil dialog **[Impor Excel & CSV]**. Lengkapi isian kanal, list, negara, kategori, dan tag sesuai kebutuhan.
 
 <ImageZoom
   src="/images/id/hasil%20impor%20excel&#x26;csv.png"
-  alt="Hasil Impor Kontak"
+  alt="Dialog Pengisian Data Impor"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Kemudian mapping data excel dengan field di Nobox.Ai dilakukan dengan cara memilih nama field yang sesuai dengan nama kolom pada data Excel.
+4. Kemudian lakukan mapping data Excel dengan field di NoBox.AI. Mapping dilakukan dengan cara memilih nama field yang sesuai dengan nama kolom pada data Excel Anda.
 
 Pastikan Anda memilih field **[ID Eksternal]** untuk semua data seperti nomor telepon, email, dan lainnya. Setelah itu, klik tombol **[Simpan]** untuk menyimpan data.
 
 <ImageZoom
   src="/images/id/mapping%20data%20excel.png"
-  alt="Mapping Data Excel ke NoBox"
+  alt="Mapping Data Excel ke Field NoBox"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-**• Google Kontak**: Digunakan untuk download data kontak berupa CSV yang memudahkan Anda untuk impor data kontak ke Google Kontak.
+---
 
-## **Cara Export Google Kontak**
+## **Cara Ekspor ke Google Kontak**
 
-1\. Klik fitur **[Google Contacts]**, maka akan otomatis download data kontak Anda.
+Fitur ini digunakan untuk mengunduh data kontak dalam format CSV yang dapat langsung diimpor ke Google Kontak.
+
+Untuk mengekspor data ke Google Kontak, ikuti langkah-langkah berikut:
+
+1. Klik fitur **[Google Contacts]** pada halaman Kontak, maka sistem akan otomatis mengunduh data kontak Anda dalam format CSV.
 
 <ImageZoom
   src="/images/id/google%20contact.png"
-  alt="Ekspor ke Google Contact"
+  alt="Tombol Ekspor ke Google Contact"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-2\. Buka Google Kontak di akun google Anda, lalu klik **[Impor kontak]**.
+2. Buka Google Kontak di akun Google Anda, lalu klik **[Impor kontak]**.
 
 <ImageZoom
   src="/images/id/google%20kontak%20(impor).png"
-  alt="Impor di Google Kontak"
+  alt="Menu Impor di Google Kontak"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-3\. Pilih file yang sudah didownload dari Nobox.Ai, lalu klik **[Impor]**.
+3. Pilih file CSV yang sudah diunduh dari NoBox.AI, lalu klik **[Impor]**.
 
 <ImageZoom
   src="/images/id/impor%20kontak.png"
-  alt="Konfirmasi Impor Kontak"
+  alt="Konfirmasi Impor File CSV"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-4\. Maka akan tampil data tersebut, pilih data dan klik ikon [ <img src="/images/id/Tambah.png" alt="Tambah" className="inline h-5 w-auto mx-1" /> ] untuk menambahkan kontak pada akun google Anda.
+4. Maka data kontak akan tampil di Google Kontak. Pilih data dan klik ikon [ <img src="/images/id/Tambah.png" alt="Tambah" className="inline h-5 w-auto mx-1" /> ] untuk menambahkan kontak pada akun Google Anda.
 
 <ImageZoom
   src="/images/id/hasil%20impor%20kontak.png"
-  alt="Hasil Akhir Impor Kontak"
+  alt="Hasil Akhir Impor Kontak di Google"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-**• Fb Audiences**: Digunakan untuk download data kontak berupa excel atau CSV yang memudahkan Anda untuk impor data kontak ke facebook audiences.
+---
+
+## **Cara Ekspor ke Facebook Audiences**
+
+Fitur Fb Audiences digunakan untuk mengunduh data kontak dalam format Excel atau CSV yang dapat diimpor ke Facebook Audiences sebagai target iklan.
 
 <ImageZoom
   src="/images/id/fb%20audience.png"
-  alt="Fitur FB Audiences"
+  alt="Fitur Ekspor ke Facebook Audiences"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
+Klik fitur **[Fb Audiences]** pada halaman Kontak, maka sistem akan mengunduh data kontak dalam format yang sesuai untuk diimpor ke platform Facebook Ads Manager.
+
+---
+
 ## **Tambah Kontak**
 
-Untuk menambah data kontak, silahkan klik menu **[Kontak]**➔**[Tambah Kontak]**. Maka akan tampil dialog **[Tambah Kontak].** Kemudian lengkapi isian-isian yang terdapat pada dialog tersebut.
+Untuk menambah data kontak secara manual, ikuti langkah-langkah berikut:
+
+1. Klik menu **[Kontak]** ➔ **[Tambah Kontak]**.
+2. Maka akan tampil dialog **[Tambah Kontak]**, kemudian lengkapi seluruh isian yang tersedia pada dialog tersebut.
+
+### Tampilan Dialog Tambah Kontak
 
 <ImageZoom
   src="/images/id/Tambah%20Kontak.png"
@@ -142,38 +200,101 @@ Untuk menambah data kontak, silahkan klik menu **[Kontak]**➔**[Tambah Kontak]*
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-| Isian         | Uraian                                | Contoh                        |
-| ------------- | ------------------------------------- | ----------------------------- |
-| Nama          | Nama kontak                           | Erik Setiadi                  |
-| Kategori      | Kategori                              | General                       |
-| List          | Isi list                              | Partner                       |
-| Tag           | Isi tag                               | Pelanggan Prioritas           |
-| Kontak Person | Nama orang yang terkait dengan kontak | -                             |
-| Catatan       | Catatan kontak                        | -                             |
-| Link          | Akun-akun kontak                      | Email, WhatsApp, Shopee.co.id |
-| Alamat        | Alamat kontak                         | Jl. Akordion                  |
-| Negara        | Pilih negara                          | Indonesia                     |
-| Provinsi      | Pilih provinsi                        | Jawa Timur                    |
-| Kota          | Pilih kota                            | Malang                        |
-| Pos           | Isi kode pos                          | 65124                         |
+### Isian Dialog Tambah Kontak
 
-Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data kontak yang baru saja Anda buat.
+<table>
+  <thead>
+    <tr>
+      <th width="150">Isian</th>
+      <th width="300">Uraian</th>
+      <th>Contoh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nama</td>
+      <td>Nama lengkap kontak yang digunakan sebagai identitas utama. Field ini bersifat wajib diisi.</td>
+      <td>Erik Setiadi</td>
+    </tr>
+    <tr>
+      <td>Kategori</td>
+      <td>Klasifikasi kontak untuk membantu pengelompokan berdasarkan jenis pelanggan.</td>
+      <td>General</td>
+    </tr>
+    <tr>
+      <td>List</td>
+      <td>Daftar atau kelompok yang digunakan untuk segmentasi kontak berdasarkan kebutuhan kampanye.</td>
+      <td>Partner</td>
+    </tr>
+    <tr>
+      <td>Tag</td>
+      <td>Label khusus untuk memudahkan identifikasi dan penyaringan kontak.</td>
+      <td>Pelanggan Prioritas</td>
+    </tr>
+    <tr>
+      <td>Kontak Person</td>
+      <td>Nama orang yang menjadi perwakilan atau penanggung jawab dari kontak tersebut.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Catatan</td>
+      <td>Informasi tambahan atau catatan penting terkait kontak untuk referensi internal.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Link</td>
+      <td>Akun-akun komunikasi yang terhubung dengan kontak, seperti Email, WhatsApp, Shopee, dll.</td>
+      <td>Email, WhatsApp, Shopee.co.id</td>
+    </tr>
+    <tr>
+      <td>Alamat</td>
+      <td>Alamat fisik lengkap dari kontak pelanggan.</td>
+      <td>Jl. Akordion</td>
+    </tr>
+    <tr>
+      <td>Negara</td>
+      <td>Negara tempat kontak berada.</td>
+      <td>Indonesia</td>
+    </tr>
+    <tr>
+      <td>Provinsi</td>
+      <td>Provinsi atau wilayah administratif kontak.</td>
+      <td>Jawa Timur</td>
+    </tr>
+    <tr>
+      <td>Kota</td>
+      <td>Kota atau kabupaten tempat kontak berada.</td>
+      <td>Malang</td>
+    </tr>
+    <tr>
+      <td>Pos</td>
+      <td>Kode pos lokasi kontak sebagai referensi pengiriman.</td>
+      <td>65124</td>
+    </tr>
+  </tbody>
+</table>
+
+Setelah semua isian dilengkapi dengan benar, klik **[Simpan]** untuk menyimpan data kontak yang baru saja Anda buat.
+
+---
 
 ## **Link**
 
-Link digunakan untuk menampung akun-akun kontak tersebut. Seperti nomer WhatsApp, Email, Telegram, dsb.
+Link adalah tab pada data kontak yang digunakan untuk menampung akun-akun komunikasi yang terhubung dengan kontak tersebut, seperti nomor WhatsApp, alamat Email, akun Telegram, dan platform lainnya.
+
+Tab ini memungkinkan pengguna menghubungkan satu kontak dengan berbagai kanal komunikasi sekaligus, sehingga proses pengiriman pesan dan promosi dapat dilakukan melalui berbagai platform secara terintegrasi.
 
 <ImageZoom
   src="/images/id/Link.png"
-  alt="Tab Link Kontak"
+  alt="Tab Link pada Data Kontak"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Tambah Link**
+### Tambah Link
 
-Untuk tambah data link, silahkan klik **[Tambah Link]** maka akan tampil dialog **[Tambah Link].** Kemudian lengkapi isian pada dialog tersebut.
+Untuk menambah data link, silahkan klik **[Tambah Link]**, maka akan tampil dialog **[Tambah Link]**. Kemudian lengkapi seluruh isian pada dialog tersebut.
 
 <ImageZoom
   src="/images/id/Tambah%20Link.png"
@@ -183,26 +304,77 @@ Untuk tambah data link, silahkan klik **[Tambah Link]** maka akan tampil dialog 
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-| Isian          | Uraian                                                               | Contoh         |
-| -------------- | -------------------------------------------------------------------- | -------------- |
-| Kanal          | Pilih kanal                                                          | Email          |
-| Nama Eksternal | Nama eksternal link                                                  | Sasi Email     |
-| Id Eksternal   | Isi dengan dengan no telp, id shopee dll sesuai dengan pilihan kanal | sasi@gmail.com |
-| Id Percakapan  | Id percakapan                                                        | -              |
-| Foto           | Isi url foto                                                         | -              |
-| Tambahan       | Isi keterangan tambahan                                              | -              |
+### Isian Dialog Tambah Link
 
-Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data link yang baru saja Anda buat.
+<table>
+  <thead>
+    <tr>
+      <th width="150">Isian</th>
+      <th width="300">Uraian</th>
+      <th>Contoh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kanal</td>
+      <td>Platform komunikasi yang digunakan untuk menghubungi kontak tersebut.</td>
+      <td>Email</td>
+    </tr>
+    <tr>
+      <td>Nama Eksternal</td>
+      <td>Nama akun atau username kontak pada platform yang dipilih.</td>
+      <td>Sasi Email</td>
+    </tr>
+    <tr>
+      <td>Id Eksternal</td>
+      <td>Identitas unik kontak dari platform eksternal (nomor telepon, email, ID Shopee, dll). Field ini wajib diisi dengan benar agar pesan dapat terkirim.</td>
+      <td>sasi@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Id Percakapan</td>
+      <td>ID percakapan yang terkait dengan link tersebut (jika ada).</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Foto</td>
+      <td>URL foto profil kontak pada platform tersebut (opsional).</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Tambahan</td>
+      <td>Keterangan atau informasi tambahan terkait link tersebut.</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
-## **Edit Dan Hapus Data Link**
+Setelah semua isian dilengkapi, klik **[Simpan]** untuk menyimpan data link yang baru saja Anda buat.
+
+### Edit dan Hapus Data Link
+
+#### Edit Data Link
 
 Untuk mengedit suatu data link, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
 
-Untuk menghapus suatu data link adalah dengan pilih data mana yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+Perubahan data akan langsung tersimpan dan dapat digunakan kembali dalam sistem.
+
+#### Hapus Data Link
+
+Untuk menghapus suatu data link adalah dengan pilih data link yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut.
+
+Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+
+<Callout type="info" title="Informasi Penting">
+Penghapusan data link bersifat permanen dan tidak dapat dibatalkan. Pastikan data yang akan dihapus benar-benar tidak diperlukan lagi.
+</Callout>
+
+---
 
 ## **vCard**
 
-vCard adalah fitur yang memungkinkan Anda mengirim informasi kontak dalam format yang bisa dengan mudah dibaca di program email lainnya, vCard disimpan sebagai file .vcf.
+vCard adalah fitur yang memungkinkan Anda mengirim informasi kontak dalam format standar yang dapat dibaca oleh program email dan aplikasi kontak lainnya.
+
+File vCard disimpan dalam format .vcf dan dapat digunakan untuk berbagi data kontak secara cepat dan mudah ke perangkat atau aplikasi lain.
 
 <ImageZoom
   src="/images/id/VCard.png"
@@ -212,9 +384,15 @@ vCard adalah fitur yang memungkinkan Anda mengirim informasi kontak dalam format
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
+Klik tombol **[vCard]** pada halaman detail kontak untuk mengunduh file vCard dari kontak yang dipilih.
+
+---
+
 ## **Gabung Kontak**
 
-Fitur yang berguna dalam manajemen kontak untuk menghindari duplikasi dan memastikan data yang bersih dan terorganisir, meminimalkan kekacauan dan meningkatkan efisiensi dalam mengelola daftar kontak.
+Gabung Kontak adalah fitur yang digunakan untuk menggabungkan dua atau lebih data kontak yang duplikat menjadi satu data kontak yang lengkap.
+
+Fitur ini sangat berguna dalam manajemen kontak untuk menghindari duplikasi dan memastikan data yang bersih serta terorganisir, sehingga meminimalkan kekacauan dan meningkatkan efisiensi dalam mengelola daftar kontak.
 
 <ImageZoom
   src="/images/id/gabung%20kontak.png"
@@ -224,33 +402,43 @@ Fitur yang berguna dalam manajemen kontak untuk menghindari duplikasi dan memast
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
+Untuk menggabungkan kontak, pilih kontak utama yang akan dipertahankan, kemudian pilih kontak duplikat yang ingin digabungkan. Data dari kontak duplikat akan disatukan ke dalam kontak utama.
+
+---
+
 ## **Percakapan**
 
-Percakapan adalah tab yang digunakan untuk menampung semua percakapan dengan kontak yang terkait dari percakapan yang statusnya baru, proses, dan selesai. Jadi semua percakapan yang belum terarsip akan termonitoring dengan kontak yang terhubung.
+Percakapan adalah tab pada data kontak yang digunakan untuk menampung seluruh histori percakapan dengan kontak tersebut.
+
+Tab ini mencakup percakapan dari semua status (Baru, Proses, dan Selesai). Semua percakapan yang belum diarsipkan akan tetap termonitoring dan terhubung dengan data kontak, sehingga pengguna dapat melacak seluruh riwayat interaksi dengan pelanggan secara lengkap.
 
 <ImageZoom
   src="/images/id/Percakapan%20(2).png"
-  alt="Tab Percakapan Kontak"
+  alt="Tab Percakapan pada Data Kontak"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+---
 
 ## **Tugas**
 
-Tugas adalah tab yang digunakan untuk manajemen tugas yang berhubungan dengan kontak tersebut.
+Tugas adalah tab pada data kontak yang digunakan untuk manajemen tugas yang berhubungan dengan kontak tersebut.
+
+Melalui tab ini, pengguna dapat membuat, memantau, dan mengelola tugas-tugas yang terkait dengan interaksi atau tindak lanjut terhadap kontak tertentu.
 
 <ImageZoom
   src="/images/id/Tugas.png"
-  alt="Tab Tugas Kontak"
+  alt="Tab Tugas pada Data Kontak"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Tambah Tugas**
+### Tambah Tugas
 
-Untuk tambah data tugas, silahkan klik [ <img src="/images/id/Tombol%20Tugas%20(1).png" alt="Tombol Tugas" className="inline h-5 w-auto mx-1" /> ] maka akan tampil dialog [Tambah Tugas]. Kemudian lengkapi isian pada dialog tersebut.
+Untuk menambah data tugas, silahkan klik ikon [ <img src="/images/id/Tombol%20Tugas%20(1).png" alt="Tombol Tugas" className="inline h-5 w-auto mx-1" /> ], maka akan tampil dialog **[Tambah Tugas]**. Kemudian lengkapi seluruh isian pada dialog tersebut.
 
 <ImageZoom
   src="/images/id/tambah%20tugas%20kontak.png"
@@ -260,48 +448,129 @@ Untuk tambah data tugas, silahkan klik [ <img src="/images/id/Tombol%20Tugas%20(
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Lengkapi isian yang diperlukan, sebagai contoh seperti berikut:
+### Isian Dialog Tambah Tugas
 
-| Isian                    | Uraian                                       | Contoh                                               |
-| ------------------------ | -------------------------------------------- | ---------------------------------------------------- |
-| Nama                     | Nama tugas                                   | Kirim pesan promosi                                  |
-| Detail/Rencana           | Rincian atau rencana tugas                   | Kirim broadcast ke setiap pelanggan di bulan Agustus |
-| Langkah Berikutnya/Hasil | Langkah selanjutnya atau hasil tugas         | Rekap data bulanan                                   |
-| Lampiran                 | Lampiran tugas                               | -                                                    |
-| Pemilik                  | Pemilik tugas                                | Wulan Septi                                          |
-| List                     | List tugas                                   | Backlog                                              |
-| Kategori                 | Kategori tugas                               | Promosi                                              |
-| Prioritas                | Level prioritas                              | Urgent                                               |
-| Tag                      | Tag tugas                                    | Promosi, Marketing                                   |
-| Tanggal Mulai            | Awal batas waktu                             | 02-08-2023                                           |
-| Tanggal Selesai          | Akhir batas waktu                            | 07-08-2023                                           |
-| Kontak                   | Kontak yang mengerjakan tugas tersebut       | Wara                                                 |
-| Perusahaan               | Perusahaan yang mengerjakan tugas tersebut   | PT. Indodrink                                        |
-| Transaksi                | Penawaran yang terkait dengan tugas tersebut | Penawaran Wara Indodrink                             |
+<table>
+  <thead>
+    <tr>
+      <th width="180">Isian</th>
+      <th width="300">Uraian</th>
+      <th>Contoh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nama</td>
+      <td>Nama tugas yang akan dibuat sebagai identitas tugas.</td>
+      <td>Kirim pesan promosi</td>
+    </tr>
+    <tr>
+      <td>Detail/Rencana</td>
+      <td>Rincian atau rencana detail dari tugas yang akan dikerjakan.</td>
+      <td>Kirim broadcast ke setiap pelanggan di bulan Agustus</td>
+    </tr>
+    <tr>
+      <td>Langkah Berikutnya/Hasil</td>
+      <td>Langkah selanjutnya yang harus dilakukan atau hasil yang diharapkan dari tugas.</td>
+      <td>Rekap data bulanan</td>
+    </tr>
+    <tr>
+      <td>Lampiran</td>
+      <td>File tambahan yang terkait dengan tugas (opsional).</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pemilik</td>
+      <td>Anggota tim yang bertanggung jawab atas pelaksanaan tugas tersebut.</td>
+      <td>Wulan Septi</td>
+    </tr>
+    <tr>
+      <td>List</td>
+      <td>Kategori list tugas untuk pengelompokan (contoh: Backlog, To Do, In Progress).</td>
+      <td>Backlog</td>
+    </tr>
+    <tr>
+      <td>Kategori</td>
+      <td>Klasifikasi jenis tugas berdasarkan bidang kerja.</td>
+      <td>Promosi</td>
+    </tr>
+    <tr>
+      <td>Prioritas</td>
+      <td>Level prioritas tugas untuk menentukan urgensi penyelesaian.</td>
+      <td>Urgent</td>
+    </tr>
+    <tr>
+      <td>Tag</td>
+      <td>Label tambahan untuk mempermudah identifikasi dan filter tugas.</td>
+      <td>Promosi, Marketing</td>
+    </tr>
+    <tr>
+      <td>Tanggal Mulai</td>
+      <td>Tanggal awal pengerjaan tugas.</td>
+      <td>02-08-2023</td>
+    </tr>
+    <tr>
+      <td>Tanggal Selesai</td>
+      <td>Tanggal batas akhir penyelesaian tugas.</td>
+      <td>07-08-2023</td>
+    </tr>
+    <tr>
+      <td>Kontak</td>
+      <td>Kontak pelanggan yang terkait dengan tugas tersebut.</td>
+      <td>Wara</td>
+    </tr>
+    <tr>
+      <td>Perusahaan</td>
+      <td>Perusahaan yang terkait dengan tugas tersebut.</td>
+      <td>PT. Indodrink</td>
+    </tr>
+    <tr>
+      <td>Transaksi</td>
+      <td>Penawaran atau deal yang terkait dengan tugas tersebut.</td>
+      <td>Penawaran Wara Indodrink</td>
+    </tr>
+  </tbody>
+</table>
 
-Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data tugas yang baru saja Anda buat.
+Setelah semua isian dilengkapi, klik **[Simpan]** untuk menyimpan data tugas yang baru saja Anda buat.
 
-## **Edit Dan Hapus Data Tugas**
+### Edit dan Hapus Data Tugas
+
+#### Edit Data Tugas
 
 Untuk mengedit suatu data tugas, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
 
-Untuk menghapus suatu data tugas adalah dengan pilih data mana yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+Perubahan data akan langsung tersimpan dan dapat digunakan kembali dalam sistem.
+
+#### Hapus Data Tugas
+
+Untuk menghapus suatu data tugas adalah dengan pilih data tugas yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut.
+
+Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+
+<Callout type="info" title="Informasi Penting">
+Penghapusan data tugas bersifat permanen dan tidak dapat dibatalkan. Pastikan data yang akan dihapus benar-benar tidak diperlukan lagi.
+</Callout>
+
+---
 
 ## **Penawaran**
 
-Penawaran adalah tab yang digunakan untuk manajemen penawaran yang bersangkutan dengan kontak tersebut.
+Penawaran adalah tab pada data kontak yang digunakan untuk manajemen penawaran (deals) yang berhubungan dengan kontak tersebut.
+
+Melalui tab ini, pengguna dapat membuat dan mengelola penawaran produk atau jasa kepada kontak tertentu, sehingga seluruh proses penjualan dapat dipantau secara terintegrasi dengan data kontak.
 
 <ImageZoom
   src="/images/id/penawaran%20kontak.png"
-  alt="Tab Penawaran Kontak"
+  alt="Tab Penawaran pada Data Kontak"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Tambah Penawaran**
+### Tambah Penawaran
 
-Untuk tambah data penawaran, silahkan klik [ <img src="/images/id/Tombol%20penawaran.png" alt="Tombol Penawaran" className="inline h-5 w-auto mx-1" /> ] maka akan tampil dialog [Tambah Penawaran]. Kemudian lengkapi isian pada dialog tersebut.
+Untuk menambah data penawaran, silahkan klik ikon [ <img src="/images/id/Tombol%20penawaran.png" alt="Tombol Penawaran" className="inline h-5 w-auto mx-1" /> ], maka akan tampil dialog **[Tambah Penawaran]**. Kemudian lengkapi seluruh isian pada dialog tersebut.
 
 <ImageZoom
   src="/images/id/tambah%20penawaran%20kontak.png"
@@ -311,62 +580,157 @@ Untuk tambah data penawaran, silahkan klik [ <img src="/images/id/Tombol%20penaw
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Lengkapi isian yang diperlukan, sebagai contoh seperti berikut:
+### Isian Dialog Tambah Penawaran
 
-| Isian              | Uraian                 | Contoh                        |
-| ------------------ | ---------------------- | ----------------------------- |
-| Nama Penawaran     | Nama kesepakatan       | Penawaran Gamis Zeyaa         |
-| Harga              | Harga kesepakatan      | Rp 1.000.000                  |
-| Tugaskan Ke        | Ditugaskan kepada      | Jasmine                       |
-| Tanggal Tutup      | Tanggal tutup          | 07-12-2024                    |
-| Sumber             | Pencarian              | Other                         |
-| Alasan Gagal       | Alasan gagal penawaran | -                             |
-| Papan              | Pilihan papan          | Penawaran Bulan November 2024 |
-| Tahapan            | Tahapan                | Sedang                        |
-| Tanggal Mulai      | Tanggal mulai          | 03-12-2024                    |
-| Tanggal Kadaluarsa | Tanggal kadaluarsa     | 10-12-2024                    |
-| Prioritas          | Level Prioritas        | Sedang                        |
-| Perusahaan         | Perusahaan kesepakatan | PT. Puspita                   |
-| Kontak             | List kontak terkait    | Sasi                          |
-| Produk             | List produk            | Gamis Zeyaa                   |
+<table>
+  <thead>
+    <tr>
+      <th width="180">Isian</th>
+      <th width="300">Uraian</th>
+      <th>Contoh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nama Penawaran</td>
+      <td>Nama kesepakatan atau penawaran yang sedang dijalankan.</td>
+      <td>Penawaran Gamis Zeyaa</td>
+    </tr>
+    <tr>
+      <td>Harga</td>
+      <td>Nilai nominal penawaran atau kesepakatan.</td>
+      <td>Rp 1.000.000</td>
+    </tr>
+    <tr>
+      <td>Tugaskan Ke</td>
+      <td>Anggota tim yang ditugaskan untuk menangani penawaran tersebut.</td>
+      <td>Jasmine</td>
+    </tr>
+    <tr>
+      <td>Tanggal Tutup</td>
+      <td>Tanggal batas akhir penawaran.</td>
+      <td>07-12-2024</td>
+    </tr>
+    <tr>
+      <td>Sumber</td>
+      <td>Asal atau sumber perolehan penawaran.</td>
+      <td>Other</td>
+    </tr>
+    <tr>
+      <td>Alasan Gagal</td>
+      <td>Alasan jika penawaran gagal atau tidak tercapai.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Papan</td>
+      <td>Board atau papan kanban tempat penawaran dikelola.</td>
+      <td>Penawaran Bulan November 2024</td>
+    </tr>
+    <tr>
+      <td>Tahapan</td>
+      <td>Tahapan proses penawaran saat ini.</td>
+      <td>Sedang</td>
+    </tr>
+    <tr>
+      <td>Tanggal Mulai</td>
+      <td>Tanggal dimulainya proses penawaran.</td>
+      <td>03-12-2024</td>
+    </tr>
+    <tr>
+      <td>Tanggal Kadaluarsa</td>
+      <td>Tanggal kadaluarsa penawaran.</td>
+      <td>10-12-2024</td>
+    </tr>
+    <tr>
+      <td>Prioritas</td>
+      <td>Level prioritas penawaran untuk menentukan urgensi.</td>
+      <td>Sedang</td>
+    </tr>
+    <tr>
+      <td>Perusahaan</td>
+      <td>Perusahaan yang terkait dengan penawaran.</td>
+      <td>PT. Puspita</td>
+    </tr>
+    <tr>
+      <td>Kontak</td>
+      <td>Kontak pelanggan yang terkait dengan penawaran.</td>
+      <td>Sasi</td>
+    </tr>
+    <tr>
+      <td>Produk</td>
+      <td>Daftar produk yang ditawarkan.</td>
+      <td>Gamis Zeyaa</td>
+    </tr>
+  </tbody>
+</table>
 
-Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data penawaran yang baru saja Anda buat.
+Setelah semua isian dilengkapi, klik **[Simpan]** untuk menyimpan data penawaran yang baru saja Anda buat.
 
-## **Edit Dan Hapus Data Penawaran**
+### Edit dan Hapus Data Penawaran
+
+#### Edit Data Penawaran
 
 Untuk mengedit suatu data penawaran, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
 
-Untuk menghapus suatu data penawaran adalah dengan pilih data mana yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+Perubahan data akan langsung tersimpan dan dapat digunakan kembali dalam sistem.
+
+#### Hapus Data Penawaran
+
+Untuk menghapus suatu data penawaran adalah dengan pilih data penawaran yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut.
+
+Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+
+<Callout type="info" title="Informasi Penting">
+Penghapusan data penawaran bersifat permanen dan tidak dapat dibatalkan. Pastikan data yang akan dihapus benar-benar tidak diperlukan lagi.
+</Callout>
+
+---
 
 ## **Catatan**
 
-Catatan adalah salah satu fitur Nobox.Ai yang digunakan untuk membuat catatan terkait data kontak tersebut.
+Catatan adalah tab pada data kontak yang digunakan untuk membuat dan menyimpan catatan terkait interaksi atau informasi penting tentang kontak tersebut.
+
+Fitur ini sangat berguna untuk merekam histori komunikasi, kesepakatan khusus, atau informasi penting lainnya yang perlu diingat oleh tim.
 
 <ImageZoom
   src="/images/id/Catatan.png"
-  alt="Tab Catatan Kontak"
+  alt="Tab Catatan pada Data Kontak"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Tambah Data Catatan**
+### Tambah Data Catatan
 
-Untuk membuat data catatan, Anda dapat mengetikkan langsung di bagian [ <img src="/images/id/Type%20note%20here.png" alt="Type Area" className="inline h-5 w-auto mx-1" /> ]. Jika Anda sudah mengisi catatan, silahkan klik tombol [ <img src="/images/id/Kirim.png" alt="Tombol Kirim" className="inline h-5 w-auto mx-1" /> ] untuk menyimpan catatan.
+Untuk membuat data catatan, Anda dapat mengetikkan langsung di bagian [ <img src="/images/id/Type%20note%20here.png" alt="Type Area" className="inline h-5 w-auto mx-1" /> ]. Setelah Anda mengisi catatan, klik tombol [ <img src="/images/id/Kirim.png" alt="Tombol Kirim" className="inline h-5 w-auto mx-1" /> ] untuk menyimpan catatan.
 
-## **Edit dan Hapus Data Catatan**
+### Edit dan Hapus Data Catatan
 
-Fitur ini hanya bisa digunakan oleh NoBox Supervisor, agen hanya bisa menambahkan catatan tetapi tidak bisa mengedit atau menghapus data catatan.
+<Callout type="info" title="Informasi Penting">
+Fitur edit dan hapus catatan hanya dapat digunakan oleh NoBox Supervisor. Agen hanya dapat menambahkan catatan tetapi tidak dapat mengedit atau menghapus data catatan.
+</Callout>
 
-Untuk mengedit suatu data catatan, silahkan klik ikon [ <img src="/images/id/Edit.png" alt="Edit" className="inline h-5 w-auto mx-1" /> ] di bagian samping catatan yang ingin Anda edit. Editlah data tersebut dan klik tombol kirim atau tekan enter pada keyboard Anda untuk menyimpan perubahan tersebut.
+Untuk mengedit suatu data catatan, klik ikon [ <img src="/images/id/Edit.png" alt="Edit" className="inline h-5 w-auto mx-1" /> ] di bagian samping catatan yang ingin Anda edit. Editlah data tersebut dan klik tombol kirim atau tekan Enter pada keyboard Anda untuk menyimpan perubahan.
 
-Untuk menghapus data catatan, silahkan klik ikon [ <img src="/images/id/Hapus.png" alt="Hapus" className="inline h-5 w-auto mx-1" /> ] di bagian samping catatan yang ingin dihapus. Maka akan muncul dialog konfirmasi apakah Anda ingin menghapus catatan tersebut. Jika ya, klik **[Ya]** jika tidak maka klik [Tidak].
+Untuk menghapus data catatan, klik ikon [ <img src="/images/id/Hapus.png" alt="Hapus" className="inline h-5 w-auto mx-1" /> ] di bagian samping catatan yang ingin dihapus. Maka akan muncul dialog konfirmasi. Jika ya, klik **[Ya]**. Jika tidak, klik **[Tidak]**.
+
+---
 
 ## **Edit dan Hapus Data Kontak**
 
+### Edit Data Kontak
+
 Untuk mengedit suatu data kontak, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
 
-Untuk menghapus suatu data kontak adalah dengan pilih data mana yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+Perubahan data akan langsung tersimpan dan berlaku pada seluruh fitur yang menggunakan data kontak tersebut.
+
+### Hapus Data Kontak
+
+Untuk menghapus suatu data kontak, pilih data yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi. Jika ya, klik **[Ya]**. Jika tidak, klik **[Tidak]**.
+
+<Callout type="info" title="Informasi Penting">
+Penghapusan data kontak bersifat permanen dan tidak dapat dibatalkan. Pastikan data yang akan dihapus benar-benar tidak diperlukan lagi sebelum melakukan penghapusan.
+</Callout>
 
 ---
  
@@ -375,11 +739,13 @@ Untuk menghapus suatu data kontak adalah dengan pilih data mana yang akan dihapu
  
 Beberapa tips untuk mengelola kontak secara lebih efisien:
  
-- Gunakan fitur impor Excel/CSV untuk memindahkan data kontak secara massal dengan cepat.
-- Pastikan ID Eksternal di-mapping dengan benar (seperti nomor telepon atau email) agar data tidak duplikat.
-- Manfaatkan fitur vCard untuk berbagi informasi kontak dengan aplikasi lain.
-- Gunakan tab Tugas dan Penawaran untuk melacak aktivitas dan progres penjualan yang terkait dengan kontak.
-- Tambahkan catatan di setiap interaksi agar histori komunikasi dengan kontak tetap terekam dengan baik.
+- Gunakan fitur **[Impor Excel/CSV]** untuk memindahkan data kontak secara massal dengan cepat. Pastikan Anda mengunduh model terlebih dahulu agar format file sesuai.
+- Mapping field **[ID Eksternal]** dengan benar (seperti nomor telepon atau email) agar data tidak duplikat dan pesan dapat terkirim dengan baik.
+- Manfaatkan fitur **[vCard]** untuk berbagi informasi kontak ke aplikasi lain secara cepat.
+- Gunakan fitur **[Gabung Kontak]** secara berkala untuk membersihkan data duplikat dan menjaga database tetap rapi.
+- Manfaatkan tab **[Tugas]** dan **[Penawaran]** untuk melacak aktivitas dan progres penjualan yang terkait dengan setiap kontak.
+- Tambahkan catatan di setiap interaksi penting agar histori komunikasi dengan kontak tetap terekam dengan baik.
+- Gunakan fitur ekspor ke **[Google Kontak]** atau **[Fb Audiences]** untuk memaksimalkan jangkauan promosi di platform lain.
  
 </Tips>
  
@@ -390,14 +756,17 @@ Beberapa tips untuk mengelola kontak secara lebih efisien:
  
 Jika mengalami kendala saat mengelola data Kontak, lakukan langkah berikut:
  
-- Jika impor gagal, pastikan format file sudah sesuai dengan model yang diunduh.
-- Refresh halaman jika kontak yang baru ditambahkan tidak muncul di daftar.
-- Periksa hak akses Anda jika tidak dapat melakukan edit atau hapus pada data tertentu.
-- Pastikan koneksi internet stabil saat melakukan sinkronisasi dengan Google Kontak.
-- Hubungi tim support jika tautan (link) eksternal seperti WhatsApp atau Email tidak berfungsi.
+- Jika impor Excel/CSV gagal, pastikan format file sudah sesuai dengan model yang diunduh dari sistem.
+- Periksa field ID Eksternal jika data kontak yang diimpor terus mengalami duplikasi.
+- Refresh halaman jika kontak yang baru ditambahkan secara manual tidak muncul di daftar.
+- Periksa hak akses akun Anda jika tidak dapat melakukan edit atau hapus pada data tertentu.
+- Pastikan koneksi internet stabil saat melakukan sinkronisasi dengan Google Kontak atau Facebook Audiences.
+- Logout dan login kembali jika fitur filter atau pencarian tidak berfungsi normal.
+- Bersihkan cache browser jika tampilan tidak sesuai.
+- Hubungi tim support jika tautan (link) eksternal seperti WhatsApp atau Email tidak berfungsi atau mengalami kendala teknis.
  
 </Kendala>
  
 ---
- 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+
+Jika ada masalah atau kesulitan terkait NoBox.AI, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

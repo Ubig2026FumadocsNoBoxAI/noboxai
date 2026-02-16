@@ -6,50 +6,53 @@ icon: ShoppingBasket
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Shopee Automation secara efisien dapat mengotomasi tindak lanjut calon pelanggan Anda dan mengirim pesan ke Shopee dengan cepat dan berkualitas tinggi. Memungkinkan Anda mengirimkan pesan otomatis yang dapat disesuaikan sesuai kebutuhan, dan dapat tersambung dengan chatbot untuk meningkatkan interaksi dengan calon pelanggan secara efektif.
+Shopee Automation di NoBox.AI dirancang untuk membantu pemilik toko (seller) dalam mengelola interaksi pelanggan di marketplace Shopee secara otomatis. Dengan fitur ini, Anda dapat merespon chat pembeli dengan cepat, mengirimkan informasi promo massal, hingga menghubungkan chatbot untuk menangani pertanyaan umum pelanggan selama 24 jam.
+
+Integrasi ini memastikan performa chat toko Anda tetap tinggi, meningkatkan kepercayaan pembeli, dan mengoptimalkan konversi penjualan tanpa perlu standby di depan layar setiap saat.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/Dqt_3gNJ4OY/"
-  title="01. Instalasi NoBox Desktop"
+  title="Panduan Shopee Automation NoBox"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-## **Tambah Akun**
+---
 
-Pastikan Anda sudah berlangganan Shopee Automation. Untuk menambah akun baru, klik menu **[Akun] ➔ \[Tambah Akun]** maka akan muncul dialog **[Tambah Akun]**.
+## **Menghubungkan Akun Shopee**
 
-&#x20;
+Anda perlu menautkan akun seller Shopee Anda ke dalam sistem NoBox Desktop untuk sinkronisasi pesan.
+
+### Langkah Penambahan Akun:
+
+1. Klik modul **[Akun]** ➔ tombol **[Tambah Akun]**.
+2. Pilih kanal **Shopee** dan lengkapi rincian nama serta kategori akun.
+3. Klik **[Simpan]**.
 
 <ImageZoom
   src="/images/id/Tambah%20Akun%20Shopee%20(1).png"
-  alt="Tambah Akun Shopee"
+  alt="Tambah Akun Shopee Baru"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-| Isian    | Uraian                                | Contoh       |
-| -------- | ------------------------------------- | ------------ |
-| Kanal    | Kanal yang Anda pilih                 | Shopee       |
-| Kategori | Pilih kategori                        | Automation   |
-| Nama     | Nama akun Anda                        | Shopee CS #1 |
-| Catatan  | Berikan catatan tentang akun tersebut | -            |
-| Status   | Informasi akun aktif atau tidak       | Aktif        |
+---
 
-Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan akun yang baru saja Anda buat.&#x20;
+## **Konfigurasi dan Sinkronisasi (Save Session)**
 
-## **Konfigurasi**
+Setelah akun didaftarkan, Anda perlu melakukan otentikasi agar NoBox dapat mengakses fitur chat.
 
-Disini dapat dilihat bahwa Akun Shopee telah berhasil dibuat, untuk Akun yang baru saja dibuat akan tampil di NoboxChatSession. Ikuti langkah - langkah berikut untuk konfigurasi akun Shopee Anda.
-
-- Login Shopee untuk menautkan dengan Shopee Anda. Kemudian klik tombol **[Save Session]**, Pastikan di tab logs ada informasi “Save session Telegram Automation successfully”
-- Maka proses konfigurasi telah berhasil, akun Telagram Anda sudah bisa dipakai.
+### Cara Aktivasi Sesi:
+- Buka antarmuka NoBox Desktop (Chat Session).
+- Lakukan login ke akun Shopee Anda melalui browser internal yang tersedia.
+- Setelah berhasil masuk, klik tombol **[Save Session]**.
+- Pastikan muncul konfirmasi "Save session successfully" pada tab logs. Akun Shopee Anda kini telah siap digunakan di NoBox.AI.
 
 <ImageZoom
   src="/images/id/Save%20Session%20Shopee.png"
@@ -59,66 +62,67 @@ Disini dapat dilihat bahwa Akun Shopee telah berhasil dibuat, untuk Akun yang ba
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Penanganan Pesan Akun Shopee**
+---
 
-Jika akun Shopee sudah berhasil ditambahkan maka otomatis pesan yang masuk di akun Shopee Anda akan masuk ke Nobox. Klik modul **[Pesan] ➔ \[Kotak Masuk]**, Maka akan tampil semua pesan dari akun Anda, pilih salah satu pesan dari Shopee Anda balas pesan tersebut.
+## **Manajemen Pesan dan Promosi**
 
-<ImageZoom
-  src="/images/id/Penanganan%20Akun%20Shopee.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+### Kotak Masuk Terpusat
+Seluruh chat yang masuk ke Shopee Seller Centre Anda akan ditarik ke dalam menu **[Pesan]** ➔ **[Kotak Masuk]**. Anda dapat membalas chat pelanggan dengan template atau balas cepat guna menjaga metrik performa chat toko.
 
-## **Cara Menggunakan Akun Shopee Untuk Kirim Promosi**
-
-Akun Shopee dapat Anda gunakan untuk mengirim promosi, caranya sebagai berikut:
-
-1\. Klik modul \[Promosi] lalu klik \[Promosi]
-
-2\. Pilih salah satu promosi atau buat promosi baru, pilih kanal **[Shopee]** pilih akun **[Shopee]** yang baru Anda buat dan pastikan akun Shopee Anda Aktif
-
-3\. Pastikan data promosi sudah terisi dengan benar, lanjut Anda proses
-
-4\. Untuk memonitoring pengiriman Promosi, Anda dapat buka tab **[Kirim Pesan]**
+### Kampanye Promosi Seller
+Gunakan akun Shopee Anda untuk mengirim pesan siaran/promosi ke target pelanggan tertentu. Pantau progres pengiriman melalui tab **Kirim Pesan** untuk memastikan kampanye berjalan lancar.
 
 <ImageZoom
   src="/images/id/Cara%20Menggunakan%20Akun%20Shopee.png"
-  alt="Kirim Pesan Shopee"
+  alt="Kirim Pesan Promosi Shopee"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
-
-5\. Selain itu, Anda juga dapat melihat hasil promosi di menu **[Kotak Masuk]** jadi Anda dapat langsung monitoring hasil promosi dan balas chat langsung dengan target promosi Anda.
-
-<ImageZoom
-  src="/images/id/Penanganan%20Akun%20Shopee.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Menonaktifkan Akun Shopee**
-
-Untuk menonaktifkan akun adalah dengan pilih salah satu akun Shopee Anda, kemudian uncheklist pada bagian status. Jika sudah klik **[Simpan]** untuk menyimpan perubahan tersebut.
-
-<ImageZoom
-  src="/images/id/Menonaktifkan%20Akun%20Shopee.png"
-  alt="Menonaktifkan Akun Shopee"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Edit dan Hapus Akun**
-
-Untuk mengedit suatu akun, silahkan buka dan login website Nobox, klik menu **[Akun]**. Silahkan pilih akun mana yang akan Anda edit, kemudian editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
-
-Untuk menghapus suatu akun, silahkan pilih akun mana yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil pemberitahuan konfirmasi apakah Anda ingin menghapus akun tersebut. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
 
 ---
 
-Jika ada masalah atau kesulitan terkait NoBox, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Edit dan Hapus Data Akun**
+
+### Edit Data Akun
+Navigasi ke menu **[Akun]** pada website NoBox.AI, pilih akun Shopee terkait, sesuaikan rincian informasi, lalu klik **[Simpan]**.
+
+### Hapus Data Akun
+Pilih akun yang ingin diputuskan koneksinya secara permanen dan klik tombol **[Hapus]**.
+
+<Callout type="info" title="Informasi Penting">
+Penghapusan akun akan mencabut seluruh otentikasi sesi Shopee pada sistem NoBox.AI. Anda harus melakukan login ulang dan penyimpanan sesi kembali jika ingin menggunakan akun tersebut di masa mendatang.
+</Callout>
+
+---
+
+<Tips>
+## **Tips Penggunaan**
+
+Optimalkan manajemen toko Shopee Anda dengan tips berikut:
+
+- Selalu simpan sesi (*Save Session*) setelah melakukan login agar sinkronisasi pesan berjalan di latar belakang secara otomatis.
+- Gunakan bahasa yang sopan dan informatif khas marketplace untuk menjaga rating toko Anda.
+- Manfaatkan fitur **Kotak Masuk** untuk membalas chat dari berbagai toko Shopee (jika Anda memiliki banyak toko) dalam satu layar saja.
+- Pastikan koneksi internet pada komputer server NoBox Desktop stabil agar balasan otomatis chatbot tidak hambat.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Penanganan Kendala**
+
+Jika menemui masalah pada layanan Shopee Automation, silakan ikuti langkah berikut:
+
+- **Chat Tidak Masuk ke NoBox**: Periksa apakah status sesi di NoBox Desktop masih aktif atau memerlukan login ulang (Expired Session).
+- **Gagal Login**: Pastikan email/username dan password sudah benar, atau periksa apakah ada verifikasi captcha/OTP dari Shopee.
+- **Pesan Broadcast Lama Terkirim**: Periksa antrean pada tab Kirim Pesan atau pastikan limit pengiriman harian Shopee tidak tercapai.
+- **Tampilan Chat Berantakan**: Lakukan refresh pada halaman browser NoBox.AI atau bersihkan cache browser Anda.
+- **Notifikasi Shopee Muncul di Ponsel Tapi Tidak di NoBox**: Lakukan sinkronisasi manual dengan klik tombol refresh akun pada NoBox Desktop.
+
+</Kendala>
+
+---
+
+Jika ada masalah atau kesulitan terkait Shopee Automation, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

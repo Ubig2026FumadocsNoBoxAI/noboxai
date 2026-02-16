@@ -1,20 +1,21 @@
 ---
 title: Funnel
+description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
 icon: MessageCircleReply
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Funnel adalah salah menu pada Nobox.Ai yang digunakan untuk mengkategorikan tahapan proses pemasaran dan support.
+Funnel adalah fitur pada NoBox.AI yang digunakan untuk mengkategorikan tahapan proses pemasaran dan dukungan pelanggan (*customer support*). Fitur ini divisualisasikan dalam bentuk alur kerja yang membantu tim Anda memantau perjalanan pelanggan, mulai dari interaksi awal hingga penyelesaian layanan atau transaksi.
 
-Menu ini membantu pengguna memantau alur perjalanan pelanggan, mulai dari tahap awal interaksi hingga penyelesaian layanan, sehingga proses pemasaran dan penanganan pelanggan dapat dikelola secara lebih terstruktur dan efektif.
+Dengan sistem funnel yang terstruktur, Anda dapat melakukan evaluasi efektivitas kampanye dan kecepatan respon tim di setiap titik kontak pelanggan.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/bNBOuWh_xGQ"
-  title="Pengenalan Tampilan NoBox"
+  title="Panduan Manajemen Funnel NoBox"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerPolicy="strict-origin-when-cross-origin"
@@ -33,69 +34,46 @@ Menu ini membantu pengguna memantau alur perjalanan pelanggan, mulai dari tahap 
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
 />
 
-Tampilan di atas merupakan halaman utama menu Funnel yang berisi daftar tahapan proses pemasaran dan layanan pelanggan.
-
-Pada halaman ini, pengguna dapat melihat seluruh data funnel yang telah dibuat dan digunakan dalam sistem.
+Halaman ini menampilkan daftar seluruh tahapan funnel yang aktif di sistem Anda. Anda dapat melihat ringkasan performa dan jumlah kontak yang berada di setiap tahapan tersebut secara kolektif.
 
 ---
 
-## **Tambah Funnel**
+## **Manajemen Data Funnel**
 
-Untuk membuat data funnel, silahkan klik menu **[Funnel] ➔ [Tambah Funnel]**. Maka akan tampil dialog **[Tambah Funnel]**, kemudian isi nama funnel pada dialog tersebut.
-
-**Form Tambah Funnel**
+### Tambah Funnel Baru
+1. Klik menu **[Funnel]** ➔ tombol **[Tambah Funnel]**.
+2. Masukkan nama tahapan funnel (misal: "Prospek Baru", "Negosiasi", "Lunas").
+3. Klik **[Simpan]** untuk mendaftarkan tahapan ke dalam sistem.
 
 <ImageZoom
   src="/images/id/Tambah%20Funnel.png"
-  alt="Tambah Funnel Baru"
+  alt="Tambah Tahapan Funnel"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Pada dialog Tambah Funnel, pengguna hanya perlu mengisi nama funnel sesuai dengan kebutuhan bisnis.
+### Edit dan Hapus Data Funnel
+- **Edit**: Pilih data funnel, sesuaikan penamaannya, lalu klik **[Simpan]**. Perubahan akan langsung tercermin pada seluruh profil pelanggan yang terhubung.
+- **Hapus**: Pilih data yang ingin dibuang dan klik tombol **[Hapus]**.
 
-Jika Anda sudah mengisi nama funnel pada dialog di atas, klik **[Simpan]** untuk menyimpan data tersebut.
-
-## **Edit dan Hapus Data Funnel**
-
-### Edit Data Funnel
-
-Untuk mengedit suatu data funnel, silahkan pilih data yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
-
-Perubahan data akan langsung tersimpan dan dapat digunakan kembali dalam sistem.
-
-### Hapus Data Funnel
-
-Untuk menghapus suatu data funnel yaitu dengan pilih data funnel yang akan dihapus, kemudian klik **[Hapus]** maka akan muncul dialog konfirmasi apakah Anda ingin menghapus data tersebut.
-
-Jika ya, klik **[Ya]**, jika tidak klik **[Tidak]**.
+<Callout type="info" title="Informasi Penting">
+Penghapusan data funnel bersifat permanen. Kontak yang berada pada tahapan yang dihapus akan kehilangan label tahapan asalnya. Pastikan Anda telah memindahkan kontak ke tahapan lain sebelum menghapus data funnel.
+</Callout>
 
 ---
 
 ## **Cara Penggunaan Funnel**
 
-Funnel dapat digunakan langsung pada halaman percakapan untuk mengelompokkan tahapan proses layanan dan pemasaran.
+Funnel dapat diaplikasikan langsung saat Anda berinteraksi dengan pelanggan di halaman percakapan.
 
-Berikut langkah-langkah penggunaan Funnel:
-
-**Langkah 1: Membuka Percakapan**
-
-Buka menu **[Kotak Masuk]**, kemudian pilih salah satu percakapan yang ada.
-
-**Langkah 2: Membuka Informasi Percakapan**
-
-Klik ikon [ <img src="/images/id/information%20icon.png" alt="Informasi" className="inline h-5 w-auto mx-1" /> ] maka akan tampil detail dari chat tersebut.
-
-**Langkah 3: Memilih Funnel**
-
-Klik pada bagian Funnel maka akan tampil data funnel yang telah dibuat sebelumnya atau tambahkan funnel baru.
-
-Selanjutnya, pilih salah satu dari data funnel tersebut.
+1. Buka menu **[Kotak Masuk]** dan pilih salah satu chat.
+2. Klik ikon informasi [ <img src="/images/id/information%20icon.png" alt="Informasi" className="inline h-5 w-auto mx-1" /> ] di pojok kanan atas untuk membuka panel detail.
+3. Pada bagian **Funnel**, klik *dropdown* dan pilih tahapan yang sesuai untuk pelanggan tersebut.
 
 <ImageZoom
   src="/images/id/Penggunaa%20Funnel.png"
-  alt="Cara Menggunakan Funnel"
+  alt="Aplikasi Funnel pada Chat"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
@@ -105,31 +83,32 @@ Selanjutnya, pilih salah satu dari data funnel tersebut.
 
 <Tips>
 ## **Tips Penggunaan**
- 
-Agar penggunaan Funnel lebih optimal, perhatikan beberapa tips berikut:
- 
-- Buat funnel sesuai alur bisnis.
-- Gunakan nama funnel yang mudah dipahami.
-- Evaluasi funnel secara berkala.
-- Sesuaikan tahapan dengan kebutuhan pelanggan.
-- Hindari penggunaan funnel yang terlalu banyak.
- 
+
+Optimalkan alur bisnis Anda dengan tips manajemen funnel berikut:
+
+- Buatlah tahapan funnel yang logis dan mengikuti perjalanan asli pelanggan Anda (*Customer Journey*).
+- Gunakan penamaan yang singkat dan jelas (misal: "MQL", "SQL", "Closed Won").
+- Lakukan evaluasi berkala; jika terlalu banyak kontak menumpuk di satu tahapan, tandanya ada sumbatan (*bottleneck*) dalam proses bisnis Anda.
+- Manfaatkan funnel untuk memprioritaskan penanganan chat; fokuslah pada pelanggan yang berada di tahapan akhir (mendekati transaksi).
+- Berikan pelatihan kepada tim agar disiplin dalam memperbarui status funnel setiap kali terjadi perkembangan dalam percakapan.
+
 </Tips>
 
 ---
- 
+
 <Kendala>
 ## **Penanganan Kendala**
- 
-Jika terjadi kendala saat menggunakan fitur Funnel, lakukan langkah berikut:
- 
-- Refresh halaman sistem.
-- Periksa koneksi internet.
-- Pastikan akun memiliki hak akses.
-- Logout lalu login kembali.
-- Hubungi tim support jika masalah berlanjut.
- 
+
+Jika menemui masalah pada fitur Funnel, silakan ikuti langkah berikut:
+
+- **Funnel Tidak Muncul di Dropdown Chat**: Pastikan Anda sudah menekan tombol **Simpan** saat membuat funnel dan statusnya aktif.
+- **Gagal Mengubah Status Funnel**: Periksa koneksi internet Anda atau coba muat ulang (*refresh*) halaman dashboard.
+- **Data Funnel Terhapus Tidak Sengaja**: Sayangnya data yang dihapus bersifat permanen. Segera buat kembali tahapan tersebut dan lakukan pengasosiakan ulang ke kontak terkait.
+- **Hak Akses Terbatas**: Pastikan peran (*role*) akun Anda memiliki otoritas untuk menambah atau mengedit data CRM.
+- **Aplikasi Melambat saat Pilih Funnel**: Bersihkan cache browser Anda untuk mempercepat pemuatan data *dropdown*.
+
 </Kendala>
+
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait NoBox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

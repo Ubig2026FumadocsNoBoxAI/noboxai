@@ -1,64 +1,92 @@
 ---
-title: Antrian Email
+title: Antrean Email
 description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
 icon: Mail
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Antrian Email adalah salah satu menu pada Nobox.Ai yang digunakan untuk monitoring antrian email. Jadi Anda dapat mengetahui hasil kirim pesan yang masih dalam antrian, gagal dan sudah terkirim.
+Antrean Email adalah menu pada NoBox.Ai yang digunakan untuk memantau status pengiriman email promosi atau notifikasi. Melalui menu ini, Anda dapat melacak perkembangan setiap email yang dikirimkan oleh sistem.
+
+Fitur ini membantu pengguna untuk memastikan email terkirim tepat waktu dan mengidentifikasi kendala jika pengiriman mengalami kegagalan.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/ke9JFbVG4_k/"
-  title="01. Instalasi NoBox Desktop"
+  title="Panduan Antrean Email"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-Untuk membuka menu Antrian Email klik modul \[Promosi], lalu klik \[Antrian Email].
+---
+
+## **Tampilan Menu Antrean Email**
 
 <ImageZoom
   src="/images/id/Antrean%20Emailpng%20(1).png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tampilan Antrean Email"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Pada tampilan tersebut, terdapat beberapa informasi. Penjelasan informasi tersebut adalah sebagai berikut:
-
-<table>
-  <thead>
-    <tr>
-      <th width="147.4000244140625">Fitur/Tombol</th>
-      <th>Fungsi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dalam Antrean</td>
-      <td>Status data kirim pesan promosi masih dalam antrian.</td>
-    </tr>
-    <tr>
-      <td>Terkirim</td>
-      <td>Status data kirim pesan promosi sudah terkirim.</td>
-    </tr>
-    <tr>
-      <td>Gagal</td>
-      <td>Status data kirim pesan promosi gagal terkirim.</td>
-    </tr>
-    <tr>
-      <td>Coba Ulang</td>
-      <td>Total beberapa kali percobaan kirim email.</td>
-    </tr>
-  </tbody>
-</table>
+Untuk mengakses halaman ini, silakan klik modul **[Promosi]** ➔ Menu **[Antrean Email]**. Halaman ini menampilkan daftar aktivitas pengiriman email beserta status terkininya.
 
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Informasi Status Email**
+
+Pada tabel antrean, terdapat kolom-kolom informasi yang menjelaskan kondisi pengiriman. Berikut penjelasannya:
+
+| Fitur/Tombol | Fungsi |
+| :--- | :--- |
+| **Dalam Antrean** | Menunjukkan email masih menunggu giliran untuk diproses oleh server pengiriman. |
+| **Terkirim** | Menunjukkan email telah berhasil keluar dari sistem dan diterima oleh penyedia layanan penerima. |
+| **Gagal** | Menunjukkan email tidak dapat terkirim karena kesalahan alamat, server down, atau limit tercapai. |
+| **Coba Ulang** | Menampilkan jumlah percobaan pengiriman kembali yang dilakukan oleh sistem secara otomatis. |
+
+---
+
+## **Manajemen Antrean**
+
+Pengguna dapat melakukan tindakan terhadap email yang ada di dalam antrean untuk memastikan efisiensi pengiriman atau melakukan troubleshooting pada email yang gagal.
+
+### Evaluasi Pengiriman Gagal
+Jika status email tetap "Gagal", periksa kembali alamat email kontak tujuan dan pastikan tidak ada kesalahan pengetikan atau domain yang tidak valid.
+
+---
+
+<Tips>
+## **Tips Penggunaan**
+
+Gunakan tips berikut untuk mengelola Antrean Email:
+
+- Pantau kolom "Coba Ulang" untuk melihat apakah sistem sedang berusaha memulihkan pengiriman yang tertunda.
+- Pastikan SMTP atau server email pengirim Anda dalam kondisi aktif dan memiliki kuota yang cukup.
+- Gunakan fitur filter tanggal untuk mencari histori pengiriman email pada periode tertentu.
+- Segera perbaiki data kontak jika ditemukan status gagal akibat alamat email tidak valid (hard bounce).
+
+</Tips>
+
+---
+
+<Kendala>
+## **Penanganan Kendala**
+
+Jika menemui kendala pada Antrean Email, silakan lakukan langkah berikut:
+
+- **Email Menumpuk di Antrean**: Periksa koneksi server email pengirim (SMTP) Anda.
+- **Status Selalu Gagal**: Pastikan limit pengiriman harian provider email Anda belum terlampaui.
+- **Data Tidak Up-to-date**: Klik tombol penyegaran (refresh) pada browser Anda.
+- **Pesan Diterima di Folder Spam**: Periksa reputasi domain pengirim dan pastikan isi email tidak mengandung kata-kata pemicu spam.
+- **Tampilan Tabel Tidak Sempurna**: Bersihkan cache browser dan pastikan resolusi layar mencukupi.
+
+</Kendala>
+
+---
+
+Jika ada masalah atau kesulitan terkait NoBox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

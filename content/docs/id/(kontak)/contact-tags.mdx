@@ -6,7 +6,9 @@ icon: Hash
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Tag Kontak adalah salah satu menu pada Nobox.Ai yang digunakan untuk mengelompokkan data kontak Anda.
+Tag Kontak adalah salah satu menu pada NoBox.AI yang digunakan untuk mengelompokkan dan mengkategorikan data kontak pelanggan berdasarkan label tertentu.
+
+Menu ini membantu pengguna dalam mengorganisir database kontak agar lebih terstruktur, sehingga proses pencarian, penyaringan, dan pengelolaan kontak dapat dilakukan secara lebih efisien. Dengan penggunaan tag yang tepat, pengguna dapat mengidentifikasi jenis pelanggan, status interaksi, atau segmen audiens dengan cepat dan akurat.
 
 <iframe
   width="800"
@@ -20,75 +22,139 @@ Tag Kontak adalah salah satu menu pada Nobox.Ai yang digunakan untuk mengelompok
   allowfullscreen
 ></iframe>
 
+---
+
+## **Tampilan Menu Tag Kontak**
+
 <ImageZoom
   src="/images/id/1.%20Tampilan%20Tag%20Kontak.png"
-  alt="Tampilan List NoBox"
+  alt="Tampilan Menu Tag Kontak"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Tambah Tag**
+Tampilan di atas merupakan halaman utama menu Tag Kontak yang menampilkan seluruh daftar tag yang telah dibuat oleh pengguna.
 
-Untuk membuat data tag, silahkan klik menu **[Tag Kontak]** ➔ **[Tambah Tag Kontak]**. Maka akan tampil dialog **[Tambah Tag Kontak]** kemudian isi nama tag yang akan dibuat.
+Pada halaman ini, pengguna dapat melihat nama-nama tag yang tersedia, menambah tag baru, mengedit tag yang sudah ada, serta menghapus tag yang tidak diperlukan lagi.
+
+---
+
+## **Tambah Tag Kontak**
+
+1. Untuk membuat data tag baru, silahkan klik menu **[Tag Kontak]** ➔ **[Tambah Tag Kontak]**.
+2. Maka akan tampil dialog **[Tambah Tag Kontak]**, kemudian isi nama tag yang akan dibuat.
+
+### Tampilan Dialog Tambah Tag Kontak
 
 <ImageZoom
   src="/images/id/2.%20Tambah%20Tag%20Kontak.png"
-  alt="Tampilan List NoBox"
+  alt="Dialog Tambah Tag Kontak"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data tag yang baru saja Anda buat.
+### Isian Dialog Tambah Tag Kontak
 
-## **Edit dan Hapus Data Tag**
+<table>
+  <thead>
+    <tr>
+      <th width="150">Isian</th>
+      <th width="250">Uraian</th>
+      <th>Contoh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nama Tag</td>
+      <td>Nama tag kontak yang digunakan sebagai label pengelompokan data kontak. Gunakan nama yang singkat namun deskriptif agar mudah diidentifikasi.</td>
+      <td>Pelanggan VIP</td>
+    </tr>
+  </tbody>
+</table>
+
+Setelah isian dilengkapi, klik **[Simpan]** untuk menyimpan data tag yang baru saja Anda buat. Tambahkan data tag lain sesuai kebutuhan pengelolaan kontak Anda.
+
+---
+
+## **Edit dan Hapus Data Tag Kontak**
+
+### Edit Data Tag Kontak
 
 Untuk mengedit suatu data tag, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
 
-Untuk menghapus suatu data tag adalah dengan pilih data tag yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+Perubahan nama tag akan langsung tersimpan dan berlaku pada seluruh data kontak yang menggunakan tag tersebut.
+
+### Hapus Data Tag Kontak
+
+Untuk menghapus suatu data tag, silahkan pilih data tag yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut.
+
+Jika ya, klik **[Ya]**. Jika tidak, klik **[Tidak]**.
+
+<Callout type="info" title="Informasi Penting">
+Pastikan tag yang akan dihapus tidak sedang digunakan oleh kontak yang masih aktif. Penghapusan tag bersifat permanen dan tidak dapat dibatalkan.
+</Callout>
+
+---
 
 ## **Cara Penggunaan Tag Kontak**
 
-1\. Buka menu **[Kontak]**, pilih salah satu data yang sudah dibuat atau tambahkan kontak baru.
+Fitur Tag Kontak dapat digunakan secara langsung saat membuat atau mengedit data kontak.
 
-2\. Klik pada bagian isian di kolom Tag, maka akan muncul tag yang sudah dibuat sebelumnya.
+Untuk menambahkan tag pada kontak, ikuti langkah-langkah berikut:
 
-3\. Pilih satu atau lebih dari data tag tersebut dan klik **[Simpan]** untuk menyimpan kembali data kontak.
+1. Buka menu **[Kontak]**, pilih salah satu data kontak yang sudah dibuat atau tambahkan kontak baru.
+
+2. Klik pada bagian isian di kolom **[Tag]**, maka akan muncul daftar tag yang sudah dibuat sebelumnya.
+
+3. Pilih satu atau lebih dari data tag tersebut sesuai kebutuhan pengelompokan kontak.
 
 <ImageZoom
   src="/images/id/3.%20Penggunaan.png"
-  alt="Tampilan List NoBox"
+  alt="Cara Penggunaan Tag pada Data Kontak"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+4. Klik **[Simpan]** untuk menyimpan kembali data kontak beserta tag yang telah dipilih.
+
+---
 
 ## **Filter Tag Kontak**
 
-Filter kontak tag digunakan untuk memilah data kontak dan menampilkan data berdasarkan tag yang dipilih. Cara memfilter data kontak sebagai berikut:
+Filter tag kontak digunakan untuk memilah data kontak dan menampilkan data berdasarkan tag tertentu yang dipilih. Fitur ini sangat membantu ketika pengguna memiliki banyak data kontak dan ingin menampilkan hanya kontak dengan kategori tertentu.
 
-\- Buka menu **[Kontak]**, klik filter Tags dan pilihlah data tag mana yang ingin Anda cari. Maka akan tampil data yang telah terfilter.
+Cara memfilter data kontak berdasarkan tag:
+
+1. Buka menu **[Kontak]**, klik tombol filter **[Tags]** yang tersedia di bagian atas halaman.
+2. Pilih data tag mana yang ingin Anda gunakan sebagai filter.
+3. Maka akan tampil data kontak yang telah terfilter berdasarkan tag yang dipilih.
 
 <ImageZoom
   src="/images/id/4.%20Filter%20Tag%20Kontak.png"
-  alt="Tampilan List NoBox"
+  alt="Filter Data Kontak Berdasarkan Tag"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+Untuk menghapus filter dan menampilkan kembali semua data kontak, klik tombol **[Reset]** atau hapus pilihan tag yang sudah diterapkan.
 
 ---
  
 <Tips>
 ## **Tips Penggunaan**
  
-Untuk pengelolaan tag yang lebih optimal, perhatikan beberapa tips berikut:
+Untuk pengelolaan tag kontak yang lebih optimal, perhatikan beberapa tips berikut:
  
-- Gunakan nama tag yang spesifik dan mudah dipahami.
-- Kelompokkan kontak dengan tag yang relevan untuk mempermudah pencarian.
-- Gunakan lebih dari satu tag pada kontak jika diperlukan.
-- Lakukan pembersihan tag yang sudah tidak digunakan secara berkala.
+- Buat nama tag yang spesifik dan mudah dipahami agar tidak membingungkan (contoh: Pelanggan VIP, Hot Prospect, Reseller Aktif).
+- Gunakan lebih dari satu tag pada kontak jika diperlukan untuk segmentasi yang lebih detail.
+- Kelompokkan kontak dengan tag yang relevan untuk mempermudah pencarian dan targeting promosi.
+- Manfaatkan fitur filter tag untuk mempercepat pencarian kontak dengan kategori tertentu.
+- Buat tag berdasarkan status pelanggan (Baru, Aktif, Tidak Aktif) untuk memudahkan monitoring.
+- Lakukan pembersihan tag yang sudah tidak digunakan secara berkala agar database tetap rapi.
  
 </Tips>
  
@@ -99,13 +165,16 @@ Untuk pengelolaan tag yang lebih optimal, perhatikan beberapa tips berikut:
  
 Jika mengalami kendala saat menggunakan Tag Kontak, lakukan langkah berikut:
  
-- Periksa koneksi internet jika data tag gagal disimpan.
-- Pastikan nama tag tidak duplikat agar tidak membingungkan.
-- Refresh halaman jika tag yang baru dibuat tidak langsung muncul di daftar.
-- Hubungi tim support jika penghapusan tag mengalami kendala teknis.
+- Refresh halaman jika tag yang baru dibuat tidak langsung muncul di daftar atau di kolom tag pada formulir kontak.
+- Periksa koneksi internet jika data tag gagal disimpan atau dihapus.
+- Pastikan nama tag tidak duplikat agar tidak membingungkan saat melakukan filter.
+- Periksa hak akses akun Anda jika tidak dapat menambah atau menghapus tag.
+- Logout dan login kembali jika fitur filter tag tidak berfungsi dengan baik.
+- Bersihkan cache browser jika tampilan tidak sesuai.
+- Hubungi tim support jika penghapusan tag mengalami kendala teknis atau mempengaruhi data kontak yang sudah ada.
  
 </Kendala>
  
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait NoBox.AI, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

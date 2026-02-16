@@ -6,51 +6,125 @@ icon: User
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Profil Pengguna adalah salah satu menu Nobox.Ai yang berisi informasi tentang data diri Anda dan digunakan untuk pengaturan format tanggal,waktu dan angka.
+Profil Pengguna adalah salah satu menu pada NoBox.AI yang berisi informasi tentang data diri pengguna dan digunakan untuk mengelola pengaturan format tampilan data di dalam sistem.
+
+Menu ini membantu pengguna dalam menyesuaikan preferensi format tanggal, waktu, dan angka sesuai dengan standar yang digunakan di wilayah kerja masing-masing. Dengan pengaturan yang tepat, data yang ditampilkan di seluruh halaman sistem akan seragam dan mudah dipahami, sehingga meminimalkan risiko kesalahan interpretasi data.
+
+---
+
+## **Tampilan Menu Profil Pengguna**
 
 <ImageZoom
   src="/images/id/Profile.PNG"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tampilan Menu Profil Pengguna"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Item-item pada tampilan dan fungsinya, antara lain:
+Tampilan di atas merupakan halaman utama menu Profil Pengguna yang menampilkan informasi data diri pengguna beserta pengaturan format tampilan data.
 
-**1. Umum**
+Pada halaman ini, pengguna dapat melihat dan mengedit data pribadi, alamat, serta mengatur format tanggal, waktu, dan angka sesuai kebutuhan.
 
-Informasi terkait dengan data pengguna.
+---
 
-**2. Alamat**
+## **Komponen pada Menu Profil Pengguna**
 
-Alamat pengguna.
+Pada halaman Profil Pengguna, terdapat beberapa bagian yang mempunyai fungsi masing-masing. Berikut penjelasan detail dari setiap komponen:
 
-**3. Format Tanggal**
+<table>
+  <thead>
+    <tr>
+      <th width="200">Bagian</th>
+      <th>Fungsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Umum</td>
+      <td>Menampilkan dan mengelola informasi dasar pengguna, seperti nama, email, dan nomor telepon</td>
+    </tr>
+    <tr>
+      <td>Alamat</td>
+      <td>Menampilkan dan mengelola data alamat lengkap pengguna</td>
+    </tr>
+    <tr>
+      <td>Format Tanggal</td>
+      <td>Pengaturan untuk menentukan format tampilan tanggal di seluruh sistem (contoh: DD/MM/YYYY atau MM/DD/YYYY)</td>
+    </tr>
+    <tr>
+      <td>Format Waktu</td>
+      <td>Pengaturan untuk menentukan format tampilan waktu di seluruh sistem (contoh: 24 jam atau 12 jam AM/PM)</td>
+    </tr>
+    <tr>
+      <td>Format Angka</td>
+      <td>Pengaturan untuk menentukan format tampilan angka dan desimal di seluruh sistem (contoh: penggunaan titik atau koma sebagai pemisah desimal)</td>
+    </tr>
+  </tbody>
+</table>
 
-Pengaturan format tanggal.
+---
 
-**4. Format Waktu**
+## **Penjelasan Detail Setiap Komponen Profil Pengguna**
 
-Pengaturan format waktu.
+- **Umum**
 
-**5. Format Angka**
+Bagian ini berisi informasi dasar pengguna yang digunakan sebagai identitas akun di dalam sistem.
 
-Pengaturan format angka.
+Data yang termasuk dalam bagian ini antara lain nama lengkap, alamat email, nomor telepon, dan informasi kontak lainnya. Pastikan data ini selalu diperbarui agar rekan tim tidak kesulitan saat perlu menghubungi Anda.
 
-Jika Anda melakukan perubahan pada data profil usaha, klik **[Simpan]** untuk menyimpan data yang baru saja diubah.
+- **Alamat**
+
+Menampilkan data alamat lengkap pengguna, termasuk alamat, kota, provinsi, negara, dan kode pos.
+
+Data alamat ini penting untuk keperluan dokumentasi internal dan referensi lokasi pengguna di dalam sistem.
+
+- **Format Tanggal**
+
+Pengaturan ini digunakan untuk menentukan bagaimana tanggal ditampilkan di seluruh halaman sistem.
+
+Pilih format yang sesuai dengan standar wilayah kerja Anda (contoh: DD/MM/YYYY untuk format Indonesia, atau MM/DD/YYYY untuk format internasional) agar tidak terjadi kesalahan interpretasi data waktu.
+
+- **Format Waktu**
+
+Pengaturan ini digunakan untuk menentukan bagaimana waktu ditampilkan di dalam sistem.
+
+Pengguna dapat memilih format 24 jam atau 12 jam (AM/PM) sesuai preferensi masing-masing.
+
+- **Format Angka**
+
+Pengaturan ini digunakan untuk menentukan bagaimana angka dan desimal ditampilkan di dalam sistem.
+
+Pilih format yang biasa digunakan di wilayah Anda (contoh: penggunaan titik sebagai pemisah ribuan dan koma sebagai pemisah desimal untuk format Indonesia) agar data laporan lebih mudah dibaca dan dipahami.
+
+---
+
+## **Cara Memperbarui Profil Pengguna**
+
+Untuk memperbarui data pada halaman Profil Pengguna, ikuti langkah-langkah berikut:
+
+1. Buka menu **[Profil Pengguna]** pada modul Pengaturan.
+2. Edit data yang ingin diubah pada bagian yang sesuai (Umum, Alamat, Format Tanggal, Format Waktu, atau Format Angka).
+3. Setelah selesai mengedit data, klik tombol **[Simpan]** untuk menyimpan perubahan.
+
+Perubahan data akan langsung tersimpan dan berlaku di seluruh halaman sistem.
+
+<Callout type="info" title="Informasi Penting">
+Perubahan pada format tanggal, waktu, atau angka akan mempengaruhi tampilan data di seluruh halaman sistem. Pastikan format yang dipilih sudah sesuai dengan kebutuhan sebelum menyimpan. Jika perubahan tidak langsung terlihat, coba logout dan login kembali.
+</Callout>
 
 ---
  
 <Tips>
 ## **Tips Penggunaan**
  
-Agar profil pengguna Anda tetap optimal dan informatif:
+Agar profil pengguna Anda tetap optimal dan informatif, perhatikan tips berikut:
  
 - Pastikan format tanggal dan waktu sudah sesuai dengan standar wilayah kerja Anda untuk menghindari kerancuan jadwal.
 - Gunakan format angka yang biasa Anda gunakan (misal: penggunaan titik atau koma sebagai desimal) agar data laporan lebih mudah dibaca.
-- Selalu perbarui informasi kontak di bagian General agar rekan tim Anda tidak kesulitan saat perlu menghubungi Anda.
+- Selalu perbarui informasi kontak di bagian Umum agar rekan tim Anda tidak kesulitan saat perlu menghubungi Anda.
 - Simpan perubahan secara berkala setiap kali Anda melakukan update pada bagian pengaturan format.
+- Periksa kembali pengaturan format setelah menyimpan untuk memastikan tampilannya sudah sesuai yang diinginkan.
  
 </Tips>
  
@@ -59,15 +133,17 @@ Agar profil pengguna Anda tetap optimal dan informatif:
 <Kendala>
 ## **Penanganan Kendala**
  
-Jika mengalami kendala saat memperbarui Profil Pengguna:
+Jika mengalami kendala saat memperbarui Profil Pengguna, lakukan langkah berikut:
  
 - Apabila tombol simpan tidak aktif, periksa kembali apakah ada field wajib yang belum terisi dengan benar.
 - Jika perubahan format tanggal tidak langsung terlihat di menu lain, coba logout dan login kembali ke sistem.
 - Pastikan koneksi internet stabil saat melakukan pembaruan data alamat agar proses penyimpanan tidak terputus.
+- Periksa apakah format yang dipilih sudah sesuai jika data yang ditampilkan terlihat tidak benar.
+- Bersihkan cache browser jika tampilan tidak sesuai setelah perubahan.
 - Hubungi administrator jika fitur pengaturan format angka tidak berfungsi sebagaimana mestinya.
  
 </Kendala>
  
 ---
  
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait NoBox.AI, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

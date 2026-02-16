@@ -6,83 +6,89 @@ icon: Headphones
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Human Agents di NoBox.Ai adalah pusat kontrol untuk mengelola seluruh pengguna manusia yang memiliki akses ke platform Anda. Fitur ini memungkinkan Anda untuk mengundang anggota tim, mengatur peran (roles), dan mengontrol hak akses mereka. Jika AI Agents adalah robot virtual, maka Human Agents adalah tim Anda di dunia nyata—seperti staf customer service, manajer, dan administrator—yang bertugas mengoperasikan, mengawasi, dan mengelola interaksi pelanggan.
+Human Agents di NoBox.Ai adalah pusat kontrol untuk mengelola seluruh pengguna manusia yang memiliki akses ke platform Anda. Fitur ini memungkinkan Anda untuk mengundang anggota tim, mengatur peran (roles), dan mengontrol hak akses mereka sesuai dengan struktur organisasi perusahaan.
+
+Jika AI Agents menjalankan tugas secara otomatis, maka Human Agents adalah tim operasional Anda—seperti staf customer service, manajer, dan administrator—yang bertugas mengawasi serta mengelola interaksi pelanggan secara langsung.
+
+---
+
+## **Tampilan Menu Human Agent**
 
 <ImageZoom
   src="/images/id/human-agent.png"
-  alt="Tampilan Human Agent"
+  alt="Tampilan Menu Human Agent"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Pada tampilan tersebut, Anda dapat melihat daftar seluruh agen beserta detailnya. Berikut adalah penjelasan untuk setiap kolom utama:
+Tampilan di atas menunjukkan daftar seluruh agen beserta detail statusnya. Berikut adalah penjelasan untuk setiap kolom informasi utama:
 
-<table data-header-hidden>
-  <thead>
-    <tr>
-      <th width="150">Kolom</th>
-      <th>Fungsi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <strong>Name & Email</strong>
-      </td>
-      <td>
-        Identitas unik setiap agen. Nama digunakan untuk identifikasi internal,
-        sementara email digunakan untuk login dan notifikasi.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <strong>Join Date</strong>
-      </td>
-      <td>
-        Tanggal dan waktu kapan agen tersebut pertama kali bergabung atau
-        mendaftar ke platform.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <strong>Status</strong>
-      </td>
-      <td>
-        Menunjukkan status verifikasi akun agen. Status{" "}
-        <strong>
-          <code>VERIFIED</code>
-        </strong>{" "}
-        berarti agen telah berhasil mengonfirmasi emailnya dan akunnya aktif
-        sepenuhnya.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <strong>Roles</strong>
-      </td>
-      <td>
-        Peran atau jabatan yang menentukan tingkat hak akses agen di dalam
-        sistem. Contohnya: <code>Owner</code>, <code>Manager</code>,{" "}
-        <code>Chat Agent</code>. Peran ini sangat penting untuk membatasi fitur
-        yang bisa diakses oleh setiap anggota tim.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-## **Mengundang Agen Baru**
-
-Penambahan Human Agents dilakukan melalui sistem undangan untuk menjamin keamanan. Untuk mengundang agen baru, silahkan klik tombol ➔**[Copy Invitation]**.
-
-Tindakan ini akan menyalin sebuah tautan undangan unik. Kirimkan tautan ini kepada calon anggota tim. Setelah mereka mendaftar melalui tautan tersebut, akun mereka akan otomatis ditambahkan ke dalam daftar Human Agents dengan status **[VERIFIED]**.
-
-Label **[Unlimited]** di sebelahnya menandakan bahwa Anda dapat mengundang agen sebanyak yang Anda butuhkan tanpa batasan kuota.
-
-## Edit dan Hapus Data Human Agents
-
-Untuk mengedit suatu data Human Agent, silahkan pilih terlebih dahulu data mana yang akan diedit (misalnya, dengan mengklik nama agen). Editlah data seperti peran (roles) dan klik **[Simpan]** untuk menyimpan perubahan tersebut. Untuk menghapus suatu data Human Agent adalah dengan pilih data Human Agent yang akan dihapus, kemudian klik ikon **Hapus (tong sampah)**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+| Kolom | Fungsi |
+| :--- | :--- |
+| **Name & Email** | Identitas unik agen perorangan yang digunakan untuk login dan identifikasi internal. |
+| **Join Date** | Tanggal dan waktu kapan agen tersebut pertama kali bergabung ke dalam platform. |
+| **Status** | Status verifikasi akun. Agen berstatus **VERIFIED** dapat mengakses sistem sepenuhnya. |
+| **Roles** | Tingkat hak akses agen (misal: Owner, Manager, Chat Agent) yang menentukan fitur yang boleh diakses. |
 
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Mengundang Agen Baru**
+
+Penambahan Human Agents dilakukan melalui sistem undangan demi menjaga keamanan data perusahaan.
+
+### Cara Mengundang Agen:
+
+1. Klik tombol **[Copy Invitation]** pada bagian kanan atas halaman.
+2. Tautan undangan unik akan secara otomatis tersalin ke *clipboard* Anda.
+3. Kirimkan tautan tersebut kepada calon anggota tim melalui media komunikasi favorit (WA, Email, dsb).
+4. Setelah agen mendaftar melalui tautan tersebut, akun mereka akan muncul di daftar dengan status aktif.
+
+Label **[Unlimited]** menunjukkan bahwa Anda memiliki kebebasan untuk menambah agen sebanyak mungkin sesuai kebutuhan skalabilitas bisnis Anda tanpa biaya tambahan per agen.
+
+---
+
+## **Edit dan Hapus Data Human Agent**
+
+### Edit Data Agen
+Untuk mengubah informasi agen seperti penugasan peran (Roles), silakan pilih nama agen yang dituju. Lakukan perubahan pada formulir profil agen, lalu klik **[Simpan]**.
+
+### Hapus Data Agen
+Pilih agen yang ingin dihapus dari sistem, klik ikon **Hapus (tong sampah)**, dan konfirmasi pilihan Anda pada dialog yang muncul.
+
+<Callout type="info" title="Informasi Penting">
+Penghapusan data Human Agent bersifat permanen. Agen yang telah dihapus tidak akan bisa login ke sistem dan seluruh hak aksesnya akan dicabut seketika.
+</Callout>
+
+---
+
+<Tips>
+## **Tips Penggunaan**
+
+Beberapa tips dalam mengelola Human Agent:
+
+- Berikan peran (Roles) yang sesuai dengan *job desk* masing-masing anggota tim untuk menjaga keamanan data.
+- Gunakan alamat email resmi perusahaan untuk setiap agen agar lebih profesional.
+- Pantau kolom status secara berkala untuk memastikan semua anggota tim telah melakukan verifikasi email.
+- Manfaatkan fitur undangan tanpa batas untuk mendistribusikan beban kerja ke lebih banyak agen saat *traffic* pesan tinggi.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Penanganan Kendala**
+
+Jika menemui kendala dalam pengelolaan agen, silakan ikuti panduan berikut:
+
+- **Tautan Undangan Tidak Berfungsi**: Coba *generate* ulang tautan undangan dengan klik kembali tombol **[Copy Invitation]**.
+- **Agen Tidak Muncul di Daftar**: Pastikan anggota tim telah menyelesaikan proses pendaftaran hingga selesai melalui tautan yang diberikan.
+- **Email Verifikasi Tidak Diterima**: Sarankan agen untuk memeriksa folder Spam atau klik tombol kirim ulang verifikasi pada akun mereka.
+- **Gagal Mengubah Peran (Roles)**: Pastikan Anda login dengan akun administrator (Owner/Manager) yang memiliki otorisasi manajemen tim.
+- **Agen Lupa Password**: Arahkan agen ke halaman login dan klik tautan "Lupa Password" untuk melakukan reset secara mandiri.
+
+</Kendala>
+
+---
+
+Jika ada masalah atau kesulitan terkait NoBox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

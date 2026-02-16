@@ -1,76 +1,112 @@
 ---
 title: Broadcast Dashboard
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
-icon: Monitor
+description: Visual summary of message delivery activities and promotion statistics in NoBox.AI.
+icon: LayoutDashboard
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Summary of all messaging activities presented in a concise, graphical format with clickable elements to display detailed message data. This menu is also used to monitor the results of promotional message delivery.
+The **Broadcast Dashboard** provides a comprehensive overview of all message delivery activities in a concise, graphical format. Through this page, you can instantly monitor the performance of your promotion campaigns without having to look at data details one by one.
+
+This dashboard is highly useful for marketing managers or business owners to quickly evaluate delivery effectiveness and detect anomalies (such as high failure rates).
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/XHaiaN9YWmg/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/SOf-o_IuYIk"
+  title="NoBox Promotion Dashboard Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerPolicy="strict-origin-when-cross-origin"
   allowFullScreen
 ></iframe>
 
+---
+
+## **Broadcast Dashboard Interface**
+
 <ImageZoom
   src="/images/en/Broadcast%20Dashboard.png"
   alt="NoBox Broadcast Dashboard View"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
 />
 
-In the display, there are several sections, each with its own function. The explanation of these functions is as follows:
+The display above shows various statistical widgets that are updated periodically. Each graphical element can be clicked to navigate to more specific data details.
+
+---
+
+## **Statistical Features and Information**
+
+Here are the explanations for the main sections available on the Broadcast Dashboard:
 
 <table>
   <thead>
     <tr>
-      <th width="194.00006103515625">Feature</th>
-      <th>Function</th>
+      <th width="180">Widget / Statistic</th>
+      <th>Function and Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Queue</td>
-      <td>Information on the total queued message data</td>
+      <td>**Queue**</td>
+      <td>Displays the total number of messages currently waiting in line to be sent.</td>
     </tr>
     <tr>
-      <td>Process</td>
-      <td>
-        Information on the total message data that is still being processed
-      </td>
+      <td>**Process**</td>
+      <td>Displays the number of messages currently in the active delivery stage to the provider.</td>
     </tr>
     <tr>
-      <td>Sent</td>
-      <td>Information on the total number of sent messages</td>
+      <td>**Sent**</td>
+      <td>Statistics for the total number of messages successfully delivered today or within a specific period.</td>
     </tr>
     <tr>
-      <td>Failed</td>
-      <td>Information on the total number of failed message deliveries</td>
+      <td>**Failed**</td>
+      <td>Accumulation of messages that were not successfully sent due to various technical issues.</td>
     </tr>
     <tr>
-      <td>Send Message</td>
-      <td>Information on total message delivery data based on status</td>
+      <td>**Total Delivery**</td>
+      <td>A graph or number showing the trend of message delivery volume over time.</td>
     </tr>
     <tr>
-      <td>Message Sent</td>
-      <td>Information on the total number of messages sent</td>
-    </tr>
-    <tr>
-      <td>Latest Sent Messages</td>
-      <td>Information on the recently sent message.</td>
+      <td>**Latest Sent**</td>
+      <td>A brief list of the most recent messages executed by the system.</td>
     </tr>
   </tbody>
 </table>
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Analyzing Dashboard Data**
+
+To maximize the use of this dashboard, you can perform the following:
+
+1. **Monitor Success Rate**: Compare the **Sent** and **Failed** numbers. If the failure rate increases significantly, immediately check the stability of your channel connection.
+2. **Observe Time Trends**: Use graphs to identify peak message delivery hours to adjust future marketing strategies.
+3. **Click for Details**: If you see suspicious numbers (e.g., a queue that doesn't decrease), click on the widget to go directly to the message list page for further investigation.
+
+---
+
+<Tips>
+## **Analysis Tips**
+
+- **Clear the Queue**: If many messages remain in the queue for a long time, ensure your NoBox Desktop application is running smoothly.
+- **Evaluate Failed Messages**: Immediately click on the "Failed" statistic to see if the failure was caused by inactive customer numbers or content issues (spam filter).
+- **Use Date Filters**: Adjust the date range on the dashboard to view weekly or monthly campaign performance.
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Statistic Numbers Don't Change**: Click the refresh button on your browser or ensure your internet connection is stable to fetch the latest data from the server.
+- **Very High Failure Count**: Check if your message template contains words considered sensitive by WhatsApp/Telegram, or ensure your account is not being restricted (shadow banned).
+- **Dashboard Doesn't Load Graphics**: Ensure your browser supports JavaScript and there are no content blocker extensions (ad-blockers) preventing dashboard scripts from loading.
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)

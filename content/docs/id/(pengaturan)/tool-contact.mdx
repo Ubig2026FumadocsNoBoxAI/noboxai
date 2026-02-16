@@ -5,8 +5,9 @@ icon: UserStar
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Tool Contact digunakan untuk mengelola data kontak pelanggan di Nobox.Ai.
-Melalui menu ini, Anda dapat menambahkan, mengimpor, memfilter, dan mengelola kontak secara terpusat untuk kebutuhan CRM, pesan, dan promosi.
+Tool Contact adalah salah satu menu pada NoBox.AI yang digunakan untuk mengelola data kontak pelanggan secara terpusat melalui halaman pengaturan.
+
+Menu ini memungkinkan pengguna untuk menambahkan kontak baru secara manual, mengimpor kontak secara massal dari berbagai sumber, memfilter dan mencari kontak, serta menghapus data kontak yang tidak diperlukan. Melalui Tool Contact, seluruh database kontak pelanggan dapat dikelola dengan mudah untuk mendukung kebutuhan CRM, pesan, dan promosi di dalam platform NoBox.AI.
 
 <iframe
   width="800"
@@ -20,83 +21,215 @@ Melalui menu ini, Anda dapat menambahkan, mengimpor, memfilter, dan mengelola ko
   allowfullscreen
 ></iframe>
 
-<img
+---
+
+## **Tampilan Menu Tool Contact**
+
+<ImageZoom
   src="/images/id/Tool%20Contact.png"
-  alt="Tool Contact Overview"
-  className="rounded-lg border mb-4"
+  alt="Tampilan Menu Tool Contact"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Tambah Kontak
+Tampilan di atas merupakan halaman utama menu Tool Contact yang menampilkan seluruh daftar kontak pelanggan yang tersimpan di dalam sistem.
 
-Gunakan fitur ini untuk menambahkan kontak baru secara manual.
+Pada halaman ini, pengguna dapat melihat data kontak, melakukan pencarian, menambah kontak baru, mengimpor kontak secara massal, serta menghapus kontak yang tidak diperlukan.
 
-Langkah-langkah:
+---
 
-1\. Klik [Tambah Kontak]
+## **Tambah Kontak**
 
-2\. Lengkapi informasi kontak
+Fitur ini digunakan untuk menambahkan kontak pelanggan baru secara manual ke dalam database sistem.
 
-3\. Klik [Simpan]
+Untuk menambahkan kontak baru, ikuti langkah-langkah berikut:
 
-<img
+1. Klik tombol **[Tambah Kontak]** pada halaman Tool Contact.
+2. Lengkapi seluruh informasi kontak yang diperlukan pada formulir yang tampil.
+3. Klik **[Simpan]** untuk menyimpan data kontak baru ke dalam sistem.
+
+### Tampilan Form Tambah Kontak
+
+<ImageZoom
   src="/images/id/Tambah%20Kontak%20(mentahan).png"
   alt="Form Tambah Kontak"
-  className="rounded-lg border mb-4"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Field Kontak
+---
 
-| Bagian | Field           | Deskripsi                                                            |
-| ------ | --------------- | -------------------------------------------------------------------- |
-| Umum   | Nama            | Nama lengkap kontak dan digunakan sebagai identitas utama _(wajib)_  |
-|        | Kategori        | Klasifikasi kontak untuk membantu pengelompokan data                 |
-|        | List            | Daftar kontak yang digunakan untuk segmentasi dan kebutuhan kampanye |
-|        | Tag             | Label khusus untuk memudahkan identifikasi dan penyaringan kontak    |
-|        | Kontak Person   | Penanggung jawab atau perwakilan utama dari kontak                   |
-|        | Catatan         | Informasi tambahan atau catatan penting terkait kontak               |
-| Link   | Kanal           | Platform komunikasi eksternal yang terhubung dengan kontak           |
-|        | Nama Eksternal  | Nama akun atau username pada platform yang dipilih                   |
-|        | ID Eksternal    | Identitas unik kontak dari platform eksternal                        |
-| Alamat | Alamat          | Alamat fisik lengkap dari kontak                                     |
-|        | Negara          | Negara tempat kontak berada                                          |
-|        | Provinsi        | Provinsi atau wilayah administratif kontak                           |
-|        | Kota            | Kota atau kabupaten tempat kontak berada                             |
-|        | Kode Pos        | Kode pos sebagai referensi lokasi                                    |
-|        | Lintang / Bujur | Koordinat geografis untuk penentuan lokasi peta                      |
-|        | Lokasi          | Nama area atau penanda lokasi                                        |
-|        | Diblokir        | Status untuk menandai apakah kontak diblokir atau aktif              |
+## **Field Kontak**
 
-## Import Kontak
+Pada formulir kontak, terdapat beberapa bagian dan field yang perlu dilengkapi. Berikut penjelasan detail dari masing-masing field:
 
-Tambahkan kontak secara massal melalui integrasi berikut:
+<table>
+  <thead>
+    <tr>
+      <th width="100">Bagian</th>
+      <th width="150">Field</th>
+      <th>Deskripsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Umum</td>
+      <td>Nama</td>
+      <td>Nama lengkap kontak yang digunakan sebagai identitas utama di dalam sistem. Field ini bersifat wajib diisi.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kategori</td>
+      <td>Klasifikasi kontak untuk membantu pengelompokan data berdasarkan jenis pelanggan (contoh: Individu, Perusahaan, Reseller).</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>List</td>
+      <td>Daftar kontak yang digunakan untuk segmentasi dan kebutuhan kampanye promosi. Kontak dapat dimasukkan ke dalam satu atau beberapa list sekaligus.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tag</td>
+      <td>Label khusus untuk memudahkan identifikasi dan penyaringan kontak (contoh: VIP Customer, Hot Prospect).</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kontak Person</td>
+      <td>Penanggung jawab atau perwakilan utama dari kontak, terutama untuk kontak yang mewakili perusahaan.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Catatan</td>
+      <td>Informasi tambahan atau catatan penting terkait kontak yang berguna untuk referensi internal.</td>
+    </tr>
+    <tr>
+      <td>Link</td>
+      <td>Kanal</td>
+      <td>Platform komunikasi eksternal yang terhubung dengan kontak, seperti WhatsApp, Telegram, atau platform lainnya.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nama Eksternal</td>
+      <td>Nama akun atau username kontak pada platform komunikasi yang dipilih.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ID Eksternal</td>
+      <td>Identitas unik kontak dari platform eksternal, digunakan untuk menghubungkan data kontak dengan akun di platform tersebut.</td>
+    </tr>
+    <tr>
+      <td>Alamat</td>
+      <td>Alamat</td>
+      <td>Alamat fisik lengkap dari kontak pelanggan.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Negara</td>
+      <td>Negara tempat kontak berada.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Provinsi</td>
+      <td>Provinsi atau wilayah administratif kontak.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kota</td>
+      <td>Kota atau kabupaten tempat kontak berada.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kode Pos</td>
+      <td>Kode pos sebagai referensi lokasi pengiriman.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Lintang / Bujur</td>
+      <td>Koordinat geografis untuk penentuan lokasi pada peta.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Lokasi</td>
+      <td>Nama area atau penanda lokasi untuk referensi tambahan.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Diblokir</td>
+      <td>Status untuk menandai apakah kontak diblokir atau masih aktif. Kontak yang diblokir tidak akan menerima pesan promosi.</td>
+    </tr>
+  </tbody>
+</table>
 
-| Metode             | Deskripsi                    |
-| ------------------ | ---------------------------- |
-| Excel & CSV        | Unggah file kontak           |
-| Google Contacts    | Sinkronisasi kontak Google   |
-| Facebook Audiences | Import data audiens Facebook |
-| Import WhatsApp    | Import kontak dari WhatsApp  |
+---
 
-## Filter & Pencarian
+## **Import Kontak**
 
-Memudahkan pencarian kontak berdasarkan:
+Fitur Import Kontak digunakan untuk menambahkan kontak secara massal melalui berbagai metode integrasi yang tersedia di dalam sistem.
 
-- Kategori, Negara, Provinsi, Kota
-- Sumber, List, Tag
-- Tanggal dibuat
+Berikut metode import yang dapat digunakan:
 
-Klik [Filter] untuk menerapkan kriteria pencarian.
+<table>
+  <thead>
+    <tr>
+      <th width="200">Metode</th>
+      <th>Deskripsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excel & CSV</td>
+      <td>Mengunggah file Excel atau CSV yang berisi data kontak sesuai dengan format template yang disediakan oleh sistem</td>
+    </tr>
+    <tr>
+      <td>Google Contacts</td>
+      <td>Melakukan sinkronisasi kontak dari akun Google secara langsung ke dalam database NoBox.AI</td>
+    </tr>
+    <tr>
+      <td>Facebook Audiences</td>
+      <td>Mengimpor data audiens dari Facebook untuk digunakan sebagai target promosi</td>
+    </tr>
+    <tr>
+      <td>Import WhatsApp</td>
+      <td>Mengimpor data kontak dari percakapan WhatsApp yang terhubung ke dalam sistem</td>
+    </tr>
+  </tbody>
+</table>
 
-## Hapus Kontak
+Pastikan format data yang diimpor sudah sesuai dengan template yang disediakan agar proses import berjalan lancar tanpa kendala.
 
-- Pilih satu atau beberapa kontak
-- Klik [Hapus yang Terpilih]
-- Konfirmasi tindakan
+---
 
-## Catatan
+## **Filter dan Pencarian Kontak**
 
-- Pastikan field wajib telah diisi sebelum menyimpan
-- Data kontak dapat digunakan untuk CRM, Pesan, dan Promosi
+Fitur filter dan pencarian digunakan untuk memudahkan pengguna menemukan kontak tertentu dari database yang tersimpan di dalam sistem.
+
+Pengguna dapat memfilter kontak berdasarkan:
+
+- **Kategori** — Menyaring kontak berdasarkan jenis klasifikasi.
+- **Negara, Provinsi, Kota** — Menyaring kontak berdasarkan lokasi geografis.
+- **Sumber** — Menyaring kontak berdasarkan platform asal data kontak.
+- **List dan Tag** — Menyaring kontak berdasarkan daftar dan label yang telah ditentukan.
+- **Tanggal Dibuat** — Menyaring kontak berdasarkan periode waktu pembuatan.
+
+Klik tombol **[Filter]** untuk menerapkan kriteria pencarian, dan klik **[Reset]** untuk menghapus filter yang sudah diterapkan.
+
+---
+
+## **Hapus Kontak**
+
+Untuk menghapus kontak yang tidak diperlukan lagi, ikuti langkah-langkah berikut:
+
+1. Pilih satu atau beberapa kontak yang akan dihapus dari daftar.
+2. Klik tombol **[Hapus yang Terpilih]**.
+3. Konfirmasi tindakan penghapusan pada dialog yang muncul.
+
+<Callout type="info" title="Informasi Penting">
+- Pastikan field wajib (Nama dan ID Eksternal) telah diisi sebelum menyimpan kontak baru.
+- Data kontak yang tersimpan dapat digunakan untuk keperluan CRM, Pesan, dan Promosi.
+- Penghapusan kontak bersifat permanen dan tidak dapat dibatalkan.
+</Callout>
 
 ---
  
@@ -105,11 +238,12 @@ Klik [Filter] untuk menerapkan kriteria pencarian.
  
 Agar pengelolaan kontak melalui Tool Contact lebih optimal, perhatikan beberapa tips berikut:
  
-- Gunakan fitur 'Import WhatsApp' untuk memindahkan data percakapan pelanggan ke dalam sistem NoBox secara cepat.
-- Berikan Tag yang spesifik pada setiap kontak (misal: 'Hot Prospect', 'VIP Customer') untuk mempermudah segmentasi promosi.
+- Gunakan fitur **[Import WhatsApp]** untuk memindahkan data percakapan pelanggan ke dalam sistem NoBox secara cepat.
+- Berikan tag yang spesifik pada setiap kontak (misal: 'Hot Prospect', 'VIP Customer') untuk mempermudah segmentasi promosi.
 - Mapping field ID Eksternal dengan benar saat melakukan impor Excel agar tidak terjadi duplikasi data kontak.
-- Gunakan fitur Filter berdasarkan 'Tanggal Dibuat' untuk memantau pertumbuhan database kontak Anda setiap bulannya.
+- Gunakan fitur filter berdasarkan 'Tanggal Dibuat' untuk memantau pertumbuhan database kontak Anda setiap bulannya.
 - Aktifkan status 'Diblokir' hanya untuk kontak yang mengganggu atau spam agar laporan performa tim tetap akurat.
+- Lakukan pembersihan data kontak secara berkala untuk menjaga kualitas database.
  
 </Tips>
  
@@ -124,10 +258,12 @@ Jika mengalami kendala pada menu Tool Contact, lakukan langkah berikut:
 - Refresh halaman jika kontak yang baru ditambahkan secara manual tidak muncul di daftar pencarian.
 - Periksa koneksi internet jika sinkronisasi dengan Google Contacts atau Facebook Audiences berjalan lambat.
 - Pastikan semua field wajib (Nama dan ID Eksternal) sudah terisi dengan benar saat mencoba menyimpan kontak baru.
+- Logout dan login kembali jika fitur filter atau pencarian tidak berfungsi normal.
+- Bersihkan cache browser jika tampilan tidak sesuai.
 - Hubungi tim support jika fitur hapus massal (Hapus yang Terpilih) mengalami gangguan teknis.
  
 </Kendala>
  
 ---
  
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait NoBox.AI, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

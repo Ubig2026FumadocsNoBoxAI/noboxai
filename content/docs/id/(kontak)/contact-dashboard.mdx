@@ -6,7 +6,9 @@ icon: CircleUser
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Dasbor Kontak adalah salah satu menu pada Nobox.Ai yang berisi ringkasan informasi aktivitas yang berhubungan dengan kontak dan dapat mempermudah Anda mengambil keputusan.
+Dasbor Kontak adalah salah satu menu pada NoBox.AI yang berisi ringkasan informasi aktivitas yang berhubungan dengan data kontak pelanggan secara keseluruhan.
+
+Menu ini memungkinkan pengguna untuk memantau pertumbuhan database kontak, sebaran lokasi pelanggan, sumber perolehan kontak, serta tren penambahan kontak berdasarkan waktu. Dengan informasi visual yang disajikan, pengguna dapat mengambil keputusan strategis terkait pengelolaan kontak dan perencanaan kampanye promosi secara lebih tepat sasaran.
 
 <iframe
   width="800"
@@ -20,65 +22,122 @@ Dasbor Kontak adalah salah satu menu pada Nobox.Ai yang berisi ringkasan informa
   allowfullscreen
 ></iframe>
 
-Untuk membuka menu Dasbor Kontak, klik modul \[Kontak], lalu klik \[Dasbor Kontak].
+---
+
+## **Tampilan Menu Dasbor Kontak**
+
+Untuk membuka menu Dasbor Kontak, klik modul **[Kontak]**, lalu klik **[Dasbor Kontak]**.
 
 <ImageZoom
   src="/images/id/Dasbor%20Kontak.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tampilan Menu Dasbor Kontak"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-masing. Penjelasan dari fungsi tersebut adalah sebagai berikut:
+Tampilan di atas merupakan halaman utama Dasbor Kontak yang menampilkan berbagai informasi ringkasan dalam bentuk kartu statistik dan grafik visual.
+
+Setiap bagian pada dasbor memiliki fungsi tersendiri untuk membantu pengguna memahami kondisi database kontak secara menyeluruh.
+
+---
+
+## **Komponen pada Dasbor Kontak**
+
+Pada tampilan tersebut, terdapat beberapa komponen yang mempunyai fungsi masing-masing. Penjelasan dari setiap komponen adalah sebagai berikut:
 
 <table>
   <thead>
     <tr>
-      <th width="151.4000244140625">Fitur/Tombol</th>
+      <th width="180">Komponen</th>
       <th>Fungsi</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Kontak</td>
-      <td>Total data kontak dari hasil ekstraksi</td>
+      <td>Menampilkan total keseluruhan data kontak yang tersimpan di dalam sistem, termasuk kontak dari hasil ekstraksi dan input manual</td>
     </tr>
     <tr>
       <td>List</td>
-      <td>Total data list</td>
+      <td>Menampilkan total jumlah list (daftar pengelompokan kontak) yang telah dibuat oleh pengguna</td>
     </tr>
     <tr>
       <td>Tag</td>
-      <td>Total data tag</td>
+      <td>Menampilkan total jumlah tag (label) yang tersedia untuk mengkategorikan data kontak</td>
     </tr>
     <tr>
       <td>Sumber</td>
-      <td>Total data sumber</td>
+      <td>Menampilkan total jumlah sumber atau platform asal data kontak diperoleh (contoh: WhatsApp, Google Maps, Shopee)</td>
     </tr>
     <tr>
       <td>Dibuat</td>
-      <td>Informasi total kontak berdasarkan bulan</td>
+      <td>Menampilkan grafik tren penambahan kontak berdasarkan periode waktu (bulanan), sehingga pengguna dapat memantau pertumbuhan database kontak</td>
     </tr>
     <tr>
       <td>Negara</td>
-      <td>
-        Informasi total kontak dan tampilan data kontak berupa maps menurut
-        lokasi kontak
-      </td>
+      <td>Menampilkan sebaran lokasi kontak berdasarkan negara dalam bentuk peta (maps) interaktif, sehingga pengguna dapat melihat distribusi geografis pelanggan</td>
     </tr>
     <tr>
       <td>Sumber Teratas</td>
-      <td>Informasi total kontak dari sumber yang paling banyak</td>
+      <td>Menampilkan daftar sumber perolehan kontak yang paling banyak, membantu pengguna mengetahui platform mana yang menghasilkan kontak terbanyak</td>
     </tr>
     <tr>
       <td>Negara Teratas</td>
-      <td>Informasi total kontak dari negara yang paling banyak</td>
+      <td>Menampilkan daftar negara dengan jumlah kontak terbanyak, membantu pengguna mengidentifikasi pasar potensial</td>
     </tr>
   </tbody>
 </table>
 
-Untuk melihat detail data dari informasi tersebut, dapat Anda lakukan dengan cara klik pada grafiknya. Maka akan tampil data kontak berdasarkan data grafik yang Anda pilih.
+---
+
+## **Penjelasan Detail Setiap Komponen**
+
+- **Kontak, List, Tag, Sumber**
+
+Keempat kartu statistik ini berada di bagian atas dasbor dan menampilkan angka total secara real-time.
+
+Data ini memberikan gambaran umum tentang skala database kontak Anda. Pengguna dapat menggunakan informasi ini untuk memastikan bahwa data kontak selalu terkelola dengan baik dan memadai untuk kebutuhan kampanye.
+
+- **Dibuat (Grafik Tren)**
+
+Grafik ini menunjukkan jumlah kontak yang ditambahkan ke dalam sistem berdasarkan periode waktu tertentu (biasanya per bulan).
+
+Dengan memantau grafik ini, pengguna dapat mengidentifikasi tren pertumbuhan database kontak dan mengevaluasi efektivitas strategi akuisisi pelanggan yang dijalankan.
+
+- **Negara (Peta Interaktif)**
+
+Peta ini menampilkan sebaran lokasi kontak berdasarkan negara secara visual.
+
+Informasi ini sangat berguna untuk perusahaan yang memiliki pelanggan di berbagai negara, sehingga dapat merencanakan strategi pemasaran yang disesuaikan dengan karakteristik pasar masing-masing wilayah.
+
+- **Sumber Teratas**
+
+Daftar ini menunjukkan platform atau sumber yang menghasilkan kontak terbanyak.
+
+Dengan mengetahui sumber teratas, pengguna dapat mengoptimalkan investasi dan upaya pada platform yang paling efektif dalam mendatangkan kontak baru.
+
+- **Negara Teratas**
+
+Daftar ini menunjukkan negara-negara dengan jumlah kontak terbanyak.
+
+Informasi ini membantu pengguna dalam mengidentifikasi pasar potensial dan merencanakan ekspansi bisnis ke wilayah yang menunjukkan potensi pertumbuhan tinggi.
+
+---
+
+## **Cara Menggunakan Dasbor Kontak**
+
+### Melihat Detail Data dari Grafik
+
+Untuk melihat detail data dari informasi yang disajikan pada dasbor, Anda dapat melakukannya dengan cara klik pada grafiknya.
+
+Maka akan tampil data kontak berdasarkan data grafik yang Anda pilih. Fitur ini memudahkan pengguna untuk melakukan drill-down dari ringkasan ke data detail tanpa perlu berpindah halaman.
+
+### Memfilter Data Dasbor
+
+Pengguna dapat memfilter data yang ditampilkan pada dasbor berdasarkan periode waktu tertentu untuk melihat data yang lebih spesifik.
+
+Gunakan filter yang tersedia di bagian atas halaman dasbor untuk menyesuaikan rentang waktu data yang ingin ditampilkan.
 
 ---
  
@@ -87,10 +146,12 @@ Untuk melihat detail data dari informasi tersebut, dapat Anda lakukan dengan car
  
 Agar fitur Dasbor Kontak dapat digunakan secara maksimal, perhatikan beberapa tips berikut:
  
-- Gunakan grafik untuk melihat ringkasan data kontak secara cepat.
-- Klik pada grafik untuk melihat detail data dari masing-masing kategori.
-- Manfaatkan informasi sumber teratas untuk mengetahui asal kontak yang paling banyak.
-- Periksa sebaran negara kontak untuk memetakan jangkauan audiens Anda.
+- Gunakan grafik tren untuk melihat bulan-bulan dengan pertumbuhan kontak tertinggi dan evaluasi kampanye apa yang berhasil di periode tersebut.
+- Klik pada grafik untuk melihat detail data dari masing-masing kategori secara lebih mendalam.
+- Manfaatkan informasi sumber teratas untuk mengalokasikan anggaran pemasaran ke platform yang paling efektif.
+- Periksa sebaran negara kontak secara berkala untuk memetakan jangkauan audiens dan merencanakan strategi ekspansi.
+- Bandingkan data kontak antar periode waktu untuk mengidentifikasi pola pertumbuhan dan penurunan.
+- Gunakan data negara teratas sebagai dasar untuk menyusun konten promosi yang relevan dengan pasar utama.
  
 </Tips>
  
@@ -101,13 +162,15 @@ Agar fitur Dasbor Kontak dapat digunakan secara maksimal, perhatikan beberapa ti
  
 Jika mengalami kendala saat menggunakan Dasbor Kontak, lakukan langkah berikut:
  
-- Refresh halaman jika grafik tidak muncul atau data tidak terupdate.
-- Pastikan koneksi internet stabil saat memuat data dasbor.
-- Periksa kembali filter periode waktu jika data yang dicari tidak tampil.
-- Logout dan login kembali jika terdapat error teknis pada tampilan.
+- Refresh halaman jika grafik tidak muncul atau data tidak ter-update setelah penambahan kontak baru.
+- Pastikan koneksi internet dalam kondisi stabil saat memuat data dasbor, terutama untuk peta interaktif.
+- Periksa kembali filter periode waktu jika data yang dicari tidak tampil pada grafik.
+- Bersihkan cache browser jika tampilan peta atau grafik tidak sesuai.
+- Logout dan login kembali jika terdapat error teknis pada tampilan dasbor.
+- Hubungi tim support jika data yang ditampilkan tidak sesuai dengan jumlah kontak yang sebenarnya.
  
 </Kendala>
  
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait NoBox.AI, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

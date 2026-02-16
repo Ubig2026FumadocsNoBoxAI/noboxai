@@ -6,218 +6,144 @@ icon: MapPin
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Untuk mendukung semua kelebihannya, Google Maps Extractor menawarkan sejumlah fitur menarik yang dapat Anda manfaatkan. Diantara sekian banyaknya pilihan fitur yang ada, Anda bisa memanfaatkan beberapa fitur pilihan di bawah ini:
+Google Maps Extractor adalah fitur unggulan pada NoBox Desktop yang memungkinkan Anda mengumpulkan data bisnis secara massal langsung dari profil Google Maps. Tool ini sangat efektif untuk tim sales dan marketing dalam membangun database calon pelanggan (*lead generation*) secara cepat dan akurat.
+
+Dengan sistem ekstraksi otomatis, Anda bisa mendapatkan informasi seperti nama bisnis, alamat, nomor telepon, rating, hingga kategori industri hanya dalam hitungan menit.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/i2JsGX__WRg/"
-  title="01. Instalasi NoBox Desktop"
+  title="Panduan Google Maps Extractor"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-## **Set Karakter Unicode**
+---
 
-NoBox dapat menyimpan hasil pencarian yang diambil dalam format unicode seperti Arabic, Chinesse, Japan, dl&#x6C;**.**
+## **Fitur Utama Web Extractor**
+
+NoBox menyediakan berbagai kontrol untuk memastikan proses ekstraksi berjalan aman dan sesuai dengan kebutuhan target pasar Anda.
+
+### **1. Set Karakter Unicode**
+NoBox mendukung penyimpanan hasil pencarian dalam format karakter internasional (Unicode) seperti bahasa Arab, Cina, Jepang, dan lainnya. Hal ini memungkinkan Anda melakukan riset pasar global tanpa kendala bahasa.
 
 <ImageZoom
   src="/images/id/Unicode.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Setting Unicode Extractor"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-- Ubah setting bahasa terlebih dahulu.
-- Lakukan ekstraksi data.&#x20;
-- Jika sudah selesai nantinya data hasil ekstraksi akan tersimpan sesuai bahasa yang dipilih.
-
-## **Interval Get List**
-
-Fitur untuk mengatur waktu cepat lambatnya antara permintaan satu dengan berikutnya, agar mensimulasikan seperti manusia nyata yang menjalankan browser.
+### **2. Interval & Simulasi Manusia**
+Fitur ini digunakan untuk mengatur jeda waktu antar permintaan data. Dengan mengatur interval secara tepat, software akan mensimulasikan perilaku manusia asli yang sedang menjelajah browser, sehingga meminimalkan risiko pemblokiran oleh Google.
 
 <ImageZoom
   src="/images/id/Interval%20(1).png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Pengaturan Interval"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Page Process**
+---
 
-Halaman yang berfungsi untuk setting ketentuan data yang akan diambil.
+## **Manajemen Proses Ekstraksi**
+
+### Halaman Konfigurasi (Page Process)
+Di halaman ini, Anda dapat menentukan parameter pencarian sebelum memulai ekstraksi data.
+
+| Fitur | Uraian Fungsi |
+| :--- | :--- |
+| **Limit Result** | Membatasi jumlah data yang ingin diambil agar sesuai kuota. |
+| **Save To List** | Mengarahkan hasil ekstraksi ke grup kontak/list tertentu di NoBox.AI. |
+| **Option Debug** | Menampilkan log aktivitas sistem secara sangat detail untuk audit. |
+| **Load Images** | Opsi untuk mengunduh gambar profil bisnis jika tersedia. |
 
 <ImageZoom
   src="/images/id/Page%20Process.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Halaman Konfigurasi Process"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="174.60003662109375">Fitur</th>
-      <th>Uraian</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Limit Result</td>
-      <td>
-        Penambahan data sesuai dengan kebutuhan berapa jumlah data yang di
-        inginkan.
-      </td>
-    </tr>
-    <tr>
-      <td>Save To List</td>
-      <td>
-        Simpan dan tambah nama file, jadi ketika ingin menambah data list bisa
-        menggunakan fitur ini, caranya tinggal menekan tombol{" "}
-        <strong>[+]</strong> lalu beri nama list sesuai yang di inginkan setelah
-        itu tekan <strong>[OK]</strong>
-      </td>
-    </tr>
-    <tr>
-      <td>Option Debug </td>
-      <td>Munculkan logs aktivitas dengan sangat detail</td>
-    </tr>
-    <tr>
-      <td>Option Load Images</td>
-      <td>Menampilkan gambar pada data</td>
-    </tr>
-    <tr>
-      <td>Other Option</td>
-      <td>
-        Pengaturan Interval untuk pemilihan lokasi negara, dan di bagian bawah
-        terdapat pengaturan Interval untuk pengambilan data.{" "}
-      </td>
-    </tr>
-  </tbody>
-</table>
+---
 
-## **Page Result**
+## **Monitoring dan Hasil Data**
 
-Result adalah halaman yang menampilkan hasil dari data yang diambil.
+### Hasil Real-Time (Page Result)
+Halaman Result menampilkan data mentah yang berhasil ditarik secara langsung. Anda bisa melihat progres penambahan data per baris secara otomatis.
 
 <ImageZoom
   src="/images/id/Page%20Result.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Halaman Hasil Ekstraksi"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Page Logs**
-
-Logs adalah halaman untuk melihat semua aktivitas sistem yang sedang berlangsung.
-
-<ImageZoom
-  src="/images/id/Page%20Logs.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Multi Tab**
-
-Digunakan untuk menjalankan proses pencarian dengan berbagai kata kunci secara bersamaan.
-
-<ImageZoom
-  src="/images/id/Multi%20Tab.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Lakukan ekstrasi data pada 2 akun extractor, tambahkan dengan **"Add Account"**
-- Extractor yang pertama, misalnya lakukan pencarian bebas, dan dengan jumlah data sebanyak 5, dan tambahkan list yang baru.
-
-## **Website NoBox.Ai**
-
-Untuk urusan data yang sudah diekstraksi akan langsung tersimpan pada website NoBox.Ai, sehingga Anda dapat mengakses dan memantau hasilnya dengan browser dan perangkat apa saja.
+### Sinkronisasi Cloud NoBox.AI
+Setiap data yang berhasil diekstrak akan otomatis terkirim dan tersimpan di database **Contacts** pada website NoBox.AI. Anda dapat mengakses data ini kapan saja melalui perangkat apa pun.
 
 <ImageZoom
   src="/images/id/Contacts%20(2).png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Sinkronisasi ke Web NoBox"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-- Masuk ke bagian **[Contacts]** dan pilih menu **[Contacts]**
-- Pilih filter **[Source -> Google Maps]**
-- Aktifkan fitur **[Auto Refresh]**, untuk memantau data apa saja yang berhasil diproses
+---
 
-## **Export Data**
+## **Ekspor dan Pemulihan Data**
 
-NoBox menyediakan opsi untuk menyimpan data yang diekstraksi dalam format Excel (.xlsx, .csv), dan file format JSON (.json).
+### Export ke Format Excel/JSON
+Anda dapat mendownload hasil pencarian dalam format `.xlsx`, `.csv`, atau `.json` melalui tab **Action** di halaman Results untuk keperluan pengolahan data offline.
 
-<ImageZoom
-  src="/images/id/Export.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Klik **[Export to Excel]** dibagian page **[Process]**&#x20;
-- Untuk melihat data apa saja yang baru saja diambil, bisa juga dilihat dari page **[Results]** lalu klik button **[Action]** untuk export dalam format excel, csv, dan JSON
-
-## **Penanganan Komputer Mati Saat Ekstrak Data**
-
-NoBox menyediakan fitur jika komputer/software mati secara tidak terduga saat proses ekstraksi data.&#x20;
+### Penanganan Komputer Mati Mendadak
+Jika aplikasi tertutup secara paksa saat proses berjalan, NoBox akan menyimpan *checkpoint* terakhir. Saat aplikasi dibuka kembali, akan muncul notifikasi untuk melanjutkan proses yang tertunda.
 
 <ImageZoom
   src="/images/id/Komputer%20mati%20(1).png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Sistem Recovery Otomatis"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-- Buka kembali aplikasi NoBox dan masuk ke menu **[Extractor -> Google Maps]**. Akan ada pemberitahuan bahwa proses sebelumnya masih belum selesai.
-- Klik **[OK]** untuk melanjutkan proses pencarian data
-- Klik **[Cancel]** untuk membatalkan pencarian
-
 ---
- 
+
 <Tips>
 ## **Tips Penggunaan**
- 
-Agar proses ekstraksi data dari Google Maps lebih efektif, perhatikan beberapa tips berikut:
- 
-- Gunakan fitur Multi Tab untuk menjalankan beberapa pencarian dengan kata kunci berbeda secara bersamaan.
-- Atur Interval Get List agar proses ekstraksi mensimulasikan perilaku manusia dan menghindari deteksi sistem.
-- Pastikan setting Unicode sudah sesuai jika Anda mencari data di negara dengan karakter khusus seperti Arab atau Jepang.
-- Gunakan fitur Auto Refresh pada website NoBox.Ai untuk memantau data yang masuk secara real-time.
-- Ekspor data ke format Excel secara berkala untuk cadangan data lokal Anda.
- 
+
+Optimalkan ekstraksi data Anda dengan tips berikut:
+
+- Gunakan fitur **Multi Tab** untuk menjalankan beberapa kata kunci pencarian berbeda secara bersamaan.
+- Atur interval jeda yang bervariasi (random) agar aktivitas terlihat lebih natural di mata sistem Google.
+- Pastikan Anda memilih list yang tepat di bagian **Save To List** agar data tidak tercampur dengan database lama.
+- Aktifkan fitur **Auto Refresh** pada website NoBox.AI untuk memantau trafik data yang masuk secara langsung.
+
 </Tips>
- 
+
 ---
- 
+
 <Kendala>
 ## **Penanganan Kendala**
- 
-Jika mengalami kendala saat menggunakan Google Maps Extractor, lakukan langkah berikut:
- 
-- Jika proses terhenti secara tiba-tiba, buka kembali aplikasi dan klik **[OK]** pada notifikasi untuk melanjutkan proses sebelumnya.
-- Pastikan koneksi internet stabil; gangguan koneksi dapat mengakibatkan data gagal ditarik secara sempurna.
-- Jika hasil ekstraksi sedikit, coba ubah kata kunci pencarian atau perluas area pencarian di peta.
-- Periksa log aktivitas di halaman **[Logs]** untuk melihat detail galat (error) jika sistem tidak berjalan semestinya.
-- Hubungi tim support jika masalah lisensi atau sinkronisasi ke website NoBox.Ai terjadi.
- 
+
+Jika menemui masalah teknik, silakan lakukan langkah berikut:
+
+- **Data Gagal Ditarik**: Periksa koneksi internet Anda atau pastikan akun Google Anda tidak sedang memerlukan verifikasi captcha.
+- **Hasil Sedikit**: Coba gunakan kata kunci yang lebih umum atau perluas radius pencarian pada peta Google Maps.
+- **Aplikasi Close Sendiri**: Periksa ketersediaan RAM komputer Anda dan tutup aplikasi lain yang tidak diperlukan.
+- **Data Tidak Masuk ke Web**: Pastikan status akun di NoBox Desktop adalah "Aktif" dan sinkronisasi cloud tidak terhambat firewall.
+
 </Kendala>
- 
+
 ---
- 
+
 Jika ada masalah atau kesulitan terkait NoBox Desktop, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

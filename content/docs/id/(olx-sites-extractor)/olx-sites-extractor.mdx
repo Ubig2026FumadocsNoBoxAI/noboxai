@@ -6,222 +6,145 @@ icon: Package
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Untuk mendukung semua kelebihannya, OLX Extractor menawarkan sejumlah fitur menarik yang dapat Anda manfaatkan. Diantara sekian banyaknya pilihan fitur yang ada, Anda bisa memanfaatkan beberapa fitur pilihan di bawah ini:
+OLX Sites Extractor adalah alat pada NoBox Desktop yang dirancang untuk mengumpulkan data iklan dari platform marketplace OLX secara otomatis. Fitur ini memungkinkan Anda mengekstrak informasi detail produk, harga, lokasi penjual, hingga nomor telepon untuk kebutuhan riset pasar atau database prospek bisnis.
+
+Dengan antarmuka yang ramah pengguna, Anda dapat melakukan pencarian berbasis kategori dan lokasi di seluruh wilayah Indonesia dengan sangat efisien.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/i2JsGX__WRg/"
-  title="01. Instalasi NoBox Desktop"
+  title="Panduan OLX Sites Extractor"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-## **Auto Login**
+---
 
-OLX Extractor mendukung fitur auto login. Dengan fitur auto login, pengguna atau user tertentu bisa secara otomatis login tanpa harus mengetik password terlebih dahulu.
+## **Fitur Utama OLX Extractor**
+
+Software ini dilengkapi dengan berbagai fitur cerdas untuk meningkatkan kecepatan dan keamanan saat melakukan ekstraksi data.
+
+### **1. Auto Login**
+OLX Extractor mendukung fitur login otomatis. Dengan menyimpan kredensial akun OLX Anda, sistem dapat masuk ke platform tanpa perlu mengetik ulang password secara berkala, mempermudah akses ke data iklan yang memerlukan autentikasi.
 
 <ImageZoom
   src="/images/id/Auto%20login.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Fitur Auto Login OLX"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-- Masuk ke aplikasi NoBox Desktop pada bagian menu **[Extractor]**
-- Klik **[Other Options]** pada bagian page **[Process]**.
-- Isi email dan password OLX terlebih dahulu sebelum melakukan proses selanjutnya
-- Dan klik **[OK]** untuk menyimpan.
-
-## **Page Process**
-
-Halaman yang berfungsi untuk setting ketentuan data yang akan diambil.
-
-<ImageZoom
-  src="/images/id/Page%20Process%20OLX.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-<table>
-  <thead>
-    <tr>
-      <th width="178.5999755859375">Fitur</th>
-      <th>Uraian</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Limit Result</td>
-      <td>
-        Penambahan data sesuai dengan kebutuhan berapa jumlah data yang di
-        inginkan.
-      </td>
-    </tr>
-    <tr>
-      <td>Save To List</td>
-      <td>
-        Simpan dan tambah nama file, jadi ketika ingin menambah data list bisa
-        menggunakan fitur ini, caranya tinggal menekan tombol [+] lalu beri nama
-        list sesuai yang di inginkan setelah itu tekan [OK]
-      </td>
-    </tr>
-    <tr>
-      <td>Option Debug </td>
-      <td>Munculkan logs aktivitas dengan sangat detail</td>
-    </tr>
-    <tr>
-      <td>Option Load Images</td>
-      <td>Menampilkan gambar pada data</td>
-    </tr>
-    <tr>
-      <td>Other Option</td>
-      <td>
-        Pengaturan Interval untuk pemilihan lokasi negara, dan di bagian bawah
-        terdapat pengaturan Interval untuk pengambilan data.{" "}
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-## **Page Result**
-
-Result adalah halaman yang menampilkan hasil dari data yang diambil.
-
-<ImageZoom
-  src="/images/id/Result%20OLX%20.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Page Logs**
-
-Logs adalah halaman untuk melihat semua aktivitas sistem yang sedang berlangsung.
-
-<ImageZoom
-  src="/images/id/Logs%20OLX.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Interval Get List**
-
-Merupakan fitur untuk mengatur waktu cepat lambatnya antara permintaan satu dengan berikutnya, agar mensimulasikan seperti manusia nyata yang menjalankan browser.
+### **2. Interval & Simulasi Pencarian**
+Fitur ini berfungsi untuk mengatur jeda waktu antara penarikan data. Interval ini sangat krusial agar aktivitas akun Anda terlihat natural seperti pengguna biasa, sehingga mengurangi risiko deteksi spam atau pemblokiran dari pihak marketplace.
 
 <ImageZoom
   src="/images/id/Interval%20OLX.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Pengaturan Interval OLX"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-- Klik **[Other Options]** pada page **[Process]**
-- Interval yang tertera adalah pengaturan default NoBox, dan bisa dirubah sesuai dengan kebutuhan
-- Lalu klik **[OK]** untuk menyimpan
+---
 
-## **Multi Tab**
+## **Manajemen Konfigurasi (Page Process)**
 
-OLX Extractor mendukung proses multi tab sehingga dapat menjalankan pencarian dengan berbagai kata kunci secara bersamaan.
+Sebelum memulai proses ekstraksi, Anda perlu mengatur parameter pencarian pada tab **Process**.
+
+| Fitur | Uraian Fungsi |
+| :--- | :--- |
+| **Limit Result** | Menentukan jumlah maksimal data iklan yang akan diambil. |
+| **Save To List** | Memilih kategori atau grup kontak untuk menyimpan hasil ekstraksi di website NoBox.AI. |
+| **Option Debug** | Mengaktifkan catatan teknis (logs) secara mendalam untuk memantau proses kerja sistem. |
+| **Load Images** | Mengatur apakah gambar iklan perlu dimuat atau tidak guna menghemat resource. |
 
 <ImageZoom
-  src="/images/id/Multi%20Tab%20OLX-1.png"
-  alt="Tampilan Dasbor NoBox"
+  src="/images/id/Page%20Process%20OLX.png"
+  alt="Halaman Konfigurasi Process OLX"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-- Lakukan ekstrasi data pada 1 akun tool dengan pencarian “Laptop” yang berlokasi di “Jawa Timur”, dengan jumlah data yang diambil sebanyak 2 data, dan masuk ke dalam list Laptop Malang,
-- Tambahkan 1 akun lagi dengan pencarian yang sama tetapi dengan lokasi dan jumlah limit result yang berbeda.
+---
 
-## **Website NoBox.Ai**
+## **Hasil dan Pemantauan Data**
 
-Untuk urusan data yang sudah diekstraksi akan langsung tersimpan pada website NoBox.Ai, sehingga Anda dapat mengakses dan memantau hasilnya dengan browser dan perangkat apa saja.
+### Hasil Real-Time (Page Result)
+Pada tab Result, Anda dapat melihat data iklan yang berhasil terambil secara instan. Informasi yang ditampilkan mencakup judul iklan, harga, dan rincian kontak penjual.
+
+<ImageZoom
+  src="/images/id/Result%20OLX%20.png"
+  alt="Halaman Hasil Data OLX"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### Sinkronisasi ke Cloud NoBox.AI
+Seluruh data hasil ekstraksi akan langsung dikirim ke database **Contacts** pada dashboard website NoBox.AI. Anda dapat melakukan pengelompokan lebih lanjut di sana.
 
 <ImageZoom
   src="/images/id/Contacts%20(1).png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Data OLX di Dashboard Web"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
-
-- Masuk ke bagian **[Contacts]** dan pilih menu **[Contacts]**
-- Pilih filter **[Source -> OLX IndonesiaX]**
-- Aktifkan fitur **[Auto Refresh]**, untuk memantau data apa saja yang berhasil diproses.
-
-## **Export Data**
-
-NoBox menyediakan opsi untuk menyimpan data yang diekstraksi dalam format Excel (.xlsx, .csv), dan file format JSON (.json).
-
-<ImageZoom
-  src="/images/id/Export%20.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Klik **[Export to Excel]** dibagian page **[Process]**&#x20;
-- Untuk melihat data apa saja yang baru saja diambil, bisa juga dilihat dari page **[Results]** lalu klik button **[Action]** untuk export dalam format excel, csv, dan JSON
-
-## **Penanganan Komputer Mati Saat Ekstrak Data**
-
-NoBox menyediakan fitur jika komputer/software mati secara tidak terduga saat proses ekstraksi data.&#x20;
-
-<ImageZoom
-  src="/images/id/Komputer%20mati.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Buka kembali aplikasi NoBox dan masuk ke menu **[Extractor-> OLX]**. Akan ada pemberitahuan bahwa proses sebelumnya masih belum selesai.
-- Klik **[OK]** untuk melanjutkan proses pencarian data
-- Klik **[Cancel]** untuk membatalkan pencarian
 
 ---
- 
+
+## **Multi Tab dan Ekspor Data**
+
+### Mendukung Multi Pencarian (Multi Tab)
+Anda dapat menjalankan beberapa proses ekstraksi secara bersamaan dengan kata kunci atau lokasi yang berbeda menggunakan fitur akun tambahan (Multi Tab).
+
+<ImageZoom
+  src="/images/id/Multi%20Tab%20OLX-1.png"
+  alt="Fitur Multi Tab OLX"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### Export ke Excel/JSON
+Data yang sudah terkumpul dapat diunduh ke komputer Anda dalam format `.xlsx`, `.csv`, atau `.json` melalui tab **Results** dengan menekan tombol **Action**.
+
+---
+
 <Tips>
 ## **Tips Penggunaan**
- 
-Beberapa tips untuk mengoptimalkan penggunaan OLX Sites Extractor:
- 
-- Gunakan fitur Auto Login agar Anda tidak perlu memasukkan email dan password setiap kali membuka aplikasi.
-- Manfaat fitur Multi Tab untuk menjalankan ekstraksi data di beberapa lokasi sekaligus secara bersamaan.
-- Atur Interval Get List untuk mensimulasikan penggunaan manusia dan menjaga keamanan akun OLX Anda.
-- Gunakan fitur Auto Refresh pada menu Contacts website NoBox.Ai untuk memantau hasil ekstraksi secara langsung.
-- Ekspor data ke format Excel atau JSON secara rutin sebagai arsip pencarian Anda.
- 
+
+Optimalkan penggunaan OLX Extractor dengan langkah-langkah berikut:
+
+- Selalu gunakan fitur **Auto Login** untuk mempermudah operasional harian.
+- Gunakan fitur **Multi Tab** jika Anda perlu riset kompetitor di berbagai wilayah sekaligus (misal: Jakarta, Surabaya, Bandung).
+- Pastikan untuk memilih file **Save To List** yang spesifik sesuai kategori barang agar database Anda tetap rapi.
+- Aktifkan **Auto Refresh** pada website NoBox.AI untuk memantau penambahan data tanpa perlu refresh manual.
+- Lakukan ekspor data secara berkala untuk analisis pasar mingguan atau bulanan.
+
 </Tips>
- 
+
 ---
- 
+
 <Kendala>
 ## **Penanganan Kendala**
- 
-Jika mengalami kendala saat menggunakan OLX Sites Extractor, lakukan langkah-langkah berikut:
- 
-- Jika proses ekstraksi berhenti akibat komputer mati, buka kembali menu OLX di NoBox Desktop dan klik **[OK]** pada notifikasi pemulihan.
-- Pastikan akun OLX Anda tidak dalam status terblokir agar fitur Auto Login dapat berjalan lancar.
-- Periksa log di halaman **[Logs]** jika aplikasi tidak memberikan respon saat tombol Start ditekan.
-- Jika hasil data duplikat terasa banyak, coba persempit kategori atau lokasi pencarian Anda.
-- Hubungi tim support jika data hasil ekstraksi tidak muncul di menu Contacts website NoBox.Ai.
- 
+
+Jika menemui masalah saat menggunakan extractor, silakan lakukan hal berikut:
+
+- **Login Gagal**: Periksa kembali akurasi email dan password pada menu **Other Options** atau pastikan koneksi internet aktif.
+- **Pencarian Terhenti**: Jika komputer mati mendadak, buka kembali aplikasi dan klik **[OK]** pada dialog pemulihan proses.
+- **Data Tidak Muncul**: Periksa tab **Logs** untuk melihat apakah terjadi error pada saat akses halaman OLX.
+- **Limit Tercapai**: Jika data berhenti diambil, periksa pengaturan **Limit Result** Anda atau kuota subscription Anda.
+- **Sinkronisasi Terhambat**: Pastikan status akun extractor di NoBox Desktop dalam kondisi "Aktif".
+
 </Kendala>
- 
+
 ---
- 
+
 Jika ada masalah atau kesulitan terkait NoBox Desktop, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

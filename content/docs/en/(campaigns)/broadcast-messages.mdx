@@ -1,73 +1,120 @@
 ---
 title: Broadcast Messages
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
-icon: MessageCircle
+description: Monitoring and managing message sending results from all promotion campaigns in NoBox.AI.
+icon: MessageSquare
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The "Send Message" feature in Nobox.Ai is used for monitoring the results of message sending from all promotional data. It allows you to track messages that are still queued, in process, failed, or successfully sent.
+The **Broadcast Messages** menu in NoBox.AI is used to monitor the output of message sending from all your promotion data. This feature allows you to track each message individually, from its status in the queue, through the delivery process, to successful or failed delivery.
+
+With this menu, you can ensure that your promotional messages reach your audience correctly and analyze any issues that may occur during delivery.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/EkWgwRnDC2E/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/SOf-o_IuYIk"
+  title="NoBox Broadcast Messages Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerPolicy="strict-origin-when-cross-origin"
   allowFullScreen
 ></iframe>
 
+---
+
+## **Broadcast Messages Interface**
+
 <ImageZoom
   src="/images/en/Broadcast%20Messages.png"
   alt="NoBox Broadcast Messages View"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
 />
+
+This page displays a detailed list of messages sent through the promotion feature. Users can see the recipient's identity, the content of the message sent, the channel used, and the latest status of each message.
+
+---
+
+## **Message Delivery Status**
+
+In the Broadcast Messages menu, each message has a status indicator for easy monitoring. Here is an explanation of each status:
 
 <table>
   <thead>
     <tr>
-      <th width="133.20001220703125">Feature</th>
-      <th>Function</th>
+      <th width="150">Status</th>
+      <th>Function and Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>
-        <img src="/images/en/bc%20queue.png" alt="" className="mx-auto" />
+      <td align="center">
+        <img src="/images/en/bc%20queue.png" alt="Queue" className="mx-auto mb-2" />
+        <div>**In Queue**</div>
       </td>
-      <td>The status in the message send queue is still unprocessed.</td>
+      <td>The message has entered the system but is still waiting for its turn to be processed by the service provider.</td>
     </tr>
     <tr>
-      <td>
-        <img src="/images/en/process.png" alt="" className="mx-auto" />
+      <td align="center">
+        <img src="/images/en/process.png" alt="Process" className="mx-auto mb-2" />
+        <div>**In Process**</div>
       </td>
-      <td>
-        The status of the message data processing is in the process of being
-        sent.
-      </td>
+      <td>The message is currently being sent from the NoBox.AI system to the customer's device.</td>
     </tr>
     <tr>
-      <td>
-        <img src="/images/en/bc%20sent.png" alt="" className="mx-auto" />
+      <td align="center">
+        <img src="/images/en/bc%20sent.png" alt="Sent" className="mx-auto mb-2" />
+        <div>**Sent**</div>
       </td>
-      <td>Message Status: Message has been sent.</td>
+      <td>The message was successfully received by the service provider (such as WhatsApp or Telegram) and forwarded to the recipient.</td>
     </tr>
     <tr>
-      <td>
-        <img src="/images/en/bc%20failed.png" alt="" className="mx-auto" />
+      <td align="center">
+        <img src="/images/en/bc%20failed.png" alt="Failed" className="mx-auto mb-2" />
+        <div>**Failed**</div>
       </td>
-      <td>Failed status: message data failed to send.</td>
+      <td>The message could not be sent. This could be due to an invalid number, disconnected connection, or an issue with the sender's account.</td>
     </tr>
   </tbody>
 </table>
 
-To view the details of the data, you can click on one of the entries in the message column. Detailed information regarding the selected message will then appear.
+---
+
+## **Viewing Message Details**
+
+To see the detailed information of a specific message, follow these steps:
+
+1. Click on one of the message entries you wish to inspect.
+2. A detailed information panel or dialog will appear.
+3. Detailed information includes:
+   - **Recipient**: The target phone number or username.
+   - **Content**: The text or media content sent.
+   - **Time Logs**: Records of when the message was created, started processing, and finished sending.
+   - **Failure Reason**: If the status is failed, a technical reason for why the message did not arrive will usually be displayed.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+<Tips>
+## **Monitoring Tips**
+
+- **Filter by Status**: Use the filter feature to focus only on "Failed" messages to perform manual resending if necessary.
+- **Real-time Monitoring**: Monitor the "In Process" status to ensure the delivery speed meets your expectations.
+- **Check Account Validity**: If many messages have a "Failed" status, immediately check the connection status of your WhatsApp or Telegram account in the Accounts menu.
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Status Remains In Queue**: This usually happens if the system queue is very busy or your NoBox Desktop is inactive. Ensure the Desktop application is in a "Ready" state.
+- **High Failure Rate**: Ensure the target numbers use the correct international format (e.g., 628xxx) and your sender account is not being blocked by the provider.
+- **Out of Sync Data**: If the status on the dashboard differs from your device, try clicking the refresh or data sync button on that page.
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)

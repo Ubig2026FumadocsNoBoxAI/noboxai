@@ -6,7 +6,9 @@ icon: List
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-List adalah salah satu menu pada Nobox.Ai yang digunakan untuk mengelompokkan data kontak.
+List adalah salah satu menu pada NoBox.AI yang digunakan untuk mengelompokkan dan mengorganisir data kontak pelanggan ke dalam daftar-daftar tertentu berdasarkan kebutuhan pengguna.
+
+Menu ini membantu pengguna dalam melakukan segmentasi kontak untuk keperluan kampanye promosi, komunikasi massal, atau pengelolaan pelanggan berdasarkan kategori tertentu. Dengan fitur List, pengguna dapat membuat daftar kontak yang spesifik, menambahkan kontak ke dalam list melalui berbagai metode, serta mengelola keanggotaan list secara fleksibel.
 
 <iframe
   width="800"
@@ -20,81 +22,166 @@ List adalah salah satu menu pada Nobox.Ai yang digunakan untuk mengelompokkan da
   allowfullscreen
 ></iframe>
 
+---
+
+## **Tampilan Menu List**
+
 <ImageZoom
   src="/images/id/list.png"
-  alt="Tampilan List NoBox"
+  alt="Tampilan Menu List"
   width={200}
   height={450}
   className="rounded-lg border my-8 mx-auto shadow-sm mb-4"
 />
 
+Tampilan di atas merupakan halaman utama menu List yang menampilkan seluruh daftar list yang telah dibuat oleh pengguna.
+
+Pada halaman ini, pengguna dapat melihat nama-nama list yang tersedia, jumlah kontak di dalam setiap list, menambah list baru, mengedit, menghapus, serta mengelola anggota kontak di dalam masing-masing list.
+
+---
+
 ## **Tambah List**
 
-Untuk membuat data list, silahkan klik modul **[Kontak]**, lalu klik menu **[List]➔\[Tambah List]** maka akan tampil dialog **[Tambah List]** kemudian isi nama list yang akan dibuat.
+Untuk membuat data list baru, ikuti langkah-langkah berikut:
+
+1. Klik modul **[Kontak]**, lalu klik menu **[List]** ➔ **[Tambah List]**.
+2. Maka akan tampil dialog **[Tambah List]**, kemudian isi nama list yang akan dibuat.
+
+### Tampilan Dialog Tambah List
 
 <ImageZoom
   src="/images/id/Tambah%20List.png"
-  alt="Tampilan List NoBox"
+  alt="Dialog Tambah List"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Jika Anda sudah melengkapi isian yang ada, klik **[Simpan]** untuk menyimpan data list yang baru saja Anda buat.
+### Isian Dialog Tambah List
+
+<table>
+  <thead>
+    <tr>
+      <th width="150">Isian</th>
+      <th width="250">Uraian</th>
+      <th>Contoh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nama List</td>
+      <td>Nama daftar kontak yang digunakan sebagai identitas pengelompokan. Gunakan nama yang deskriptif agar mudah diidentifikasi saat digunakan untuk promosi atau segmentasi.</td>
+      <td>Pelanggan Surabaya</td>
+    </tr>
+  </tbody>
+</table>
+
+Setelah isian dilengkapi, klik **[Simpan]** untuk menyimpan data list yang baru saja Anda buat. Tambahkan data list lain sesuai kebutuhan segmentasi kontak Anda.
+
+---
 
 ## **Edit dan Hapus Data List**
 
+### Edit Data List
+
 Untuk mengedit suatu data list, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
 
-Untuk menghapus suatu data list adalah dengan pilih data list yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+Perubahan nama list akan langsung tersimpan dan berlaku pada seluruh data kontak yang tergabung dalam list tersebut.
 
-## **Tambah Kontak**
+### Hapus Data List
 
-Untuk memudahkan menambahkan kontak pada list, Anda dapat menggunakan fitur berikut.
+Untuk menghapus suatu data list, pilih data list yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut.
+
+Jika ya, klik **[Ya]**. Jika tidak, klik **[Tidak]**.
+
+<Callout type="info" title="Informasi Penting">
+Menghapus list hanya akan menghapus pengelompokan, data kontak yang ada di dalamnya tetap tersimpan di database. Namun, pastikan list tersebut tidak sedang digunakan oleh kampanye promosi yang aktif.
+</Callout>
+
+---
+
+## **Menambah Kontak ke dalam List**
+
+Terdapat beberapa metode untuk menambahkan kontak ke dalam sebuah list. Setiap metode dirancang untuk kebutuhan yang berbeda:
 
 <ImageZoom
   src="/images/id/List%20Tambah%20Kontak.png"
-  alt="Tampilan List NoBox"
+  alt="Opsi Menambah Kontak ke List"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Tambah Dari Kontak**
+### Tambah dari Kontak
 
-Untuk menambahkan kontak baru melalui data kontak yaitu dengan cara pilih list yang akan digunakan, klik tombol **[Tambah Kontak]➔** klik tombol **[Tambah dari Kontak] ➔** pilih kontak **➔** klik **[OK]**.
+Metode ini digunakan untuk menambahkan kontak yang sudah tersimpan di database ke dalam list tertentu.
+
+Cara menambahkan kontak dari database:
+
+1. Pilih list yang akan digunakan pada halaman List.
+2. Klik tombol **[Tambah Kontak]** ➔ klik tombol **[Tambah dari Kontak]**.
+3. Pilih satu atau beberapa kontak yang ingin ditambahkan dari daftar yang muncul.
+4. Klik **[OK]** untuk menambahkan kontak yang dipilih ke dalam list.
 
 <ImageZoom
   src="/images/id/tambah%20dari%20kontak.png"
-  alt="Tampilan List NoBox"
+  alt="Menambah Kontak dari Database"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Tambah Dari Target Promosi**
+### Tambah dari Target Promosi
 
-Untuk menambahkan kontak melalui target promosi yaitu dengan cara pilih list yang akan digunakan, klik tombol **[Tambah Kontak]**➔ klik tombol **[Tambah dari Target Promosi] ➔** pilih data promosi **➔** klik **[OK]**.
+Metode ini digunakan untuk menambahkan kontak yang pernah menjadi target promosi ke dalam list tertentu. Fitur ini sangat berguna untuk mengumpulkan kontak yang telah merespon kampanye sebelumnya.
+
+Cara menambahkan kontak dari target promosi:
+
+1. Pilih list yang akan digunakan pada halaman List.
+2. Klik tombol **[Tambah Kontak]** ➔ klik tombol **[Tambah dari Target Promosi]**.
+3. Pilih data promosi yang kontak targetnya ingin Anda tambahkan.
+4. Klik **[OK]** untuk menambahkan kontak dari promosi tersebut ke dalam list.
 
 <ImageZoom
   src="/images/id/Link.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Menambah Kontak dari Target Promosi"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Hapus Semua Kontak**
+---
 
-Untuk menghapus seluruh data kontak yang ada di dalam suatu list yaitu dengan pilih data list yang diinginkan, kemudian klik **[Hapus Semua Kontak]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus semua data kontak yang ada dilist tersebut. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+## **Hapus Semua Kontak dari List**
+
+Fitur ini digunakan untuk menghapus seluruh data kontak yang ada di dalam suatu list sekaligus. Fitur ini berguna ketika Anda ingin mengosongkan list untuk digunakan kembali dengan set kontak yang berbeda.
+
+Untuk menghapus semua kontak dari list, ikuti langkah berikut:
+
+1. Pilih data list yang diinginkan pada halaman List.
+2. Klik **[Hapus Semua Kontak]**.
+3. Maka akan tampil dialog konfirmasi apakah Anda ingin menghapus semua data kontak yang ada di list tersebut.
+4. Jika ya, klik **[Ya]**. Jika tidak, klik **[Tidak]**.
 
 <ImageZoom
   src="/images/id/List%20Hapus%20Kontak.png"
-  alt="Tampilan List NoBox"
+  alt="Konfirmasi Hapus Semua Kontak"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+<Callout type="info" title="Informasi Penting">
+Menghapus semua kontak dari list hanya akan mengeluarkan kontak dari pengelompokan tersebut. Data kontak itu sendiri tetap tersimpan di database dan dapat ditambahkan kembali ke list kapan saja.
+</Callout>
+
+---
+
+## **Penggunaan List pada Promosi**
+
+List memiliki peran penting dalam fitur Promosi NoBox.AI. Saat membuat kampanye promosi, pengguna dapat memilih list sebagai target penerima promosi.
+
+Dengan menggunakan list, proses penargetan promosi menjadi lebih mudah karena pengguna tidak perlu memilih kontak satu per satu, melainkan cukup memilih list yang sesuai dengan segmen target promosi.
 
 ---
  
@@ -103,10 +190,12 @@ Untuk menghapus seluruh data kontak yang ada di dalam suatu list yaitu dengan pi
  
 Berikut beberapa tips untuk memaksimalkan penggunaan menu List:
  
-- Gunakan List untuk mengategorikan kontak berdasarkan minat, lokasi, atau status pelanggan.
-- Manfaatkan fitur 'Tambah dari Kontak' untuk memasukkan data yang sudah ada ke dalam list baru.
-- Gunakan 'Tambah dari Target Promosi' untuk mengumpulkan kontak yang merespon kampanye tertentu.
-- Lakukan pembersihan (Hapus Semua Kontak) jika list tersebut ingin digunakan kembali untuk kategori yang berbeda.
+- Gunakan List untuk mengkategorikan kontak berdasarkan minat, lokasi, status pelanggan, atau periode pembelian agar segmentasi promosi lebih akurat.
+- Manfaatkan fitur **[Tambah dari Kontak]** untuk memasukkan data kontak yang sudah ada ke dalam list baru tanpa perlu input manual.
+- Gunakan **[Tambah dari Target Promosi]** untuk mengumpulkan kontak yang merespon kampanye tertentu ke dalam list baru untuk follow-up.
+- Buat nama list yang deskriptif dan konsisten (contoh: "Pelanggan VIP Surabaya", "Reseller Aktif 2024") agar mudah diidentifikasi.
+- Lakukan pembersihan list secara berkala menggunakan **[Hapus Semua Kontak]** jika list tersebut ingin digunakan kembali untuk kategori yang berbeda.
+- Manfaatkan fitur list saat membuat promosi untuk mempermudah penargetan tanpa perlu memilih kontak satu per satu.
  
 </Tips>
  
@@ -117,13 +206,16 @@ Berikut beberapa tips untuk memaksimalkan penggunaan menu List:
  
 Jika mengalami kendala saat menggunakan menu List, lakukan langkah-langkah berikut:
  
-- Refresh halaman jika jumlah kontak di dalam list tidak segera berubah setelah penambahan.
-- Pastikan Anda memilih kontak yang benar saat menggunakan fitur 'Tambah dari Kontak'.
-- Periksa kembali koneksi internet jika proses pemindahan kontak antar list terasa lambat.
-- Hubungi administrator jika fitur 'Hapus Semua Kontak' tidak dapat dijalankan (terkait hak akses).
+- Refresh halaman jika jumlah kontak di dalam list tidak segera berubah setelah penambahan kontak baru.
+- Pastikan Anda memilih kontak yang benar saat menggunakan fitur **[Tambah dari Kontak]** atau **[Tambah dari Target Promosi]**.
+- Periksa kembali koneksi internet jika proses penambahan kontak ke dalam list terasa lambat.
+- Periksa hak akses akun Anda jika tidak dapat membuat, mengedit, atau menghapus list.
+- Logout dan login kembali jika data list tidak ter-update setelah perubahan.
+- Bersihkan cache browser jika tampilan tidak sesuai.
+- Hubungi administrator atau tim support jika fitur **[Hapus Semua Kontak]** tidak dapat dijalankan (mungkin terkait hak akses).
  
 </Kendala>
  
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait NoBox.AI, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

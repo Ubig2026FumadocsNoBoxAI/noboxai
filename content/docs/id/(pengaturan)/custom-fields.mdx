@@ -6,60 +6,134 @@ icon: Keyboard
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Inputan Khusus adalah salah satu menu pada Nobox.Ai yang memungkinkan Anda untuk menambahkan kolom khusus sesuai dengan kebutuhan Anda.
+Inputan Khusus adalah salah satu menu pada NoBox.AI yang memungkinkan pengguna untuk menambahkan kolom data tambahan sesuai dengan kebutuhan bisnis di luar kolom bawaan sistem.
+
+Menu ini membantu pengguna dalam menyesuaikan struktur data kontak atau produk agar lebih lengkap dan relevan dengan operasional perusahaan. Dengan fitur ini, setiap informasi penting yang spesifik terhadap bisnis Anda dapat dicatat dan dikelola secara terstruktur di dalam platform NoBox.AI.
+
+---
+
+## **Tampilan Menu Inputan Khusus**
 
 <ImageZoom
   src="/images/id/Inputan%20khusus.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tampilan Menu Inputan Khusus"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+Tampilan di atas merupakan halaman utama menu Inputan Khusus yang menampilkan seluruh daftar kolom tambahan yang telah dibuat oleh pengguna.
+
+Pada halaman ini, pengguna dapat melihat nama inputan, tipe input, status wajib diisi, serta kategori (kontak atau produk) dari setiap inputan khusus yang tersedia. Pengguna juga dapat menambah, mengedit, dan menghapus inputan khusus sesuai kebutuhan.
+
+---
 
 ## **Tambah Inputan Khusus**
 
-Untuk membuat data inputan khusus, silahkan klik menu **[Inputan khusus]**, kemudian klik kontak atau produk sesuai kebutuhan, lalu klik **[Tambah Inputan Khusus].**
+1. Untuk membuat data inputan khusus baru, silahkan klik menu **[Inputan Khusus]**, kemudian pilih kategori **[Kontak]** atau **[Produk]** sesuai kebutuhan.
+2. Klik tombol **[Tambah Inputan Khusus]**, maka akan tampil dialog pengisian data inputan khusus.
+
+### Tampilan Dialog Tambah Inputan Khusus
 
 <ImageZoom
   src="/images/id/Tambah%20inputan%20khusus.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Dialog Tambah Inputan Khusus"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-&#x20;Lengkapi isian-isian yang terdapat pada dialog tersebut:&#x20;
+### Isian Dialog Tambah Inputan Khusus
 
-| Isian        | Uraian           | Contoh     |
-| ------------ | ---------------- | ---------- |
-| Inputan      | Pilih input      | Input      |
-| Tipe Input   | Pilih tipe input | Number     |
-| Wajib Diisi  | Wajib diisi      | -          |
-| Label        | Judul kolom      | Nomor Lain |
-| Placeholder  | Petunjuk isi     | 62xxxxxx   |
-| Nilai Bawaan | Nilai bawaan     | -          |
+Lengkapi seluruh isian yang terdapat pada dialog tersebut. Berikut penjelasan detail dari setiap isian:
 
-Jika Anda sudah melengkapi isian-isian yang ada, klik **[Simpan]** untuk menyimpan data inputan khusus yang baru saja Anda buat.
+<table>
+  <thead>
+    <tr>
+      <th width="150">Isian</th>
+      <th width="300">Uraian</th>
+      <th>Contoh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Inputan</td>
+      <td>Jenis elemen input yang akan digunakan pada formulir, seperti input teks, dropdown, checkbox, dan lainnya</td>
+      <td>Input</td>
+    </tr>
+    <tr>
+      <td>Tipe Input</td>
+      <td>Tipe data yang diterima oleh kolom input, seperti Text, Number, Email, Date, dan lainnya. Pilih tipe yang sesuai untuk menjaga validitas data</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>Wajib Diisi</td>
+      <td>Pengaturan untuk menentukan apakah kolom ini harus diisi saat membuat atau mengedit data kontak/produk. Aktifkan untuk data yang bersifat krusial</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Label</td>
+      <td>Judul atau nama kolom yang akan ditampilkan pada formulir. Gunakan nama yang singkat namun deskriptif agar mudah dipahami</td>
+      <td>Nomor Lain</td>
+    </tr>
+    <tr>
+      <td>Placeholder</td>
+      <td>Petunjuk atau contoh isian yang ditampilkan di dalam kolom input sebagai panduan bagi pengguna saat mengisi data</td>
+      <td>62xxxxxx</td>
+    </tr>
+    <tr>
+      <td>Nilai Bawaan</td>
+      <td>Nilai default yang akan otomatis terisi pada kolom input saat data baru dibuat. Berguna untuk mengisi data yang umumnya sama pada setiap entri</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+Setelah semua isian dilengkapi dengan benar, klik tombol **[Simpan]** untuk menyimpan data inputan khusus yang baru saja Anda buat.
+
+---
 
 ## **Edit dan Hapus Data Inputan Khusus**
 
-Untuk mengedit suatu data inputan khusus, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut. Untuk menghapus suatu data inputan khusus adalah dengan pilih data inputan khusus mana yang akan dihapus, kemudian klik **[Hapus]** maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut. Jika ya, klik **[Ya]** jika tidak maka klik **[Tidak]**.
+### Edit Data Inputan Khusus
+
+Untuk mengedit suatu data inputan khusus, silahkan pilih terlebih dahulu data mana yang akan diedit. Editlah data Anda dan klik **[Simpan]** untuk menyimpan perubahan tersebut.
+
+Perubahan data akan langsung tersimpan dan berlaku pada seluruh formulir yang menggunakan inputan khusus tersebut.
+
+### Hapus Data Inputan Khusus
+
+Untuk menghapus suatu data inputan khusus, silahkan pilih data inputan khusus yang akan dihapus, kemudian klik **[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data tersebut.
+
+Jika ya, klik **[Ya]**. Jika tidak, klik **[Tidak]**.
+
+<Callout type="info" title="Informasi Penting">
+Penghapusan inputan khusus akan menghapus kolom tersebut dari semua data kontak atau produk yang sudah menggunakannya. Pastikan data yang terkait sudah tidak diperlukan sebelum melakukan penghapusan.
+</Callout>
+
+---
 
 ## **Cara Penggunaan Inputan Khusus**
 
-1\. Buka menu **[Kontak]**, pilih salah satu data kontak yang sudah dibuat atau buat kontak baru.
+Fitur Inputan Khusus akan muncul secara otomatis pada formulir kontak atau produk setelah berhasil dibuat.
 
-2\. Pada bagian inputan khusus tampil data yang sebelumnya sudah dibuat.
+Untuk menggunakan inputan khusus, ikuti langkah-langkah berikut:
 
-3\. Isi data jika diperlukan dan klik **[Simpan]** untuk menyimpan kembali data kontak.
+1. Buka menu **[Kontak]** atau **[Produk]**, pilih salah satu data yang sudah dibuat atau buat data baru.
+
+2. Pada bagian formulir, kolom inputan khusus yang sebelumnya sudah dibuat akan tampil secara otomatis di bagian bawah formulir.
+
+3. Isi data pada kolom inputan khusus sesuai kebutuhan, kemudian klik **[Simpan]** untuk menyimpan kembali data kontak atau produk beserta informasi tambahannya.
 
 <ImageZoom
   src="/images/id/Cara.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Penggunaan Inputan Khusus pada Form Kontak"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+Data inputan khusus yang telah diisi dapat digunakan untuk keperluan pencarian, filter, maupun analisis data di dalam sistem.
 
 ---
  
@@ -69,9 +143,11 @@ Untuk mengedit suatu data inputan khusus, silahkan pilih terlebih dahulu data ma
 Beberapa tips untuk mengoptimalkan penggunaan Inputan Khusus:
  
 - Gunakan label yang singkat namun deskriptif agar mudah dipahami oleh pengguna lain.
-- Manfaatkan fitur 'Wajib Diisi' untuk data krusial yang harus selalu ada di setiap kontak atau produk.
-- Pilih tipe input yang sesuai (misalnya 'Number' untuk nominal atau nomor) untuk menjaga validitas data.
+- Manfaatkan fitur **[Wajib Diisi]** untuk data krusial yang harus selalu ada di setiap kontak atau produk.
+- Pilih tipe input yang sesuai (misalnya 'Number' untuk nominal, 'Email' untuk alamat email) untuk menjaga validitas data.
 - Atur urutan inputan khusus agar alur pengisian data terasa logis dan efisien.
+- Gunakan placeholder sebagai petunjuk format data yang benar (contoh: 62xxxxxx untuk nomor telepon).
+- Manfaatkan nilai bawaan untuk data yang umumnya memiliki nilai sama pada setiap entri.
  
 </Tips>
  
@@ -80,15 +156,18 @@ Beberapa tips untuk mengoptimalkan penggunaan Inputan Khusus:
 <Kendala>
 ## **Penanganan Kendala**
  
-Jika terjadi kendala pada menu Inputan Khusus:
+Jika terjadi kendala pada menu Inputan Khusus, lakukan langkah berikut:
  
-- Refresh halaman jika inputan khusus yang baru dibuat tidak langsung muncul di form kontak atau produk.
+- Refresh halaman jika inputan khusus yang baru dibuat tidak langsung muncul di formulir kontak atau produk.
 - Periksa kembali pengaturan tipe input jika data yang dimasukkan terus-menerus ditolak oleh sistem.
 - Pastikan Anda memiliki hak akses yang cukup untuk menambah atau menghapus inputan khusus.
+- Pastikan semua isian wajib sudah terisi sebelum menyimpan data.
+- Logout dan login kembali jika fitur tidak berfungsi normal.
+- Bersihkan cache browser jika tampilan tidak sesuai.
 - Hubungi tim support jika penghapusan inputan khusus menyebabkan gangguan pada data yang sudah ada.
  
 </Kendala>
  
 ---
  
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait NoBox.AI, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

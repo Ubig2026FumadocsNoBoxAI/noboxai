@@ -6,238 +6,137 @@ icon: Building2
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Indonesiayp.com Extractor adalah fitur yang digunakan untuk mengekstrak data prospek bisnis dari Indonesiayp.com dengan kecepatan tinggi dan hasil berkualitas.
+Indonesiayp.com Extractor adalah fitur pada NoBox Desktop yang memungkinkan Anda mengambil data profil bisnis (Yellow Pages) dari situs Indonesiayp.com secara massal. Dengan tool ini, Anda dapat mengumpulkan informasi perusahaan seperti kategori bisnis, alamat, nomor telepon, dan lokasi di seluruh Indonesia dengan cepat.
+
+Sangat ideal bagi tim pemasaran B2B untuk menyusun database prospek bisnis yang terverifikasi langsung dari sumber direktori bisnis terbesar di Indonesia.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/h5lGGJP_V8M/"
-  title="01. Instalasi NoBox Desktop"
+  title="Panduan Indonesiayp.com Extractor"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerPolicy="strict-origin-when-cross-origin"
   allowFullScreen
 ></iframe>
 
-## **Tambah Akun**
+---
 
-Untuk menambahkan Extractor baru, silakan buka aplikasi **NoBox Desktop ➔ [Extractor] ➔ [Tambah Akun]**, maka akan muncul dialog **[Tambah Akun]**.
+## **Menghubungkan Akun Extractor**
+
+Untuk mulai melakukan ekstraksi, Anda harus mendaftarkan akun extractor baru di sistem NoBox Desktop.
+
+### Langkah Penambahan Akun:
+
+1. Buka aplikasi **NoBox Desktop** ➔ modul **[Extractor]** ➔ klik **[Tambah Akun]**.
+2. Pilih kanal **Indonesiayp.com** pada dialog yang muncul.
+3. Lengkapi rincian nama akun dan kategori sebagai identitas internal Anda.
+4. Klik **[OK]** untuk menyimpan.
 
 <ImageZoom
   src="/images/id/Account%20Indonesiayp.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Registrasi Akun Indonesiayp"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="103.199951171875">Field</th>
-      <th>Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Channel</td>
-      <td>Channel yang dipilih</td>
-      <td>Indonesiayp.com</td>
-    </tr>
-    <tr>
-      <td>Name</td>
-      <td>Nama akun Anda</td>
-      <td>Indonesiayp.com Fitria Khofifa</td>
-    </tr>
-    <tr>
-      <td>Notes</td>
-      <td>Catatan terkait akun</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>Informasi apakah akun aktif</td>
-      <td>Active</td>
-    </tr>
-  </tbody>
-</table>
-
-Jika seluruh isian telah dilengkapi, klik **[OK]** untuk menyimpan akun yang baru dibuat.
-
-## **Konfigurasi**
-
-Setelah menambahkan akun baru, Anda hanya perlu membuka akun Indonesiayp yang baru dibuat melalui PC/laptop.
-
-<ImageZoom
-  src="/images/id/Konfigurasiyp.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Input:
-
-- Akun yang baru dibuat akan muncul di NoBox Desktop. Selanjutnya, lakukan login ke akun Indonesiayp untuk menghubungkannya dengan akun Anda.
-- Pastikan pada tab **[Logs]** terdapat informasi **"Ready to start"**.
-- Jika sudah, maka akun siap digunakan.
-
-## **Operasi Dasar**
-
-Sebelum masuk ke tahap pengambilan data, Anda perlu memahami operasi dasar aplikasi dan fungsi Indonesiayp.com Extractor sebagai berikut:
-
-<ImageZoom
-  src="/images/id/Dasar%20Indonesiayp.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-1. Masukkan kata kunci pencarian pada kolom **[Searching Indonesiayp.com]**.
-2. Isi pada tab **[Process]**.
-3. Pilih kategori lokasi pencarian.
-4. Masukkan **[Limit Result]** untuk menentukan jumlah data yang akan diambil.
-5. Pilih daftar penyimpanan hasil ekstraksi pada **[Save to List]** atau tambahkan list baru.
-6. Pilih **[Options]** untuk menampilkan mode debug atau memuat gambar item.
-
-<table>
-  <thead>
-    <tr>
-      <th width="129.60003662109375">Field</th>
-      <th width="381.800048828125">Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Category</td>
-      <td>Pilih kategori data</td>
-      <td>Shopping</td>
-    </tr>
-    <tr>
-      <td>Limit Result</td>
-      <td>Jumlah data yang ingin diekstrak</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Save to list</td>
-      <td>Pilih/tambahkan list untuk menyimpan data hasil ekstraksi</td>
-      <td>Indonesiayp</td>
-    </tr>
-    <tr>
-      <td>Options</td>
-      <td>Centang untuk mengaktifkan debug dan memuat gambar</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
-
-## **Scrape Data**
-
-Scraping data dari Indonesiayp.com memungkinkan Anda mengekstrak informasi penjual atau pengiklan dari berbagai daftar produk dan layanan dengan cepat dan mudah.
-
-<ImageZoom
-  src="/images/id/Dasar%20Indonesiayp%20(1).png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Setelah proses pengisian selesai, klik **[Start]** untuk memulai ekstraksi data
-- Tunggu beberapa saat hingga muncul notifikasi bahwa proses ekstraksi telah selesai
-- Jika jumlah data yang diambil lebih sedikit dari jumlah yang dimasukkan, berarti terdapat data duplikat yang dikecualikan oleh sistem
-- Data hasil ekstraksi akan otomatis tersimpan di menu Kontak pada NoBox.Ai
-
-## **Export Data**
-
-NoBox menyediakan opsi untuk menyimpan data hasil ekstraksi dalam format Excel (.xlsx, .csv) dan JSON (.json).
-
-<ImageZoom
-  src="/images/id/Exportyp.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Klik **[Export to Excel]** pada halaman **[Process]**
-- Untuk melihat data yang telah diambil, buka halaman **[Results]** lalu klik tombol **[Action]** untuk mengekspor ke format Excel, CSV, atau JSON
-
-## **Website NoBox.Ai**
-
-Data hasil ekstraksi akan otomatis tersimpan di website NoBox.Ai sehingga dapat diakses dan dipantau melalui perangkat dan browser apa pun.
-
-<ImageZoom
-  src="/images/id/Web%20Nobox.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Buka menu **[Kontak]** lalu pilih **[Kontak]**
-- Gunakan filter **[Source ➔ Indonesiayp.com]**
-- Aktifkan fitur **[Auto Refresh]** untuk memantau data yang berhasil diproses
-
-## **Multi Tab**
-
-Indonesiayp.com Extractor mendukung proses multi-tab, sehingga pencarian dengan berbagai kata kunci dapat dijalankan secara bersamaan.
-
-<ImageZoom
-  src="/images/id/Multi%20Tab.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Ekstrak data dari satu akun dengan kata kunci pencarian "Bags" di lokasi "Jakarta", dengan hasil 2 data, dan simpan ke dalam list Indonesiayp
-- Tambahkan satu akun lagi dengan kata kunci yang sama namun lokasi berbeda serta jumlah hasil yang berbeda
-
-## **Penanganan Jika Terjadi Shutdown Saat Proses Ekstraksi**
-
-NoBox menyediakan fitur untuk menangani kondisi komputer atau aplikasi mati secara tiba-tiba saat proses ekstraksi data berlangsung.
-
-<ImageZoom
-  src="/images/id/Komputer%20mati%20(2).png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-**Membuka Kembali Aplikasi NoBox dan Melanjutkan Proses Pencarian Data**
-
-1. Buka kembali aplikasi NoBox dan masuk ke menu **[Extractor ➔ Indonesiayp.com]**, akan muncul notifikasi bahwa proses sebelumnya belum selesai.
-2. Klik **[OK]** untuk melanjutkan proses pencarian data.
-3. Klik **[Cancel]** untuk membatalkan proses pencarian.
-
-## **Menonaktifkan Akun Indonesiayp.com**
-
-Fitur ini berfungsi untuk mengurangi penggunaan RAM pada aplikasi NoBox Desktop.
-
-Untuk menonaktifkan akun, pilih salah satu akun Indonesiayp Anda, lalu hilangkan centang pada status akun. Setelah itu, klik **[Save]** untuk menyimpan perubahan.
-
-<ImageZoom
-  src="/images/id/Nonaktifyp.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Akun Indonesiayp yang dinonaktifkan tidak akan ditampilkan di aplikasi NoBox Desktop.
-
-## **Edit dan Hapus Akun**
-
-Untuk mengedit akun, silakan login ke website [id.nobox.ai](https://id.nobox.ai/), kemudian buka menu **[Accounts]**. Pilih akun yang ingin diedit, lakukan perubahan, lalu klik **[Save]**.
-
-Untuk menghapus akun, pilih akun yang ingin dihapus lalu klik **[Delete]**. Akan muncul notifikasi konfirmasi, klik **[Yes]** untuk menghapus atau **[No]** untuk membatalkan.
+### Konfigurasi Awal
+Buka akun yang baru saja dibuat. Pastikan pada tab **[Logs]** muncul status **"Ready to start"**. Hal ini menandakan sistem siap melakukan navigasi ke situs Indonesiayp secara otomatis.
 
 ---
 
-Jika Anda mengalami kendala atau kesulitan terkait Nobox.Ai, silakan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Manajemen Proses Ekstraksi**
+
+### Halaman Pengaturan (Page Process)
+Sebelum mulai menarik data, tentukan parameter pencarian Anda agar hasilnya lebih spesifik.
+
+| Isian | Fungsi Detail |
+| :--- | :--- |
+| **Searching** | Kata kunci bisnis (misal: "Bags", "Restaurant"). |
+| **Category** | Memilih kategori industri yang relevan. |
+| **Limit Result** | Membatasi jumlah data perusahaan yang akan ditarik. |
+| **Save To List** | Menentukan folder penyimpanan kontak di cloud NoBox.AI. |
+| **Options** | Mengaktifkan mode debug atau pemuatan gambar profil. |
+
+<ImageZoom
+  src="/images/id/Dasar%20Indonesiayp.png"
+  alt="Konfigurasi Parameter Ekstraksi"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Sinkronisasi dan Ekspor Data**
+
+### Hasil Real-Time (Page Result)
+Setiap data yang berhasil ditarik akan muncul di tab Result. Jika jumlah data akhir lebih sedikit dari **Limit Result**, berarti sistem telah menyaring dan membuang data duplikat secara otomatis.
+
+### Sinkronisasi ke Website NoBox.AI
+Seluruh data hasil ekstraksi otomatis tersimpan di menu **Kontak** dashboard NoBox.AI. Gunakan filter **Source ➔ Indonesiayp.com** untuk melihat data tersebut.
+
+<ImageZoom
+  src="/images/id/Web%20Nobox.png"
+  alt="Monitoring Data di Dashboard Web"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### Export ke Format Lokal
+Sistem menyediakan opsi download data dalam format `.xlsx`, `.csv`, atau `.json` melalui tombol **Action** di halaman **Results**.
+
+---
+
+## **Fitur Lanjutan dan Pemulihan**
+
+### Multi Tab (Banyak Pencarian)
+Anda dapat menjalankan beberapa pencarian di lokasi berbeda secara bersamaan dengan menggunakan fitur Multi Tab pada NoBox Desktop.
+
+### Pemulihan Sesi (Auto Recovery)
+Jika aplikasi tertutup secara tiba-tiba (komputer mati), NoBox akan mendeteksi proses yang terhenti. Saat dibuka kembali, akan muncul notifikasi untuk melanjutkan atau membatalkan proses ekstraksi sebelumnya.
+
+<ImageZoom
+  src="/images/id/Komputer%20mati%20(2).png"
+  alt="Fitur Pemulihan Sesi"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+<Tips>
+## **Tips Penggunaan**
+
+Optimalkan penggunaan Indonesiayp Extractor dengan panduan berikut:
+
+- Gunakan kata kunci pencarian yang spesifik namun umum (misal: "Laundry" daripada "Laundry Cuci Sepatu") untuk mendapatkan lebih banyak hasil.
+- Manfaatkan fitur **Save to List** dengan nama folder yang mencantumkan tanggal dan kategori agar database Anda terorganisir.
+- Aktifkan **Auto Refresh** pada dashboard web NoBox.AI untuk memantau trafik data masuk tanpa harus menekan tombol refresh.
+- Lakukan ekspor ke Excel secara berkala untuk kebutuhan monitoring offline atau backup data lokal.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Penanganan Kendala**
+
+Jika menemui masalah pada layanan extractor, silakan ikuti langkah berikut:
+
+- **Logs Menunjukkan Pesan Error**: Periksa kembali koneksi internet Anda atau pastikan website Indonesiayp.com dapat diakses secara manual melalui browser biasa.
+- **Data Tidak Masuk ke Web**: Pastikan akun extractor Anda dalam status "Aktif" (centang status pada manajemen akun).
+- **Proses Berhenti Sendiri**: Periksa ketersediaan RAM komputer; menonaktifkan akun lain yang tidak digunakan dapat membantu mempercepat proses.
+- **Hasil Data Kosong**: Coba ubah kategori atau perluas jangkauan lokasi pencarian Anda di peta.
+- **Aplikasi Lambat**: Hapus log aktivitas lama atau bersihkan file sampah (temporary files) di sistem operasi Anda.
+
+</Kendala>
+
+---
+
+Jika Anda mengalami kendala atau kesulitan terkait NoBox.Ai, silakan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

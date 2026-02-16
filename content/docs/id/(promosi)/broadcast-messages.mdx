@@ -6,81 +6,115 @@ icon: MessageCircle
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Kirim Pesan adalah salah satu menu pada Nobox.Ai yang digunakan untuk monitoring hasil kirim pesan dari semua data promosi. Jadi Anda dapat mengetahui hasil kirim pesan yang masih dalam antrian, proses, gagal dan sudah terkirim.
+Kirim Pesan (Broadcast Messages) merupakan salah satu menu penting dalam sistem NoBox.AI yang digunakan untuk mengelola, memantau, serta mengontrol seluruh proses pengiriman pesan promosi kepada pelanggan.
+
+Menu ini berperan sebagai pusat kendali operasional yang memungkinkan pengguna untuk melihat setiap tahapan pengiriman pesan, mulai dari proses pembuatan kampanye, penjadwalan, antrean pengiriman, hingga status akhir pesan.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/EkWgwRnDC2E/"
-  title="01. Instalasi NoBox Desktop"
+  title="Panduan Monitoring Kirim Pesan"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
+---
+
+## **Tampilan Menu Kirim Pesan**
+
 <ImageZoom
   src="/images/id/Kirim%20Pesan%20(1).png"
-  alt="Tampilan Antrean Kirim Pesan"
+  alt="Tampilan Menu Kirim Pesan"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="133.20001220703125">Fitur/Tombol</th>
-      <th>Fungsi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <img
-          src="/images/id/Dalam%20Antrean.png"
-          alt="Dalam Antrean"
-          className="w-auto h-auto mx-auto"
-        />
-      </td>
-      <td>Status dalam antrean data kirim pesan masih belum diproses</td>
-    </tr>
-    <tr>
-      <td>
-        <img
-          src="/images/id/Proses.png"
-          alt="Proses"
-          className="w-auto h-auto mx-auto"
-        />
-      </td>
-      <td>Status proses data kirim pesan dalam proses pengiriman</td>
-    </tr>
-    <tr>
-      <td>
-        <img
-          src="/images/id/terkirim.png"
-          alt="Terkirim"
-          className="w-auto h-auto mx-auto"
-        />
-      </td>
-      <td>Status terkirim data kirim pesan sudah terkirim</td>
-    </tr>
-    <tr>
-      <td>
-        <img
-          src="/images/id/Batal.png"
-          alt="Batal"
-          className="w-auto h-auto mx-auto"
-        />
-      </td>
-      <td>Status gagal data kirim pesan gagal dikirim</td>
-    </tr>
-  </tbody>
-</table>
+Tampilan di atas merupakan halaman utama menu Kirim Pesan yang berfungsi sebagai pusat monitoring seluruh aktivitas pengiriman pesan dalam sistem.
 
-Untuk melihat detail data tersebut, dapat Anda lakukan dengan cara klik salah satu data pada kolom pesan, maka akan tampil detail data kirim pesan yang Anda pilih.
+Pada halaman ini, pengguna dapat melihat daftar semua pesan yang sedang diproses oleh modul Promosi, baik yang masih berada dalam antrean, sedang dikirim, telah berhasil terkirim, maupun yang mengalami kegagalan.
 
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Informasi Daftar Pesan**
+
+Pada halaman ini, terdapat informasi detail mengenai pesan yang dikirimkan. Penjelasan dari informasi tersebut adalah sebagai berikut:
+
+- **Nama Pesan**: Menunjukkan nama kampanye atau promosi yang menjadi sumber pesan.
+- **Kanal & Akun**: Menampilkan media pengiriman yang digunakan beserta akun yang terhubung.
+- **Kontak**: Menampilkan data penerima pesan berupa nama atau nomor tujuan.
+- **Status**: Menunjukkan kondisi terbaru dari proses pengiriman pesan.
+- **Waktu**: Menampilkan waktu pengiriman atau waktu penjadwalan pesan.
+
+---
+
+## **Status Pengiriman Pesan**
+
+Setiap pesan yang terdapat dalam daftar akan dilengkapi dengan indikator status yang menunjukkan posisi pesan dalam alur pengiriman.
+
+### Tabel Status Pengiriman
+
+| Status | Ikon | Penjelasan Detail |
+| :--- | :---: | :--- |
+| **Dalam Antrean** | <img src="/images/id/Dalam%20Antrean.png" alt="Dalam Antrean" className="w-auto h-8 mx-auto" /> | Pesan telah berhasil dibuat dan masuk ke sistem antrean untuk menunggu giliran pengiriman. |
+| **Proses** | <img src="/images/id/Proses.png" alt="Proses" className="w-auto h-8 mx-auto" /> | Sistem sedang melakukan koneksi dengan kanal pengiriman dan memproses pengiriman pesan. |
+| **Terkirim** | <img src="/images/id/terkirim.png" alt="Terkirim" className="w-auto h-8 mx-auto" /> | Pesan telah berhasil dikirim dari sistem NoBox ke penyedia layanan atau tujuan. |
+| **Gagal / Batal** | <img src="/images/id/Batal.png" alt="Gagal" className="w-auto h-8 mx-auto" /> | Pesan tidak berhasil dikirim akibat kendala teknis, data tidak valid, atau akun terputus. |
+
+---
+
+## **Manajemen Data Pesan**
+
+Menu Kirim Pesan menyediakan fitur untuk membantu pengguna dalam mengelola dan mengevaluasi data pengiriman pesan secara mendalam.
+
+### Melihat Detail Pesan
+
+Untuk mengetahui informasi lebih rinci mengenai suatu pesan, pengguna dapat melihat detail pesan secara langsung dengan cara:
+
+1. Pilih salah satu data pesan pada tabel yang ingin dilihat detailnya.
+2. Klik pada baris data tersebut untuk memunculkan jendela informasi.
+3. Jendela detail akan menampilkan isi pesan, lampiran, waktu, dan riwayat proses.
+
+### Penanganan Pesan Gagal
+
+Apabila terdapat pesan yang berstatus gagal, pengguna dapat menggunakan fitur **[Gagal ke Antrean]** untuk mengirim ulang pesan tanpa perlu membuat kampanye baru.
+
+---
+
+<Tips>
+## **Tips Penggunaan**
+
+Beberapa tips untuk memaksimalkan penggunaan menu Kirim Pesan:
+
+- Lakukan pengecekan akun pengirim sebelum kampanye dimulai.
+- Pastikan data kontak pelanggan sudah valid untuk meminimalkan kegagalan.
+- Lakukan uji coba pengiriman dalam skala kecil sebelum mengirim massal.
+- Pantau antrean secara berkala untuk memastikan proses berjalan lancar.
+- Gunakan fitur filter untuk melakukan pencarian data tertentu dengan cepat.
+- Evaluasi laporan pengiriman secara rutin setelah kampanye selesai.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Penanganan Kendala**
+
+Jika terjadi kendala dalam penggunaan menu Kirim Pesan, lakukan langkah berikut:
+
+- **Pesan Terlalu Lama di Proses**: Periksa jaringan internet dan pastikan status akun tetap aktif.
+- **Data Tidak Muncul**: Refresh halaman browser dan pastikan koneksi internet stabil.
+- **Pesan Gagal Massal**: Periksa koneksi kanal atau integrasi akun yang digunakan.
+- **Antrean Menumpuk**: Kurangi volume pengiriman atau atur jadwal ulang kampanye.
+- **Tampilan Bermasalah**: Bersihkan cache browser dan gunakan browser versi terbaru.
+- **Status Tidak Berubah**: Tunggu beberapa saat atau periksa log aktivitas sistem.
+
+</Kendala>
+
+---
+
+Jika ada masalah atau kesulitan terkait NoBox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

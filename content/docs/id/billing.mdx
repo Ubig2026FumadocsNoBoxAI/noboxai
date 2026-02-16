@@ -6,71 +6,105 @@ icon: Receipt
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
+Menu Billing mencakup seluruh proses transaksi keuangan di NoBox.Ai, mulai dari cara berlangganan produk hingga konfirmasi bukti pembayaran. Sistem kami dirancang untuk memudahkan Anda melakukan transaksi secara otomatis maupun manual melalui transfer bank.
+
+Pastikan Anda mengikuti prosedur pembayaran dengan benar agar aktivasi layanan dapat dilakukan secara instan oleh sistem atau admin kami.
+
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/0ectimbtruk"
-  title="Pengenalan Tampilan NoBox"
+  title="Panduan Pembayaran dan Billing NoBox"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-## **Cara Berlangganan**
+---
 
-1\. Silahkan masuk ke menu **[Product]**, pilih salah satu produk.
+## **Cara Melakukan Pemesanan (Order)**
 
-2\. Klik **[Order]** untuk membeli produk tersebut.
+Langkah-langkah untuk berlangganan produk NoBox.Ai adalah sebagai berikut:
 
-3\. Disini akan langsung diarahkan ke invoice pembelian dengan status tagihan yang masih belum terbayar dan informasi pembelian produk.
+1. Masuk ke halaman **[Product]** di dasbor Anda.
+2. Cari dan pilih produk atau paket yang Anda butuhkan.
+3. Klik tombol **[Order]** untuk mulai melakukan pembelian.
+4. Anda akan otomatis diarahkan ke halaman **Invoice** yang berisi rincian biaya dan nomor tagihan.
 
 <ImageZoom
   src="/images/id/Information.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Tampilan Invoice Pembelian"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
-
-4\. Pilih metode pembayaran online atau offline (Untuk pembayaran online Akan ada 2 pilihan pembayaran dengan menggunakan paypal smart checkout atau paypal. Untuk pembayaran offline ada 2 pilihan bisa lewat bank BCA atau bank Mandiri).
-
-## **Kirim Bukti Pembayaran Via Transfer Bank**
-
-1\. Klik **[Back to Portal]** untuk kembali ke menu invoice.
-
-2\. Buka menu support dan klik **[Open Ticket]**.
-
-3\. Lengkapi isian seperti contoh berikut.
-
-<ImageZoom
-  src="/images/id/Ticket.png"
-  alt="Ticket Support NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-| Isian        | Uraian                 | Contoh                                                                                                                       |
-| ------------ | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Subject      | Nama tagihan           | Bukti transfer BCA                                                                                                           |
-| Department   | Pilih jenis tagihan    | Billing                                                                                                                      |
-| Priority     | Pilih prioritas        | Medium                                                                                                                       |
-| No Reference | Masukkan nomor tagihan | INV-000220                                                                                                                   |
-| Ticket Body  | Deskripsi              | bukti transfer ke BCA                                                                                                        |
-| Attactments  | Bukti pembayaran       | <ImageZoom src="/images/id/tf.jpeg" alt="Bukti Transfer" width={200} height={100} className="rounded-lg border shadow-sm" /> |
-
-4\. Klik **[Save]** maka akan tampil Ticket Information untuk melihat form yang telah di isi.
-
-5\. Setelah Ticket Support dibuat dan sudah terkirim ke admin status berubah menjadi **[Open]**.
-
-6\. Jika admin sudah merespon status akan berubah menjadi **[Answered]**.
-
-7\. Jika pembayaran sudah dikonfirmasi status akan berubah menjadi **[Close]**.
-
-8\. Bisa dicek di menu **[Invoice]** untuk tagihan tersebut status sudah berubah terbayar dan pastikan di id.nobox.ai bagian menu **[Subscription]** sudah ada informasi produk yang baru saja anda beli.
 
 ---
 
-Jika ada masalah atau kesulitan terkait NoBox, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Metode Pembayaran**
+
+Kami menyediakan opsi fleksibel untuk menyelesaikan tagihan Anda:
+
+### 1. Pembayaran Online
+Anda dapat melakukan pembayaran instan melalui platform PayPal menggunakan saldo PayPal atau fitur *Smart Checkout*. Pembayaran online akan mengaktifkan layanan Anda secara otomatis tanpa perlu konfirmasi manual.
+
+### 2. Pembayaran Offline (Transfer Bank)
+Khusus pengguna Indonesia, kami menyediakan rekening lokal (BCA dan Mandiri). Jika menggunakan metode ini, Anda **wajib** mengirimkan bukti transfer melalui sistem tiket.
+
+---
+
+## **Konfirmasi Pembayaran Transfer**
+
+Setelah melakukan transfer bank, silakan unggah bukti pembayaran melalui langkah berikut:
+
+1. Klik tombol **[Back to Portal]** dan navigasi ke menu **[Support]**.
+2. Pilih sub-menu **[Open Ticket]**.
+3. Lengkapi formulir tiket sesuai dengan rincian transaksi Anda.
+
+### Isian Dialog Konfirmasi Pembayaran
+
+| Isian | Uraian | Contoh |
+| :--- | :--- | :--- |
+| **Subject** | Ringkasan isi tiket. | Konfirmasi Pembayaran BCA |
+| **Department** | Kategori tiket. | Billing |
+| **Priority** | Tingkat kepentingan. | Medium |
+| **No Reference**| Nomor invoice Anda. | INV-000220 |
+| **Ticket Body** | Deskripsi singkat. | Pembayaran paket PRO |
+| **Attachments** | Foto bukti transfer. | *File Gambar/Bukti Bayar* |
+
+Setelah tiket dikirim, status tiket akan menjadi **OPEN**. Jika admin sudah mengonfirmasi, status berubah menjadi **CLOSED** dan layanan Anda akan aktif.
+
+---
+
+<Tips>
+## **Tips Keamanan Transaksi**
+
+Pastikan transaksi Anda berjalan lancar dengan tips berikut:
+
+- Gunakan nomor referensi atau kode unik yang tertera pada invoice saat melakukan transfer.
+- Selalu simpan struk fisik atau *screenshot* transaksi bank sebagai bukti cadangan.
+- Pastikan nominal yang Anda transfer sama persis hingga digit terakhir.
+- Kirim bukti pembayaran segera setelah transaksi selesai agar proses verifikasi lebih cepat.
+- Gunakan metode pembayaran online untuk aktivasi layanan yang lebih instan.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Penanganan Kendala Billing**
+
+Jika mengalami masalah terkait tagihan atau pembayaran, lakukan langkah berikut:
+
+- **Layanan Belum Aktif Setelah Transfer**: Pastikan Anda sudah mengirimkan tiket bukti pembayaran di departemen Billing.
+- **Invoice Tidak Muncul**: Segarkan (*refresh*) halaman atau periksa folder Spam pada email terdaftar Anda.
+- **Metode Pembayaran Online Gagal**: Periksa saldo atau limit kartu Anda, atau hubungi pihak PayPal.
+- **Salah Transfer Nominal**: Segera hubungi tim support kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets) dengan melampirkan bukti kesalahan transfer.
+
+</Kendala>
+
+---
+
+Jika ada masalah atau kesulitan terkait NoBox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

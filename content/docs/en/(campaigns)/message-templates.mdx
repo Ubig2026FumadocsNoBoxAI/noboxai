@@ -1,123 +1,121 @@
 ---
-title: Message Templates
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
-icon: MessageCircleMore
+title: Message Templates (Message Models)
+description: Create and manage promotional message templates for reuse in various campaigns in NoBox.AI.
+icon: FileText
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The message model is a feature on Nobox.Ai used to create promotional message models.
+**Message Templates (Message Models)** is a feature in NoBox.AI that allows you to save the design and content of promotional messages for future reuse. By using templates, you don't need to retype the message content every time you want to create a new campaign, making the marketing process much faster and more consistent.
+
+These templates can include text, personalization variables, and media attachments such as images or documents.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/fUkihH0-qHc/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/fUkihH0-qHc"
+  title="NoBox Message Templates Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerPolicy="strict-origin-when-cross-origin"
   allowFullScreen
 ></iframe>
 
+---
+
+## **Message Templates Interface**
+
 <ImageZoom
   src="/images/en/Message%20Template.png"
-  alt="NoBox Message Template View"
+  alt="NoBox Message Templates View"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
 />
 
-## New Message Template
+This page displays a list of all templates you have created. You can manage, search, and preview the content of each available message model.
 
-To create a message template, click on the [Promotions] module, then select the **[Message Template]** menu ➔ **[Add Message Template]**. This will display the **[Add Message Template]** dialog.
+---
+
+## **How to Create a New Message Template**
+
+1. Open the **[Promotions]** module and select the **[Message Templates]** menu.
+2. Click the **[+ Create Message Model]** button.
+3. A form dialog will appear for you to fill in the template details.
+
+### Add Message Template Dialog
 
 <ImageZoom
   src="/images/en/New%20Message%20Template%20.png"
-  alt="NoBox New Message Template View"
+  alt="Add Message Template Form"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
 />
 
-Fill in the required fields, for example as follows:
+### Template Form Fields
 
-<table>
-  <thead>
-    <tr>
-      <th width="154.79998779296875">Data Entry</th>
-      <th width="150.199951171875">Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Name</td>
-      <td>Message template name</td>
-      <td>Order Confirmation</td>
-    </tr>
-    <tr>
-      <td>Channel</td>
-      <td>Select Channel</td>
-      <td>WhatsApp</td>
-    </tr>
-    <tr>
-      <td>Subject</td>
-      <td>Message subject</td>
-      <td>Confirmation</td>
-    </tr>
-    <tr>
-      <td>Message Format</td>
-      <td>Select message format</td>
-      <td>Text</td>
-    </tr>
-    <tr>
-      <td>Message</td>
-      <td>Enter message</td>
-      <td>
-        Good afternoon, regarding the special Ramadan promotion, our store has
-        prepared abundant stock. Please list the requirements for the store so
-        we can arrange the shipment before the stock runs out. Thank you.
-      </td>
-    </tr>
-    <tr>
-      <td>Attachment</td>
-      <td>File attachment</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
+Complete the following fields to create an effective template:
 
-If you have completed filling out the fields, click **[Save]** to save the newly created message model data.
+| Input Field | Description | Example |
+| :--- | :--- | :--- |
+| **Name** | A unique name to identify this template internally. | RAMADAN Order Confirmation |
+| **Channel** | Select the communication channel supported by this template. | WhatsApp |
+| **Subject** | The subject or topic of the message (especially for email). | Payment Confirmation |
+| **Message Format** | Determine whether to use Text or Media format. | Text / Media |
+| **Message** | The main message content you want to convey. | Hello [Name], thank you for ordering... |
+| **Attachment** | Upload supporting files such as catalogs or invoices (if any). | promo_catalog.pdf |
 
-## **Edit And Delete Message Template**
+Once completed, click **[Save]** to store the data.
 
-To edit a message data model, please first select the data you want to edit. Edit your data and click **[Save]** to save the changes.
+---
 
-To delete a data model message, select the data to be deleted, then click **[Delete]**. A confirmation dialog will appear. If you wish to delete the data, click **[Yes]**; if not, click **[No]**.
+## **Using Templates in Promotions**
 
-## **How to Use the Message Template**
+Once a template is created, you can apply it when creating a new promotional campaign:
 
-You can use it by selecting one of the promotions or creating a new promotion, and then click the **[Template]** button.
-
-<ImageZoom
-  src="/images/en/campaign%20template.png"
-  alt="NoBox Campaign Template View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-A dialog box **[Select Model]** will appear. Choose the message model you want to use, then click the **[Use Model]** button. The fields for subject, message format, message, and attachment will automatically fill in based on the selected model.
+1. In the **[Promotions]** module, create or edit a campaign.
+2. Click the **[Template]** button or select a message model from the dropdown.
+3. Choose the desired message model from the list that appears.
+4. Click **[Use Model]**. All message fields will be automatically filled according to the template.
 
 <ImageZoom
   src="/images/en/apply%20template.png"
-  alt="NoBox Apply Template View"
+  alt="How to Use Message Models"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
 />
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Editing and Deleting Templates**
+
+- **Edit**: Select a template from the list, click the edit icon (pencil) or the options button, update the fields, and click **[Save]**. Changes to a template will not affect *currently running* campaigns but will apply to *future* campaign use.
+- **Delete**: Select the template you wish to remove, click the delete icon (trash can), and confirm by clicking **[Yes]**.
+
+---
+
+<Tips>
+## **Tips for Creating Engaging Templates**
+
+- **Use Variables**: Insert placeholders like `[Name]` to make messages feel more personal to customers.
+- **Concise Content**: Ensure the core message is at the beginning so it is immediately read by the customer.
+- **High-Quality Media**: If using the Media format, ensure attached images or videos have good resolution but reasonable file sizes.
+- **Categorize Names**: Use name prefixes like `[PROMO]`, `[INFO]`, or `[CS]` to keep the template list organized.
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Attachment Failed to Upload**: Ensure the file format is supported (PNG, JPG, PDF) and its size doesn't exceed the system limit.
+- **Template Doesn't Appear When Selected**: Ensure the **Channel** selected in the template matches the **Channel** you are using for the promotional campaign.
+- **Variables Not Working**: Double-check the variable syntax; ensure it matches the tags available in NoBox so contact data is correctly retrieved.
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
