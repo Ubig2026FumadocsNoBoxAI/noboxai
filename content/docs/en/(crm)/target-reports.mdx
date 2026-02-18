@@ -1,74 +1,130 @@
 ---
 title: Target Reports
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Visualizing agent performance against pre-defined sales targets, including deal value and volume metrics in NoBox.AI.
 icon: Target
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The Target Report is a menu option in Nobox.Ai used to display reports containing an overview of the agents' performance against the targets set by the supervisor.
+**Target Reports** is a specialized module in NoBox.AI designed to visualize agent performance relative to the targets established by supervisors.
+
+This dashboard assists management in monitoring target fulfillment across various cycles, providing high-level insights into both the total value and the quantity of successful sales deals.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/g9e7vZLtieY/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/g9e7vZLtieY"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
+---
+
+## **Target Reports Interface**
+
+### Main Dashboard View
+
 <ImageZoom
-  src="/images/en/2.%20Laporan%20Target.png"
-  alt="NoBox Dashboard View"
+  src="/images/id/2.%20Laporan%20Target.png"
+  alt="Target Reports Dashboard View"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-In the display, there are several sections, each with its own function. The explanation of these functions is as follows:
+The interface provides a bird's-eye view of agent achievements within a selected period, using intuitive charts and comparative data tables.
 
-<table>
-  <thead>
-    <tr>
-      <th width="185">Bagian</th>
-      <th>Fungsi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Target Value per Month</td>
-      <td>
-        Comparative information of all bid results with the total bid results in
-        the Won stage per month
-      </td>
-    </tr>
-    <tr>
-      <td>Target Deals per Month</td>
-      <td>
-        Information comparing the total of all offers with the total offers in
-        the Won stage per month
-      </td>
-    </tr>
-    <tr>
-      <td>Monthly target based on Value</td>
-      <td>
-        Comparative information of all bid results with the total bid results in
-        the Won stage per month based on users
-      </td>
-    </tr>
-    <tr>
-      <td>Monthly target based on Amount</td>
-      <td>
-        Comparison information of all total offers with total deals in Won stage
-        per month based on users
-      </td>
-    </tr>
-  </tbody>
-</table>
+From this page, users can immediately gauge overall team performance and identify milestones reached or missed.
+
+### Key Data Categorization
+
+The dashboard is organized into specific functional blocks to facilitate different types of sales analysis.
+
+Displayed data includes achievement by monetary value, total deal counts, and peer-to-peer performance benchmarking.
 
 ---
 
-If you encounter any problems or difficulties related to Nobox.Ai, please contact us via [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Core Reporting Components**
+
+| Component                     | Function                                                                    |
+| ----------------------------- | --------------------------------------------------------------------------- |
+| Target Value per Month        | Comparison between total deal potential and actual revenue from **Won** deals. |
+| Deal Volume Target per Month  | Comparison between the total number of offers and deals successfully marked as **Won**. |
+| Monthly Target by Value (User)| Individual performance breakdown comparing revenue generated against personal quotas. |
+| Monthly Target by Count (User)| Individual productivity metric comparing deal volume closed against personal goals. |
+
+---
+
+## **Detailed Component Breakdown**
+
+- **Monthly Target Value Analysis**
+This section visualizes the gap between expected revenue and reality. It is the primary indicator of whether the sales team is meeting the organization's financial objectives.
+
+- **Monthly Deal Volume Tracking**
+Focuses on the movement of leads through the pipeline. It helps identify if the sales process is efficient enough to convert a high percentage of opportunities into successes.
+
+- **Individual Performance by Revenue**
+Attributes monetary success to specific team members, allowing managers to identify top-tier consultants and those requiring additional tactical support.
+
+- **Individual Productivity by Count**
+Measures how active an agent is in finalizing agreements. High deal counts often indicate a high level of activity and administrative efficiency.
+
+---
+
+## **How to Analyze Target Reports**
+
+### Data Interpretation Guide
+
+To extract maximum value from Target Reports, consider the following:
+
+1. **Verify the Timeframe**: Ensure you are looking at the current month or quarter to make relevant decisions.
+
+2. **Benchmark Against Quotas**: Look at the "Won" data side-by-side with the pre-set target baseline.
+
+3. **Identify Performance Gaps**: Note any significant deviations between different users to understand which techniques are working best.
+
+4. **Strategic Planning**: Use these metrics to adjust next month's targets or to redistribute leads more effectively.
+
+### Utilizing Report Insights
+
+These reports are critical for measuring workforce effectiveness and determining if current sales strategies require adjustment.
+
+Supervisors should use this data as the primary evidence base during evaluation meetings and performance reviews.
+
+---
+
+<Tips>
+## **Usage Tips**
+
+To optimize your review work:
+
+- **Regular Synchronization**: Ensure all deal statuses are updated (Won/Lost) before running end-of-month reports.
+- **Accurate Quotas**: Double-check that all agent targets have been correctly entered in the CRM settings.
+- **Data-Driven Discussions**: Use these visual charts as a neutral ground for coaching and performance feedback.
+- **Holistic Review**: Combine target data with **Activity Logs** to see the effort behind the results.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you experience issues with the Target Reports module:
+
+- Refresh the page to update the real-time data visualization.
+- Verify your internet connectivity for stable report generation.
+- Confirm your account role (Supervisor/Manager levels are typically required for these views).
+- Log out and log back in if data appears to be lagging behind actual CRM updates.
+- Clear your browser's persistent cache if the interface elements display incorrectly.
+- Contact the support team if specific agent data is not calculating as expected.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

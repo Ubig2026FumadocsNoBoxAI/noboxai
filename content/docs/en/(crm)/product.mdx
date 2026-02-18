@@ -1,66 +1,129 @@
 ---
 title: Products
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Managing sales inventory, pricing, stock levels, and product descriptions within NoBox.AI.
 icon: Box
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The product is one of the menus on NoBox.Ai used for managing the data of products being sold.
+The **Products** module in NoBox.AI is a comprehensive tool for managing your sales inventory.
+
+This feature allows users to add, modify, and delete product information. You can manage everything from high-level details like product names and categories to granular data such as stock levels, specific pricing, detailed descriptions, and availability status.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/DIHmqinxNEc/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/DIHmqinxNEc"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
 ></iframe>
-
-<ImageZoom
-  src="/images/en/Product.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Add Product**
-
-To create product data, click the **[Product] ➔ \[Add Product]** menu. The **[Add Product]** dialog will appear, then fill in the fields available in the dialog.
-
-<ImageZoom
-  src="/images/en/New%20Product.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-| Name          | Product name                       | Decorative lights           |
-| ------------- | ---------------------------------- | --------------------------- |
-| Product Code  | Product Code                       | 00010                       |
-| Unit          | Product Unit                       | Pcs                         |
-| Currency      | Currency and Price Nominal         | Rp.15.000                   |
-| Discount      | Discount for Product               | 15                          |
-| Selling Price | The result of the discounted price | 12.750                      |
-| Manufacturing | Product industry Name              |                             |
-| Tag           | Product Tag                        | Electronic                  |
-| Category      | Product Category                   | Christmas supplies          |
-| Description   | Product Description                | Beautiful Decorative Lights |
-| Active        | Activate/Deactivate Products       | Active                      |
-| Image         | Product Image                      |                             |
-
-\
-Once you have filled in all the fields, click **[Save]** to store the new product data you have just created.
-
-## **Edit and Delete Data Product**
-
-To edit a product data, first select the data you want to edit. Make your edits and click **[Save]** to save the changes. To delete a product data, select the product data you wish to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]**, otherwise click **[No]**.
 
 ---
 
-If you have any issues or difficulties related to NoBox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Products Dashboard Interface**
+
+<ImageZoom
+  src="/images/id/Produk.png"
+  alt="Products Dashboard View"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+The interface above shows the central **Products Dashboard**, which serves as your primary product database.
+
+From this page, users can browse their entire catalog, review product-specific details, perform bulk updates, and adjust real-time stock and pricing information.
+
+---
+
+## **Adding a Product**
+
+1. To list a new product, navigate to the **[Product]** menu ➔ **[Add Product]**.
+2. An **[Add Product]** dialog will appear. Complete the required fields for the new item.
+
+### Add Product Dialog View
+
+<ImageZoom
+  src="/images/id/ProdukTambah.PNG"
+  alt="Adding a New Product"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+This form is designed to capture every essential detail needed to present your product effectively within the sales pipeline.
+
+### Add Product Form Fields
+
+| Field              | Description                            | Example              |
+| ------------------ | -------------------------------------- | -------------------- |
+| Name               | Name of the Product                    | Decorative Lamp      |
+| Product Code       | Unique SKU or identifier               | 00010                |
+| Unit               | Measurement unit                       | Pcs                  |
+| Currency & Price   | Select currency and set base price     | Rp 15,000            |
+| Discount           | Applicable percentage discount         | 15                   |
+| Sale Price         | Final price after discount (automated) | 12,750               |
+| Manufacturer       | Product industry or manufacturer       | -                    |
+| Tags               | Relevant product tags                  | Electronics          |
+| Category           | Linked product category                | Holiday Supplies     |
+| Description        | Detailed product summary               | Beautiful decorative lamp |
+| Multi-order View   | Enable/Disable in multi-product orders | Enabled              |
+| Image              | High-quality product image             | -                    |
+
+Once you have completed the information, click **[Save]** to add the product to your catalog.
+
+## **Editing and Deleting Product Records**
+
+### Editing Products
+
+To update an existing product, select the specific item from your dashboard. Modify the necessary fields and click **[Save]** to apply the updates.
+
+Changes are synchronized immediately across all active sales deals and catalogs.
+
+### Deleting Products
+
+To remove a product entry, select the item and click **[Delete]**. A confirmation prompt will appear to verify the removal.
+
+Click **[Yes]** to confirm or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+Product deletion is permanent. Ensure that the item is no longer needed in historical reports or active deals before proceeding.
+</Callout>
+
+---
+
+<Tips>
+## **Usage Tips**
+
+To optimize your inventory management:
+
+- **Unique SKU Usage**: Consistently use unique product codes for accurate stock tracking.
+- **Detailed Profiles**: Complete every data field to improve searching and filtering.
+- **Dynamic Pricing**: Regularly update your prices to stay competitive with market shifts.
+- **Categorization**: Use accurate categories and tags to streamline the sales team's workflow.
+- **Visual Appeal**: Upload clear, professional images to assist agents during customer interactions.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues while managing your products:
+
+- Refresh your browser page to ensure current server synchronization.
+- Verify your internet connectivity for stable data transmission.
+- Confirm your account has the "Manager" or "Supervisor" permissions required for inventory edits.
+- Try logging out and back in if the "Save" button becomes unresponsive.
+- Contact the NoBox support team if you notice data discrepancies in your catalog.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

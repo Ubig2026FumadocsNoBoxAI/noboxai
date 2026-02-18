@@ -1,65 +1,154 @@
 ---
-title: Transaction
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+title: Transactions
+description: Logging and managing payments related to deals, tracking payment methods, and maintaining financial records in NoBox.AI.
 icon: Calculator
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Transactions are a feature in Nobox.Ai used to record payments related to deals.
+The **Transactions** module in NoBox.AI is designed to record and manage all payment activities linked to your sales deals. This tool helps users monitor cash flow, track specific payment methods, and maintain a structured repository of supporting financial documentation.
+
+Accurate transaction logging is vital for generating reliable financial reports and evaluating the performance of your sales operations, ensuring that every payment milestone is systematically documented.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/X1w93uAPn-8/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/X1w93uAPn-8"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
+---
+
+## **Transactions Menu Interface**
+
 <ImageZoom
-  src="/images/en/Transaksi.png"
-  alt="NoBox Dashboard View"
+  src="/images/id/Transaksi.png"
+  alt="Transactions Management Dashboard"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-## Add Transaction
+The interface above represents the central **Transactions** dashboard, displaying a complete history of financial activities across your CRM.
 
-To add transaction data, please click **[Add Transaction]** to display the **[Add Transaction]** dialog.
-
-<ImageZoom
-  src="/images/en/Tambah%20Transaksi.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Complete the required fields as illustrated in the following example:
-
-| Entry          | Description                                       | Example              |
-| -------------- | ------------------------------------------------- | -------------------- |
-| Board          | Select Board                                      | November 2024 Offers |
-| Related Offers | Select offer data                                 | PT Bimantara         |
-| Note           | Transaction Note                                  | Down payment         |
-| Date           | Select Transaction Date                           | 28-17-2024           |
-| From           | Select the contact related to the transaction     | Sheila Syandana      |
-| How to Pay     | Payment Methods                                   | Cash                 |
-| Description    | Transaction Description                           | Down Payment         |
-| Currency       | Select the currency and enter the nominal amount. | Rp 500.000           |
-| Attachment     | Transaction Attachment                            | -                    |
-
-If you have completed the entries, click **[Save]** to save the new transaction data you just created.
-
-## **Edit and Delete Transaction Data**
-
-To edit a transaction record, first select the data you want to edit. Make your changes and click **[Save]** to save them. To delete a transaction record, choose the data you wish to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the entry. Click **[Yes]** to confirm, or **[No]** to cancel.
+From this page, users can review transaction details, initiate new payment records, manage payment methodologies, and monitor overarching financial summaries.
 
 ---
 
-If you encounter any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Adding a Transaction**
+
+To log a new payment, click the **[Add Transaction]** button on the Transactions dashboard. 
+
+An **[Add Transaction]** dialog will appear, presenting a comprehensive data entry form.
+
+### Add Transaction Dialog View
+
+<ImageZoom
+  src="/images/id/Tambah%20Transaksi.png"
+  alt="New Transaction Entry Form"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+### Transaction Form Fields
+
+Complete all required fields within the form. Refer to the table below for standard examples:
+
+| Field             | Description                        | Example                       |
+| ----------------- | ---------------------------------- | ----------------------------- |
+| Board             | Select the relevant pipeline board | November 2024 Deals           |
+| Associated Deal   | Link to a specific opportunity     | PT Bimantara                  |
+| Note              | Purpose of the transaction         | Down payment                  |
+| Date              | Date of the transaction            | 28-11-2024                    |
+| From              | Select the linked contact          | Sheila Syandana               |
+| Payment Method    | Method used for the transaction    | Cash                          |
+| Description       | Granular detail of the payment     | Initial project down payment  |
+| Currency & Amount | Select currency and set total      | Rp 500,000                    |
+| Attachment        | Upload receipt or proof of payment | -                             |
+
+Once the data is verified, click **[Save]** to finalize the transaction.
+
+Ensure all figures are checked before saving to maintain the integrity of your financial reports.
+
+## **Editing and Deleting Transaction Data**
+
+### Editing Transactions
+
+To update a payment record, select the target transaction from the list. Modify the necessary fields and click **[Save]**. 
+
+The updated information is synchronized across the CRM and reflected in all relevant deal summaries.
+
+### Deleting Transactions
+
+To remove a record, select the entry and click **[Delete]**. A confirmation prompt will appear to ensure the action is intentional.
+
+Click **[Yes]** to confirm or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+Deleting transaction data is permanent. This action can significantly affect sales reports and commissions. Ensure that the deletion is truly necessary and approved before proceeding.
+</Callout>
+
+---
+
+## **Financial Data Hygiene**
+
+Effective transaction management requires consistent attention to detail. We recommend:
+
+- **Real-time Updates**: Log payments as soon as they are received.
+- **Categorization**: Ensure every transaction is linked to the correct board and deal.
+- **Documentation**: Always upload supporting attachments for audit trails.
+- **Formatting**: Use consistent naming conventions in the "Note" and "Description" fields.
+
+Maintaining clean data simplifies your periodic financial evaluations and management reporting.
+
+---
+
+<Tips>
+## **Usage Tips**
+
+To optimize your financial tracking:
+
+- **Prerequisites**: Ensure the deal record exists before attempting to log a transaction.
+- **Contextual Notes**: Use the notes field to clearly define if a payment is a deposit, installment, or final payoff.
+- **Visual Proof**: Always attach digital receipts or bank transfer proofs for verification.
+- **Double-Check**: Verify currency types and amounts before saving to avoid reconciliation issues.
+- **Regular Audit**: Perform weekly checks to reconcile CRM transactions with actual bank statements.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you experience difficulties while using the Transactions module:
+
+<Accordions>
+<Accordion title="Data Fails to Save">
+- Check if all mandatory fields (marked with an asterisk) are completed.
+- Verify your internet stability during the save process.
+- Try re-submitting the form after a page refresh.
+</Accordion>
+<Accordion title="Attachment Issues">
+- Ensure the file format is supported (e.g., PDF, JPG, PNG).
+- Check that the file size doesn't exceed system limits.
+- Attempt to re-upload the file.
+</Accordion>
+<Accordion title="Report Discrepancies">
+- Verify the "Date" field of the transaction; reports are often time-filtered.
+- Ensure the transaction was successfully saved and isn't stuck in a draft state.
+- Refresh the specific report page to force a data update.
+</Accordion>
+</Accordions>
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

@@ -1,70 +1,157 @@
 ---
-title: Company Target
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+title: Company Targets
+description: Setting and tracking monthly marketing and sales goals for companies in NoBox.AI.
 icon: Target
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Company Target is a feature in Nobox.Ai used to set a marketing target for a company each month.
+**Company Targets** is a module within NoBox.AI used to define marketing and sales targets for specific companies on a monthly basis.
+
+This tool assists businesses in setting marketing plans, monitoring sales achievements, and evaluating periodic business performance.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/KqUtWqBx0T4/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/KqUtWqBx0T4"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
 ></iframe>
-
-<ImageZoom
-  src="/images/en/Company%20Target.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## Add Company Target Data
-
-To create company target data, click the **[CRM]** module, then select the **[Company]** menu and click **[Company Targets] ➔ \[Add Company Target].** A dialog box titled **[Add Company Target]** will appear; fill out the fields in this dialog.
-
-<ImageZoom
-  src="/images/en/New%20Company%20Target.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-| Entry              | Description               | Example      |
-| ------------------ | ------------------------- | ------------ |
-| Company            | Select Company            | PT SEJAHTERA |
-| Year               | Select the Target Year    | 2024         |
-| Currency           | Select Curency            | Rp           |
-| January - December | Fill in marketing targets | 1.200.000    |
-
-Once you have completed all the fields, click **[Save]** to store the new company target data you have just created.
-
-## **Edit and Delete Company Target Data**&#x20;
-
-To edit a target company’s data, please first select which data to edit. Edit your data and click **[Save]** to store the changes.
-
-To delete a company's target data, select the target data you want to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]**; otherwise, click **[No]**.
-
-The current revenue will be displayed when the offer associated with the company reaches the \[Won] status. Example: For the PT SEJAHTERA offer, where the bid price is 18,000,000 and has reached the **Won** status, the target company's goal will display data amounting to 18,000,000.
-
-<ImageZoom
-  src="/images/en/Current%20Income.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
 
 ---
 
-If you encounter any issues or difficulties related to Nobox.Ai, please contact us at [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Company Targets Menu Interface**
+
+<ImageZoom
+  src="/images/id/Tampilan%20target%20perusahaan.png"
+  alt="Company Targets Dashboard View"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+The Company Targets view displays a list of all marketing targets created by users.
+
+On this page, users can view company information, the target year, monthly target values, and the revenue achieved to date.
+
+---
+
+## **Adding Company Target Data**
+
+To create a new company target, navigate to the **[CRM]** module, click the **[Companies]** menu, then select **[Company Targets] ➔ [Add Company Target]**.
+
+An **[Add Company Target]** dialog will appear. Complete the fields based on your company's planning requirements.
+
+### Add Target Dialog View
+
+<ImageZoom
+  src="/images/id/Tampilan%20tambah%20Target%20perusahaan.png"
+  alt="Adding a New Company Target"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+This form is used to enter detailed marketing target data for a company.
+
+### Add Target Form Fields
+
+| Field              | Description                | Example        |
+| ------------------ | -------------------------- | -------------- |
+| Company            | Select the target company  | PT SEJAHTERA   |
+| Year               | Select the target year     | 2024           |
+| Currency           | Select the currency        | Rp             |
+| January - December | Enter monthly target values| 1,200,000      |
+
+Each field must be completed accurately so that the system can calculate and display achievement data correctly.
+
+Ensure that the target amounts are aligned with the company's current conditions and capacity.
+
+Once all information is entered, click **[Save]** to store the company target data.
+
+## **Editing and Deleting Company Targets**
+
+### Editing Target Data
+
+To edit a company target, select the target record from the list. Update the values as needed and click **[Save]** to apply the changes.
+
+The updated data will be saved immediately and reflected in reports.
+
+### Deleting Target Data
+
+To remove a target entry, select the record and click **[Delete]**. A confirmation prompt will appear.
+
+Click **[Yes]** to confirm or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+Deleting target data is permanent and cannot be undone. Ensure that the data is no longer required before deletion.
+</Callout>
+
+---
+
+## **Current Revenue**
+
+### Understanding Current Revenue
+
+**Current Revenue** is an indicator that shows the amount of income achieved based on deal data.
+
+Current revenue is calculated and displayed when a deal associated with that company reaches a **[Won]** status.
+
+### Revenue Calculation Example
+
+Example:  
+If a deal for **PT SEJAHTERA** with a value of **18,000,000** is marked as **Won**, the Company Target view will reflect a current revenue of **18,000,000** for that target period.
+
+This feature allows users to easily compare targets against actual performance.
+
+### Won Deal View
+
+<ImageZoom
+  src="/images/id/Tampilan%20penawaran%20won.png"
+  alt="Won Deal Interface"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+This information assists management in monitoring sales progress in real-time.
+
+---
+
+<Tips>
+## **Usage Tips**
+
+To optimize your target management process, consider these tips:
+
+- Define targets based on historical company data.
+- Perform monthly evaluations of goal achievements.
+- Adjust targets according to market conditions.
+- Keep data regularly updated.
+- Use reports as a basis for management evaluation.
+- Involve the sales and marketing teams in setting realistic targets.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues while using the Company Targets menu, follow these steps:
+
+- Re-verify the data entered for accuracy.
+- Ensure your internet connection is stable.
+- Refresh the system page.
+- Log out and log back in.
+- Check user permissions.
+- Contact the administrator if technical issues persist.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

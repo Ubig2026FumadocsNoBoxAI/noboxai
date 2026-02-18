@@ -1,6 +1,6 @@
 {
   "title": "CRM",
-  "icon": "Database",
+  "icon": "Users",
   "pages": [
     "product",
     "product-tags",

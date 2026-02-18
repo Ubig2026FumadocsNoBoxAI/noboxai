@@ -1,373 +1,305 @@
 ---
 title: Deals
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Managing sales pipelines, tracking deal progress, and overseeing transactions within NoBox.AI.
 icon: Handshake
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Deals is one of the menus in Nobox.Ai used for managing offers, making it easier for you to manage all information and activities related to sales progress.
+The **Deals** module is a central feature of NoBox.AI designed for comprehensive sales pipeline management. It allows you to organize information and activities throughout your sales cycle, ensuring a smooth transition from initial offer to final closure.
+
+By using this module, users can create, track, and categorize customer offers, monitor their status in real-time, and streamline follow-up processes to maximize conversion rates.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/jGn4u60uODA/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/jGn4u60uODA"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
 ></iframe>
 
+---
+
+## **Deal Pipeline Interface**
+
 <ImageZoom
-  src="/images/en/Deals%20(1).png"
-  alt="Deals Menu Overview"
+  src="/images/id/tampilan papan penawaran.png"
+  alt="Deal Pipeline Interface"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-On the display, there are several sections, each with their own function. The explanation of each function is as follows:
+The interface above shows the main **Deal Pipeline** page, which visualizes your sales opportunities in a board-style layout.
+
+From this view, users can track the specific status of every deal, monitor overall sales progress, and manage individual offers in a highly structured environment.
+
+---
+
+## **Feature Overview**
+
+The following features and buttons are available to help you manage your sales pipeline:
 
 <table>
   <thead>
     <tr>
-      <th width="170.800048828125">Features/Buttons</th>
+      <th width="170">Feature/Button</th>
       <th>Function</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>
+      <td align="center" className="text-center">
         <img
-          src="/images/en/new%20pipeline.png"
+          src="/images/id/Tombol%20Papan%20(1).png"
           alt="Add Board"
-          className="w-10 h-auto mx-auto"
+          className="w-15 h-auto mx-auto"
         />
+        <div>Add Board</div>
       </td>
-      <td>Used for adding boards.</td>
+      <td>Creates a new pipeline or board for different sales processes.</td>
     </tr>
     <tr>
-      <td>
+      <td align="center" className="text-center">
         <img
-          src="/images/en/new%20deal.png"
+          src="/images/id/Tombol%20penawaran.png"
           alt="Add Deal"
-          className="w-10 h-auto mx-auto"
+          className="w-15 h-auto mx-auto"
         />
+        <div>Add Deal</div>
       </td>
-      <td>Used to add deal.</td>
+      <td>Adds a new sales deal or opportunity to the current board.</td>
     </tr>
     <tr>
-      <td>
+      <td align="center" className="text-center">
         <img
-          src="/images/en/titik%20tiga.png"
-          alt="More Options"
+          src="/images/id/titik%20tiga.png"
+          alt="Options"
           className="w-10 h-auto mx-auto"
         />
+        <div>Edit &amp; Delete</div>
       </td>
-      <td>Used to display edit and delete board data pop-ups.</td>
+      <td>Provides a menu to modify or remove existing board data.</td>
     </tr>
     <tr>
-      <td>
+      <td align="center" className="text-center">
         <img
-          src="/images/en/Tombol%20kanban.png"
-          alt="Kanban View"
-          className="w-10 h-auto mx-auto"
+          src="/images/id/Tombol%20kanban.png"
+          alt="Kanban"
+          className="w-15 h-auto mx-auto"
         />
+        <div>Kanban</div>
       </td>
-      <td>Used to display in kanban form.</td>
+      <td>Switches the view to the visual Kanban board layout.</td>
     </tr>
     <tr>
-      <td>
+      <td align="center" className="text-center">
         <img
-          src="/images/en/list.png"
-          alt="List View"
+          src="/images/id/list.png"
+          alt="List"
           className="w-10 h-auto mx-auto"
         />
+        <div>List</div>
       </td>
-      <td>Used to display in list form.</td>
+      <td>Switches the view to a systematic list or table format.</td>
     </tr>
   </tbody>
 </table>
 
-## Add Board
+---
 
-To add a board, please click the [ <img src="/images/en/new%20pipeline.png" alt="Add Board" className="inline h-5 w-auto mx-1" /> ] button. A dialog titled [Add Pipeline] will appear.
+### **Managing Pipeline Boards**
+
+1. To add a new board, click the [ <img src="/images/id/Tombol%20Papan%20(1).png" alt="Add Board" className="inline h-5 w-auto mx-1" /> ] button.
+2. The **[Add Pipeline]** dialog will prompt you to enter the Name, Description, and Stages of your pipeline.
+
+#### Add Pipeline Dialog View
 
 <ImageZoom
-  src="/images/en/tambah%20papan%20penawaran.png"
-  alt="Add Board Dialog"
+  src="/images/id/tambah%20papan%20penawaran.png"
+  alt="Add Pipeline Form"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Complete the necessary fields, for example as follows:
+#### Pipeline Form Fields
 
-| Entry       | Description       | Example                                                |
-| ----------- | ----------------- | ------------------------------------------------------ |
-| Name        | Board Name        | Marketing                                              |
-| Description | Board Description | Sales management information                           |
-| Stage       | Management Levels | New, Qualified, Advance, Payment In Process, Won, Lost |
+| Field       | Description           | Example                                                 |
+| ----------- | --------------------- | ------------------------------------------------------- |
+| Name        | Title of the board    | Marketing                                               |
+| Description | Summary of usage      | Sales management for retail division                   |
+| Stages      | Pipeline phases       | New, Qualified, Advance, Payment In Process, Won, Lost |
 
-If you have completed the form, click **[Save]** to save the newly created board data.
+Click **[Save]** to complete the setup.
 
-## **Edit and Delete Board Data**
+### **Managing Deals**
 
-Untuk mengedit suatu data papan, silahkan pilih terlebih dahulu data mana yang akan diedit. Click the [ <img src="/images/en/titik%20tiga.png" alt="More Options" className="inline h-5 w-auto mx-1" /> ] button, a pop-up will appear, select the **[Edit]** button, then edit your data and click [Save] to save the changes.
+1. Click the [ <img src="/images/id/Tombol%20penawaran.png" alt="Add" className="inline h-5 w-auto mx-1" /> ] button to create a new deal.
+2. Complete the deal information in the dialog, including deal value and assignment.
 
-To delete a data board, select the data you wish to delete. Then, click the button [ <img src="/images/en/titik%20tiga.png" alt="More Options" className="inline h-5 w-auto mx-1" /> ] to show a pop-up. Choose the **[Delete]** button, and a confirmation dialog will appear asking if you want to delete the data. Click **[Yes]** to proceed or [No] to cancel.
-
-## Add Deal
-
-To add Deal data, please click the [ <img src="/images/en/new%20deal.png" alt="New Deal" className="inline h-5 w-auto mx-1" /> ] button and the [Add Deal] dialog will appear.
+#### Add Deal Dialog View
 
 <ImageZoom
-  src="/images/en/New%20Deal..png"
-  alt="Add Deal Dialog"
+  src="/images/id/tambah%20penawaran.png"
+  alt="Add Deal Form"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Fill in the required fields, as per the following example:
-
-| Entry              | Description            | Example                             |
-| ------------------ | ---------------------- | ----------------------------------- |
-| Deal Name          | Agreement Name         | Deal PT Puspita                     |
-| Price              | Deal Price             | Rp 10.600.000                       |
-| Assign to          | Assigned to            | Jasmine                             |
-| Close Date         | Close Date             | 30-11-2024                          |
-| Source             | Search                 | Other                               |
-| Reason for failure | Reasons for failed bid | -                                   |
-| Board              | Select Board           | November 2024 Offers                |
-| Stages             | Stages                 | New                                 |
-| Start Date         | Start Date             | 25-11-2024                          |
-| Expired Date       | Expired Date           | 30-11-2024                          |
-| Priority           | Priority Level         | Tinggi                              |
-| Company            | Company Deal           | PT SEJAHTERA                        |
-| Contact            | Related contact list   | Sherin, Sasi, Afrida                |
-| Product            | List Product           | Gamis Zeyaa, Hijab Pashmina Azzalea |
-
-Once you have completed the fields, click **[Save]** to save the offer data you have just created.
-
-## **Edit adn Delete Deals Data**
-
-To edit an offer data, please first select which data you want to edit. Edit your data and click **[Save]** to save the changes.
-
-To delete an offer data, select the data you want to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. Click **[Yes]** to proceed, or click **[No]** to cancel.
-
-## Comment
-
-Comments are a feature of Nobox.Ai used to provide views, responses, or feedback regarding the offer.
-
-## Add Comment
-
-To add a comment, click the [ <img src="/images/en/Comment.png" alt="Comment" className="inline h-5 w-auto mx-1" /> ] button, and a comment dialog will appear. Enter your comment and click the [Send] button to submit it.
-
-<ImageZoom
-  src="/images/en/tambah%20komentar%20penawaran.png"
-  alt="Add Comment Dialog"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Edit and Delete Comment**
-
-To edit a comment, first select the data you want to edit. Then click the icon [ <img src="/images/en/Edit%20Delete2.png" alt="Edit Delete" className="inline h-5 w-auto mx-1" /> ], which will bring up the Edit and Remove pop-up. Choose the **[Edit]** button, edit your data, and click [Send] to save the changes.
-
-To delete a comment data, select the data you want to delete. Then click the icon [ <img src="/images/en/Edit%20Delete2.png" alt="Remove" className="inline h-5 w-auto mx-1" /> ], and then click **[Remove]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[OK]**; if not, click [Cancel].
-
-## Copy Deal
-
-**Copy Offer** feature helps you to easily duplicate the offer data. To copy the offer data, please click the [ <img src="/images/en/Setting.png" alt="Settings" className="inline h-5 w-auto mx-1" /> ] icon, then select [Copy]. This will generate a copy of the offer data.
-
-<ImageZoom
-  src="/images/en/Tampilan%20Copy%20penawaran.png"
-  alt="Copy Deal Dialog"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Task**
-
-The Task tab is used for managing tasks to be carried out by the offer.
-
-<ImageZoom
-  src="/images/en/Tasks%20(4).png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## Add Task
-
-To add a new Task, click the button [ <img src="/images/en/new%20task.png" alt="New Task" className="inline h-5 w-auto mx-1" /> ] to open the dialog [Add Task].
-
-<ImageZoom
-  src="/images/en/tambah%20tugas%20penawaran.png"
-  alt="Add Task Dialog"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-Fill in the required fields, as in the following example:
-
-| Entry             | Description                           | Example                |
-| ----------------- | ------------------------------------- | ---------------------- |
-| Name              | Task Name                             | Meeting PT Sejahtera   |
-| Detail/plan       | Detail Task/ Plan                     | Discussion of proposal |
-| Next Plan/ Result | Next steps or task results            | Price Discussion       |
-| Attachment        | Task Attachment                       | -                      |
-| Owner             | Task Owner                            | Jasmine                |
-| List              | List Task                             | New                    |
-| Category          | Task Category                         | Marketing              |
-| Prioritas         | Priority Level                        | High                   |
-| Tag               | Task Tag                              | Meeting                |
-| Start Date        | Early Deadline                        | 29-11-2024             |
-| End Date          | End of deadline                       | 30-11-2024             |
-| Contact           | Contact who is working on the task    | Sherin                 |
-| Company           | The company that carried out the task | PT SEJAHTERA           |
-| Transaction       | Offers related to the task            | Deal PT Puspita        |
-
-If you have completed the entries, click **[Save]** to save the task data you just created.
-
-## **Edit and Delete Task Data**
-
-To edit a task data, first select the data you want to edit. Make your edits and click **[Save]** to save the changes.
-
-To delete a task data, select which data to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]**; otherwise, click **[No]**.
-
-## **Transaction**
-
-Transactions are a feature of Nobox.Ai used to record payment-related transactions with the respective offers.
-
-<ImageZoom
-  src="/images/en/Tasks%20(4).png"
-  alt="Transactions Overview"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## Add Transaction
-
-To add transaction data, click **[Add Transaction]** to display the **[Add Transaction]** dialog.
-
-<ImageZoom
-  src="/images/en/tambah%20transaksi%20penawaran.png"
-  alt="Add Transaction Dialog"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-Complete the required fields, as shown in the following example:
-
-| Entry       | Description                                       | Example             |
-| ----------- | ------------------------------------------------- | ------------------- |
-| Note        | Transaction Note                                  | Gamis Zeyaa Deal    |
-| Date        | Select the day transaction                        | 30-11-2024          |
-| From        | Select the contact related to the transaction     | Sasi                |
-| How to Pay  | Payment Methods                                   | Transfer            |
-| Description | Transaction Description                           | Pay in Installments |
-| Currency    | Select the currency and enter the nominal amount. | Rp 5.000.000        |
-| Attachment  | Transaction Attachment                            | -                   |
-
-If you have completed the fields, click **[Save]** to save the new transaction data you just created.
-
-## **Edit and Delete Transaction Data**
-
-To edit a transaction record, please first select which data you want to edit. Make your changes and click **[Save]** to store them.
-
-To delete a transaction record, select the data you want to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the selected data. If yes, click **[Yes]**; if not, click **[No]**.
-
-## Expense
-
-Expenditure is one of the features of Nobox.Ai used to record expenses or costs, covering various items such as shipping costs, marketing expenses, etc.
-
-<ImageZoom
-  src="/images/en/tampilan%20pengeluaran%20penawaran.png"
-  alt="Expenses Overview"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## Add Expense
-
-To add an expense entry, please click **[Add Expense]** to display the **[Add Expense]** dialog.
-
-<ImageZoom
-  src="/images/en/tambah%20pengeluaran%20penawaran.png"
-  alt="Add Expense Dialog"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-Complete the required fields, as in the following example:
-
-| Entry             | Description                            | Example                   |
-| ----------------- | -------------------------------------- | ------------------------- |
-| Expense Date      | Select the release date and time       | 30-11-2024, 13:36         |
-| Amount of Expense | Select currency and denomination       | Rp 200.000                |
-| Contact           | Contact regarding the expenditure      | Sasi                      |
-| Company           | The company related to the expenditure | PT Puspita                |
-| Deal              | Related deal (auto-populate)           | Deal PT Puspita           |
-| Category          | Select Category                        | Shipping costs            |
-| Description       | Expense Description                    | Additional shipping costs |
-| Upload            | Expense Attachment                     | -                         |
-
-If you have completed the form, click **[Save]** to save the new expense data you just created.
-
-## **Edit and Delete Expense Data**
-
-To edit an expense record, please select the data you wish to edit first. Edit your data and click **[Save]** to save the changes.
-
-To delete an expense record, select the data you wish to remove, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the selected data. Click **[Yes]** to proceed, or **[No]** to cancel.
-
-## Note
-
-Notes is the tab used to record and store important information related to the offer.
-
-<ImageZoom
-  src="/images/en/tampilan%20catatan%20penawaran.png"
-  alt="Notes Overview"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## Add Note
-
-To create a note, you can type directly in the section [ <img src="/images/en/inputan%20catatan.png" alt="Note Input" className="inline h-5 w-auto mx-1" /> ]. If you have filled in the note, please click the button [ <img src="/images/en/Kirim.png" alt="Send" className="inline h-5 w-auto mx-1" /> ] to save the note.
-
-## **Edit and Delete Note Data**
-
-This feature can only be used by NoBox Supervisors. Agents can add notes but cannot edit or delete note data.
-
-To edit a note, click the icon [ <img src="/images/en/Edit.png" alt="Edit" className="inline h-5 w-auto mx-1" /> ] next to the note you want to edit. Modify the data and click the send button or press enter on your keyboard to save the changes.
-
-To delete a note, click the [ <img src="/images/en/Hapus.png" alt="Delete" className="inline h-5 w-auto mx-1" /> ] icon next to the note you want to remove. A confirmation dialog will appear asking if you want to delete the note. If yes, click **[Yes]**; if not, click [No].
-
-## **Log**
-
-Log is one of the features of Nobox.Ai that provides information on activities related to the offer.
-
-<ImageZoom
-  src="/images/en/tampilan%20log%20penawaran.png"
-  alt="Deals Log Overview"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
+#### Deal Form Fields
+
+| Field              | Description                | Example                              |
+| ------------------ | -------------------------- | ----------------------------------- |
+| Deal Name          | Title of the agreement     | Deal PT Puspita                     |
+| Value              | Monetary value of the deal | Rp 10,600,000                       |
+| Assigned To        | Team member in charge      | Jasmine                             |
+| Closing Date       | Estimated closure date     | 30-11-2024                          |
+| Source             | Lead origin                | Other                               |
+| Lost Reason        | Reason if the deal fails   | -                                   |
+| Board              | Target pipeline board      | November 2024 Deals                 |
+| Stage              | Current stage in pipeline  | New                                 |
+| Start Date         | Deal initiation date       | 25-11-2024                          |
+| Expiry Date        | Offer validity end         | 30-11-2024                          |
+| Priority           | Priority level             | High                                |
+| Company            | Linked business entity     | PT SEJAHTERA                        |
+| Contacts           | Associated contact persons | Sherin, Sasi, Afrida                |
+| Products           | Products included in deal  | Zeyaa Dress, Hijab Pashmina Azzalea |
+
+Click **[Save]** to finish.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Collaborative Features**
+
+### **Deal Comments**
+
+Add internal notes or updates to any deal by clicking the [ <img src="/images/id/Comment.png" alt="Comment" className="inline h-5 w-auto mx-1" /> ] icon.
+
+#### Comments View
+
+<ImageZoom
+  src="/images/id/tambah%20komentar%20penawaran.png"
+  alt="Deal Comments"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+Users can **Edit** or **Remove** their comments using the [ <img src="/images/id/Edit%20Delete2.png" alt="Edit Delete" className="inline h-5 w-auto mx-1" /> ] menu. Note that deletion is permanent.
+
+---
+
+### **Cloning Deals**
+
+To quickly replicate a deal, click the [ <img src="/images/id/Setting.png" alt="Settings" className="inline h-5 w-auto mx-1" /> ] icon and select **Copy**. This streamlines the process for recurring or similar offers.
+
+---
+
+### **Linked Tasks**
+
+Assign specific action items to a deal using the [ <img src="/images/id/Tombol%20Tugas.png" alt="Add Task" className="inline h-5 w-auto mx-1" /> ] button.
+
+#### Deal Tasks Form Fields
+
+| Field                     | Description                          | Example              |
+| ------------------------- | ------------------------------------ | -------------------- |
+| Name                      | Task title                           | PT Sejahtera Meeting |
+| Detail/Plan               | Task objective                       | Proposal discussion  |
+| Next Step/Result          | Action after task                    | Pricing negotiation  |
+| Owner                     | Assigned team member                 | Jasmine              |
+| Category                  | Task category                        | Marketing            |
+| Priority                  | Importance level                     | High                 |
+| Start/Completion Date     | Timeline window                      | 29-11-2024 to 30-11  |
+| Transaction               | Automatically links back to the deal | Deal PT Puspita      |
+
+---
+
+## **Financial Tracking**
+
+### **Transactions**
+
+Log payments or revenue milestones directly against a deal.
+
+<ImageZoom
+  src="/images/id/tampilan%20transaksi%20penawaran.png"
+  alt="Deal Transactions"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+Click **Add Transaction** to record payments, specifying the amount, date, payment method, and relevant attachments.
+
+### **Expenses**
+
+Track costs associated with closing a deal by clicking **Add Expense**. This ensures you can calculate more accurate profit margins for every opportunity.
+
+---
+
+## **Internal Notes & Logs**
+
+### **Deal Notes**
+
+Use the notes section for persistent information regarding the deal. While all users can add notes, editing and deletion are reserved for **Supervisors** to maintain audit trails.
+
+### **Activity Logs**
+
+The activity log provides a complete historical record of every change made to a deal, from creation to its final status (Won/Lost).
+
+<Callout type="info" title="Tracking Logs">
+Logs are essential for monitoring accountability and understanding the lifecycle of a deal, providing transparency across the entire sales team.
+</Callout>
+
+---
+
+<Tips>
+## **Usage Tips**
+
+Maximize your deal management efficiency with these tips:
+
+- Use clear and descriptive names for deals to differentiate similar opportunities.
+- Keep deal values and closing dates updated for accurate sales forecasting.
+- Move deals across pipeline stages in real-time to maintain an accurate project overview.
+- Use comments to capture key negotiation points or customer feedback.
+- Link every major action to a **Task** to ensure nothing falls through the cracks.
+- Track **Expenses** to see the true cost of customer acquisition.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues within the Deals module, follow these troubleshooting steps:
+
+<Accordions>
+<Accordion title="Account Verification">
+- Confirm your account has the appropriate permissions to create or modify deals.
+- Verify that your subscription hasn't expired or reached its deal limit.
+- Ensure you are logged into the correct tenant/business profile.
+</Accordion>
+<Accordion title="System & Performance">
+- Check your internet connection for stability.
+- Ensure you are using a supported, modern web browser.
+- Refresh the pipeline view if new deals or updates do not appear immediately.
+- Clear browser cache if UI elements or charts display incorrectly.
+</Accordion>
+<Accordion title="Data Entry Errors">
+- Verify that all required fields in the deal form are completed.
+- Ensure that monetary values do not contain unsupported characters.
+- Check if any browser extensions (like ad-blockers) are interfering with the system scripts.
+</Accordion>
+</Accordions>
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

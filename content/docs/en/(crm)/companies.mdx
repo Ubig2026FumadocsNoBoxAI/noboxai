@@ -1,146 +1,269 @@
 ---
 title: Companies
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Managing company data, activities, tasks, and notes within the NoBox.AI CRM.
 icon: Building
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The "Company" feature in CRM NoBox.Ai is used for managing information and activities related to a customer's company or business.
+The **Companies** module is a core component of the NoBox.AI CRM, designed to centralize the management of information and activities related to your corporate clients or business partners.
+
+By utilizing this tool, users can efficiently organize company records, track engagement logs, and link businesses directly to specific tasks, notes, and transactions.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/ike07JFtXtc/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/ike07JFtXtc"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
 ></iframe>
 
+---
+
+## **Companies Menu Interface**
+
 <ImageZoom
-  src="/images/en/Companies.png"
-  alt="Companies Menu Overview"
+  src="/images/id/PerusahaanTampilan.PNG"
+  alt="Companies Menu Interface"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Add Company
+The interface above shows the main Companies page, where you can browse and manage your business database in a structured list format.
 
-To create company data, please click the **[CRM] ➔** module, select the **[Company] ➔ \[Company] ➔ \[Add Company]** menu. A **[Add Company]** dialog will appear; fill in the required fields in the dialog.
+From this view, users can monitor the status of each company, review interaction history, and navigate through linked operational data with ease.
+
+---
+
+## **Adding a Company**
+
+1. To create a new company profile, navigate to the **[CRM]** module ➔ click the **[Companies]** menu ➔ **[Companies]** ➔ **[Add Company]**.
+2. An **[Add Company]** dialog will appear. Complete the required fields within the form.
+
+### Add Company Dialog View
 
 <ImageZoom
-  src="/images/en/New%20Company.png"
-  alt="Add New Company"
+  src="/images/id/PerusahaanTambah.PNG"
+  alt="Adding a New Company"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-| Entry       | Description      | Example          |
-| ----------- | ---------------- | ---------------- |
-| Name        | Company Name     | Naysa Collection |
-| Owner       | Company Owner    | Ita Putri        |
-| Image       | Company image    | -                |
-| Website     | Company Website  | www.nasya.com    |
-| Telephone   | Telephone Number | 0823569          |
-| Country     | Company Country  | Indonesia        |
-| Province    | Company Province | East Java        |
-| City        | Company City     | Malang City      |
-| Postal code | Postal Code      | 65165            |
-| Address     | Company Address  | Jl.Ikan Hiu      |
+### Add Company Form Fields
 
-If you have completed all the fields, click **[Save]** to store the newly created company data.
+| Field        | Description                   | Example           |
+| ------------ | ----------------------------- | ----------------- |
+| Name         | The full name of the company  | Naysa Collection |
+| Owner        | Designated account owner      | INDAHYATI        |
+| Image        | Upload company logo/image     | -                 |
+| Website      | Official company website      | www.nasya.com    |
+| Phone        | Primary contact number        | 0823569           |
+| Country      | Country of operation          | Indonesia         |
+| Province     | State/Province                | East Java         |
+| City         | City location                 | Gresik Regency    |
+| Zip Code     | Postal code                   | 65165             |
+| Address      | Detailed business address     | Jl. Ikan Hiu      |
+| Industry     | Industry type                 | Apparel & Fashion |
+| Source       | Acquisition source            | Website           |
+| Type         | Category of company           | Partner           |
 
-## **Edit and Delete Company Data**
+Once all information is entered, click **[Save]** to store the new company data.
 
-To edit a company data, first select which data you want to edit. Edit your data and click **[Save]** to save the changes. To delete a company data, select the company data you want to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes],** if not, click **[No]**.
+## **Editing and Deleting Company Data**
 
-## Log
+### Editing Company Records
 
-Log is one of the features of NoBox.Ai that provides information on activities related to the company.
+To modify an existing company profile, select the specific record from the list. Update the necessary information and click **[Save]** to apply the changes.
+
+The updated data will be immediately synchronized across the system.
+
+### Deleting Company Records
+
+To remove a company entry, select the record and click **[Delete]**. A confirmation prompt will appear asking for verification.
+
+Click **[Yes]** to confirm or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+Deleting a company record is permanent and cannot be undone. Ensure that the data is no longer required before proceeding with the deletion.
+</Callout>
+
+---
+
+## **Company Activity Logs**
+
+Activity Logs provide a transparent timeline of all events and interactions associated with a specific company.
+
+### Activity Log View
 
 <ImageZoom
-  src="/images/en/Logs.png"
-  alt="Company Activity Logs"
+  src="/images/id/Perusahaan%20Log.png"
+  alt="Company Activity Log"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Tasks**
+<Callout type="info" title="Log Insights">
+This feature enables users to monitor updates and historical data in real-time, ensuring full accountability and visibility into business relationships.
+</Callout>
 
-Tasks are one of the features of NoBox.Ai used for task management related to the company.
+---
+
+## **Company Task Management**
+
+The tasks feature allows you to manage specific action items and workflows directly linked to a company profile.
+
+### Company Task List View
 
 <ImageZoom
-  src="/images/en/Tasks%20(2).png"
-  alt="Company Tasks List"
+  src="/images/id/Perusahaan%20Tugas.png"
+  alt="Company Task List"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Add Tasks
+---
 
-To create a task data, click the **[Company]** menu and select the company you have created. Then click the **[Task] ➔ \[Add Task]** tab. A **[Add Task]** dialog will appear, then complete the fields in the dialog.
+## **Creating a Linked Task**
+
+1. To create a company-related task, open the **[Companies]** menu and select the target business record.
+2. Navigate to the **[Tasks]** tab and click **[Add Task]**.
+
+### Add Task Dialog View
 
 <ImageZoom
-  src="/images/en/New%20Task%20(1).png"
-  alt="Add Task to Company"
+  src="/images/id/Perusahaan%20Tambah%20Tugas.png"
+  alt="Company Add Task Form"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-| Entry              | Description                         | Example                                                        |
-| ------------------ | ----------------------------------- | -------------------------------------------------------------- |
-| Name               | Task Name                           | Make Ramadan Promo Offers                                      |
-| Details/Plans      | Task details/plan                   | Registering and contacting customers who register for training |
-| Next Steps/Results | Next steps or results of the Task   | Create a training schedule                                     |
-| Attachment         | Assignment Attachment               | -                                                              |
-| Owner              | Select the Task owner               | Jasmine                                                        |
-| Finished           | Checklist if the task is completed  |                                                                |
-| List               | Select Task List                    | New                                                            |
-| Category           | Select Task Category                | Big Promotion                                                  |
-| Priority           | Priority Level                      | Medium                                                         |
-| Tag                | Task tag                            | Sale                                                           |
-| Start Date         | Deadline                            | 10-05-2024 13:00                                               |
-| End Date           | End of time limit                   | 15-05-2024 15:00                                               |
-| Contact            | Select the related Contact          | Jasmine                                                        |
-| Company            | Select the related Company for Task | Azahza Collection                                              |
-| Transaction        | Select The transaction              | PT Sentosa Deals                                               |
+### Add Task Form Fields
 
-If you have completed the entries, click **[Save]** to save the new tag data you just created.
+| Field                     | Description                          | Example                                                       |
+| ------------------------- | ------------------------------------ | ------------------------------------------------------------- |
+| Name                      | Title of the task                    | Create Ramadan Promo Offer                                   |
+| Detail/Plan               | Task description or objective         | Compile and contact registered training participants         |
+| Next Step/Result          | Expected outcome or followup         | Finalize training schedule                                   |
+| Attachment                | Upload relevant files                | -                                                             |
+| Owner                     | Assigned team member                 | Jasmine                                                       |
+| Completed                 | Check if the task is finished         |                                                               |
+| List                      | Assign to a specific task list       | New                                                           |
+| Category                  | Select task category                 | Major Promo                                                   |
+| Priority                  | Priority level                       | Medium                                                        |
+| Tags                      | Organization tags                    | Sales                                                         |
+| Start Date                | Start of the task window             | 10-05-2024 13:00                                              |
+| Completion Date           | Deadline                             | 15-05-2024 15:00                                              |
+| Contact                   | Link to a specific contact           | Jasmine                                                       |
+| Company                   | Associated company                   | Azahza Collection                                             |
+| Transaction               | Link to a specific deal              | PT Sentosa Offer                                              |
 
-## **Edit and Delete Task Data**
+After completing the form, click **[Save]** to create the linked task.
 
-To edit a task data, please select the data you wish to edit. Edit your data and click **[Save]** to save the changes. To delete a task data, select the task data you want to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. Click **[Yes]** to confirm, or **[No]** to cancel.
+## **Editing and Deleting Tasks**
 
-## Note
+### Editing Tasks
 
-Notes is a feature of NoBox.Ai used to display notes.
+Select the task you wish to modify, make the necessary updates, and click **[Save]**.
+
+Changes will be reflected across both the CRM and the global Task management system.
+
+### Deleting Tasks
+
+Select the task and click **[Delete]**. Confirm the action when prompted.
+
+Click **[Yes]** to confirm or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+Task deletion is permanent. Ensure that the action is intentional as the data cannot be recovered.
+</Callout>
+
+---
+
+## **Company Notes**
+
+Notes are used to capture qualitative insights, internal reminders, or brief summaries regarding a company.
+
+### Company Notes View
 
 <ImageZoom
-  src="/images/en/Notes%20(1).png"
+  src="/images/id/Perusahaan%20Catatan.png"
   alt="Company Notes List"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Add Note Data
+## **Adding a Note**
 
-To create a note, you can type directly into the section [ <img src="/images/en/Type%20note%20here.png" alt="Note Input" className="inline h-5 w-auto mx-1" /> ]. Once you've entered your note, please click the button [ <img src="/images/en/Kirim.png" alt="Send" className="inline h-5 w-auto mx-1" /> ] to save it.
+To create a note, simply type directly into the input area marked [ <img src="/images/id/Type%20note%20here.png" alt="Note Area" className="inline h-5 w-auto mx-1" /> ].
 
-## **Edit and Delet Note Data**
+Once finished, click the [ <img src="/images/id/Kirim.png" alt="Send" className="inline h-5 w-auto mx-1" /> ] button to save it.
 
-Only NoBox.Ai Supervisors can use this feature. Agents can add notes but cannot edit or delete them.
+## **Editing and Deleting Notes**
 
-To edit a record, please click the icon [ <img src="/images/en/Edit.png" alt="Edit" className="inline h-5 w-auto mx-1" /> ] next to the record you want to edit. Edit the record and click the send button or press enter on your keyboard to save the changes. To delete a record, please click the [ <img src="/images/en/Hapus.png" alt="Delete" className="inline h-5 w-auto mx-1" /> ] icon next to the record you want to delete. A confirmation dialog will appear asking if you want to delete the record. If yes, click **[Yes]**; if not, click **[No]**.
+Note management permissions are restricted to **NoBox.AI Supervisors**.
+
+**Agents** can add new notes but do not have the authorization to edit or delete them.
+
+### Editing Notes
+
+Click the [ <img src="/images/id/Edit.png" alt="Edit" className="inline h-5 w-auto mx-1" /> ] icon to modify the content of a note.
+
+### Deleting Notes
+
+Click the [ <img src="/images/id/Hapus.png" alt="Delete" className="inline h-5 w-auto mx-1" /> ] icon to remove a note.
+
+Confirm by selecting **[Yes]** or **[No]**.
+
+<Callout type="info" title="Important Information">
+Note deletion is permanent. Ensure the information is truly no longer needed before removal.
+</Callout>
 
 ---
 
-If you encounter any issues or difficulties related to NoBox.Ai, please contact us at [Support Ticket](https://crm.nobox.ai/clients/tickets)
+<Tips>
+## **Usage Tips**
+
+Maximize your efficiency in the Companies module with these best practices:
+
+- Ensure all company data is detailed and accurate for better reporting.
+- Use official company names to maintain record consistency.
+- Regularly update contact information to avoid communication gaps.
+- Leverage Notes to record unique client preferences or historical contexts.
+- Use Tasks to schedule follow-ups and ensure no lead is forgotten.
+- Monitor Activity Logs to understand the full history of the relationship.
+- Attach relevant supporting documents to keep all materials in one place.
+- Perform routine database audits to keep records organized.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues while using the Companies menu, follow these steps:
+
+- Verify that your internet connection is stable.
+- Refresh the browser page if data fails to populate.
+- Confirm that your account has the correct permissions for the module.
+- Ensure all mandatory fields (marked with an asterisk) are completed when saving.
+- Try logging out and back in if features seem unresponsive.
+- Clear your browser cache if the interface display is abnormal.
+- Ensure your browser is updated to the latest version.
+- Contact the support team if technical difficulties persist.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

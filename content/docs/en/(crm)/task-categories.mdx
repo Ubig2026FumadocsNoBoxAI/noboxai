@@ -1,67 +1,145 @@
 ---
 title: Task Categories
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Organizing CRM tasks by type, department, or workflow phase in NoBox.AI.
 icon: List
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Task Categories is one of the menus in Nobox.Ai used to group task data.
+**Task Categories** is a core administrative feature in NoBox.AI used to group and classify your CRM tasks.
+
+By defining specific categories, users can organize their workflow based on task type, department, priority, or phase, ensuring that action items are structured and easy to manage at scale.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/y3ffMdfodHs"
-  title="NoBox Interface Overview"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerPolicy="strict-origin-when-cross-origin"
   allowFullScreen
 ></iframe>
 
-## **Add Task Category**
+---
 
-To add a new task category, please open the **[CRM]** module, then click **[Tasks] ➔ [Categories] ➔ [Add Task Category]**. The **[Add Task Category]** dialog will appear.
+## **Task Categories Menu Interface**
 
 <ImageZoom
-  src="/images/en/New%20Category.png"
-  alt="NoBox Dashboard View"
+  src="/images/id/Tampilan%20Tambah%20kategori%20Tugas.png"
+  alt="Task Categories Menu View"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-Complete the required fields, for example as shown below:
+The interface above shows the **Task Categories** management page, where you can define and maintain your classification system.
 
-| Field | Description   | Example |
-| ----- | ------------- | ------- |
-| Name  | Category Name | VIP     |
-
-After completing the required fields, click **[Save]** to store the newly created task category.
-
-## **Edit and Delete Task Categories**
-
-To edit a task category, first select the category you want to edit. Make the necessary changes and click **[Save]** to apply the updates.
-
-To delete a task category, select the category you want to remove and click **[Delete]**. A confirmation dialog will appear asking whether you want to delete the data. Click **[Yes]** to proceed or **[No]** to cancel.
-
-## **How to Use Task Categories**
-
-1\. Open the **[Tasks]** menu, then select an existing task or add a new task.
-
-2\. Click the category field, and the list of previously created categories will appear.
-
-<ImageZoom
-  src="/images/en/Penggunaan%20Category.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-3\. Select one of the categories and click **[Save]** to update the task data.
+This page allows administrators to standardize the way tasks are grouped, ensuring that the entire team follows a consistent organizational structure.
 
 ---
 
-If you experience any issues or difficulties related to Nobox.Ai, please contact us via [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Adding a Task Category**
+
+To create a new category, navigate to the **[CRM]** module, select the **[Tasks]** menu ➔ **[Categories]** ➔ **[Add Task Category]**.
+
+An **[Add Task Category]** dialog will appear.
+
+### Add Task Category Dialog View
+
+<ImageZoom
+  src="/images/id/Tampilan%20Tambah%20kategori%20Tugas.png"
+  alt="Adding a New Task Category"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+### Task Category Form Fields
+
+Complete the required field(s); for example:
+
+| Field | Description     | Example |
+| ----- | --------------- | ------- |
+| Name  | Category Title  | VIP     |
+
+Enter a category name that clearly defines the group of tasks it represents.
+
+Once you have entered the information, click **[Save]** to store the new category.
+
+## **Editing and Deleting Category Data**
+
+### Editing Task Categories
+
+To modify a category name, select the target record from the list. Update the name and click **[Save]**.
+
+The changes will be applied immediately across all tasks currently linked to that category.
+
+### Deleting Task Categories
+
+To remove a category, select the entry and click **[Delete]**. A confirmation dialog will appear to prevent accidental removal.
+
+Click **[Yes]** to confirm or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+Deleting a task category is permanent. Ensure the category is no longer needed in historical reports before proceeding with deletion.
+</Callout>
+
+---
+
+## **How to Apply Task Categories**
+
+Task categories can be assigned directly when creating or updating any CRM task.
+
+Follow these steps:
+
+1. Open the **[Tasks]** menu and select an existing task or create a new one.
+
+2. Click on the **Category** dropdown field; this will display all previously defined categories.
+
+### Selecting Task Category View
+
+<ImageZoom
+  src="/images/id/Tampilan%20pilih%20kategori.png"
+  alt="Applying a Task Category"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+3. Select your desired category and click **[Save]** to finalize the task update.
+
+---
+
+<Tips>
+## **Usage Tips**
+
+To optimize your task management organization:
+
+- Use clear, intuitive names that the whole team understands.
+- Keep the number of categories manageable to avoid analysis paralysis.
+- Periodically audit categories to see which ones are rarely used.
+- Align categories with your core business departments (e.g., Sales, Support, Operations).
+- Standardize category usage across all agents for consistent reporting.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you experience issues within the Task Categories module:
+
+- Refresh the page to synchronize with the latest server state.
+- Verify that your internet connection is stable.
+- Confirm your account has "Supervisor" permissions to manage categories.
+- Try logging out and back in if the "Save" function seems unresponsive.
+- Contact support if you notice categories disappearing or not saving correctly.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).
