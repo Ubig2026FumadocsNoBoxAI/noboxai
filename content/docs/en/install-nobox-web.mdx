@@ -1,84 +1,228 @@
 ---
 title: NoBox Web Installation
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: A complete guide to installing and configuring NoBox Web, along with Chat Manager and Chat Session.
 icon: Globe
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Visit the NoBox website and log in using your account. Make sure you already have a registered account.  
-Select the **[Subscription]** menu, then download the installer that matches your computer’s operating system.
+This page serves as a complete technical guide for installing and configuring **NoBox Web**, including the deployment of the Chat Manager and Chat Session modules.
+
+Our goal is to assist you through every setup phase to ensure your system is fully operational and ready to support your business communication needs.
+
+---
+
+## **Preparation Before Installation**
+
+Before starting the installation process, ensure the following requirements are met to guarantee a smooth experience:
+
+- Your NoBox.AI account is registered and active.
+- Your subscription package is still valid.
+- Your device is connected to the internet.
+- You have sufficient storage space.
+- Account login details are ready.
+- Administrator access rights are available if required.
+
+---
+
+## **Downloading the NoBox Installer**
+
+This section explains the process of downloading the installer from the official NoBox website.
+
+### Steps to Download the Installer:
+
+1.  Visit the official NoBox website and log in to your account.
+2.  Navigate to the **Subscription** menu.
+3.  Select your active service package.
+4.  Download the installer assigned to your computer's operating system.
 
 <ImageZoom
-  src="/images/en/Unduh%20Installer.png"
-  alt="NoBox Dashboard Interface"
+  src="/images/id/Unduh%20Installer.png"
+  alt="Download NoBox Installer"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Run the downloaded NoBox installer. Select the server you want to use, then enter the username and password associated with your registered NoBox account on the NoBox website.  
-Next, follow the installation steps as instructed.
+Ensure the installer file is completely downloaded before proceeding to the next stage.
+
+### Download Notes:
+
+- Use a stable internet connection.
+- Ensure the download reaches 100% completion.
+- Save the file in an easy-to-find location.
+
+---
+
+## **Application Installation Process**
+
+After the installer file has been successfully downloaded, follow the installation process as described below.
+
+### Installation Steps:
+
+1.  Run the downloaded installer file.
+2.  Select the server you wish to use.
+3.  Enter your NoBox.AI account username and password.
+4.  Follow the on-screen installation instructions.
+5.  Specify the installation location according to your needs.
 
 <ImageZoom
-  src="/images/en/Setup%20Nobox%20Chat.png"
-  alt="NoBox Dashboard Interface"
+  src="/images/id/Setup%20Nobox%20Chat.png"
+  alt="Setup NoBox Chat"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-If the installation is successful, two folders will appear in the selected installation directory: **NoboxChatManager** and **NoboxChatSession**.
+Once the installation process is complete, the system will automatically create two main folders.
 
-## **Nobox Chat Manager**
+### Verifying the Installation:
 
-Used to integrate web chat, social media, and instant messaging into automation accounts, making it easier to manage customer interactions and business prospects.  
-To run the **NoBox Chat Manager** application, follow these steps:
+To ensure the installation was successful:
 
-- First, open the folder where you installed the NoBox application. This folder is usually located in the directory you selected during installation
-- Select the **NoboxChatManager** folder, open the **[Bin]** folder, and run the **NoboxChatManager.exe** file
+- Check that the installation process concluded without errors.
+- Confirm that the system folders have been created.
+- Attempt to launch the main application.
+
+---
+
+## **Installation Folder Structure**
+
+If the installation is successful, the following two folders will be created:
+
+- **NoboxChatManager**  
+  Used to manage chat integration, agents, and automation.
+
+- **NoboxChatSession**  
+  Used to manage account login sessions and authentication.
+
+Ensure both folders are present for the application to function normally.
+
+### System Folder Functions:
+
+These folders serve to:
+
+- Store system configurations.
+- Save session data.
+- Maintain application stability.
+- Support the automation integration process.
+
+---
+
+## **NoBox Chat Manager**
+
+NoBox Chat Manager is used to integrate web chat, social media, and instant messaging into a single centralized system.
+
+This application simplifies the management of customer interactions and business leads.
+
+### Main Functions of Chat Manager:
+
+- Manages customer service agents.
+- Connects automation accounts.
+- Monitors chat activity.
+- Manages incoming and outgoing messages.
+
+### How to Run NoBox Chat Manager:
+
+1.  Open the NoBox installation folder.
+2.  Enter the **NoboxChatManager** folder.
+3.  Open the **Bin** folder.
+4.  Run the **NoboxChatManager.exe** file.
 
 <ImageZoom
-  src="/images/en/Lokasi%20File.png"
-  alt="NoBox Dashboard Interface"
+  src="/images/id/Lokasi%20File.png"
+  alt="NoBox Chat Manager File Location"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-You can try creating an account and verify whether it has been successfully connected by checking the NoboxChatManager.  
-Make sure there is information indicating that the Agent is running.
+---
+
+## **Ensuring Chat Manager Runs Normally**
+
+Once the application is running, perform the following checks to ensure the system is working correctly:
+
+- Verify that the agent status indicates an active condition.
+- Confirm that automation accounts are connected.
+- Ensure there are no system error messages.
+- Data should synchronize properly with the server.
 
 <ImageZoom
-  src="/images/en/NoboxChatManager.png"
-  alt="NoBox Dashboard Interface"
+  src="/images/id/NoboxChatManager.png"
+  alt="NoBox Chat Manager Running"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-If you are not yet familiar with the basic steps for creating an account, you can follow the guides below:
+If the agent is not yet active, reconfigure the automation account.
+
+---
+
+## **Automation Integration Guide**
+
+If you have not yet integrated your accounts, please follow these guides:
 
 - [WhatsApp Automation](../docs/whatsapp)
 - [Telegram Automation](../docs/telegram)
 - [Shopee Automation](../docs/shopee)
 
-## **Nobox Chat Session**
+This integration allows the system to work automatically and more efficiently.
 
-Used to manage the login process for accounts such as Tokopedia, Telegram, Shopee, and others.
+---
 
-- First, open the folder where you installed the NoBox application. This folder is usually located in the directory you selected during installation
-- Select the **NoboxChatSession** folder, open the **[Bin]** folder, and run the **NoboxChatSession.exe** file
+## **NoBox Chat Session**
+
+NoBox Chat Session is used to manage the login processes of various platforms, such as WhatsApp, Telegram, Shopee, Tokopedia, and others.
+
+This application functions to maintain the stability of account sessions so they remain active.
+
+### Main Functions of Chat Session:
+
+- Keeps login sessions active.
+- Prevents automatic logouts.
+- Stabilizes account connections.
+- Manages platform authentication.
+
+### How to Run NoBox Chat Session:
+
+1.  Open the NoBox installation folder.
+2.  Enter the **NoboxChatSession** folder.
+3.  Open the **Bin** folder.
+4.  Run the **NoboxChatSession.exe** file.
 
 <ImageZoom
-  src="/images/en/Lokasi%20File.png"
-  alt="NoBox Dashboard Interface"
+  src="/images/id/Lokasi%20File%20NoboxChatSession.png"
+  alt="NoBox Chat Session File Location"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 ---
 
-If you experience any issues or difficulties related to NoBox Desktop,  
-please contact us via [Support Ticket](https://crm.nobox.ai/clients/tickets).
+## **Troubleshooting Installation Issues**
+
+If you encounter obstacles during installation or usage, follow these steps:
+
+**Basic Checks**
+- Verify your internet connection.
+- Ensure antivirus software is not blocking the application.
+- Confirm that the correct server has been selected.
+
+**System Checks**
+- Run the application as an administrator.
+- Check available storage capacity.
+- Ensure the operating system is compatible.
+
+**Additional Solutions**
+- Restart your computer.
+- Reinstall the application.
+- Update the application to the latest version.
+- Contact the support team if errors persist.
+
+---
+
+If you have any problems or difficulties related to NoBox Web, please contact us via
+a [Support Ticket](https://crm.nobox.ai/clients/tickets).

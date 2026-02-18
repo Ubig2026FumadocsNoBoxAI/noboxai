@@ -1,12 +1,14 @@
 ---
 title: Quick Replies
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Utilizing message templates for efficient communication in NoBox.AI.
 icon: MessageCircleMore
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Quick Replies is one of the menus in NoBox.AI used as message templates to respond more quickly, either in the form of text messages or media such as images, GIFs, and videos.
+**Quick Replies** serve as powerful message templates, enabling your team to respond to customers instantly using pre-configured text or media, such as images, GIFs, and videos.
+
+This feature significantly boosts communication efficiency by providing consistent, ready-to-use responses for FAQs, product details, and standard follow-ups.
 
 <iframe
   width="800"
@@ -20,26 +22,42 @@ Quick Replies is one of the menus in NoBox.AI used as message templates to respo
   allowFullScreen
 ></iframe>
 
+---
+
+## **Quick Replies Menu View**
+
 <ImageZoom
-  src="/images/en/Quick%20Reply.png"
-  alt="Quick Replies Menu Overview"
+  src="/images/id/Balasan%20Cepat%20(1).png"
+  alt="Quick Replies Menu View"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Add Quick Reply**&#x20;
+The view above is the main Quick Replies page, containing a list of message templates that can be quickly sent to customers by agents.
 
-To create a quick reply, please click the **[Quick Replies]** menu **➔ [Add Quick Reply]**.  
-The **[Add Quick Reply]** dialog will appear, then complete all the required fields in the dialog.
+On this page, users can view all created quick reply data, complete with command information, reply type, and message content.
+
+---
+
+## **Adding a Quick Reply**
+
+1. To create quick reply data, click the **[Quick Replies]** menu ➔ **[Add Quick Reply]**.
+2. An **[Add Quick Reply]** dialog will appear; complete the input fields within that dialog.
+
+### Add Quick Reply Button
 
 <ImageZoom
-  src="/images/en/New%20Quick%20Reply%20.png"
-  alt="Add New Quick Reply Dialog"
-  width={800}
+  src="/images/id/Tambah.png"
+  alt="Add Button"
+  width={125}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+The **[Add]** button is used to open the input form for new quick reply data.
+
+### Add Quick Reply Dialog Fields
 
 <table>
   <thead>
@@ -52,69 +70,86 @@ The **[Add Quick Reply]** dialog will appear, then complete all the required fie
   <tbody>
     <tr>
       <td>Command</td>
-      <td>Reply command</td>
-      <td>Account</td>
+      <td>The command trigger for the reply</td>
+      <td>Banking</td>
     </tr>
     <tr>
       <td>File</td>
-      <td>Select file</td>
+      <td>Select an attachment file</td>
       <td></td>
     </tr>
     <tr>
       <td>Type</td>
-      <td>Reply type</td>
+      <td>The category type for the reply</td>
       <td>General</td>
     </tr>
     <tr>
       <td>Message Content</td>
-      <td>Message body</td>
+      <td>The actual body of the message</td>
       <td>
-        Payment can be transferred to Bank BCA xxx.xxxx.xxx a.n. Ana or Bank
-        Mandiri xxx-xx-xxxx-x a.n. Ana. After the transfer, please send the
-        proof of payment to WhatsApp 0810000-0000.
+        Payment can be transferred to Bank BCA xxx.xxxx.xxx on behalf of Ana. Mandiri Bank xxx-xx-xxxx-x on behalf of Ana. After transfer, please send proof to WA 0810000-0000.
       </td>
     </tr>
   </tbody>
 </table>
 
-After completing all the fields above, click **[Save]** to store the data.
+After all fields are correctly completed, click the **[Save]** button to store the quick reply in the system.
 
-## **Edit and Delete Quick Reply Data**
+## **Editing and Deleting Quick Reply Data**
 
-To edit a quick reply, first select the data you want to edit. Make the necessary changes and click **[Save]** to save them.  
-To delete a quick reply, select the quick reply data you want to remove, then click **[Delete]**. A confirmation dialog will appear asking whether you want to delete the data. Click **[Yes]** to proceed or **[No]** to cancel.
+### Editing Quick Reply Data
+
+To edit a specific quick reply, select the data you wish to modify first. Make your edits and click **[Save]** to store the changes.
+
+Changes are saved immediately and will be ready for further use in conversations.
+
+### Deleting Quick Reply Data
+
+To delete a quick reply, select the item from the list and click **[Delete]**; a confirmation prompt will appear asking if you want to delete the data.
+
+Click **[Yes]** to confirm or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+Deleting quick reply data is permanent and cannot be undone. Ensure that the data to be deleted is no longer needed.
+</Callout>
+
+---
 
 ## **How to Use Quick Replies**
 
+The Quick Reply feature can be used directly on the conversation page within the Inbox.
+
 To send a quick reply, follow these steps:
 
-1\. Select the **[Messages] ➔ [Inbox]** module to view all incoming conversations, then choose one of the messages.
+1. Select the **[Messages ➔ Inbox]** module to view all incoming conversations. Then, select one of those messages.
 
-2\. In the message input field, press **"/"** on your keyboard.
+2. In the message input field, press the **"/"** key on your keyboard.
 
 <ImageZoom
-  src="/images/en/Cara%201%20%20(2).png"
-  alt="Using Quick Reply Shortcut"
+  src="/images/id/Kirim%20Balasan%20Cepat.png"
+  alt="How to Send a Quick Reply"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-3\. A list of available quick replies will appear. Select the quick reply you need.
+3. A list of available quick replies will appear. Select the one that you need.
 
 <ImageZoom
-  src="/images/en/Cara%202.png"
-  alt="Quick Reply Selection"
+  src="/images/id/List%20Balasan%20Cepat.png"
+  alt="Quick Reply List"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-4\. The selected quick reply will automatically appear in the message field. You can still edit the message before sending it, then click the [ <img src="/images/en/send.png" alt="Send" className="inline h-5 w-auto mx-1" /> ] button to send the message.
+4. The quick reply content will automatically be entered into the message column. You can also edit the content before it is sent.
+
+5. Finally, press the [ <img src="/images/id/send.png" alt="Send" className="inline h-5 w-auto mx-1" /> ] button to deliver the message.
 
 <ImageZoom
-  src="/images/en/Cara%203.png"
-  alt="Sent Message with Quick Reply"
+  src="/images/id/Balasan%20Cepat%20Terkirim.png"
+  alt="Quick Reply Sent"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
@@ -122,5 +157,32 @@ To send a quick reply, follow these steps:
 
 ---
 
-If you encounter any issues or difficulties related to NoBox.AI,  
-please contact us via [Support Ticket](https://crm.nobox.ai/clients/tickets).
+<Tips>
+## **Usage Tips**
+
+To optimize the use of Quick Replies, consider the following tips:
+
+- Create templates that address common customer needs.
+- Periodically update your quick reply templates.
+- Use command triggers that are easy for the team to remember.
+- Avoid making messages excessively long.
+- Tailor the content to the context of the conversation.
+
+</Tips>
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you experience issues while using the Quick Reply feature, you can try the following:
+
+- Refresh the system page.
+- Check your internet connection.
+- Ensure your account has the appropriate access rights.
+- Log out and then log back in.
+- Clear your browser cache if necessary.
+
+</Kendala>
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

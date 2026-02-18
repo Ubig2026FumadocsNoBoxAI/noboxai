@@ -1,65 +1,79 @@
 ---
 title: Funnel
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Categorizing marketing and maintenance stages in NoBox.AI.
 icon: MessageCircleReply
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Funnel is one of the menus in NoBox.AI used to categorize the stages of marketing and support processes.
+Funnel is a feature in NoBox.AI used to categorize stages of the marketing and customer support process. This feature is visualized as a workflow that helps your team monitor the customer journey, from initial interaction to service completion or transaction.
+
+With a structured funnel system, you can evaluate the effectiveness of campaigns and the team's response speed at every customer touchpoint.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/bNBOuWh_xGQ"
-  title="NoBox Interface Introduction"
+  title="NoBox Funnel Management Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerPolicy="strict-origin-when-cross-origin"
   allowFullScreen
 ></iframe>
 
+---
+
+## **Funnel Menu View**
+
 <ImageZoom
-  src="/images/en/Funnel.png"
-  alt="Funnel Menu Overview"
-  width={400}
+  src="/images/id/Funnel.png"
+  alt="Funnel Menu View"
+  width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
 />
 
-## **Add Funnel**
+This page displays a list of all funnel stages active in your system. You can view a summary of performance and the total number of contacts at each stage collectively.
 
-To create funnel data, please click the **[Funnel]** menu **➔ [Add Funnel]**.  
-The **[Add Funnel]** dialog will appear, then enter the funnel name in the dialog.
+---
+
+## **Funnel Data Management**
+
+### Adding a New Funnel
+1. Click the **[Funnel]** menu ➔ **[Add Funnel]** button.
+2. Enter the name of the funnel stage (e.g., "New Prospect," "Negotiation," "Paid").
+3. Click **[Save]** to register the stage into the system.
 
 <ImageZoom
-  src="/images/en/New%20Funnel%20.png"
-  alt="Add New Funnel Interface"
+  src="/images/id/Tambah%20Funnel.png"
+  alt="Add Funnel Stage"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-After you have entered the funnel name in the dialog above, click **[Save]** to store the data.
+### Editing and Deleting Funnel Data
+- **Edit**: Select the funnel data, adjust its naming, and click **[Save]**. Changes will be immediately reflected across all connected customer profiles.
+- **Delete**: Select the data you wish to remove and click the **[Delete]** button.
 
-## **Edit and Delete Funnel Data**
+<Callout type="info" title="Important Information">
+Deleting funnel data is permanent. Contacts in a deleted stage will lose their original stage labels. Ensure you have moved contacts to another stage before deleting funnel data.
+</Callout>
 
-To edit a funnel data, please select the data you want to edit. Make your changes and click **[Save]** to save them.  
-To delete a funnel data, select the funnel data you want to delete, then click **[Delete]**. A confirmation dialog will appear asking whether you want to delete the data. Click **[Yes]** to proceed or **[No]** to cancel.
+---
 
-## **How to Use Funnel**
+## **How to Use the Funnel**
 
-1\. Open the **[Inbox]** menu, then select one of the available conversations.
+Funnels can be applied directly while you interact with customers on the conversation page.
 
-2\. Click the [ <img src="/images/en/information%20icon.png" alt="Information" className="inline h-5 w-auto mx-1" /> ] icon to display the chat details.  
-Click the Funnel section to view previously created funnel data or add a new funnel.
-
-3\. Select one of the available funnel data.
+1. Open the **[Inbox]** menu and select a chat.
+2. Click the information icon [ <img src="/images/id/information%20icon.png" alt="Information" className="inline h-5 w-auto mx-1" /> ] in the top-right corner to open the detail panel.
+3. In the **Funnel** section, click the *dropdown* and select the appropriate stage for that customer.
 
 <ImageZoom
-  src="/images/en/Cara%20Funnel.png"
-  alt="Selecting Funnel Stages"
+  src="/images/id/Penggunaa%20Funnel.png"
+  alt="Applying Funnel to Chat"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
@@ -67,5 +81,34 @@ Click the Funnel section to view previously created funnel data or add a new fun
 
 ---
 
-If you encounter any issues or difficulties related to NoBox.AI,  
-please contact us via [Support Ticket](https://crm.nobox.ai/clients/tickets).
+<Tips>
+## **Usage Tips**
+
+Optimize your business flow with these funnel management tips:
+
+- Create logical funnel stages that follow your actual customer journey.
+- Use short and clear naming (e.g., "MQL," "SQL," "Closed Won").
+- Perform regular evaluations; if too many contacts pile up at one stage, it indicates a bottleneck in your business process.
+- Utilize the funnel to prioritize chat handling; focus on customers at the final stages (approaching a transaction).
+- Train your team to be disciplined in updating funnel status whenever progress occurs in a conversation.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues with the Funnel feature, follow these steps:
+
+- **Funnel Does Not Appear in Chat Dropdown**: Ensure you have pressed the **Save** button when creating the funnel and that its status is active.
+- **Failed to Change Funnel Status**: Check your internet connection or try refreshing the dashboard page.
+- **Funnel Data Deleted Accidentally**: Unfortunately, deleted data is permanent. Immediately recreate the stage and re-associate it with the relevant contacts.
+- **Restricted Access Rights**: Ensure your account role has the authority to add or edit CRM data.
+- **Application Slows Down When Selecting Funnel**: Clear your browser cache to speed up dropdown data loading.
+
+</Kendala>
+
+---
+
+If you experience any problems or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

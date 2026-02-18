@@ -5,7 +5,9 @@ icon: MessageCircle
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Displays all information related to the Messages menu in a more concise summary, along with several informational charts about agents.
+The **Message Dashboard** provides a real-time summary of all conversation activities between customers and agents.
+
+This centralized HUB allows you to monitor message volumes, handling statuses, agent performance, and overall customer service efficiency to drive better business evaluations.
 
 <iframe
   width="800"
@@ -19,76 +21,160 @@ Displays all information related to the Messages menu in a more concise summary,
   allowFullScreen
 ></iframe>
 
+---
+
+## **Message Dashboard Menu View**
+
+### Main Page View
+
 <ImageZoom
-  src="/images/en/Messages%20Dashboard.png"
-  alt="NoBox Dashboard Interface"
+  src="/images/id/Dasbor%20Pesan.png"
+  alt="Message Dashboard View"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-On this page, there are several sections, each with its own function. The explanations are as follows:
+This view shows a summary of all conversation activities occurring within the system.
+
+On this page, users can immediately see the number of messages, handling status, agent performance charts, and recent activities without having to open menus one by one.
+
+### Information Displayed
+
+On the Message Dashboard display, there are several key pieces of information that support customer service monitoring.
+
+The data presented includes the number of new conversations, in-progress, completed, archived, message charts, agent status, and the distribution of conversation tags.
+
+---
+
+## **Components of the Message Dashboard Menu**
 
 <table>
   <thead>
     <tr>
-      <th width="185.79998779296875">Feature/Button</th>
+      <th width="200">Section</th>
       <th>Function</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>New</td>
-      <td>
-        Total number of conversations that have not yet been assigned to an
-        agent
-      </td>
+      <td>Displays the number of conversations that have not yet been assigned to an agent.</td>
     </tr>
     <tr>
       <td>In Progress</td>
-      <td>
-        Total number of conversations that have already been assigned to an
-        agent
-      </td>
+      <td>Displays the number of conversations currently being handled by agents.</td>
     </tr>
     <tr>
       <td>Completed</td>
-      <td>
-        Total number of conversations that have been replied to and are intended
-        to be closed by the agent
-      </td>
+      <td>Displays the number of conversations that have been resolved.</td>
     </tr>
     <tr>
-      <td>Archived</td>
-      <td>Total number of archived conversations</td>
+      <td>Archive</td>
+      <td>Displays the number of conversations that have been archived.</td>
     </tr>
     <tr>
       <td>Conversations Created</td>
       <td>
-        Graphical information of all received and sent conversations (per hour
-        or per day)
+        Displays a chart of the number of incoming and outgoing messages over time.
       </td>
     </tr>
     <tr>
-      <td>Agents &amp; Supervisors</td>
-      <td>Graphical information of the total number of company members</td>
+      <td>Agents & Supervisors</td>
+      <td>Displays the number of active agents and supervisors.</td>
     </tr>
     <tr>
       <td>Conversation Tags</td>
-      <td>Graphical information of conversations based on tags</td>
+      <td>Displays the distribution of conversations based on tags.</td>
     </tr>
     <tr>
       <td>Agent Online Status</td>
-      <td>Graphical information of agents based on their online status</td>
+      <td>Displays the online and offline status of agents.</td>
     </tr>
     <tr>
       <td>Conversation Funnel</td>
-      <td>Graphical information of conversations based on funnel stages</td>
+      <td>Displays the flow of conversation processes from start to finish.</td>
     </tr>
   </tbody>
 </table>
 
 ---
 
-If you encounter any issues or difficulties related to NoBox.AI,  
-please contact us via [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Detailed Component Breakdown**
+
+- **New**  
+  This section displays the number of conversations not yet handled by agents. This information is used to track the volume of messages still awaiting a response.
+
+- **In Progress**  
+  Displays the number of conversations currently being handled by agents. This data shows the active workload of the team.
+
+- **Completed**  
+  Displays the number of conversations that have been finalized. This information helps evaluate the service resolution rate.
+
+- **Archive**  
+  Displays conversations that have been saved as archives. This data is used for service documentation.
+
+- **Conversations Created**  
+  Displays charts of message activity over time, helping to identify customer communication trends.
+
+- **Agents & Supervisors**  
+  Displays the number of active team members. This information is used to monitor resource availability.
+
+- **Conversation Tags**  
+  Displays message distribution according to tag categories. This feature simplifies classification and conversation analysis.
+
+- **Agent Online Status**  
+  Displays the online and offline status of agents, ensuring the service team's readiness.
+
+- **Conversation Funnel**  
+  Displays the journey of messages from entry to completion. This feature helps evaluate the effectiveness of service processes.
+
+---
+
+## **How to Read the Message Dashboard**
+
+### Guidelines for Reading Data
+
+To properly understand the data on the Message Dashboard, users should observe the following:
+
+1. Monitor the number of new messages daily.
+2. Compare the message volume with the number of active agents.
+3. Track the status of "In Progress" vs "Completed."
+4. Use charts to visualize communication trends.
+
+### Data Interpretation
+
+The dashboard data can be used to assess the quality of customer service. Supervisors or administrators can utilize this information as material for routine evaluations and team performance improvements.
+
+---
+
+<Tips>
+## **Usage Tips**
+
+To maximize the use of the Message Dashboard, it is recommended to:
+
+- Check the dashboard periodically.
+- Ensure agents are active during operational hours.
+- Use conversation tags consistently.
+- Monitor the funnel for service evaluations.
+- Archive completed conversations properly.
+
+</Tips>
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you experience obstacles, follow these steps:
+
+- Refresh the system page.
+- Ensure your internet connection is stable.
+- Verify user account access rights.
+- Log out and log back in.
+- Clear your browser cache.
+- Contact the support team if issues persist.
+
+</Kendala>
+---
+
+If you experience any problems or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

@@ -1,323 +1,402 @@
 ---
 title: Inbox
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
 icon: Mail
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Inbox is one of the NoBox.Ai features used to manage all incoming messages from various channels such as WhatsApp, Telegram, Shopee, etc.
+The **Inbox** is the primary interface for managing all incoming messages from connected channels, including WhatsApp, Telegram, and marketplaces like Shopee.
+
+It streamlines the customer journey from initial contact to resolution, ensuring that your marketing and support efforts are organized, responsive, and highly effective.
 
 <iframe
-  width="742"
-  height="418"
-  src="https://www.youtube.com/embed/CeNBiHeQ1aU/"
-  title="01. Instalasi NoBox Desktop"
+  width="800"
+  height="450"
+  className="rounded-lg"
+  src="https://www.youtube.com/embed/CeNBiHeQ1aU"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
 ></iframe>
 
+---
+
+## **Inbox Menu View**
+
 <ImageZoom
-  src="/images/en/Inbox%20(1).png"
-  alt="NoBox Inbox Interface"
+  src="/images/id/KotakMasukTampilan.PNG"
+  alt="NoBox Inbox View"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
 />
+
+The view above is the main Inbox page, displaying all incoming messages from various connected channels.
+
+On this page, users can view the list of conversations, message status, sender identity, as well as perform message replies, agent assignments, and direct conversation management.
+
+---
+
+## **Inbox Menu Features**
 
 <table>
   <thead>
     <tr>
-      <th width="160.199951171875">Features/Buttons</th>
+      <th width="134.5999755859375">Feature/Button</th>
       <th>Function</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>All</td>
-      <td>All incoming conversations.</td>
+      <td>Displays all incoming conversations.</td>
     </tr>
     <tr>
-      <td>Unassigned</td>
-      <td>All conversations not yet assigned to an agent.</td>
+      <td>New</td>
+      <td>Displays all conversations that have not yet been assigned to an agent.</td>
     </tr>
     <tr>
-      <td>Assigned</td>
-      <td>Conversation assigned to the agent.</td>
+      <td>In Progress</td>
+      <td>Contains conversations that have been assigned to an agent.</td>
     </tr>
     <tr>
-      <td>Resolved</td>
+      <td>Completed</td>
       <td>
-        Content includes a conversation that has been successfully
-        completed/answered, and the agent wants to end the dialogue.
+        Contains conversations that have been perfectly resolved/answered and the agent wishes to close.
       </td>
     </tr>
   </tbody>
 </table>
 
-- The Archive Conversation feature allows users to store or sort messages that may no longer be relevant or need a response. By archiving, users can clean up their main conversation list without permanently deleting those messages. Please click the icon [ <img src="/images/en/Arsip.png" className="inline h-5 w-auto mx-1" alt="Archive" /> ] To display archived conversations.
-- You can filter conversations by Status, Channel, Account, Contact, etc. To filter conversations, please click the icon. [ <img src="/images/en/filter.png" className="inline h-5 w-auto mx-1" alt="Filter" /> ] To display a conversation filter, click the **[Show]** button after setting the desired data filter, and the conversation will appear according to the filter. Click [Reset] to remove the conversation filter.
-- The Conversation Feature allows users to start a new conversation with existing contacts in their list. This can be very useful for initiating chats with someone without having to manually search for the contact or group name. Please click the icon [ <img src="/images/en/percakapan baru.png" className="inline h-5 w-auto mx-1" alt="New Conversation" /> ] to make a new dialogue
-- The Search feature is used to find conversations or contacts that match the typed keywords.
+---
+
+## **Filtering, Archiving, and Searching Conversations**
+
+<Callout type="info" title="Important Information">
+- **Conversation Archive** is a feature for storing or sorting messages that may no longer be relevant or require immediate response. By archiving, users can clean up their main conversation list without permanently deleting the messages. Click the icon [ <img src="/images/id/Arsip.png" alt="Archive" className="inline h-5 w-auto mx-1" /> ] to display archived conversations.
+- You can **filter conversations** based on Status, Channel, Account, Contact, etc. To filter, click the icon [ <img src="/images/id/filter.png" width="500" /> ] and the filter options will appear. Select the desired data and click the **[Show]** button. Click **[Reset]** to clear the conversation filters.
+</Callout>
 
 <ImageZoom
-  src="/images/en/Pencarian.png"
-  alt="Search Bar"
+  src="/images/id/Filter%20Conversation.png"
+  alt="Filtering Conversations"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- The **Create Conversation** feature allows users to start a new chat with an existing contact in their list. This is useful for initiating a conversation without manually searching for a contact or group name. Click the icon [ <img src="/images/id/percakapan%20baru.png" alt="New Conversation" className="inline h-5 w-auto mx-1" /> ] to start a new conversation.
+- The **Search** feature is used to find conversations or contacts that match typed keywords.
+
+<ImageZoom
+  src="/images/id/Pencarian.png"
+  alt="Search Feature"
   width={300}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Incoming Message Distribution to Agents**
-
-On the Inbox page, a supervisor can allocate customers to available agents. To add an agent, please click the **[+ Agent]** button, and a list of available agents will appear. Click an agent's name to select that agent.
-
-<ImageZoom
-  src="/images/en/Add%20Agent.png"
-  alt="Add Agent"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-The system can also automatically distribute customers to agents who are online.
-
-<ImageZoom
-  src="/images/en/Assigned.png"
-  alt="Assigned Conversations"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **How to Enable Auto-Complete or Auto-Archive**
-
-To enable the Auto Complete and Auto Archive features, you can do the following:
-
-1\. Open the **[Settings] ➔** click on the **[Business Profile]** menu.
-
-2\. Enable in the Auto-Complete or Auto-Archive category.
-
-3\. Every few hours, the conversation or chat history will automatically close or archive.
-
-<ImageZoom
-  src="/images/en/Set%20Auto.png"
-  alt="Setting Auto Response"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Automatic Resolved**
-
-In the Inbox page, there is an auto-complete feature used to toggle the setting for automatically marking a conversation as complete. This feature applies to chats with a status of In Process.
-
-<ImageZoom
-  src="/images/en/Auto%20Resolved.png"
-  alt="Auto Resolved Settings"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-If you want to mark it as complete immediately without waiting for Auto Complete, you can click the icon [ <img src="/images/en/titik%20tiga.png" className="inline h-5 w-auto mx-1" alt="More Options" /> ] then a pop-up will appear, select [Mark as Done].
-
-## **Automatic Archieve**
-
-On the Inbox page, there is an automatic archive feature used to set whether or not conversations are automatically archived. This feature applies to chats with the Completed status.
-
-<ImageZoom
-  src="/images/en/Auto%20Archived.png"
-  alt="Auto Archive Settings"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-If you want to archive directly without waiting for the automatic archive, you can click the icon [ <img src="/images/en/Arsip.png" className="inline h-5 w-auto mx-1" alt="Archive" /> ] when initiated, the conversation will be archived.
-
-In the Inbox page, there is a conversation pin feature used to attach important messages. If you want to pin a conversation, you can click the icon [ <img src="/images/en/titik%20tiga.png" className="inline h-5 w-auto mx-1" alt="More Options" /> ] then a pop-up will appear, choose [Pin].
-
-<ImageZoom
-  src="/images/en/pin%20conversation%20(1).png"
-  alt="Pin Conversation"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Unpin Conversation**
-
-You can also unpin a conversation by selecting a pinned conversation, then clicking the [ <img src="/images/en/titik%20tiga.png" className="inline h-5 w-auto mx-1" alt="More Options" /> ] icon. A pop-up will appear, select [Unpin].
-
-<ImageZoom
-  src="/images/en/unpin%20conversation.png"
-  alt="Unpin Conversation"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Conversation Informations**
-
-On the Inbox page, there is chat information. Please click the [ <img src="/images/en/information%20icon.png" className="inline h-5 w-auto mx-1" alt="Information" /> ] button, and the conversation details will appear.
-
-<ImageZoom
-  src="/images/en/Informasi%20Percakapan.png"
-  alt="Conversation Info"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-There are several parts, each with their own function. The explanation of these functions is as follows:
-
-- Information (name, profile photo, and phone number).
-- Conversation History is a feature used to display the history of completed conversations.
-
-<ImageZoom
-  src="/images/en/History Conversation.png"
-  alt="History Conversation"
-  width={300}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-- To update contact details, click the icon [ <img src="/images/en/edit%20contact.png" alt="Edit Contact" className="inline h-5 w-auto mx-1" /> ] which will direct you to edit the contact information.
-
-<ImageZoom
-  src="/images/en/Contact.png"
-  alt="Contact Details"
-  width={300}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-- The information includes the conversation account handler, the conversation creation date, and the date of the last message sent.
-
-<ImageZoom
-  src="/images/en/Conversation%20.png"
-  alt="Conversation Details"
-  width={300}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-- Notes are records related to the selected conversation. Notes can be added, edited, and deleted. Other agents can also add notes.
-
-<ImageZoom
-  src="/images/en/Notes.png"
-  alt="Conversation Notes"
-  width={300}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-- Tags are a feature used to categorize your chat data, and you can add more than one tag in a single chat.
-
-<ImageZoom
-  src="/images/en/Tag%20.png"
-  alt="Conversation Tags"
-  width={300}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-- Campaign is a feature used to convey promotional information connected to that conversation.
-
-<ImageZoom
-  src="/images/en/Campaign.png"
-  alt="Conversation Campaign"
-  width={300}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-- Funnel is one of the features used to categorize stages in marketing and support processes, or you can also create a new funnel.
-
-<ImageZoom
-  src="/images/en/Funnel.png"
-  alt="Conversation Funnel"
-  width={300}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-- A deal is a feature used to link the deal with the conversation.
-
-<ImageZoom
-  src="/images/en/Deal.png"
-  alt="Conversation Deal"
-  width={300}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-- Agent is a feature used to provide information about which agents are handling the conversation.
-
-<ImageZoom
-  src="/images/en/Agen%20Percakapan.png"
-  alt="Conversation Agent"
-  width={300}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **How to Reply a Message**&#x20;
-
-You can reply to incoming messages directly with NoBox. Open a conversation and respond based on the inquiry.
-
-<ImageZoom
-  src="/images/en/bals%20pesan.png"
-  alt="How to Reply a Message"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-Message status can be determined by the message indicator. If the message has the symbol [ <img src="/images/en/Percakapan terkirim.png" alt="Sent" className="inline h-5 w-auto mx-1" /> ] it has been sent; if the message has the symbol [ <img src="/images/en/terkirim.png" alt="Pending" className="inline h-5 w-auto mx-1" /> ] it has not been sent.
-
-## **Delete Message**
-
-On the Inbox page, there is a delete message feature used to remove messages from a conversation; this feature is only for deleting messages in NoBox. To delete a message, select the one you want to delete, then click **[Delete]**. A confirmation will appear asking if you want to delete the message. Click **[Yes]** to confirm or **[No]** to cancel.
-
-<ImageZoom
-  src="/images/en/delete%20pesan.png"
-  alt="Delete Message"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-In the Inbox page, there is a feature to send files such as images, photos, voice notes, PDFs, Excel, etc. To send a file, please click the icon [ <img src="/images/en/kirim%20file.png" className="inline h-5 w-auto mx-1" alt="Send File" /> ] and select the file you want to send [ <img src="/images/en/tipe%20kirim%20file.png" className="inline h-5 w-auto mx-1" alt="File Type" /> ]. A dialog **[Select File]** will appear for you to upload and send the file.
-
-<ImageZoom
-  src="/images/en/kirim%20pesan%20file.png"
-  alt="Send File Message"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-One of the menus in NoBox used for message templates to reply to messages faster can be in the form of text messages or media like images, GIFs, and videos. To send a quick reply, follow these steps:
-
-1\. In the input message, press **"/"**.
-
-2\. Then, a list appears to select the available quick reply. Choose one of the quick replies.
-
-3\. Thus, a quick reply will automatically be written in the message field, and you can press the \
-[ <img src="/images/en/send.png" className="inline h-5 w-auto mx-1" alt="Send" /> ] button to send the message.
-
-<ImageZoom
-  src="/images/en/balas%20dengan%20quick%20reply.png"
-  alt="Reply with Quick Reply"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
 />
 
 ---
 
-If you encounter any problems or difficulties related to NoBox, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Assigning Incoming Messages to Agents**
+
+On the Inbox page, supervisors can allocate customers to available agents. To add an agent, click the **[+ Agent]** button to display a list of available agents, then click the agent's name to select them.
+
+<ImageZoom
+  src="/images/id/KotakMasukTambahAgen.png"
+  alt="Adding Agent to Conversation"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+The system can also automatically distribute customers to agents who are currently online.
+
+<ImageZoom
+  src="/images/id/Alokasi%20Ke%20Agen.png"
+  alt="Allocating Conversations to Agents"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+---
+
+## **How to Enable Auto Complete or Auto Archive**
+
+To enable the Auto Complete and Auto Archive features, follow these steps:
+
+1. Open the **[Settings]** module ➔ click the **[Business Profile]** menu.
+2. Activate the category for **Auto Complete** or **Auto Archive**.
+3. Specify after how many hours the conversation will be automatically closed or archived.
+
+<ImageZoom
+  src="/images/id/Arsip%20Otomatis.png"
+  alt="Auto Archive Settings"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+### **Auto Complete**
+
+On the Inbox page, there is an auto-complete feature used to configure whether conversations are automatically marked as completed. This feature applies to chats with "In Progress" status.
+
+<ImageZoom
+  src="/images/id/Selesai%20Otomatis.png"
+  alt="Auto Complete Settings"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+If you want to mark a conversation as completed manually without waiting for the auto-timer, click the icon [ <img src="/images/id/titik%20tiga.png" alt="Menu" className="inline h-5 w-auto mx-1" /> ] and select **[Mark as Done]** from the pop-up.
+
+### Auto Archive
+
+On the Inbox page, there is an auto-archive feature used to configure whether conversations are automatically archived. This feature applies to chats with "Completed" status.
+
+<ImageZoom
+  src="/images/id/Kotak%20Masuk.png"
+  alt="Inbox View"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+If you want to archive immediately without waiting for auto-archive, click the icon [ <img src="/images/id/Arsip.png" alt="Archive" className="inline h-5 w-auto mx-1" /> ] to archive the conversation instantly.
+
+---
+
+## **Conversation Management**
+
+### Pinning a Conversation
+
+On the Inbox page, there is a pinning feature used to highlight important messages. To pin a conversation, click the icon [ <img src="/images/id/titik%20tiga.png" alt="Menu" className="inline h-5 w-auto mx-1" /> ] and select **[Pin]** from the pop-up.
+
+<ImageZoom
+  src="/images/id/Pin%20Percakapan.png"
+  alt="Pin Conversation Feature"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+### Unpinning a Conversation
+
+You can also remove a pinned conversation by selecting the pinned item, clicking the [ <img src="/images/id/titik%20tiga.png" alt="Menu" className="inline h-5 w-auto mx-1" /> ] icon, and selecting **[Unpin]**.
+
+<ImageZoom
+  src="/images/id/Unpin%20Percakapan.png"
+  alt="Unpin Conversation Feature"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+### Conversation Information
+
+On the Inbox page, conversation details are available; click the [ <img src="/images/id/information%20icon.png" alt="Information" className="inline h-5 w-auto mx-1" /> ] button to display them.
+
+<ImageZoom
+  src="/images/id/Informasi%20Percakapan.png"
+  alt="Detailed Conversation Information"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+Several sections have specific functions as explained below:
+
+- **Information** (Name, profile photo, and phone number).
+- **Conversation History** is a feature used to display completed conversation histories.
+
+<ImageZoom
+  src="/images/id/Riwayat%20Percakapan.png"
+  alt="Conversation History"
+  width={300}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- Information regarding the **contact's name and address**; to edit contact data, click the icon [ <img src="/images/id/edit%20contact.png" alt="Edit Contact" className="inline h-5 w-auto mx-1" /> ] to be directed to the edit contact page.
+
+<ImageZoom
+  src="/images/id/Kontak%20Percakapan.png"
+  alt="Conversation Contact"
+  width={300}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- **Message Detail** including the account handling it, creation date, and the last time a message was sent.
+
+<ImageZoom
+  src="/images/id/Percakapan.png"
+  alt="Conversation Detail"
+  width={300}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- **Notes** are reminders related to the selected conversation; notes can be added, edited, or deleted. Other agents can also contribute to these notes.
+
+<ImageZoom
+  src="/images/id/Catatan%20Percakapan.png"
+  alt="Conversation Notes"
+  width={300}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- **Tags** are used to group your conversation data; you can apply multiple tags within a single chat.
+
+<ImageZoom
+  src="/images/id/Tag%20Percakapan.png"
+  alt="Conversation Tags"
+  width={300}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- **Promotions** is a feature that shows promotional information linked to that specific conversation.
+
+<ImageZoom
+  src="/images/id/Promosi%20Percakapan.png"
+  alt="Conversation Promotions"
+  width={300}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- **Funnel** is used to categorize the marketing and support stages, or you can create a new funnel here.
+
+<ImageZoom
+  src="/images/id/Funnel.png"
+  alt="Conversation Funnel"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- **Deal** is a feature used to link a business deal with that conversation.
+
+<ImageZoom
+  src="/images/id/Penawaran%20Percakapan.png"
+  alt="Conversation Deal"
+  width={300}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- **Agents** displays information about all agents handling that specific conversation.
+
+<ImageZoom
+  src="/images/id/Agen%20Percakapan.png"
+  alt="Conversation Agent"
+  width={300}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+---
+
+## **Message Management**
+
+### Replying to Messages
+
+You can reply to incoming messages directly through NoBox. Open a conversation and respond to the customer's inquiries.
+
+<ImageZoom
+  src="/images/id/Balas%20Percakapan.png"
+  alt="How to Reply to Messages"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+Message delivery status is indicated by icons. If a message is marked with [ <img src="/images/id/Percakapan%20terkirim.png" alt="Sent" className="inline h-5 w-auto mx-1" /> ], it has been sent; if it is marked with [ <img src="/images/id/terkirim.png" alt="Not Sent" className="inline h-5 w-auto mx-1" /> ], it has not yet been sent.
+
+### Deleting Messages
+
+The Inbox page includes a delete feature to remove messages from a conversation; this feature only deletes the message within NoBox. To delete a message, select one and click **[Delete]**; a confirmation prompt will appear. Click **[Yes]** to confirm.
+
+<Callout type="info" title="Important Information">
+Deleting a message only removes it from NoBox; it does not delete it from the original platform (e.g., WhatsApp). Deletions are permanent and cannot be undone.
+</Callout>
+
+<ImageZoom
+  src="/images/id/Hapus%20Pesan.png"
+  alt="Delete Message Feature"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+### Sending Files
+
+The Inbox page allows sending various types of files, including images, photos, voice notes, PDFs, Excel files, etc. To send a file, click the icon [ <img src="/images/id/kirim%20file.png" alt="Send File" className="inline h-5 w-auto mx-1" /> ] and select the file type to send [ <img src="/images/id/tipe%20kirim%20file.png" alt="File Type" className="inline h-5 w-auto mx-1" /> ]. A **[Select File]** dialog will appear for you to upload and send.
+
+<ImageZoom
+  src="/images/id/Kirim%20Image.png"
+  alt="Send Image Feature"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+### Quick Replies
+
+NoBox includes a Quick Reply feature for message templates, allowing you to respond faster using text or media (images, GIFs, Videos). To send a quick reply:
+
+1. In the message input field, type **"/"**.
+2. A list of available quick replies will appear. Select one.
+3. The content will automatically populate the message field; press the [ <img src="/images/id/send.png" alt="Send" className="inline h-5 w-auto mx-1" /> ] icon to send.
+
+<ImageZoom
+  src="/images/id/Balasan%20Cepat.png"
+  alt="Quick Reply Feature"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+---
+
+<Tips>
+## **Usage Tips**
+
+Here are some tips to maximize your use of the Inbox menu:
+
+- Check for new messages regularly to ensure no customer is overlooked.
+- Use filtering to simplify finding specific conversations.
+- Utilize the pinning feature to keep track of important chats.
+- Apply tags to categorize various types of conversations.
+- Enable auto-archive to keep your view tidy.
+- Add notes to facilitate coordination between agents.
+- Use quick replies to speed up response times for customers.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues while using the Inbox menu, take these steps:
+
+- Ensure your internet connection is stable.
+- Refresh the page if conversations fail to appear or update.
+- Verify the status of connected accounts and channels.
+- Ensure agents have been correctly assigned.
+- Check auto-complete and auto-archive settings.
+- Log out and log back in if features are not functioning normally.
+- Clear your browser cache if the display is incorrect.
+- Contact the support team if problems persist.
+
+</Kendala>
+---
+
+If you have any issues or difficulties related to NoBox, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).
