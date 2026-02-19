@@ -1,74 +1,139 @@
 ---
 title: Form Dashboard
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Visualizing summary data, form submissions, payment statuses, and recent activities in NoBox.AI.
 icon: Clipboard
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Summary of activities related to form data that can assist you in decision-making.
+The **Form Dashboard** is a centralized interface in NoBox.AI designed to display a comprehensive summary of all form-related activities.
+
+This module enables users to monitor the total number of forms, submission results, payment statuses, and real-time activities, facilitating data-driven analysis and efficient operational management.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/Vc0-YrbfoXc/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/Vc0-YrbfoXc"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-On the display, there are several sections, each with its specific function. The explanation of these functions is as follows:
+---
+
+## **Form Dashboard Interface**
+
+### Main Dashboard View
 
 <ImageZoom
-  src="/images/en/Screenshot%202025-07-04%20132315.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Dasbor%20Formulir.png"
+  alt="Form Dashboard Interface"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="175.4000244140625">Features/Buttons</th>
-      <th>Function</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Model</td>
-      <td>Total form model data</td>
-    </tr>
-    <tr>
-      <td>Result</td>
-      <td>Total result form data</td>
-    </tr>
-    <tr>
-      <td>Paid Already</td>
-      <td>Total number of forms that have been paid</td>
-    </tr>
-    <tr>
-      <td>Unpaid</td>
-      <td>Total number of unpaid form submissions</td>
-    </tr>
-    <tr>
-      <td>Results by Status</td>
-      <td>Information on total form results by status</td>
-    </tr>
-    <tr>
-      <td>Form Results</td>
-      <td>Information on the total data from the submitted form model.</td>
-    </tr>
-    <tr>
-      <td>Final Result</td>
-      <td>Information on the latest form results</td>
-    </tr>
-  </tbody>
-</table>
+The dashboard provides a high-level overview of form data created and submitted within the system.
+
+From this page, users can immediately access form statistics, payment progress, and the latest entries without needing to navigate through individual menus.
+
+### Key Information Insights
+
+The Form Dashboard is structured to highlight critical data points for effective monitoring.
+
+Displayed metrics include the count of form models, total submissions, payment statuses (Paid vs. Unpaid), results categorized by status, and the most recent system activities.
 
 ---
 
-If you have any issues or difficulties related to NoBox.Ai, please contact us via [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Core Dashboard Components**
+
+| Component            | Function                                                                    |
+| -------------------- | --------------------------------------------------------------------------- |
+| Models               | Displays the total count of all form templates available in the system.      |
+| Results              | Shows the total volume of form data submitted by users.                     |
+| Paid                 | Tracks the number of form submissions that have completed payment.           |
+| Unpaid               | Highlights the number of form submissions with pending payments.              |
+| Results by Status    | Categorizes form data based on specific operational statuses.               |
+| Total Form Results   | Provides a consolidated figure for all forms processed.                     |
+| Latest Results       | Displays real-time data for the most recent form entries into the system.   |
+
+---
+
+## **Detailed Component Breakdown**
+
+- **Form Models**
+This section tracks the variety of active forms currently deployed. It helps administrators understand the range of data collection tools in use.
+
+- **Submission Results**
+Visualizes the total engagement from customers or users. This data serves as a primary metric for evaluating form reach and effectiveness.
+
+- **Completed Payments (Paid)**
+Focuses on finalized transactions, helping team members identify orders or registrations that are ready for the next phase of fulfillment.
+
+- **Pending Payments (Unpaid)**
+Identifies revenue opportunities that require follow-up, serving as a basis for re-engagement strategies with leads or customers.
+
+- **Categorized Status Results**
+Filters data into actionable groups such as "Processed," "Completed," or "Pending," allowing for a more granular view of individual submission lifecycles.
+
+- **Operational Totals**
+Provides a "big picture" view of the overall volume of work handled by the forms module, essential for high-level management reporting.
+
+- **Real-Time Activity Feed**
+Enables rapid response times by highlighting the very latest submissions, ensuring that urgent customer requests are addressed immediately.
+
+---
+
+## **Analyzing the Form Dashboard**
+
+### Data Interpretation Guide
+
+To get the most value from your Form Dashboard, follow these analysis steps:
+
+1. **Verify Timeframes**: Ensure the dashboard is filtered for the specific period you are auditing.
+2. **Monitor Payment Velocity**: Keep a close watch on the ratio of Paid vs. Unpaid submissions to maintain healthy cash flow.
+3. **Audit Status Progress**: Regularly check "Results by Status" to identify potential bottlenecks in your operational workflow.
+4. **Action Recent Data**: Use the "Latest Results" feed to prioritize immediate follow-ups with new respondents.
+
+### Strategic Application
+
+Dashboard data is instrumental in assessing form utility and administrative efficiency.
+
+Supervisors and administrators should leverage these insights for routine performance evaluations, identifying high-performing forms, and optimizing the customer journey from submission to payment.
+
+---
+
+<Tips>
+## **Usage Tips**
+
+To maximize the benefits of the Form Dashboard:
+
+- **Routine Audits**: Perform a quick check of the dashboard at the start of every work shift.
+- **Accurate Status Tracking**: Ensure all team members update submission statuses in real-time.
+- **Financial Integration**: Use payment statuses as a definitive source for verifying daily revenue.
+- **Quick Response Focus**: Prioritize the "Latest Results" to enhance customer satisfaction through speed.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues with the Form Dashboard:
+
+- Refresh the page to ensure real-time charts and figures are updated.
+- Verify your internet connectivity for stable data fetching.
+- Confirm your account permissions (some analytical views may be restricted).
+- Log out and log back in if data synchronization appears delayed.
+- Clear browser cache if interface elements fail to render correctly.
+- Contact NoBox support if specific data points seem to calculate incorrectly.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

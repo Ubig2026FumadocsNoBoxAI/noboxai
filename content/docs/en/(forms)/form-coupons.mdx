@@ -1,133 +1,136 @@
 ---
 title: Form Coupons
-description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
+description: Creating, managing, and configuring promotional codes and discounts for marketing campaigns in NoBox.AI.
 icon: Percent
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Form Coupons is one of the menus in NoBox used to create, manage, and configure coupons or promo codes that can be used in the system.
-This feature is very useful to support marketing strategies, increase sales conversion, and provide incentives to customers in the form of discounts or free shipping.
+**Form Coupons** is a flexible administration module in NoBox.AI used to create and manage promotional codes that customers can apply during their checkout process.
+
+This feature is essential for driving marketing stategies, increasing sales conversion rates, and providing incentives such as flat discounts, percentage-based deductions, or free shipping rewards.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/2u7fdZEnsv4?si=rSD6m52__AfsLJpF"
-  title="Pengenalan Tampilan NoBox"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
+---
+
+## **Form Coupons Menu Interface**
+
 <ImageZoom
-  src="/images/en/Form%20Coupons.png"
-  alt="Tampilan Dasbor NoBox"
+  src="/images/id/Form%20Coupons.png"
+  alt="Coupons and Promo Management Dashboard"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-## **Add Coupons Formulir**
+The interface above represents the primary **Form Coupons** dashboard, which lists every promotional code currently defined in your system.
 
-To create a new coupon form model, click the menu [Form Coupons] ➔ [Add Form Coupons].
-The [Add Form Coupons] dialog will appear.
+From this page, users can review coupon names, unique codes, active status, and specific usage logic. It also serves as the control panel for adding, editing, or deleting coupons during campaign cycles.
+
+---
+
+## **Adding a New Coupon**
+
+1. Navigate to the **[Form Coupons]** menu ➔ **[Add Form Coupon]**.
+2. An **[Add Form Coupon]** dialog will appear for detailed configuration.
+
+### Add Form Coupon Dialog View
 
 <ImageZoom
-  src="/images/en/Tambah%20Form%20Coupons.png"
-  alt="Tampilan Dasbor NoBox"
+  src="/images/id/Tambah%20Form%20Coupons.png"
+  alt="New Coupon Configuration Form"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-Complete the required fields, for example as follows:
+### **Coupon Configuration Fields**
 
-| **Field**         | **Description**               | **Example**                |
-| ----------------- | -------------------- | ------------------------- |
-| Nama              | Name of the coupon or promo that will be displayed in the system | Diskon Tahun Baru         |
-| Code              | Coupon code entered by users during checkout         | TahunBaru2026             |
-| Status            | Coupon status: active or inactive. If inactive, the coupon cannot be used               | Aktif                     |
-| Disc For          | Determines whether the discount applies to products or shipping costs       | Shipping                  |
-| Disc Type         | Discount type: fixed price (fixed amount) or percentage          | Percentage                |
-| Disc Value        | Discount value according to the selected discount type  | 100%                      |
-| Has Zone          | Check if the coupon is only valid for certain zones        |                           |
-| Origin Type       | Type of origin area if Has Zone is checked (Country, State, City)          | State                     |
-| Origin State      | Origin province if Has Zone is checked      | Jawa Timur                |
-| Destination Type  | Type of destination area if Has Zone is checked       | State                     |
-| Destination State | Destination state if Has Zone is checked      | Jawa Timur                |
-| Max Use           | Maximum number of times the coupon can be used   | 100                       |
-| Products          | Specific products that can use this coupon       | Pashmina Voal             |
-| Payments          | Allowed payment methods for this coupon (Bank Central Asia, COD, PayPal)   | Bank Central Asia, Paypal |
-| New Customer      | Check if the coupon is only for new customers   |                           |
-| Has Date Range | Check if the coupon has a usage time limit | Start date: 31-12-2025 End date: 02-01-2026 |
-| Has Min Order | Check if the coupon requires a minimum number of items per order | 2 |
-| Has Max Discount | Check if the coupon has a maximum discount amount | Rp35.000 |
-| Has Min Purchase | Check if the coupon requires a minimum purchase amount | Rp70.000 |
+Complete the fields based on your specific promotional requirements:
 
-After completing all required fields, click [Save] to store the newly created coupon form model.
+| **Field**         | **Description**                                                              | **Example**                                 |
+| ----------------- | ---------------------------------------------------------------------------- | ------------------------------------------- |
+| Name              | Internal title for the campaign                                              | New Year Flash Sale                         |
+| Code              | The unique string the customer enters at checkout                            | NEWYEAR2026                                 |
+| Status            | Active/Inactive toggle; inactive codes will fail during checkout             | Active                                      |
+| Disc For          | Targets the discount to either specific products or shipping costs            | Shipping                                    |
+| Disc Type         | Fixed Price (flat amount) or Percentage-based deduction                      | Percentage                                  |
+| Disc Value        | The numerical value of the discount                                          | 100%                                        |
+| Has Zone          | Enable if the coupon is restricted to specific geographic areas              | -                                           |
+| Origin Type       | Region type of the sender if Has Zone is enabled                              | State                                       |
+| Origin State      | Specific sender province for zone validation                                 | East Java                                   |
+| Destination Type  | Region type of the recipient if Has Zone is enabled                           | State                                       |
+| Destination State | Specific recipient province for zone validation                              | East Java                                   |
+| Max Use           | Total number of times this coupon can be redeemed globally                   | 100                                         |
+| Products          | Linking the coupon to specific inventory items                               | Pashmina Voal                               |
+| Payments          | Restricting the coupon to specific payment gateways                          | Bank Central Asia, Paypal                   |
+| New Customer      | Restricts redemption to first-time buyers only                               | -                                           |
+| Date Range        | Sets the valid lifecycle of the coupon code                                  | Start: 31-12-2025 End: 02-01-2026           |
+| Min Order Qty     | Minimum number of items required in the cart                                 | 2 Items                                     |
+| Max Discount Cap  | Sets a ceiling for the discount amount (useful for % based promos)           | Rp 35,000                                   |
+| Min Purchase Val  | Minimum currency value required to trigger the coupon                        | Rp 70,000                                   |
 
-## **Additional Explanation of Special Fields**
+<Callout type="info" title="Detailed Usage Logic">
+- **Has Zone:** Restricts the promo to specific distribution channels, preventing losses on long-distance shipping.
+- **Date Range:** Automatically activates and retires the code based on your campaign schedule.
+- **Min Order/Purchase:** Ensures the average order value remains profitable before a discount is applied.
+- **Max Discount:** Essential for percentage deals (e.g., 50% discount but capped at Rp 20,000).
+</Callout>
 
-- **Has Zone:**
-If enabled, the coupon can only be used for transactions with specific shipping origins and destinations.
+Once configured, click **[Save]** to deploy the coupon.
 
-- **Has Date Range:**
-If enabled, you can define the start date and end date of the coupon’s validity period.
+## **Managing Coupon Data**
 
-- **Has Min Order:**
-Used to define the minimum number of items in an order for the coupon to be applicable.
+### Editing Coupons
 
-- **Has Max Discount:**
-Used to limit the maximum discount amount that can be applied, even if the discount percentage is large.
+To modify a promo code, select it from your dashboard. Update parameters such as expiry dates or discount values and click **[Save]**. Changes are updated immediately in the checkout logic.
 
-- **Has Min Purchase:**
-Used to define the minimum total purchase value required to use the coupon.
+### Deleting Coupons
 
-## **Saving Coupon Data**
+To retire a promo entirely, select it and click **[Delete]**. Confirm the deletion in the pop-up prompt. 
 
-After all fields are completed according to the promo requirements, click the [Save] button to store the newly created coupon data.
-If there are required fields that are not filled in or the data format is incorrect, the system will display an error message to help you fix it.
+<Callout type="info" title="Important Information">
+Coupon deletion is permanent. If you only want to stop a promo temporarily, we recommend switching its **Status** to "Inactive" instead of deleting it.
+</Callout>
 
-## **Edit Coupons Form**
+---
 
-To edit an existing coupon:
+<Tips>
+## **Marketing Tips**
 
-1\. Select the coupon data you want to edit from the list.
+- **Memorable Codes**: Use short, caps-locked codes like "SUMMER24" that are easy for customers to type accurately.
+- **Urgency**: Use the **Date Range** feature to create a sense of urgency for "limited-time offers."
+- **Niche Promos**: Use the **Products** field to create discounts for specific slow-moving inventory items.
+- **Risk Management**: Always set a **Max Use** limit to prevent your budget from being exceeded if a code goes viral.
+- **Capped % Discounts**: When offering high percentage discounts (100% shipping, etc.), always use **Max Discount** to protect your margins.
 
-2\. Click the [Edit] button.
+</Tips>
 
-3\. Make changes to the required fields.
+---
 
-4\. Click [Save] to save the changes.
+<Kendala>
+## **Troubleshooting**
 
-The changes you make will be applied immediately to the coupon and will affect subsequent transactions.rubahan yang Anda lakukan akan langsung diterapkan pada kupon tersebut dan memengaruhi transaksi berikutnya.
+If you encounter issues while managing coupons:
 
-## **Delete Coupons Formulir**
+- Refresh the dashboard if newly created codes fail to appear in your list.
+- Ensure all mandatory numerical fields are filled with digits only (no currency symbols).
+- Verify that your account has "Marketing Manager" or "Admin" level permissions.
+- **If a customer reports a code 'not working'**: Check its Status, Expiry Date, Zone restrictions, and minimum purchase requirements against the customer's actual cart.
 
-To delete a coupon:
+</Kendala>
 
-1\. Select the coupon data you want to delete.
+---
 
-2\. Click the [Delete] button.
-
-3\. A delete confirmation dialog will appear.
-
-4\. Click [Yes] to proceed or [No] to cancel.
-
-Deleted coupon data cannot be restored.
-
-## **Tips for Using Form Coupons**
-
-- Use coupon codes that are easy to remember and relevant to the promo campaign.
-
-- Always set a coupon validity period to avoid unlimited usage.
-
-- Use zone and product restrictions for more targeted promotions.
-
-- Use the Max Use feature to control the number of times a coupon can be used.
-
-- Enable Has Max Discount when using large percentage discounts to avoid losses.
-
-By using Form Coupons optimally, you can manage promotions in a more structured, secure, and effective way according to your business needs.
+If you have any issues or difficulties related to NoBox.AI, please contact the support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

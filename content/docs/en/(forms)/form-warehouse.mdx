@@ -1,104 +1,121 @@
 ---
 title: Form Warehouse
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Configuring storage locations, managing inventory origins, and organizing fulfillment centers in NoBox.AI.
 icon: Warehouse
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Form Warehouse is one of the menus in NoBox used to manage warehouse data or storage locations within the system.
-This feature plays an important role in inventory management, shipping processes, and the distribution of goods to customers.
+**Form Warehouse** is a dedicated module in NoBox.AI used to manage storage locations and inventory origins within the system.
+
+This menu is critical for effective inventory management and logistics, as it defines the physical points from which products are shipped and helps organize distribution channels for all orders processed through your digital forms.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/5_RxubaJVYU?si=pF_DNgvmO0qbAe2f"
-  title="Pengenalan Tampilan NoBox"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
+---
+
+## **Form Warehouse Menu Interface**
+
 <ImageZoom
-  src="/images/en/Form%20Warehouse.png"
-  alt="NoBox Dashboard View"
+  src="/images/id/Form%20Warehouse.png"
+  alt="Warehouse Management Dashboard"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-## **Add Warehouse Form**
+The interface above represents the primary **Form Warehouse** dashboard, displaying a complete list of all fulfillment centers currently registered in your system.
 
-To create a new warehouse form model, please click the menu **[Form Warehouse] ➔ [Add Form Warehouse]**.
-After that, the **[Add Form Warehouse]** dialog will appear.
+From this page, users can view warehouse names, contact numbers, full addresses, and postal codes, while also performing administrative tasks such as adding, editing, or retiring warehouse records.
+
+---
+
+## **Adding a New Warehouse**
+
+1. Navigate to the **[Form Warehouse]** menu ➔ **[Add Form Warehouse]**.
+2. An **[Add Form Warehouse]** dialog will appear for data entry.
+
+### Add Form Warehouse Dialog View
 
 <ImageZoom
-  src="/images/en/Tambah%20Form%20Warehouse.png"
-  alt="Add Form Warehouse View"
+  src="/images/id/Tambah%20Form%20Warehouse.png"
+  alt="New Warehouse Entry Form"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-Complete the required fields according to the warehouse information to be registered, for example as follows:
+### **Warehouse Form Fields**
 
-| Field    | Description                                                                                                                                                                                                                                                                                           | Example       |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| Name     | The name of the warehouse used as the primary identifier within the system. This name will appear in the warehouse list, transactions, reports, and other connected modules. It is recommended to use a unique, consistent, and easily recognizable name based on the warehouse location or function. | Milan         |
-| Phone    | The warehouse contact phone or mobile number that can be reached by internal teams, couriers, and operational staff. This information is used for logistics coordination, delivery confirmation, and issue handling in the field. Ensure the number entered is active and valid.                      | 0813102007221 |
-| Country  | The country where the warehouse is located. This field is used for global location classification and supports system requirements related to international shipping and regional configuration.                                                                                                      | Indonesia     |
-| State    | The province or state where the warehouse operates. This information helps the system with distribution area grouping, regional analysis, and administrative-based reporting.                                                                                                                         | East Java     |
-| City     | The city or district where the warehouse is located. This data plays an important role in delivery route determination, delivery time estimation, and region-based logistics management.                                                                                                              | Malang City   |
-| Zip Code | The postal or ZIP code corresponding to the warehouse address. It is used for address validation, speeding up courier sorting processes, and reducing the risk of delivery errors.                                                                                                                    | 65124         |
-| Address  | The complete warehouse address, including street name, building number, and additional details if necessary. This address serves as the primary reference for shipping and on-site operational activities.                                                                                            | Jl. Akordion  |
+Complete the required fields accurately to ensure smooth logistics operations:
 
-If you have completed the existing fields, click **[Save]** to store the newly created warehouse form model.
+| Field    | Description                                                                                                                                                                                                                                   | Example       |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| Name     | The primary identity of the storage facility. This name will appear in warehouse lists, transactions, and reports. Use unique and descriptive names based on location or function.                                                           | Milan Hub     |
+| Phone    | Contact number for the warehouse staff. This is used for logistics coordination, shipping confirmations, and on-site troubleshooting. Ensure the number is active and valid.                                                                  | 0813102007221 |
+| Country  | The nation where the warehouse is located. This supports global region settings and cross-border shipping requirements.                                                                                                                      | Indonesia     |
+| State    | The province or administrative region. Helps in grouping distribution areas and regional market analysis.                                                                                                                                     | East Java     |
+| City     | The specific city or district. This data is essential for calculating delivery routes, estimating arrival times, and managing local logistics.                                                                                               | Malang City   |
+| Zip Code | The postal code for the facility. Used for address validation and sorting by couriers to minimize delivery errors.                                                                                                                            | 65124         |
+| Address  | Full street address, including building numbers and additional landmarks. This is the primary reference for all physical field operations and courier pickups.                                                                                | Akordion St.  |
 
-## **Saving Warehouse Data**
+Once the information is verified, click **[Save]** to finalize the new warehouse record.
 
-After all fields are filled in correctly, click the **[Save]** button to store the warehouse data.
-If there are required fields that have not been filled in or the data format is incorrect, the system will display an error message so you can make corrections immediately.
+## **Managing Warehouse Data**
 
-## **Edit Warehouse Form**
+### Editing Warehouse Records
 
-To edit existing warehouse data:
+To update a warehouse profile, select the target record from your list. Modify the necessary details—such as updating a phone number or adding more address specificities—and click **[Save]**. 
 
-1\. Select the warehouse data you want to edit from the list.
+Updates are synchronized across all connected modules immediately.
 
-2\. Click the **[Edit]** button.
+### Deleting Warehouse Records
 
-3\. Make changes to the required fields.
+To remove a facility from the system, select the target record and click **[Delete]**. A confirmation prompt will appear to prevent accidental removal.
 
-4\. Click **[Save]** to save the changes.
+Click **[Yes]** to confirm or **[No]** to cancel.
 
-The changes you make will be applied immediately to the warehouse data.
+<Callout type="info" title="Important Information">
+Warehouse deletion is permanent. Ensure that no active orders or current stock levels are linked to the specific warehouse before proceeding with removal.
+</Callout>
 
-## **Delete Warehouse Form**
+---
 
-To delete warehouse data:
+<Tips>
+## **Operational Tips**
 
-1\. Select the warehouse data you want to delete.
+- **Descriptive Naming**: Use names that are easy to distinguish (e.g., "North Jakarta Hub" vs "West Jakarta Hub") to avoid confusion during fulfillment.
+- **Accurate Coordinates**: Ensure Zip Codes and full addresses are correct; this directly impacts the accuracy of automated shipping rate calculations.
+- **Contact Availability**: Always provide a phone number that is monitored during business hours to assist couriers with pickups.
+- **Regular Audits**: Update your warehouse list if you move locations or close a facility to keep your logistics data clean.
 
-2\. Click the **[Delete]** button.
+</Tips>
 
-3\. A delete confirmation dialog will appear.
+---
 
-4\. Click **[Yes]** to proceed or **[No]** to cancel.
+<Kendala>
+## **Troubleshooting**
 
-Deleted warehouse data cannot be restored.
+If you experience issues while using the Form Warehouse module:
 
-## **Tips for Using Form Warehouse**
+- Refresh the page if the warehouse list fails to refresh after a save.
+- Verify that your internet connection is stable for real-time data entry.
+- Ensure your account has "Administrator" or "Manager" level permissions.
+- Log out and log back in if the "Save" button becomes unresponsive.
+- Ensure all mandatory fields marked with an asterisk are filled using the correct data format.
 
-- Use warehouse names that are easy to recognize and match their actual locations.
+</Kendala>
 
-- Make sure address and postal code data are filled in correctly to support the shipping process.
+---
 
-- Include an active phone number so the operations team or couriers can contact the warehouse.
-
-- Update warehouse data if there are changes to the address or contact information.
-
-- Delete warehouse data that is no longer in use to keep the data clean and relevant.
-
-By using Form Warehouse optimally, you can manage warehouse data in a more structured and accurate way, supporting smooth logistics processes in the NoBox system.
+If you have any issues or difficulties related to NoBox.AI, please contact the support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

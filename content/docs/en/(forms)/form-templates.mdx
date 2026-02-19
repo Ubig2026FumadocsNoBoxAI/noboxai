@@ -1,141 +1,174 @@
 ---
 title: Form Templates
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Creating and managing customizable forms for lead generation, sales orders, and data collection in NoBox.AI.
 icon: FileText
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The Form Templates is a feature on NoBox.Ai used to create form models.
+**Form Templates** is a powerful module in NoBox.AI used to design and deploy custom digital forms. 
+
+This environment allows users to create, manage, and analyze forms tailored to specific business needs, such as order collection, customer feedback, or lead generation, streamlining the entire sales and administrative lifecycle.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/VWkVMLe85xs/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/VWkVMLe85xs"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
+---
+
+## **Form Templates Menu Interface**
+
 <ImageZoom
-  src="/images/en/Model%20Formulir.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Model%20Formulir.png"
+  alt="Form Templates Management Dashboard"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-## **New Form Template**
+The interface above represents the central **Form Templates** dashboard, where you can organize all forms available within your system.
 
-To create a form model, navigate to **[Form Model] ➔ \[New Form Model]**. A dialog box titled **[New Form Model]** will display.
+From this page, users can review existing models, initialize new forms, perform specific edits, and toggle visibility or active status based on current operational requirements.
+
+---
+
+## **Creating a New Form Template**
+
+1. Navigate to **[Form Templates]** ➔ **[Add Form Template]**.
+2. A comprehensive **[Add Form Template]** dialog will appear.
+
+### Add Form Template Dialog View
 
 <ImageZoom
-  src="/images/en/Tambah%20Model%20Formulir.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Tambah%20Model%20Formulir.png"
+  alt="Form Template Configuration Interface"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-Complete the required fields, for example, as follows:
+### **Configuration Form Fields**
 
-| Field            | Description                           | Example                       |
-| ---------------- | ------------------------------------- | ----------------------------- |
-| Name             | Form model name                       | Grosir Gamis Zeyaa            |
-| Type             | Order form type                       | Order Form                    |
-| Product          | Product to be sold                    |                               |
-| Video URL        | Video URL                             | -                             |
-| Tag              | Tag                                   | Grosir Gamis                  |
-| Layout           | Form display                          | -                             |
-| Logo             | Choose logo                           | -                             |
-| Title            | Checklist and enter form title        | Azza Collection               |
-| Description      | Checklist and enter form description  | -                             |
-| Fields           | Fields included in the form           | Name, Phone, Email            |
-| Payment Method   | Payment options checklist             | COD, Bank Transfer, E-Payment |
-| Submit Button    | Choose submit button color            | Blue                          |
-| After Submission | Enter submit button text              | Order Now                     |
-| Action           | Choose display option post submission | Redirect to Success Page      |
-| Follow-Up        | Enter response to buyer               |                               |
-| Options          | Message follow-up option              |                               |
+Complete the required parameters for your new form; for example:
 
-Once you've completed the fields, click **[Save]** to save the newly created form model.
+| **Field**             | Description                                | **Example**                   |
+| --------------------- | ------------------------------------------ | ----------------------------- |
+| Name                  | Internal title of the form template        | Zeyaa Wholesale Warehouse     |
+| Type                  | Transactional logic (e.g., Order Form)     | Order Form                    |
+| Product               | Linked items to be sold via the form       | -                             |
+| Video URL             | Embedded video for engagement              | -                             |
+| Tag                   | Categorization labels                      | Wholesale, Fashion            |
+| Layout                | Visual structure of the form               | -                             |
+| Logo                  | Branding image for the form header         | -                             |
+| Title                 | Public-facing form title                   | Azza Collection               |
+| Description           | Visible context for the respondent         | -                             |
+| Fields                | Input types (e.g., Name, Phone, Email)     | Name, Phone, Email            |
+| Payment Methods       | Accepted transactional gateways            | COD, Bank Transfer, E-Payment |
+| Submit Button         | Color customization                        | Blue                          |
+| Post-Submit Button    | Text displayed on the button               | Order Now                     |
+| Success Action        | Behavior after successful submission       | Redirect to Success Page      |
+| Follow-Up Actions     | Automated response message to purchaser    | -                             |
+| Options               | Logic for delivery of follow-up messages   | -                             |
 
-## **Edit and Delete Form Template**
+Click **[Save]** to finalize and activate the new form template.
 
-To edit a form model data, please first select the data you wish to edit. Make your changes and click **[Save]** to save those changes.
+## **Managing Existing Form Data**
 
-To delete a form model data, select the data you wish to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]**, otherwise click **[No]**.
+### Editing Form Templates
 
-## Clone
+To modify a form, select the target entry from your list. Update the configuration and click **[Save]**.
 
-Clone is a feature used to copy the content of the selected model.
+Updates are deployed immediately; any active link or embedded form will reflect the changes in real-time.
+
+### Deleting Form Templates
+
+To remove a template, select the item and click **[Delete]**. A confirmation prompt will appear to prevent accidental data loss.
+
+Click **[Yes]** to confirm or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+Form template deletion is permanent. Ensure that the specific form is no longer linked in any marketing materials or websites before removal.
+</Callout>
+
+---
+
+## **Advanced Form Tools**
+
+The Form Templates module provides several integrated tools to facilitate distribution and analysis beyond simple data collection:
+
+- **Clone Tool**
+The **Clone** feature allows you to duplicate an existing form. This is ideal for split-testing similar designs or creating variations for different regions without starting from zero.
 
 <ImageZoom
-  src="/images/en/Klon%20Model%20Formulir.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Klon%20Model%20Formulir.png"
+  alt="Form Cloning Feature"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-## **QR Code**
-
-The QR Code is a feature used to download the QR code of the form model.
+- **QR Code Generator**
+Generate a unique **QR Code** for any active form. You can download this for use in physical marketing materials (flyers, packaging) allowing customers to scan and shop instantly via smartphone.
 
 <ImageZoom
-  src="/images/en/Kode%20QR%20Model%20Formulir.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Kode%20QR%20Model%20Formulir.png"
+  alt="Form QR Code Generator"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-## Preview
-
-Preview is a feature used to display the results of a form model that has been created.
+- **Real-Time Preview**
+The **Preview** mode displays exactly how your form will look to the end-user, including layout triggers and responsive behavior.
 
 <ImageZoom
-  src="/images/en/Pratinjau%20Model%20Formulir.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Pratinjau%20Model%20Formulir.png"
+  alt="Form Preview Mode"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-## Statistics
+- **Submission Statistics**
+Access granular **Statistics** for each template, providing charts on conversion rates, geographic sources, and respondent demographics.
 
-Statistics is a feature used to display graphical information from the results of the form model. For more details, see [Form Statistics](https://crm.nobox.ai/knowledge-base/article/form-analytics)
+<Callout type="info" title="Extended Documentation">
+Learn more about deep data analysis in our [Form Analytics Guide](https://crm.nobox.ai/knowledge-base/article/form-analytics).
+</Callout>
 
 <ImageZoom
-  src="/images/en/Statistik%20Model%20Formulir.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Statistik%20Model%20Formulir.png"
+  alt="Form Performance Data"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-## Embed
-
-An embed is a feature used to copy the HTML code of the form so that you can insert it into a webpage.
+- **Embedding Tools**
+The **Embed** tool provides raw HTML code, allowing you to seamlessly integrate your NoBox.AI forms directly into external websites or landing pages.
 
 <ImageZoom
-  src="/images/en/Embed%20Model%20Formulir.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Embed%20Model%20Formulir.png"
+  alt="Form Embedding Tool"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-## Copy
-
-Copy is a feature used to duplicate the URL of the form model.
+- **Link Sharing**
+Use the **Copy Link** feature to get the direct URL for your form, perfect for sharing via WhatsApp, email signatures, or social media bios.
 
 <ImageZoom
-  src="/images/en/Salin%20Model%20Formulir.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Salin%20Model%20Formulir.png"
+  alt="Direct Form Link Sharer"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
@@ -143,4 +176,34 @@ Copy is a feature used to duplicate the URL of the form model.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+<Tips>
+## **Optimization Tips**
+
+- **Full Configuration**: Ensure all required fields and descriptions are set before publishing to look professional.
+- **Categorization**: Use Tags consistently to organize dozens of different forms for better management.
+- **Verification**: Always test video URLs and follow-up links in Preview mode.
+- **Design Check**: Use the Logo feature to build brand trust with your respondents.
+- **Performance Audits**: Regularly check Statistics to see which forms have the highest conversion rates.
+- **Workflow Speed**: Clone high-performing forms to launch new products or campaigns faster.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues while configuring or deploying your form templates:
+
+- Refresh the dashboard if newly created templates fail to appear in your list.
+- Verify internet stability during the save process.
+- Confirm your account has "Manager" or "Supervisor" level access.
+- Log out and back in if the Preview or QR generator seems unresponsive.
+- Ensure all mandatory configuration fields (*) are filled with valid data.
+- Contact NoBox support if QR codes fail to redirect or statistical data goes missing.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

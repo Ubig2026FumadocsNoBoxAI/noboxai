@@ -1,78 +1,95 @@
 ---
 title: Form Settings
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Configuring default behaviors, global payment preferences, post-submission actions, and automated follow-ups in NoBox.AI.
 icon: Cog
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The form settings are a menu in NoBox that contains format settings for the form model menu.
+**Form Settings** is the foundational configuration module in NoBox.AI that allows you to define the default formatting and behavior for all your form models.
+
+By establishing global preferences in this menu, users can ensure consistency across multiple digital forms and significantly reduce manual setup time when initializing new form templates.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/axmGUD-cOJc/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/axmGUD-cOJc"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
+---
+
+## **Form Settings Menu Interface**
+
 <ImageZoom
-  src="/images/en/Pengaturan%20Formulir%20(1).png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Pengaturan%20Formulir%20(1).png"
+  alt="Global Form Configuration Dashboard"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-In the Settings menu, there are several items, including:
+The interface above represents the primary **Form Settings** dashboard. This page is used to govern the core logic and visual preferences of your forms.
 
-**1. General**
+From this environment, administrators can manage general presets, default payment methodologies, post-submission behavior, and automated follow-up communications, ensuring the forms module aligns perfectly with operational requirements.
 
-Used to set the default form type options.
+---
 
-**2. Payment Methods**
+## **Categorized Configuration Options**
 
-Used to set the default payment methods.
+The settings menu is divided into several detailed sections:
 
-**3. After Submitting**
+### 1. **General Presets**
+This section is used to **set the default form type**.  
+Configuring this ensures that whenever a new form template is created, the system automatically selects your preferred type (e.g., Order Form), maintaining consistency and speeding up deployment.
 
-Used to set the default view after submitting the form.
+### 2. **Default Payment Methods**
+Establish which **payment options appear by default** on every new form.  
+This prevents the need for repetitive manual configuration for each individual product form, ensuring your preferred payment gateways are always available to customers.
 
-**4. Follow Up**
+### 3. **Post-Submission Behavior**
+Defines **what the customer sees after clicking 'Submit'**.  
+Options include redirecting the user to a custom "Success" landing page, displaying an on-screen thank-you message, or triggering specific URL-based actions.
 
-Used to set reply templates for form submitters.
+### 4. **Automated Follow-Ups**
+Configure the **default auto-response templates** sent after a form is completed.  
+These templates can include personalized text, branded emails, or specific transactional instructions to ensure immediate and professional communication with every respondent.
 
-**5. Options**
+### 5. **Form Utilities & Options**
+Provides additional functional toggles for your form environment:
 
-Contains form template settings.
+- **Notification Dispatch (WA, Email, URL)**:  
+  Set the default platforms for sending automated notifications and follow-up alerts to respondents.
 
-\- Send WhatsApp, Email, URL
+- **Visual Aids & Security (Labels, Recaptcha, Coupons)**:  
+  Toggle the default visibility of input labels, activate Google Recaptcha for bot protection, and enable coupon input fields globally.
 
-Used to send notifications and follow up.
+### 6. **System Audit Trail**
+Displays a record of when the **settings were last updated**, including the timestamp and the specific user responsible for the changes. This is invaluable for internal monitoring and administrative accountability.
 
-\- Show Label, Recaptcha, Coupon
+---
 
-Used to display labels, recaptcha, and coupons.
+## **Applying and Verifying Changes**
 
-**6. Others**
+After adjusting your global preferences, click **[Save]** to apply the new logic.
 
-Information on the last settings modification.
+To verify, navigate to **[Form Templates]** ➔ **[Add Form Template]**. You will see that the new creation dialog already contains the defaults you established in the settings module.
 
-If you make changes to the form settings data, click **[Save]** to save the newly changed data.
+---
 
-Check in the **[Form Model]** menu, click the **[Add Form Model]** button, you can see in the input section the form model automatically conforms to the form settings.
+## **Resetting to System Defaults**
 
-## Reset
-
-Reset is a feature used to revert all settings that have been changed.
+The **Reset** feature (Atur Ulang) allows you to revert every form preference back to its original factory configuration.  
+Use this tool if you want to clear complex configurations or begin a fresh setup of your forms module from scratch.
 
 <ImageZoom
-  src="/images/en/Atur%20Ulang%20Pengaturan%20Formulir.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Atur%20Ulang%20Pengaturan%20Formulir.png"
+  alt="Resetting Settings to Factory Defaults"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
@@ -80,4 +97,31 @@ Reset is a feature used to revert all settings that have been changed.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+<Tips>
+## **Optimization Tips**
+
+- **Business Alignment**: Map your default "After Submission" actions to your actual marketing funnel for maximum efficiency.
+- **Verification Cycle**: Always double-check your default payment methods to ensure they match your current billing accounts.
+- **Manual Overrides**: Remember that global settings are *defaults*; you can still override these specific choices for individual forms if a unique campaign requires it.
+- **Monitoring**: Check the audit trail regularly if you work in a multi-administrator environment to stay informed of logic changes.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you experience issues within the Form Settings module:
+
+- Refresh the system page if newly saved settings fail to persist.
+- Verify your internet connectivity for reliable server synchronization.
+- Ensure your user role has the "Administrator" permissions required to modify global logic.
+- Log out and log back in if the "Save" or "Reset" functions appear unresponsive.
+- Ensure all automated message templates are formatted correctly to prevent dispatch errors.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact the support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

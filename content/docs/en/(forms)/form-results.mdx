@@ -1,109 +1,175 @@
 ---
 title: Form Results
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Managing and processing customer submissions, inventory adjustment, cost overrides, and sales status tracking in NoBox.AI.
 icon: ClipboardPenLine
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The "Form Results" menu in NoBox is used for managing form data results.
+**Form Results** is a mission-critical module in NoBox.AI designed for the systematic management and processing of all incoming form submissions.
+
+This environment enables team members to monitor incoming orders, adjust product lists, override costs, initiate automated customer follow-ups, and update both payment and sales delivery statuses within a unified interface.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/zbxed-OODf0/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/zbxed-OODf0"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
+---
+
+## **Form Results Menu Interface**
+
 <ImageZoom
-  src="/images/en/Hasil%20Formulir.png"
-  alt="Form Results Interface"
+  src="/images/id/Hasil%20Formulir.png"
+  alt="Form Results Management Dashboard"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  className="rounded-lg border shadow-sm mb-4"
 />
 
-## **Product Handling**
+The interface above represents the primary **Form Results** dashboard, displaying a complete log of all form data introduced into the system.
 
-To handle the product, click on the **[Form Results]** menu and select one data result from the order form type. The detailed form results will then be displayed.
+From this page, users can view customer names, specific form types, submission timestamps, current payment/sales statuses, and total transaction values. This acts as the command center for order fulfillment and customer data processing.
+
+---
+
+## **Product Management & Order Processing**
+
+1. Navigate to the **[Form Results]** menu on your NoBox.AI dashboard.
+2. Select a specific submission (typically an 'Order Form' type) that you wish to process or modify.
+3. The system will display the comprehensive detail view, including a line-item list of all ordered products.
 
 <ImageZoom
-  src="/images/en/Penanganan%20Produk.png"
-  alt="Product Handling Interface"
+  src="/images/id/Penanganan%20Produk.png"
+  alt="Individual Form Result Detail View"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  className="rounded-lg border shadow-sm mb-4"
 />
 
-You can add the products you want to purchase in the product section, remove products you decide not to buy, and adjust the quantity according to customer requests. Once done, click **[Save]** to save the changes.
+### **Inventory Adjustments within Results**
 
-## **Handling Additional & Reduced Costs**
+The individual result page allows you to make real-time corrections to a customer's order:
 
-You can track the additions and reductions in costs in the form data as follows:
+- **Add Products**: Click the add product button to include additional items requested by the customer after their initial submission.
+- **Remove Products**: Identify items that are out of stock or cancelled, and remove them from the order.
+- **Update Quantities**: Adjust the number of items per product line based on customer interaction.
+- Click **[Save]** to ensure the new order total and inventory data are updated across the system.
 
-- Select one of the form data entries.
-- In the Summary section, fill in the additional costs; for example, enter shipping with an amount of 75,000.
-- Fill in the reduced costs; for example, enter a discount with an amount of 25,000.
-- The total will automatically be calculated.
+---
 
-<ImageZoom
-  src="/images/en/Penanganan%20Ringkasan.png"
-  alt="Summary Handling Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
+## **Cost Overrides & Fee Management**
 
-Click **[Save]** to store the changes.
+To add shipping fees or apply manual discounts to a specific result, follow these steps:
 
-## **Handling Follow-up Actions**
-
-You can send a message to customers to confirm their order by:
-
-- Select one form data entry
-- Click the [ <img src="/images/en/image%20(11).png" alt="Follow Up" className="inline h-5 w-auto mx-1" /> ] icon
-- Select the follow-up category, a preview message will appear. For follow-up data, it will automatically align with the customer's order data, but you can also modify the information.
-- Click **[Send]** to dispatch the Follow-Up message
+1. Select the form result record you wish to modify.
+2. Scroll to the **Cost Summary** section at the bottom of the page.
+3. Use the **Additions** field for extra costs (e.g., shipping, gift wrapping) or the **Deductions** field for manual discounts.
+4. The system will automatically recalculate the grand total in real-time.
+5. Click **[Save]** to finalize the updated transaction value.
 
 <ImageZoom
-  src="/images/en/Penanganan%20Tindak%20Lanjut.png"
-  alt="Follow-up Action Interface"
+  src="/images/id/Penanganan%20Ringkasan.png"
+  alt="Billing Summary and Adjustment Interface"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-The message results will be sent via WhatsApp or Email according to the delivery settings in the Form Model, and the message results will be as follows.
-
-## **Update Payment Status of Form Results**
-
-To facilitate tracking form results when customer service receives a payment, you can change the payment status in the form results. Select one of the form result entries to change the payment status, then click **[Save]** to apply the changes.
-
-<ImageZoom
-  src="/images/en/Penanganan%20Status%20Pembayaran.png"
-  alt="Payment Status Update Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Perbarui Status Penjualan Hasil Formulir**
-
-Untuk memudahkan monitoring data hasil formulir ketika proses penjualan sudah sampai mana cs dapat perbarui status dengan cara pilih salah satu data hasil formulir ganti status formurlir, Jika sudah klik **[Simpan]** untuk menyimpan perubahan tersebut.
-
-<ImageZoom
-  src="/images/en/Penanganan%20Status%20Penjualan.png"
-  alt="Sales Status Update Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  className="rounded-lg border shadow-sm mb-4"
 />
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Customer Follow-Up Procedures**
+
+The Form Results module facilitates rapid communication with respondents to confirm details or provide transactional updates.
+
+1. Open the specific form result you wish to follow up on.
+2. Click the **[Follow Up]** icon.
+3. Choose a pre-defined follow-up category. NoBox.AI will automatically populate the message template preview.
+4. Modify the message content if specific personalization is required.
+5. Click **[Send]** (dispatch occurs via WhatsApp or Email integration).
+
+<ImageZoom
+  src="/images/id/Penanganan%20Tindak%20Lanjut.png"
+  alt="Automated Follow-Up Message Interface"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+---
+
+## **Status Lifecycle Management**
+
+### **Updating Payment Statuses**
+
+Keeping payment information accurate is essential for revenue tracking:
+
+1. Locate the specific result in the dashboard or detail view.
+2. Toggle the payment status to match the actual condition, such as "Paid," "Unpaid," or "Deposit Received."
+3. Click **[Save]** to synchronize this data with the Finance and Reporting modules.
+
+<ImageZoom
+  src="/images/id/Penanganan%20Status%20Pembayaran.png"
+  alt="Manually Overriding Payment Status"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+---
+
+### **Updating Sales & Delivery Statuses**
+
+Track the physical or digital journey of the order for the customer:
+
+1. Select the target form result.
+2. Update the Sales Status to reflect the current phase, such as "Packing," "Shipped," or "Delivered."
+3. Click **[Save]** to ensure the entire team is aware of the current fulfillment stage.
+
+<ImageZoom
+  src="/images/id/Penanganan%20Status%20Penjualan.png"
+  alt="Tracking Sales and Fulfillment Progression"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+---
+
+<Tips>
+## **Workflow Optimization Tips**
+
+To master the Form Results management process:
+
+- **Verification First**: Always double-check customer product requests and manual price overrides before clicking Save; this avoids billing disputes.
+- **Instant Status Sync**: Update payment statuses as soon as bank transfer confirmations are received to keep the administrative queue clean.
+- **Consistent Communication**: Use the automated Follow-Up feature immediately after a submission to acknowledge receipt and build customer trust.
+- **Reporting Integrity**: Consistently use the Sales Status markers so that management can generate accurate "Fulfillment Speed" reports.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you experience difficulties while managing form results:
+
+- Refresh the system page if newly submitted results are not appearing in the list.
+- Verify internet stability during large batch status updates.
+- Ensure your account permissions are correctly set for editing sales and payment data.
+- Log out and log back in to refresh your session if the "Follow-Up" button becomes unresponsive.
+- Contact NoBox support if automated messages are stuck or not being delivered.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact the support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets) for further technical assistance.

@@ -1,116 +1,116 @@
 ---
-title: Form Payments
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+title: Payment Methods
+description: Configuring and managing various payment options, including bank transfers, e-wallets, and manual payment instructions in NoBox.AI.
 icon: CreditCard
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Payment Method is a menu option in NoBox used for managing master data of payment methods.
+**Payment Methods** is a master data module in NoBox.AI used to configure and manage the different ways your customers can pay for orders.
+
+This menu streamlines the setup of various gateways, including bank transfers, digital e-wallets, and manual cash-on-delivery options, ensuring that accurate payment instructions are always attached to your digital forms and transactions.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/SSZTrIS5ZKA/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/SSZTrIS5ZKA"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
+---
+
+## **Payment Methods Menu Interface**
+
 <ImageZoom
-  src="/images/en/Metode%20Pembayaran.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Metode%20Pembayaran.png"
+  alt="Payment Methods Configuration Dashboard"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-## **Add Payment Method**
+The interface above shows the central **Payment Methods** dashboard, which contains a list of every active and inactive payment option in your system.
 
-To create a payment method record, please click on the **[Payment Methods] ➔ \[Add Payment Method]** menu. A **[Add Payment Method]** dialog will appear, then fill out the fields in the dialog.
+From this page, users can review payment titles, current status (Active/Inactive), specific instructions, and uploaded QR Codes. It serves as the single source of truth for all administrative payment data.
+
+---
+
+## **Adding a New Payment Method**
+
+1. Navigate to the **[Payment Methods]** menu ➔ **[Add Payment Method]**.
+2. An **[Add Payment Method]** dialog will appear. Complete the Title, Type, and specific payment instructions.
+
+### Add Payment Method Dialog View
 
 <ImageZoom
-  src="/images/en/Tambah%20Metode%20Pembayaran.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Tambah%20Metode%20Pembayaran.png"
+  alt="New Payment Method Entry Form"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="121.5999755859375">Field</th>
-      <th width="257.800048828125">Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Type</td>
-      <td>Payment method</td>
-      <td>Bank Transfer</td>
-    </tr>
-    <tr>
-      <td>Name</td>
-      <td>Payment name</td>
-      <td>Bank Mandiri</td>
-    </tr>
-    <tr>
-      <td>Active</td>
-      <td>Select payment method status</td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td>Notes</td>
-      <td>Additional information</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Instructions</td>
-      <td>Payment instructions</td>
-      <td>
-        Transfer payment to Bank Mandiri account xxxx.xxxx.xxxx under the name
-        Jasmine Aulya. After transferring, please send the proof to WhatsApp at
-        62xxxxxxxxxx.
-      </td>
-    </tr>
-    <tr>
-      <td>QR Code</td>
-      <td>Upload QR Code</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
+### **Form Configuration Fields**
 
-If you have filled in all the required fields, click **[Save]** to save the new payment data you’ve created.
+| **Field**      | **Description**                       | **Example**                                                                                                                                                                 |
+| -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Type           | General payment category              | Bank Transfer                                                                                                                                                               |
+| Title/Name     | Public-facing name of the method      | Mandiri Bank                                                                                                                                                                |
+| Status         | Toggle the availability of the method | Active                                                                                                                                                                      |
+| Notes          | Internal administrative context       | -                                                                                                                                                                           |
+| Instructions   | Granular payment guide for customers  | Please transfer to Mandiri Bank A/C xxxx.xxxx.xxxx (A/N Jasmine Aulya). After the transfer, please send proof of payment to our WhatsApp at 62xxxxxxxxxx.                   |
+| QR Code        | Visual payment trigger (e.g., QRIS)   | -                                                                                                                                                                           |
 
-## **Edit and Delete Payment Method Data**
+Once all fields are complete, click **[Save]** to list the new method.
 
-To edit a payment method, first select the data you wish to edit. Make your changes and click **[Save]** to save the changes.
+---
 
-To delete a payment method, select the product data you want to delete, then click **[Delete]** to display a confirmation dialog. Click **[Yes]** to confirm deletion or **[No]** to cancel.
+## **Managing Payment Records**
 
-**How to Use the Payment Method**
+### Editing Payment Methods
 
-To use a payment method, select one from the form model. Choose the required payment method and click **[Save]**.
+To modify an existing payment option, select the record from the dashboard. Update individual fields—such as changing bank account numbers or updating the QR code—and click **[Save]**. 
+
+Changes are immediately available for any new form submissions or transactions.
+
+### Deleting Payment Methods
+
+To remove a method, select the entry and click **[Delete]**. Verify the action in the secondary confirmation prompt.
+
+Click **[Yes]** to confirm or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+Deletion of a payment method is permanent. Ensure it is not being used as the primary payment option in any "Active" digital forms before proceeding with removal.
+</Callout>
+
+---
+
+## **Applying Payment Methods to Forms**
+
+Once your payment master data is saved, you can link these methods to specific marketing or order forms:
+
+1. Open the target **Form Template** for editing.
+2. Select the desired payment methods from the "Payment Method" multi-select list.
+3. Click **[Save]** to apply the configuration.
 
 <ImageZoom
-  src="/images/en/Penggunaan%20Metode%20Pembayaran.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Penggunaan%20Metode%20Pembayaran.png"
+  alt="Linking Payment Methods to Form Templates"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-The data form will display the payment method you choose.
+The published form will now display these payment options to the customer during the checkout process.
 
 <ImageZoom
-  src="/images/en/Penggunaan%20Metode%20Pembayaran%20Formulir.png"
-  alt="NoBox Broadcast Messages View"
+  src="/images/id/Penggunaan%20Metode%20Pembayaran%20Formulir.png"
+  alt="Customer-Facing Form with Payment Options"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
@@ -118,4 +118,30 @@ The data form will display the payment method you choose.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+<Tips>
+## **Optimization Tips**
+
+- **Verification**: Ensure the instructions provided match the active bank account or e-wallet to avoid delayed payments.
+- **Clarity**: Use simple, step-by-step text in the **Instructions** field (e.g., "Step 1: Transfer, Step 2: Upload").
+- **Visuals**: Always upload a high-quality QR Code to minimize data entry errors by the customer.
+- **Audit**: Regularly check that the "Active" status correctly reflects the billing accounts currently available to your business.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you experience issues with the Payment Methods module:
+
+- **Missing Options**: Ensure the method is set to **Status: Active**; inactive methods will not appear in form configuration lists.
+- **Instruction Visibility**: If instructions are not appearing on the form, verify that the text has been successfully saved in the **Instructions** field.
+- **QR Code Rendering**: If the QR Code is broken, re-upload the file in a standard web format (JPG, PNG).
+- **Update Delay**: Refresh your browser or clear the cache if changes made to payment data are not showing up in the user-facing forms immediately.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact the support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).
