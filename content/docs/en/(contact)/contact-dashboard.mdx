@@ -1,88 +1,116 @@
 ---
 title: Contact Dashboard
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Visualizing customer database growth, geographic distribution, and acquisition sources for strategic marketing oversight in NoBox.AI.
 icon: CircleUser
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The Contact Dashboard is one of the menus on Nobox.Ai that provides a summary of activity information related to contacts and helps you make decisions.
+The **Contact Dashboard** (Dasbor Kontak) is a centralized analytics module in NoBox.AI that provides visual summaries and key performance indicators regarding your entire customer database.
+
+This menu enables users to monitor contact growth, geographic distributions, acquisition sources, and historical trends. By leveraging these visual insights, users can make data-driven decisions to optimize contact management and target promotional campaigns more effectively.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/Z8C0_sGruBg/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/Z8C0_sGruBg"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-To open the Contact Dashboard, click the \[Contact] module, then click \[Contact Dashboard].
+---
+
+## **Contact Dashboard Interface**
+
+To access this view, navigate to the **[Contacts]** module and click on **[Contact Dashboard]**.
 
 <ImageZoom
-  src="/images/en/Contact%20Dashboard.png"
-  alt="NoBox Dashboard View"
+  src="/images/en/Dasbor%20Kontak.png"
+  alt="Main Contact Dashboard Analytics View"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-In the display, there are several sections, each with its own function. The explanation of these functions is as follows:
-
-<table>
-  <thead>
-    <tr>
-      <th width="151.4000244140625">Feature</th>
-      <th>Function</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Contacts</td>
-      <td>Total contact data from extraction results</td>
-    </tr>
-    <tr>
-      <td>List</td>
-      <td>Total data list</td>
-    </tr>
-    <tr>
-      <td>Tag</td>
-      <td>Total data tag</td>
-    </tr>
-    <tr>
-      <td>Source</td>
-      <td>Total data source</td>
-    </tr>
-    <tr>
-      <td>Made</td>
-      <td>Information on Total Contacts by Month</td>
-    </tr>
-    <tr>
-      <td>Country</td>
-      <td>
-        Information on total contacts and data display on maps according to
-        contact location.
-      </td>
-    </tr>
-    <tr>
-      <td>Top Sources</td>
-      <td>Contact information from the most abundant source.</td>
-    </tr>
-    <tr>
-      <td>Top Country</td>
-      <td>
-        Information on the total number of contacts from the country with the
-        highest amount.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-To view detailed data from the information, you can click on the chart. Then the contact data based on the selected chart data will be displayed.
+The dashboard primary view consists of statistical cards and interactive charts. Each component is designed to help users grasp the health and scale of their business connections without deep manual auditing.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Dashboard Core Components**
+
+The dashboard is divided into several analytical widgets, each serving a specific reporting function:
+
+| Component       | Function                                                                                                       |
+| --------------- | -------------------------------------------------------------------------------------------------------------- |
+| Total Contacts  | Displays the aggregate number of all contacts stored, including manual entries and external extractions.        |
+| Total Lists     | Shows the count of active segment groups defined within your organization.                                     |
+| Total Tags      | Quantifies the number of unique identifiers used to categorize your audience.                                   |
+| Total Sources   | Lists the amount of distinct origins or platforms from which contacts were acquired (e.g., Shopee, WhatsApp). |
+| Created (Trend) | Visual graph showing the monthly growth rate of new contact registrations to track acquisition momentum.       |
+| Country Map     | An interactive geographic heat map showing where your customers are located globally.                           |
+| Top Sources     | A leader board ranking the most productive acquisition channels.                                               |
+| Top Countries   | Identifies the primary markets where your business has the highest density of contacts.                        |
+
+---
+
+## **Detailed Component Breakdown**
+
+- **Real-Time Statistical Cards**
+Located at the top of the dashboard, these cards provide immediate visibility into the scale of your CRM. Regular monitoring helps ensure your database is expanding at a healthy rate to support future sales goals.
+
+- **Created (Growth Trend Chart)**
+This line graph illustrates the volume of new contacts entering the system over specific periods. High peaks often correlate with successful marketing campaigns or seasonal sales events, allowing you to replicate successful strategies.
+
+- **Country Map (Interactive Geographic Analysis)**
+For businesses operating internationally, this map is invaluable. It helps in mapping audience reach and planning localized marketing content that resonates with specific regional demographics.
+
+- **Top Acquisition Sources**
+Understanding where your customers come from allows you to allocate marketing budgets more efficiently by investing in the platforms that generate the highest volume of qualified leads.
+
+- **Market Density Analysis**
+Top Countries identifies your core markets. Use this data to plan potential business expansions or targeted shipping promotions for high-density regions.
+
+---
+
+## **Navigating the Dashboard**
+
+### **Interactive Drill-Down**
+To see the raw data behind any specific metric, simply click directly on the chart or graph. The system will automatically navigate you to a filtered list of the actual contact records associated with that data point.
+
+### **Temporal Filtering**
+Users can adjust the dashboard results by selecting specific timeframes using the filters at the top of the page. This is essential for comparing seasonal growth or auditing campaign performance for a specific month.
+
+---
+
+<Tips>
+## **Optimization Tips**
+
+- **Trend Correlation**: Use the growth chart to identify high-growth months and cross-reference them with your historical campaign logs.
+- **Deep Dives**: Always click through the charts to verify the quality of contacts coming from specific "Top Sources."
+- **Budget Reallocation**: If a specific platform consistently appears in "Top Sources," consider increasing your advertising spend there.
+- **Market expansion**: Regularly check the Country Map to spot accidental or organic growth in new regions that could be leveraged for expansion.
+- **Historical Comparison**: Compare contact counts year-over-year to identify long-term brand growth patterns.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Stale Data**: If charts don't update after new contacts are added, refresh your browser page to pull the latest server-side figures.
+- **Map Loading Issues**: Ensure you have a stable internet connection as the interactive map modules require additional bandwidth to render correctly.
+- **Filter Mismatch**: If a chart appears empty, verify that your selected "Date Range" actually contains data entries.
+- **Display Glitches**: Clear your browser cache if the dashboard layout appears distorted or if chart colors seem incomplete.
+- **Authentication Errors**: If technical errors persist, log out and log back in to refresh your active user session.
+- **Data Discrepancy**: If the dashboard count differs significantly from your manual count, contact support to ensure all data extractions were successfully indexed.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

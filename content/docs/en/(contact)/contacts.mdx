@@ -1,399 +1,450 @@
 ---
 title: Contacts
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Managing customer databases, structured information organization, and multi-channel communication links in NoBox.AI.
 icon: BookUser
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Contact is a feature within Nobox.Ai used to store extracted contact data and manage target promotion data.
+**Contacts** is a primary module in NoBox.AI designed to store, manage, and organize all customer contact data acquired from various sources.
+
+This menu helps users handle promotion targets, store customer information in a structured manner, and support CRM needs such as task management, deals, and interaction notes. With the available features, users can perform bulk data imports, add contacts manually, and export data to external platforms like Google Contacts and Facebook Audiences.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/3EXx7AMWzwg/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/3EXx7AMWzwg"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
+---
+
+## **Contacts Menu Interface**
+
 <ImageZoom
-  src="/images/en/Contacts%20.png"
-  alt="Contacts Menu Overview"
+  src="/images/en/Kontak.png"
+  alt="Main Contacts Dashboard Interface"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-In the display, there are several sections, each with its own function. The explanation of these functions is as follows:
+The interface above shows the main Contacts page, which displays the complete list of customer contacts stored within the system.
 
-**• Import Excel & CSV**: Used to import contact data in Excel or CSV format from a file you own into your Nobox.Ai contact data.
-
-## **How to Impor Excel & CSV**
-
-1\. Go to the **[Contacts]** menu **➔** select **[Import Excel & CSV]** feature..
-
-<ImageZoom
-  src="/images/en/Cara%201%20.png"
-  alt="Step 1: Import Menu"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-2\. First, download the model or upload an existing Excel or CSV file. Click **[Select File]** **➔** choose your Excel or CSV file, then click **[Import]**.
-
-<ImageZoom
-  src="/images/en/Cara%204.png"
-  alt="Step 2: Select File"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-3\. A dialog will appear **[Import Excel & CSV].** Complete the channel, list, country, category, tag fields.
-
-<ImageZoom
-  src="/images/en/hasil%20impor%20excel&#x26;csv.png"
-  alt="Step 3: Import Details"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-To map Excel data with fields in Nobox.Ai, select the field names that correspond to the column names in the Excel data.
-
-Ensure to select the **[External ID]** field for all data such as phone numbers, emails, and others. Then, click the **[Save]** button to save the data.
-
-<ImageZoom
-  src="/images/en/mapping%20data%20excel.png"
-  alt="Field Mapping Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-**• Google Contacts**: It is used to download contact data in CSV format, making it easier for you to import contact data into Google Contacts.
-
-## **Cara Export Google Kontak**
-
-1\. Click the **[Google Contacts]** feature, and it will automatically download your contact data.
-
-<ImageZoom
-  src="/images/en/Cara1.png"
-  alt="Step 1: Export Settings"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-2\. Open Google Contacts in your Google account, then click **[Import contacts]**.
-
-<ImageZoom
-  src="/images/en/Cara2.png"
-  alt="Step 2: Google Contacts Import"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-3\. Choose the file downloaded from Nobox.Ai, then click **[Import]**.
-
-<ImageZoom
-  src="/images/en/Cara3.png"
-  alt="Step 3: Upload File"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-4\. The data will be displayed, select the data and click the icon [ <img src="/images/en/Tambah.png" alt="Add" className="inline h-5 w-auto mx-1" /> ] To add a contact to your Google account.
-
-<ImageZoom
-  src="/images/en/Cara4.png"
-  alt="Step 4: Confirm Addition"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-**• Facebook Audiences**: Used to download contact data in Excel or CSV format, making it easier for you to import contact data into Facebook audiences.
-
-<ImageZoom
-  src="/images/en/fb%20audiences.png"
-  alt="Facebook Audiences Export"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## New Contact
-
-To add contact data, click the **[Contacts]**➔**[New Contact]** menu. A **[New Contact]** dialog will appear. Then, fill in the required fields in the dialog.
-
-<ImageZoom
-  src="/images/en/New%20Contact%20.png"
-  alt="Add New Contact Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-| Data Entry     | Description                                | Example                       |
-| -------------- | ------------------------------------------ | ----------------------------- |
-| Name           | Contact Name                               | Erik Setiadi                  |
-| Category       | Category                                   | General                       |
-| List           | Fill the list                              | Partner                       |
-| Tag            | Fill the tag                               | Priority Customer             |
-| Contact Person | Name of the person related to the contact. | -                             |
-| Note           | Contact Note                               | -                             |
-| Link           | Contact Accounts                           | Email, WhatsApp, Shopee.co.id |
-| Address        | Contact Adress                             | Jl. Akordion                  |
-| Country        | Select Country                             | Indonesia                     |
-| Province       | Select Province                            | Jawa Timur                    |
-| City           | Select City                                | Malang                        |
-| Post           | Enter postal code                          | 65124                         |
-
-If you have completed all the fields, click **[Save]** to save the new contact data you have just created.
-
-## **Link**
-
-The link is used to store contact accounts such as WhatsApp numbers, Email, Telegram, etc.
-
-<ImageZoom
-  src="/images/en/Link.png"
-  alt="Contact Links List"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-To add a data link, please click **[New Link]** and a dialog box **[New Link]** will appear. Then, fill in the fields within the dialog.
-
-<ImageZoom
-  src="/images/en/New%20Link1.png"
-  alt="Add New Link Dialog"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-<table>
-  <thead>
-    <tr>
-      <th width="145.39996337890625">Data Entry</th>
-      <th width="317.60009765625">Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Channel</td>
-      <td>Select Channel</td>
-      <td>Email</td>
-    </tr>
-    <tr>
-      <td>Eksternal Name</td>
-      <td>Eksternal link name</td>
-      <td>Sasi Email</td>
-    </tr>
-    <tr>
-      <td>Id Eksternal</td>
-      <td>
-        Fill in with phone number, Shopee ID, etc., according to the channel
-        options.
-      </td>
-      <td>sasi@gmail.com</td>
-    </tr>
-    <tr>
-      <td>Id Conversation</td>
-      <td>Id conversation</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Photo</td>
-      <td>Fill in url photo</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Additional</td>
-      <td>Enter additional information</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
-
-If you have completed all the required fields, click **[Save]** to store the newly created link data.
-
-## **Edit And Delete Data Link**
-
-To edit a data link, first select the data you want to edit. Edit your data and click **[Save]** to save the changes.
-
-To delete a data link, select the data you want to remove, then click **[Delete]**. A confirmation dialog will appear asking if you wish to delete the data. If yes, click **[Yes]**, otherwise click **[No]**.
-
-## **vCard**
-
-vCard is a feature that allows you to send contact information in a format that's easily readable in other email programs. vCard files are saved as .vcf files.
-
-<ImageZoom
-  src="/images/en/vCard.png"
-  alt="vCard Export View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Merge Contacts**
-
-Features that are useful in contact management to prevent duplication and ensure clean and organized data, minimizing clutter and enhancing efficiency in managing contact lists.
-
-<ImageZoom
-  src="/images/en/gabung%20kontak.png"
-  alt="Merge Contacts Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Conversation**
-
-The "Conversations" tab is used to store all conversations with contacts associated with conversations that have the status of new, in progress, and completed. Thus, all unarchived conversations will be monitored with connected contacts.
-
-<ImageZoom
-  src="/images/en/Percakapan%20(2).png"
-  alt="Contact Conversations List"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Task**
-
-The "Tasks" tab is used for task management related to the contact.
-
-<ImageZoom
-  src="/images/en/Tasks.png"
-  alt="Contact Tasks Monitoring"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## New Task
-
-To add task data, please click [ <img src="/images/en/new%20task.png" alt="Add Task" className="inline h-5 w-auto mx-1" /> ] A **[New Task]** dialog will appear. Then complete the fields in the dialog.
-
-Complete the necessary fields, as exemplified below:
-
-| Data Entry         | Description                                  | Example                                      |
-| ------------------ | -------------------------------------------- | -------------------------------------------- |
-| Name               | Task Name                                    | Sent Campaign Message                        |
-| Detail/Plan        | Task Details or Plan                         | Send a broadcast to each customer in August. |
-| Next Steps/Outcome | Next steps or task results                   | Monthly Data Recap                           |
-| Attachment         | Task attachment                              | -                                            |
-| Owner              | Task Owner                                   | Wulan Septi                                  |
-| List               | Task list                                    | Backlog                                      |
-| Category           | Task category                                | Campaign                                     |
-| Priority           | Priority Level                               | Urgent                                       |
-| Tag                | Task tag                                     | Campaign, Marketing                          |
-| Start Date         | Start deadline                               | 02-08-2023                                   |
-| End Date           | End deadline                                 | 07-08-2023                                   |
-| Contact            | Contact the person responsible for the task. | Wara                                         |
-| Company            | The company that undertakes the task         | PT. Indodrink                                |
-| Transaction        | Offers related to the task                   | Offers Wara Indodrink                        |
-
-If you have completed the entries, click **[Save]** to save the task data you just created.
-
-## **Edit And Delete Task Data**
-
-To edit a task's data, first select which data you want to edit. Edit your data and click **[Save]** to save the changes.
-
-To delete a task data, select the data you want to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]** if not, click **[No]**.
-
-## **Offer**
-
-Offers is the tab used for managing deals related to that contact.
-
-<ImageZoom
-  src="/images/en/penawaran%20kontak.png"
-  alt="Contact Offers Monitoring"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## New Offer
-
-To add offer data, please click [ <img src="/images/en/Tombol%20penawaran.png" alt="Add Offer" className="inline h-5 w-auto mx-1" /> ] When the dialog **[New Offer]** appears, fill in the necessary fields in the dialog.
-
-<ImageZoom
-  src="/images/en/tambah%20penawaran%20kontak.png"
-  alt="Add New Offer Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-Fill in the required information, as shown in the following example:
-
-| **Isian**           | **Uraian**                   | **Contoh**            |
-| ------------------- | ---------------------------- | --------------------- |
-| Offer Name          | Deal Name                    | Penawaran Gamis Zeyaa |
-| Price               | Agreed Price                 | Rp 1.000.000          |
-| Assign to           | Assigned to                  | Jasmine               |
-| Closing Date        | Closing Date                 | 07-12-2024            |
-| Source              | Search                       | Other                 |
-| Reasons for Failure | Reasons for Proposal Failure | -                     |
-| Board               | Board options                | November 2024 Offer   |
-| Stages              | Stages                       | Sedang                |
-| Start Date          | Start Date                   | 03-12-2024            |
-| Expiration Date     | Expiration Date              | 10-12-2024            |
-| Priority            | Priority Level               | Medium                |
-| Company             | Company Agreement            | PT. Puspita           |
-| Contact             | Related contact list         | Sasi                  |
-| Product             | Product List                 | Gamis Zeyaa           |
-
-If you have completed the fields provided, click **[Save]** to save the newly created proposal data.
-
-## **Edit And Delete Offer Data**
-
-To edit a bid data, first select the data you wish to edit. Make your edits and click **[Save]** to save the changes.
-
-To delete an offer data, select which data you want to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]**; if not, click **[No]**.
-
-## Notes
-
-Notes is one of the features of Nobox.Ai used to create annotations related to the contact data.
-
-<ImageZoom
-  src="/images/en/Catatan.png"
-  alt="Contact Notes Overview"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## New Notes
-
-To create a note, you can type directly in the section [ <img src="/images/en/Type%20note%20here.png" alt="Note Input" className="inline h-5 w-auto mx-1" /> ]. If you have filled out the notes, please click the button [ <img src="/images/en/Kirim.png" alt="Send" className="inline h-5 w-auto mx-1" /> ] to store records.
-
-## **Edit And Delete Notes Data**
-
-This feature can only be used by NoBox Supervisors. Agents can add notes, but they cannot edit or delete note data.
-
-To edit a record, please click the icon [ <img src="/images/en/Edit.png" alt="Edit" className="inline h-5 w-auto mx-1" /> ] On the side of the note you want to edit, update the data and click the submit button or press enter on your keyboard to save the changes.
-
-To delete record data, please click the icon [ <img src="/images/en/Hapus.png" alt="Delete" className="inline h-5 w-auto mx-1" /> ] To delete a note, click the side of the note you wish to remove. A confirmation dialog will appear asking if you want to delete the note. Click **[Yes]** to proceed or **[No]** if you decide against it.
-
-## **Edit And Delete Contact Data**
-
-To edit a contact, please first select the data you wish to edit. Edit your data and click **[Save]** to save the changes.
-
-To delete a contact, select the contact you want to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]** if not, click **[No]**.
+From this page, users can view contact data, perform searches, add new contacts, import contacts in bulk, and export data to external platforms. Advanced filtering options are also available to facilitate finding contacts based on various criteria.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Import and Export Features**
+
+The Contacts menu provides several import and export functionalities to help users manage contact data efficiently:
+
+| Feature           | Function                                                                                                       |
+| ----------------- | -------------------------------------------------------------------------------------------------------------- |
+| Import Excel & CSV| Bulk import contact data from personal Excel or CSV files into the NoBox.AI database.                          |
+| Google Contacts   | Download contact data in CSV format specifically structured for importing into Google Contacts.                |
+| Facebook Audiences| Download contact data in professional formatting for import into Facebook Audiences for targeted advertising. |
+
+---
+
+## **How to Import Excel & CSV Files**
+
+This feature allows for mass data migration from external spreadsheet files into your NoBox.AI environment.
+
+1. Navigate to the **[Contacts]** menu ➔ click the **[Import Excel & CSV]** tool.
+
+<ImageZoom
+  src="/images/en/impor%20excel%20&#x26;%20csv.png"
+  alt="Bulk Import Tool Integration"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+2. Click **[Download Model]** first to obtain the correctly formatted template, or upload your existing Excel/CSV file. Click **[Select File]** ➔ choose your file, then click **[Import]**.
+
+<ImageZoom
+  src="/images/en/Impor%20data%20excel&#x26;csv.png"
+  alt="File Selection and Upload Process"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+3. The **[Import Excel & CSV]** configuration dialog will appear. Complete the fields for channel, list, country, category, and tags as required for your campaign.
+
+<ImageZoom
+  src="/images/en/hasil%20impor%20excel&#x26;csv.png"
+  alt="Import Configuration and Metadata Dialog"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+4. Map your Excel columns to the corresponding NoBox.AI fields. Mapping ensures that data from your file is placed accurately within the system.
+
+**Critical Step**: Ensure you map the **[External ID]** field for unique identifiers like phone numbers or emails to prevent duplication. Click **[Save]** to finalize the import.
+
+<ImageZoom
+  src="/images/en/mapping%20data%20excel.png"
+  alt="Data Column Mapping and Validation"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Exporting to Google Contacts**
+
+This utility allows you to sync your CRM data with Google’s ecosystem for unified communication.
+
+1. Click the **[Google Contacts]** feature on the Contacts page. The system will automatically download your data in a specialized CSV format.
+
+<ImageZoom
+  src="/images/en/google%20contact.png"
+  alt="Google Contacts Export Action"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+2. Access your Google Contacts account in your browser and click **[Import]**.
+
+<ImageZoom
+  src="/images/en/google%20kontak%20(impor).png"
+  alt="Google Contacts Browser Interface"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+3. Select the CSV file downloaded from NoBox.AI and click **[Import]**.
+
+<ImageZoom
+  src="/images/en/impor%20kontak.png"
+  alt="Confirming File Selection in Google"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+4. The data will populate in Google Contacts. Select the entries and click the [ <img src="/images/en/Tambah.png" alt="Add" className="inline h-5 w-auto mx-1" /> ] icon to save them to your account.
+
+<ImageZoom
+  src="/images/en/hasil%20impor%20kontak.png"
+  alt="Finalizing Contact Synchronization"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Exporting to Facebook Audiences**
+
+The Facebook Audiences feature provides professional-grade data formatting for direct upload into Facebook Ads Manager for targeted campaign creation.
+
+<ImageZoom
+  src="/images/en/fb%20audience.png"
+  alt="Facebook Ads Data Export Feature"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+Click the **[Fb Audiences]** feature on the Contacts page, and the system will instantly generate the relevant dataset for your advertising needs.
+
+---
+
+## **Adding Contacts Manually**
+
+To create individual contact records, follow these steps:
+
+1. Navigate to the **[Contacts]** menu ➔ **[Add Contact]**.
+2. Complete the required fields in the **[Add Contact]** dialog box.
+
+### Add Contact Dialog View
+
+<ImageZoom
+  src="/images/en/Tambah%20Kontak.png"
+  alt="Manual Contact Entry Form"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Contact Form Fields**
+
+| Field          | Description                                                                                       | Example              |
+| -------------- | ------------------------------------------------------------------------------------------------- | -------------------- |
+| Name           | Full legal name of the contact. This is a mandatory field.                                        | Erik Setiadi         |
+| Category       | Broad classification to help group contacts by type (e.g., Lead, Partner).                        | General              |
+| List           | Specific segment or campaign group the contact belongs to.                                        | Partner              |
+| Tag            | Internal labels for rapid identification and specialized filtering.                               | Priority Customer    |
+| Contact Person | Designates a representative or account manager for this contact.                                  | -                    |
+| Notes          | Internal reminders or qualitative context regarding the contact.                                  | -                    |
+| Link           | Communication accounts (Email, WhatsApp, Shopee, etc.) associated with the contact.               | WhatsApp, Email      |
+| Address        | Complete physical business or residence address.                                                  | 123 Accordion St.    |
+| Country        | Primary country of residence/operation.                                                           | Indonesia            |
+| Province       | State or administrative region.                                                                   | East Java            |
+| City           | City or district location.                                                                        | Malang               |
+| Postal Code    | Mailing zip code for shipping logistics.                                                          | 65124                |
+
+Click **[Save]** to create the record.
+
+---
+
+## **Communication Links**
+
+The **Links** tab is used to house multiple communication identifiers connected to a single contact, such as WhatsApp numbers, Email addresses, and Telegram IDs.
+
+By connecting one contact to multiple channels, you ensure that marketing broadcasts can be delivered across various platforms from a integrated historical record.
+
+<ImageZoom
+  src="/images/en/Link.png"
+  alt="Multi-Channel Links Configuration"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### Adding a New Link
+
+1. Click **[Add Link]** to open the configuration dialog.
+2. Complete the technical details for the new channel.
+
+<ImageZoom
+  src="/images/en/Tambah%20Link.png"
+  alt="Adding a Communication Gateway"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Link Configuration Fields**
+
+| Field             | Description                                                                                       | Example           |
+| ----------------- | ------------------------------------------------------------------------------------------------- | ----------------- |
+| Channel           | The target communication platform (e.g., Telegram).                                               | Email             |
+| External Name     | The profile name or username displayed on that specific platform.                                  | Sasi Biz Email    |
+| External Id       | The unique ID (Phone, Email, Shopee ID) required for delivery. This must be accurate.               | sasi@gmail.com    |
+| Conversation Id   | Optional ID linked to a specific historical chat thread.                                          | -                 |
+| Profile Photo     | URL or upload for the contact's platform profile picture.                                          | -                 |
+| Additional Info   | Internal comments specific to this communication link.                                            | -                 |
+
+Click **[Save]** to finalize the link integration.
+
+### Managing Links
+
+#### Editing Links
+To update a username or ID, select the link in the table and click **Save** after making changes. Updates reflect across the system immediately.
+
+#### Deleting Links
+Select the obsolete link and click **[Delete]**. Confirm the action in the prompt.
+
+<Callout type="info" title="Important Information">
+Link deletion is permanent. Ensure the channel is no longer required for promotional activities before deletion.
+</Callout>
+
+---
+
+## **vCard Integration**
+
+vCards allow you to export contact information in a universally standardized format (.vcf) compatible with all major email and smartphone contact applications.
+
+<ImageZoom
+  src="/images/en/VCard.png"
+  alt="Standardized Contact vCard Export"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+Click the **[vCard]** button within a contact's profile to instantly download their digital business card.
+
+---
+
+## **Merging Duplicate Contacts**
+
+The **Merge Contacts** tool is used to consolidate multiple duplicate records into a single, comprehensive master entry.
+
+Proper data hygiene reduces confusion during campaigns and ensures that communication history isn't fragmented across multiple partial records.
+
+<ImageZoom
+  src="/images/en/gabung%20kontak.png"
+  alt="Data De-duplication and Merging"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+To merge, select the "Master" record you wish to keep and then select the "Duplicates" to be absorbed. All secondary data will be moved into the master profile.
+
+---
+
+## **Integrated Conversations**
+
+The **Conversations** tab provides a unified history of every chat interaction with a specific contact across all statuses (New, Processing, Done).
+
+This centralized logging ensures that users can track the entire relationship timeline without leaving the contact's profile.
+
+<ImageZoom
+  src="/images/en/Percakapan%20(2).png"
+  alt="Centralized Interaction History"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Linked Task Management**
+
+The **Tasks** tab allows you to manage action items and follow-up workflows directly tied to an individual customer.
+
+<ImageZoom
+  src="/images/en/Tugas.png"
+  alt="Customer-Centric Task Tracking"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### Creating a Task
+
+Click the [ <img src="/images/en/Tombol%20Tugas%20(1).png" alt="Task Action" className="inline h-5 w-auto mx-1" /> ] icon to launch the **[Add Task]** form.
+
+<ImageZoom
+  src="/images/en/tambah%20tugas%20kontak.png"
+  alt="Linked Task Configuration Form"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Task Configuration Details**
+
+| Field              | Description                                                               | Example                         |
+| ------------------ | ------------------------------------------------------------------------- | ------------------------------- |
+| Name               | Identifiable title for the action item.                                    | Dispatch August Promo           |
+| Plan/Detail        | Step-by-step instructions or goals of the task.                           | Send broadcast to all Aug leads|
+| Next Step/Result   | Desired outcome or required followup once complete.                       | Compile monthly report          |
+| Attachment         | Optional supporting files required for task execution.                    | -                               |
+| Owner              | The internal team member responsible for the task.                        | Jasmine                         |
+| List               | Pipeline stage (e.g., Backlog, In Progress, Review).                      | Backlog                         |
+| Category           | Work classification (e.g., Sales, Promotion).                             | Promotion                       |
+| Priority           | Technical urgency (Low, Medium, Urgent).                                  | Urgent                          |
+| Tags               | Secondary labels for organizational grouping.                              | Marketing                       |
+| Dates (Start/End)  | The scheduled timeframe for task completion.                              | Aug 2nd to Aug 7th              |
+| Linked Transaction | Connects the task to a specific Sales Deal/Offer.                        | PT Sentosa Deal                 |
+
+---
+
+## **Sales Deals and Offers**
+
+The **Deals** (Penawaran) tab is utilized for tracking sales opportunities, commercial negotiations, and high-value offers linked to a contact.
+
+Managing deals here allows for an integrated view of the sales funnel alongside the customer's communication history.
+
+<ImageZoom
+  src="/images/en/penawaran%20kontak.png"
+  alt="Sales Deal Lifecycle Tracking"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### Registering a New Deal
+
+Click the [ <img src="/images/en/Tombol%20penawaran.png" alt="Deal Action" className="inline h-5 w-auto mx-1" /> ] icon to open the **[Add Deal]** dialog.
+
+<ImageZoom
+  src="/images/en/tambah%20penawaran%20kontak.png"
+  alt="Sales Opportunity Entry Form"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Deal Form Fields**
+
+| Field             | Description                                                   | Example                  |
+| ----------------- | ------------------------------------------------------------- | ------------------------ |
+| Deal Name         | Title of the negotiation or commercial agreement.              | Zeyaa Apparel Wholesale  |
+| Value/Price       | The monetary estimated worth of the deal.                     | Rp 1,000,000             |
+| Assigned To       | The sales agent responsible for closing the deal.            | Jasmine                  |
+| Close Date        | Expected or hard deadline for the negotiation.                | Dec 7th, 2024            |
+| Source            | Origin of the lead (e.g., Website, Referral).                 | Referral                 |
+| Board/Pipeline    | The Kanban board where the deal progress is visualized.       | November Pipeline        |
+| Stage             | Current progress level (e.g., Negotiation, Pending).          | Negotiation              |
+| Dates (Start/End) | Active window for the specific offer terms.                   | Dec 3rd to Dec 10th      |
+| Products          | List of inventory items included in the deal.                 | Zeyaa Gamis x 10         |
+
+---
+
+## **Internal Contextual Notes**
+
+The **Notes** tab is a collaborative space for team members to leave qualitative insights or communication logs about a contact.
+
+<ImageZoom
+  src="/images/en/Catatan.png"
+  alt="Team Internal Notes Interface"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+- **Quick Entry**: Type directly into the [ <img src="/images/en/Type%20note%20here.png" alt="Entry Area" className="inline h-5 w-auto mx-1" /> ] box and click [ <img src="/images/en/Kirim.png" alt="Save" className="inline h-5 w-auto mx-1" /> ] to post.
+- **Permissions**: Only **Supervisors** can edit or delete existing notes. **Agents** have permission to add new notes but cannot modify historical logs to ensure operational integrity.
+
+---
+
+## **Global Contact Management**
+
+### Editing Records
+Select the record, modify any metadata or address details, and click **[Save]**. Changes are updated across all modules (CRM, Campaigns, Tasks) throughout the NoBox.AI ecosystem.
+
+### Deleting Records
+To permanently remove a contact, click **[Delete]** and confirm the action.
+
+<Callout type="info" title="Important Information">
+Contact deletion is permanent and irreversible. Ensure no critical commercial history or communication logs are required before final removal.
+</Callout>
+
+---
+
+<Tips>
+## **Workflow Strategies**
+
+- **Bulk Efficiency**: Always use the **[Import Excel/CSV]** tool for large database migrations. Review the model template first to ensure data alignment.
+- **Data Integrity**: Prioritize mapping the **[External ID]** (Phone/Email) correctly to prevent accidental account duplication.
+- **Dynamic Sharing**: Use the **[vCard]** feature to rapidly transfer leads to mobile devices for on-the-go communication.
+- **Clean Database**: Perform a **[Merge]** audit monthly to keep your customer lists compact and efficient.
+- **Task Synergy**: Connect **[Tasks]** and **[Deals]** to contacts to create a clear operational map of your sales efforts.
+- **Contextual Knowledge**: Leave detailed internal notes after significant phone calls to help other team members provide better service.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Import Errors**: If bulk upload fails, verify your file strictly adheres to the downloaded model template's column headers.
+- **Duplicate Data**: If duplicates occur, check if the "External ID" was correctly mapped during the last import session.
+- **UI Lag**: Refresh your browser or toggle the "Auto-Refresh" switch if manual additions don't appear in the list instantly.
+- **Restricted Actions**: If "Edit" or "Delete" buttons are inactive, verify that your account role has the necessary permissions for data management.
+- **External Sync Issues**: Maintain a stable internet connection when syncing with Google or Facebook platforms.
+- **Broken Links**: If WhatsApp or Email "Links" fail to open, check the account authentication status in your Business Profile settings.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

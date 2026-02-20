@@ -1,83 +1,149 @@
 ---
 title: Contact Tags
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Utilizing custom labels to effectively categorize, organize, and segment your customer database for targeted marketing in NoBox.AI.
 icon: Hash
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The Contact Tag is a feature in Nobox.Ai used to categorize your contact data.
+**Contact Tags** (Tag Kontak) is an organizational module in NoBox.AI used to classify and categorize individual customer records based on specific labels.
+
+This feature helps users organize their contact database into a structured hierarchy, making the process of searching, filtering, and managing contacts significantly more efficient. By applying the correct tags, users can rapidly identify customer types, interaction statuses, or audience segments with precision.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/n3daNgK1hKw/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/n3daNgK1hKw"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-<ImageZoom
-  src="/images/en/Contact%20Tag.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+---
 
-## **New Tag**
-
-To create a data tag, click the menu **[Contact Tag]** ➔ **[New Contact Tag]**. A dialog **[New Contact Tag]** will appear, then enter the name of the tag to be created.
+## **Contact Tags Menu Interface**
 
 <ImageZoom
-  src="/images/en/New%20Contact%20Tag%20.png"
-  alt="NoBox Dashboard View"
+  src="/images/en/1.%20Tampilan%20Tag%20Kontak.png"
+  alt="Contact Tags Management Dashboard"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-If you have completed the form, click **[Save]** to store the new tag data you just created.
+The interface above represents the primary **Contact Tags** dashboard. It lists every custom label currently available within your workspace.
 
-## **Edit And Delete Data Tag**
-
-To edit a tag data, please select the data you wish to edit first. Make your edits and click **[Save]** to save the changes.
-
-To delete a tag, select the tag you want to remove, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]** if not, click **[No]**.
-
-## **How to Use Contact Tags**
-
-1\. Go to the **[Contacts]** menu, select an existing entry or add a new contact.
-
-2\. Click on the Tag column field to display previously created tags.
-
-3\. Select one or more of the tag data and click **[Save]** to store the contact information again.
-
-<ImageZoom
-  src="/images/en/Cara%20Tags%20(2).png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Filter Tag Contact**
-
-The contact tag filter is used to sort contact data and display it based on the selected tag. Here's how to filter contact data:
-
-- Open the **[Contact]** menu, click the Tags filter, and choose the tag data you want to search. The filtered data will be displayed.
-
-<ImageZoom
-  src="/images/en/Filter%20Tags%20(1).png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+From this page, users can review existing tag names, create new labels, edit historical tags, and remove obsolete identifiers that are no longer required for your reporting cycles.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Adding a Contact Tag**
+
+1. To create a new organizational label, navigate to the **[Contact Tags]** menu ➔ click **[Add Contact Tag]**.
+2. An **[Add Contact Tag]** dialog will appear. Enter the specific title for your new label.
+
+### Add Contact Tag Dialog View
+
+<ImageZoom
+  src="/images/en/2.%20Tambah%20Tag%20Kontak.png"
+  alt="Creating a New Organizational Tag"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Tag Entry Field Definitions**
+
+| Field    | Description                                                                                                   | Example           |
+| -------- | ------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Tag Name | The identifier used to group contact data. Use short, descriptive titles for rapid recognition by the team.   | VIP Customer      |
+
+Click **[Save]** to commit the tag to your database. You can add multiple tags sequentially to build a robust segmentation taxonomy.
+
+---
+
+## **Managing Your Tag Library**
+
+### Editing Contact Tags
+To rename an existing tag, select the target entry and modify the title in the form. Click **[Save]** to apply. The change will automatically propogate across all individual contact records currently carrying that specific tag.
+
+### Deleting Contact Tags
+Select the obsolete tag and click **[Delete]**. A confirmation prompt will appear to verify the action. Click **[Yes]** to confirm or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+Tag deletion is permanent and cannot be undone. Ensure that the tag is no longer required for active campaigns or reporting filters before final removal.
+</Callout>
+
+---
+
+## **Applying Tags to Contacts**
+
+Contact tags can be applied directly while creating or editing an individual customer record.
+
+1. Open the **[Contacts]** menu and select a specific contact.
+2. Locate the **[Tag]** input field. A dropdown list of your previously created tags will appear.
+3. Select one or more relevant tags to classify the customer.
+
+<ImageZoom
+  src="/images/en/3.%20Penggunaan.png"
+  alt="Applying Tags to Individual Records"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+4. Click **[Save]** to finalize the contact’s metadata.
+
+---
+
+## **Advanced Filtering via Tags**
+
+The primary benefit of tagging is the ability to rapidly isolate specific customer segments.
+
+1. Navigate to the **[Contacts]** dashboard and click the **[Tags]** filter button at the top of the table.
+2. Select the specific tags you wish to view.
+3. The table will instantly refresh to display only the contacts carrying those selected labels.
+
+<ImageZoom
+  src="/images/en/4.%20Filter%20Tag%20Kontak.png"
+  alt="Filtering the Database by Category Tags"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+To remove the filter and view your complete database again, click **[Reset]** or deselect the tags from the filter list.
+
+---
+
+<Tips>
+## **Tagging Strategy Tips**
+
+- **Specific Naming**: Use clear, actionable names like "Hot Prospect," "Past Buyer," or "Active Reseller" to improve team coordination.
+- **Multi-Tagging**: Don't hesitate to apply multiple tags for granular segmentation (e.g., a customer can be both "VIP" and "Region-East").
+- **Promotional Targeting**: Use specific tags to build highly relevant broadcast lists for upcoming marketing campaigns.
+- **Performance monitoring**: Regularly audit your tag list to delete duplicate or obsolete categories, keeping your filtering menus intuitive.
+- **Lifecycle tracking**: Use tags such as "New," "Retained," or "At-Risk" to monitor the health of your customer lifecycle.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Tag Not Visible**: If a newly created tag doesn't appear in the contact form dropdown, refresh your browser page to sync the latest data.
+- **Save Failures**: Verify your internet stability if a tag fails to save or delete from the master list.
+- **Duplicate Confusion**: Ensure you don't create two tags with similar names (e.g., "VIP" and "V.I.P.") to avoid fragmentation.
+- **Restricted Access**: If you cannot add or delete master tags, check with your administrator regarding your account's "Supervisor" permissions.
+- **Filter Lag**: If the database fails to filter after selecting a tag, log out and log back in to refresh your active user session.
+- **Display Errors**: Clear your browser cache if the tag dropdown layout appears broken or misaligned.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

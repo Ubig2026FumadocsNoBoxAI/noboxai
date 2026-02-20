@@ -1,109 +1,123 @@
 ---
-title: Message Templates (Message Models)
-description: Create and manage promotional message templates for reuse in various campaigns in NoBox.AI.
-icon: FileText
+title: Message Templates
+description: Creating and managing standardized messaging formats, promotional layouts, and pre-approved content for efficient campaign deployment in NoBox.AI.
+icon: MessageCircleMore
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-**Message Templates (Message Models)** is a feature in NoBox.AI that allows you to save the design and content of promotional messages for future reuse. By using templates, you don't need to retype the message content every time you want to create a new campaign, making the marketing process much faster and more consistent.
+**Message Templates** (Model Pesan) is a productivity module in NoBox.AI used to design and store reusable communication formats. By creating templates, you eliminate the need to manually compose repetitive content, ensuring your marketing team stays agile and efficient.
 
-These templates can include text, personalization variables, and media attachments such as images or documents.
+Standardized templates also ensure brand consistency and reduce human error during high-pressure campaign cycles across multiple channels.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/fUkihH0-qHc"
-  title="NoBox Message Templates Guide"
+  src="https://www.youtube.com/embed/fUkihH0-qHc/"
+  title="Message Templates Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerPolicy="strict-origin-when-cross-origin"
-  allowFullScreen
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
 ></iframe>
 
 ---
 
-## **Message Templates Interface**
+## **Message Templates Menu Interface**
 
 <ImageZoom
-  src="/images/en/Message%20Template.png"
-  alt="NoBox Message Templates View"
+  src="/images/id/Model%20Pesan.png"
+  alt="Message Template Library Interface"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-This page displays a list of all templates you have created. You can manage, search, and preview the content of each available message model.
+This dashboard displays your complete library of saved communication formats. You can manage templates specifically tailored for WhatsApp, Telegram, or any other integrated channel within this single environment.
 
 ---
 
-## **How to Create a New Message Template**
+## **Creating a Message Template**
 
-1. Open the **[Promotions]** module and select the **[Message Templates]** menu.
-2. Click the **[+ Create Message Model]** button.
-3. A form dialog will appear for you to fill in the template details.
+To build a new reusable format, follow these steps:
 
-### Add Message Template Dialog
+1. Navigate to the **[Campaigns]** module ➔ **[Message Templates]** menu.
+2. Click the **[Add Message Template]** button.
+3. Populate the configuration fields in the resulting dialog.
+
+### Add Template Dialog View
 
 <ImageZoom
-  src="/images/en/New%20Message%20Template%20.png"
-  alt="Add Message Template Form"
+  src="/images/id/Tambah%20Model%20Pesan.png"
+  alt="Creating a New Message Template"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-### Template Form Fields
+### **Template Configuration Fields**
 
-Complete the following fields to create an effective template:
+| Field            | Description                                                      | Example                                 |
+| :--------------- | :--------------------------------------------------------------- | :-------------------------------------- |
+| **Name**         | The internal identifier for the template.                        | Order Confirmation - Retail            |
+| **Channel**      | The intended communication medium.                               | WhatsApp                                |
+| **Subject**      | The title or subject line (primarily for email/notification).    | Order Status Update                     |
+| **Message Format**| The technical format of the content (Text, HTML, etc.).          | Text                                    |
+| **Message Body** | Your template content. Supports variables and formatting.        | Hello, thank you for your order...       |
+| **Attachments**  | Fixed files (PDFs, images) to be sent with this template.        | -                                       |
 
-| Input Field | Description | Example |
-| :--- | :--- | :--- |
-| **Name** | A unique name to identify this template internally. | RAMADAN Order Confirmation |
-| **Channel** | Select the communication channel supported by this template. | WhatsApp |
-| **Subject** | The subject or topic of the message (especially for email). | Payment Confirmation |
-| **Message Format** | Determine whether to use Text or Media format. | Text / Media |
-| **Message** | The main message content you want to convey. | Hello [Name], thank you for ordering... |
-| **Attachment** | Upload supporting files such as catalogs or invoices (if any). | promo_catalog.pdf |
-
-Once completed, click **[Save]** to store the data.
+Once complete, click **[Save]** to commit the template to your library.
 
 ---
 
-## **Using Templates in Promotions**
+## **Managing Your Library**
 
-Once a template is created, you can apply it when creating a new promotional campaign:
+### Editing Templates
+Select a template from the list to modify its content or configuration. Click **[Save]** to apply changes. Updated templates are immediately available for use in any new campaign creation sessions.
 
-1. In the **[Promotions]** module, create or edit a campaign.
-2. Click the **[Template]** button or select a message model from the dropdown.
-3. Choose the desired message model from the list that appears.
-4. Click **[Use Model]**. All message fields will be automatically filled according to the template.
+### Deleting Templates
+To remove a template, select it and click **[Delete]**, then confirm in the prompt. 
 
-<ImageZoom
-  src="/images/en/apply%20template.png"
-  alt="How to Use Message Models"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
-/>
+<Callout type="info" title="Important Information">
+Template deletion is permanent. If you delete a template, it will no longer be accessible for future campaigns. Ensure the content is truly obsolete before finalizing deletion.
+</Callout>
 
 ---
 
-## **Editing and Deleting Templates**
+## **Applying Templates to Campaigns**
 
-- **Edit**: Select a template from the list, click the edit icon (pencil) or the options button, update the fields, and click **[Save]**. Changes to a template will not affect *currently running* campaigns but will apply to *future* campaign use.
-- **Delete**: Select the template you wish to remove, click the delete icon (trash can), and confirm by clicking **[Yes]**.
+You can rapidly deploy these formats while setting up a new promotion by clicking the **[Template]** button.
+
+<ImageZoom
+  src="/images/id/Promosi%20Model%20Pesan.png"
+  alt="Using Templates in a Live Campaign"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+Select your desired template from the **[Select Model]** dialog and click **[Use Model]**. The system will automatically populate your campaign text and settings with the template data.
+
+<ImageZoom
+  src="/images/id/Tampilan%20Template.png"
+  alt="Template Selection Interface"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
 
 ---
 
 <Tips>
-## **Tips for Creating Engaging Templates**
+## **Template Optimization Tips**
 
-- **Use Variables**: Insert placeholders like `[Name]` to make messages feel more personal to customers.
-- **Concise Content**: Ensure the core message is at the beginning so it is immediately read by the customer.
-- **High-Quality Media**: If using the Media format, ensure attached images or videos have good resolution but reasonable file sizes.
-- **Categorize Names**: Use name prefixes like `[PROMO]`, `[INFO]`, or `[CS]` to keep the template list organized.
+- **Descriptive Naming**: Use clear naming conventions (e.g., "Jan24_FlashSale_A") to help your team find the right content instantly.
+- **Dynamic Variables**: Leverage personalization placeholders (like `[ContactName]`) to make generic templates feel personal to every recipient.
+- **Channel Compliance**: Verify that your formatting (link style, image size) aligns with the specific rules of your chosen platform (e.g. WhatsApp's formatting tags).
+- **Periodic Audits**: Update your templates quarterly to reflect changes in pricing, business hours, or brand voice.
+- **Categorize by Goal**: Group templates internally as "Lead Follow-up," "Discount Offer," or "Transaction Confirmation" for better organization.
+
 </Tips>
 
 ---
@@ -111,11 +125,14 @@ Once a template is created, you can apply it when creating a new promotional cam
 <Kendala>
 ## **Troubleshooting**
 
-- **Attachment Failed to Upload**: Ensure the file format is supported (PNG, JPG, PDF) and its size doesn't exceed the system limit.
-- **Template Doesn't Appear When Selected**: Ensure the **Channel** selected in the template matches the **Channel** you are using for the promotional campaign.
-- **Variables Not Working**: Double-check the variable syntax; ensure it matches the tags available in NoBox so contact data is correctly retrieved.
+- **Template Not Appearing**: Ensure the "Channel" defined in your template matches the channel selected for your current campaign.
+- **Save Failure**: Verify that all mandatory fields (Name, Channel, Message Body) have been populated.
+- **Attachment Loading Errors**: Ensure the file size is under the 10MB limit and uses a standard format supported by the channel.
+- **Formatting Glitches**: Avoid copy-pasting directly from Microsoft Word; use a plain text editor first to strip hidden formatting characters.
+- **Non-Responsive Dialogs**: If the selection window doesn't open, refresh your browser or clear its local cache.
+
 </Kendala>
 
 ---
 
-If you have any issues or difficulties related to NoBox.AI, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

@@ -1,100 +1,119 @@
 ---
 title: Broadcast Dashboard
-description: Visual summary of message delivery activities and promotion statistics in NoBox.AI.
-icon: LayoutDashboard
+description: Monitoring real-time message delivery statuses, queue volumes, success rates, and live broadcast activities in NoBox.AI.
+icon: Send
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The **Broadcast Dashboard** provides a comprehensive overview of all message delivery activities in a concise, graphical format. Through this page, you can instantly monitor the performance of your promotion campaigns without having to look at data details one by one.
+The **Broadcast Dashboard** (Dasbor Kirim Pesan) is a critical monitoring module in NoBox.AI designed to provide a centralized overview of all message delivery activities.
 
-This dashboard is highly useful for marketing managers or business owners to quickly evaluate delivery effectiveness and detect anomalies (such as high failure rates).
+This interface allows users to track delivery progress, identify message failures, and evaluate the real-time reach of their promotional or communications efforts, supporting rapid operational adjustments.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/SOf-o_IuYIk"
-  title="NoBox Promotion Dashboard Guide"
+  src="https://www.youtube.com/embed/XHaiaN9YWmg/"
+  title="Broadcast Dashboard Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerPolicy="strict-origin-when-cross-origin"
-  allowFullScreen
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
 ></iframe>
 
 ---
 
 ## **Broadcast Dashboard Interface**
 
+### Main Monitoring View
+
 <ImageZoom
-  src="/images/en/Broadcast%20Dashboard.png"
-  alt="NoBox Broadcast Dashboard View"
+  src="/images/id/Dasbor%20Kirim%20Pesan%20(1).png"
+  alt="Broadcast Performance Dashboard"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-The display above shows various statistical widgets that are updated periodically. Each graphical element can be clicked to navigate to more specific data details.
+The dashboard visualizes the current lifecycle of outgoing messages managed by the system.
+
+From this page, users can immediately verify active delivery statuses, successful dispatch volumes, and identifying problematic batches within a single, high-level view.
+
+### Key Data Insights
+
+The Broadcast Dashboard focuses on technical delivery metrics to support high-volume communication monitoring.
+
+Displayed data includes messages currently in the queue, messages actively being processed, successfully delivered counts, failed delivery logs, and a feed of the most recent broadcasts.
 
 ---
 
-## **Statistical Features and Information**
+## **Dashboard Core Components**
 
-Here are the explanations for the main sections available on the Broadcast Dashboard:
-
-<table>
-  <thead>
-    <tr>
-      <th width="180">Widget / Statistic</th>
-      <th>Function and Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>**Queue**</td>
-      <td>Displays the total number of messages currently waiting in line to be sent.</td>
-    </tr>
-    <tr>
-      <td>**Process**</td>
-      <td>Displays the number of messages currently in the active delivery stage to the provider.</td>
-    </tr>
-    <tr>
-      <td>**Sent**</td>
-      <td>Statistics for the total number of messages successfully delivered today or within a specific period.</td>
-    </tr>
-    <tr>
-      <td>**Failed**</td>
-      <td>Accumulation of messages that were not successfully sent due to various technical issues.</td>
-    </tr>
-    <tr>
-      <td>**Total Delivery**</td>
-      <td>A graph or number showing the trend of message delivery volume over time.</td>
-    </tr>
-    <tr>
-      <td>**Latest Sent**</td>
-      <td>A brief list of the most recent messages executed by the system.</td>
-    </tr>
-  </tbody>
-</table>
+| Metric/Section      | Function                                                                    |
+| ------------------- | --------------------------------------------------------------------------- |
+| Queue               | Displays messages waiting to be dispatched by the system.                  |
+| Processing          | Shows the volume of messages currently in the act of being sent.           |
+| Delivered           | Tracks the aggregate number of messages successfully reaching recipients.   |
+| Failed              | Identifies messages that could not be delivered due to various errors.      |
+| Broadcast Status    | Categorizes outgoing volume based on specific technical states.             |
+| Total Sent          | Cumulative data on all successful message transmissions.                    |
+| Latest Delivered    | A real-time feed of the most successfully completed message dispatches.     |
 
 ---
 
-## **Analyzing Dashboard Data**
+## **Detailed Component Breakdown**
 
-To maximize the use of this dashboard, you can perform the following:
+- **Message Queue**
+Monitoring the queue is vital for understanding upcoming workload. A high sustained queue indicates a massive broadcast campaign is pending or currently active.
 
-1. **Monitor Success Rate**: Compare the **Sent** and **Failed** numbers. If the failure rate increases significantly, immediately check the stability of your channel connection.
-2. **Observe Time Trends**: Use graphs to identify peak message delivery hours to adjust future marketing strategies.
-3. **Click for Details**: If you see suspicious numbers (e.g., a queue that doesn't decrease), click on the widget to go directly to the message list page for further investigation.
+- **Active Processing**
+Provides a real-time window into the system's current output. This helps technicians ensure that APIs and channel gateways are performing optimally.
+
+- **Delivered Success**
+This is your primary KPI for reach. It confirms how many individuals have actually received your information or promotional material.
+
+- **Failure Analysis**
+Essential for data hygiene. By monitoring failures, users can identify patterns such as inactive phone numbers or blocked accounts that require administrative attention.
+
+- **Broadcast Taxonomy**
+Visual distribution of outgoing types, allowing managers to see the proportion of communication successes versus attempts.
+
+- **Total Success Volume**
+Provides the "big picture" of your communications impact over a defined period, essential for high-level management reporting.
+
+- **Real-Time Delivery Feed**
+Allows for immediate verification that campaigns are "live" and successful, showing the very latest successful hits.
+
+---
+
+## **Analyzing the Broadcast Dashboard**
+
+### Interpretation Guide
+
+To effectively manage your communications through this dashboard:
+
+1. **Review Queues Regularly**: Ensure that the "Queue" isn't stagnant; messages should be moving steadily into "Processing."
+2. **Monitor Success Ratios**: Compare "Delivered" versus "Failed." A significant spike in failures might indicate a need to review your contact list or message content.
+3. **Audit Active Cycles**: Use the "Processing" data to estimate when a large-scale campaign will reach completion.
+4. **Leverage Live Feeds**: Use the "Latest Delivered" entries to spot-check delivery timestamps and account-level performance.
+
+### Strategic Impact
+
+Broadcast data is the definitive source for assessing your communication infrastructure's health. 
+
+Administrators should utilize these figures to evaluate the ROI of specific communication channels and to improve the overall delivery rate of marketing campaigns.
 
 ---
 
 <Tips>
-## **Analysis Tips**
+## **Workflow Optimization Tips**
 
-- **Clear the Queue**: If many messages remain in the queue for a long time, ensure your NoBox Desktop application is running smoothly.
-- **Evaluate Failed Messages**: Immediately click on the "Failed" statistic to see if the failure was caused by inactive customer numbers or content issues (spam filter).
-- **Use Date Filters**: Adjust the date range on the dashboard to view weekly or monthly campaign performance.
+- **Status Checks**: Perform a quick dashboard audit 15 minutes after launching a major campaign to ensure the "Processing" phase has successfully initiated.
+- **Contact Hygiene**: Use the "Failed" counts as a trigger to perform a cleanup of your contact lists, removing habitually invalid addresses or numbers.
+- **System Health**: If the "Queue" is high but "Processing" is at zero, check your channel settings for potential disconnection or API errors.
+- **Periodic Reporting**: Screenshot the "Total Sent" summaries weekly to build a historical performance log for management.
+
 </Tips>
 
 ---
@@ -102,11 +121,17 @@ To maximize the use of this dashboard, you can perform the following:
 <Kendala>
 ## **Troubleshooting**
 
-- **Statistic Numbers Don't Change**: Click the refresh button on your browser or ensure your internet connection is stable to fetch the latest data from the server.
-- **Very High Failure Count**: Check if your message template contains words considered sensitive by WhatsApp/Telegram, or ensure your account is not being restricted (shadow banned).
-- **Dashboard Doesn't Load Graphics**: Ensure your browser supports JavaScript and there are no content blocker extensions (ad-blockers) preventing dashboard scripts from loading.
+If the dashboard data appears inaccurate or stagnant:
+
+- Refresh the browser page to pull the latest synchronized server metrics.
+- Verify your internet connectivity for real-time dashboard updates.
+- Check user permissions;บาง analytical views require "Supervisor" or "Administrator" level access.
+- Log out and log back in to refresh the active session token.
+- Clear browser cache if chart widgets fail to render or show "No Data."
+- Contact the NoBox.AI support team if message statuses in the dashboard conflict with logs in individual messaging apps.
+
 </Kendala>
 
 ---
 
-If you have any issues or difficulties related to NoBox.AI, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

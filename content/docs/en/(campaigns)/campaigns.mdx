@@ -1,334 +1,278 @@
 ---
 title: Campaigns
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
-icon: Target 
+description: Managing multi-channel marketing campaigns, message templates, automated scheduling, and performance tracking in NoBox.AI.
+icon: HandCoins
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Promotion is one of the features in Nobox.Ai that allows for easy and efficient promotion to target audiences. It is integrated with various channels such as WhatsApp, Telegram, etc.
+**Campaigns** (Promosi) is a central module in NoBox.AI designed to facilitate high-impact marketing across multiple integrated channels, including WhatsApp, Telegram, and more.
 
-<ImageZoom
-  src="/images/en/Campaigns%20(1).png"
-  alt="NoBox Campaigns View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-On the display, there are several promotion statuses. The explanations for these statuses are as follows:
-
-<table>
-  <thead>
-    <tr>
-      <th width="125.79998779296875">Feature</th>
-      <th>Function</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="/images/en/draft.png" alt="" className="mx-auto" /></td>
-      <td>The draft status of the promotion data has not been processed yet.</td>
-    </tr>
-    <tr>
-      <td><img src="/images/en/process.png" alt="" className="mx-auto" /></td>
-      <td>Promotion data processing status is still in transit.</td>
-    </tr>
-    <tr>
-      <td><img src="/images/en/done.png" alt="" className="mx-auto" /></td>
-      <td>The status for the promotion data has been marked as complete.</td>
-    </tr>
-    <tr>
-      <td><img src="/images/en/cancel.png" alt="" className="mx-auto" /></td>
-      <td>The promotional data cancellation status has been revoked.</td>
-    </tr>
-  </tbody>
-</table>
-
-To add promotion data, please click the **[Campaign]**➔**[New Campaigns]** menu, and a **[New Campaigns]** dialog will appear.
-
-<ImageZoom
-  src="/images/en/New%20Campaign.png"
-  alt="NoBox New Campaign View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Please complete the required fields, as per the example provided:
-
-| Fill-In                                 | Description                                                                                         | Example                                                      |
-| --------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| Name                                    | Promotion Name                                                                                      | 2024 Year-End Promotion                                      |
-| Channel                                 | Choose the channel to be used                                                                       | WhatsApp                                                     |
-| Account                                 | Choose an account                                                                                   | s\_whatsapp tester                                           |
-| List                                    | Choose list                                                                                         | End of Year                                                  |
-| Group                                   | Choose group                                                                                        | -                                                            |
-| Tag                                     | Choose tag                                                                                          | December Promotion                                           |
-| Team                                    | Choose team                                                                                         | -                                                            |
-| Format Message                          | Choose format message                                                                               | Text                                                         |
-| Short link                              | Information on shortening a link tracker                                                            | Inactive                                                     |
-| Message                                 | Message promotion                                                                                   | Enjoy affordable pre-dawn meal promotions while stocks last! |
-| Attachment                              | Attachment file                                                                                     | -                                                            |
-| Send attachments based on data sources. | Enable or disable sending attachments based on the source to send attachments from the data source. | Inactive                                                     |
-| Start, End                              | Start and end date of the promotion delivery                                                        | 28-11-2024, 29-11-2024                                       |
-| Schedule an Appointment                 | Schedule Promotion Information                                                                      | Inactive                                                     |
-| Schedule                                | Set the date and time for the promotion schedule                                                    | -                                                            |
-| Notes                                   | Promotion notes                                                                                     | Promotion for Customers                                      |
-
-If you have completed the fields provided, click **[Save]** to store the new promotion data you just created. The status of the promotion will be **[Draft]**, and you can proceed with the promotion process.
-
-## **Template**
-
-Nobox provides a data template to simplify data formatting. The explanation for this template is as follows:
-
-<ImageZoom
-  src="/images/en/template.png"
-  alt="NoBox Template View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-* **Template** is used to select the template message that will be used.
-* **User** is used to display the username.
-* **Company** helps you effortlessly display your company's data, such as name, email, address, etc.
-* **Contact** is used to easily display contact data such as name, phone, email, etc.
-* **Data** to fetch data linked from the data source file.
-* **Random** is used to display characters in a random or uncertain order.
-* **Spinner** is used to send pre-determined text randomly.
-* **Synonym** is used to help you create text variations that have the same meaning.
-* **Tracking** is used to send a link to track whether the link has been read.
-* **Split** is used to separate the message balloons that will be sent.
-
-## **Message Sending Test**
-
-After creating the promotional data, you can test the promotion to check if it meets the requirements. Please click the **[Test Message Send]** button to have the data sent to your number or email.
-
-<ImageZoom
-  src="/images/en/Test%20Broadcast.png"
-  alt="NoBox Test Broadcast View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Create Message**
-
-After the Send Message Test is successful, you can proceed to Create Message to see if the broadcast message results match the number of contacts. To Create Message, please click on the **[Send Message]**➔**[Create Message]** tab, then the broadcast message data will be displayed according to the selected contact list.
-
-<ImageZoom
-  src="/images/en/Generate%20Messages.png"
-  alt="NoBox Generate Messages View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Delete All Messages**
-
-Use "Delete all messages" to remove all the messages that have been created.
-
-<ImageZoom
-  src="/images/en/delete%20all%20messages.png"
-  alt="NoBox Delete All Messages View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Promotion Process**
-
-When processing promotion data, you can **[Create Message]** first and then click **[Process]**, or directly click **[Process]** to automatically create and send the promotional message. The promotion status will change to **[Process]**.
-
-<ImageZoom
-  src="/images/en/Proses%20Campaign.png"
-  alt="NoBox Proses Campaign View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-To monitor your promotional delivery, navigate to the **[Send Message]** tab.
-
-You can also view the results of the promotion in the **[Inbox]** menu, allowing you to monitor the promotion results and respond to chat directly with your promotion targets.
-
-<ImageZoom
-  src="/images/en/Monitoring-Kotak-Masuk.png"
-  alt="NoBox Monitoring Kotak Masuk View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Fail to Queue**
-
-To-queue failure is used to re-send messages with a failed status back into the queue.
-
-<ImageZoom
-  src="/images/en/failed%20to%20queue.png"
-  alt="NoBox Failed To Queue View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Total Messages Sent**
-
-The total message sending feature is used to display the total promotions according to the status.
-
-<ImageZoom
-  src="/images/en/total%20campaign.png"
-  alt="NoBox Total Campaign View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## Mark Promotion as Complete
-
-Once the promotion has been successfully processed to mark it as completed, you can click the **[Complete]** button, and the promotion status will change to **[Complete]**.
-
-<ImageZoom
-  src="/images/en/Done%20Campaign.png"
-  alt="NoBox Done Campaign View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Cancel Promotion**
-
-To indicate that the promotion has been canceled, you can click the **[Cancel]** button, and the status of the promotion will change to **[Canceled]**.
-
-<ImageZoom
-  src="/images/en/Cancel%20Campaign%20.png"
-  alt="NoBox Cancel Campaign View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **How to Use Short Links**
-
-Short links are used to replace long and complicated original links with more concise and easily shareable links.
-
-How to use a short link as follows:
-
-1. Enable short links
-2. Ensure that the Bitly integration is added under the **[Integration]** tab in the **[Business Profile]** menu.
-3. Fill in the message with tracking data
-
-<ImageZoom
-  src="/images/en/shortlink.png"
-  alt="NoBox Shortlink View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-4. If everything is complete and accurate, proceed with **[generate message]**, and the result will display as follows.
-
-<ImageZoom
-  src="/images/en/hasil%20short%20link.png"
-  alt="NoBox Hasil Short Link View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **How to Use Data Sources**
-
-Data sources are used to add information to contacts in the form of an Excel file. Here’s how to use the data source:
-
-1. Upload file excel pada tab **[Sumber Data]** pastikan pada file excel tersebut terdapat data kolom yang isinya sama dengan data **external id** link.
-
-If the example uses a contact's external ID with a phone number, the Excel file will have a phone number column with data matching the contact's external ID as per the selected list.
-
-<ImageZoom
-  src="/images/en/Contoh%20excel.png"
-  alt="NoBox Contoh Excel View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-2. After uploading the file, select **[Matched From] ➔** and choose **[Excel Column]** that corresponds to the Excel column matching the external ID data.
-
-<ImageZoom
-  src="/images/en/upload%20data%20source.png"
-  alt="NoBox Upload Data Source View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-3. To send messages according to the Excel data, you can do it by clicking on **[Data]** in the message section and filling in the data with the name of the Excel column you want to display.
-
-<ImageZoom
-  src="/images/en/data%20pesanan.png"
-  alt="NoBox Data Pesanan View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-4. If everything is complete and correct, continue by clicking **[Create Message]**, and the result will appear as follows.
-
-<ImageZoom
-  src="/images/en/hasil%20data%20source.png"
-  alt="NoBox Hasil Data Source View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **How to Use Attachment Sending Based on Data Source**
-
-Send Attachments Based on Data Source
-
-The feature to send attachments based on data source is used to send files according to the data in an Excel file. Follow these steps to use this feature:
-
-1. Upload the file to be sent in **[Attachment]**.
-
-2. Enable attachment sending based on data source.
-
-<ImageZoom
-  src="/images/en/send%20attachments%20by%20data%20source.png"
-  alt="NoBox Send Attachments By Data Source View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-3. Upload the Excel file in the **[Data Source]** tab. Ensure the Excel file contains a column matching the **external id** link data.
-
-4. Add a column in Excel named **[File]** and fill it with the file names you have added in **[Attachment]**.
-
-<ImageZoom
-  src="/images/en/excel-sumber-data.png"
-  alt="NoBox Excel Sumber Data View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Once everything is complete and correct, proceed to **[Generate Message]**, and the result will appear as follows. The file will be sent with the same name as the file in the data source.
-
-<ImageZoom
-  src="/images/en/hasil%20attachments.png"
-  alt="NoBox Hasil Attachments View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Edit and Delete Promotion Data**
-
-To edit a promotional data, please first select the data you wish to edit. Edit your data and click **[Save]** to save the changes.
-
-To delete a promotional data, select the data you want to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]**; if not, click **[No]**.
+This environment enables businesses to manage information distribution, promotional offers, and customer engagement strategies from a single, unified interface.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Campaigns Menu Interface**
+
+<ImageZoom
+  src="/images/id/1.%20Promosi.png"
+  alt="Main Campaigns Management Dashboard"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+The interface above represents the primary **Campaigns** dashboard.
+
+From this view, users can monitor their campaign list, track delivery statuses in real-time, and manage the technical configurations for every marketing initiative.
+
+---
+
+## **Understanding Campaign Statuses**
+
+Statuses help you track the lifecycle of your marketing efforts.
+
+| Status Icon | Description                                                                 |
+| ----------- | --------------------------------------------------------------------------- |
+| <img src="/images/id/draft.png" alt="Draft" className="w-auto h-8 mx-auto" /> | **Draft**: The campaign is in setup. No messages have been sent yet. |
+| <img src="/images/id/process.png" alt="Process" className="w-auto h-8 mx-auto" /> | **Processing**: Messages are actively being dispatched to recipients. |
+| <img src="/images/id/done.png" alt="Selesai" className="w-auto h-8 mx-auto" /> | **Done**: The campaign has reached its conclusion; all messages are sent. |
+| <img src="/images/id/cancel.png" alt="Batal" className="w-auto h-8 mx-auto" /> | **Cancelled**: The campaign was manually stopped before completion. |
+
+---
+
+## **Creating a New Campaign**
+
+To initialize a new marketing push, navigate to **[Campaigns]** ➔ **[Add Campaign]**.
+
+### Add Campaign Dialog View
+
+<ImageZoom
+  src="/images/id/2.%20Tambah%20Promosi.png"
+  alt="New Campaign Configuration Interface"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Campaign Configuration Fields**
+
+Populating these fields correctly is essential for target accuracy and compliance.
+
+| Field                                  | Description                                                                                                                                                                      | Example                                                       |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Name                                   | Internal campaign identifier for reporting and management.                                                                                                                      | 2024 Year-End Flash Sale                                      |
+| Channel                                | The communication medium (WhatsApp, Telegram, etc.) for the broadcast.                                                                                                           | WhatsApp                                                      |
+| Account                                | Select the specific integrated account that will serve as the sender.                                                                                                            | s_whatsapp_main                                               |
+| List                                   | The targeted contact database list for this campaign.                                                                                                                            | Year-End Leads                                                |
+| Group                                  | Segmented customer groups (e.g., by region or tier) to refine targeting.                                                                                                        | -                                                             |
+| Tag                                    | Labels for theme-based categorization.                                                                                                                                           | December-Promo                                                |
+| Team                                   | Assigns responsibility to a specific internal department.                                                                                                                        | Sales-Team-A                                                  |
+| Message Format                         | Choose between text, image, video, or multi-media delivery.                                                                                                                      | Text                                                          |
+| Shorten Link                           | Enable real-time click tracking and URL shortening for performance analysis.                                                                                                   | Inactive                                                      |
+| Message Body                           | The primary content of your promotion. Supports variables and templates.                                                                                                        | Get our Sahur Package at 50% OFF! Limited time only.          |
+| Attachment                             | Visual or document assets (images, PDFs) to accompany the message.                                                                                                                | -                                                             |
+| Source-Based Attachments               | Send unique, personalized attachments (like specific invoices) per recipient.                                                                                                     | Inactive                                                      |
+| Date Range (Start/End)                 | The operational window during which the system is authorized to send.                                                                                                           | 28-11-2024 to 29-11-2024                                      |
+| Schedule Toggle                        | Automate dispatch at a specific future timestamp.                                                                                                                                | Inactive                                                      |
+| Schedule Time                          | The precise date and hour for the automated launch.                                                                                                                             | -                                                             |
+| Internal Notes                         | Documentation for supervisors regarding campaign goals or feedback.                                                                                                              | Targeting previous 2023 buyers                                |
+
+Once finalized, click **[Save]**. The campaign will sit in **[Draft]** status, allowing for a final review before processing.
+
+---
+
+## **Leveraging Message Templates**
+
+<ImageZoom
+src="/images/id/template.png"
+alt="Standardized Messaging Templates"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+**Message Templates** allow you to maintain brand consistency and drastically reduce composition time. You can build re-usable structures that pull dynamic data for deep personalization.
+
+### **Template Interaction Features**
+
+- **Template Library**: Browse and select from pre-approved messaging formats.
+- **User Variables**: Automatically insert the sender's name or account details.
+- **Company Branding**: Pull official business names, addresses, or support emails into the message footer.
+- **Contact Tags**: Personalize greetings (e.g., "Hello, [First Name]") using data from the recipient's record.
+- **External Data**: Map content directly from an uploaded Excel/CSV source.
+- **Randomization Tools**: Insert random strings to vary message content, reducing the likelihood of being flagged as spam.
+- **Spinners & Synonyms**: Use automated word-swapping to ensure no two messages sent in a bulk batch look identical.
+- **Tracking Links**: Insert trackable URLs to monitor exactly who clicked on your promotion.
+- **Split Messages**: Break long texts into multiple chat bubbles for a more natural, conversation-like feel.
+
+---
+
+## **Pre-Flight: Testing Your Campaign**
+
+Always use the **Test Message Delivery** feature before broadcasting to hundreds of customers. This ensures that formatting, variables, and links are functioning as intended.
+
+### **Executing a Test Send**
+
+Click **[Test Send Message]**. The system will dispatch the campaign sample to your own linked number or email.
+
+<ImageZoom
+src="/images/id/Tes-Kirim-Pesan.png"
+alt="Sending a Sample Campaign Message"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+**Checklist for Success:**
+1. Is the text formatted correctly (bolding, spacing)?
+2. Do the variable names pull the correct data (e.g., is "[Name]" replaced by an actual name)?
+3. Does the link redirect to the correct landing page?
+4. Do the image/video attachments load clearly?
+5. Does the message look professional on the mobile version of the channel (WhatsApp/Telegram)?
+
+---
+
+## **Deployment and Batch Management**
+
+### **Generating the Batch**
+
+Under the **[Send Message]** tab, click **[Generate Messages]** (Buat Pesan).  
+The system will cross-reference your contact list with your template to create unique message instances for every recipient. You can review the list of generated messages before they are processed.
+
+<ImageZoom
+src="/images/id/Buat-Pesan.png"
+alt="Generated Campaign Message List"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Processing the Broadcast**
+
+Once you are satisfied with the generated batch, click **[Process]**.  
+The status will shift to **[Process]**, and the system will begin drip-feeding messages to the network.
+
+<ImageZoom
+src="/images/id/Proses-Promosi.png"
+alt="Active Campaign Processing"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+**Note**: To ensure channel stability and avoid being flagged for spam, NoBox.AI regulates the speed of outgoing messages based on the channel's capacity.
+
+---
+
+## **Real-Time Monitoring and Failure Recovery**
+
+### **The Monitoring Feed**
+
+Navigate to the **[Inbox]** or the campaign-specific **[Send Message]** tab to track delivery status. You will see which messages are Delivered, Read, or Failed.
+
+<ImageZoom
+src="/images/id/Monitoring-Kotak-Masuk.png"
+alt="Live Delivery Monitoring Dashboard"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Handling Delivery Failures**
+
+Messages can fail due to technical disconnects or inactive recipient numbers. 
+
+Use the **[Failures to Queue]** (Gagal ke Antrean) feature to re-attempt sending for messages that didn't go through. This saves you from having to recreate the entire campaign.
+
+<ImageZoom
+src="/images/id/Gagal-ke-Antrean.png"
+alt="Retrying Failed Deliveries"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Analytics and Reporting**
+
+### **Delivery Statistics**
+
+The **Broadcast Totals** view provides a high-level summary of campaign reach, identifying the exact percentage of messages that reached their destination versus those that remained in queue.
+
+<ImageZoom
+src="/images/id/Total-Kirim-Pesan.png"
+alt="Campaign Statistics and Performance"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Campaign Lifecycle Control**
+
+### **Closing a Campaign**
+Click **[Done]** (Selesai) to archive the campaign once all marketing objectives are met. This prevents accidental duplicate sends and cleans up your active dashboard.
+
+<ImageZoom
+src="/images/id/done%20campaign.png"
+alt="Marking a Campaign as Complete"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Force Cancellation**
+If you spot an error mid-broadcast, click **[Cancel]** (Batal). This immediately halts the outgoing queue.
+
+<ImageZoom
+src="/images/id/Batalkan-Promosi%20(1).png"
+alt="Cancelling an Active Broadcast"
+width={800}
+height={450}
+className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Advanced Integration Features**
+
+### **Bitly Tracking Links**
+1. Integrate Bitly under **[Business Profile]** ➔ **[Integrations]**.
+2. Enable the tracking feature in campaign setup.
+3. Automated short-links will be generated for every recipient, allowing you to track individual click-through rates.
+
+### **Excel Data Sources**
+1. Upload your source file in the **[Data Source]** tab.
+2. Select **[Map From] ➔ [Excel Columns]**.
+3. Use the `[Data]` variable to call specific columns (e.g., "Hi [Data:CustomerName], your invoice for [Data:Amount] is ready").
+
+---
+
+<Tips>
+## **Campaign Success Tips**
+
+- **Personalization is Key**: Campaigns using at least two variables (e.g., Name and City) have significantly higher response rates.
+- **A/B Testing**: Clone a campaign and try two different "Spinners" to see which phrasing drives more clicks.
+- **Batching Strategy**: For large lists (>1000), schedule campaigns during off-peak hours to improve delivery success rates.
+- **Audit Drafts**: Monthly, delete old drafts to keep your CRM performance fast and your workspace uncluttered.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Data Not Refreshing**: Toggle the 'Auto Refresh' switch or manually reload the page.
+- **Messages Stuck in Processing**: Check if the sender account (WhatsApp/Telegram) is still authenticated and "Online" in the settings.
+- **Excel Mapping Errors**: Ensure your Excel column headers match the "External ID" or data variable names used in your message body exactly.
+- **Image Fails to Send**: Verify the attachment size; large files (>10MB) may time out on slower mobile connections.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

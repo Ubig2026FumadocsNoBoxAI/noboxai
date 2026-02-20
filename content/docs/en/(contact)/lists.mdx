@@ -1,99 +1,182 @@
 ---
-title: List
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+title: Lists
+description: Creating and managing customer segments for targeted promotional campaigns, bulk messaging, and organized database categorization in NoBox.AI.
 icon: List
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-List is one of the menus in Nobox.Ai used to categorize contact data.
+**Lists** (List) is a fundamental grouping module in NoBox.AI designed to categorize and organize your customer records into specific datasets based on your unique business requirements.
+
+This menu enables users to perform precise audience segmentation for promotional campaigns, mass communications, or category-based customer relationship management. With the Lists feature, you can build specialized outreach targets, add contacts via multiple integration methods, and manage segment memberships with high flexibility.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/OfOOjWDD_1c/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/OfOOjWDD_1c"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-<ImageZoom
-  src="/images/en/Lists%20%20(1).png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+---
 
-To create a data list, click the **[Contacts]** module, then click the **[List]➔\[New List]** menu. A **[New List]** dialog will appear, where you can enter the name of the list you wish to create.
+## **Lists Management Interface**
 
 <ImageZoom
-  src="/images/en/New%20List%20.png"
-  alt="NoBox Dashboard View"
-  width={800}
+  src="/images/en/list.png"
+  alt="Main Lists Dashboard"
+  width={200}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border my-8 mx-auto shadow-sm mb-4"
 />
 
-If you have completed the entry, click **[Save]** to save the newly created list data.
+The interface above represents the primary **Lists** dashboard. This page provides a comprehensive overview of every active segment group within your workspace.
 
-## **Edit And Delete Data List**
+From this environment, users can monitor list names, track the number of contacts currently enrolled in each segment, create new groupings, and modify or delete existing segments as marketing strategies evolve.
 
-To edit a list item, please first select which data you want to edit. Update your data and click **[Save]** to save the changes.
+---
 
-To delete an item from a list, select the item and click **[Delete]**. A confirmation dialog will appear asking if you want to proceed with the deletion. If so, click **[Yes]** otherwise, click **[No]**.
+## **Creating a New List**
 
-## New Contact
+1. Navigate to the **[Contacts]** module ➔ **[Lists]** ➔ click **[Add List]**.
+2. An **[Add List]** dialog will launch. Enter the title for your organizational segment.
 
-To easily add contacts to the list, you can use the following feature.
+### Add List Dialog View
+
+<ImageZoom
+  src="/images/en/Tambah%20List.png"
+  alt="Creating a New Organizational Segment"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **List Entry Field Definitions**
+
+| Field     | Description                                                                                                                                           | Example            |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| List Name | The identifier used to group contacts. Use descriptive titles to ensure rapid identification during promotion selection or advanced segmentation. | Surabaya Customers |
+
+Click **[Save]** to finalize. You can create as many lists as required for your multi-channel marketing efforts.
+
+---
+
+## **Managing Segment Records**
+
+### Editing Lists
+To rename a list, select the entry and modify the title in the form. Click **[Save]** to apply. This update will take effect across all individual records currently associated with the list.
+
+### Deleting Lists
+To remove a segment grouping entirely, select the list and click **[Delete]**. Confirm the action in the prompt.
+
+<Callout type="info" title="Important Information">
+Deleting a list only removes the grouping/container. The actual contact records within the list remain intact in your primary database. However, ensure the list is not currently being used by an active or scheduled campaign before deletion.
+</Callout>
+
+---
+
+## **Methods for Adding Contacts to Lists**
+
+NoBox.AI provides multiple workflows to populate your lists, depending on your source data:
 
 <ImageZoom
   src="/images/en/List%20Tambah%20Kontak.png"
-  alt="NoBox Dashboard View"
+  alt="Data Enrichment Options for Lists"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## New From Contact
+### Option 1: Add from Primary Contacts
+Use this method to pull existing records from your main NoBox.AI database into a specialized list.
 
-To add a new contact through the contact data, select the list to be used, click the **[New Contact] ➔** button, click the **[New from Contacts] ➔** button, choose the contact **➔** click **[OK]**.
+1. Select the target list from the dashboard.
+2. Click **[Add Contact]** ➔ **[Add from Contacts]**.
+3. Choose one or multiple entries from your master database.
+4. Click **[OK]** to finalize the enrollment.
 
 <ImageZoom
   src="/images/en/tambah%20dari%20kontak.png"
-  alt="NoBox Dashboard View"
+  alt="Enrolling Existing Database Records into Segments"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## New From Promotion Target
+### Option 2: Add from Promotion Targets
+This advanced method allows you to collect contacts who were targeted in previous campaigns. This is excellent for building "Retargeting Lists" or "Engaged Lead Lists."
 
-To add a contact via the promotion target, follow these steps: select the list to be used, click the **[New Contact]** button ➔ click the **[New from Promotion Target]** button ➔ choose the promotion data ➔ click **[OK]**.
-
-<ImageZoom
-  src="/images/en/tambah%20dari%20target%20promosi.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## Delete All Contacts
-
-To delete all contact data in a list, select the desired list, then click **[Delete All Contacts]**. A confirmation dialog will appear asking if you want to delete all contact data in that list. If yes, click **[Yes]** if not, click **[No]**.
+1. Select the target list.
+2. Click **[Add Contact]** ➔ **[Add from Promotion Target]**.
+3. Select the specific historical campaign whose leads you wish to harvest.
+4. Click **[OK]** to transfer the contacts into your segment.
 
 <ImageZoom
-  src="/images/en/Delete%20All%20Contacts%20.png"
-  alt="NoBox Dashboard View"
+  src="/images/en/Link.png"
+  alt="Harvesting Leads from Historical Campaigns"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 ---
 
-Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Clearing List Memberships**
+
+The **Remove All Contacts from List** feature allows you to empty a segment container instantly. This is useful for resetting seasonal lists (e.g., "Monthly Giveaway") for a fresh set of participants.
+
+1. Select the list you wish to empty.
+2. Click **[Remove All Contacts]**.
+3. Confirm the mass removal in the dialog box.
+
+<ImageZoom
+  src="/images/en/List%20Hapus%20Kontak.png"
+  alt="Resetting Segment Memberships"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+<Callout type="info" title="Important Information">
+Emptying a list only removes the *link* between the contact and that list. It does not delete the customer’s profile from your system.
+</Callout>
+
+---
+
+## **Lists as Campaign Targets**
+
+Lists are the primary "Targeting" mechanism for the NoBox.AI Promotions engine. Instead of selecting individual contacts one by one, users simply select a pre-defined List. This significantly reduces human error and ensures your marketing messages reach the intended audience segment with a single click.
+
+---
+
+<Tips>
+## **Segmentation Best Practices**
+
+- **Contextual Categorization**: Group contacts by geography, interests, or lifecycle status (e.g., "Surabaya VIP," "Active Resellers 2024") for hyper-relevant messaging.
+- **Workflow Efficiency**: Use the **[Add from Contacts]** feature to rapidly organize large databases into manageable sub-segments.
+- **Retargeting Strategy**: Use **[Add from Promotion Targets]** to build a secondary list of people who received a specific offer, allowing you to send a follow-up discount only to that specific group.
+- **Naming Conventions**: Maintain a consistent naming system across your team to avoid overlapping or duplicate lists.
+- **Data Hygiene**: Periodically use **[Remove All Contacts]** to clear out temporary lead lists once their lifecycle is complete.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Membership Delay**: If contact counts don't update immediately after an addition, refresh your browser to pull the latest synchronized totals.
+- **Selection Sensitivity**: Ensure you have accurately selected the target contacts or campaigns when using bulk addition tools.
+- **Bandwidth Latency**: If adding hundreds of contacts to a list at once, maintain a stable internet connection to ensure the server-side process completes successfully.
+- **Permission Denials**: If edit or delete buttons are inactive, verify that your account has the correct "Supervisor" or "Administrator" privileges.
+- **Rendering Issues**: Clear your browser cache if the List table or dialog boxes appear broken or misaligned.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

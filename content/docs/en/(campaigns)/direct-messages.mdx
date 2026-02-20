@@ -1,25 +1,25 @@
 ---
 title: Direct Messages
-description: Send personal messages directly to one or more selected contacts quickly in NoBox.AI.
-icon: Forward
+description: Sending personalized messaging to individual contacts or small groups for rapid follow-ups and order confirmations in NoBox.AI.
+icon: MessagesSquare
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The **Direct Messages** feature in NoBox.AI allows you to send messages instantly to one or more specific contacts without having to go through the complex process of creating a full promotional campaign. This feature is ideal for personal communication, quick follow-ups, or sending urgent information to selected customers.
+**Direct Messages** (Kirim Pesan Langsung) is an agility-focused feature in NoBox.AI designed for sending rapid, personalized communication to one or several contacts simultaneously without the need for a full-scale marketing campaign.
 
-Even though sent directly, you can still monitor the delivery status of these messages through the monitoring menu to ensure the message has reached its destination.
+This module is essential for urgent client communications, order verifications, or high-priority troubleshooting follow-ups.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/eBDzXSGz6Dc"
-  title="NoBox Direct Messages Guide"
+  src="https://www.youtube.com/embed/eBDzXSGz6Dc/"
+  title="Direct Messaging Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerPolicy="strict-origin-when-cross-origin"
-  allowFullScreen
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
 ></iframe>
 
 ---
@@ -27,61 +27,64 @@ Even though sent directly, you can still monitor the delivery status of these me
 ## **Direct Messages Interface**
 
 <ImageZoom
-  src="/images/en/Direct%20Messages.png"
-  alt="NoBox Direct Messages Feature View"
+  src="/images/id/1.%20Tampilan%20kirim%20pesan%20langsung.png"
+  alt="Direct Messaging Entry Form"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-This page is designed simply so that you can quickly fill in message details and send them in seconds.
+The interface above shows the **Direct Message** entry form. This page provides a streamlined workflow where you can instantly select recipients, choose your communication channel, and compose your message in one environment.
 
 ---
 
-## **Steps to Send a Direct Message**
+## **Executing a Direct Dispatch**
 
-To send a direct message, follow these simple steps:
+To send a message, complete the operational fields in the form:
 
-1. Open the **[Promotions]** menu ➔ select **[Direct Messages]**.
-2. Fill in the available form fields as needed.
-3. Click the **[Submit Now]** button to execute the delivery.
+### Direct Message Field Requirements
 
-### Field Input Guide
+| Field            | Description                                                      | Example                                 |
+| :--------------- | :--------------------------------------------------------------- | :-------------------------------------- |
+| **Contacts**     | Select one or more target individuals from your database.         | Sheila Syandana                         |
+| **Channel**      | Choose the communication medium (e.g., WhatsApp).               | WhatsApp                                |
+| **Account**      | Select the specific integrated sender account.                  | s_whatsapp_primary                      |
+| **Message Format**| Define content type (Text, Image, etc.).                         | Text                                    |
+| **Shorten Link** | Toggle the automated URL shortener and tracker.                 | Inactive                                |
+| **Message Body** | The personalized content you wish to deliver.                    | Hello, your order #1234 is being processed... |
+| **Attachment**   | Upload specific supporting documents or images.                 | -                                       |
 
-Here is the detailed information you need to complete:
-
-| Field | Function Description | Example |
-| :--- | :--- | :--- |
-| **Contact** | Select one or more contacts from your contact list. | John Doe, Jane Smith |
-| **Channel** | Select the communication channel you wish to use. | WhatsApp |
-| **Account** | Choose a sender account already connected in NoBox. | Global Admin CS |
-| **Message Format** | Determine if the message is Text or Media. | Text |
-| **Short Link** | Enable the link shortening feature to track clicks (if there is a link). | Active |
-| **Message** | Write the content of the message you want to convey. | Hello, your order is ready for shipment... |
-| **Attachment** | Upload a file or image as a message supplement. | payment_receipt.jpg |
+Once the data is populated, click **[Send Now]** to initiate the delivery process.
 
 ---
 
-## **Monitoring Delivery Results**
+## **Post-Dispatch Monitoring**
 
-After you click **[Submit Now]**, the system will process the delivery. You can see if the message was successfully sent through the **Monitoring** menu or the **Message History** page.
+After clicking send, you do not need to remain on this page. The system handles the background processing. You can track the real-time delivery status of these individual messages through the **[Broadcast Messages]** menu.
+
+### Delivery Results Overview
 
 <ImageZoom
-  src="/images/en/Broadcast%20Messages%20(1).png"
-  alt="Direct Message Delivery Results"
+  src="/images/id/2.%20Hasil%20Kirim%20Pesan%20Langsung.png"
+  alt="Tracking Direct Message Success"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
+
+Within the monitoring interface, you can verify if your direct message has reached the recipient (**Delivered**), is waiting for a slot (**Queued**), or encountered an error (**Failed**).
 
 ---
 
 <Tips>
-## **Direct Messaging Tips**
+## **Operational Tips**
 
-- **Use Short Links**: If you insert a link (e.g., payment link or catalog), always enable the short link feature so you can track whether the customer clicked it or not.
-- **Personal Messages**: Since this is a direct message, use more personal language and address the customer by name to increase their comfort.
-- **Check Contact Status**: Ensure the contacts you select have valid numbers on the chosen channel (e.g., WhatsApp numbers must have an active WhatsApp account).
+- **Search Efficiency**: Use the search bar in the contact field to rapidly locate specific customer names from large databases.
+- **Account Health**: Always ensure your sender account status is "Online" before initiating a high-priority direct message.
+- **Hyper-Personalization**: Since these are direct messages, use specific details like names or previous purchase history to increase engagement.
+- **Proofread**: Double-check for typos in the message body before sending, as direct messages cannot be edited after dispatch in most channels.
+- **Visual Support**: Attach invoices, catalogs, or transaction proofs directly to provide more value to the recipient.
+
 </Tips>
 
 ---
@@ -89,11 +92,14 @@ After you click **[Submit Now]**, the system will process the delivery. You can 
 <Kendala>
 ## **Troubleshooting**
 
-- **Message Stuck**: If the delivery status does not change for a long time, ensure your NoBox Desktop application is active (online).
-- **Failed to Send to Many Contacts**: Sending direct messages to too many contacts at once through this feature is not recommended if the content is identical (bulk). For bulk messages, use the **Campaign** feature for safer delivery.
-- **Account Selection Error**: If a message fails to send, check if the channel account is still correctly linked in NoBox.
+- **Delivery Failure**: Verify that the recipient's phone number is correctly formatted and that your sender account is properly authenticated.
+- **Empty Channel List**: If no channels appear, check your business profile integration settings to re-link your accounts.
+- **Interface Latency**: If the "Send Now" button appears unresponsive, refresh the page and check your local internet stability.
+- **Contact Search Issues**: Ensure the specific contact has been successfully imported or created in the master NoBox.AI Contact database.
+- **Attachment Errors**: Confirm the file size is within the allowed limits of the target channel (e.g., WhatsApp attachment limits).
+
 </Kendala>
 
 ---
 
-If you have any issues or difficulties related to NoBox.AI, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

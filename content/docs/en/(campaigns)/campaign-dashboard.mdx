@@ -1,100 +1,116 @@
 ---
-title: Campaign Dashboard
-description: Summary of the management of all promotional campaigns and their execution status in NoBox.AI.
-icon: LayoutPanelLeft
+title: Campaigns Dashboard
+description: Visualizing marketing activity summaries, campaign performance, and real-time operational data in NoBox.AI.
+icon: CircleDollarSign
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The **Campaign Dashboard** is an information hub that presents a summary of all promotional campaigns you have created. This page is designed to facilitate decision-making by presenting cumulative data on how many campaigns are still in draft, currently running, or successfully completed.
+The **Campaigns Dashboard** provides a centralized summary of all promotion-related activities within your NoBox.AI ecosystem, enabling faster, data-driven decision-making.
 
-Unlike the Broadcast Dashboard, which focuses on individual message details, the Campaign Dashboard focuses on your promotion projects as a whole.
+This overview helps users track campaign momentum and evaluate marketing effectiveness at a glance.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/SOf-o_IuYIk"
-  title="NoBox Campaign Dashboard Guide"
+  src="https://www.youtube.com/embed/7NR7TmowmtY/"
+  title="Campaign Dashboard Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerPolicy="strict-origin-when-cross-origin"
-  allowFullScreen
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
 ></iframe>
 
 ---
 
-## **Campaign Dashboard Interface**
+## **Campaigns Dashboard Interface**
+
+### Main Overview Page
 
 <ImageZoom
-  src="/images/en/Campaign%20Dashboard.png"
-  alt="NoBox Campaign Dashboard View"
+  src="/images/id/Dasbor%20Promosi.png"
+  alt="Campaigns Dashboard Dashboard View"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+  className="rounded-lg border shadow-sm mb-4"
 />
 
-This dashboard displays key statistical cards indicating the "health" status of all your campaigns. This data is crucial for ensuring all promotion plans are on schedule.
+The dashboard presents a visual summary of promotion data created and executed within the system.
+
+Users can immediately review campaign statistics, processing statuses, and real-time activity feeds without the need to navigate through individual sub-menus.
+
+### Key Data Insights
+
+The Campaigns Dashboard highlights several critical metrics to support active marketing monitoring.
+
+Data includes the total number of campaigns, the count of drafts (unscheduled), active processes, completed activities, status distributions, and a feed of the most recent entries.
 
 ---
 
-## **Features and Statistical Information**
+## **Dashboard Core Components**
 
-Here are the explanations for the widgets available on the Campaign Dashboard:
-
-<table>
-  <thead>
-    <tr>
-      <th width="180">Statistic</th>
-      <th>Function and Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>**Campaign**</td>
-      <td>Displays the total number of all campaigns ever created in the NoBox.AI system.</td>
-    </tr>
-    <tr>
-      <td>**Draft**</td>
-      <td>Information on the number of campaigns recently created and saved but not yet started or sent.</td>
-    </tr>
-    <tr>
-      <td>**Process**</td>
-      <td>The number of campaigns currently actively sending messages to the intended contacts.</td>
-    </tr>
-    <tr>
-      <td>**Done**</td>
-      <td>The total number of campaigns that have completed their entire delivery cycle to all targets.</td>
-    </tr>
-    <tr>
-      <td>**Campaign by Status**</td>
-      <td>A pie chart showing the percentage of campaigns based on their status (Draft, Process, Done).</td>
-    </tr>
-    <tr>
-      <td>**Latest Campaigns**</td>
-      <td>A list of the 5 most recent campaigns created or modified, allowing you easy access to current activities.</td>
-    </tr>
-  </tbody>
-</table>
+| Metric/Section             | Function                                                                    |
+| -------------------------- | --------------------------------------------------------------------------- |
+| Total Campaigns            | The aggregate number of all campaign records in the system.                 |
+| Drafts                     | Campaigns in the planning stage that have not yet been dispatched.          |
+| Processing                 | Campaigns currently being sent or actively running.                         |
+| Completed                  | Campaigns that have finished their deployment cycle.                        |
+| Campaigns by Status        | A breakdown of total activities categorized by their current operational state. |
+| Performance Summary        | Combined view showing total volume versus completion rates.                 |
+| Latest Campaigns           | A real-time feed of the most recently created marketing activities.         |
 
 ---
 
-## **How to Read Campaign Data**
+## **Detailed Component Breakdown**
 
-Users can analyze promotion effectiveness through several indicators on this dashboard:
+- **Total Campaigns**
+Provides the overarching volume of marketing efforts stored within NoBox.AI, giving you a clear picture of total historical and active reach.
 
-1. **Completion Efficiency**: See if many campaigns are stuck in the "Process" status. If so, there might be an issue with account delivery speed or the volume of targets might be too large.
-2. **Promotion Planning**: If the "Draft" number is high, it indicates many campaigns are planned but not yet executed.
-3. **Target vs. Realization Analysis**: On the campaign detail widget, you can see the comparison between the number of target contacts and the number actually successfully sent.
+- **Draft Queue**
+Tracks campaigns that are still being refined. Monitoring this ensures that planned marketing initiatives are finalized and launched on schedule.
+
+- **Active Processing**
+Focuses on "live" campaigns. This metric is essential for monitoring delivery progress and identifying any bottlenecks in real-time communication dispatch.
+
+- **Completion Records**
+Ideal for retrospective analysis. These stats serve as the baseline for evaluating which marketing strategies successfully reached their conclusion.
+
+- **Status Distribution Charts**
+Categorizes your efforts visually, allowing managers to see if the majority of their team's time is spent on planning (drafts) or execution (processing).
+
+- **Real-Time Activity Feed**
+Enables supervisors to stay updated on team productivity, showing exactly when its newest promotional campaigns were created.
+
+---
+
+## **How to Analyze the Campaigns Dashboard**
+
+### Data Interpretation Guide
+
+To gain meaningful strategic value from the dashboard:
+
+1. **Verify Period Sync**: Ensure the visual data reflects the specific timeframe (daily, weekly, monthly) you are currently auditing.
+2. **Monitor the Pipeline**: Keep an eye on the transition from 'Draft' to 'Processing' to ensure marketing momentum.
+3. **Assess Throughput**: Compare 'Processing' vs 'Completed' to determine how quickly the system and team are executing tasks.
+4. **Action Latest Data**: Use the 'Latest Campaigns' feed to spot-check the quality of new promotions as they are launched.
+
+### Strategic Application
+
+Dashboard data is the primary tool for assessing the return on effort for your marketing team. 
+
+Leadership and administrators should leverage these insights during routine performance reviews to identify high-performing campaigns and optimize marketing resource allocation.
 
 ---
 
 <Tips>
-## **Usage Tips**
+## **Workflow Optimization Tips**
 
-- **Execute Drafts Promptly**: Monitor the "Draft" card regularly so that no promotional plans are delayed or miss their intended schedules.
-- **Evaluate Completed Campaigns**: Click on the "Done" statistic to review the final reports of those promotions and compare them with sales targets.
-- **Use Clear Naming**: When creating a promotion, give it a specific name so it is easily identifiable in the "Latest Campaigns" list.
+- **Daily Check-ins**: Review the dashboard at the start of each shift to ensure all scheduled campaigns have moved into the processing state.
+- **Queue Cleanup**: Regularly audit the 'Drafts' section to delete obsolete plans or push stagnant campaigns toward execution.
+- **Benchmark Performance**: Use historical completion data as a baseline for setting future marketing targets.
+- **Real-time Oversight**: Utilize the 'Latest Campaigns' section to provide immediate feedback to campaign managers.
+
 </Tips>
 
 ---
@@ -102,11 +118,17 @@ Users can analyze promotion effectiveness through several indicators on this das
 <Kendala>
 ## **Troubleshooting**
 
-- **Campaign Doesn't Move to Done**: Ensure all messages in the queue have been sent (check the Broadcast Messages menu). A campaign will only reach "Done" status once all targets have been processed.
-- **Data Doesn't Appear**: Ensure you have sufficient access rights (role) to view the summary of all campaigns. Contact your administrator if the dashboard appears empty.
-- **Slow Synchronization**: If you have just started a large campaign, the dashboard may take a few moments to update the real-time delivery statistics symbols.
+If you encounter issues with data rendering on the Campaigns Dashboard:
+
+- Refresh the browser page to sync the latest server-side figures.
+- Verify internet stability to ensure interactive charts load correctly.
+- Confirm that your user role has the necessary "Marketing Overview" permissions.
+- Log out and log back in to refresh your active session and data cache.
+- Clear browser cache if visual elements appear distorted or misaligned.
+- Contact support if specifically created campaigns do not appear in the "Total" counts.
+
 </Kendala>
 
 ---
 
-If you have any issues or difficulties related to NoBox.AI, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

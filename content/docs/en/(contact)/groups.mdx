@@ -1,51 +1,128 @@
 ---
 title: Groups
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Managing and monitoring synchronized group conversations from various communication channels like WhatsApp within NoBox.AI.
 icon: Users
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-A group is a feature in the Nobox.Ai menu used for group information such as the name and description of the associated account.
+**Groups** (Grup) is a specialized module in NoBox.AI used to display and manage conversation group information from connected communication channels, such as WhatsApp groups.
+
+This menu helps users monitor all groups integrated with the system, allowing them to view detailed information like group names and descriptions, while managing incoming group chats through the centralized Inbox. With this feature, users can handle high-volume group communications in a structured and efficient manner directly from the NoBox.AI platform.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/_X6yHUwetxw/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/_X6yHUwetxw"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-<ImageZoom
-  src="/images/en/Group.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+---
 
-## New Group
-
-To add a group, please create a group in your WhatsApp application or select an existing group and initiate a conversation within that group.
-
-The group conversation will appear in the **[Inbox]** menu.
+## **Groups Menu Interface**
 
 <ImageZoom
-  src="/images/en/Groups%20Inbox.png"
-  alt="NoBox Dashboard View"
+  src="/images/en/1.%20Tampilan%20Grup.png"
+  alt="Groups Management Dashboard"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Edit Group**
+The interface above represents the primary Groups dashboard, displaying every group synchronized from your connected channel accounts.
 
-To edit a group data entry, please first select which data you want to edit. Edit your data and click \[Save] to save the changes.
+From this page, users can view group names, descriptions, member counts, and specific metadata regarding each group that has been successfully linked to the NoBox.AI ecosystem.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Core Group Features**
+
+| Feature      | Function                                                                                                       |
+| ------------ | -------------------------------------------------------------------------------------------------------------- |
+| Group List   | Displays all groups that have been connected and synchronized from channel accounts (WhatsApp, Telegram, etc.). |
+| Group Details| Provides in-depth information including group naming, descriptions, and synchronized member data.               |
+| Edit Group   | Allows users to modify group-related information specifically within the NoBox.AI system.                        |
+
+---
+
+## **Integrating New Groups**
+
+Groups are not created manually within the NoBox.AI system; instead, they are synchronized automatically from the underlying messaging application once activity is detected.
+
+To bring a group into the system:
+
+1. Create a new group in your native **WhatsApp** application or use an existing one.
+2. Initiate a conversation within that group to trigger system detection.
+3. The group conversation will automatically appear in the NoBox.AI **[Inbox]**.
+4. Once identified in the Inbox, the group metadata will be synchronized and appear in the **[Groups]** menu under the Contacts module.
+
+### Group Conversations in the Inbox
+
+<ImageZoom
+  src="/images/en/2.%20Kotak%20Masuk%20Grup.png"
+  alt="Monitoring Group Chats in the Centralized Inbox"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+Once the group appears in the Inbox, it can be handled by agents or supervisors just like individual chats, utilizing features such as task assignment, case resolution, and archiving.
+
+---
+
+## **Modifying Group Information**
+
+To edit the internal descriptive data for a group within NoBox.AI:
+
+1. Navigate to the **[Groups]** menu within the Contacts module.
+2. Select the specific group you wish to update.
+3. Modify the desired fields (e.g., group name alias, internal description, or administrative notes).
+4. Click **[Save]** to finalize the changes.
+
+**Note**: Modifications made here are internal to NoBox.AI. Changing a group name in the NoBox dashboard will not rename the actual group on the native WhatsApp or Telegram application.
+
+---
+
+## **Cross-Module Integration**
+
+The Groups menu is natively integrated with several other core platform features:
+
+- **Inbox** — Group chats flow directly into the global Inbox for real-time agent handling and assignment.
+- **Promotions** — Group member lists can serve as a dataset for targeted marketing outreach based on group membership.
+- **Reports** — Group-specific interaction speeds and volumes are captured in your customer service performance logs.
+
+---
+
+<Tips>
+## **Operational Best Practices**
+
+- **Clear Naming**: Use descriptive aliases for your groups within NoBox.AI to help agents identify the purpose of the group at a glance.
+- **Real-Time Vigilance**: Regularly monitor the Inbox for group mentions or active customer threads to ensure rapid response times.
+- **Contextual Documentation**: Provide detailed internal descriptions for each group to give context to agents who might be taking over a shift.
+- **Dynamic Updates**: Periodically audit group information in NoBox.AI if the group's objective or primary membership changes.
+- **Strategic Assignments**: Use the assignment feature in the Inbox to route specific specialized groups to the agents best suited to handle those topics.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Delayed Synchronization**: If a new WhatsApp group chat doesn't appear in the Inbox immediately, refresh the page to force-sync the latest messages.
+- **Connection Issues**: Ensure your native messaging application (WhatsApp/Telegram) is "Online" and correctly authenticated in your Business Profile settings.
+- **Permission Errors**: Verify your account role if the "Save" or "Edit" buttons are greyed out or inactive.
+- **Stagnant Data**: Log out and log back in if you suspect group metadata is out of sync with recent native application changes.
+- **Interface Glitches**: Clear your browser cache if the Group table layout appears distorted or if membership counts fail to render.
+- **Missing Groups**: If a group is active in WhatsApp but completely absent from NoBox.AI, contact the support team for a manual channel refresh.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

@@ -1,75 +1,158 @@
 ---
-title: Link
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+title: Links
+description: Centralizing and managing multi-channel communication gateways, external identifiers, and broadcast success logs for individual contacts in NoBox.AI.
 icon: Link
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Link is a feature in Nobox.Ai designed to store contact accounts like WhatsApp numbers, Email, Telegram, etc.
+**Links** (Link) is a diagnostic and operational module in NoBox.AI used to manage the various communication channel accounts connected to your customer contact data.
+
+This menu helps users view all external links—such as WhatsApp numbers, Email addresses, Telegram usernames, and other platform identifiers—in a centralized hub. Every registered link enables the system to route messages, track deep conversation histories, and monitor the delivery status of broadcast campaigns directed at that specific account.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/DFfvAKB75RY/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/DFfvAKB75RY"
+  title="NoBox Interface Introduction"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-<ImageZoom
-  src="/images/en/Link%20(4).png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+---
 
-To add a link, click the \[Contacts] module, then click the **[Link]**➔**[New Link]** menu. A dialog box labeled **[New Link]** will appear. Fill out the required fields in the dialog.
+## **Communication Links Interface**
 
 <ImageZoom
-  src="/images/en/New%20Link%20%20(1).png"
-  alt="NoBox Dashboard View"
+  src="/images/en/Link.png"
+  alt="Communication Gateways Dashboard"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-If you have completed the fields provided, click **[Save]** to store the new link data you just created.
+The interface above represents the primary Links dashboard, displaying every communication gateway currently mapped to contacts within the system.
 
-## **Edit Dan Hapus Data Link**&#x20;
-
-To edit a data link, please first select the data you want to edit. Make your changes and click **[Save]** to store the modifications.
-
-To delete a data link, select which data you want to remove, then click **[Delete]**. A confirmation dialog will appear asking if you wish to delete the data. If yes, click **[Yes]** if not, click **[No]**.
-
-## Conversation
-
-The "Conversations" tab is used to store all conversations with associated links that are in new, assigned, and completed statuses. Thus, all conversations that are not archived will be monitored with connected links.
-
-<ImageZoom
-  src="/images/en/Conversation%20(1).png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Send Message**
-
-The "Send Message" tab is used to store information about broadcast messages sent to the link. This allows you to monitor the broadcast message results that have been delivered, are pending, or failed to send..
-
-<ImageZoom
-  src="/images/en/Broadcast%20Messages%20(4).png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+From this page, users can verify the link alias, the target channel type, the technical External ID, and the specific contact associated with these details. Users can add, modify, or decommission link data as their customer outreach strategy evolves.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Adding a Functional Link**
+
+To integrate a new communication pathway for a contact:
+
+1. Navigate to the **[Contacts]** module ➔ **[Links]** menu ➔ click **[Add Link]**.
+2. Complete the technical fields in the **[Add Link]** configuration dialog.
+
+### Add Link Configuration View
+
+<ImageZoom
+  src="/images/en/Tambah%20Link.png"
+  alt="Creating a New Communication Gateway"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Link Entry Field Definitions**
+
+| Field             | Description                                                                                                                                                 | Example           |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Channel           | The target communication platform (WhatsApp, Email, Telegram, Shopee, etc.).                                                                                  | Email             |
+| External Name     | The profile name or customer username as it appears on the target platform.                                                                                  | Sasi Biz Email    |
+| External Id       | The absolute identifier required for delivery. (e.g., phone number with country code, or a full email address). This must be accurate for message delivery. | sasi@gmail.com    |
+| Conversation Id   | The technical ID linked to ongoing chat threads. Usually populated automatically by the system upon the first interaction.                                  | -                 |
+| Profile Photo     | URL for the contact's platform-specific profile image (optional).                                                                                           | -                 |
+| Additional Info   | Internal comments or qualitative context regarding this specific communication link.                                                                        | -                 |
+
+Click **[Save]** to finalize the link integration.
+
+---
+
+## **Managing Link Records**
+
+### Editing Links
+To update a username or correct an ID typo, select the target record and modify the form entries. Click **[Save]** to apply updates. Changes are immediately active for all system-wide features using that link.
+
+### Deleting Links
+To remove a gateway, select the link and click **[Delete]**. A verification prompt will appear. Click **[Yes]** to confirm.
+
+<Callout type="info" title="Important Information">
+Deleting a link disconnects NoBox.AI from that specific communication channel for the contact. Ensure the record is truly obsolete before finalizing deletion.
+</Callout>
+
+---
+
+## **Deep Conversation Tracking**
+
+The **Conversations** tab within the link profile houses the complete historical logging of every interaction processed through that specific gateway.
+
+This tab includes chat logs across all statuses (New, Assigned, Done). All non-archived conversations remain monitored and connected to the link record, allowing for full relationship audit trails.
+
+<ImageZoom
+  src="/images/en/Link-Percakapan.png"
+  alt="Granular Link Interaction History"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+**In this tab, users can:**
+- Review every message exchange that ever occurred via this specific link.
+- Monitor the current active assignment and status of the thread.
+- Identify "New" or unhandled interactions that require immediate team attention.
+
+---
+
+## **Broadcast Success Monitoring**
+
+The **Send Message** tab provides specialized telemetry for marketing broadcasts directed at this specific communication link.
+
+Users can audit the outcome of mass messaging campaigns, identifying which specific attempts reached the recipient, which are pending, and which encountered delivery errors.
+
+<ImageZoom
+  src="/images/en/Link-kirimpesan.png"
+  alt="Monitoring Broadcast Performance at the Link Level"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+**In this tab, users can:**
+- View a historical list of every broadcast campaign that attempted to reach this link.
+- Monitor real-time delivery statuses (Delivered, Queued, Failed).
+- Evaluate platform-specific reach to refine future promotional targeting strategies.
+
+---
+
+<Tips>
+## **Operational Best Practices**
+
+- **Multi-Channel Redundancy**: Map multiple links (e.g., WhatsApp + Email) to a single contact to ensure you can reach them even if one platform is offline.
+- **ID Precision**: Use the absolute international format for phone numbers (e.g., +62... for Indonesia) to avoid "Failed" statuses during broadcasts.
+- **Interaction Audits**: Regularly check the Conversations tab to identify high-interest leads who frequently engage with your content.
+- **Failure Analysis**: Use the Send Message tab to troubleshoot habits; if a contact consistently fails on WhatsApp but succeeds on Email, prioritize the latter.
+- **Data Hygiene**: Update link identifiers immediately if a customer reports a change in their primary contact number or email address.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Persistent Broadcast Failures**: Re-verify the "External ID" formatting (specifically country codes for mobile numbers).
+- **Stagnant Histori**: Click your browser's refresh button if the Conversations or Send Message tabs fail to display recent activities.
+- **Latency Errors**: Ensure your local internet is stable when modifying master link records to avoid data conflicts.
+- **Account Restrictions**: If you cannot create or remove links, verify your user role permissions for "Supervisor" access.
+- **Synchronization Gaps**: Log out and log back in if your session has timed out during a high-volume data update.
+- **Broken Media**: Clear browser cache if profile photos fail to render or if the interface layout appears misaligned.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).
