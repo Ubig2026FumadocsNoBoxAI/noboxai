@@ -1,144 +1,107 @@
 ---
 title: E-mail
-description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
+description: Guide for configuration and management of automated messaging through E-mail channel in NoBox.AI.
 icon: Mail
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Email Automation allows businesses to automatically send emails to customers or prospects based on certain rules or triggers. This system enables the delivery of relevant and timely messages without the need for manual intervention, thus enhancing the efficiency and effectiveness of your business communications.
+**Email Automation** in NoBox.AI allows you to send marketing messages, product information, or service updates automatically and in bulk. Through integration of the SMTP (*Simple Mail Transfer Protocol*), you can connect various popular email provider services (Gmail, Outlook, or custom domains) to reach customer inboxes timely.
 
-## **Add Account**
-
-Make sure you are subscribed to Email Automation. To add a new account, please go to **[Account] ➔ click on the \[New Account] button ➔** a dialog **[New Account]** will appear.
-
-<ImageZoom
-  src="/images/en/add%20account%20email.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-<table>
-  <thead>
-    <tr>
-      <th width="98.39996337890625">Field</th>
-      <th width="335.199951171875">Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Name</td>
-      <td>Your account name</td>
-      <td>Email #CS</td>
-    </tr>
-    <tr>
-      <td>Category</td>
-      <td>Account category</td>
-      <td>Automation</td>
-    </tr>
-    <tr>
-      <td>Channel</td>
-      <td>The channel you choose</td>
-      <td>Email</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>Information if the account is active or not</td>
-      <td>Active</td>
-    </tr>
-  </tbody>
-</table>
-
-Then, choose the SMTP option you want next, fill in the fields in the Email configuration section, and enter the email address and email provider password you selected.
-
-<ImageZoom
-  src="/images/en/konfigurasi%20email.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Once you have filled in all the required fields, click **[OK]** to save the new account you just created.
-
-## **Configuration**
-
-After adding a new account, you just need to open the WhatsApp account you've created through your PC/laptop.
-
-<ImageZoom
-  src="/images/en/akunWa.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Open the NoBox Desktop application.
-- Scan the QR code to activate the account.
-- Ensure the **[Logs]** tab displays the message **"WhatsApp Automation is ready"**.
-- In the **[Outbox]** tab, make sure the status is **[Worker On]**; the account is then ready for use.
-
-## How to Use Your WhatsApp Account
-
-You can use your WhatsApp account to send campaigns by following these steps:
-
-1. Visit the [id.nobox.ai](https://id.nobox.ai/) website, click on the **[Campaigns]** module, and then select the **[Campaigns]** menu.
-2. Choose an existing campaign or create a new one. Select the **[WhatsApp]** channel and choose the **[WhatsApp Jasmine]** account you recently created. Ensure the WhatsApp account is active.
-3. Make sure the campaign data is correctly filled out, and then click to process the campaign.
-4. You can monitor the campaign delivery from NoBox Desktop in the **[Outbox]** tab.
-
-<ImageZoom
-  src="/images/en/Outbox.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-5. Additionally, you can view your campaign results in the **[Inbox]** menu, allowing you to immediately monitor the campaign outcomes and directly reply to chats with your target audience.
-
-<ImageZoom
-  src="/images/en/Inbox.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## Pause Process Campaign
-
-This feature allows you to pause the campaign sending process. Here's how:
-
-1. In the **[Outbox]** tab, click the **[Worker]** button and ensure the worker status is **[OFF]**.
-2. The sending process will pause.
-3. To resume the sending process, click the **[Worker]** button and ensure the worker status is **[ON]**.
-4. The sending process will continue.
-
-## Disabling WhatsApp Account
-
-This feature helps reduce the RAM usage of the NoBox Desktop application on your device.
-
-To disable an account, select one of your WhatsApp accounts, then uncheck the status section. Once done, click **[Save]** to save the changes.
-
-<ImageZoom
-  src="/images/en/Menonaktifkan%20Akun%20Whatsapp%20(1).png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Check the NoBox Desktop application; newly deactivated WhatsApp accounts do not appear.
-
-## **Edit and Delete Accounts**
-
-To edit an account, please open and log in to the website [id.nobox.ai](https://id.nobox.ai/), click on the **[Accounts]** menu. Choose the account you want to edit, then edit your data and click **[Save]** to save the changes.
-
-To delete an account, select the account you want to delete, then click **[Delete]**. A confirmation message will appear asking if you want to delete the account. Click **[Yes]** to confirm, or click **[No]** to cancel.
+This feature is ideal for building long-term relationships through Newsletters, automated invoice notifications, and new product introduction campaigns with high delivery precision.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Connecting an Email Account**
+
+To start sending, you must register a sender email account into the NoBox.AI infrastructure.
+
+### **Account Addition Steps:**
+
+1. Go to the **[Account]** module ➔ click the **[Add Account]** button.
+2. Select the **Email** channel from the available options.
+3. Complete the account identity data (Account Name and Category).
+4. Click **[Save]**.
+
+<ImageZoom
+  src="/images/en/add%20account%20email.png"
+  alt="Registering a New Email Account"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **SMTP Configuration**
+
+After basic data is saved, you need to enter technical sending details so that NoBox can send emails on your behalf.
+
+### **Configuration Stages:**
+- Select an email provider (If the list is not available, use the Custom/SMTP option).
+- Enter the appropriate **SMTP Host** and **Port** (e.g., `smtp.gmail.com` port `587` for Gmail).
+- Enter the **Email Address** and **Password / App Password**.
+- Click **[OK]** or **[Save]**. The system will perform an automatic connection test.
+
+<ImageZoom
+  src="/images/en/konfigurasi%20email.png"
+  alt="Email SMTP Settings"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Email Campaign Management**
+
+### **Sending Promotions**
+Just like other channels, you can create email campaigns through the **[Promotions]** module. Select the Email channel and specify the sender account you have configured. You can include file attachments and images directly into the email body.
+
+### **Delivery Monitoring**
+Monitor the status of each sent email (Queue, Processed, Sent, or Failed) through the monitoring dashboard. You can also see email replies (if supported) through the **Inbox** menu for centralized conversation synchronization.
+
+---
+
+## **Editing and Deleting Account Data**
+
+### **Data Changes While Account is Active**
+If you need to change your email password or edit SMTP details, navigate to the **[Account]** menu on the NoBox.AI website, select the relevant account, make changes, and press **[Save]**.
+
+### **Account Deletion**
+Select the account that is no longer used and click the **[Delete]** button.
+
+<Callout type="info" title="Important Information">
+The system will permanently delete all stored SMTP credentials. Ensure there are no scheduled email campaigns relying on that account before performing a deletion.
+</Callout>
+
+---
+
+<Tips>
+## **Email Automation Usage Tips**
+
+- **Use App Password**: For services like Gmail, do not use your primary account password. Create an *App Password* in your Google account security settings for a more secure third-party connection.
+- **Rate Limit**: Do not send too many emails in a short time to avoid being detected as spam by the destination provider and to maintain your IP/Domain reputation.
+- **Engaging Subject**: Use informative email subjects to increase the *Open Rate* from your customers.
+- **Content Verification**: Always send trial emails to a personal address before broadcasting to thousands in your database.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If email delivery is hampered, please follow these steps:
+
+- **Authentication Error**: Re-check if the Email and Password/App Password are correct. Often problems arise from passwords that are edited but not updated in the system.
+- **Email Enters Spam Folder**: Ensure your email content does not contain words that trigger excessive spam filters and add SPF/DKIM records to your business email domain.
+- **SMTP Connection Timeout**: Ensure the Port you are using is opened by your internet connection provider (e.g., Port 587 or 465).
+- **Process Paused**: Ensure account status on the dashboard remains "Active". If consecutive failures occur, the system might suspend delivery to protect your account reputation.
+- **Attachment Too Large**: Ensure the total size of attached files does not exceed limits (usually max 10MB-20MB) to avoid rejection by the recipient server.
+
+</Kendala>
+
+---
+
+If you experience constraints or difficulties related to Email Automation, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

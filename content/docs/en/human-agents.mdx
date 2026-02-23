@@ -1,84 +1,94 @@
 ---
 title: Human Agent
-description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
+description: Management of team members, roles, and access permissions in NoBox.AI.
 icon: Headphones
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Human Agents at NoBox.Ai serve as the control center for managing all human users who have access to your platform. This feature allows you to invite team members, assign roles, and manage their access rights. If AI Agents are virtual robots, then Human Agents are your real-world team—such as customer service staff, managers, and administrators—responsible for operating, supervising, and managing customer interactions.
+**Human Agents** in NoBox.Ai is the control center for managing all human users who have access to your platform. This feature allows you to invite team members, set roles, and control their access rights according to your company's organizational structure.
+
+While AI Agents perform tasks automatically, Human Agents are your operational team—such as customer service staff, managers, and administrators—who oversee and manage customer interactions directly.
+
+---
+
+## **Human Agent Menu Interface**
 
 <ImageZoom
-  src="/images/id/human-agent.png"
-  alt="Tampilan Human Agent"
+  src="/images/en/human-agent.png"
+  alt="Human Agent Menu Interface"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-On that display, you can see a list of all agents along with their details. Here is an explanation for each main column:
+The interface above displays a list of all agents along with their status details. Here is an explanation for each primary information column:
 
-<table data-header-hidden>
-  <thead>
-    <tr>
-      <th width="150">Column</th>
-      <th>Function</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <strong>Name & Email</strong>
-      </td>
-      <td>
-        Unique identity of each agent. The name is used for internal
-        identification, while the email is used for login and notifications.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <strong>Join Date</strong>
-      </td>
-      <td>
-        The date and time when the agent first joined or registered on the
-        platform.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <strong>Status</strong>
-      </td>
-      <td>
-        Shows the agent account verification status. Status{" "}
-        <strong>
-          <code>VERIFIED</code>
-        </strong>{" "}
-        means the agent has successfully confirmed their email and their account
-        is fully active.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <strong>Roles</strong>
-      </td>
-      <td>
-        The role or position that determines the level of access rights an agent
-        has within the system. For example: <code>Owner</code>,{" "}
-        <code>Manager</code>, <code>Chat Agent</code>. This role is very
-        important for restricting the features that each team member can access.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-## **Inviting New Agents**
-
-Adding Human Agents is done through an invitation system to ensure security. To invite a new agent, please click the ➔ **[Copy Invitation]** button. This will copy a unique invitation link. Send this link to prospective team members. Once they register via the link, their accounts will automatically be added to the Human Agents list with **[VERIFIED]** status. The **[Unlimited]** label next to it indicates that you can invite as many agents as you need without any quota limits.
-
-## Edit and Delete Human Agent Data
-
-To edit a Human Agent's data, please first select the data you want to edit (for example, by clicking on the agent's name). Edit the data such as roles and click **[Save]** to save the changes. To delete a Human Agent's data, select the Human Agent data you want to delete, then click the **Delete (trash can)** icon, and a confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]** if not, click **[No]**.
+| Column | Function |
+| :--- | :--- |
+| **Name & Email** | Unique individual agent identity used for login and internal identification. |
+| **Join Date** | Date and time when the agent first joined the platform. |
+| **Status** | Account verification status. Agents with **VERIFIED** status can fully access the system. |
+| **Roles** | Agent access level (e.g., Owner, Manager, Chat Agent) which determines accessible features. |
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Inviting New Agents**
+
+Adding Human Agents is done through an invitation system to maintain company data security.
+
+### **How to Invite an Agent:**
+
+1. Click the **[Copy Invitation]** button at the top right of the page.
+2. A unique invitation link will be automatically copied to your clipboard.
+3. Send the link to potential team members through your favorite communication media (WA, Email, etc.).
+4. After the agent registers via the link, their account will appear in the list with an active status.
+
+The **[Unlimited]** label indicates that you have the freedom to add as many agents as needed according to your business scalability without additional costs per agent.
+
+---
+
+## **Editing and Deleting Human Agent Data**
+
+### **Edit Agent Data**
+To change agent information such as role assignment, select the target agent's name. Make changes to the agent profile form, then click **[Save]**.
+
+### **Delete Agent Data**
+Select the agent you want to remove from the system, click the **Delete (trash can)** icon, and confirm your choice in the dialog that appears.
+
+<Callout type="info" title="Important Information">
+Deleting Human Agent data is permanent. Deleted agents will not be able to log in to the system, and all their access rights will be revoked immediately.
+</Callout>
+
+---
+
+<Tips>
+## **Usage Tips**
+
+Some tips for managing Human Agents:
+
+- Assign roles that match each team member's job description to maintain data security.
+- Use official company email addresses for each agent to look more professional.
+- Periodically monitor the status column to ensure all team members have completed email verification.
+- Utilize the unlimited invitation feature to distribute workload to more agents when message traffic is high.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues in agent management, please follow this guide:
+
+- **Invitation Link Not Working**: Try regenerating the invitation link by clicking the **[Copy Invitation]** button again.
+- **Agent Not Appearing in List**: Ensure team members have completed the registration process through the provided link.
+- **Verification Email Not Received**: Suggest agents check their Spam folder or click the resend verification button on their account.
+- **Failed to Change Roles**: Ensure you are logged in with an administrator account (Owner/Manager) that has team management authorization.
+- **Agent Forgot Password**: Direct the agent to the login page and click the "Forgot Password" link to perform a self-reset.
+
+</Kendala>
+
+---
+
+If there are any problems or difficulties related to NoBox.Ai, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

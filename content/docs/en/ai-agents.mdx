@@ -1,128 +1,108 @@
 ---
 title: AI Agent
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Overview of intelligent virtual assistants for automating digital interactions in NoBox.AI.
 icon: Bot
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-# AI Agents
+**AI Agents** in NoBox.Ai are intelligent virtual assistants that serve as the front line for automating your digital interactions. These agents are capable of answering customer questions, collecting lead data, and operating 24/7 without interruption across various communication platforms.
 
-AI Agent from NoBox.Ai is an intelligent virtual assistant designed to automate your digital interactions. This agent can automatically answer customer queries, gather prospect data, and operate 24/7 across various platforms. Its goal is to enhance service efficiency while smartly routing complex conversations to human agents when necessary.
-
-<ImageZoom
-  src="/images/en/Screenshot%202025-07-04%20133747.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-On the display, there are several statuses. The explanation of these statuses is as follows:
-
-<table>
-  <thead>
-    <tr>
-      <th width="138">Feature</th>
-      <th>Function</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <div>
-          <figure>
-            <img src="/images/en/image%20(6).png" alt="" className="mx-auto" />
-            <figcaption></figcaption>
-          </figure>
-        </div>
-      </td>
-      <td>
-        The AI agent is currently under development or editing. Its
-        configuration is not final and is not active to serve users. In this
-        status, you can change any settings without affecting the running
-        service.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div>
-          <figure>
-            <img src="/images/en/image%20(7).png" alt="" className="mx-auto" />
-            <figcaption></figcaption>
-          </figure>
-        </div>
-      </td>
-      <td>
-        The AI agent has <strong>been activated</strong> by clicking the
-        "Publish" button. The agent is now "live" and ready to interact with
-        customers/users on the designated platform. Each interaction will begin
-        using AI credits.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-**Add AI Agent** To add promotional data, click the menu ➔ **[NewAI Agent]** and a dialog **[New AI Agent]** will appear.
-
-<ImageZoom
-  src="/images/en/Screenshot%202025-07-04%20140225.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Fill in the required fields, as shown in the following example:
-
-<table>
-  <thead>
-    <tr>
-      <th width="169.20001220703125">Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Name</td>
-      <td>AI Agent Name</td>
-    </tr>
-    <tr>
-      <td>Model</td>
-      <td>AI Model</td>
-    </tr>
-    <tr>
-      <td>Behavior</td>
-      <td>Main Task of the AI</td>
-    </tr>
-    <tr>
-      <td>Category</td>
-      <td>AI Agent Category</td>
-    </tr>
-    <tr>
-      <td>Note</td>
-      <td>Internal Note for the AI Agent</td>
-    </tr>
-    <tr>
-      <td>Welcome Message</td>
-      <td>The first message sent by the AI to initiate a conversation</td>
-    </tr>
-    <tr>
-      <td>Agent Transfer Conditions</td>
-      <td>
-        Critical rules determining when the AI should stop and transfer the
-        conversation to a human agent.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-Once you have filled in the fields, click **[Save]** to save the new AI Agent data, and the AI Agent's status will become **[Draft]**.
-
-### Edit and Delete AI Agent Data
-
-To edit an AI Agent's data, first select the data you wish to edit. Edit your data, then click **[Save]** to save the changes. To delete AI Agent data, select the AI Agent you wish to delete, then click **[Delete]**. A dialog will appear asking if you want to delete this data. Click **[Yes]** to confirm or **[No]** to cancel.
+The goal is to increase customer service efficiency while ensuring every complex conversation can be intelligently handed off to a **human agent** when necessary.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **AI Agent Menu Interface**
+
+<ImageZoom
+  src="/images/en/Screenshot%202025-07-04%20133747.png"
+  alt="AI Agent Menu Interface"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+The interface above displays a list of all your AI Agents. Each agent has a status indicator explaining its operational state:
+
+| Status | Icon | Detailed Explanation |
+| :--- | :---: | :--- |
+| **Draft** | <img src="/images/en/image%20(6).png" alt="Draft Status" className="w-auto h-auto mx-auto" /> | The agent is still in the editing stage. Its configuration is not yet active and it is not serving customers. |
+| **Published** | <img src="/images/en/image%20(7).png" alt="Published Status" className="w-auto h-auto mx-auto" /> | The agent has been activated and is ready to interact with customers live on the platform. |
+
+---
+
+## **Adding an AI Agent**
+
+To create a new AI Agent, click the **[Add AI Agent]** button and complete the fields in the form that appears.
+
+### **Add AI Agent Dialog View**
+
+<ImageZoom
+  src="/images/en/Screenshot%202025-07-04%20140225.png"
+  alt="Add New AI Agent"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **AI Agent Dialog Fields**
+
+| Field | Description |
+| :--- | :--- |
+| **Name** | Identity name for your AI Agent. |
+| **Model** | The AI Engine used. |
+| **Behavior** | Description of the AI's personality and primary tasks in answering messages. |
+| **Category** | Grouping agents based on business function. |
+| **Note** | Internal notes for admin reference. |
+| **Welcome Message** | Automated greeting when starting a conversation with a customer. |
+| **Agent Transfer Conditions** | Conditions or keywords that trigger the AI to hand off the chat to a human. |
+
+After saving, the initial status of the AI Agent will be **Draft**. Click the **Publish** button when you are ready to activate it.
+
+---
+
+## **Editing and Deleting AI Agent Data**
+
+### **Edit AI Agent Data**
+Select the record you want to change in the table, adjust the behavior or other settings, and then click **[Save]**.
+
+### **Delete AI Agent Data**
+Select the AI Agent to be deleted, click the **[Delete]** button, and confirm your action in the dialog that appears.
+
+<Callout type="info" title="Important Information">
+Deleting AI Agent data is permanent. The deleted agent will immediately stop serving customers, and all its configuration data will be lost from the system.
+</Callout>
+
+---
+
+<Tips>
+## **Usage Tips**
+
+Optimize your AI Agent's performance with these tips:
+
+- Provide a detailed **Behavior** description so the AI understands the limits of information it can provide to customers.
+- Use the **Welcome Message** to automatically ask for basic customer information (such as Name or Purpose).
+- Define clear **Transfer Conditions** so customers still get solutions from a human when the AI is unable to answer.
+- Conduct testing in **Draft** status before publishing the agent to a public platform.
+- Use the latest AI models to get more natural and accurate response quality.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues with an AI Agent, please follow this guide:
+
+- **AI Not Responding**: Ensure the agent's status is **Published** and your communication platform (WA/Telegram) is connected.
+- **Irrelevant AI Answers**: Review the instructions in the **Behavior** column and provide more specific guidance.
+- **AI Credits Exhausted**: Check your remaining AI quota in the Subscription menu and top up if necessary.
+- **Failed to Transfer to Human**: Check if there are human agents who are online and ready to receive the chat handoff.
+- **Changes Not Saved**: Ensure a stable internet connection when clicking the **Save** button or try reloading the page.
+
+</Kendala>
+
+---
+
+If there are any problems or difficulties related to AI Agents, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

@@ -1,166 +1,133 @@
 ---
 title: Telegram
-description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
+description: Efficiently automating customer interactions through the Telegram platform in NoBox.AI.
 icon: Send
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Efficient Telegram automation can streamline your follow-ups with prospective customers, delivering messages to Telegram quickly and with high quality. It enables the sending of customizable automated messages tailored to your needs and can be integrated with a chatbot to enhance interactions with potential customers effectively.
+**Telegram Automation** in NoBox.AI allows you to efficiently automate customer interactions through the Telegram platform. With this feature, you can send mass messages, respond with automated messages, and connect your account with a Chatbot or AI Agent to improve 24-hour customer service quality.
+
+Telegram integration in NoBox.AI provides high scalability for businesses that require speed of response and management of large customer databases.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/KwqRV1o5bGM/"
-  title="01. Instalasi NoBox Desktop"
+  title="NoBox Telegram Automation Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-## **New Account**
+---
 
-Ensure that you are subscribed to Telegram. To add a new account, click the **[Account]** module ➔ **[New Account]** and a **[New Account]** dialog will appear.
+## **Connecting a Telegram Account**
+
+Linking a Telegram account requires several authentication steps using an active phone number.
+
+### **Account Addition Steps:**
+
+1. Navigate to the **[Account]** module ➔ click the **[Add Account]** button.
+2. Select the **Telegram** channel and enter account details.
+3. Enter the phone number in the **Client ID** field using the international format (Example: +628123456789).
+4. Click **[Save]**.
 
 <ImageZoom
   src="/images/en/Tambah%20Akun%20Telegram.png"
-  alt="Tampilan Dasbor NoBox"
+  alt="Adding a New Telegram Account"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
-
-<table>
-  <thead>
-    <tr>
-      <th width="100.79998779296875">Field</th>
-      <th width="392.60009765625">Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Channel</td>
-      <td>The channel you select</td>
-      <td>Telegram</td>
-    </tr>
-    <tr>
-      <td>Category</td>
-      <td>Select category</td>
-      <td>Automation</td>
-    </tr>
-    <tr>
-      <td>Name</td>
-      <td>Your account name</td>
-      <td>Telegram CS #1</td>
-    </tr>
-    <tr>
-      <td>Notes</td>
-      <td>Provide notes about the account</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>Information whether the account is active or not</td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td>Client Id</td>
-      <td>
-        <p>Enter your Telegram number,</p>
-        <p>number format should be +62</p>
-      </td>
-      <td>+6281111112222</td>
-    </tr>
-  </tbody>
-</table>
-
-After you complete the fields, click **[Save]** to save the newly created account.
-
-## **Configuration**
-
-Here you can see that the Telegram account has been successfully created. The newly created account will appear in NoboxChatSession. Follow the steps below to configure your Telegram account.
-
-- **Accessing API Development Tools:**
-  - Enter your Telegram number, click **[Sign In]**, open settings, and select **[API Development Tools]**.
-  - If this is your first time using the Telegram API, follow these steps:
-    - **Enter App Title:** Enter the title of your application.
-    - **Enter Short Name:** Enter a short name for your application.
-    - **Select Platform:** Select the platform used, such as Android, iOS, or others.
-- **Creating a Telegram API:**
-  - After filling in all the required information, click the **[Create Application]** button to create a Telegram API application.
-  - Once the application is successfully created, your Telegram API data will be displayed.
-
-<ImageZoom
-  src="/images/en/Membuat%20API%20Telegram.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- **Save Session**
-  - Then click the **[Save Session]** button, a notification will appear indicating that the session saving process is in progress. Click **[OK]** to continue.
-  - Wait a moment until a dialog appears to enter the verification code.
-  - Enter the verification code sent by Telegram, click **[OK]**.
-  - Ensure there is information in the logs tab stating “Save session Telegram Automation successfully”.
-  - The configuration process is successful, and your Telegram account is ready to use.
-
-<ImageZoom
-  src="/images/en/Save%20Session%20Telegram.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **How to Use a Telegram Account**
-
-You can use a WhatsApp account to send promotions, follow these steps:
-
-1. Click on the \[Promotions] module, then click \[Promotions].
-2. Select an existing promotion or create a new one, choose the **[Telegram]** channel, select the **[Telegram]** account you just created, and ensure your Telegram account is active.
-3. Make sure the promotion data is filled out correctly, then proceed.
-4. To monitor promotion delivery, you can open the **[Send Message]** tab.
-
-<ImageZoom
-  src="/images/en/Cara%20Menggunakan%20Akun%20Telegram.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-5. Additionally, you can also view promotion results in the **[Inbox]** menu, allowing you to directly monitor promotion outcomes and respond to chats with your promotion targets.
-
-<ImageZoom
-  src="/images/en/Penanganan%20Akun%20Telegram.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Deactivating a Telegram Account**
-
-To deactivate your account, select one of your Telegram accounts and uncheck the status section. Once done, click **[Save]** to apply the changes.
-
-<ImageZoom
-  src="/images/en/Menonaktifkan%20Akun%20Telegram.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Edit and Delete Account**
-
-To edit an account, please visit the Nobox website, click on the **[Account]** menu. Choose the account you wish to edit, then update your information and click **[Save]** to save the changes.
-
-To delete an account, select the account you wish to delete, then click **[Delete]**. A confirmation notification will appear asking if you want to delete the account. Click **[Yes]** to confirm, or **[No]** to cancel.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Telegram API Configuration**
+
+Unlike WhatsApp, Telegram requires the creation of an API Key so that external systems can communicate.
+
+### **Enabling API Features:**
+- Open settings on the active Telegram session in NoBox Desktop.
+- Select **API Development Tools**. If you don't have an API yet, complete the **App Title** and **Short Name** fields as desired.
+- Click **Create Application**. The system will automatically display your **api_id** and **api_hash**.
+
+<ImageZoom
+  src="/images/en/Membuat%20API%20Telegram.png"
+  alt="Telegram Developer API Configuration"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Save Session:**
+- Click the **[Save Session]** button on the NoBox Desktop interface.
+- Enter the verification code sent by the Telegram system to your main Telegram application.
+- Once successful, the message "Save session Telegram Automation successfully" will appear in the logs tab.
+
+---
+
+## **Monitoring and Message Usage**
+
+### **Reply via Inbox**
+All messages received by your Telegram account will be synchronized into the **[Messages]** ➔ **[Inbox]** menu. You can monitor and reply to chats centrally from one dashboard.
+
+### **Telegram Promotional Campaigns**
+Use your Telegram account to send mass promotions by selecting the Telegram channel in the **Promotions** module. You can monitor delivery success through the **Send Messages** tab.
+
+<ImageZoom
+  src="/images/en/Cara%20Menggunakan%20Akun%20Telegram.png"
+  alt="Monitoring Telegram Promotions"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Editing and Deleting Account Data**
+
+### **Edit Account Data**
+You can change account notes or naming through the **[Account]** menu navigation on the NoBox.AI website. Select the data you want to adjust and click **[Save]**.
+
+### **Delete Account Data**
+Select the account you want to disconnect, click the **[Delete]** button, and confirm your action in the dialog that appears.
+
+<Callout type="info" title="Important Information">
+Deleting a Telegram account will permanently remove all authentication sessions (*session files*) from the NoBox.AI system. You will need to reconfigure from scratch if you wish to reconnect it.
+</Callout>
+
+---
+
+<Tips>
+## **Usage Tips**
+
+Use Telegram Automation optimally with this guide:
+
+- Ensure your Telegram account does not have **Two-Step Verification** enabled with a password, or ensure that password is entered when prompted.
+- Use **API Development Tools** only in a secure NoBox environment to maintain your `api_id` confidentiality.
+- Perform **Save Session** immediately after creating a new account so the connection is not lost when the application restarts.
+- Utilize the **Inbox** feature to stay connected with customers without having to open your phone or native Telegram desktop application.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues in Telegram integration, please follow these steps:
+
+- **Verification Code Does Not Appear**: Check official Telegram applications on your phone or PC; codes are usually sent via the "Telegram" system chat.
+- **Fail to Create API Application**: Ensure the **App Title** contains unique characters and has not been used before.
+- **Sessions Disconnect Frequently**: Check internet connection stability on the PC running NoBox Desktop or ensure your NoBox application version is up to date.
+- **Broadcast Messages Fail**: Check if target numbers are still active or if your account is hit by mass messaging limits from Telegram policies.
+- **Telegram Application Hangs**: Try doing a **Clear Session** and re-login using your phone number.
+
+</Kendala>
+
+---
+
+If there are any problems or difficulties related to Telegram Automation, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

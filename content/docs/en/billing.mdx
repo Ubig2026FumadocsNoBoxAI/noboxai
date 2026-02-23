@@ -1,68 +1,110 @@
 ---
 title: Billing
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Financial transaction processes, product ordering, and payment confirmation in NoBox.AI.
 icon: Receipt
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
+The **Billing** menu covers all financial transaction processes in NoBox.Ai, from product subscriptions to payment proof confirmation. Our system is designed to facilitate both automatic and manual transactions via bank transfer.
+
+Ensure you follow the payment procedures correctly so that service activation can be performed instantly by our system or admins.
+
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/0ectimbtruk/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/0ectimbtruk"
+  title="NoBox Payment and Billing Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-## **How to Subscribe**
+---
 
-1. Go to the **[Product]** menu and select a product.
-2. Click **[Order]** to purchase the product.
-3. You will be directed to the purchase invoice with the bill status still unpaid and product purchase information.
+## **How to Place an Order**
+
+Steps to subscribe to NoBox.Ai products are as follows:
+
+1. Go to the **[Product]** page on your dashboard.
+2. Search for and select the product or plan you need.
+3. Click the **[Order]** button to start the purchase.
+4. You will be automatically directed to the **Invoice** page containing cost details and billing number.
 
 <ImageZoom
   src="/images/en/Information.png"
-  alt="NoBox Kanban Interface"
+  alt="Purchase Invoice View"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
-
-4. Choose a payment method, online or offline (For online payment, there are 2 options using PayPal Smart Checkout or PayPal. For offline payment, you can choose either bank BCA or bank Mandiri).
-
-## **Submit Proof of Payment via Bank Transfer**
-
-1. Click **[Back to Portal]** to return to the invoice menu.
-2. Open the support menu and click **[Open Ticket]**.
-3. Fill in the details as per the following example.
-
-<ImageZoom
-  src="/images/en/Ticket.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-| Field        | Description          | Example                  |
-| ------------ | -------------------- | ------------------------ |
-| Subject      | Billing name         | BCA transfer proof       |
-| Department   | Select billing type  | Billing                  |
-| Priority     | Select priority      | Medium                   |
-| No Reference | Enter invoice number | INV-000220               |
-| Ticket Body  | Description          | proof of transfer to BCA |
-| Attachments  | Payment proof        |                          |
-
-4. Click **[Save]** to display the Ticket Information to view the completed form.
-5. Once the Ticket Support is created and sent to admin, the status changes to **[Open]**.
-6. When admin responds, the status changes to **[Answered]**.
-7. Once payment is confirmed, the status changes to **[Close]**.
-8. You can check the **[Invoice]** menu to see if the status has changed to paid and ensure that the new product information is updated in the **[Subscription]** menu on id.nobox.ai.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Payment Methods**
+
+We provide flexible options to settle your bills:
+
+### **1. Online Payment**
+You can make instant payments through the PayPal platform using your PayPal balance or the *Smart Checkout* feature. Online payments will activate your service automatically without requiring manual confirmation.
+
+### **2. Offline Payment (Bank Transfer)**
+Specifically for Indonesian users, we provide local accounts (BCA and Mandiri). If using this method, it is **mandatory** to send proof of transfer via the ticket system.
+
+---
+
+## **Transfer Payment Confirmation**
+
+After performing a bank transfer, please upload proof of payment through the following steps:
+
+1. Click the **[Back to Portal]** button and navigate to the **[Support]** menu.
+2. Select the **[Open Ticket]** sub-menu.
+3. Complete the ticket form according to your transaction details.
+
+### **Payment Confirmation Dialog Fields**
+
+| Field | Description | Example |
+| :--- | :--- | :--- |
+| **Subject** | Ticket summary. | BCA Payment Confirmation |
+| **Department** | Ticket category. | Billing |
+| **Priority** | Level of importance. | Medium |
+| **Ref No**| Your invoice number. | INV-000220 |
+| **Ticket Body** | Brief description. | PRO package payment |
+| **Attachments** | Photo of transfer proof. | *Image File/Payment Proof* |
+
+After the ticket is sent, the ticket status will be **OPEN**. Once the admin has confirmed, the status changes to **CLOSED** and your service will be active.
+
+---
+
+<Tips>
+## **Transaction Security Tips**
+
+Ensure your transaction goes smoothly with these tips:
+
+- Use the reference number or unique code stated on the invoice when performing the transfer.
+- Always save physical receipts or bank transaction screenshots as backup proof.
+- Ensure the amount you transfer is exactly the same down to the last digit.
+- Send payment proof immediately after the transaction is complete for faster verification.
+- Use online payment methods for more instant service activation.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting Billing**
+
+If you experience issues related to billing or payment, follow these steps:
+
+- **Service Not Active After Transfer**: Ensure you have sent the payment proof ticket in the Billing department.
+- **Invoice Not Appearing**: Refresh the page or check the Spam folder in your registered email.
+- **Online Payment Method Failed**: Check your balance or card limit, or contact PayPal.
+- **Wrong Transfer Amount**: Immediately contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets) by attaching proof of the transfer error.
+
+</Kendala>
+
+---
+
+If there are any problems or difficulties related to NoBox.Ai, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

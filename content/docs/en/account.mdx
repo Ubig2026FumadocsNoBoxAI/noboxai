@@ -1,350 +1,163 @@
 ---
 title: Account
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Management of social media accounts and extractor tools integrated with NoBox.AI.
 icon: User
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The "Account" is a menu option in Nobox.Ai used for managing account data and the Nobox Desktop tools.
+The **Account** menu in NoBox.AI is used to manage various social media accounts and extractor tools integrated with the system. Through this menu, users can connect WhatsApp numbers, Telegram accounts, social media profiles, and marketplace accounts to streamline business operations.
+
+This integration hub enables automatic synchronization of conversation data and activities between NoBox Desktop and the NoBox.AI cloud platform.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/bv4CHVWJu1M/"
-  title="01. Instalasi NoBox Desktop"
+  src="https://www.youtube.com/embed/bv4CHVWJu1M"
+  title="NoBox Account Management Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-## **New WhatsApp Account**
+---
 
-To add a WhatsApp account, please click on the **[Account]**➔**[NewAccount]** menu, and the **[New Account]** dialog will appear.
-
-<ImageZoom
-  src="/images/en/add%20account%20whatsapp.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Complete the necessary fields, for example as follows:
-
-| Field    | Description                       | Example          |
-| -------- | --------------------------------- | ---------------- |
-| Name     | WhatsApp account name             | s_WhatsApp Cs #1 |
-| Category | Choose a category                 | Automation       |
-| Channel  | Choose a channel                  | WhatsApp         |
-| Status   | Information on the account status | Active           |
-| Notes    | Provide notes about the account   | -                |
-
-Once you have filled out the fields, click **[Save]** to save the new account data you just created. Scan the QR code to link with your WhatsApp.
+## **Account Menu Interface**
 
 <ImageZoom
-  src="/images/en/Qr%20WhatsApp.png"
-  alt="NoBox Kanban Interface"
+  src="/images/en/01.%20Tambah%20WhatsApp.png"
+  alt="Account Menu Interface"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Here you can see that the WhatsApp account has been successfully created.
-
-<ImageZoom
-  src="/images/en/02.%20Berhasil%20Login%20WhatsApp.jpg"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## New Telegram Account
-
-To add a Telegram account, click the **[Account]**➔**[New Account]** menu, and the **[New Account]** dialog will appear.
-
-<ImageZoom
-  src="/images/en/add%20account%20telegram.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Fill out the required information, as shown in the following example:
-
-| Field     | Category                                     | Example          |
-| --------- | -------------------------------------------- | ---------------- |
-| Name      | Telegram account name                        | s_Telegram CS #1 |
-| Category  | Choose a category                            | Automation       |
-| Channel   | Choose a channel                             | Telegram         |
-| Status    | Information on whether the account is active | Active           |
-| Notes     | Provide notes about the account              | -                |
-| Client Id | Your Telegram phone number                   | +628888888888    |
-
-Once you have completed the fields, click **[Save]** to save the newly created account data. Please wait a moment until you receive an OTP from Telegram. An OTP dialog will appear on the Nobox website. Enter the OTP code you received, and click \[Send].
-
-<ImageZoom
-  src="/images/en/04.%20Otp%20Telegram.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-You can see here that the WhatsApp account has been successfully created.
-
-## **New Bukalapak Account**
-
-To add a Bukalapak account, click on the **[Account]**➔**[New Account]** menu, and the **[New Account]** dialog will appear.
-
-<ImageZoom
-  src="/images/en/add%20account%20bukalapak.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Please complete the required fields, as follows:
-
-<table>
-  <thead>
-    <tr>
-      <th width="104.5999755859375">Field</th>
-      <th width="326.5999755859375">Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Name</td>
-      <td>Name of the account to be created</td>
-      <td>Bukalapak#1</td>
-    </tr>
-    <tr>
-      <td>Category</td>
-      <td>Choose a category</td>
-      <td>Automation</td>
-    </tr>
-    <tr>
-      <td>Channel</td>
-      <td>Choose a channel</td>
-      <td>Bukalapak</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>Information on whether the account is active</td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td>Username</td>
-      <td>Your Bukalapak account username</td>
-      <td>the_crispysnack</td>
-    </tr>
-    <tr>
-      <td>Password</td>
-      <td>Your Bukalapak account password</td>
-      <td>password</td>
-    </tr>
-  </tbody>
-</table>
-
-After filling in the fields, click **[Save]** to store the new account data. Please wait for a while until you receive an OTP from Bukalapak. An OTP dialogue will appear on the Nobox website. Enter the OTP code you have received and click \[Ok].
-
-## **Add Shopee.co.id Account**
-
-To add a Shopee.co.id account, click on **[Account]**➔**[New Account]** and a dialog box for **[New Account]** will appear.
-
-<ImageZoom
-  src="/images/en/add%20account%20shopee.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Complete the necessary fields, as shown in the following example:
-
-| Field    | Description                       | Example      |
-| -------- | --------------------------------- | ------------ |
-| Name     | The name of the account to create | Shopee Sasi  |
-| Category | Choose a category                 | Automation   |
-| Channel  | Choose a channel                  | Shopee.co.id |
-| Status   | Information on account activity   | Active       |
-
-Once you have completed the fields, click **[Save]** to store the newly created account data. Please wait for a moment until you receive an OTP from Shopee.co.id. An OTP dialog will appear on the Nobox website. Enter the OTP code you have received, then click \[Ok].
-
-## **Add Tokopedia.com Account**
-
-To add a Tokopedia.com account data, please click on the menu **[Account]**➔**[New Account]** and the **[New Account]** dialog will appear.
-
-<ImageZoom
-  src="/images/en/add%20account%20tokopedia%20(1).png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Fill in the required fields, as shown in the example below:
-
-<table>
-  <thead>
-    <tr>
-      <th width="111.79998779296875">Field</th>
-      <th>Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Name</td>
-      <td>Name of the account to be created</td>
-      <td>Tokopedia CS Septi</td>
-    </tr>
-    <tr>
-      <td>Category</td>
-      <td>Select category</td>
-      <td>Automation</td>
-    </tr>
-    <tr>
-      <td>Channel</td>
-      <td>Select channel</td>
-      <td>Tokopedia.com</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>Account active status information</td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td>Username</td>
-      <td>Your Tokopedia account username</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Password</td>
-      <td>Your Tokopedia account password</td>
-      <td>password</td>
-    </tr>
-  </tbody>
-</table>
-
-Once you have completed the fields, click **[Save]** to save the new account data you have just created. Please wait a moment until you receive an OTP from Tokopedia.com. An OTP dialog will appear on the Nobox website. Enter the OTP code you have received and click \[Ok].
-
-## Add Instagram Account
-
-To add Instagram account data, click the **[Account]➔\[New Account]** menu, which will display the **[New Account]** dialog.
-
-<ImageZoom
-  src="/images/en/05.%20Tambah%20Instagram.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Fill in the required fields as illustrated in the following example:
-
-<table>
-  <thead>
-    <tr>
-      <th width="111">Field</th>
-      <th>Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Name</td>
-      <td>Name of the account to be created</td>
-      <td>s_instagram tesNobo</td>
-    </tr>
-    <tr>
-      <td>Category</td>
-      <td>Choose a category</td>
-      <td>Automation</td>
-    </tr>
-    <tr>
-      <td>Channel</td>
-      <td>Choose a channel</td>
-      <td>Instagram</td>
-    </tr>
-    <tr>
-      <td>Status</td>
-      <td>Account active status information</td>
-      <td>Active</td>
-    </tr>
-    <tr>
-      <td>Username</td>
-      <td>Your Instagram account username</td>
-      <td>the_crispysnack</td>
-    </tr>
-    <tr>
-      <td>Password</td>
-      <td>Your Instagram account password</td>
-      <td>password</td>
-    </tr>
-  </tbody>
-</table>
-
-Once you have completed the required fields, click **[Save]** to save the newly created account data. Wait for the verification dialog to appear.
-
-<ImageZoom
-  src="/images/en/06.%20Berhasil%20login%20instagram.jpg"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-The Instagram account has been successfully created.
-
-## Add Account Extractor
-
-To add extractor account data, please click the **[Account]** menu ➔ **[New Account]**. A dialog box titled **[New Account]** will appear; select the desired channel.
-
-<ImageZoom
-  src="/images/en/Tambah%20Akun%20Google%20Maps.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Complete the required fields, as shown in the following example:
-
-| Field    | Description                                 | Example                 |
-| -------- | ------------------------------------------- | ----------------------- |
-| Name     | Your account name                           | Google Maps Extractor#1 |
-| Category | Select category                             | Extractor               |
-| Channel  | Select channel                              | Google Maps             |
-| Status   | Information if the account is active or not | Active                  |
-
-If you have filled in all the fields, click **[Save]** to save the newly created account data. To add account data for another extractor site, follow the same steps and adjust the channel selection accordingly.
-
-## **Deactivating an Account**
-
-You can deactivate an account by selecting an account, then unchecking the status box. This feature helps reduce RAM usage of the Nobox Desktop application on your computer.
-
-<ImageZoom
-  src="/images/en/nonaktifkan%20account.png"
-  alt="NoBox Kanban Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## Edit and Delete Account Data
-
-To edit account data, first select the data you wish to edit. After making your changes, click **[Save]** to store the changes.
-
-To delete account data, select the account data you wish to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the selected data. If yes, click **[Yes]**, otherwise click **[No]**.
+The interface above displays the list of accounts already connected to the system. You can view the activity status of each account, its category, and the channel used.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Adding a WhatsApp Account**
+
+To add a WhatsApp account, click the **[Add Account]** button and select the WhatsApp channel.
+
+### **WhatsApp Add Dialog Fields**
+
+| Field | Description | Example |
+| :--- | :--- | :--- |
+| **Name** | Identity name for the WhatsApp account. | Primary CS #1 |
+| **Category** | Account grouping (e.g., Sales). | Automation |
+| **Channel** | Communication platform. | WhatsApp |
+| **Status** | Account activation status. | Active |
+| **Notes**| Optional description. | Pro Sales Account |
+
+After saving, you are required to scan the QR code using the WhatsApp application on your phone to link the account.
+
+<ImageZoom
+  src="/images/en/Qr%20WhatsApp.png"
+  alt="Scan QR WhatsApp"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Adding Social Media & Marketplace Accounts**
+
+NoBox.AI supports various other platforms like Telegram, Instagram, Shopee, Tokopedia, and Bukalapak. The process for adding accounts on these platforms generally involves filling in credentials (username/password) or a phone number followed by OTP verification.
+
+### **Marketplace Account Addition Examples**
+
+| Platform | Primary Field | Verification Method |
+| :--- | :--- | :--- |
+| **Telegram** | Client ID (Phone Number) | OTP Code via Telegram |
+| **Shopee** | Account Name & Category | OTP Code via SMS/App |
+| **Tokopedia** | Username & Password | OTP Code |
+| **Instagram** | Username & Password | Login Verification |
+
+<ImageZoom
+  src="/images/en/04.%20Otp%20Telegram.png"
+  alt="Account OTP Verification"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Extractor Accounts**
+
+The Extractor feature allows you to extract data from public platforms like Google Maps. To add one, select the **Google Maps** channel in the **Add Account** dialog.
+
+<ImageZoom
+  src="/images/en/Tambah%20Akun%20Google%20Maps.png"
+  alt="Add Extractor Account"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Registered Account Management**
+
+### **Deactivating an Account**
+You can temporarily deactivate an account by unchecking the status box. This is useful for reducing memory (RAM) usage on the NoBox Desktop application without permanently deleting account data.
+
+<ImageZoom
+  src="/images/en/Menonaktifkan%20Akun.png"
+  alt="Account Status Management"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Editing and Deleting Account Data**
+
+### **Edit Account Data**
+Select the account you want to change, adjust the information, and then click **[Save]**. Changes will be immediately synchronized throughout the system.
+
+### **Delete Account Data**
+Select the account to be deleted, click the **[Delete]** button, and confirm your action.
+
+<Callout type="info" title="Important Information">
+Deleting account data is permanent and will disconnect all integrations related to that account. Ensure the account data being deleted is truly no longer needed.
+</Callout>
+
+---
+
+<Tips>
+## **Usage Tips**
+
+Optimize your account management with these tips:
+
+- Use clear account names (e.g., "WhatsApp_CS_Jakarta") for easier monitoring.
+- Ensure a stable internet connection when scanning QR codes or entering OTPs.
+- Turn off accounts that are not actively being used to save computer resources.
+- Regularly verify accounts to ensure integrations remain smooth.
+- Use appropriate categories to keep the account list neatly organized.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues in the Account menu, please check the following solutions:
+
+- **WhatsApp QR Scan Failed**: Ensure the phone screen is clean and the WhatsApp camera is focused on the QR code.
+- **OTP Not Received**: Check cellular signal or ensure the phone number entered is correct.
+- **Account Logout Status**: Re-login or re-scan the QR code to reconnect the broken connection.
+- **Slow Application**: Deactivate unnecessary accounts to reduce RAM load.
+- **Failed to Save Account**: Ensure all mandatory fields are filled and the phone number format is correct (using country code).
+
+</Kendala>
+
+---
+
+If there are any problems or difficulties related to NoBox.Ai, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).
