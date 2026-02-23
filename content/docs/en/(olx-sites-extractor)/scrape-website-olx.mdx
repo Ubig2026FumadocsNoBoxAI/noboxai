@@ -1,112 +1,154 @@
 ---
 title: Scrape Website Olx
-description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
+description: Harvesting global business leads and classified ad data from OLX networks using NoBox Desktop.
 icon: Globe
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-OLX IndonesiaX is a desktop application with Chrome browser support that enables business prospect data (your potential customers) from one network site with the best speed and quality results from various countries. This software extracts various available data from OLX, including links, business names, addresses, phone numbers, websites, ratings, total views, opening hours, image links, latitude, longitude, plus codes, and business fields. Data is automatically saved in NoBox.Ai. You can also export the data in Excel (.xlsx, .csv) and JSON (.json) file formats.
+**OLX IndonesiaX** is a desktop application powered by Chrome browser integration that allows for the high-quality extraction of business prospect data (potential leads) from various countries within the OLX network. This software extracts a comprehensive range of data from OLX, including links, business names, addresses, phone numbers, websites, ratings, total views, opening hours, image links, latitude, longitude, plus codes, and business categories. Data is automatically saved to NoBox.Ai. You can also export results in Excel (.xlsx, .csv) and JSON (.json) formats.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/5wFLy1SciEA/"
-  title="01. Instalasi NoBox Desktop"
+  title="NoBox Desktop Installation"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-## **Add Account**
+---
 
-Make sure you have subscribed to OLX Extractor for the country you want to extract data from. To add a new tool, please open the **NoBox Desktop ➔ \[Add Account]**, and a **[Add Account]** dialog will appear.
+## **Adding an Account**
+
+Ensure you have a subscription to the OLX Extractor for the specific country you wish to target. To add a new tool instance, launch the **NoBox Desktop application ➔ [Add Account]**. The **[Add Account]** dialog will appear.
 
 <ImageZoom
-  src="/images/id/New%20Acccount%20OLX.png"
-  alt="Tampilan Dasbor NoBox"
+  src="/images/en/New%20Acccount%20OLX.png"
+  alt="NoBox Dashboard View"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4"
 />
 
-| Entry   | Description                                             | Data Example      |
-| ------- | ------------------------------------------------------- | ----------------- |
-| Channel | Channel you choose                                      | OLX IndonesiaX    |
-| Name    | Your Account Name                                       | OLX IndonesiaX #1 |
-| Notes   | Provide notes about that account.                       | -                 |
-| Status  | Information about whether the account is active or not. | Active            |
+| Field     | Description                               | Example Data       |
+| --------- | ----------------------------------------- | ----------------- |
+| Channel   | The selected platform channel             | OLX IndonesiaX    |
+| Name      | Your Account Name                         | OLX IndonesiaX #1 |
+| Notes     | Optional notes regarding the account      | -                 |
+| Status    | Account activation status                 | Active            |
 
-If you have completed filling out the form, click **[OK]** to save the account you just created.
-
-## **Edit and Delete Account**
-
-To edit an account, please open and log in to the website id.nobox.ai, and click the **[Accounts]** menu. First, select the account you wish to edit, then update your information and click **[Save]** to save the changes.
-
-To delete an account, select the account you wish to remove, then click **[Delete]**. A confirmation message will appear asking if you want to delete the account. Click **[Yes]** to proceed or **[No]** to cancel.
-
-## **Configuration**
-
-OLX supports an auto-login feature, allowing you to log in automatically without entering your password each time. Click **[Other Options]** to bring up the **[Option]** dialog, then enter your OLX username and password.
-
-<ImageZoom
-  src="/images/id/Konfigurasi.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-After completing the form, click **[OK]** to save the new autologin Username and Password you just created.
-
-## **Basic Operations**
-
-After configuring auto login, you can proceed with basic operations and main functions.
-
-<ImageZoom
-  src="/images/id/Pengoperasian%20OLX.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Open the NoBox Desktop application
-- Select the location from which the data will be retrieved.
-- Enter the data query you want to retrieve.
-- Enter the category of data to be collected.
-- Enter **[Limit Result]**
-- Select a list to save the extracted data under **[Save to List]**, or add a new list.
-- Choose **[Options]** to display debug mode or images of the item.
-
-| Entry        | Description                                                  | Data Example          |
-| ------------ | ------------------------------------------------------------ | --------------------- |
-| Category     | Select category of goods/services                            | Electronics & Gadgets |
-| Limit Result | <p>Input:</p><p>Enter the amount of data to be retrieved</p> | 5                     |
-| Save to list | Choose/add a list to store extracted data.                   | Laptop Malang         |
-| Options      | Check if you want to debug and load images                   | -                     |
-
-## **Scrape Data**
-
-Scraping data from the OLX website allows you to extract seller information or ad posters from various product and service listings quickly, easily, and efficiently.
-
-<ImageZoom
-  src="/images/id/Scrape%20OLX.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Once the data processing is complete, click **[Start]** to begin data extraction.
-- Wait for a notification indicating that the data extraction is complete.
-- If the amount of data retrieved is less than the amount entered, there are duplicate records removed from the same installer.
-- Data that has been automatically retrieved will be saved in the **[Contacts]** menu of NoBox.Ai
+Once the fields are complete, click **[OK]** to save the new account.
 
 ---
 
-If you encounter any issues or difficulties with NoBox Desktop, please contact us via [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Editing and Deleting Accounts**
 
-\
+### **Editing an Account**
+
+To edit an account, log in to the [id.nobox.ai](https://id.nobox.ai/) website and navigate to the **[Accounts]** menu. Select the target account, adjust the information, and click **[Save]**.
+
+### **Deleting an Account**
+
+To delete an account, select the target record and click **[Delete]**. Confirm the action in the resulting notification dialog.
+
+---
+
+## **Configuration**
+
+OLX supports an automated login feature, allowing you to bypass manual password entry. To configure this, click **[Other Options]**. In the resulting **[Option]** dialog, enter your OLX account username and password.
+
+<ImageZoom
+  src="/images/en/Konfigurasi.png"
+  alt="NoBox Dashboard View"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+Click **[OK]** to save your auto-login credentials.
+
+---
+
+## **Basic Operations**
+
+After configuring auto-login, you can proceed to basic operations:
+
+<ImageZoom
+  src="/images/en/Pengoperasian%20OLX.png"
+  alt="NoBox Dashboard View"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+- Launch the NoBox Desktop application.
+- Select the target location for data extraction.
+- Enter your search query.
+- Select the relevant category.
+- Define the **[Limit Result]**.
+- Choose a target list in **[Save to List]** or create a new one.
+- Use **[Options]** to enable debug mode or product image loading.
+
+| Field        | Description                                                 | Example Data         |
+| ------------ | ----------------------------------------------------------- | ------------------- |
+| Category     | Select the product/service category                         | Electronics & Gadgets |
+| Limit Result | Enter total records to be pulled                            | 5                   |
+| Save to list | Select/add a list to store harvested data                   | Laptop Malang       |
+| Options      | Check for debugging and image loading                       | -                   |
+
+---
+
+## **Scraping Data**
+
+Scraping the OLX website allows you to efficiently harvest contact information from sellers or advertisers across diverse product categories.
+
+<ImageZoom
+  src="/images/en/Scrape%20OLX.png"
+  alt="NoBox Dashboard View"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4"
+/>
+
+- Once configuration is complete, click **[Start]** to begin extraction.
+- Wait for the completion notification.
+- If fewer results are returned than requested, the system likely filtered out duplicates from the same poster.
+- Data is automatically synchronized to the NoBox.Ai **[Contacts]** menu.
+
+---
+
+<Tips>
+## **Usage Tips**
+
+Tips for streamlining the data scanning process on OLX:
+
+- Ensure you define a specific location before starting to improve data accuracy.
+- Use the most relevant categories for your research targets.
+- Set **Limit Result** according to your daily data needs to maintain stability.
+- Only enable **Load Images** if visual data is necessary, to minimize memory consumption.
+- Organize extraction results using the 'Save to List' feature to keep projects distinct.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues while scraping OLX:
+
+- If the process fails to start, verify that **Auto Login** credentials are correct.
+- If the Chrome browser instance experiences an error, restart the application.
+- Fewer results than the limit often indicate that the system is filtering ads from the same owner.
+- Check your internet connection if real-time synchronization to NoBox.Ai fails.
+- Restart NoBox Desktop if you encounter synchronization issues between multiple extractor tabs.
+
+</Kendala>
+
+---
+
+If you have any problems or difficulties related to NoBox Desktop, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

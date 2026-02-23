@@ -1,194 +1,150 @@
 ---
 title: OLX Sites Extractor
-description: Mengenal struktur dasbor, kanban, list, dan formulir di NoBox.AI
+description: Automatically harvesting advertisement data and seller contact info from the OLX marketplace.
 icon: Package
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-To support all its advantages, OLX Extractor offers a number of interesting features that you can utilize. Among the many available feature options, you can take advantage of some selected features below:
+**OLX Sites Extractor** is a tool in NoBox Desktop designed to automatically harvest advertisement data from the OLX marketplace platform. This feature allows you to extract detailed product information, pricing, seller locations, and phone numbers for market research or building prospect databases.
+
+With a user-friendly interface, you can efficiently perform category and location-based searches across all regions of Indonesia.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/i2JsGX__WRg/"
-  title="01. Instalasi NoBox Desktop"
+  title="OLX Sites Extractor Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
   allowfullscreen
 ></iframe>
 
-## **Auto Login**
+---
 
-OLX Extractor supports the auto login feature. With auto login, specific users can automatically log in without having to type their password first.
+## **Primary OLX Extractor Features**
 
-<ImageZoom
-  src="/images/id/Auto%20login.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+The software is equipped with various intelligent features to enhance speed and security during data extraction.
 
-- Access the NoBox Desktop application through the **[Extractor]** menu
-- Click **[Other Options]** on the **[Process]** page.
-- Enter your OLX email and password before proceeding to the next step.
-- Then click **[OK]** to save.
-
-## **Page Process**
-
-A page that functions to set the criteria for the data to be retrieved.
+### **1. Auto Login**
+OLX Extractor supports an automated login feature. By saving your OLX account credentials, the system can access the platform without repeatedly typing passwords, facilitating easier access to advertisement data that requires authentication.
 
 <ImageZoom
-  src="/images/id/Page%20Process%20OLX.png"
-  alt="Tampilan Dasbor NoBox"
+  src="/images/en/Auto%20login.png"
+  alt="OLX Auto Login Feature"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-<table>
-  <thead>
-    <tr>
-      <th width="178.5999755859375">Features</th>
-      <th>Function</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Limit Result</td>
-      <td>Add data as needed according to the desired amount.</td>
-    </tr>
-    <tr>
-      <td>Save To List</td>
-      <td>
-        Save and add a file name, so when you want to add data to the list, you
-        can use this feature. Simply press the [+] button, then name the list as
-        desired, and finally press [OK].
-      </td>
-    </tr>
-    <tr>
-      <td>Option Debug </td>
-      <td>Display activity logs with great detail.</td>
-    </tr>
-    <tr>
-      <td>Option Load Images</td>
-      <td>Display images in data</td>
-    </tr>
-    <tr>
-      <td>Other Option</td>
-      <td>
-        Interval Settings for Country Location Selection, with additional
-        Interval Settings for Data Collection located at the bottom.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-## **Page Result**
-
-Result is a page displaying the outcomes from the retrieved data.
+### **2. Interval & Search Simulation**
+This feature allows you to define the delay time between data pulls. This interval is critical to ensure that your account activity appears natural to the marketplace, thereby reducing the risk of spam detection or account suspension.
 
 <ImageZoom
-  src="/images/id/Result%20OLX%20.png"
-  alt="Tampilan Dasbor NoBox"
+  src="/images/en/Interval%20OLX.png"
+  alt="OLX Interval Settings"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4"
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
-
-## **Page Logs**
-
-Logs are pages for viewing all ongoing system activities.
-
-<ImageZoom
-  src="/images/id/Logs%20OLX.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Interval Get List**
-
-This feature allows you to adjust the timing between each request to simulate human-like browsing behavior.
-
-<ImageZoom
-  src="/images/id/Interval%20OLX.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Click **[Other Options]** on the **[Process]** page.
-- The interval indicated is the default setting of NoBox, and can be adjusted as needed.
-- Then click **[OK]** to save
-
-## **Multi Tab**
-
-OLX Extractor supports multi-tab processes, enabling searches with multiple keywords simultaneously.
-
-<ImageZoom
-  src="/images/id/Multi%20Tab%20OLX-1.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Extract data from one account using the tool with the search term “Laptop” located in “Jawa Timur.” Retrieve two data entries and include them in the Laptop Malang list.
-- Add another account with the same search but with a different location and a different limit on the number of results.
-
-## **Website NoBox.Ai**
-
-Data extraction results are directly stored on the NoBox.Ai website, allowing you to access and monitor them using any browser and device.
-
-<ImageZoom
-  src="/images/id/Contacts%20(1).png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Go to the **[Contacts]** section and select the **[Contacts]** menu.
-- Select filter **[Source -> OLX IndonesiaX]**
-- Activate **[Auto Refresh]** feature to monitor which data have been successfully processed.
-
-## **Export Data**
-
-NoBox provides options to save extracted data in Excel formats (.xlsx, .csv) and JSON format (.json).
-
-<ImageZoom
-  src="/images/id/Export%20.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Click **[Export to Excel]** on the **[Process]** page.
-- To view the recently retrieved data, navigate to the **[Results]** page and click the **[Action]** button to export in Excel, CSV, and JSON formats.
-
-## **Handling a Computer Crash During Data Extraction**
-
-NoBox offers a feature for unexpected computer/software shutdowns during data extraction.
-
-<ImageZoom
-  src="/images/id/Komputer%20mati.png"
-  alt="Tampilan Dasbor NoBox"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-- Reopen the NoBox application and navigate to the **[Extractor-> OLX]** menu. A notification will appear stating that the previous process is not yet complete.
-- Click **[OK]** to proceed with data search.
-- Click **[Cancel]** to cancel the search.
 
 ---
 
-If you experience any issues or difficulties with NoBox Desktop, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Configuration Management (Page Process)**
+
+Before initiating the extraction process, you must define search parameters in the **Process** tab.
+
+| Feature | Function Description |
+| :--- | :--- |
+| **Limit Result** | Determining the maximum number of advertisement records to be harvested. |
+| **Save To List** | Selecting the contact category or group to store results on the NoBox.AI website. |
+| **Option Debug** | Enabling deep technical logging to monitor system performance. |
+| **Load Images** | Defining whether to load advertisement images to manage system resources. |
+
+<ImageZoom
+  src="/images/en/Page%20Process%20OLX.png"
+  alt="OLX Process Configuration Page"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Results and Data Monitoring**
+
+### **Real-Time Results (Page Result)**
+On the Result tab, you can watch advertisement data being captured instantly. Displayed information includes advertisement titles, pricing, and seller contact details.
+
+<ImageZoom
+  src="/images/en/Result%20OLX%20.png"
+  alt="OLX Result Page"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **NoBox.AI Cloud Synchronization**
+All extracted results are transmitted directly to the **Contacts** database on the NoBox.AI web dashboard, where you can perform further categorization.
+
+<ImageZoom
+  src="/images/en/Contacts%20(1).png"
+  alt="OLX Data on Web Dashboard"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Multi-Tab Execution and Data Export**
+
+### **Multi-Search Support (Multi-Tab)**
+You can run multiple simultaneous extraction processes with different keywords or locations using additional account instances (Multi-Tab).
+
+<ImageZoom
+  src="/images/en/Multi%20Tab%20OLX-1.png"
+  alt="OLX Multi-Tab Feature"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Export to Excel/JSON**
+Collected data can be downloaded to your computer in `.xlsx`, `.csv`, or `.json` formats via the **Results** tab by clicking the **Action** button.
+
+---
+
+<Tips>
+## **Usage Tips**
+
+Optimize your OLX Extractor performance with these steps:
+
+- Always utilize the **Auto Login** feature for smoother daily operations.
+- Leverage **Multi-Tab** functionality if you need to research competitors across different regions simultaneously (e.g., Jakarta, Surabaya, Bandung).
+- Ensure you select a specific **Save To List** file based on product categories to keep your database organized.
+- Enable **Auto Refresh** on the NoBox.AI website to monitor incoming results without manual refreshes.
+- Perform regular data exports for weekly or monthly market analysis.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+If you encounter issues while using the extractor, please perform the following:
+
+- **Login Failed**: Verify email and password accuracy in the **Other Options** menu and check your internet connection.
+- **Process Interrupted**: In the event of a power loss, reopen the application and click **[OK]** in the process recovery dialog.
+- **No Data Appearing**: Check the **Logs** tab to see if errors occurred while accessing the OLX page.
+- **Limit Reached**: If extraction stops, check your **Limit Result** settings or your subscription quota.
+- **Sync Issues**: Ensure the extractor account status in NoBox Desktop is set to "Active".
+
+</Kendala>
+
+---
+
+If you have any problems or difficulties related to NoBox Desktop, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).
