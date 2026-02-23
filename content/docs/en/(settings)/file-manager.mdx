@@ -1,37 +1,107 @@
 ---
 title: File Manager
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Centralized repository for managing digital assets, storage usage, and file organization in NoBox.AI.
 icon: FolderOpen
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-File Manager functions as a centralized storage hub in Nobox.Ai to manage all digital assets, where users can easily search, filter, and delete files. Its main goal is to keep all files organized and easily accessible for efficient reuse across various features within the platform.
+**File Manager** is a centralized storage hub in NoBox.AI designed to house and manage all digital assets used across the platform.
 
-<ImageZoom
-  src="/images/en/image%20(8).png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-#### Managing Files in File Manager
-
-To simplify management, you can utilize the search and filtering features to find the files you need. If you want to know how much data has been used, **click on the \[Size All Files] option** available. This option will display the total size of all files, making it easier to monitor storage usage.
-
-<ImageZoom
-  src="/images/en/image%20(9).png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## Delete a File
-
-To edit a file, first select the data you want to delete, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]**, otherwise click **[No]**.
+This menu allows users to efficiently organize, search, filter, and purge files. With the File Manager, every asset uploaded during chat interactions, promotional campaigns, or through other features is stored in a structured repository. This ensures that media can be accessed and reused at any time without the need for redundant uploads, saving both time and bandwidth.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **File Manager Interface**
+
+<ImageZoom
+  src="/images/en/image%20(8).png"
+  alt="Centralized Media Repository Interface"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+The interface above represents the primary **File Manager** dashboard, displaying every digital asset currently indexed and stored within your organization's system.
+
+From this page, users can review a comprehensive list of files, including metadata such as file name, file type, file size, and upload date. It also provides advanced tools for locating specific assets within large databases.
+
+---
+
+## **Core File Management Features**
+
+| Feature/Button | Function                                                                                                 |
+| -------------- | -------------------------------------------------------------------------------------------------------- |
+| Search         | Locate specific files by name or unique keywords to accelerate retrieval times.                        |
+| Filter         | Narrow down the file list by specific extensions (JPG, PDF, etc.) or upload dates for easier navigation. |
+| Size All Files | Calculates the aggregate storage footprint of your entire library to help monitor quota usage.          |
+| Delete         | Permanently removes redundant or obsolete assets from the system storage.                               |
+
+---
+
+## **Navigating Your Assets**
+
+### **Intelligent Search & Filtering**
+To maintain operational speed, utilize the built-in sorting tools to find exactly what you need for your next campaign:
+
+1. Use the **Search Bar** for direct title-based queries.
+2. Apply **Filters** to isolate specific media types (e.g., viewing only images or only documents).
+3. Results are updated in real-time as you type or adjust filter criteria.
+
+### **Monitoring Storage Consumption**
+To audit your current data utilization, click the **[Size All Files]** option.
+
+This tool calculates the total size of all active assets, allowing administrators to monitor storage health and take action (such as purging large old files) if the organizational quota is nearing its limit.
+
+<ImageZoom
+  src="/images/en/image%20(9).png"
+  alt="Storage Utilization Metrics"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+---
+
+## **Asset Removal (Deletion)**
+
+To clear out unnecessary files and free up storage:
+
+1. Select the specific file(s) you wish to remove from the master list.
+2. Click the **[Delete]** button. A confirmation prompt will appear to verify the action.
+3. Click **[Yes]** to finalize or **[No]** to cancel.
+
+<Callout type="info" title="Important Information">
+File deletion is permanent and cannot be reverted. Before deleting, ensure that the asset is not currently linked to an active promotional template or recurring broadcast, as this will cause media errors in those communications.
+</Callout>
+
+---
+
+<Tips>
+## **File Management Best Practices**
+
+- **Descriptive Naming**: Rename files with clear identifiers (e.g., "Promo_Banner_June2024.jpg") before uploading to make them easily searchable later.
+- **Categorical Filtering**: Use the filters to rapidly isolate assets when building new message templates.
+- **Quota Hygiene**: Periodically check your **[Size All Files]** metric and delete old assets that are no longer relevant to your current marketing cycles.
+- **Naming Consistency**: Standardize naming conventions across your team to prevent the upload of duplicate assets.
+- **Self-Backup**: Download and back up critical organizational assets locally before performing mass deletions from the system.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Missing Uploads**: If a newly uploaded file doesn't appear in the list immediately, refresh your browser page to sync the latest database state.
+- **Upload Failures**: Ensure the file size does not exceed the maximum limit defined by your organization's NoBox.AI subscription tier.
+- **Unsupported Formats**: Verify that your file extension is supported by the platform (e.g., .exe or other executable files are typically restricted for security).
+- **Restricted Access**: If you cannot delete files, verify with your administrator that your account role has "Owner" or "Manager" permissions.
+- **Transmission Latency**: Ensure you have a stable internet connection during large file uploads or batches of mass deletions.
+- **Display Glitches**: Clear your browser cache if the file metadata appears misaligned or if thumbnails fail to render correctly.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

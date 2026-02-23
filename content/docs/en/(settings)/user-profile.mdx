@@ -1,45 +1,105 @@
 ---
 title: User Profile
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Personal data management and display format preferences in NoBox.AI.
 icon: User
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-The User Profile is a menu in Nobox.Ai that contains personal information and is used for setting date, time, and number formats.
+**User Profile** (Profil Pengguna) is an individual settings module in NoBox.AI used to store personal identification data and manage display format preferences for the entire system.
 
-<ImageZoom
-  src="/images/en/Profile.PNG"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Item descriptions for appearance and functionality include:
-
-**1. General**
-
-Information related to user data.
-
-**2. Address**
-
-User's address.
-
-**3. Date Format**
-
-Date format settings.
-
-**4. Time Format**
-
-Time format settings.
-
-**5. Number Format**
-
-Number format settings.
-
-If you make changes to the business profile data, click **[Save]** to save the newly changed data.
+This menu allows users to customize date, time, and number format preferences to align with local regional standards. By configuring these settings correctly, data presented across the platform remains consistent and intuitive, minimizing the risk of data misinterpretation during reporting or scheduling.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **User Profile Interface**
+
+<ImageZoom
+  src="/images/en/Profile.PNG"
+  alt="User Profile Management Screen"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+The interface above is the main User Profile page, where users can audit their personal information and adjust their system-wide display settings.
+
+From this page, you can modify contact details, physical addresses, and define the specific formatting logic for temporal and numerical data.
+
+---
+
+## **User Profile Components**
+
+The Profile page is divided into several logical sections, each serving a distinct configuration purpose:
+
+| Section       | Function                                                                                                            |
+| ------------- | ------------------------------------------------------------------------------------------------------------------- |
+| General       | Displays and manages basic identification data such as your name, login email, and primary phone number.             |
+| Address       | Houses your physical location details for internal documentation and system referencing.                             |
+| Date Format   | Determines how calendar dates appear system-wide (e.g., DD/MM/YYYY or MM/DD/YYYY).                                  |
+| Time Format   | Configures the clock display logic across the platform (e.g., 24-hour military time or 12-hour AM/PM).               |
+| Number Format | Defines how quantitative data and decimals are rendered (e.g., using dots vs. commas as decimal/thousands separators). |
+
+---
+
+## **Detailed Component Breakdown**
+
+- **General Information**
+This section defines your system identity. It includes your full name, email alias, and phone number. Keeping these updated is essential for team collaboration, ensuring colleagues can reach you for internal task handoffs or urgent queries.
+
+- **Address Details**
+Contains your street address, city, province, country, and postal code. This data is used for internal HR documentation and geo-referencing within the system.
+
+- **Date Formatting**
+Crucial for coordinating global campaigns. Select the format that matches your regional operating standard (e.g., DD/MM/YYYY for Asian/European markets) to avoid confusion regarding campaign launch windows or scheduling.
+
+- **Time Formatting**
+Allows you to choose between 24-hour or 12-hour (AM/PM) displays based on personal or organizational preference.
+
+- **Numerical & Decimal Formatting**
+Essential for financial reporting and data auditing. Choose the format most common in your region (e.g., using a comma as a decimal separator) so that performance reports are clear and easy to analyze at a glance.
+
+---
+
+## **How to Update Your Profile**
+
+To commit changes to your identity or preferences:
+
+1. Navigate to the **[User Profile]** menu within the Settings module.
+2. Edit the specific fields within the relevant sections (General, Address, Date/Time/Number Formatting).
+3. Once the revisions are complete, click **[Save]**.
+
+Changes are instant and will immediately propagate across all platform pages upon the next page load.
+
+<Callout type="info" title="Important Information">
+Changes to date, time, or number formats affect the visual rendering of data throughout the entire system. Ensure the selected formats are compatible with your reporting needs before saving. If changes don't appear immediately, try logging out and logging back in.
+</Callout>
+
+---
+
+<Tips>
+## **Optimization Tips**
+
+- **Regional Accuracy**: Align your date/time formats with your team's primary time zone to prevent scheduling conflicts.
+- **Reporting Clarity**: Use the number format you are most comfortable with (dot vs. comma decimals) to make complex reports more readable.
+- **Colleague Visibility**: Always keep your phone number updated in General info so team members can reach you during off-hours or emergency outages.
+- **Regular Checkups**: Periodically review your settings after system updates to ensure your visual preferences are still applied correctly.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Disabled Save Button**: If the "Save" button is greyed out, verify that all mandatory fields are filled and that your email/phone number follows the correct format.
+- **Display Lag**: If formatting changes don't appear in other modules immediately, log out and log back in to refresh your local session metadata.
+- **Data Mismatch**: Ensure your internet connection is active when updating address data to avoid partial saves.
+- **Rendering Errors**: Clear your browser cache if the profile layout appears distorted or if saved formats seem to revert to defaults.
+- **Restricted Fields**: If certain fields cannot be edited, contact your administrator regarding account-level configuration locks.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

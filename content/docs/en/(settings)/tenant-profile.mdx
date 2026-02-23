@@ -1,292 +1,222 @@
 ---
-title: Tenant Profile
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+title: Business Profile
+description: Overview of business data management, team roles, and operational settings in NoBox.AI.
 icon: Building
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Company Profile is a section that contains company data information and is used for member settings, working hours, company details, etc.
+**Business Profile** (Profil Usaha) is a central management hub in NoBox.AI that stores comprehensive information about your company and serves as the primary interface for managing various business operational settings.
+
+This menu allows users to configure company information, manage team members and their roles, set up inbox preferences, connect third-party integrations, and define operating hours with automatic responses. It serves as the single source of truth for all organizational configurations within the NoBox.AI platform.
+
+---
+
+## **Business Profile Interface**
+
+### Main Overview
 
 <ImageZoom
   src="/images/en/1.%20Tampilan%20Profil%20Usaha.png"
-  alt="Tenant Profile Interface"
+  alt="Business Profile Dashboard"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-**Items in the Information Tab and Their Functions:**
+The interface above is the main Business Profile page, displaying your company's core data alongside various administrative tools.
 
-**1. General**
+From this page, users can view and edit everything from general company details and physical addresses to default settings for automated features.
 
-Information related to company data.
+### Displayed Information
 
-**2. Address**
+The Business Profile uses several tabs and sections to support comprehensive organizational management.
 
-Company address.
+---
 
-**3. Default Settings**
+## **Information Tab Components**
 
-Default settings for channels and accounts used to send promotions.
+The Information tab is divided into sub-sections, each with a specific administrative purpose:
 
-**4. Auto-Complete**
+- **General**
+Contains fundamental company data such as the business name, logo, official email, contact phone number, and legal identity records. This information acts as your company's identifier across the entire system.
 
-Settings to activate or deactivate the auto-complete feature in the inbox menu, configured with a specified time.
+- **Address**
+Displays and manages your official business location, including city, province, country, and postal code. This data is critical for official documentation, invoicing, and customer location referencing.
 
-**5. Auto-Archive**
+- **Default Settings**
+Configures the primary communication channel and account used for outgoing promotional broadcasts. By setting a default, users avoid manually selecting channels for every new campaign, significantly improving workflow efficiency.
 
-Settings to activate or deactivate the auto-archive feature in the inbox menu, configured with a specified time.
+- **Auto-Resolve (Selesai Otomatis)**
+Toggles a feature that automatically marks active conversations as "Resolved" after a defined period of inactivity. This helps keep the inbox clean without manual intervention.
 
-**6. Others**
+- **Auto-Archive (Arsip Otomatis)**
+Automates the movement of "Resolved" conversations into the system archive. This ensures the live workspace stays focused on active interactions while safely storing historical context.
 
-Notes related to company data.
+- **Additional Notes**
+An optional space for internal documentation regarding company data or specific administrative reminders.
 
-If you make any changes to the business profile data, click **[Save]** to store the newly modified data.
+After making any changes to these sections, click **[Save]** to commit the updates.
 
-## **Copy Invitation**
+---
 
-Copy Invitation is a feature used to copy the invitation to join the company to other users as company members.
+## **Invite Team Members**
+
+The **Invite Link** (Salin Undangan) is a rapid recruitment tool used to bring new users into your organization’s NoBox.AI workspace.
 
 <ImageZoom
   src="/images/en/2.%20Salin%20Undangan.png"
-  alt="Copy Invitation Interface"
+  alt="Invite Link Feature"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## Download Data
+**How to invite members:**
 
-Download Data is a feature used to download a zip file containing an SQLite database and company data files.
+1. Navigate to the **[Business Profile]** menu.
+2. Click the **[Copy Invite]** button to save the unique recruitment link to your clipboard.
+3. Share this link with the individuals you wish to add to your team.
+4. Recipients can follow the link to register directly under your company tenant.
+
+---
+
+## **Data Backup (Download Data)**
+
+**Download Data** (Unduh Data) allows you to export your entire company database in a secure ZIP format containing the SQLite database and relevant company files.
+
+This is essential for local backups and data sovereignty.
 
 <ImageZoom
   src="/images/en/3.%20Unduh%20Data.png"
-  alt="Download Data Interface"
+  alt="Database Backup Export"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-## **Members**
+**How to export data:**
 
-Information related to users who join your company, used for managing members, removing members, and changing member roles.
+1. Open the **[Business Profile]** menu.
+2. Click the **[Download Data]** button.
+3. The system will generate a ZIP file containing your structured data.
+4. Save the file locally on a secure device for backup purposes.
+
+---
+
+## **Team Members**
+
+The Members tab displays everyone currently joined to your organization. It is the primary environment for managing roles and access permissions.
 
 <ImageZoom
   src="/images/en/4.%20Tab%20Anggota.png"
-  alt="Members Tab Overview"
+  alt="Team Membership Management"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-To access Nobox.Ai, there are several types of accounts: **Owner, Manager, Member, Chat Supervisor**, and **Chat Agent**. The differences among these accounts are explained below.
+### Account Role Definitions
 
-<table>
-  <thead>
-    <tr>
-      <th width="114">Access</th>
-      <th>Information</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Owner</td>
-      <td>
-        Level user dengan hak akses sebagai pemilik tenant merupakan level
-        tertinggi dalam sistem yang memiliki semua akses fitur Nobox.Ai.
-      </td>
-    </tr>
-    <tr>
-      <td>Manager</td>
-      <td>
-        Level user dengan hak akses sebagai manajemen tenant yang memiliki semua
-        akses fitur Nobox.Ai kecuali ganti peran owner.
-      </td>
-    </tr>
-    <tr>
-      <td>Member</td>
-      <td>
-        Level user dengan hak akses sebagai anggota tenant yang memiliki semua
-        akses fitur Nobox.Ai kecuali akses manajemen akun dan pengaturan profil
-        usaha.{" "}
-      </td>
-    </tr>
-    <tr>
-      <td>Chat Supervisor</td>
-      <td>
-        Supervisor digunakan untuk pengaturan kotak masuk, supervisor dapat
-        akses penuh terkait kotak masuk dari penanganan percakapan dan laporan
-        kinerja agen. Supervisor dapat melihat semua pesan, pesan yang belum dan
-        sudah ditugaskan pada agen serta pesan yang sudah terselesaikan.
-        Supervisor juga bisa memilih chat yang masuk berdasarkan izin yang
-        ditugaskan melalui fitur filter.
-      </td>
-    </tr>
-    <tr>
-      <td>Chat Agent</td>
-      <td>
-        Agen digunakan untuk pengaturan akses kotak masuk, agen dapat mengakses
-        fitur kotak masuk untuk membaca dan membalas pesan yang ditugaskan
-        kepada dirinya.{" "}
-      </td>
-    </tr>
-  </tbody>
-</table>
+NoBox.AI utilizes specialized roles to ensure security and operational focus:
 
-## **Role Swap Among Team Members**
+| Role           | Technical Description                                                                                                                                                                 |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Owner          | The highest level of access. Owners have unrestricted control over all features, billing, and the ability to manage or remove any other team member.                                  |
+| Manager        | High-level management access. Managers can access all primary features except the ability to modify the Owner's role or core billing details.                                       |
+| Member         | Standard operational access. Members can use most CRM and campaign features but cannot access account-wide settings or Business Profile configurations.                             |
+| Chat Supervisor | Specialized inbox oversight. Supervisors can monitor all conversations (Assigned or Unassigned), view agent performance reports, and filter chats based on team permissions.      |
+| Chat Agent     | Focused delivery execution. Agents can only see, read, and reply to conversations explicitly assigned to them, ensuring they stay focused on their specific tasks. |
 
-To change a member's role, please click the **[Members]** tab, select a member, and click the icon [ <img src="/images/en/role%201.png" alt="Change Role" className="inline h-5 w-auto mx-1" /> ] A dialog will appear to edit member roles, check the desired role.
+---
+
+## **Modifying Member Roles**
+
+To change the permissions of a colleague:
+
+1. Navigate to the **[Members]** tab in the Business Profile.
+2. Identify the member whose role needs adjustment.
+3. Click the [ <img src="/images/en/role%201.png" alt="Edit Role" className="inline h-5 w-auto mx-1" /> ] icon on their row.
+4. In the role assignment dialog, select the desired new role.
 
 <ImageZoom
   src="/images/en/5.%20Ganti%20Peran%20Anggota.png"
-  alt="Change Member Role Interface"
+  alt="Assigning New Member Permissions"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-Click **[Ok]** to save the updated role once you have made changes.
+5. Click **[Ok]** to apply the new permission level.
 
-## **Team**
+---
 
-The Team is a feature in Nobox.Ai used to categorize agents based on the teams within your company.
+## **Divisions (Teams)**
+
+**Teams** is a structural feature used to organize your agents into specific divisions, units, or functional groups.
 
 <ImageZoom
   src="/images/en/6.%20Tab%20Tim.png"
-  alt="Team Tab Overview"
+  alt="Divisional Team Structures"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-The feature relates to the promotions menu and inbox. Choosing a team in the promotions section determines which team will handle the chat. Once a customer replies to the chat, it is immediately marked as assigned and directed to an agent in that team.
+This feature directly impacts the **[Promotions]** and **[Inbox]** workflows. When creating a campaign, you select a target Team. Any customer replies triggered by that campaign will automatically be assigned to agents within that specific team, ensuring the right specialist handles the query.
 
-## **Add Team**
+---
 
-To create team data, please click the **[Business Profile] ➔** open the **[Team]** tab ➔ \[NewTeam] where a **[New Team]** dialog will appear. Complete the fields in the dialog.
+## **Creating a New Team**
+
+To build a fresh division:
+
+1. Business Profile ➔ **[Teams]** tab ➔ **[Add Team]**.
+2. Complete the required fields in the creation dialog.
+
+### Add Team Dialog View
 
 <ImageZoom
   src="/images/en/7.%20Tambah%20Tim.png"
-  alt="Add Team Dialog"
+  alt="New Team Configuration Form"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-| Field      | Description            | Example    |
-| ---------- | ---------------------- | ---------- |
-| Name       | Team Name              | Marketing  |
-| Supervisor | Choose team supervisor | Anggun     |
-| Agent List | Choose team agent      | sheiladsya |
+### **Team Creation Fields**
 
-If you have completed the fields, click **[Save]** to save the team data you just created.
+| Field          | Description                                                                                                                   | Example       |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| Team Name      | The internal identification for the group (e.g., Sales, After-Sales, VIP Support).                                             | Marketing     |
+| Supervisor     | Select a user with "Supervisor" permissions to oversee this specific team's activities.                                      | Anggun        |
+| Agent List     | Choose the specific agents who will respond to communications routed to this team.                                           | sheiladsya    |
 
-## **Edit and Delete Team Data**
+Click **[Save]** to finalize the team structure.
 
-To edit a team's data, first select the data you want to edit. Make your changes and click **[Save]** to save them.
+---
 
-To delete a team data, select the team data you wish to remove, then click **[Delete]**. A confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]**; if not, click **[No]**.
+## **Managing Team Records**
 
-## **Integration**
+### Editing Teams
+Select the team, modify members or supervisors, and click **[Save]**. Changes are active for all subsequent campaign assignments.
 
-Integration is a feature of Nobox.Ai used to connect third-party applications with Nobox.Ai.
+### Deleting Teams
+To remove an obsolete division, select the team and click **[Delete]**, then confirm the action.
+
+<Callout type="info" title="Important Information">
+Team deletion is permanent. Ensure you have redistributed any active agents to other teams before finalizing deletion to prevent communication gaps.
+</Callout>
+
+---
+
+## **Third-Party Integrations**
+
+The **Integrations** tab is used to connect NoBox.AI with external productivity services, such as Bitly for dynamic link management and tracking.
 
 <ImageZoom
   src="/images/en/8.%20Tab%20Integrasi.png"
-  alt="Integration Tab Overview"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Add Integration**
-
-To add integration data, you can create an account at [bitly.com](https://bitly.com/) first. If you already have an account, click the **[Integration]➔ \[New Integration]** tab to display the **[New Integration]** dialog.
-
-<ImageZoom
-  src="/images/en/9.%20Tambah%20Integrasi.png"
-  alt="Add Integration Dialog"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-Complete the necessary fields, as shown in the following example:
-
-<table>
-  <thead>
-    <tr>
-      <th width="173.60003662109375">Field</th>
-      <th width="229.4000244140625">Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Provider</td>
-      <td>Select the provided provider</td>
-      <td>Bit.ly</td>
-    </tr>
-    <tr>
-      <td>Application Name</td>
-      <td>Name of the application</td>
-      <td>Bit.ly</td>
-    </tr>
-    <tr>
-      <td>Application End</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Client ID</td>
-      <td>Application login username</td>
-      <td>emailname@gmail.com</td>
-    </tr>
-    <tr>
-      <td>Client Secret</td>
-      <td>Application login password</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Application Options</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Application ID</td>
-      <td>Application token</td>
-      <td>785091d8dc9008dd4faf948406dece159658529f</td>
-    </tr>
-    <tr>
-      <td>Notes</td>
-      <td>Notes</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
-
-The token can be generated automatically when the Client ID and **Client Secret** are correct with the account you registered with Bit.ly. Click the **[Generate Token]** button, and the token will automatically appear in the **Application ID** field. Once you have completed the fields, click **[Save]** to store the new integration data you just created.
-
-## **Working Hours**
-
-Working Hours is a feature of Nobox.Ai used for configuring your company's working hours information.
-
-<ImageZoom
-  src="/images/en/10.%20Jam%20Kerja.png"
-  alt="Working Hours Configuration"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
-/>
-
-## **Automated Response**
-
-Automated Response is a feature of Nobox.Ai used for setting message templates and determining the activation status of automated messages when chats occur outside of working hours.
-
-<ImageZoom
-  src="/images/en/11.%20Respon%20Otomatis.png"
-  alt="Automated Response Configuration"
+  alt="External Services Integration Dashboard"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
@@ -294,4 +224,103 @@ Automated Response is a feature of Nobox.Ai used for setting message templates a
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Adding an Integration**
+
+To connect a new service, you must first have an active account with that provider (e.g., [bitly.com](https://bitly.com/)).
+
+**Steps to integrate:**
+
+1. Navigate to the **[Integrations]** tab.
+2. Click **[Add Integration]**.
+
+### Add Integration Dialog View
+
+<ImageZoom
+  src="/images/en/9.%20Tambah%20Integrasi.png"
+  alt="Integration Configuration Form"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Integration Technical Fields**
+
+| Field             | Description                                                                                                 | Example                |
+| ----------------- | ----------------------------------------------------------------------------------------------------------- | ---------------------- |
+| Provider          | Choose the service provider from the pre-defined system list.                                               | Bit.ly                 |
+| App Name          | Your internal name for this specific connection.                                                            | Primary Bitly Linker   |
+| Endpoint          | The target API URL (if required by the specific provider).                                                 | -                      |
+| Client ID         | Typically your login username or email on the provider's platform.                                          | biz@email.com          |
+| Client Secret     | The secure password or secret key generated by the provider.                                                | -                      |
+| App Options       | Additional technical configuration flags (if required).                                                      | -                      |
+| App ID / Token    | The authentication token. Can be generated automatically once credentials are entered.                      | [auto-generated]       |
+
+To generate a token automatically, ensure your Client ID and Secret are correct, then click **[Generate Token]**. Click **[Save]** to commit the integration.
+
+---
+
+## **Operational Operating Hours**
+
+**Operating Hours** (Jam Kerja) is used to define the official windows when your business is active and ready to respond.
+
+<ImageZoom
+  src="/images/en/10.%20Jam%20Kerja.png"
+  alt="Setting Business Operating Hours"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+These settings directly control the **Automatic Response** feature. Automated messages will only be dispatched to customers who initiate contact outside of these defined hours.
+
+---
+
+## **Automatic Responses**
+
+**Automatic Responses** (Respon Otomatis) allows you to set up templates that manage customer expectations when your team is offline.
+
+<ImageZoom
+  src="/images/en/11.%20Respon%20Otomatis.png"
+  alt="Configuring Out-of-Office Messages"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+**In this section, you can:**
+- Toggle the entire automatic response system on or off.
+- Compose the specific messaging used for out-of-office replies.
+- Define the exact logic for when these messages are triggered based on your operating hours.
+
+This feature ensures that customers never experience a "black hole" in communication, maintaining a high level of professional service even during weekends or holidays.
+
+---
+
+<Tips>
+## **Workflow Best Practices**
+
+- **Data Security**: Perform a **[Download Data]** backup monthly to ensure you have an offline copy of your commercial relationships.
+- **Communication Continuity**: Set up your operating hours and automatic response template *before* launching your first major campaign.
+- **Load Balancing**: Use **Teams** to divide high-traffic days between different agent groups to prevent burnout.
+- **Audit Trails**: Regularly review the **Members** tab to de-provision access for former employees or temporary contractors.
+- **Marketing Agility**: Integrate Bitly early on to ensure all your campaign links are professional and trackable.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Invalid Invitation**: If an invite link fails, regenerate it from the dashboard; links often have security expiration windows.
+- **Permission Denied**: If you cannot modify roles or save profile changes, verify that your account is set to **Owner** or **Manager**.
+- **Silent Automations**: If automatic responses aren't firing, double-check that both your **Operating Hours** are saved and the **Toggle** switch in the Auto-Response menu is set to "Active."
+- **Export Failures**: If the database download fails, check your internet stability; large backups require a consistent connection to finalize.
+- **Token Generation Errors**: If the "Generate Token" button fails for Bitly, verify your Bitly password directly on their website first.
+- **Desynchronized View**: Log out and log back in if you change a role and the dashboard doesn't immediately reflect new permissions.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).

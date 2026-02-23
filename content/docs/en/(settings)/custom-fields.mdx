@@ -1,97 +1,124 @@
 ---
 title: Custom Fields
-description: Understanding the dashboard, kanban, list, and form structure in NoBox.AI
+description: Extending data structures with custom attributes for contacts and products in NoBox.AI.
 icon: Keyboard
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Special Input is a feature in Nobox.Ai that allows you to add custom columns according to your needs.
+**Custom Fields** (Inputan Khusus) is a powerful extensibility module in NoBox.AI that allows users to append supplementary data columns to the system's default data structures, tailored specifically to your unique business logic.
 
-<ImageZoom
-  src="/images/en/Inputan%20khusus.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-## **Add Custom Input**
-
-To create custom input data, click on the **[Custom Input]** menu, select the contact or product as needed, then click **[Add Custom Input].**
-
-<ImageZoom
-  src="/images/en/Tambah%20inputan%20khusus.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-Complete the information contained in the dialogue:
-
-<table>
-  <thead>
-    <tr>
-      <th width="124.800048828125">Field</th>
-      <th width="259">Description</th>
-      <th>Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Input</td>
-      <td>Choose input</td>
-      <td>Input</td>
-    </tr>
-    <tr>
-      <td>Input Type</td>
-      <td>Select input type</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>Required</td>
-      <td>Required field</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Label</td>
-      <td>Column title</td>
-      <td>Other Number</td>
-    </tr>
-    <tr>
-      <td>Placeholder</td>
-      <td>Input hint</td>
-      <td>62xxxxxx</td>
-    </tr>
-    <tr>
-      <td>Default Value</td>
-      <td>Default value</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
-
-Once you have completed all the fields, click **[Save]** to store the newly created custom input data.
-
-## **Edit and Delete Custom Input Data**
-
-To edit a specific custom input data, first select the data you want to edit. Edit your data and click **[Save]** to save the changes. To delete a specific custom input data, select the data you want to delete, then click **[Delete]**, and a confirmation dialog will appear asking if you want to delete the data. If yes, click **[Yes]**, otherwise click **[No]**.
-
-## **How to Use Custom Input**
-
-1. Open the **[Contact]** menu, select an existing contact or create a new one.
-2. In the custom input section, previously created data will be displayed.
-3. Fill in the data if necessary and click **[Save]** to save the contact data.
-
-<ImageZoom
-  src="/images/en/Cara.png"
-  alt="NoBox Dashboard View"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
+This menu enables you to customize contact and product data architectures, ensuring your database contains every piece of information relevant to your operations. By utilizing custom fields, specialized data points unique to your industry can be captured, stored, and managed natively within the NoBox.AI platform.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Custom Fields Interface**
+
+<ImageZoom
+  src="/images/en/Inputan%20khusus.png"
+  alt="Custom Attribute Management Dashboard"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+The interface above is the main **Custom Fields** dashboard, which lists every specialized identifier created by your organization.
+
+From this environment, users can audit input names, data types, mandatory status, and categories (Contacts or Products). Users can also create, update, or decommission custom fields as data reporting requirements evolve.
+
+---
+
+## **Creating a New Custom Field**
+
+1. Navigate to the **[Custom Fields]** menu ➔ select either the **[Contact]** or **[Product]** category depending on where the data belongs.
+2. Click **[Add Custom Field]** to launch the configuration dialog.
+
+### **Add Custom Field Dialog View**
+
+<ImageZoom
+  src="/images/en/Tambah%20inputan%20khusus.png"
+  alt="Configuring a New Custom Attribute"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Configuration Field Definitions**
+
+Complete all technical parameters within the dialog:
+
+| Configuration | Description                                                                                                                                           | Example           |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Input Element | The type of UI element used in the form (e.g., standard text input, dropdown menu, checkbox).                                                       | Input             |
+| Input Type    | The technical data type accepted by the column (Text, Number, Email, Date, etc.). Selecting the correct type ensures data validation and integrity.     | Number            |
+| Required      | A toggle defining if the field must be completed before saving a record. Enable this for critical business data (e.g., Secondary Phone).             | -                 |
+| Label         | The title of the field displayed on the front-end form. Use short, descriptive names.                                                                 | Alternate Number  |
+| Placeholder   | A subtle hint or example value displayed inside the empty field to guide the user (e.g., "62xxxxxx").                                                 | 62xxxxxx          |
+| Default Value | A pre-filled value that automatically appears in the field for every new entry, saving time for repetitive data points.                               | -                 |
+
+Click **[Save]** to commit the new attribute to your data structure.
+
+---
+
+## **Managing Field Records**
+
+### **Editing Custom Fields**
+To modify a label or placeholder, select the target record and apply changes in the dialog. Click **[Save]**. These updates will propagate immediately across all forms utilizing that specific field.
+
+### **Deleting Custom Fields**
+Select the obsolete field and click **[Delete]** ➔ confirm in the prompt.
+
+<Callout type="info" title="Important Information">
+Deleting a custom field removes it from all existing contacts or products. This action also purges any data previously stored in that column. Ensure the historical data is no longer necessary before finalizing the deletion.
+</Callout>
+
+---
+
+## **Implementation in Forms**
+
+Once successfully configured, custom fields automatically appear at the bottom of the relevant Contact or Product forms.
+
+1. Navigate to the **[Contacts]** or **[Products]** module ➔ Open an existing record or create a new one.
+2. Scroll to the bottom of the standard form. Your newly created custom fields will be rendered automatically.
+3. Enter the required data ➔ Click **[Save]** to update the record with its integrated additional information.
+
+<ImageZoom
+  src="/images/en/Cara.png"
+  alt="Using Custom Attributes in a Live Form"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+Data stored in custom fields can be leveraged for advanced searches, specialized filtering logic, and custom data analysis reports.
+
+---
+
+<Tips>
+## **Workflow Best Practices**
+
+- **Descriptive Labels**: Use internal naming conventions that are easily understood by the entire sales and support team.
+- **Strategic Validation**: Use the **[Required]** toggle for data points essential for shipping or billing to prevent incomplete records.
+- **Type Sensitivity**: Always use the correct Input Type (e.g., 'Date' for birthdays, 'Number' for price aliases) to ensure your data stays "clean."
+- **Logical Ordering**: Arrange your custom fields in a sequence that follows your team's natural data entry habits to maximize efficiency.
+- **Guided Entry**: Utilize Placeholders to show users the exact data format expected (e.g., "DD-MM-YYYY").
+
+</Tips>
+
+---
+
+<Kendala>
+## **Troubleshooting**
+
+- **Visibility Delay**: If a new field doesn't appear in the form immediately after saving, refresh your browser page to sync the layout.
+- **Validation Errors**: If the system rejects a save, check if the data entered in a custom field matches its assigned **Input Type** (e.g., trying to save text in a 'Number' field).
+- **Access Restrictions**: If you cannot create or remove fields, verify with your administrator that your role has the necessary "Settings Management" permissions.
+- **Session Expiry**: Log out and log back in if the Custom Fields menu fails to load or save after an extended period of inactivity.
+- **Caching issues**: Clear browser cache if labels or placeholders appear outdated after an edit.
+- **Schema Conflicts**: If deleting a field causes database errors, contact support immediately to verify your organization's data schema integrity.
+
+</Kendala>
+
+---
+
+If you have any issues or difficulties related to NoBox.AI, please contact our support team via a [Support Ticket](https://crm.nobox.ai/clients/tickets).
