@@ -1,31 +1,76 @@
 ---
-title: "Problem: Can't Add New Account and Tool"
-description: Complete guide to registering a new account on NoBox.AI
+title: "Issue: Cannot Add Account and Tool"
+description: Complete guide for registering new accounts in NoBox.AI.
 icon: TriangleAlert
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-## **How to Solve Unable to Add Account and Tool Issues**
+One issue that users sometimes experience is the inability to add new social media accounts (such as WhatsApp or Telegram) or extractor tools into the system. This problem is usually related to form data validation or synchronization between NoBox Desktop and the cloud server.
 
-Like most applications, there may be problems you encounter when using this particular app. For instance, you might face issues in adding an account or a tool. Don't worry, to resolve this issue, try one of the following steps:
-
-<ImageZoom
-  src="/images/en/Edit%20Account..png"
-  alt="NoBox Dashboard Interface"
-  width={800}
-  height={450}
-  className="rounded-lg border shadow-sm mb-4"
-/>
-
-1. Ensure you use the account you created on the [id.nobox.ai](https://nobox.ai/) website.
-2. Make sure the \[Add Account] and \[Add Tools] forms are filled in correctly.
-3. If successful, the Account/Tools you created will appear in the \[Accounts] menu on the [id.nobox.ai](https://nobox.ai/) website.
-
-## **Telegram API Integration**
-
-- The API form is only filled in for Telegram account integration. If you do not have a Telegram API account, please follow the guide [how to set up a Telegram API](configuration-telegram-api).
+This page will guide you through self-check steps to resolve this issue quickly.
 
 ---
 
-If you have any issues or difficulties related to Nobox.Ai, please contact us through [Support Ticket](https://crm.nobox.ai/clients/tickets)
+## **Self-Correction Steps**
+
+If the save button is not working or the account does not appear after being added, please perform the following checks:
+
+<ImageZoom
+  src="/images/en/Edit%20Account..png"
+  alt="Account and Tool Management"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### 1. Account Status Verification
+Ensure you are logged in using an account that has been officially registered on the website [id.nobox.ai](https://nobox.ai/). Accounts whose emails have not been verified may have restrictions on adding new resources.
+
+### 2. Form Input Validation
+Double-check if all fields in the **[Add Account]** or **[Add Tool]** dialog have been filled in correctly.
+- Ensure there are no spaces at the beginning or end of the account name.
+- Choose the appropriate channel (channel) for the service you want to use.
+- Ensure the phone number format (if requested) uses the correct country code.
+
+### 3. Check Availability on Web Dashboard
+After pressing the save button in the desktop application, please open the **[Account]** menu on the website dashboard [id.nobox.ai](https://nobox.ai/). If the data appears there, it means the addition process was successful and just needs a few moments to synchronize to your desktop view.
+
+---
+
+## **Telegram API Integration**
+
+Specifically for Telegram accounts, you cannot connect them directly without configuring the API first.
+
+<Callout type="info" title="Important for Telegram Users">
+The Telegram account addition form requires API ID and API Hash information. If you do not have that data yet, please follow the [Telegram API Configuration Guide](configuration-telegram-api) before trying to add the account again.
+</Callout>
+
+---
+
+<Tips>
+## **Tips for Smooth Account Addition**
+
+- Use unique account naming to avoid data conflicts in the system.
+- Ensure your NoBox Desktop application is using the latest version (update) for the latest feature compatibility.
+- Use a stable internet connection when pressing the save button so that data delivery to the server is not interrupted.
+
+</Tips>
+
+---
+
+<Kendala>
+## **Advanced Problem Handling**
+
+If the problem persists, please try these technical steps:
+
+- **Logout & Login Again**: Log out of the NoBox Desktop application and log back in to force the system to pull the latest data from the server.
+- **Refresh Browser**: If you are using the web dashboard, press the F5 key to refresh the data view.
+- **Check Subscription Quota**: Ensure your subscription package still has enough slots to add a new account.
+- **Whitelist Firewall**: Ensure the NoBox application is allowed by windows firewall to perform two-way data communication.
+
+</Kendala>
+
+---
+
+If there are any problems or difficulties related to NoBox, please contact us via [Support Ticket](https://crm.nobox.ai/clients/tickets).
