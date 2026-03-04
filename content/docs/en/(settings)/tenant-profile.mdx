@@ -39,22 +39,22 @@ The Business Profile uses several tabs and sections to support comprehensive org
 The Information tab is divided into sub-sections, each with a specific administrative purpose:
 
 - **General**
-Contains fundamental company data such as the business name, logo, official email, contact phone number, and legal identity records. This information acts as your company's identifier across the entire system.
+  Contains fundamental company data such as the business name, logo, official email, contact phone number, and legal identity records. This information acts as your company's identifier across the entire system.
 
 - **Address**
-Displays and manages your official business location, including city, province, country, and postal code. This data is critical for official documentation, invoicing, and customer location referencing.
+  Displays and manages your official business location, including city, province, country, and postal code. This data is critical for official documentation, invoicing, and customer location referencing.
 
 - **Default Settings**
-Configures the primary communication channel and account used for outgoing promotional broadcasts. By setting a default, users avoid manually selecting channels for every new campaign, significantly improving workflow efficiency.
+  Configures the primary communication channel and account used for outgoing promotional broadcasts. By setting a default, users avoid manually selecting channels for every new campaign, significantly improving workflow efficiency.
 
 - **Auto-Resolve (Selesai Otomatis)**
-Toggles a feature that automatically marks active conversations as "Resolved" after a defined period of inactivity. This helps keep the inbox clean without manual intervention.
+  Toggles a feature that automatically marks active conversations as "Resolved" after a defined period of inactivity. This helps keep the inbox clean without manual intervention.
 
 - **Auto-Archive (Arsip Otomatis)**
-Automates the movement of "Resolved" conversations into the system archive. This ensures the live workspace stays focused on active interactions while safely storing historical context.
+  Automates the movement of "Resolved" conversations into the system archive. This ensures the live workspace stays focused on active interactions while safely storing historical context.
 
 - **Additional Notes**
-An optional space for internal documentation regarding company data or specific administrative reminders.
+  An optional space for internal documentation regarding company data or specific administrative reminders.
 
 After making any changes to these sections, click **[Save]** to commit the updates.
 
@@ -120,13 +120,13 @@ The Members tab displays everyone currently joined to your organization. It is t
 
 NoBox.AI utilizes specialized roles to ensure security and operational focus:
 
-| Role           | Technical Description                                                                                                                                                                 |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Owner          | The highest level of access. Owners have unrestricted control over all features, billing, and the ability to manage or remove any other team member.                                  |
-| Manager        | High-level management access. Managers can access all primary features except the ability to modify the Owner's role or core billing details.                                       |
-| Member         | Standard operational access. Members can use most CRM and campaign features but cannot access account-wide settings or Business Profile configurations.                             |
-| Chat Supervisor | Specialized inbox oversight. Supervisors can monitor all conversations (Assigned or Unassigned), view agent performance reports, and filter chats based on team permissions.      |
-| Chat Agent     | Focused delivery execution. Agents can only see, read, and reply to conversations explicitly assigned to them, ensuring they stay focused on their specific tasks. |
+| Role            | Technical Description                                                                                                                                                        |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Owner           | The highest level of access. Owners have unrestricted control over all features, billing, and the ability to manage or remove any other team member.                         |
+| Manager         | High-level management access. Managers can access all primary features except the ability to modify the Owner's role or core billing details.                                |
+| Member          | Standard operational access. Members can use most CRM and campaign features but cannot access account-wide settings or Business Profile configurations.                      |
+| Chat Supervisor | Specialized inbox oversight. Supervisors can monitor all conversations (Assigned or Unassigned), view agent performance reports, and filter chats based on team permissions. |
+| Chat Agent      | Focused delivery execution. Agents can only see, read, and reply to conversations explicitly assigned to them, ensuring they stay focused on their specific tasks.           |
 
 ---
 
@@ -186,11 +186,11 @@ To build a fresh division:
 
 ### **Team Creation Fields**
 
-| Field          | Description                                                                                                                   | Example       |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| Team Name      | The internal identification for the group (e.g., Sales, After-Sales, VIP Support).                                             | Marketing     |
-| Supervisor     | Select a user with "Supervisor" permissions to oversee this specific team's activities.                                      | Anggun        |
-| Agent List     | Choose the specific agents who will respond to communications routed to this team.                                           | sheiladsya    |
+| Field      | Description                                                                             | Example    |
+| ---------- | --------------------------------------------------------------------------------------- | ---------- |
+| Team Name  | The internal identification for the group (e.g., Sales, After-Sales, VIP Support).      | Marketing  |
+| Supervisor | Select a user with "Supervisor" permissions to oversee this specific team's activities. | Anggun     |
+| Agent List | Choose the specific agents who will respond to communications routed to this team.      | sheiladsya |
 
 Click **[Save]** to finalize the team structure.
 
@@ -199,13 +199,16 @@ Click **[Save]** to finalize the team structure.
 ## **Managing Team Records**
 
 ### Editing Teams
+
 Select the team, modify members or supervisors, and click **[Save]**. Changes are active for all subsequent campaign assignments.
 
 ### Deleting Teams
+
 To remove an obsolete division, select the team and click **[Delete]**, then confirm the action.
 
 <Callout type="info" title="Important Information">
-Team deletion is permanent. Ensure you have redistributed any active agents to other teams before finalizing deletion to prevent communication gaps.
+  Team deletion is permanent. Ensure you have redistributed any active agents to
+  other teams before finalizing deletion to prevent communication gaps.
 </Callout>
 
 ---
@@ -245,15 +248,15 @@ To connect a new service, you must first have an active account with that provid
 
 ### **Integration Technical Fields**
 
-| Field             | Description                                                                                                 | Example                |
-| ----------------- | ----------------------------------------------------------------------------------------------------------- | ---------------------- |
-| Provider          | Choose the service provider from the pre-defined system list.                                               | Bit.ly                 |
-| App Name          | Your internal name for this specific connection.                                                            | Primary Bitly Linker   |
-| Endpoint          | The target API URL (if required by the specific provider).                                                 | -                      |
-| Client ID         | Typically your login username or email on the provider's platform.                                          | biz@email.com          |
-| Client Secret     | The secure password or secret key generated by the provider.                                                | -                      |
-| App Options       | Additional technical configuration flags (if required).                                                      | -                      |
-| App ID / Token    | The authentication token. Can be generated automatically once credentials are entered.                      | [auto-generated]       |
+| Field          | Description                                                                            | Example              |
+| -------------- | -------------------------------------------------------------------------------------- | -------------------- |
+| Provider       | Choose the service provider from the pre-defined system list.                          | Bit.ly               |
+| App Name       | Your internal name for this specific connection.                                       | Primary Bitly Linker |
+| Endpoint       | The target API URL (if required by the specific provider).                             | -                    |
+| Client ID      | Typically your login username or email on the provider's platform.                     | biz@email.com        |
+| Client Secret  | The secure password or secret key generated by the provider.                           | -                    |
+| App Options    | Additional technical configuration flags (if required).                                | -                    |
+| App ID / Token | The authentication token. Can be generated automatically once credentials are entered. | [auto-generated]     |
 
 To generate a token automatically, ensure your Client ID and Secret are correct, then click **[Generate Token]**. Click **[Save]** to commit the integration.
 
@@ -288,6 +291,7 @@ These settings directly control the **Automatic Response** feature. Automated me
 />
 
 **In this section, you can:**
+
 - Toggle the entire automatic response system on or off.
 - Compose the specific messaging used for out-of-office replies.
 - Define the exact logic for when these messages are triggered based on your operating hours.
@@ -300,7 +304,7 @@ This feature ensures that customers never experience a "black hole" in communica
 ## **Workflow Best Practices**
 
 - **Data Security**: Perform a **[Download Data]** backup monthly to ensure you have an offline copy of your commercial relationships.
-- **Communication Continuity**: Set up your operating hours and automatic response template *before* launching your first major campaign.
+- **Communication Continuity**: Set up your operating hours and automatic response template _before_ launching your first major campaign.
 - **Load Balancing**: Use **Teams** to divide high-traffic days between different agent groups to prevent burnout.
 - **Audit Trails**: Regularly review the **Members** tab to de-provision access for former employees or temporary contractors.
 - **Marketing Agility**: Integrate Bitly early on to ensure all your campaign links are professional and trackable.

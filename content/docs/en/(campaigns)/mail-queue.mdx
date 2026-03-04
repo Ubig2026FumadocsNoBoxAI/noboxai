@@ -42,12 +42,12 @@ To access this dashboard, navigate to the **[Campaigns]** module ➔ **[Mail Que
 
 The queue table uses several key indicators to define the condition of your email transmission:
 
-| Status Indicator | Technical Function                                                                 |
-| :--------------- | :--------------------------------------------------------------------------------- |
-| **In Queue**     | The email is waiting for its turn to be picked up and processed by the mail server. |
+| Status Indicator | Technical Function                                                                            |
+| :--------------- | :-------------------------------------------------------------------------------------------- |
+| **In Queue**     | The email is waiting for its turn to be picked up and processed by the mail server.           |
 | **Sent**         | The email has successfully left the system and was accepted by the recipient's mail provider. |
-| **Failed**       | Delivery was unsuccessful due to address errors, server downtime, or rate limits. |
-| **Retries**      | Displays the number of automated attempts the system has made to re-send a delayed email. |
+| **Failed**       | Delivery was unsuccessful due to address errors, server downtime, or rate limits.             |
+| **Retries**      | Displays the number of automated attempts the system has made to re-send a delayed email.     |
 
 ---
 
@@ -56,6 +56,7 @@ The queue table uses several key indicators to define the condition of your emai
 Admins can take specific actions on items within the queue to ensure communication efficiency and troubleshoot persistent failures.
 
 ### Investigating Failed Emails
+
 If an email remains in the **"Failed"** state, immediately verify the recipient's email address in the contact database. In many cases, simple typos or invalid domains (e.g., "gmaill.com") are the root cause. For systematic failures, check your SMTP server credentials and current daily volume limits.
 
 ---

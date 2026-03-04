@@ -59,33 +59,35 @@ From this page, users can review coupon names, unique codes, active status, and 
 
 Complete the fields based on your specific promotional requirements:
 
-| **Field**         | **Description**                                                              | **Example**                                 |
-| ----------------- | ---------------------------------------------------------------------------- | ------------------------------------------- |
-| Name              | Internal title for the campaign                                              | New Year Flash Sale                         |
-| Code              | The unique string the customer enters at checkout                            | NEWYEAR2026                                 |
-| Status            | Active/Inactive toggle; inactive codes will fail during checkout             | Active                                      |
-| Disc For          | Targets the discount to either specific products or shipping costs            | Shipping                                    |
-| Disc Type         | Fixed Price (flat amount) or Percentage-based deduction                      | Percentage                                  |
-| Disc Value        | The numerical value of the discount                                          | 100%                                        |
-| Has Zone          | Enable if the coupon is restricted to specific geographic areas              | -                                           |
-| Origin Type       | Region type of the sender if Has Zone is enabled                              | State                                       |
-| Origin State      | Specific sender province for zone validation                                 | East Java                                   |
-| Destination Type  | Region type of the recipient if Has Zone is enabled                           | State                                       |
-| Destination State | Specific recipient province for zone validation                              | East Java                                   |
-| Max Use           | Total number of times this coupon can be redeemed globally                   | 100                                         |
-| Products          | Linking the coupon to specific inventory items                               | Pashmina Voal                               |
-| Payments          | Restricting the coupon to specific payment gateways                          | Bank Central Asia, Paypal                   |
-| New Customer      | Restricts redemption to first-time buyers only                               | -                                           |
-| Date Range        | Sets the valid lifecycle of the coupon code                                  | Start: 31-12-2025 End: 02-01-2026           |
-| Min Order Qty     | Minimum number of items required in the cart                                 | 2 Items                                     |
-| Max Discount Cap  | Sets a ceiling for the discount amount (useful for % based promos)           | Rp 35,000                                   |
-| Min Purchase Val  | Minimum currency value required to trigger the coupon                        | Rp 70,000                                   |
+| **Field**         | **Description**                                                    | **Example**                       |
+| ----------------- | ------------------------------------------------------------------ | --------------------------------- |
+| Name              | Internal title for the campaign                                    | New Year Flash Sale               |
+| Code              | The unique string the customer enters at checkout                  | NEWYEAR2026                       |
+| Status            | Active/Inactive toggle; inactive codes will fail during checkout   | Active                            |
+| Disc For          | Targets the discount to either specific products or shipping costs | Shipping                          |
+| Disc Type         | Fixed Price (flat amount) or Percentage-based deduction            | Percentage                        |
+| Disc Value        | The numerical value of the discount                                | 100%                              |
+| Has Zone          | Enable if the coupon is restricted to specific geographic areas    | -                                 |
+| Origin Type       | Region type of the sender if Has Zone is enabled                   | State                             |
+| Origin State      | Specific sender province for zone validation                       | East Java                         |
+| Destination Type  | Region type of the recipient if Has Zone is enabled                | State                             |
+| Destination State | Specific recipient province for zone validation                    | East Java                         |
+| Max Use           | Total number of times this coupon can be redeemed globally         | 100                               |
+| Products          | Linking the coupon to specific inventory items                     | Pashmina Voal                     |
+| Payments          | Restricting the coupon to specific payment gateways                | Bank Central Asia, Paypal         |
+| New Customer      | Restricts redemption to first-time buyers only                     | -                                 |
+| Date Range        | Sets the valid lifecycle of the coupon code                        | Start: 31-12-2025 End: 02-01-2026 |
+| Min Order Qty     | Minimum number of items required in the cart                       | 2 Items                           |
+| Max Discount Cap  | Sets a ceiling for the discount amount (useful for % based promos) | Rp 35,000                         |
+| Min Purchase Val  | Minimum currency value required to trigger the coupon              | Rp 70,000                         |
 
 <Callout type="info" title="Detailed Usage Logic">
-- **Has Zone:** Restricts the promo to specific distribution channels, preventing losses on long-distance shipping.
-- **Date Range:** Automatically activates and retires the code based on your campaign schedule.
-- **Min Order/Purchase:** Ensures the average order value remains profitable before a discount is applied.
-- **Max Discount:** Essential for percentage deals (e.g., 50% discount but capped at Rp 20,000).
+  - **Has Zone:** Restricts the promo to specific distribution channels,
+  preventing losses on long-distance shipping. - **Date Range:** Automatically
+  activates and retires the code based on your campaign schedule. - **Min
+  Order/Purchase:** Ensures the average order value remains profitable before a
+  discount is applied. - **Max Discount:** Essential for percentage deals (e.g.,
+  50% discount but capped at Rp 20,000).
 </Callout>
 
 Once configured, click **[Save]** to deploy the coupon.
@@ -98,10 +100,11 @@ To modify a promo code, select it from your dashboard. Update parameters such as
 
 ### Deleting Coupons
 
-To retire a promo entirely, select it and click **[Delete]**. Confirm the deletion in the pop-up prompt. 
+To retire a promo entirely, select it and click **[Delete]**. Confirm the deletion in the pop-up prompt.
 
 <Callout type="info" title="Important Information">
-Coupon deletion is permanent. If you only want to stop a promo temporarily, we recommend switching its **Status** to "Inactive" instead of deleting it.
+  Coupon deletion is permanent. If you only want to stop a promo temporarily, we
+  recommend switching its **Status** to "Inactive" instead of deleting it.
 </Callout>
 
 ---

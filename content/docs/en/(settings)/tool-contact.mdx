@@ -66,22 +66,22 @@ To create a new entry:
 
 The contact profile is divided into several logical categories. Here is a breakdown of the metadata fields:
 
-| Category | Field         | Description                                                                                                                                      |
-| -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| General  | Name          | The primary identifier for the contact. This is a **mandatory** field.                                                                           |
-|          | Category      | High-level classification (e.g., Individual, Corporate, Reseller) to help organize data by customer type.                                       |
-|          | List          | Organizational segments used for targeting marketing campaigns. Contacts can belong to multiple lists simultaneously.                              |
-|          | Tag           | Custom labels for rapid identification and filtering (e.g., VIP, Hot Lead).                                                                      |
-|          | Contact Person| The primary representative or point of contact, particularly useful for corporate accounts.                                                       |
-|          | Notes         | Internal qualitative information or administrative reminders regarding the customer.                                                            |
-| Channel  | Channel       | The external communication platform (WhatsApp, Telegram, etc.) associated with this record.                                                       |
-|          | External Name | The customer's profile name as it appears on the target channel.                                                                                 |
-|          | External ID   | The unique technical identifier (phone number or email) used to route messages correctly.                                                        |
-| Address  | Address       | The physical street address of the customer.                                                                                                     |
-|          | Geography     | Country, Province/State, and City details for regional reporting.                                                                                |
-|          | Postcode      | The postal code for shipping validation.                                                                                                         |
-|          | Coordinates   | Latitude and Longitude data for precise geographic mapping.                                                                                      |
-| Status   | Blocked       | A toggle to mark a contact as "Active" or "Blocked." Blocked contacts will be automatically excluded from all promotional broadcasts. |
+| Category | Field          | Description                                                                                                                           |
+| -------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| General  | Name           | The primary identifier for the contact. This is a **mandatory** field.                                                                |
+|          | Category       | High-level classification (e.g., Individual, Corporate, Reseller) to help organize data by customer type.                             |
+|          | List           | Organizational segments used for targeting marketing campaigns. Contacts can belong to multiple lists simultaneously.                 |
+|          | Tag            | Custom labels for rapid identification and filtering (e.g., VIP, Hot Lead).                                                           |
+|          | Contact Person | The primary representative or point of contact, particularly useful for corporate accounts.                                           |
+|          | Notes          | Internal qualitative information or administrative reminders regarding the customer.                                                  |
+| Channel  | Channel        | The external communication platform (WhatsApp, Telegram, etc.) associated with this record.                                           |
+|          | External Name  | The customer's profile name as it appears on the target channel.                                                                      |
+|          | External ID    | The unique technical identifier (phone number or email) used to route messages correctly.                                             |
+| Address  | Address        | The physical street address of the customer.                                                                                          |
+|          | Geography      | Country, Province/State, and City details for regional reporting.                                                                     |
+|          | Postcode       | The postal code for shipping validation.                                                                                              |
+|          | Coordinates    | Latitude and Longitude data for precise geographic mapping.                                                                           |
+| Status   | Blocked        | A toggle to mark a contact as "Active" or "Blocked." Blocked contacts will be automatically excluded from all promotional broadcasts. |
 
 ---
 
@@ -89,12 +89,12 @@ The contact profile is divided into several logical categories. Here is a breakd
 
 The **Import** feature allows for massive database expansions through various integrated methodologies:
 
-| Method             | Workflow Description                                                                                             |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| Excel & CSV        | Upload structured spreadsheet files using the system-provided template to ensure correct column mapping.        |
-| Google Contacts    | Synchronize your existing Google contact lists directly into the NoBox.AI ecosystem.                              |
-| Facebook Audiences | Import target audience segments directly from the Facebook Ads manager for localized retargeting.               |
-| WhatsApp Import    | Ingest contacts directly from active conversation threads on your connected WhatsApp business accounts.          |
+| Method             | Workflow Description                                                                                     |
+| ------------------ | -------------------------------------------------------------------------------------------------------- |
+| Excel & CSV        | Upload structured spreadsheet files using the system-provided template to ensure correct column mapping. |
+| Google Contacts    | Synchronize your existing Google contact lists directly into the NoBox.AI ecosystem.                     |
+| Facebook Audiences | Import target audience segments directly from the Facebook Ads manager for localized retargeting.        |
+| WhatsApp Import    | Ingest contacts directly from active conversation threads on your connected WhatsApp business accounts.  |
 
 **Note**: Always use the provided templates to ensure data integrity during the acquisition process.
 
@@ -105,6 +105,7 @@ The **Import** feature allows for massive database expansions through various in
 Database searches can be narrowed down to specific sub-segments to help you find precisely the contacts you need for immediate outreach.
 
 **You can filter the database by:**
+
 - **Category** — Filter by customer type classification.
 - **Geography** — Isolate contacts in specific Cities, States, or Nations.
 - **Data Origin** — Filtering by the platform/source of the contact record.
@@ -124,9 +125,11 @@ To remove obsolete or incorrect records:
 3. Confirm the permanent removal in the system prompt.
 
 <Callout type="info" title="Important Information">
-- **Validation**: Ensure that "Name" and "External ID" are accurate before saving manual records to prevent delivery failures.
-- **Integration**: Saved contacts are immediately available for use in the Inbox and Promotions modules.
-- **Permanence**: Deletions in this module are final and cannot be reverted once confirmed.
+  - **Validation**: Ensure that "Name" and "External ID" are accurate before
+  saving manual records to prevent delivery failures. - **Integration**: Saved
+  contacts are immediately available for use in the Inbox and Promotions
+  modules. - **Permanence**: Deletions in this module are final and cannot be
+  reverted once confirmed.
 </Callout>
 
 ---
