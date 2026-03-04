@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nobox.AI Documentation",
-  description: "Dokumentasi resmi Nobox.AI",
+  title: "NoBox.AI Documentation",
+  description: "Dokumentasi resmi NoBox.AI",
   icons: {
     icon: "/images/favicon-blue.png",
     shortcut: "/images/favicon-blue.png",

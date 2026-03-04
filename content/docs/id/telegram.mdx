@@ -50,6 +50,7 @@ Proses penautan akun Telegram memerlukan beberapa langkah otentikasi menggunakan
 Berbeda dengan WhatsApp, Telegram memerlukan pembuatan API Key agar sistem eksternal dapat melakukan komunikasi.
 
 ### Mengaktifkan Fitur API:
+
 - Buka pengaturan pada sesi Telegram yang aktif di NoBox Desktop.
 - Pilih **API Development Tools**. Jika Anda belum memiliki API sebelumnya, lengkapi kolom **App Title** dan **Short Name** sesuai keinginan Anda.
 - Klik **Create Application**. Sistem akan menampilkan **api_id** dan **api_hash** Anda secara otomatis.
@@ -63,6 +64,7 @@ Berbeda dengan WhatsApp, Telegram memerlukan pembuatan API Key agar sistem ekste
 />
 
 ### Simpan Sesi (Save Session):
+
 - Klik tombol **[Save Session]** pada antarmuka NoBox Desktop.
 - Masukkan kode verifikasi yang dikirimkan oleh sistem Telegram ke aplikasi Telegram utama Anda.
 - Setelah berhasil, pesan "Save session Telegram Automation successfully" akan muncul pada tab logs.
@@ -72,9 +74,11 @@ Berbeda dengan WhatsApp, Telegram memerlukan pembuatan API Key agar sistem ekste
 ## **Monitoring dan Penggunaan Pesan**
 
 ### Balas Pesan via Kotak Masuk
+
 Seluruh pesan yang diterima oleh akun Telegram Anda akan disinkronkan ke dalam menu **[Pesan]** ➔ **[Kotak Masuk]**. Anda dapat memantau dan membalas chat secara terpusat dari satu dashboard.
 
 ### Kampanye Promosi Telegram
+
 Gunakan akun Telegram Anda untuk mengirim promosi massal dengan memilih kanal Telegram pada modul **Promosi**. Anda dapat memantau keberhasilan pengiriman melalui tab **Kirim Pesan**.
 
 <ImageZoom
@@ -90,13 +94,17 @@ Gunakan akun Telegram Anda untuk mengirim promosi massal dengan memilih kanal Te
 ## **Edit dan Hapus Data Akun**
 
 ### Edit Data Akun
+
 Anda dapat mengubah catatan atau penamaan akun melalui navigasi menu **[Akun]** pada website NoBox.AI. Pilih data yang ingin disesuaikan dan klik **[Simpan]**.
 
 ### Hapus Data Akun
+
 Pilih akun yang ingin diputuskan koneksinya, klik tombol **[Hapus]**, dan konfirmasi tindakan Anda pada dialog yang muncul.
 
 <Callout type="info" title="Informasi Penting">
-Penghapusan akun Telegram akan menghapus seluruh sesi autentikasi (*session file*) dari sistem NoBox.AI secara permanen. Anda perlu melakukan konfigurasi ulang dari awal jika ingin menyambungkannya kembali.
+  Penghapusan akun Telegram akan menghapus seluruh sesi autentikasi (*session
+  file*) dari sistem NoBox.AI secara permanen. Anda perlu melakukan konfigurasi
+  ulang dari awal jika ingin menyambungkannya kembali.
 </Callout>
 
 ---
@@ -106,7 +114,7 @@ Penghapusan akun Telegram akan menghapus seluruh sesi autentikasi (*session file
 
 Gunakan Telegram Automation secara optimal dengan panduan berikut:
 
-- Pastikan akun Telegram Anda tidak dalam status verifikasi dua langkah (*Two-Step Verification*) yang diaktifkan dengan password, atau pastikan password tersebut dimasukkan saat diminta.
+- Pastikan akun Telegram Anda tidak dalam status verifikasi dua langkah (_Two-Step Verification_) yang diaktifkan dengan password, atau pastikan password tersebut dimasukkan saat diminta.
 - Gunakan fitur **API Development Tools** hanya di lingkungan NoBox yang aman untuk menjaga kerahasiaan `api_id` Anda.
 - Lakukan **Save Session** segera setelah membuat akun baru agar koneksi tidak terputus saat aplikasi restart.
 - Manfaatkan fitur **Kotak Masuk** untuk tetap terhubung dengan pelanggan tanpa harus membuka ponsel atau aplikasi desktop Telegram asli.
@@ -121,13 +129,13 @@ Gunakan Telegram Automation secara optimal dengan panduan berikut:
 Jika menemui masalah pada integrasi Telegram, silakan ikuti langkah berikut:
 
 - **Kode Verifikasi Tidak Muncul**: Periksa aplikasi Telegram resmi di ponsel atau PC Anda, kode biasanya dikirimkan melalui chat sistem "Telegram".
-- **Gagal Membuat API Application**: Pastikan nama aplikasi (*App Title*) mengandung karakter unik dan belum pernah digunakan sebelumnya.
+- **Gagal Membuat API Application**: Pastikan nama aplikasi (_App Title_) mengandung karakter unik dan belum pernah digunakan sebelumnya.
 - **Sesi Sering Terputus**: Periksa kestabilan koneksi internet pada PC yang menjalankan NoBox Desktop atau pastikan versi aplikasi NoBox Anda sudah yang terbaru.
-- **Pesan Broadcast Gagal**: Periksa apakah nomor tujuan masih aktif atau apakah akun Anda terkena batasan (*limit*) pengiriman pesan massal dari kebijakan Telegram.
+- **Pesan Broadcast Gagal**: Periksa apakah nomor tujuan masih aktif atau apakah akun Anda terkena batasan (_limit_) pengiriman pesan massal dari kebijakan Telegram.
 - **Aplikasi Telegram Hang**: Coba lakukan **Clear Session** dan login ulang menggunakan nomor telepon Anda.
 
 </Kendala>
 
 ---
 
-Jika ada masalah atau kesulitan terkait Telegram Automation, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
+Jika ada masalah atau kesulitan terkait Telegram Automation, silahkan hubungi kami melalui [Support Ticket](https://crm.NoBox.AI/clients/tickets)

@@ -15,7 +15,7 @@ export function baseOptions(): any {
             height={30}
             className="rounded-sm"
           />
-          <span className="font-bold text-lg tracking-tight">Nobox.AI</span>
+          <span className="font-bold text-lg tracking-tight">NoBox.AI</span>
         </div>
       ),
       children: (

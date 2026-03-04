@@ -32,12 +32,12 @@ From this view, users can monitor their campaign list, track delivery statuses i
 
 Statuses help you track the lifecycle of your marketing efforts.
 
-| Status Icon | Description                                                                 |
-| ----------- | --------------------------------------------------------------------------- |
-| <img src="/images/id/draft.png" alt="Draft" className="w-auto h-8 mx-auto" /> | **Draft**: The campaign is in setup. No messages have been sent yet. |
-| <img src="/images/id/process.png" alt="Process" className="w-auto h-8 mx-auto" /> | **Processing**: Messages are actively being dispatched to recipients. |
-| <img src="/images/id/done.png" alt="Selesai" className="w-auto h-8 mx-auto" /> | **Done**: The campaign has reached its conclusion; all messages are sent. |
-| <img src="/images/id/cancel.png" alt="Batal" className="w-auto h-8 mx-auto" /> | **Cancelled**: The campaign was manually stopped before completion. |
+| Status Icon                                                                       | Description                                                               |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <img src="/images/id/draft.png" alt="Draft" className="w-auto h-8 mx-auto" />     | **Draft**: The campaign is in setup. No messages have been sent yet.      |
+| <img src="/images/id/process.png" alt="Process" className="w-auto h-8 mx-auto" /> | **Processing**: Messages are actively being dispatched to recipients.     |
+| <img src="/images/id/done.png" alt="Selesai" className="w-auto h-8 mx-auto" />    | **Done**: The campaign has reached its conclusion; all messages are sent. |
+| <img src="/images/id/cancel.png" alt="Batal" className="w-auto h-8 mx-auto" />    | **Cancelled**: The campaign was manually stopped before completion.       |
 
 ---
 
@@ -59,24 +59,24 @@ To initialize a new marketing push, navigate to **[Campaigns]** ➔ **[Add Campa
 
 Populating these fields correctly is essential for target accuracy and compliance.
 
-| Field                                  | Description                                                                                                                                                                      | Example                                                       |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| Name                                   | Internal campaign identifier for reporting and management.                                                                                                                      | 2024 Year-End Flash Sale                                      |
-| Channel                                | The communication medium (WhatsApp, Telegram, etc.) for the broadcast.                                                                                                           | WhatsApp                                                      |
-| Account                                | Select the specific integrated account that will serve as the sender.                                                                                                            | s_whatsapp_main                                               |
-| List                                   | The targeted contact database list for this campaign.                                                                                                                            | Year-End Leads                                                |
-| Group                                  | Segmented customer groups (e.g., by region or tier) to refine targeting.                                                                                                        | -                                                             |
-| Tag                                    | Labels for theme-based categorization.                                                                                                                                           | December-Promo                                                |
-| Team                                   | Assigns responsibility to a specific internal department.                                                                                                                        | Sales-Team-A                                                  |
-| Message Format                         | Choose between text, image, video, or multi-media delivery.                                                                                                                      | Text                                                          |
-| Shorten Link                           | Enable real-time click tracking and URL shortening for performance analysis.                                                                                                   | Inactive                                                      |
-| Message Body                           | The primary content of your promotion. Supports variables and templates.                                                                                                        | Get our Sahur Package at 50% OFF! Limited time only.          |
-| Attachment                             | Visual or document assets (images, PDFs) to accompany the message.                                                                                                                | -                                                             |
-| Source-Based Attachments               | Send unique, personalized attachments (like specific invoices) per recipient.                                                                                                     | Inactive                                                      |
-| Date Range (Start/End)                 | The operational window during which the system is authorized to send.                                                                                                           | 28-11-2024 to 29-11-2024                                      |
-| Schedule Toggle                        | Automate dispatch at a specific future timestamp.                                                                                                                                | Inactive                                                      |
-| Schedule Time                          | The precise date and hour for the automated launch.                                                                                                                             | -                                                             |
-| Internal Notes                         | Documentation for supervisors regarding campaign goals or feedback.                                                                                                              | Targeting previous 2023 buyers                                |
+| Field                    | Description                                                                   | Example                                              |
+| ------------------------ | ----------------------------------------------------------------------------- | ---------------------------------------------------- |
+| Name                     | Internal campaign identifier for reporting and management.                    | 2024 Year-End Flash Sale                             |
+| Channel                  | The communication medium (WhatsApp, Telegram, etc.) for the broadcast.        | WhatsApp                                             |
+| Account                  | Select the specific integrated account that will serve as the sender.         | s_whatsapp_main                                      |
+| List                     | The targeted contact database list for this campaign.                         | Year-End Leads                                       |
+| Group                    | Segmented customer groups (e.g., by region or tier) to refine targeting.      | -                                                    |
+| Tag                      | Labels for theme-based categorization.                                        | December-Promo                                       |
+| Team                     | Assigns responsibility to a specific internal department.                     | Sales-Team-A                                         |
+| Message Format           | Choose between text, image, video, or multi-media delivery.                   | Text                                                 |
+| Shorten Link             | Enable real-time click tracking and URL shortening for performance analysis.  | Inactive                                             |
+| Message Body             | The primary content of your promotion. Supports variables and templates.      | Get our Sahur Package at 50% OFF! Limited time only. |
+| Attachment               | Visual or document assets (images, PDFs) to accompany the message.            | -                                                    |
+| Source-Based Attachments | Send unique, personalized attachments (like specific invoices) per recipient. | Inactive                                             |
+| Date Range (Start/End)   | The operational window during which the system is authorized to send.         | 28-11-2024 to 29-11-2024                             |
+| Schedule Toggle          | Automate dispatch at a specific future timestamp.                             | Inactive                                             |
+| Schedule Time            | The precise date and hour for the automated launch.                           | -                                                    |
+| Internal Notes           | Documentation for supervisors regarding campaign goals or feedback.           | Targeting previous 2023 buyers                       |
 
 Once finalized, click **[Save]**. The campaign will sit in **[Draft]** status, allowing for a final review before processing.
 
@@ -85,11 +85,11 @@ Once finalized, click **[Save]**. The campaign will sit in **[Draft]** status, a
 ## **Leveraging Message Templates**
 
 <ImageZoom
-src="/images/id/template.png"
-alt="Standardized Messaging Templates"
-width={800}
-height={450}
-className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  src="/images/id/template.png"
+  alt="Standardized Messaging Templates"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 **Message Templates** allow you to maintain brand consistency and drastically reduce composition time. You can build re-usable structures that pull dynamic data for deep personalization.
@@ -117,14 +117,15 @@ Always use the **Test Message Delivery** feature before broadcasting to hundreds
 Click **[Test Send Message]**. The system will dispatch the campaign sample to your own linked number or email.
 
 <ImageZoom
-src="/images/id/Tes-Kirim-Pesan.png"
-alt="Sending a Sample Campaign Message"
-width={800}
-height={450}
-className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  src="/images/id/Tes-Kirim-Pesan.png"
+  alt="Sending a Sample Campaign Message"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 **Checklist for Success:**
+
 1. Is the text formatted correctly (bolding, spacing)?
 2. Do the variable names pull the correct data (e.g., is "[Name]" replaced by an actual name)?
 3. Does the link redirect to the correct landing page?
@@ -141,11 +142,11 @@ Under the **[Send Message]** tab, click **[Generate Messages]** (Buat Pesan).
 The system will cross-reference your contact list with your template to create unique message instances for every recipient. You can review the list of generated messages before they are processed.
 
 <ImageZoom
-src="/images/id/Buat-Pesan.png"
-alt="Generated Campaign Message List"
-width={800}
-height={450}
-className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  src="/images/id/Buat-Pesan.png"
+  alt="Generated Campaign Message List"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 ### **Processing the Broadcast**
@@ -154,11 +155,11 @@ Once you are satisfied with the generated batch, click **[Process]**.
 The status will shift to **[Process]**, and the system will begin drip-feeding messages to the network.
 
 <ImageZoom
-src="/images/id/Proses-Promosi.png"
-alt="Active Campaign Processing"
-width={800}
-height={450}
-className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  src="/images/id/Proses-Promosi.png"
+  alt="Active Campaign Processing"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 **Note**: To ensure channel stability and avoid being flagged for spam, NoBox.AI regulates the speed of outgoing messages based on the channel's capacity.
@@ -172,25 +173,25 @@ className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 Navigate to the **[Inbox]** or the campaign-specific **[Send Message]** tab to track delivery status. You will see which messages are Delivered, Read, or Failed.
 
 <ImageZoom
-src="/images/id/Monitoring-Kotak-Masuk.png"
-alt="Live Delivery Monitoring Dashboard"
-width={800}
-height={450}
-className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  src="/images/id/Monitoring-Kotak-Masuk.png"
+  alt="Live Delivery Monitoring Dashboard"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 ### **Handling Delivery Failures**
 
-Messages can fail due to technical disconnects or inactive recipient numbers. 
+Messages can fail due to technical disconnects or inactive recipient numbers.
 
 Use the **[Failures to Queue]** (Gagal ke Antrean) feature to re-attempt sending for messages that didn't go through. This saves you from having to recreate the entire campaign.
 
 <ImageZoom
-src="/images/id/Gagal-ke-Antrean.png"
-alt="Retrying Failed Deliveries"
-width={800}
-height={450}
-className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  src="/images/id/Gagal-ke-Antrean.png"
+  alt="Retrying Failed Deliveries"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 ---
@@ -202,11 +203,11 @@ className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 The **Broadcast Totals** view provides a high-level summary of campaign reach, identifying the exact percentage of messages that reached their destination versus those that remained in queue.
 
 <ImageZoom
-src="/images/id/Total-Kirim-Pesan.png"
-alt="Campaign Statistics and Performance"
-width={800}
-height={450}
-className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  src="/images/id/Total-Kirim-Pesan.png"
+  alt="Campaign Statistics and Performance"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 ---
@@ -214,25 +215,27 @@ className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 ## **Campaign Lifecycle Control**
 
 ### **Closing a Campaign**
+
 Click **[Done]** (Selesai) to archive the campaign once all marketing objectives are met. This prevents accidental duplicate sends and cleans up your active dashboard.
 
 <ImageZoom
-src="/images/id/done%20campaign.png"
-alt="Marking a Campaign as Complete"
-width={800}
-height={450}
-className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  src="/images/id/done%20campaign.png"
+  alt="Marking a Campaign as Complete"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 ### **Force Cancellation**
+
 If you spot an error mid-broadcast, click **[Cancel]** (Batal). This immediately halts the outgoing queue.
 
 <ImageZoom
-src="/images/id/Batalkan-Promosi%20(1).png"
-alt="Cancelling an Active Broadcast"
-width={800}
-height={450}
-className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  src="/images/id/Batalkan-Promosi%20(1).png"
+  alt="Cancelling an Active Broadcast"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
 ---
@@ -240,11 +243,13 @@ className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 ## **Advanced Integration Features**
 
 ### **Bitly Tracking Links**
+
 1. Integrate Bitly under **[Business Profile]** ➔ **[Integrations]**.
 2. Enable the tracking feature in campaign setup.
 3. Automated short-links will be generated for every recipient, allowing you to track individual click-through rates.
 
 ### **Excel Data Sources**
+
 1. Upload your source file in the **[Data Source]** tab.
 2. Select **[Map From] ➔ [Excel Columns]**.
 3. Use the `[Data]` variable to call specific columns (e.g., "Hi [Data:CustomerName], your invoice for [Data:Amount] is ready").
@@ -275,4 +280,4 @@ className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 
 ---
 
-If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.nobox.ai/clients/tickets).
+If you have any issues or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.NoBox.AI/clients/tickets).
