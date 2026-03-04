@@ -7,15 +7,16 @@ export default function HomePage() {
       <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-5 duration-1000">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20 mb-4">
           <Zap size={14} className="fill-current" />
-          <span>Bantuan & Dokumentasi Nobox.AI</span>
+          <span>Bantuan & Dokumentasi NoBox.AI</span>
         </div>
 
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60 pb-2">
-          Pusat Informasi Nobox.AI
+          Pusat Informasi NoBox.AI
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Temukan panduan lengkap, tutorial, dan dokumentasi teknis untuk memaksimalkan penggunaan platform CRM Nobox.AI Anda.
+          Temukan panduan lengkap, tutorial, dan dokumentasi teknis untuk
+          memaksimalkan penggunaan platform CRM NoBox.AI Anda.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
@@ -24,10 +25,13 @@ export default function HomePage() {
             className="group flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold transition-all hover:ring-4 hover:ring-primary/20 active:scale-95"
           >
             Mulai Membaca
-            <MoveRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            <MoveRight
+              size={18}
+              className="group-hover:translate-x-1 transition-transform"
+            />
           </Link>
           <a
-            href="https://crm.nobox.ai"
+            href="https://crm.NoBox.AI"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-xl font-semibold border border-border hover:bg-muted transition-all active:scale-95"
@@ -42,7 +46,10 @@ export default function HomePage() {
               <BookOpen size={24} />
             </div>
             <h3 className="font-bold text-lg mb-2">Panduan Lengkap</h3>
-            <p className="text-sm text-muted-foreground">Pelajari setiap fitur Nobox.AI dari dasar hingga mahir dengan panduan tertulis kami.</p>
+            <p className="text-sm text-muted-foreground">
+              Pelajari setiap fitur NoBox.AI dari dasar hingga mahir dengan
+              panduan tertulis kami.
+            </p>
           </div>
 
           <div className="p-6 rounded-2xl border bg-card/50 backdrop-blur-sm hover:shadow-lg transition-shadow">
@@ -50,7 +57,10 @@ export default function HomePage() {
               <Zap size={24} />
             </div>
             <h3 className="font-bold text-lg mb-2">Tutorial Cepat</h3>
-            <p className="text-sm text-muted-foreground">Video tutorial untuk membantu Anda memahami alur kerja dengan lebih visual dan cepat.</p>
+            <p className="text-sm text-muted-foreground">
+              Video tutorial untuk membantu Anda memahami alur kerja dengan
+              lebih visual dan cepat.
+            </p>
           </div>
 
           <div className="p-6 rounded-2xl border bg-card/50 backdrop-blur-sm hover:shadow-lg transition-shadow">
@@ -58,7 +68,10 @@ export default function HomePage() {
               <Shield size={24} />
             </div>
             <h3 className="font-bold text-lg mb-2">Bantuan Teknis</h3>
-            <p className="text-sm text-muted-foreground">Butuh bantuan lebih lanjut? Tim support kami siap membantu kendala teknis Anda.</p>
+            <p className="text-sm text-muted-foreground">
+              Butuh bantuan lebih lanjut? Tim support kami siap membantu kendala
+              teknis Anda.
+            </p>
           </div>
         </div>
       </div>
