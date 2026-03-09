@@ -13,7 +13,7 @@ export function Tips({ children }: { children: React.ReactNode }) {
                         <Lightbulb size={24} strokeWidth={2} />
                     </div>
                     <div className="flex flex-col flex-1 gap-1">
-                        <div className="text-[15px] leading-relaxed text-teal-900/70 dark:text-teal-200/80 
+                        <div className="text-[15px] leading-relaxed text-teal-900/70 dark:text-teal-200/80
                             [&_h2]:text-lg [&_h2]:font-bold [&_h2]:tracking-tight [&_h2]:text-teal-950 [&_h2]:dark:text-teal-100 [&_h2]:mt-0 [&_h2]:mb-2
                             [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mt-2 [&_p]:mt-1">
                             {children}
