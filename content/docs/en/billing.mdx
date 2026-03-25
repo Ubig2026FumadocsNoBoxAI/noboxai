@@ -1,110 +1,311 @@
 ---
 title: Billing
-description: Financial transaction processes, product ordering, and payment confirmation in NoBox.AI.
+description: Understanding the structure and how to perform transactions in the Billing menu on NoBox.AI
 icon: Receipt
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Billing menu covers all financial transaction processes in NoBox.AI, from product subscriptions to payment proof confirmation. Our system is designed to facilitate both automatic and manual transactions via bank transfer.
+The Billing menu is used to manage all transaction processes in NoBox.AI, from purchasing packages, selecting subscription durations, to payment confirmation. Through this menu, users can also view active package status, remaining quota, and transaction history.
 
-Ensure you follow the payment procedures correctly so that service activation can be performed instantly by our system or admins.
+This menu is designed to make the transaction process easy, whether through automatic payments or manual transfers. Make sure each step is completed correctly so the service can be activated without issues.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
-  src="https://www.youtube.com/embed/0ectimbtruk"
-  title="NoBox Payment and Billing Guide"
-  frameborder="0"
+  src="https://www.youtube.com/embed/pemAQbIs8_Q?si=7q3WzYqpdkfyXcv5"
+  title="NoBox Billing and Payment Guide"
+  frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
 ></iframe>
+
+---
+
+## Billing Menu Display
+
+<ImageZoom
+  src="/images/id/Tampilan%20Billing.png"
+  alt="Billing Menu Display"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+The display above shows the main Billing page, which contains subscription package information, remaining quota, and available package options.
+
+On this page, users can purchase packages, select subscription durations, and monitor transaction status and history to simplify service management.
 
 ---
 
 ## **How to Place an Order**
 
-Steps to subscribe to NoBox.AI products are as follows:
+Below are the complete steps to purchase a package in NoBox.AI:
 
-1. Go to the **[Product]** page on your dashboard.
-2. Search for and select the product or plan you need.
-3. Click the **[Order]** button to start the purchase.
-4. You will be automatically directed to the **Invoice** page containing cost details and billing number.
+**1. Go to the Billing Menu**
+
+Click the **[Billing]** menu. The system will display the Billing dashboard containing active package information, remaining quota, and available subscription packages.
 
 <ImageZoom
-  src="/images/en/Information.png"
-  alt="Purchase Invoice View"
+  src="/images/id/Tampilan%20Billing.png"
+  alt="Billing Menu Display"
   width={800}
   height={450}
-  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+At the top of the page, you will see a summary of the current package:
+
+| Component | Description |
+|----------|------------|
+| **Package Details** | <img src="/images/id/Package%20Details%20Billing.png" className="w-auto h-auto mx-auto" /> Displays current package information, including name and active period |
+| **Monthly Active Users** | <img src="/images/id/Monthly%20Active%20Users%20Billing.png" className="w-auto h-auto mx-auto" /> Shows the number of active users per month used from the total quota |
+| **Human Agents** | <img src="/images/id/Human%20Agents%20Billing.png" className="w-auto h-auto mx-auto" /> Displays the number of internal agent accounts used |
+| **AI Responses** | <img src="/images/id/AI%20Responses%20Billing.png" className="w-auto h-auto mx-auto" /> Shows the number of AI responses used from the total quota |
+
+This information helps you determine whether you need to upgrade your package.
+
+---
+
+**2. Choose Subscription Duration**
+
+In the middle section, there are subscription duration options:
+
+- **Monthly** → suitable for short-term or trial use
+
+<ImageZoom
+  src="/images/id/Monthly%20Billing.png"
+  alt="Monthly Billing"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- **Half-Yearly (6 Months)** → suitable for mid-term usage with better pricing
+
+<ImageZoom
+  src="/images/id/Half%20Yearly%20Billing.png"
+  alt="Half Yearly Billing"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+- **Yearly** → suitable for long-term use with better value
+
+<ImageZoom
+  src="/images/id/Yearly%20Billing.png"
+  alt="Yearly Billing"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+Click one of the duration tabs before selecting a package.
+
+---
+
+**3. Choose a Subscription Package**
+
+After selecting a duration, you will see several package options such as:
+
+- **Basic**
+- **Pro**
+- **Expert**
+
+<ImageZoom
+  src="/images/id/Paket%20Billing.png"
+  alt="Billing Packages"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+Each package differs in:
+
+- Subscription price  
+- Number of AI Responses  
+- Number of Monthly Active Users  
+- Number of Human Agents  
+- Additional features such as WhatsApp, Telegram, CRM integration, and more  
+
+Choose the package that best suits your needs.
+
+---
+
+**4. Click [Buy Package]**
+
+After selecting your desired package, click the **[Buy Package]** button at the bottom of the package card to start the purchase process.
+
+<ImageZoom
+  src="/images/id/Buy%20Package%20Billing.png"
+  alt="Buy Package"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
 />
 
 ---
 
-## **Payment Methods**
+**5. Confirm Purchase**
 
-We provide flexible options to settle your bills:
+The system will display a purchase confirmation dialog.
 
-### **1. Online Payment**
-You can make instant payments through the PayPal platform using your PayPal balance or the *Smart Checkout* feature. Online payments will activate your service automatically without requiring manual confirmation.
+<ImageZoom
+  src="/images/id/Buy%20Billing.png"
+  alt="Confirm Purchase"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
 
-### **2. Offline Payment (Bank Transfer)**
-Specifically for Indonesian users, we provide local accounts (BCA and Mandiri). If using this method, it is **mandatory** to send proof of transfer via the ticket system.
+At this stage:
+
+- Review the selected package and duration  
+- Ensure there are no mistakes  
+- Click **[Buy]** to proceed  
 
 ---
 
-## **Transfer Payment Confirmation**
+**6. Choose Payment Method**
 
-After performing a bank transfer, please upload proof of payment through the following steps:
+Next, select an available payment method.
 
-1. Click the **[Back to Portal]** button and navigate to the **[Support]** menu.
-2. Select the **[Open Ticket]** sub-menu.
-3. Complete the ticket form according to your transaction details.
+<ImageZoom
+  src="/images/id/Payment%20Billing.png"
+  alt="Payment Method"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
 
-### **Payment Confirmation Dialog Fields**
+Choose the method that is most convenient for you.
 
-| Field | Description | Example |
-| :--- | :--- | :--- |
-| **Subject** | Ticket summary. | BCA Payment Confirmation |
-| **Department** | Ticket category. | Billing |
-| **Priority** | Level of importance. | Medium |
-| **Ref No**| Your invoice number. | INV-000220 |
-| **Ticket Body** | Brief description. | PRO package payment |
-| **Attachments** | Photo of transfer proof. | *Image File/Payment Proof* |
+---
 
-After the ticket is sent, the ticket status will be **OPEN**. Once the admin has confirmed, the status changes to **CLOSED** and your service will be active.
+**7. Complete Payment**
+
+After selecting a payment method:
+
+- The system will display an invoice or payment details  
+- Complete the payment according to the specified amount  
+
+<ImageZoom
+  src="/images/id/Transaksi%20Billing.png"
+  alt="Transaction"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+<Callout type="warn" title="Important Information">
+  The payment deadline is **24 hours** after clicking the **[Buy]** button. If the deadline is exceeded, the transaction will be automatically canceled by the system.
+</Callout>
+
+---
+
+**8. Check Transaction Status**
+
+After making the payment, scroll to the **Recent Transactions** section at the bottom of the page.
+
+<ImageZoom
+  src="/images/id/Recent%20Billing.png"
+  alt="Recent Billing"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+<ImageZoom
+  src="/images/id/Recent%20Transactions%20Billing.png"
+  alt="Recent Transactions"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto"
+/>
+
+| Status | Description |
+|--------|------------|
+| **Pending** | <img src="/images/id/Pending%20Billing.png" className="w-auto h-auto mx-auto" /> Waiting for payment or verification |
+| **Failed** | <img src="/images/id/Gagal%20Billing.png" className="w-auto h-auto mx-auto" /> Transaction failed due to incorrect payment or timeout |
+| **Paid** | <img src="/images/id/Paid%20Billing.png" className="w-auto h-auto mx-auto" /> Payment successful and package is active |
+
+If the status is **Paid**, the package will be activated automatically.
+
+---
+
+## **Types of NoBox.AI Subscription Packages**
+
+NoBox.AI provides several subscription options that can be adjusted based on user needs.
+
+### **1. Monthly**
+
+Suitable for:
+
+- New users  
+- Short-term needs  
+- Small to medium usage  
+
+**Advantages:**
+
+- Flexible  
+- Suitable for trials  
+
+---
+
+### **2. Half-Yearly (6 Months)**
+
+Suitable for:
+
+- Growing businesses  
+- Users who want better pricing  
+
+**Advantages:**
+
+- More economical than monthly  
+- No monthly payments  
+
+---
+
+### **3. Yearly**
+
+Suitable for:
+
+- Intensive business use  
+- Long-term users  
+
+**Advantages:**
+
+- Most cost-effective  
+- No frequent renewals  
+- Stable for long-term use  
 
 ---
 
 <Tips>
 ## **Transaction Security Tips**
 
-Ensure your transaction goes smoothly with these tips:
-
-- Use the reference number or unique code stated on the invoice when performing the transfer.
-- Always save physical receipts or bank transaction screenshots as backup proof.
-- Ensure the amount you transfer is exactly the same down to the last digit.
-- Send payment proof immediately after the transaction is complete for faster verification.
-- Use online payment methods for more instant service activation.
-
+- Use the reference number provided in the invoice  
+- Ensure the transfer amount matches exactly  
+- Keep proof of payment  
+- Pay before the deadline (24 hours)  
+- Use online payment methods for faster processing  
 </Tips>
 
 ---
 
 <Kendala>
-## **Troubleshooting Billing**
+## **Handling Billing Issues**
 
-If you experience issues related to billing or payment, follow these steps:
-
-- **Service Not Active After Transfer**: Ensure you have sent the payment proof ticket in the Billing department.
-- **Invoice Not Appearing**: Refresh the page or check the Spam folder in your registered email.
-- **Online Payment Method Failed**: Check your balance or card limit, or contact PayPal.
-- **Wrong Transfer Amount**: Immediately contact our support team via a [Support Ticket](https://crm.NoBox.AI/clients/tickets) by attaching proof of the transfer error.
-
+- **Service not active** → Ensure payment proof has been submitted  
+- **Invoice not appearing** → Refresh page or check email (including Spam)  
+- **Payment failed** → Check balance or payment method  
+- **Incorrect transfer** → Contact support immediately with proof  
 </Kendala>
 
 ---
 
-If there are any problems or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.NoBox.AI/clients/tickets).
+If you experience any issues, please contact us via:  
+[Support Ticket](https://crm.NoBox.AI/clients/tickets)
