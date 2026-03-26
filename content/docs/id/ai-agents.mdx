@@ -27,7 +27,7 @@ Selain itu, AI Agent juga dapat mengalihkan percakapan kepada agen manusia apabi
 ## **Tampilan Menu AI Agent**
 
 <ImageZoom
-  src="/images/id/Screenshot%202025-07-04%20133747.png"
+  src="/images/id/Tampilan%20AI%20Agents.png"
   alt="Tampilan Menu AI Agent"
   width={800}
   height={450}
@@ -50,7 +50,7 @@ Untuk membuat Agen AI baru, silakan klik tombol **[Tambah AI Agent]** lalu lengk
 ### Tampilan Dialog Tambah AI Agent
 
 <ImageZoom
-  src="/images/id/Screenshot%202025-07-04%20140225.png"
+  src="/images/id/Dialog%20Tambah%20AI%20Agents.png"
   alt="Tambah AI Agent Baru"
   width={800}
   height={450}
@@ -61,11 +61,11 @@ Untuk membuat Agen AI baru, silakan klik tombol **[Tambah AI Agent]** lalu lengk
 
 | Isian                         | Uraian                                                                    |
 | :---------------------------- | :------------------------------------------------------------------------ |
-| **Name**                      | Nama identitas Agen AI Anda.                                              |
+| **Nama**                      | Nama identitas Agen AI Anda.                                              |
 | **Model**                     | Mesin kecerdasan buatan (_AI Engine_) yang digunakan.                     |
-| **Behavior**                  | Deskripsi kepribadian dan tugas utama AI dalam menjawab pesan.            |
-| **Category**                  | Pengelompokan agen berdasarkan fungsi bisnis.                             |
-| **Note**                      | Catatan internal sebagai referensi admin.                                 |
+| **Instruksi**                  | Deskripsi kepribadian dan tugas utama AI dalam menjawab pesan.            |
+| **ID Kategori**                  | Pengelompokan agen berdasarkan fungsi bisnis.                             |
+| **Catatan**                      | Catatan internal sebagai referensi admin.                                 |
 | **Welcome Message**           | Kalimat sapaan otomatis saat memulai pembicaraan dengan pelanggan.        |
 | **Agent Transfer Conditions** | Kondisi atau kata kunci yang memicu AI untuk mengalihkan chat ke manusia. |
 
@@ -73,11 +73,55 @@ Setelah disimpan, status awal Agent AI akan menjadi **Draft**. Klik tombol **Pub
 
 ---
 
+## **Menggunakan Template AI Agent**
+
+Fitur **Template** digunakan untuk mempercepat pembuatan AI Agent dengan konfigurasi yang sudah disiapkan sebelumnya.
+
+### Tampilan Dialog Template
+
+<ImageZoom
+  src="/images/id/Dialog%20Template%20AI%20Agents.png"
+  alt="Dialog Template AI Agent"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Langkah-langkah Menggunakan Template**
+
+1. Pada halaman **Tambah AI Agent**, klik tombol **[Template]**.
+2. Sistem akan menampilkan dialog Template.
+3. Pilih salah satu template pada dropdown **Template**.
+
+<ImageZoom
+  src="/images/id/Template%20AI%20Agents.png"
+  alt="Dialog Template AI Agent"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+4. Setelah dipilih, sistem akan otomatis mengisi beberapa field seperti:
+   - Nama
+   - Model
+   - Instruksi
+   - Kategori
+5. Periksa kembali data yang terisi:
+   - Pastikan sesuai dengan kebutuhan bisnis Anda.
+   - Ubah bagian instruksi jika diperlukan.
+6. Klik tombol **[Apply]** untuk menerapkan template ke form utama.
+7. Lanjutkan dengan menyesuaikan bagian lain seperti:
+   - Welcome Message
+   - Transfer Conditions
+8. Klik **[Simpan]** untuk menyimpan AI Agent.
+
+---
+
 ## **Edit dan Hapus Data AI Agent**
 
 ### Edit Data AI Agent
 
-Pilih data yang ingin diubah pada tabel, lakukan penyesuaian perilaku (_behavior_) atau pengaturan lainnya, lalu klik **[Simpan]**.
+Pilih data yang ingin diubah pada tabel, lakukan penyesuaian perilaku (instruksi) atau pengaturan lainnya, lalu klik **[Simpan]**.
 
 ### Hapus Data AI Agent
 
@@ -112,7 +156,7 @@ Optimalkan performa Agen AI Anda dengan tips berikut:
 Jika menemui masalah pada Agen AI, silakan ikuti panduan berikut:
 
 - **AI Tidak Merespon**: Pastikan status agen sudah **Published** dan platform komunikasi Anda (WA/Telegram) sudah terhubung.
-- **Jawaban AI Tidak Relevan**: Tinjau kembali instruksi pada kolom **Behavior** dan berikan panduan yang lebih spesifik.
+- **Jawaban AI Tidak Relevan**: Tinjau kembali instruksi pada kolom **Instruksi** dan berikan panduan yang lebih spesifik.
 - **Kredit AI Habis**: Periksa sisa kuota AI Anda pada menu Berlangganan dan lakukan top-up jika diperlukan.
 - **Gagal Mentransfer ke Manusia**: Periksa apakah ada agen manusia (_Human Agent_) yang sedang _online_ dan siap menerima limpahan chat.
 - **Perubahan Tidak Tersimpan**: Pastikan koneksi internet stabil saat menekan tombol **Simpan** atau coba muat ulang halaman.

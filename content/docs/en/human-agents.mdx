@@ -1,21 +1,21 @@
 ---
 title: Human Agents
-description: Management of team members, roles, and access permissions in NoBox.AI.
+description: Understanding the dashboard structure, list view, and user management in NoBox.AI
 icon: Headphones
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-Human Agents is the control center for managing all human users with access to the NoBox.AI platform. This feature is used to invite team members, assign roles, and manage access rights according to the company's organizational structure.
+Human Agents is the central hub for managing all human users who have access to the NoBox.AI platform. This feature is used to invite team members, assign roles, and manage access permissions based on your organization’s structure.
 
-This menu is used to manage operational team members who handle and oversee customer interactions.
+This menu is specifically designed to manage operational team members who handle and monitor customer interactions.
 
 <iframe
   width="800"
   height="450"
   className="rounded-lg"
   src="https://www.youtube.com/embed/kgwfQoosLek?si=dbcTyE1bSNKmf5Tm"
-  title="Panduan Pembayaran dan Billing NoBox"
+  title="NoBox Payment and Billing Guide"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin"
@@ -24,52 +24,80 @@ This menu is used to manage operational team members who handle and oversee cust
 
 ---
 
-## **Human Agent Menu Interface**
+## **Human Agents Menu Overview**
 
 <ImageZoom
-  src="/images/id/human-agent.png"
-  alt="Tampilan Menu Human Agent"
+  src="/images/id/Tampilan%20Human%20Agents.png"
+  alt="Human Agent Menu"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-The interface above displays a list of all agents along with their status details. Here is an explanation for each primary information column:
+The display above shows a list of all agents along with their status details. Below is an explanation of each main column:
 
-| Column | Function |
-| :--- | :--- |
-| **Name & Email** | Unique individual agent identity used for login and internal identification. |
-| **Join Date** | Date and time when the agent first joined the platform. |
-| **Status** | Account verification status. Agents with **VERIFIED** status can fully access the system. |
-| **Roles** | Agent access level (e.g., Owner, Manager, Chat Agent) which determines accessible features. |
+| Column           | Description                                                                                          |
+| :--------------- | :--------------------------------------------------------------------------------------------------- |
+| **Name & Email** | Unique identity of each agent used for login and internal identification.                           |
+| **Join Date**    | The date and time when the agent first joined the platform.                                          |
+| **Status**       | Account verification status. Agents with **VERIFIED** status can fully access the system.           |
+| **Access Role**  | The level of access (e.g., Owner, Manager, Chat Agent) that determines available features.          |
 
 ---
 
 ## **Inviting New Agents**
 
-Adding Human Agents is done through an invitation system to maintain company data security.
+Adding Human Agents is done through an invitation system to ensure company data security.
 
-### **How to Invite an Agent:**
+### How to Invite an Agent
 
-1. Click the **[Copy Invitation]** button at the top right of the page.
+1. Click the **[Copy Invitation]** button located at the top right of the page.
+
+<ImageZoom
+  src="/images/id/Salin%20Undangan%20Human%20Agents.png"
+  alt="Copy Invitation Button"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
 2. A unique invitation link will be automatically copied to your clipboard.
-3. Send the link to potential team members through your favorite communication media (WA, Email, etc.).
-4. After the agent registers via the link, their account will appear in the list with an active status.
+3. Send the link to your team member via your preferred communication channel (WhatsApp, Email, etc.).
+4. Once the agent registers through the link, their account will appear in the list with an active status.
 
-The **[Unlimited]** label indicates that you have the freedom to add as many agents as needed according to your business scalability without additional costs per agent.
+The **[Unlimited]** label indicates that you can add as many agents as needed without additional cost per agent.
 
 ---
 
-## **Editing and Deleting Human Agent Data**
+## **Edit and Delete Human Agent Data**
 
-### **Edit Agent Data**
-To change agent information such as role assignment, select the target agent's name. Make changes to the agent profile form, then click **[Save]**.
+### Edit Agent Data
 
-### **Delete Agent Data**
-Select the agent you want to remove from the system, click the **Delete (trash can)** icon, and confirm your choice in the dialog that appears.
+To modify agent information such as role assignment, select the desired agent from the list. Click the icon  
+[ <img src="/images/id/role.png" alt="Edit Role" className="inline h-5 w-auto mx-1" /> ]  
+to open the **[Edit User Access Role]** dialog.
+
+### Edit User Access Role Dialog
+
+<ImageZoom
+  src="/images/id/Edit%20Role%20Human%20Agents.png"
+  alt="Edit Role Dialog"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+Make changes to the agent’s access permissions, then click **[OK]**.
+
+### Delete Agent Data
+
+Select the agent you want to remove, click the delete icon  
+[ <img src="/images/id/Tong%20Sampah.png" alt="Delete" className="inline h-5 w-auto mx-1" /> ],  
+and confirm your action in the dialog that appears.
 
 <Callout type="info" title="Important Information">
-Deleting Human Agent data is permanent. Deleted agents will not be able to log in to the system, and all their access rights will be revoked immediately.
+  Deleting a Human Agent is permanent. The removed agent will no longer be able
+  to access the system and all permissions will be revoked immediately.
 </Callout>
 
 ---
@@ -77,12 +105,12 @@ Deleting Human Agent data is permanent. Deleted agents will not be able to log i
 <Tips>
 ## **Usage Tips**
 
-Some tips for managing Human Agents:
+Here are some best practices for managing Human Agents:
 
-- Assign roles that match each team member's job description to maintain data security.
-- Use official company email addresses for each agent to look more professional.
-- Periodically monitor the status column to ensure all team members have completed email verification.
-- Utilize the unlimited invitation feature to distribute workload to more agents when message traffic is high.
+- Assign roles according to each team member’s responsibilities to maintain data security.
+- Use official company email addresses for a more professional setup.
+- Regularly monitor the status column to ensure all team members have verified their accounts.
+- Utilize the unlimited invitation feature to scale your team when message traffic increases.
 
 </Tips>
 
@@ -91,16 +119,16 @@ Some tips for managing Human Agents:
 <Kendala>
 ## **Troubleshooting**
 
-If you encounter issues in agent management, please follow this guide:
+If you encounter issues while managing agents, follow these guidelines:
 
-- **Invitation Link Not Working**: Try regenerating the invitation link by clicking the **[Copy Invitation]** button again.
-- **Agent Not Appearing in List**: Ensure team members have completed the registration process through the provided link.
-- **Verification Email Not Received**: Suggest agents check their Spam folder or click the resend verification button on their account.
-- **Failed to Change Roles**: Ensure you are logged in with an administrator account (Owner/Manager) that has team management authorization.
-- **Agent Forgot Password**: Direct the agent to the login page and click the "Forgot Password" link to perform a self-reset.
+- **Invitation Link Not Working**: Regenerate the link by clicking the **[Copy Invitation]** button again.
+- **Agent Not Appearing in the List**: Ensure the user has completed the registration process via the invitation link.
+- **Verification Email Not Received**: Ask the agent to check the Spam folder or resend verification.
+- **Unable to Change Roles**: Make sure you are logged in as an authorized user (Owner/Manager).
+- **Forgot Password**: Direct the agent to use the "Forgot Password" option on the login page.
 
 </Kendala>
 
 ---
 
-If there are any problems or difficulties related to NoBox.AI, please contact us via a [Support Ticket](https://crm.NoBox.AI/clients/tickets).
+If you encounter any issues, please contact us via [Support Ticket](https://crm.NoBox.AI/clients/tickets)

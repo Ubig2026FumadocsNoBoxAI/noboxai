@@ -1,14 +1,14 @@
 ---
 title: AI Agents
-description: Overview of intelligent virtual assistants for automating digital interactions in NoBox.AI.
+description: Understanding the dashboard structure, list view, and form configuration in NoBox.AI
 icon: Bot
 ---
 
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 
-AI Agent is an intelligent virtual assistant in NoBox.AI that can help automate conversations with customers. This agent can answer customer questions, collect prospect information, and provide automated responses 24/7.
+AI Agent is an intelligent virtual assistant in NoBox.AI designed to automate customer interactions. It is capable of answering customer inquiries, collecting lead information, and providing automated responses 24/7 without interruption.
 
-Furthermore, AI Agent can also redirect conversations to human agents if customer inquiries require further attention.
+Additionally, AI Agents can seamlessly transfer conversations to Human Agents when a request requires further assistance.
 
 <iframe
   width="800"
@@ -24,65 +24,111 @@ Furthermore, AI Agent can also redirect conversations to human agents if custome
 
 ---
 
-## **AI Agent Menu Interface**
+## **AI Agent Menu Overview**
 
 <ImageZoom
-  src="/images/en/Screenshot%202025-07-04%20133747.png"
-  alt="AI Agent Menu Interface"
+  src="/images/id/Tampilan%20AI%20Agents.png"
+  alt="AI Agent Menu"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-The interface above displays a list of all your AI Agents. Each agent has a status indicator explaining its operational state:
+The display above shows a list of all AI Agents you have created. Each agent includes a status indicator that describes its operational condition:
 
-| Status | Icon | Detailed Explanation |
-| :--- | :---: | :--- |
-| **Draft** | <img src="/images/en/image%20(6).png" alt="Draft Status" className="w-auto h-auto mx-auto" /> | The agent is still in the editing stage. Its configuration is not yet active and it is not serving customers. |
-| **Published** | <img src="/images/en/image%20(7).png" alt="Published Status" className="w-auto h-auto mx-auto" /> | The agent has been activated and is ready to interact with customers live on the platform. |
+| Status        |                                               Icon                                                | Description                                                                                 |
+| :------------ | :-----------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------ |
+| **Draft**     |   <img src="/images/id/image%20(6).png" alt="Draft Status" className="w-auto h-auto mx-auto" />   | The agent is still being configured and is not yet active or serving customers.             |
+| **Published** | <img src="/images/id/image%20(7).png" alt="Published Status" className="w-auto h-auto mx-auto" /> | The agent is active and ready to interact with customers on the connected platforms.        |
 
 ---
 
-## **Adding an AI Agent**
+## **Create AI Agent**
 
-To create a new AI Agent, click the **[Add AI Agent]** button and complete the fields in the form that appears.
+To create a new AI Agent, click the **[Add AI Agent]** button and complete the form provided.
 
-### **Add AI Agent Dialog View**
+### Add AI Agent Dialog
 
 <ImageZoom
-  src="/images/en/Screenshot%202025-07-04%20140225.png"
-  alt="Add New AI Agent"
+  src="/images/id/Dialog%20Tambah%20AI%20Agents.png"
+  alt="Add AI Agent"
   width={800}
   height={450}
   className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
 />
 
-### **AI Agent Dialog Fields**
+### AI Agent Form Fields
 
-| Field | Description |
-| :--- | :--- |
-| **Name** | Identity name for your AI Agent. |
-| **Model** | The AI Engine used. |
-| **Behavior** | Description of the AI's personality and primary tasks in answering messages. |
-| **Category** | Grouping agents based on business function. |
-| **Note** | Internal notes for admin reference. |
-| **Welcome Message** | Automated greeting when starting a conversation with a customer. |
-| **Agent Transfer Conditions** | Conditions or keywords that trigger the AI to hand off the chat to a human. |
+| Field                         | Description                                                                 |
+| :---------------------------- | :-------------------------------------------------------------------------- |
+| **Name**                      | The name or identity of your AI Agent.                                      |
+| **Model**                     | The AI engine used to process conversations.                                |
+| **Instructions**              | Defines the AI’s personality, role, and response behavior.                  |
+| **Category ID**               | Groups agents based on business functions.                                  |
+| **Notes**                     | Internal notes for administrative reference.                                |
+| **Welcome Message**           | Automatic greeting message when a conversation starts.                      |
+| **Agent Transfer Conditions** | Conditions or keywords that trigger transfer to a Human Agent.              |
 
-After saving, the initial status of the AI Agent will be **Draft**. Click the **Publish** button when you are ready to activate it.
+After saving, the AI Agent will be in **Draft** status. Click **Publish** when you are ready to activate it.
 
 ---
 
-## **Editing and Deleting AI Agent Data**
+## **Using AI Agent Templates**
 
-### **Edit AI Agent Data**
-Select the record you want to change in the table, adjust the behavior or other settings, and then click **[Save]**.
+The **Template** feature allows you to quickly create AI Agents using predefined configurations.
 
-### **Delete AI Agent Data**
-Select the AI Agent to be deleted, click the **[Delete]** button, and confirm your action in the dialog that appears.
+### Template Dialog
+
+<ImageZoom
+  src="/images/id/Dialog%20Template%20AI%20Agents.png"
+  alt="Template Dialog"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+### **Steps to Use a Template**
+
+1. On the **Add AI Agent** page, click the **[Template]** button.
+2. The Template dialog will appear.
+3. Select a template from the **Template** dropdown.
+
+<ImageZoom
+  src="/images/id/Template%20AI%20Agents.png"
+  alt="Template Selection"
+  width={800}
+  height={450}
+  className="rounded-lg border shadow-sm mb-4 my-8 mx-auto "
+/>
+
+4. Once selected, the system will automatically populate several fields such as:
+   - Name
+   - Model
+   - Instructions
+   - Category
+5. Review the populated data:
+   - Ensure it matches your business needs.
+   - Adjust the instructions if necessary.
+6. Click **[Apply]** to apply the template to the main form.
+7. Continue customizing other fields such as:
+   - Welcome Message
+   - Transfer Conditions
+8. Click **[Save]** to store the AI Agent.
+
+---
+
+## **Edit and Delete AI Agent**
+
+### Edit AI Agent
+
+Select the agent you want to modify from the list, update the instructions or other configurations, then click **[Save]**.
+
+### Delete AI Agent
+
+Select the AI Agent you want to delete, click **[Delete]**, and confirm your action in the dialog that appears.
 
 <Callout type="info" title="Important Information">
-Deleting AI Agent data is permanent. The deleted agent will immediately stop serving customers, and all its configuration data will be lost from the system.
+  Deleting an AI Agent is permanent. The agent will immediately stop serving customers and all configurations will be removed from the system.
 </Callout>
 
 ---
@@ -90,13 +136,13 @@ Deleting AI Agent data is permanent. The deleted agent will immediately stop ser
 <Tips>
 ## **Usage Tips**
 
-Optimize your AI Agent's performance with these tips:
+Optimize your AI Agent performance with the following tips:
 
-- Provide a detailed **Behavior** description so the AI understands the limits of information it can provide to customers.
-- Use the **Welcome Message** to automatically ask for basic customer information (such as Name or Purpose).
-- Define clear **Transfer Conditions** so customers still get solutions from a human when the AI is unable to answer.
-- Conduct testing in **Draft** status before publishing the agent to a public platform.
-- Use the latest AI models to get more natural and accurate response quality.
+- Provide detailed **Instructions** so the AI understands its scope and limitations.
+- Use **Welcome Message** to gather basic customer information automatically.
+- Define clear **Transfer Conditions** to ensure smooth escalation to human agents.
+- Perform testing in **Draft** status before publishing.
+- Use the latest AI model for more natural and accurate responses.
 
 </Tips>
 
@@ -105,16 +151,16 @@ Optimize your AI Agent's performance with these tips:
 <Kendala>
 ## **Troubleshooting**
 
-If you encounter issues with an AI Agent, please follow this guide:
+If you encounter issues with AI Agents, follow these guidelines:
 
-- **AI Not Responding**: Ensure the agent's status is **Published** and your communication platform (WA/Telegram) is connected.
-- **Irrelevant AI Answers**: Review the instructions in the **Behavior** column and provide more specific guidance.
-- **AI Credits Exhausted**: Check your remaining AI quota in the Subscription menu and top up if necessary.
-- **Failed to Transfer to Human**: Check if there are human agents who are online and ready to receive the chat handoff.
-- **Changes Not Saved**: Ensure a stable internet connection when clicking the **Save** button or try reloading the page.
+- **AI Not Responding**: Ensure the agent status is **Published** and your communication channel (WhatsApp/Telegram) is properly connected.
+- **Irrelevant Responses**: Review and refine the instructions for better clarity.
+- **AI Credits Exhausted**: Check your subscription and top up if necessary.
+- **Failed Transfer to Human Agent**: Ensure there is an available Human Agent online.
+- **Changes Not Saved**: Check your internet connection or refresh the page.
 
 </Kendala>
 
 ---
 
-If there are any problems or difficulties related to AI Agents, please contact us via a [Support Ticket](https://crm.NoBox.AI/clients/tickets).
+If you experience any issues, please contact us via [Support Ticket](https://crm.NoBox.AI/clients/tickets)
